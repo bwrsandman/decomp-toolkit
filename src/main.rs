@@ -90,6 +90,7 @@ struct TopLevel {
 enum SubCommand {
     Alf(cmd::alf::Args),
     Ar(cmd::ar::Args),
+    Coff(cmd::coff::Args),
     Demangle(cmd::demangle::Args),
     Disc(cmd::disc::Args),
     Dol(cmd::dol::Args),
@@ -168,6 +169,7 @@ fn main() {
     result = result.and_then(|_| match args.command {
         SubCommand::Alf(c_args) => cmd::alf::run(c_args),
         SubCommand::Ar(c_args) => cmd::ar::run(c_args),
+        SubCommand::Coff(c_args) => cmd::coff::run(c_args),
         SubCommand::Demangle(c_args) => cmd::demangle::run(c_args),
         SubCommand::Disc(c_args) => cmd::disc::run(c_args),
         SubCommand::Dol(c_args) => cmd::dol::run(c_args),

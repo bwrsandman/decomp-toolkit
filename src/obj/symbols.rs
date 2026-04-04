@@ -641,7 +641,9 @@ pub fn best_match_for_reloc(
                     ObjRelocKind::Absolute
                     | ObjRelocKind::PpcRel24
                     | ObjRelocKind::PpcRel14
-                    | ObjRelocKind::PpcEmbSda21 => 2,
+                    | ObjRelocKind::PpcEmbSda21
+                    | ObjRelocKind::X86Abs32
+                    | ObjRelocKind::X86Rel32 => 2,
                 }
             }
             // Label

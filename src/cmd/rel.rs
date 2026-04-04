@@ -665,6 +665,9 @@ fn link_relocations(obj: &mut ObjInfo) -> Result<()> {
                 ObjRelocKind::PpcEmbSda21 => {
                     // Unused in RELs
                 }
+                ObjRelocKind::X86Abs32 | ObjRelocKind::X86Rel32 => {
+                    // Not applicable to RELs
+                }
             };
             *ins_ref = ins.to_be_bytes();
         }

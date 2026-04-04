@@ -1,5 +1,6 @@
 pub mod alf;
 pub mod ar;
+pub mod coff;
 pub mod demangle;
 pub mod disc;
 pub mod dol;

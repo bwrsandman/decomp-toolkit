@@ -355,6 +355,10 @@ pub fn generate_signature(
                         *ins &= !0x1FFFFF;
                         *pat = !0x1FFFFF;
                     }
+                    ObjRelocKind::X86Abs32 | ObjRelocKind::X86Rel32 => {
+                        *ins = 0;
+                        *pat = 0;
+                    }
                 }
                 out_relocs.push(OutReloc {
                     offset: addr - (symbol.address as u32),

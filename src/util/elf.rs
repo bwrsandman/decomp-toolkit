@@ -387,7 +387,11 @@ fn load_comment(obj_file: &File) -> Result<Option<(MWComment, Vec<CommentSym>)>>
 
 pub fn write_elf(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
     let mut out_data = Vec::new();
-    let mut writer = Writer::new(Endianness::Big, false, &mut out_data);
+    let endianness = match obj.architecture {
+        ObjArchitecture::PowerPc => Endianness::Big,
+        ObjArchitecture::X86 => Endianness::Little,
+    };
+    let mut writer = Writer::new(endianness, false, &mut out_data);
 
     struct OutSection {
         index: SectionIndex,
@@ -689,9 +693,15 @@ pub fn write_elf(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
             ObjKind::Executable => elf::ET_EXEC,
             ObjKind::Relocatable => elf::ET_REL,
         },
-        e_machine: elf::EM_PPC,
+        e_machine: match obj.architecture {
+            ObjArchitecture::PowerPc => elf::EM_PPC,
+            ObjArchitecture::X86 => elf::EM_386,
+        },
         e_entry: obj.entry.unwrap_or(0),
-        e_flags: elf::EF_PPC_EMB,
+        e_flags: match obj.architecture {
+            ObjArchitecture::PowerPc => elf::EF_PPC_EMB,
+            ObjArchitecture::X86 => 0,
+        },
     })?;
 
     if obj.kind == ObjKind::Executable {
@@ -1000,6 +1010,9 @@ fn write_relocatable_section_data(w: &mut Writer, section: &ObjSection) -> Resul
             }
             ObjRelocKind::PpcEmbSda21 => {
                 ins &= !0x1FFFFF;
+            }
+            ObjRelocKind::X86Abs32 | ObjRelocKind::X86Rel32 => {
+                ins = 0;
             }
         }
         w.write(&ins.to_be_bytes());

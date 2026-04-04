@@ -288,6 +288,7 @@ where
             ObjRelocKind::PpcAddr16Hi | ObjRelocKind::PpcAddr16Ha | ObjRelocKind::PpcAddr16Lo => {
                 ins.code & !0xFFFF
             }
+            ObjRelocKind::X86Abs32 | ObjRelocKind::X86Rel32 => 0,
         };
     }
 
@@ -345,7 +346,11 @@ fn write_reloc<W>(w: &mut W, symbols: &[ObjSymbol], reloc: &ObjReloc) -> Result<
 where W: Write + ?Sized {
     write_reloc_symbol(w, symbols, reloc)?;
     match reloc.kind {
-        ObjRelocKind::Absolute | ObjRelocKind::PpcRel24 | ObjRelocKind::PpcRel14 => {
+        ObjRelocKind::Absolute
+        | ObjRelocKind::PpcRel24
+        | ObjRelocKind::PpcRel14
+        | ObjRelocKind::X86Abs32
+        | ObjRelocKind::X86Rel32 => {
             // pass
         }
         ObjRelocKind::PpcAddr16Hi => {

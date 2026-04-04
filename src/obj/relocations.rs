@@ -20,6 +20,9 @@ pub enum ObjRelocKind {
     PpcRel24,
     PpcRel14,
     PpcEmbSda21,
+    // x86
+    X86Abs32,
+    X86Rel32,
 }
 
 impl Serialize for ObjRelocKind {
@@ -33,6 +36,8 @@ impl Serialize for ObjRelocKind {
             ObjRelocKind::PpcRel24 => "rel24",
             ObjRelocKind::PpcRel14 => "rel14",
             ObjRelocKind::PpcEmbSda21 => "sda21",
+            ObjRelocKind::X86Abs32 => "x86_abs32",
+            ObjRelocKind::X86Rel32 => "x86_rel32",
         })
     }
 }
@@ -48,8 +53,10 @@ impl<'de> Deserialize<'de> for ObjRelocKind {
             "PpcRel24" | "rel24" => Ok(ObjRelocKind::PpcRel24),
             "PpcRel14" | "rel14" => Ok(ObjRelocKind::PpcRel14),
             "PpcEmbSda21" | "sda21" => Ok(ObjRelocKind::PpcEmbSda21),
+            "x86_abs32" => Ok(ObjRelocKind::X86Abs32),
+            "x86_rel32" => Ok(ObjRelocKind::X86Rel32),
             s => Err(serde::de::Error::unknown_variant(s, &[
-                "abs", "hi", "ha", "l", "rel24", "rel14", "sda21",
+                "abs", "hi", "ha", "l", "rel24", "rel14", "sda21", "x86_abs32", "x86_rel32",
             ])),
         }
     }
@@ -101,6 +108,8 @@ impl ObjReloc {
                 r_offset &= !3;
                 elf::R_PPC_EMB_SDA21
             }
+            ObjRelocKind::X86Abs32 => elf::R_386_32,
+            ObjRelocKind::X86Rel32 => elf::R_386_PC32,
         };
         (r_offset, r_type)
     }

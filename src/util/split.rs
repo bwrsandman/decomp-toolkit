@@ -12,7 +12,7 @@ use tracing_attributes::instrument;
 use crate::{
     analysis::{cfa::SectionAddress, read_address, read_u32, relocation_target_for},
     obj::{
-        ObjArchitecture, ObjInfo, ObjKind, ObjReloc, ObjRelocKind, ObjRelocations, ObjSection,
+        ObjInfo, ObjKind, ObjReloc, ObjRelocKind, ObjRelocations, ObjSection,
         ObjSectionKind, ObjSplit, ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags, ObjSymbolKind,
         ObjSymbolScope, ObjUnit, SectionIndex, SymbolIndex,
     },
@@ -1314,7 +1314,7 @@ pub fn split_obj(
         object_symbols.push(vec![None; obj.symbols.count() as usize]);
         let mut split_obj = ObjInfo::new(
             ObjKind::Relocatable,
-            ObjArchitecture::PowerPc,
+            obj.architecture,
             unit.name.clone(),
             vec![],
             vec![],
@@ -1500,15 +1500,27 @@ pub fn split_obj(
             }
 
             if !split.common {
+                let start_off =
+                    (current_address.address as u64 - section.address) as usize;
+                let end_off =
+                    (split_end.address as u64 - section.address) as usize;
+                let phys_len = section.data.len();
                 let data = match section.kind {
                     ObjSectionKind::Bss => vec![],
-                    _ => section.data[(current_address.address as u64 - section.address) as usize
-                        ..(split_end.address as u64 - section.address) as usize]
-                        .to_vec(),
+                    _ if start_off >= phys_len => vec![],
+                    _ => section.data[start_off..end_off.min(phys_len)].to_vec(),
+                };
+                let split_kind = if data.is_empty()
+                    && section.kind != ObjSectionKind::Bss
+                    && end_off > phys_len
+                {
+                    ObjSectionKind::Bss
+                } else {
+                    section.kind
                 };
                 split_obj.sections.push(ObjSection {
                     name: split.rename.as_ref().unwrap_or(&section.name).clone(),
-                    kind: section.kind,
+                    kind: split_kind,
                     address: 0,
                     size: split_end.address as u64 - current_address.address as u64,
                     data,
