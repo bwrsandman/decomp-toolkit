@@ -16,6 +16,7 @@ use xxhash_rust::xxh3::xxh3_64;
 use crate::{
     analysis::{
         objects::{detect_objects, detect_strings},
+        rtti::detect_rtti,
         x86::analyze_x86_functions,
     },
     cmd::{
@@ -216,6 +217,8 @@ fn split_write_coff(
         debug!("Detecting strings");
         detect_strings(&mut module.obj)?;
     }
+
+    detect_rtti(&mut module.obj)?;
 
     // Convert Function-kind symbols into per-function splits (mirrors DOL Tracker behaviour)
     if !config.symbols_known {
