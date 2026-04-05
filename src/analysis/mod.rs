@@ -19,6 +19,7 @@ pub mod signatures;
 pub mod slices;
 pub mod tracker;
 pub mod vm;
+pub mod pe;
 pub mod rtti;
 pub mod x86;
 

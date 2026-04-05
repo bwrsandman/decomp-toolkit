@@ -16,6 +16,7 @@ use xxhash_rust::xxh3::xxh3_64;
 use crate::{
     analysis::{
         objects::{detect_objects, detect_strings},
+        pe::detect_pe_symbols,
         rtti::detect_rtti,
         x86::analyze_x86_functions,
     },
@@ -96,7 +97,9 @@ fn load_coff_module(
         if let Some(hash_str) = &config.hash {
             verify_hash(data, hash_str)?;
         }
-        process_coff(data, config.name())?
+        let (mut obj, image_base) = process_coff(data, config.name())?;
+        detect_pe_symbols(&mut obj, data)?;
+        (obj, image_base)
     };
     Ok((obj, image_base, object_path))
 }
