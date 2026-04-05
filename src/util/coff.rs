@@ -12,12 +12,17 @@ use object::{
     },
 };
 
-use crate::obj::{
-    ObjArchitecture, ObjInfo, ObjKind, ObjSection, ObjSectionKind, ObjSymbol, ObjSymbolFlagSet,
-    ObjSymbolFlags, ObjSymbolKind, ObjRelocKind, SectionIndex as ObjSectionIndex,
+use crate::{
+    analysis::cfa::SectionAddress,
+    obj::{
+        ObjArchitecture, ObjInfo, ObjKind, ObjReloc, ObjRelocKind, ObjSection, ObjSectionKind,
+        ObjSplit, ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags, ObjSymbolKind,
+        SectionIndex as ObjSectionIndex,
+    },
 };
 
-pub fn process_coff(data: &[u8], name: &str) -> Result<ObjInfo> {
+/// Returns the parsed `ObjInfo` and, for PE executables, the ImageBase.
+pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
     let obj_file = object::File::parse(data).context("Failed to parse COFF/PE file")?;
 
     let architecture = match obj_file.architecture() {
@@ -138,6 +143,16 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<ObjInfo> {
         });
     }
 
+    // Extract ImageBase from the PE optional header (x86 PE32 only)
+    let image_base: Option<u32> = if kind == ObjKind::Executable {
+        use object::{LittleEndian as LE, read::pe::{ImageNtHeaders, PeFile32}};
+        PeFile32::parse(data)
+            .ok()
+            .map(|pe| pe.nt_headers().optional_header().image_base.get(LE))
+    } else {
+        None
+    };
+
     let mut obj = ObjInfo::new(kind, architecture, name.to_string(), symbols, sections);
     obj.entry = NonZeroU64::new(obj_file.entry()).map(|n| n.get());
     obj.sda2_base = sda2_base;
@@ -147,7 +162,7 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<ObjInfo> {
     obj.db_stack_addr = db_stack_addr;
     obj.arena_lo = arena_lo;
     obj.arena_hi = arena_hi;
-    Ok(obj)
+    Ok((obj, image_base))
 }
 
 pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
@@ -205,7 +220,7 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
             ObjSymbolKind::Function => SymbolKind::Text,
             ObjSymbolKind::Object => SymbolKind::Data,
             ObjSymbolKind::Section => SymbolKind::Section,
-            ObjSymbolKind::Unknown => SymbolKind::Unknown,
+            ObjSymbolKind::Unknown => SymbolKind::Label,
         };
         let sid = out.add_symbol(Symbol {
             name: sym.name.as_bytes().to_vec(),
@@ -236,19 +251,180 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
                 }
                 _ => continue,
             };
-            let offset = addr as u64 - section.address;
+            let offset = (addr as u64).saturating_sub(section.address) as usize;
+            // Skip relocations whose 4-byte field extends past the end of the
+            // section data.  This can happen when a false-positive function split
+            // cuts a boundary mid-instruction; the relocation belongs to the
+            // correctly-sized split of the enclosing function.
+            if offset + 4 > section.data.len() {
+                log::warn!(
+                    "Skipping relocation at {:#010X} in section {} (offset {} + 4 > {} bytes): \
+                     split boundary may be mid-instruction",
+                    addr,
+                    section.name,
+                    offset,
+                    section.data.len()
+                );
+                continue;
+            }
             let sym_id = symbol_ids[reloc.target_symbol as usize];
             out.add_relocation(sid, Relocation {
-                offset,
+                offset: offset as u64,
                 symbol: sym_id,
                 addend: reloc.addend,
                 flags: RelocationFlags::Generic { kind, encoding, size },
             })
             .with_context(|| {
-                format!("Adding relocation at {:#x} in section {}", addr, section.name)
+                format!("Adding relocation at {:#010X} in section {}", addr, section.name)
             })?;
         }
     }
 
     out.write().map_err(|e| anyhow::anyhow!("{e:?}"))
+}
+
+const IMAGE_REL_BASED_HIGHLOW: u16 = 3;
+
+/// Parse the PE `.reloc` section and add [`ObjRelocKind::X86Abs32`] relocations.
+pub fn apply_base_relocations(obj: &mut ObjInfo, image_base: u32) -> Result<()> {
+    let reloc_data = {
+        let Some((_, section)) = obj.sections.iter().find(|(_, s)| s.name == ".reloc") else {
+            log::debug!("No .reloc section, skipping base relocation import");
+            return Ok(());
+        };
+        if section.data.is_empty() {
+            return Ok(());
+        }
+        section.data.clone()
+    };
+
+    let mut block_off = 0usize;
+    let mut count = 0u32;
+    while block_off + 8 <= reloc_data.len() {
+        let page_rva =
+            u32::from_le_bytes(reloc_data[block_off..block_off + 4].try_into().unwrap());
+        let block_size =
+            u32::from_le_bytes(reloc_data[block_off + 4..block_off + 8].try_into().unwrap());
+        if block_size < 8 {
+            break;
+        }
+        let num_entries = (block_size - 8) / 2;
+        for i in 0..num_entries as usize {
+            let e = block_off + 8 + i * 2;
+            if e + 2 > reloc_data.len() {
+                break;
+            }
+            let type_offset =
+                u16::from_le_bytes(reloc_data[e..e + 2].try_into().unwrap());
+            if type_offset >> 12 != IMAGE_REL_BASED_HIGHLOW {
+                continue;
+            }
+            let reloc_va = image_base.wrapping_add(page_rva + (type_offset & 0x0FFF) as u32);
+
+            let Ok((src_idx, _)) = obj.sections.at_address(reloc_va) else { continue };
+            let src_sec = &obj.sections[src_idx];
+            if src_sec.kind == ObjSectionKind::Bss || src_sec.relocations.at(reloc_va).is_some() {
+                continue;
+            }
+            let off = (reloc_va as u64 - src_sec.address) as usize;
+            if off + 4 > src_sec.data.len() {
+                continue;
+            }
+            let target_va =
+                u32::from_le_bytes(src_sec.data[off..off + 4].try_into().unwrap());
+            if target_va == 0 {
+                continue;
+            }
+            let Ok((tgt_idx, _)) = obj.sections.at_address(target_va) else { continue };
+            let tgt_addr = SectionAddress::new(tgt_idx, target_va);
+            let (target_symbol, addend) =
+                match obj.symbols.for_relocation(tgt_addr, ObjRelocKind::X86Abs32)? {
+                    Some((sym_idx, sym)) => (sym_idx, target_va as i64 - sym.address as i64),
+                    None => {
+                        let sym_idx = obj.symbols.add_direct(ObjSymbol {
+                            name: format!("lbl_{:08X}", target_va),
+                            address: target_va as u64,
+                            section: Some(tgt_idx),
+                            ..Default::default()
+                        })?;
+                        (sym_idx, 0)
+                    }
+                };
+            let src_sec = &mut obj.sections[src_idx];
+            src_sec
+                .relocations
+                .insert(reloc_va, ObjReloc {
+                    kind: ObjRelocKind::X86Abs32,
+                    target_symbol,
+                    addend,
+                    module: None,
+                })
+                .ok();
+            count += 1;
+        }
+        block_off += block_size as usize;
+    }
+    log::info!("Applied {count} abs32 relocations from .reloc section");
+    Ok(())
+}
+
+/// Create one `ObjSplit` per `Function`-kind symbol in code sections so that
+/// each function becomes its own compilation unit, mirroring what the DOL
+/// pipeline does via Tracker + CFA.
+///
+/// Only creates splits that don't already exist (user-defined splits in
+/// `splits.txt` take precedence).
+pub fn create_function_splits(obj: &mut ObjInfo) -> Result<()> {
+    let code_sections: Vec<ObjSectionIndex> = obj
+        .sections
+        .iter()
+        .filter(|(_, s)| s.kind == ObjSectionKind::Code)
+        .map(|(idx, _)| idx)
+        .collect();
+
+    let mut total = 0u32;
+    for sec_idx in code_sections {
+        let section_end = {
+            let s = &obj.sections[sec_idx];
+            (s.address + s.size) as u32
+        };
+
+        // Collect (address, name) for every Function symbol in this section,
+        // sorted by address.
+        let fn_symbols: Vec<(u32, String)> = {
+            let mut v: Vec<(u32, String)> = obj
+                .symbols
+                .for_section(sec_idx)
+                .filter(|(_, sym)| sym.kind == ObjSymbolKind::Function)
+                .map(|(_, sym)| (sym.address as u32, sym.name.clone()))
+                .collect();
+            v.sort_by_key(|(addr, _)| *addr);
+            v
+        };
+
+        for (i, (addr, name)) in fn_symbols.iter().enumerate() {
+            // Skip if a split already exists at this address.
+            if obj.sections[sec_idx].splits.for_address(*addr).is_some() {
+                continue;
+            }
+            let end = fn_symbols
+                .get(i + 1)
+                .map(|(next_addr, _)| *next_addr)
+                .unwrap_or(section_end);
+
+            obj.sections[sec_idx].splits.push(*addr, ObjSplit {
+                unit: name.clone(),
+                end,
+                align: Some(1), // x86 functions have no guaranteed alignment
+                common: false,
+                autogenerated: true,
+                skip: false,
+                rename: None,
+            });
+            total += 1;
+        }
+    }
+
+    log::info!("Created {total} function splits");
+    Ok(())
 }

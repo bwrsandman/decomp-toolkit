@@ -1582,6 +1582,7 @@ pub fn split_obj(
                         out_obj.symbols.add_direct(ObjSymbol {
                             name: target_sym.name.clone(),
                             demangled_name: target_sym.demangled_name.clone(),
+                            kind: target_sym.kind,
                             ..Default::default()
                         })?;
                         reloc.target_symbol = out_sym_idx;

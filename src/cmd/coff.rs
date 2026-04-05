@@ -14,7 +14,10 @@ use typed_path::{Utf8NativePath, Utf8NativePathBuf};
 use xxhash_rust::xxh3::xxh3_64;
 
 use crate::{
-    analysis::objects::{detect_objects, detect_strings},
+    analysis::{
+        objects::{detect_objects, detect_strings},
+        x86::analyze_x86_functions,
+    },
     cmd::{
         dol::{
             ModuleConfig, ObjectBase, OutputConfig, OutputLink, OutputModule, OutputUnit,
@@ -24,7 +27,7 @@ use crate::{
     },
     obj::{ObjInfo, ObjKind, ObjRelocKind, best_match_for_reloc},
     util::{
-        coff::{process_coff, write_coff},
+        coff::{apply_base_relocations, create_function_splits, process_coff, write_coff},
         config::{apply_splits_file, apply_symbols_file, write_splits_file, write_symbols_file},
         dep::DepFile,
         file::{FileReadInfo, buf_writer, touch, verify_hash},
@@ -83,10 +86,10 @@ struct ModuleState<'a> {
 fn load_coff_module(
     config: &ModuleConfig,
     object_base: &ObjectBase,
-) -> Result<(ObjInfo, Utf8NativePathBuf)> {
+) -> Result<(ObjInfo, Option<u32>, Utf8NativePathBuf)> {
     let object_path = object_base.join(&config.object);
     log::debug!("Loading {}", object_path);
-    let obj = {
+    let (obj, image_base) = {
         let mut file = object_base.open(&config.object)?;
         let data = file.map()?;
         if let Some(hash_str) = &config.hash {
@@ -94,15 +97,25 @@ fn load_coff_module(
         }
         process_coff(data, config.name())?
     };
-    Ok((obj, object_path))
+    Ok((obj, image_base, object_path))
 }
 
 fn load_analyze_coff(
     config: &ProjectConfig,
     object_base: &ObjectBase,
 ) -> Result<(ObjInfo, Vec<Utf8NativePathBuf>, Option<FileReadInfo>, Option<FileReadInfo>)> {
-    let (mut obj, object_path) = load_coff_module(&config.base, object_base)?;
+    let (mut obj, image_base, object_path) = load_coff_module(&config.base, object_base)?;
     let mut dep = vec![object_path];
+
+    info!("Loading and analyzing COFF/PE binary");
+
+    // Reconstruct abs32 relocations from the PE base relocation table
+    if let Some(base) = image_base {
+        apply_base_relocations(&mut obj, base)?;
+    }
+
+    // Discover functions and rel32 relocations by scanning code
+    analyze_x86_functions(&mut obj)?;
 
     if let Some(map_path) = &config.base.map {
         let map_path = map_path.with_encoding();
@@ -202,6 +215,12 @@ fn split_write_coff(
     if config.detect_strings {
         debug!("Detecting strings");
         detect_strings(&mut module.obj)?;
+    }
+
+    // Convert Function-kind symbols into per-function splits (mirrors DOL Tracker behaviour)
+    if !config.symbols_known {
+        debug!("Creating function splits");
+        create_function_splits(&mut module.obj)?;
     }
 
     debug!("Adjusting splits");
@@ -333,7 +352,6 @@ fn split(args: SplitArgs) -> Result<()> {
     let out_config_path = args.out_dir.join("config.json");
     let mut dep = DepFile::new(out_config_path.clone());
 
-    info!("Loading and analyzing COFF/PE binary");
     let start = Instant::now();
     let (obj, obj_dep, splits_cache, symbols_cache) =
         load_analyze_coff(&config, &object_base)
