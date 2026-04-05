@@ -18,7 +18,7 @@ use crate::{
         objects::{detect_objects, detect_strings},
         pe::detect_pe_symbols,
         rtti::detect_rtti,
-        x86::analyze_x86_functions,
+        x86::{analyze_x86_functions, compute_x86_function_sizes},
     },
     cmd::{
         dol::{
@@ -79,6 +79,7 @@ pub fn run(args: Args) -> Result<()> {
 
 struct ModuleState<'a> {
     obj: ObjInfo,
+    size_data: Option<crate::analysis::x86::X86FunctionSizeData>,
     config: &'a ModuleConfig,
     symbols_cache: Option<FileReadInfo>,
     splits_cache: Option<FileReadInfo>,
@@ -107,7 +108,7 @@ fn load_coff_module(
 fn load_analyze_coff(
     config: &ProjectConfig,
     object_base: &ObjectBase,
-) -> Result<(ObjInfo, Vec<Utf8NativePathBuf>, Option<FileReadInfo>, Option<FileReadInfo>)> {
+) -> Result<(ObjInfo, crate::analysis::x86::X86FunctionSizeData, Vec<Utf8NativePathBuf>, Option<FileReadInfo>, Option<FileReadInfo>)> {
     let (mut obj, image_base, object_path) = load_coff_module(&config.base, object_base)?;
     let mut dep = vec![object_path];
 
@@ -118,8 +119,9 @@ fn load_analyze_coff(
         apply_base_relocations(&mut obj, base)?;
     }
 
-    // Discover functions and rel32 relocations by scanning code
-    analyze_x86_functions(&mut obj)?;
+    // Discover functions and rel32 relocations by scanning code.
+    // Returns size data to be applied after RTTI runs.
+    let size_data = analyze_x86_functions(&mut obj)?;
 
     if let Some(map_path) = &config.base.map {
         let map_path = map_path.with_encoding();
@@ -188,7 +190,7 @@ fn load_analyze_coff(
         );
     }
 
-    Ok((obj, dep, splits_cache, symbols_cache))
+    Ok((obj, size_data, dep, splits_cache, symbols_cache))
 }
 
 fn write_if_changed(path: &Utf8NativePath, contents: &[u8]) -> Result<()> {
@@ -222,6 +224,11 @@ fn split_write_coff(
     }
 
     detect_rtti(&mut module.obj)?;
+
+    // Apply function sizes now that all symbol-discovery passes have run.
+    if let Some(size_data) = module.size_data.take() {
+        compute_x86_function_sizes(&mut module.obj, size_data)?;
+    }
 
     // Convert Function-kind symbols into per-function splits (mirrors DOL Tracker behaviour)
     if !config.symbols_known {
@@ -359,7 +366,7 @@ fn split(args: SplitArgs) -> Result<()> {
     let mut dep = DepFile::new(out_config_path.clone());
 
     let start = Instant::now();
-    let (obj, obj_dep, splits_cache, symbols_cache) =
+    let (obj, size_data, obj_dep, splits_cache, symbols_cache) =
         load_analyze_coff(&config, &object_base)
             .with_context(|| format!("While loading '{}'", config.base.file_name()))?;
     dep.extend(obj_dep);
@@ -384,6 +391,7 @@ fn split(args: SplitArgs) -> Result<()> {
     let start = Instant::now();
     let mut module = ModuleState {
         obj,
+        size_data: Some(size_data),
         config: &config.base,
         symbols_cache,
         splits_cache,

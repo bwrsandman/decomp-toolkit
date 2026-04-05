@@ -2,7 +2,7 @@ use std::collections::{BTreeMap, BTreeSet, VecDeque};
 
 use anyhow::Result;
 use flagset::Flags as _;
-use iced_x86::{Code, Decoder, DecoderOptions, FlowControl, Instruction, OpKind};
+use iced_x86::{Code, Decoder, DecoderOptions, FlowControl, Instruction, Mnemonic, OpKind};
 
 use crate::{
     analysis::cfa::SectionAddress,
@@ -11,6 +11,18 @@ use crate::{
         ObjSymbolFlags, ObjSymbolKind, SectionIndex, SymbolIndex,
     },
 };
+
+/// Data produced by [`analyze_x86_functions`] that is needed by the deferred
+/// size pass [`compute_x86_function_sizes`].  Keep opaque — callers just
+/// thread it through.
+pub struct X86FunctionSizeData {
+    /// fn_va → raw (uncapped) instruction-end VA from phase-1 disassembly.
+    fn_raw_ends: BTreeMap<u32, u32>,
+    /// fn_va → VAs of jump tables referenced by indirect JMPs in that function.
+    fn_tables: BTreeMap<u32, Vec<u32>>,
+    /// Snapshot of code sections (idx, base, data).
+    code_snap: Vec<(SectionIndex, u64, Vec<u8>)>,
+}
 
 /// Recursively disassemble all reachable code in `obj` starting from every
 /// known function entry point, discovering new entries via CALL targets and
@@ -25,7 +37,11 @@ use crate::{
 /// whose values point into `.text`. Candidates are accepted only if they were
 /// not already decoded as interior (non-entry) instruction addresses in phase 1,
 /// and if they decode as a valid instruction.
-pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<()> {
+///
+/// Returns [`X86FunctionSizeData`] that must be passed to
+/// [`compute_x86_function_sizes`] **after** all other symbol-discovery passes
+/// (e.g. RTTI) have run, so that size caps account for every function entry.
+pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
     // Seed worklist: PE entry point + any Function symbols already in symbols.txt.
     // `pending` is both the worklist and the dedup set, stored as a BTreeSet
     // so that pop_first() always processes the lowest address first.  This
@@ -87,6 +103,13 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<()> {
     // at addresses that are inside multi-byte instruction operands.
     let mut decoded_spans: BTreeMap<u32, u32> = BTreeMap::new();
 
+    // Uncapped function sizes: fn_va → raw instruction-end VA.
+    // Capping against the next function start is deferred to
+    // compute_x86_function_sizes, which runs after RTTI adds its own entries.
+    let mut fn_raw_ends: BTreeMap<u32, u32> = BTreeMap::new();
+    // Jump-table VAs per function for the deferred size pass.
+    let mut fn_tables: BTreeMap<u32, Vec<u32>> = BTreeMap::new();
+
     let mut fn_count = 0u32;
     let mut rel_count = 0u32;
     let mut data_scanned = false;
@@ -127,6 +150,9 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<()> {
             // Recursively disassemble the function body.
             let mut visited: BTreeSet<u32> = BTreeSet::new();
             let mut flow: VecDeque<u32> = VecDeque::new();
+            // VAs of jump tables referenced by indirect JMPs in this function.
+            // Used after the loop to extend the function's size over embedded tables.
+            let mut potential_tables: Vec<u32> = Vec::new();
             flow.push_back(fn_va);
 
             while let Some(pc) = flow.pop_front() {
@@ -259,7 +285,20 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<()> {
                                 }
                             }
                         }
-                        // Indirect JMP (switch dispatch) — can't follow statically.
+                        // Indirect JMP (switch dispatch): record any memory displacement
+                        // that points into the same code section as a potential jump table.
+                        // Both first-order (JMP [eax*4+table]) and second-order
+                        // (MOVZX eax,[idx_table+eax]; JMP [eax*4+target_table]) emit a
+                        // displacement here, so one pass covers both.
+                        if instr.flow_control() == FlowControl::IndirectBranch
+                            && instr.op0_kind() == OpKind::Memory
+                            && instr.memory_displacement64() != 0
+                        {
+                            let disp = instr.memory_displacement64() as u32;
+                            if find_code(disp).is_some() {
+                                potential_tables.push(disp);
+                            }
+                        }
                     }
 
                     FlowControl::Return | FlowControl::Exception | FlowControl::Interrupt => {
@@ -272,6 +311,19 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<()> {
                         flow.push_back(next_pc);
                     }
                 }
+            }
+
+            // Record the raw end and jump tables for the post-pass size computation.
+            let raw_end = visited
+                .iter()
+                .filter_map(|&pc| decoded_spans.get(&pc).copied())
+                .max()
+                .unwrap_or(fn_va);
+            if raw_end > fn_va {
+                fn_raw_ends.insert(fn_va, raw_end);
+            }
+            if !potential_tables.is_empty() {
+                fn_tables.insert(fn_va, potential_tables);
             }
         } else if !data_scanned {
             // Phase 2: scan non-code sections for 4-byte-aligned pointer slots
@@ -356,6 +408,114 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<()> {
     log::info!(
         "x86 analysis: {fn_count} functions discovered, {rel_count} rel32 relocations added"
     );
+    Ok(X86FunctionSizeData { fn_raw_ends, fn_tables, code_snap })
+}
+
+/// Compute and set `size` / `size_known` on all x86 function symbols.
+///
+/// Must be called **after** all symbol-discovery passes (including RTTI) have
+/// completed, so that size caps account for every function entry point.
+/// Pass in the [`X86FunctionSizeData`] returned by [`analyze_x86_functions`].
+pub fn compute_x86_function_sizes(obj: &mut ObjInfo, data: X86FunctionSizeData) -> Result<()> {
+    let X86FunctionSizeData { fn_raw_ends, fn_tables, code_snap } = data;
+
+    let find_code = |va: u32| -> Option<(SectionIndex, usize)> {
+        code_snap.iter().find_map(|(idx, base, data)| {
+            let off = (va as u64).checked_sub(*base)? as usize;
+            if off < data.len() { Some((*idx, off)) } else { None }
+        })
+    };
+    let snap_for_section = |sec_idx: SectionIndex| -> Option<(u64, &[u8])> {
+        code_snap
+            .iter()
+            .find(|(idx, _, _)| *idx == sec_idx)
+            .map(|(_, base, data)| (*base, data.as_slice()))
+    };
+
+    // Build sorted fn-entry lists per section (includes RTTI-added entries).
+    let mut fn_entries_by_sec: BTreeMap<SectionIndex, Vec<u32>> = BTreeMap::new();
+    for (_, sym) in obj.symbols.iter() {
+        if sym.kind == ObjSymbolKind::Function {
+            if let Some(sec) = sym.section {
+                fn_entries_by_sec.entry(sec).or_default().push(sym.address as u32);
+            }
+        }
+    }
+    for entries in fn_entries_by_sec.values_mut() {
+        entries.sort_unstable();
+    }
+
+    let mut size_updates: Vec<(SymbolIndex, ObjSymbol)> = Vec::new();
+
+    for (&fn_va, &raw_end) in &fn_raw_ends {
+        let (fn_sec_idx, _) = match find_code(fn_va) {
+            Some(v) => v,
+            None => continue,
+        };
+        let (sec_base, sec_data) = match snap_for_section(fn_sec_idx) {
+            Some(v) => v,
+            None => continue,
+        };
+        let sec_end = sec_base as u32 + sec_data.len() as u32;
+
+        // Cap at the next known function entry (after RTTI).
+        let next_fn = fn_entries_by_sec
+            .get(&fn_sec_idx)
+            .and_then(|entries| {
+                let pos = entries.partition_point(|&e| e <= fn_va);
+                entries.get(pos).copied()
+            })
+            .unwrap_or(sec_end);
+        let cap = next_fn.min(sec_end);
+
+        // 1. Skip NOP / INT3 padding.
+        let mut fn_end = raw_end.min(cap);
+        while fn_end < cap {
+            let off = (fn_end as u64 - sec_base) as usize;
+            let mut dec = Decoder::with_ip(32, &sec_data[off..], fn_end as u64, DecoderOptions::NONE);
+            let mut pad = Instruction::default();
+            dec.decode_out(&mut pad);
+            if pad.is_invalid() { break; }
+            if pad.mnemonic() == Mnemonic::Nop || pad.code() == Code::Int3 {
+                fn_end += pad.len() as u32;
+            } else {
+                break;
+            }
+        }
+        fn_end = fn_end.min(cap);
+
+        // 2. Extend over embedded jump tables (capped).
+        if let Some(tables) = fn_tables.get(&fn_va) {
+            for &table_va in tables {
+                if table_va < raw_end || table_va >= cap { continue; }
+                let mut t = table_va;
+                while t + 4 <= cap {
+                    let off = (t as u64 - sec_base) as usize;
+                    let entry = u32::from_le_bytes(sec_data[off..off + 4].try_into().unwrap());
+                    if find_code(entry).is_some() { t += 4; } else { break; }
+                }
+                if t > fn_end { fn_end = t; }
+            }
+        }
+        fn_end = fn_end.min(cap);
+
+        let fn_size = (fn_end - fn_va) as u64;
+        if fn_size == 0 { continue; }
+
+        if let Some((sym_idx, sym)) =
+            obj.symbols.kind_at_section_address(fn_sec_idx, fn_va, ObjSymbolKind::Function)?
+        {
+            if !sym.size_known {
+                size_updates.push((sym_idx, ObjSymbol { size: fn_size, size_known: true, ..sym.clone() }));
+            }
+        }
+    }
+
+    let count = size_updates.len();
+    for (idx, sym) in size_updates {
+        obj.symbols.replace(idx, sym)?;
+    }
+    log::debug!("x86 analysis: set sizes on {count} function symbol(s)");
     Ok(())
 }
 

@@ -426,6 +426,11 @@ pub fn detect_rtti(obj: &mut ObjInfo) -> Result<()> {
             Some((idx, true, existing_sym)) => {
                 obj.symbols.replace(idx, ObjSymbol {
                     name: sym_name.clone(),
+                    // Clear size_known: detect_rtti may add new function symbols
+                    // after x86 analysis, invalidating the previously computed
+                    // size caps.  The split system derives extents from entry gaps.
+                    size: 0,
+                    size_known: false,
                     ..existing_sym
                 })?;
                 vfunc_named += 1;
