@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: e8be825f96e2fe0118c5750c598612c2fa35dd39
+  signature: Vf+L/+z/i/9F/wj/V/+L/33/DP87//j/dv89/4v/Tf8Q/1P/A//B/1b/if9F/wz/i/9d/wj/i/91/wz/O//3/3f/Ev9T/1b///9V/xT/Wf+F/8D/Wf9+/wL/i//e/wP/df8Q/+v/6v///3X/EP9X/1P/6P8AAAAAAAAAACv/ff8Q/4P/xP8M/zv/ff8I/3f/z/9e/1v/X/9d/8P/
+  symbols:
+  - kind: Function
+    name: _shortsort
+    size: 78
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _swap
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 58
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: c952c5c3e1c4b63523d15310b15112106680c474
+  signature: of8AAAAAAAAAAMP/
+  symbols:
+  - kind: Function
+    name: ?_query_new_handler@@YAP6AHI@ZXZ
+    size: 6
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_pnhHeap@@3P6AHI@ZA
+    size: 0
+    flags: 1
+    section: .bss
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

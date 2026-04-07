@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 92765b7bd74d5617ca4ad8ee3ed9fa6461450c56
+  signature: Vv+L//H/i/9G/0T/g//g/wn/PP8B/3X/G/+L/0b/TP+F/8D/dP8J/4v/Tv8M////Mf///9D/6/8K/4v/Rv8M////MP/o/wAAAAAAAAAAWf+D/2b/PP8A/4P/Zv9E//b/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?_Tidy@strstreambuf@std@@IAEXXZ
+    size: 50
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 35
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

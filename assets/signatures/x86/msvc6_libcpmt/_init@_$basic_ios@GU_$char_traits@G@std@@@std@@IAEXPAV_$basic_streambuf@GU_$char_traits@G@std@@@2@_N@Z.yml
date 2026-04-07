@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 432340a443b34538ded3d17b5c411881fb74c2ef
+  signature: i/9E/yT/BP9W/4v/8f9q/yD/g/9m/yz/AP+J/0b/KP/o/wAAAAAAAAAAWf9m/4n/Rv8w/4v/zv/o/wAAAAAAAAAAg/9+/yj/AP91/xH/i/9G/wT/av8A/wz/BP+L/87/DP8E/1D/6P8AAAAAAAAAAID/fP8k/wz/AP90/wf/i//O/+j/AAAAAAAAAABe/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?init@?$basic_ios@GU?$char_traits@G@std@@@std@@IAEXPAV?$basic_streambuf@GU?$char_traits@G@std@@@2@_N@Z
+    size: 74
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _btowc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Init@ios_base@std@@IAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?clear@ios_base@std@@QAEXH_N@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Addstd@ios_base@std@@IAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 29
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 52
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 66
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

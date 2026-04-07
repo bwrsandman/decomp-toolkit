@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: c69d3b4ef1d82aa428c0d35ce1ac4eda2f0e4c40
+  signature: i/9E/yT/Cv+5//j/f/8A/wD/I//B/2b/Pf/w/3//df8R//f/RP8k/wj//////wf/AP91/wz/g/98/yT/BP8A/3X/Bf9m/zv/wf91/wT/av8B/1j/w/8z/8D/w/8=
+  symbols:
+  - kind: Function
+    name: __isnan
+    size: 46
+    flags: 1
+    section: .text
+  relocations: []

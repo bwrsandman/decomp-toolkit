@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 3234cf360bd333b41050f642dc87ea78f1721cf9
+  signature: Vv+L/3T/JP8I/4v/Rv8M/6j/g/8P/4T/0P8A/wD/AP+o/0D/D/+F/8j/AP8A/wD/qP8C/3T/Cv8M/yD/if9G/wz/6f+6/wD/AP8A/wz/Af9m/6n/DP8B/4n/Rv8M/3X/Cf9W/+j/AAAAAAAAAABZ/+v/Bf+L/0b/CP+J/wb///92/xj///92/wj///92/xD/6P8AAAAAAAAAAIP/xP8M/4n/Rv8E/4X/wP90/3j/g//4/wH/dP9z/4P/+P///3T/bv+L/1b/DP/2/8L/gv91/zf/i/9O/xD/V/+D//n///90/xf/i//5/8H///8F/4P/4f8f/4v/PP+9/wAAAAAAAAAAjf8M/8n/jf88/4//6/8F/7//AAAAAAAAAACK/0//BP9f/4D/4f+C/4D/+f+C/3X/Bv+A/87/IP+J/1b/DP+B/37/GP8A/wL/AP8A/3X/FP+L/07/DP/2/8H/CP90/wz/9v/F/wT/df8H/8f/Rv8Y/wD/EP8A/wD/i/8O/4P/wP/+/4n/Rv8E/w//t/8B/4P/wf8C/4n/Dv9e/8P/9//Y/xv/wP+D/+D/EP+D/8D/EP8J/0b/DP+D/2b/BP8A/7j//////wD/AP9e/8P/
+  symbols:
+  - kind: Function
+    name: __filwbuf
+    size: 231
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getbuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __read
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___badioinfo
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 51
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 125
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 138
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

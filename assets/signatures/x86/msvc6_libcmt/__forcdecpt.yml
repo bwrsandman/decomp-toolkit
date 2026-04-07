@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 4fa6692856ae19702b79abca53626f21e9ac3bfb
+  signature: Vv+L/3T/JP8I/w//vv8G/1D/6P8AAAAAAAAAAIP/+P9l/1n/dP8s/0b/g/89/wAAAAAAAAAAAf9+/w//D/++/wb/av8E/1D/6P8AAAAAAAAAAFn/Wf/r/w//D/++/wb/i/8N/wAAAAAAAAAAiv8E/0H/g//g/wT/hf/A/3X/1P+K/w3/AAAAAAAAAACK/wb/iP8O/0b/iv8O/4j/Bv+K/8H/iv8O/0b/hP/J/3X/8/9e/8P/
+  symbols:
+  - kind: Function
+    name: __forcdecpt
+    size: 90
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _tolower
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __isctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___decimal_point
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 23
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 37
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 50
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 66
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

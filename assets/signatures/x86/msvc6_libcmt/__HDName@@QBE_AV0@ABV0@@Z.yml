@@ -1,0 +1,63 @@
+- symbol: 0
+  hash: 8c1094003d5dee9b35d2ae4a1726164f7789cdb3
+  signature: Vf+L/+z/Uf9R/1b/Uf+N/03/+P/o/wAAAAAAAAAAjf9N//j/6P8AAAAAAAAAAIX/wP90/w3///91/wz/jf9N//j/6P8AAAAAAAAAAOv/K/+L/3X/DP+L/87/6P8AAAAAAAAAAIX/wP90/xT/i/9G/wT/jf9N//j/wf/g/xz/wf/4/xz/UP/o/wAAAAAAAAAA6/8J/1b/jf9N//j/6P8AAAAAAAAAAIv/Tf8I/43/Rf/4/1D/6P8AAAAAAAAAAIv/Rf8I/17/yf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ??HDName@@QBE?AV0@ABV0@@Z
+    size: 103
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?isEmpty@DName@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??4DName@@QAEAAV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??YDName@@QAEAAV0@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??YDName@@QAEAAV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 19
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 34
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 46
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 68
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 79
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 91
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

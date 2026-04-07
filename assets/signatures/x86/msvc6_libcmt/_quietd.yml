@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 2380f1b6efe985eff5e23f68c8cc749a3b9e34e2
+  signature: gP9M/yT/Cv8I/93/RP8k/wT/w/8=
+  symbols:
+  - kind: Function
+    name: _quietd
+    size: 10
+    flags: 2
+    section: .text
+  relocations: []

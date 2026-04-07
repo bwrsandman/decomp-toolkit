@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: a582007406a26201045d5275d6c521acd4154f8c
+  signature: Vf+L/+z/Uf9W/1f/av8Q/4P/z////+j/AAAAAAAAAACD/33/CP8A/1n/dP9A////df8I/+j/AAAAAAAAAACL//D/Wf+F//b/dP8x////df8I/+j/AAAAAAAAAABq/wH/jf9F//z///92/wT/UP/o/wAAAAAAAAAAg//E/xD/O//H/3X/Cv/o/wAAAAAAAAAAg/84/wT/df8D/4v/ff/8/4P/Jv8A/4P/Zv8E/wD/av8Q/+j/AAAAAAAAAABZ/4v/x/9f/17/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __pclose
+    size: 101
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _idtab
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _fclose
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __cwait
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 42
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 56
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 68
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 90
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

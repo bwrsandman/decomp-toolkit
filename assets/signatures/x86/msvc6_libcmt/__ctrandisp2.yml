@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 80de2d8d324ae24e2e72f47f13727961d4f161fe
+  signature: Vf+L/+z/gf/E/zD//f//////U////3X/DP///3X/CP/o/wAAAAAAAAAAg//E/wj///91/xT///91/wAAAAAAAAAAAP8A/4P/xP8I/5v/2f+9/1z/////////gP+N/zj//f//////Av/G/4X/cf////////8B/+j/AAAAAAAAAADo/wAAAAAAAAAAW//J/8P/
+  symbols:
+  - kind: Function
+    name: __ctrandisp2
+    size: 72
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __fload
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __trandisp2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: fn_000000C3
+    size: 0
+    flags: 0
+    section: .text
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: 0
+  - offset: 29
+    kind: x86_rel32
+    symbol: 1
+    addend: 0
+  - offset: 60
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 3
+    addend: 0

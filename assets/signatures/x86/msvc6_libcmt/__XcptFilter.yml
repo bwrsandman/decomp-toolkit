@@ -1,0 +1,63 @@
+- symbol: 0
+  hash: 02ed3685c0211cf2c865348972845c8df155516b
+  signature: Vf+L/+z/Uf9T/1b/6P8AAAAAAAAAAIv/8P///3b/UP///3X/CP/o/wAAAAAAAAAAWf+F/8D/Wf8P/4T/D/8B/wD/AP+L/1j/CP+F/9v/if9d/wj/D/+E/wH/Af8A/wD/g//7/wX/df8M/4P/YP8I/wD/av8B/1j/6f/5/wD/AP8A/4P/+/8B/w//hP/i/wD/AP8A/4v/Tv9U/4n/Tf/8/4v/Tf8M/4n/Tv9U/4v/SP8E/4P/+f8I/w//hf+8/wD/AP8A/4v/Ff8AAAAAAAAAAIv/Df8AAAAAAAAAAAP/yv9X/zv/0f99/yf/jf8M/1L/wf/h/wL/i/9+/1D/g//B/wz/g/9k/zn//P8A/4v/Pf8AAAAAAAAAAIv/Hf8AAAAAAAAAAEL/A//f/zv/0/98/+L/i/9d/wj/i/8A/4v/fv9Y/z3/jv8A/wD/wP91/wn/x/9G/1j/g/8A/wD/AP/r/17/Pf+Q/wD/AP/A/3X/Cf/H/0b/WP+B/wD/AP8A/+v/Tv89/5H/AP8A/8D/df8J/8f/Rv9Y/4T/AP8A/wD/6/8+/z3/k/8A/wD/wP91/wn/x/9G/1j/hf8A/wD/AP/r/y7/Pf+N/wD/AP/A/3X/Cf/H/0b/WP+C/wD/AP8A/+v/Hv89/4//AP8A/8D/df8J/8f/Rv9Y/4b/AP8A/wD/6/8O/z3/kv8A/wD/wP91/wf/x/9G/1j/iv8A/wD/AP///3b/WP9q/wj////T/1n/if9+/1j/Wf9f/+v/CP+D/2D/CP8A/1H////T/1n/i/9F//z/if9G/1T/g//I////6/8J////df8M////Ff8AAAAAAAAAAF7/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __XcptFilter
+    size: 318
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _xcptlookup
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __First_FPE_Indx
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __Num_FPE
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: __imp__UnhandledExceptionFilter@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 100
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 106
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 136
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 142
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 310
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

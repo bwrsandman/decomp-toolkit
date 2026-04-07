@@ -1,0 +1,148 @@
+- symbol: 0
+  hash: ee8a2ae5a62cd2b4b6ace6e5421f6f0d8b3950ab
+  signature: Vf+L/+z/g//s/2D/i/9F/wj/gP9l////AP9T/1b/V/8z////O//H/4n/ff/4/3T/Ff+D//j/Af90/xD/fv81/4P/+P8D/37/Cf+D//j/BP91/yv/xv9F////Af+L/0X/EP+J/0X/9P9m/4v/CP9m/zv/z/90/zD/QP9A/2b/Of84/3X/+f9m/zn/eP8C/43/SP8C/3T/6P9m/8f/AP8g/wD/i//B/+v/3//o/wAAAAAAAAAAx/8A/xb/AP8A/wD/6P8AAAAAAAAAAIn/OP/p/yj/Af8A/wD/av9E/43/Rf+g/17/Vv9X/1D/6P8AAAAAAAAAAIn/df+g/4v/Nf8AAAAAAAAAAIP/xP8M/zv/9/90/yT/jf9O////i//R/4v/wf/B//r/Bf+D/+D/H/+L/xT/lf8AAAAAAAAAAI3/BP/A/4D/fP+C/wT/AP91/wb/Tv9J/zv/9/91/9//jf9E/7b/BP9q/wH/Zv+J/0X/0v8P/7f/wP9Q/+j/AAAAAAAAAACJ/0X/1P9Z/4n/MP+L/0X/1P9Z/zP/2/87//f/jf9I/wT/jf9U/zD/BP9+/zr/i//7/4v/w//B////Bf+D/+D/H/+L/zz/vf8AAAAAAAAAAI3/BP/A/43/PP+H/4r/R/8E/6j/EP91/wj/iP8B/4v/B/+J/wL/6/8G/4D/If8A/4P/Cv///0P/Qf+D/8L/BP87/97/fP/L/4v/Rf/U/zP///+A/33///8A/3T/Lf+N/0j/BP8z/9L/jf9E/zD/BP+D//7/A/99/wT/i//e/+v/A/9q/wP/W/87/9P/ff8N/4D/If8A/4P/CP///0L/Qf+D/8D/BP/r/+P/x/9F//j/CP8A/wD/AP/o/wAAAAAAAAAAif84/+j/AAAAAAAAAACJ/zj/jf9F/+T/UP+N/0X/oP9Q/4v/Rf/4/1f/gP/M/wT///91/xT/UP9q/wH/V/9X////df/0////df8M////Ff8AAAAAAAAAAIv/8P///xX/AAAAAAAAAAD//3X/1P+L/9j/6P8AAAAAAAAAADv/9/9Z/3X/DP9T/+j/AAAAAAAAAABZ/4P/yP///+v/VP+D/33/CP8C/3X/Bv9X/+j/AAAAAAAAAAA5/33/CP+L/zX/AAAAAAAAAAB1/x//av//////df/k////Ff8AAAAAAAAAAI3/Rf8Q/1D///91/+T///8V/wAAAAAAAAAA//91/+T////W/+v/Fv+D/33/CP8E/3X/Cv///3X/5P///9b/if99/xD/6/8G/4v/Rf/k/4n/Rf8Q////df/o////1v+L/0X/EP9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __wdospawn
+    size: 498
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memset
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _calloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__CreateProcessW@40
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__CloseHandle@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__WaitForSingleObject@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetExitCodeProcess@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 86
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 97
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 118
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 127
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 154
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 189
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 229
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 326
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 333
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 370
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 378
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 388
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 399
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 417
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 426
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 439
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 452
+    kind: x86_abs32
+    symbol: 14
+    addend: 0

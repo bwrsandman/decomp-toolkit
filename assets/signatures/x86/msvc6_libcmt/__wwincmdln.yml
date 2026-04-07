@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: df6c7693c9a205d1bd130bdb2c154f34e9802f09
+  signature: of8AAAAAAAAAAGr/Iv9a/2b/i/8I/2b/O//K/3X/GP9A/0D/Zv+L/wj/Zv87/8r/dP8F/2b/hf/J/3X/8f9m/zn/EP91/xL/QP9A/+v/Dv9m/4P/+f8g/3b/CP9A/0D/Zv+D/zj/IP93//j/Zv+L/wj/Zv+F/8n/dP8G/2b/g//5/yD/dv/g/8P/
+  symbols:
+  - kind: Function
+    name: __wwincmdln
+    size: 69
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __wcmdln
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

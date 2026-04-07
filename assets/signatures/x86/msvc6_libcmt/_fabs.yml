@@ -1,0 +1,67 @@
+- symbol: 0
+  hash: 175b5e14fb033883dea32f6763f62d1ab056ad86
+  signature: Vf+L/+z/Uf9R/1b/vv//////AP8A/1f/Vv9o/z//E/8A/wD/6P8AAAAAAAAAAIv/+P+L/0X/Dv9m/yX/8P9//1n/Zv89//D/f/9Z/3X/bP/d/0X/CP9R/1H/3f8c/yT/6P8AAAAAAAAAAFn/SP9Z/3T/TP9I/3T/Of/d/0X/CP9I/1f/dP8h/9z/Bf8AAAAAAAAAAFH/Uf/d/xz/JP/d/0X/CP9R/1H/3f8c/yT/av8V/2r/CP/o/wAAAAAAAAAAg//E/xz/6/9M/1H/Uf/d/xz/JP9q/xX/6P8AAAAAAAAAAIP/xP8Q/+v/O/9W/1f/6P8AAAAAAAAAAN3/Rf8I/1n/2f/g/1n/6/8r/1b/V//o/wAAAAAAAAAA3f9F/wj/Wf9Z/+v/Hf+L/0X/DP9W/yX/////////f/9X/4n/Rf/8/4v/Rf8I/4n/Rf/4/+j/AAAAAAAAAADd/0X/+P9Z/1n/X/9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: _fabs
+    size: 181
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __ctrlfp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __sptype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __real@8@3fff8000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __except1
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __handle_qnan1
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 49
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 70
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 92
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 109
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 121
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 137
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 168
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

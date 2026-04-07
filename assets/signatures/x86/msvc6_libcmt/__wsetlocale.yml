@@ -1,0 +1,101 @@
+- symbol: 0
+  hash: 5c7a29f6e5a730e05fd6aac47f6a5c6923256571
+  signature: U/9W/1f/M////zn/fP8k/xT/dP8w////dP8k/xT/6P8AAAAAAAAAAIv/8P9G/1b/6P8AAAAAAAAAAIv/+P9Z/4X///9Z/3T/fv9W////dP8k/xj/V//o/wAAAAAAAAAAg//E/wz/g//4////df8D/1f/6/9i/1f///90/yT/FP/o/wAAAAAAAAAAV/+L/9j/6P8AAAAAAAAAAIP/xP8M/4X/2/90/0////81/wAAAAAAAAAA6P8AAAAAAAAAAGr/AP9T/2r/AP/o/wAAAAAAAAAAi//w/4P/xP8Q/4P//v///3T/MP9G/43/BP82/1D/6P8AAAAAAAAAAIX/wP9Z/6P/AAAAAAAAAAB0/xz/Vv9T/1D/6P8AAAAAAAAAAIP/xP8M/4P/+P///3X/EP///zX/AAAAAAAAAADo/wAAAAAAAAAAWf8z/8D/6/8F/6H/AAAAAAAAAABf/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: __wsetlocale
+    size: 176
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcstombs
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _setlocale
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _?outwlocale@?1??_wsetlocale@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _mbstowcs
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 25
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 44
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 86
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 91
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 101
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 121
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 129
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 139
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 153
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 158
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 168
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: 167f037d56439593e5a7b5ab055499717cdd4305
+  signature: Vf+L/+z/Uf+L/03/CP+B//n///8A/wD/AP92/17/Zv+D/2X//P8A/1f/M//A/43/ff/+/2b/q/+L/8H/iP9N/wv/wf/o/wj/g/89/wAAAAAAAAAAAP+I/0X/Cv9f/3X/BP8z/8D/yf/D/2r/Af+N/0X//P///zX/AAAAAAAAAAD//zX/AAAAAAAAAABQ/43/Rf8K/2r/Av9Q/2r/Af/o/wAAAAAAAAAAg//E/xz/hf/A/3T/1v9m/4P/ff/+/wD/df/P//b/Rf/8/wT/dP/J/2r/Af9Y/8n/w/+D/z3/AAAAAAAAAAAB/37/DP9q/wT/Uf/o/wAAAAAAAAAAWf9Z/8n/w/+h/wAAAAAAAAAAiv8E/0j/g//g/wT/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __ismbcdigit
+    size: 143
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___ismbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mblcid
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtGetStringTypeA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __isctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 38
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 60
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 66
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 80
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 111
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 122
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 131
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

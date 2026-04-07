@@ -1,0 +1,57 @@
+- symbol: 0
+  hash: 3fed50cfebb35a7e779425aeefb67c5a9f03e4fc
+  signature: //90/yT/BP/o/wAAAAAAAAAAg//4////i/9E/yT/DP9Z/3X/BP+D/wj////D////AP/D/w==
+  symbols:
+  - kind: Function
+    name: _write_char
+    size: 26
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __putch_lk
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 9d35c9fe9dbd85898ed212b4f9896220e91cbdca
+  signature: //90/yT/CP///3T/JP8I/+j/AAAAAAAAAABZ/2b/Pf//////i/9E/yT/EP9Z/3X/BP+D/wj////D////AP/D/w==
+  symbols:
+  - kind: Function
+    name: _write_char
+    size: 32
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __putwc_lk
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 016b6cb073407062ef2c9d2bd69bc8c0354eeb90
+  signature: Vf+L/+z/i/9N/wz///9J/wT/eP8O/4v/Ef+K/0X/CP+I/wL///8B/w//tv/A/+v/C/9R////df8I/+j/AAAAAAAAAABZ/1n/g//4////i/9F/xD/df8F/4P/CP///13/w////wD/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _write_char
+    size: 53
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __flsbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 30
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

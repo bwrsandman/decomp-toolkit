@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: b48bd14659e4659d826d2751c6864194f78d29e7
+  signature: i/9E/yT/BP/H/0D/UP8AAAAAAAAAAMf/QP8U/wH/AP8A/wD/w/8=
+  symbols:
+  - kind: Function
+    name: __initptd
+    size: 19
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __XcptActTab
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

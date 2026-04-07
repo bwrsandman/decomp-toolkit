@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 67a9f878ec4d7f73b6b6a5d8529dfd489ab6f48d
+  signature: i/9E/yT/BP9W/1f/i/8w/4v/eP8E/4v/zv8D//b/if8w/43/NP8//8H/6f8f/wv/8f+L/0j/CP+L/9f/if9w/wT/wf/q/x//0f/h/wv/yv9f/4n/SP8I/17/w/8=
+  symbols:
+  - kind: Function
+    name: ___shl_12
+    size: 46
+    flags: 1
+    section: .text
+  relocations: []

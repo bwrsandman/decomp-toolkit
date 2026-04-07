@@ -1,0 +1,32 @@
+- symbol: 0
+  hash: 57fd985d65069c63fa76b1bfcf337af9526f45bd
+  signature: Vf+L/+z/Uf9R/4r/Tf8I//b/wf8B/3T/Cv/b/y3/AAAAAAAAAADb/13/CP+b//b/wf8I/3T/EP+b/9//4P/b/y3/AAAAAAAAAADd/13/+P+b/5v/3//g//b/wf8Q/3T/Cv/b/y3/AAAAAAAAAADd/13/+P+b//b/wf8E/3T/Cf/Z/+7/2f/o/97/8f/d/9j/m//2/8H/IP90/wb/2f/r/93/Xf/4/5v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __set_statfp
+    size: 86
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _over
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _under
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 51
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 0f49c8207dc723499e7b95e02b107defa1e27690
+  signature: Vv/o/wAAAAAAAAAAi//w/4P/fv8k/wD/df8Z/2j/hv8A/wD/AP/o/wAAAAAAAAAAhf/A/1n/if9G/yT/df8H/77/AAAAAAAAAADr/wP/i/92/yT/i/9M/yT/CP+h/wAAAAAAAAAAhf/J/3z/Bv87/8j/ff8C/4v/wf///zT/hf8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/i//G/1n/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: _strerror
+    size: 80
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _?errmsg_backup@?1??strerror@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: __sys_nerr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __sys_errlist
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 33
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 47
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 64
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 70
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

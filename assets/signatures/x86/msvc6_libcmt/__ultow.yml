@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 603e389b2e401f4cfcdd764ed3eee87322b0d3dd
+  signature: Vf+L/+z/g//s/yj///91/xD/jf9F/9j/UP///3X/CP/o/wAAAAAAAAAAg//E/wz/jf9F/9j/av8o////df8M/2r///9Q/2r/Af9q/wD///8V/wAAAAAAAAAAi/9F/wz/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __ultow
+    size: 50
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __ultoa
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__MultiByteToWideChar@24
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 41
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

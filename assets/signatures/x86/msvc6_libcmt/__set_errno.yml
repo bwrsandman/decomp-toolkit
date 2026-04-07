@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: 8c68a78bdac99324fe9ec52d32fd46b26084e6f3
+  signature: i/9E/yT/BP+D//j/Af90/xP/fv8c/4P/+P8D/3//F//o/wAAAAAAAAAAx/8A/yL/AP8A/wD/w//o/wAAAAAAAAAAx/8A/yH/AP8A/wD/w/8=
+  symbols:
+  - kind: Function
+    name: __set_errno
+    size: 40
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 29
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

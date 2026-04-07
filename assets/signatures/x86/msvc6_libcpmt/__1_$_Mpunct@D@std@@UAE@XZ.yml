@@ -1,0 +1,49 @@
+- symbol: 0
+  hash: 80d17a76875ea393f8947a6e31b7528497e59659
+  signature: Vv+L//H///92/wj/x/8G/wAAAAAAAAAA6P8AAAAAAAAAAP//dv8Q/+j/AAAAAAAAAAD//3b/FP/o/wAAAAAAAAAA//92/xj/6P8AAAAAAAAAAIP/xP8Q/8f/Bv8AAAAAAAAAAF7/w/8=
+  symbols:
+  - kind: Function
+    name: ??1?$_Mpunct@D@std@@UAE@XZ
+    size: 52
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$_Mpunct@D@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7facet@locale@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 13
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 29
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 46
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

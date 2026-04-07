@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 04b8b3168c96b6349b0b246dbd9ae55a9d6dd48f
+  signature: i/9M/yT/BP8z/8D/O/9M/yT/CP90/xL/i//Q/8H/6v8Y/8H/4P8I/wv/0P8P/77/Af8D/8L/Qf/r/+j/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?do_hash@?$collate@D@std@@MBEJPBD0@Z
+    size: 33
+    flags: 1
+    section: .text
+  relocations: []

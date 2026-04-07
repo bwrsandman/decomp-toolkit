@@ -1,0 +1,58 @@
+- symbol: 0
+  hash: 864f8f7b973f3a12d04cb026dbc59852625bf2ee
+  signature: Uf9T/1X/Vv9X/4v/fP8k/xj/g/89/wAAAAAAAAAAAf9+/w//D/+2/wf/av8I/1D/6P8AAAAAAAAAAFn/Wf/r/w//D/+2/wf/i/8N/wAAAAAAAAAAiv8E/0H/g//g/wj/hf/A/3T/A/9H/+v/0v8P/7b/N/9H/4P//v8t/4n/dP8k/xD/dP8F/4P//v8r/3X/BP8P/7b/N/9H/zP/2/8z/+3/g/89/wAAAAAAAAAAAf9+/wz/av8E/1b/6P8AAAAAAAAAAFn/Wf/r/wv/of8AAAAAAAAAAIr/BP9w/4P/4P8E/4X/wP90/yn/jf9G/9D/av8A/5n/i//w/2r/Cv9V/4n/dP8k/yT/U/+L//L/6P8AAAAAAAAAAIv/TP8k/xj/A//I/xP/8v+L/9n/i//u/w//tv83/0f/6/+z/4P/fP8k/xD/Lf+L/8P/df8L//f/2P+L/9X/g//S/wD/9//a/+v/Av+L/9X/X/9e/13/W/9Z/8P/
+  symbols:
+  - kind: Function
+    name: __atoi64
+    size: 186
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __isctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __allmul
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 25
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 38
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 83
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 94
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 103
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 136
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

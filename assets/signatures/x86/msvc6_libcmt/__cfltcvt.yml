@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 4da016887fe1ceaf092007152317b409ed06ff90
+  signature: Vf+L/+z/g/99/xD/Zf90/zL/g/99/xD/Rf90/yz/g/99/xD/Zv91/xP///91/xT///91/wz///91/wj/6P8AAAAAAAAAAIP/xP8M/13/w////3X/GP///3X/FP///3X/DP///3X/CP/o/wAAAAAAAAAA6/8R////df8Y////df8U////df8M////df8I/+j/AAAAAAAAAACD/8T/EP9d/8P/
+  symbols:
+  - kind: Function
+    name: __cfltcvt
+    size: 81
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __cftof
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __cftog
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __cftoe
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 31
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 53
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 72
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

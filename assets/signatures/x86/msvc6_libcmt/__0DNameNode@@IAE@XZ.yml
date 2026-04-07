@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 6e56630a9f64ad265e8bca82f69429e158752acb
+  signature: i//B/4P/YP8E/wD/x/8A/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ??0DNameNode@@IAE@XZ
+    size: 13
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7DNameNode@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

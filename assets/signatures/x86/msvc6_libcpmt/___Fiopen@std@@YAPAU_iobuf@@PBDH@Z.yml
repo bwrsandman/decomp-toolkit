@@ -1,0 +1,63 @@
+- symbol: 0
+  hash: 3e2be779e9a0c7b57e2ca8667bfe249d1867a481
+  signature: of8AAAAAAAAAAFb/i/90/yT/DP+D/2T/JP8M//v/g//m/wT/M//S/4X/wP9X/3T/Fv+5/wAAAAAAAAAAO/9E/yT/EP90/wv/i/9B/wT/g//B/wT/Qv+F/8D/df/v/4v/wv/B/+D/Av+D/7j/AAAAAAAAAAAA/3T/M////7D/AAAAAAAAAAD//3T/JP8Q/+j/AAAAAAAAAACL//j/Wf+F////Wf90/xz/hf/2/3T/Hf9q/wL/av8A/1f/6P8AAAAAAAAAAIP/xP8M/4X/wP90/wz/V//o/wAAAAAAAAAAWf8z/8D/X/9e/8P/i//H/+v/+f8=
+  symbols:
+  - kind: Function
+    name: ?__Fiopen@std@@YAPAU_iobuf@@PBDH@Z
+    size: 121
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _?valid@?1??__Fiopen@std@@YAPAU_iobuf@@PBDH@Z@4QBHB
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: _?mods@?1??__Fiopen@std@@YAPAU_iobuf@@PBDH@Z@4PAPBDA
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Function
+    name: _fopen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fseek
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fclose
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 54
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 63
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 72
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 94
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 107
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

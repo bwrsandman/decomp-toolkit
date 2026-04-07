@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: d60648353fc6e1a4f5471c34df623f6da65dbfaf
+  signature: x/8B/wAAAAAAAAAAg//B/zT/6f8AAAAAAAAAAA==
+  symbols:
+  - kind: Function
+    name: ??1?$basic_streambuf@GU?$char_traits@G@std@@@std@@UAE@XZ
+    size: 14
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$basic_streambuf@GU?$char_traits@G@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??1locale@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 10
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

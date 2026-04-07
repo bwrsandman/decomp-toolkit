@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 8df4d9f2f2e8603951a39a2c7638186e7383b241
+  signature: Vf+L/+z/g//s/xj/i/9R/yD/U/9W/1f/i/8C/zP///87/8f/dP8I/zn/Qf88/3P/A/+J/0H/PP+K/13/FP/2/8P/Af8P/4T/lf8A/wD/AP+L/0H/HP+L/zD/O//3/w//hP+I/wD/AP8A/4P/ff8Q/wL/df8N/4v/Qf8M/4v/Uf88/yv/EP8B/1X/DP/r/yH/g/99/xD/Af91/wz/9v/D/wL/df8S/4v/Qf8M/4v/1v/r/+f/Of99/xD/df8G/4P/ff8M////df8E/4P/Tf8M////Of99/wz/D/+M/6r/AP8A/wD/i/9B/wz/i/9R/zz/i/8A/yv/0P85/1X/DP8P/4//l/8A/wD/AP+L/1H/LP8r/8b/A/9F/wz/Kf8C/4v/Uf8c/wH/Av/2/8P/Av8P/4T/g/8A/wD/AP+L/1H/IP+L/zr/hf///3T/ev+L/0H/HP+L/zD/i/9B/zD/i/8A/4n/Mv+L/0n/MP8D/8f/K//G/4n/Af/r/2P/9v/D/wL/dP9a/4v/Ev87/9f/dP9U/4P/ff8Q/wL/df8N/4v/Qf8M/4v/cf88/yv/MP8B/3X/DP/r/xz/g/99/xD/Af91/wf/i/9B/wz/i//y/+v/7P85/33/EP91/wb/g/99/wz///91/wT/g/9N/wz///85/33/DP98/yD/i/9B/wz/i/9x/zz/i/8A/yv/8P85/3X/DP9//xH/K//C/4v/Uf8w/wP/Rf8M/yn/Av+L/0n/IP8B/wH/6/8E/4P/Tf8M//////91/wz/jf9N/+j/6P8AAAAAAAAAAIv/8P+L/0X/CP9q/wb/i//4/1n/8/+l/1//Xv9b/8n/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: ?seekoff@strstreambuf@std@@MAE?AV?$fpos@H@2@JW4seekdir@ios_base@2@H@Z
+    size: 318
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0?$fpos@H@std@@QAE@J@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 295
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

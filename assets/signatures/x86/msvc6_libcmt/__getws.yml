@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: 77b3e13926368ab6fef748921836528e1dd6f90a
+  signature: U/+L/1z/JP8I/1b/vv8AAAAAAAAAAFf/Vv9q/wD/i//7/+j/AAAAAAAAAABW/+j/AAAAAAAAAACD/8T/DP8P/7f/wP+D//j/Cv90/x3/Pf//////AP8A/3T/Dv9m/4n/B/9H/1b/R//o/wAAAAAAAAAAWf/r/+P/O//7/3X/BP8z/9v/6/8E/2b/g/8n/wD/Vv9q/wD/6P8AAAAAAAAAAFn/i//D/1n/X/9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: __getws
+    size: 88
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_file2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getwc_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file2
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 24
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 53
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 76
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

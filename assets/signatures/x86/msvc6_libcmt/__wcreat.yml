@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 3b37ec88d34abae799df6af3bc008a14e82eeeca
+  signature: //90/yT/CP9o/wL/A/8A/wD///90/yT/DP/o/wAAAAAAAAAAg//E/wz/w/8=
+  symbols:
+  - kind: Function
+    name: __wcreat
+    size: 22
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __wopen
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

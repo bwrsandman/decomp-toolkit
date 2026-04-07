@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 9a8819eac4b1f2775c2c68a2ec3ee4679bd49ef2
+  signature: Vf+L/+z/g/99/wz/AP91/w7/gf99/xD//////wD/AP9//xn///91/xD/6/8J/4P/ff8Q////df8O////df8M////df8I////Ff8AAAAAAAAAAF3/w/8z/8D/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __getdllprocaddr
+    size: 47
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetProcAddress@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 37
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

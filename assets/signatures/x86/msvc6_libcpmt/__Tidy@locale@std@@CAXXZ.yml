@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: b389abf26bf76f22afb92fd9f68aaec106192268
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/43/Tf/w/+j/AAAAAAAAAACL/w3/AAAAAAAAAACD/2X//P8A/4X/yf90/xH/6P8AAAAAAAAAAIX/wP90/wj/i/8Q/2r/Af+L/8j///8S/4P/Tf/8////jf9N//D/6P8AAAAAAAAAAIv/Tf/0/2T/if8N/wAAAAAAAAAAyf/D/w==
+  symbols:
+  - kind: Function
+    name: ?_Tidy@locale@std@@CAXXZ
+    size: 74
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L10033
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Global@_Locimp@locale@std@@0PAV123@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?_Decref@facet@locale@std@@QAEPAV123@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 15
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 21
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 34
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 58
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 68
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

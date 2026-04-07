@@ -1,0 +1,54 @@
+- symbol: 0
+  hash: 9749c5bba4063ea7f131a37a64edfb8771dbe22e
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAFH/Uf9T/1b/V/+J/2X/6P+L/0X/CP+F/8D/dP8b/4v/SP8c/4v/Sf8E/4X/yf90/xH/g/9l//z/AP9R////cP8Y/+j/AAAAAAAAAACD/03//P///4v/Tf/w/2T/if8N/wAAAAAAAAAAX/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?_DestructExceptionObject@@YAXPAUEHExceptionRecord@@E@Z
+    size: 86
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T17343
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_CallMemberFunction0@@YGXPAX0@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 63
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 77
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 3a7e581daa4a676abd1365284ce45848870ef52a
+  signature: Vf+L/+z/g//E//T/m//Z/33//v+b/2b/i/9F//7/gP/M/wz/Zv+J/0X//P/Z/23//P/f/33/9P/Z/23//v+L/0X/9P+L/1X/+P/J/8P/
+  symbols:
+  - kind: Function
+    name: __ftol
+    size: 39
+    flags: 1
+    section: .text
+  relocations: []

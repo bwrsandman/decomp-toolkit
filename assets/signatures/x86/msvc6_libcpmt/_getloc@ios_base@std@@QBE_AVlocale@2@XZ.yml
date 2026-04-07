@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 652516330839510660a1c67e2a89e929c5bd9afd
+  signature: Vf+L/+z/Uf+L/0n/IP+D/2X//P8A/1b/i/91/wj/if8O/+j/AAAAAAAAAACL/8b/Xv/J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?getloc@ios_base@std@@QBE?AVlocale@2@XZ
+    size: 29
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Incref@facet@locale@std@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: d8d18d7b44a3fbf400919b0dcc98f6f7fac6966a
+  signature: Vv+L/3T/JP8I/1f/Vv+L/37/EP/o/wAAAAAAAAAAVv/o/wAAAAAAAAAAg/9m/wz/z/9Z/4P//////1n/dP8Z/4v/z/+L/8f/wf/5/wX/g//g/x//i/8M/43/AAAAAAAAAACN/wT/wP+N/wT/gf/r/wX/uP8AAAAAAAAAAID/YP8E//3/i/9G/wz/qP+A/3T/Bf8k//z/if9G/wz/av8A/2r/AP9X/+j/AAAAAAAAAABW/+j/AAAAAAAAAACD/8T/EP9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: _rewind
+    size: 100
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock_file
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __flush
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___badioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lseek
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 17
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 45
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 58
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 84
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 90
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

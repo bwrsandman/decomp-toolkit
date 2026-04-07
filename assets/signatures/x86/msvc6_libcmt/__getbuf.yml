@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 10d74bc6d78cd9edec347a1219bd84b46afbe865
+  signature: //8F/wAAAAAAAAAAaP8A/xD/AP8A/+j/AAAAAAAAAABZ/4v/TP8k/wT/hf/A/4n/Qf8I/3T/Df+D/0n/DP8I/8f/Qf8Y/wD/EP8A/wD/6/8R/4P/Sf8M/wT/jf9B/xT/if9B/wj/x/9B/xj/Av8A/wD/AP+L/0H/CP+D/2H/BP8A/4n/Af/D/w==
+  symbols:
+  - kind: Function
+    name: __getbuf
+    size: 68
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __cflush
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 12
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

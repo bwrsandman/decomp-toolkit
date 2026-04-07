@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: f4ac4e96822ecab407370f7969335d5f1b235b89
+  signature: //90/yT/BP///xX/AAAAAAAAAACF/8D/df8I////Ff8AAAAAAAAAAOv/Av8z/8D/hf/A/3T/C/9Q/+j/AAAAAAAAAABZ/4P/yP///8P/M//A/8P/
+  symbols:
+  - kind: Function
+    name: __wremove
+    size: 42
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__DeleteFileW@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 16
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 30
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

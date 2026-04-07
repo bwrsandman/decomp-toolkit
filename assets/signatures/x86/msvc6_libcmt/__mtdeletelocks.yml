@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: 4ef236ca8cd9a572a617ed699dad56e05640ba39
+  signature: Vv9X/4v/Pf8AAAAAAAAAAL7/AAAAAAAAAACL/wb/hf/A/3T/K/+B//7/AAAAAAAAAAB0/yP/gf/+/wAAAAAAAAAAdP8b/4H//v8AAAAAAAAAAHT/E/+B//7/AAAAAAAAAAB0/wv/UP///9f///82/+j/AAAAAAAAAABZ/4P/xv8E/4H//v8AAAAAAAAAAHz/xP///zX/AAAAAAAAAAD//9f///81/wAAAAAAAAAA///X////Nf8AAAAAAAAAAP//1////zX/AAAAAAAAAAD//9f/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: __mtdeletelocks
+    size: 108
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__DeleteCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __locktable
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 9
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 21
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 29
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 37
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 57
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 67
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 75
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 83
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 91
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 99
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

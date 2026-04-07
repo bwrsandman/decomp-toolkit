@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: b77a671a50a45577d26fd6947fb3903efb2ca980
+  signature: av8B/2r/AP9q/wD/6P8AAAAAAAAAAIP/xP8M/8P/
+  symbols:
+  - kind: Function
+    name: __cexit
+    size: 15
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _doexit
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

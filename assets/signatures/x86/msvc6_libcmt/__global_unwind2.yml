@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 63afc49c07b08b6c5ff2e40bc23ca53f4c235ae8
+  signature: Vf+L/+z/U/9W/1f/Vf9q/wD/av8A/2j/AAAAAAAAAAD//3X/CP/o/wAAAAAAAAAA
+  symbols:
+  - kind: Function
+    name: __global_unwind2
+    size: 24
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _gu_return
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _RtlUnwind@16
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

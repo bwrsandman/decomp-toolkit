@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 2e8ba3f4ca7a66135d104280671cb346b9b0feab
+  signature: av8E////dP8k/wj/6P8AAAAAAAAAAFn/Wf/D/w==
+  symbols:
+  - kind: Function
+    name: _iswdigit
+    size: 14
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _iswctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

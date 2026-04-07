@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: ef7a65705bc2d958138b44d051128df1719d8ccc
+  signature: Vv+L/3T/JP8I/zv/dP8k/wz/dP8c/1f/i/98/yT/FP8P/77/Bv9Q/+j/AAAAAAAAAABm/4n/B/9G/0f/Wf9H/zv/dP8k/xD/df/q/1//i//G/17/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: ?do_widen@?$ctype@G@std@@MBEPBDPBD0PAG@Z
+    size: 45
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _btowc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

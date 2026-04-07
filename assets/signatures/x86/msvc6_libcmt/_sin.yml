@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 454cf1dcb15e2561d6cd9b29331e8d160cdbf48c
+  signature: jf9U/yT/BP/o/wAAAAAAAAAA
+  symbols:
+  - kind: Function
+    name: _sin
+    size: 9
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __fload_withFB
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

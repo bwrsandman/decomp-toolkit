@@ -1,0 +1,115 @@
+- symbol: 0
+  hash: 54624596a3e47b1c725177abb298ef535418814c
+  signature: U/9W/1f/av8C/zP/2/8z////6P8AAAAAAAAAADP/9v85/x3/AAAAAAAAAABZ/w//jv+d/wD/AP8A/6H/AAAAAAAAAACL/wT/sP87/8P/dP83//b/QP8M/4P/df8h/1D/Vv/o/wAAAAAAAAAAWf9Z/4v/Df8AAAAAAAAAAIv/BP+x//b/QP8M/4P/dP8U/1D/Vv/o/wAAAAAAAAAAWf9Z/0b/O/81/wAAAAAAAAAAfP/E/+v/X/+L/zz/sf/r/0T/av84/8H/5v8C/+j/AAAAAAAAAABZ/4v/Df8AAAAAAAAAAIn/BP8O/6H/AAAAAAAAAACL/wT/Bv87/8P/dP86/4P/wP8g/1D///8V/wAAAAAAAAAAof8AAAAAAAAAAIv/BP8G/4P/wP8g/1D///8V/wAAAAAAAAAAof8AAAAAAAAAAIv/PP8G/zv/+/90/xL/g/9P/xD///+J/1//BP+J/1//DP+J/1//CP+J/x//if9f/xz/av8C/+j/AAAAAAAAAABZ/4v/x/9f/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: __getstream
+    size: 200
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __nstream
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___piob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_file2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InitializeCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__EnterCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 30
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 50
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 58
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 74
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 83
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 102
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 109
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 117
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 134
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 139
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 152
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 157
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 189
+    kind: x86_rel32
+    symbol: 9
+    addend: -4

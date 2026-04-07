@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: 067366127a64c321cc3467bcf9548f2f333941b3
+  signature: M//A/2r/AP85/0T/JP8I/2j/AP8Q/wD/AP8P/5T/wP9Q////Ff8AAAAAAAAAAIX/wP+j/wAAAAAAAAAAdP8V/+j/AAAAAAAAAACF/8D/df8P////Nf8AAAAAAAAAAP//Ff8AAAAAAAAAADP/wP/D/2r/Af9Y/8P/
+  symbols:
+  - kind: Function
+    name: __heap_init
+    size: 60
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__HeapCreate@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __crtheap
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_heap_init
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapDestroy@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 33
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 43
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 49
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

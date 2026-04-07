@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: f65177d80f03c18230085f7f967b17663c48dbc4
+  signature: iv9B/w3/w/8=
+  symbols:
+  - kind: Function
+    name: ?do_thousands_sep@?$numpunct@D@std@@MBEDXZ
+    size: 4
+    flags: 1
+    section: .text
+  relocations: []

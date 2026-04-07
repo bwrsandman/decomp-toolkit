@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: aece036066bcee8e195eb97e6096b10dec85d61f
+  signature: Vf+L/+z/Uf9W/5v/2f99//z///91//z/6P8AAAAAAAAAAIv/8P+L/0X/DP/3/9D/I//w/4v/Rf8I/yP/Rf8M/wv/8P9W/+j/AAAAAAAAAABZ/4n/Rf8M/1n/2f9t/wz/i//G/17/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __control87
+    size: 53
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __abstract_cw
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __hw_cw
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 13
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 36
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

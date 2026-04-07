@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 5fee47d3c8f714a7669cee6543187154cc913c15
+  signature: Zv+B/w3/AAAAAAAAAAAE/wH///8V/wAAAAAAAAAAo/8AAAAAAAAAAKP/AAAAAAAAAADD/w==
+  symbols:
+  - kind: Function
+    name: _GetLcidFromDefault
+    size: 26
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _iLcidState
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __imp__GetUserDefaultLCID@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _lcidCountry
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _lcidLanguage
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 16
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 21
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

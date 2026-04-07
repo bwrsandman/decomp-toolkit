@@ -1,0 +1,71 @@
+- symbol: 0
+  hash: 3e8ce3bae7355e539ce97abeb648f4d22cacb118
+  signature: U/9W/1f/i//5/+j/AAAAAAAAAACL//D/M//b/1P/i/9G/xT/iv8A/4j/R/8M/4v/Rv8Y/4r/AP+I/0f/Df///3b/HP/o/wAAAAAAAAAAOP9f/yj/Wf9Z/4n/R/8I/3T/Bf+L/0b/DP/r/wP/i/9G/xD/U/9Q/+j/AAAAAAAAAACJ/0f/EP+K/0b/Lv9Z/zr/w/9Z/3z/Cf88/wT/f/8F/4v/Rv8g/+v/Bf+4/wAAAAAAAAAAU/9Q/+j/AAAAAAAAAACJ/0f/FP+K/0b/L/9Z/zr/w/9Z/3z/Cf88/wT/f/8F/4v/Rv8k/+v/Bf+4/wAAAAAAAAAAU/9Q/+j/AAAAAAAAAAA4/1//KP9Z/1n/if9H/xj/dP8F/4r/Rv8o/+v/A/+K/0b/Kf8P/77/wP87/8P/if9H/xz/fP8F/4P/+P9//3z/A/+J/1//HP+K/0b/Lv+L/8//UP+K/0b/Kv9Q/4r/Rv8r/1D/jf9H/yD/UP/o/wAAAAAAAAAAiv9G/y//i//P/1D/iv9G/yz/UP+K/0b/Lf9Q/43/R/8k/1D/6P8AAAAAAAAAAF//Xv9b/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?_Init@?$_Mpunct@D@std@@IAEXABV_Locinfo@2@@Z
+    size: 218
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _localeconv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Maklocstr@std@@YAPADPBDPAD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_00A@?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_01GJD@?9?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Makpat@?$_Mpunct@D@std@@AAEXAAUpattern@money_base@2@DDD@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 35
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 60
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 86
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 93
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 119
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 126
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 185
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 208
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

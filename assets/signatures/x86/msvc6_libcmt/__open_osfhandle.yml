@@ -1,0 +1,91 @@
+- symbol: 0
+  hash: d37c7c8d627b3ad91af6328641b2c21ab3f67049
+  signature: Vf+L/+z/U/8y/9v/9v9F/wz/CP9W/3T/A/+A/8P/IP/2/0X/Df9A/3T/A/+A/8v/gP/2/0X/DP+A/3T/A/+A/8v/EP///3X/CP///xX/AAAAAAAAAACF/8D/df8P////Ff8AAAAAAAAAAFD/6P8AAAAAAAAAAFn/6/8x/4P/+P8C/3X/Bf+A/8v/QP/r/wj/g//4/wP/df8D/4D/y/8I/+j/AAAAAAAAAACL//D/g//+////df8Y/+j/AAAAAAAAAADH/wD/GP8A/wD/AP/o/wAAAAAAAAAAg/8g/wD/g//I////6/8v////df8I/1b/6P8AAAAAAAAAAIv/zv+L/8b/wf/5/wX/g//g/x//gP/L/wH/i/8M/43/AAAAAAAAAABW/43/BP/A/4j/XP+B/wT/6P8AAAAAAAAAAIP/xP8M/4v/xv9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __open_osfhandle
+    size: 167
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetFileType@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __alloc_osfhnd
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __set_osfhnd
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_fhandle
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 39
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 49
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 55
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 104
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 121
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 141
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 154
+    kind: x86_rel32
+    symbol: 9
+    addend: -4

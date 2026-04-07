@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 1238f0dd383becd07ff8d461b88b5afdc0c5b1c7
+  signature: av8J/+j/AAAAAAAAAABZ/zP////D/w==
+  symbols:
+  - kind: Function
+    name: fn_000002D9
+    size: 11
+    flags: 0
+    section: .text
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 3
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: c1d0b59357058c1b784f62035d2d558b8c36b830
+  signature: Vf+L/+z/Uf+b/93/ff/8////df/8/+j/AAAAAAAAAABZ/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __statusfp
+    size: 19
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __abstract_sw
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 332492fdaeaf3f2fd8ca5f2bc50ebdbb11513deb
+  signature: Vv+L/3T/JP8I/1b/6P8AAAAAAAAAAIX/wP9Z/3T/D/+B/8b/of8A/wD/AP+B//7/f/+D/wD/AP9y/wH/Rv+L/8b/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: __mbctokata
+    size: 35
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __ismbchira
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

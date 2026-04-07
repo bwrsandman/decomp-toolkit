@@ -1,0 +1,108 @@
+- symbol: 0
+  hash: d40efa4b9dba6492471462945a5117ef98a12eda
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/GP9T/1b/V/++/wAAAAAAAAAAjf99/+z/iv9F/x//pf+k/4v/2f8z////V/+N/03/3P+I/0X/3P/o/wAAAAAAAAAAiv9F/yD/if99//z/hP/A/3X/CP+K/0X/HP+I/0X/7v/r/wn/iP9F/+7/iv9F/xz/iP9F/+//av8Q/17/V/9W/43/Tf/c/+j/AAAAAAAAAACL/0X/5P+L/3v/CP+N/03/3P+J/0X/HP/o/wAAAAAAAAAAV/+N/0X/7P///3X/GP9Q////df8c////df/g/+j/AAAAAAAAAACL//j/g//E/xT/hf///3f/Bv8D//b/av8A/+v/xP+N/03/3P/o/wAAAAAAAAAAi/91/+D/T/90/xf/D/++/0b/Af9G/1D/6P8AAAAAAAAAAFn/UP+N/03/DP/o/wAAAAAAAAAA6//m/4v/df8I/4v/Rf8M/4P/Tf/8////av8B/4n/Bv+L/0X/EP+N/03/3P+J/0b/BP/o/wAAAAAAAAAAi/9N//T/i//G/1//Xv9b/2T/if8N/wAAAAAAAAAAyf/C/xz/AP8=
+  symbols:
+  - kind: Function
+    name: ?do_put@?$time_put@GV?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@GU?$char_traits@G@std@@@2@V32@AAVios_base@2@PBUtm@@DD@Z
+    size: 220
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L14935
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_04HHID@?$CB?$CFx?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ID@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Freeze@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __Strftime
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _btowc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??4?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@QAEAAV01@G@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 41
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 98
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 117
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 140
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 157
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 167
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 197
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 212
+    kind: x86_abs32
+    symbol: 10
+    addend: 0

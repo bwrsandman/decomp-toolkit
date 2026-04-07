@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 7be0977f29606318100ab05a4f46b92271c32a21
+  signature: av8B////dP8k/xD///90/yT/EP///3T/JP8Q/+j/AAAAAAAAAACD/8T/EP/D/w==
+  symbols:
+  - kind: Function
+    name: _strtoul
+    size: 23
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strtoxl
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

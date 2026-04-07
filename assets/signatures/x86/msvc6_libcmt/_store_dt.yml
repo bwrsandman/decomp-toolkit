@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 4366dc765393a213ca8aab86cce785119c24d3f8
+  signature: i/9E/yT/CP9W/2r/Cv+Z/1n/9//5/4v/TP8k/wj/av8K/17/BP8w/4j/Af+L/0T/JP8M/5n/9//+/0H/Xv+N/0H/Af+A/8L/MP+I/xH/w/8=
+  symbols:
+  - kind: Function
+    name: _store_dt
+    size: 40
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 76dc76641c13ee6c1aa9f4d593ac681954020e19
+  signature: i/9E/yT/CP9W/2r/Cv+Z/1n/9//5/4v/TP8k/wj/av8K/17/g//A/zD/Zv+J/wH/i/9E/yT/DP+Z//f//v9B/17/Qf+N/0H/Av+D/8L/MP9m/4n/Ef/D/w==
+  symbols:
+  - kind: Function
+    name: _store_dt
+    size: 44
+    flags: 2
+    section: .text
+  relocations: []

@@ -1,0 +1,91 @@
+- symbol: 0
+  hash: 1a90863c2658260bab864b9b76b8935129c9ea0d
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/RP+L/0X/CP9W/4v/8f+J/3X/8P+J/0b/BP+D/2X//P8A/4P/Zv8I/wD/aP8AAAAAAAAAAI3/Tf+w/8b/Rf/8/wH/x/8G/wAAAAAAAAAA6P8AAAAAAAAAAI3/Tf8I/1H/i//I/+j/AAAAAAAAAACL/wj/if9O/wj/g/8g/wD///91/wj/6P8AAAAAAAAAAFn/jf9N/7D/6P8AAAAAAAAAAIv/Tf/0/4v/xv9e/2T/if8N/wAAAAAAAAAAyf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??0?$time_put@GV?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@QAE@I@Z
+    size: 109
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L23032
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_01FKHJ@C?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_7?$time_put@GV?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0_Locinfo@std@@QAE@PBD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Gettnames@_Locinfo@std@@QBE?AV_Timevec@2@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1_Locinfo@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 34
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 47
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 52
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 63
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 79
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 88
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 101
+    kind: x86_abs32
+    symbol: 9
+    addend: 0

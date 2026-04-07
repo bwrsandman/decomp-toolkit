@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 9f9d7c0532949a0a7fc0d033d9b86115b0161597
+  signature: av8B/2r/AP9q/wD///90/yT/EP/o/wAAAAAAAAAAg//E/xD/w/8=
+  symbols:
+  - kind: Function
+    name: __telli64
+    size: 19
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lseeki64
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

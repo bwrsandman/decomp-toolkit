@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 053e5add75837bd5d3e1ed5a47967989c9c34101
+  signature: i/9E/yT/BP+D/wD/BP+L/wD/i/9A//z/w/8=
+  symbols:
+  - kind: Function
+    name: _get_int_arg
+    size: 13
+    flags: 2
+    section: .text
+  relocations: []

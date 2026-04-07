@@ -1,0 +1,54 @@
+- symbol: 0
+  hash: 656aca0a803139b59a266745aab69131be10c8fb
+  signature: 9v8F/wAAAAAAAAAAAf91/wf/gP8N/wAAAAAAAAAAAf/o/wAAAAAAAAAA9v8F/wAAAAAAAAAAAf91/wf/gP8N/wAAAAAAAAAAAf/p/wAAAAAAAAAA
+  symbols:
+  - kind: Function
+    name: _$E60
+    size: 42
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_B?1???id@?$ctype@G@std@@$D@@9@51
+    size: 1
+    flags: 1
+    section: null
+  - kind: Function
+    name: _$E56
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_B?1???id@?$collate@D@std@@$D@@9@51
+    size: 1
+    flags: 1
+    section: null
+  - kind: Function
+    name: _$E59
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 17
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 23
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 38
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

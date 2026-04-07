@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 27cf44809316abb020a6f3cdf68ad3adfc30f9cd
+  signature: //8F/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ___inc_tmpoff
+    size: 7
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __tmpoff
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

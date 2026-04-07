@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: f8a30847a49be093c73c3e434f7eed7de2af7c2b
+  signature: Vv///3T/JP8M/+j/AAAAAAAAAAD//3T/JP8Q////dP8k/xD/6P8AAAAAAAAAAP//dP8k/xj/i//w/+j/AAAAAAAAAACD/8T/EP9m/4v/xv9e/8P/
+  symbols:
+  - kind: Function
+    name: _fputwc
+    size: 42
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock_file
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __putwc_lk
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 19
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 30
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

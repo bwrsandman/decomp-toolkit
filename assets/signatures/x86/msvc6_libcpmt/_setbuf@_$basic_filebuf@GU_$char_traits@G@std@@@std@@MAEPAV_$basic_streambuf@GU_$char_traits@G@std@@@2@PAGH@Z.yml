@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 5dc1039e2514ff9f1e0acbc1b66b0592af700f4e
+  signature: Vv+L//H/i/9G/1D/hf/A/3T/Hv+L/0z/JP8M/wP/yf9R/2r/AP///3T/JP8Q/1D/6P8AAAAAAAAAAIP/xP8Q/4X/wP91/wT/i//G/+v/Av8z/8D/Xv/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?setbuf@?$basic_filebuf@GU?$char_traits@G@std@@@std@@MAEPAV?$basic_streambuf@GU?$char_traits@G@std@@@2@PAGH@Z
+    size: 46
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _setvbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 25
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

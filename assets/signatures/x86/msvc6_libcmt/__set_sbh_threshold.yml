@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 99d53eee6794c508145ec422449dec7a0df99a0e
+  signature: i/9E/yT/BP89//j/A/8A/wD/dv8D/zP/wP/D/2r/Af+j/wAAAAAAAAAAWP/D/w==
+  symbols:
+  - kind: Function
+    name: __set_sbh_threshold
+    size: 23
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___sbh_threshold
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 17
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

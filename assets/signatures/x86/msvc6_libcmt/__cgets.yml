@@ -1,0 +1,93 @@
+- symbol: 0
+  hash: fb48ae3f070eee391018e6f2c2693734eb7d3639
+  signature: Vf+L/+z/Uf9R/1P/Vv9X/2r/CP/o/wAAAAAAAAAAi/91/wj/M//b/1n/iP9e/wH/g/89/wAAAAAAAAAA/v+N/37/Av+J/33/CP91/wX/6P8AAAAAAAAAAKH/AAAAAAAAAACD//j///8P/4T/kv8A/wD/AP+N/03/+P9R/1D///8V/wAAAAAAAAAAav8H////Nf8AAAAAAAAAAP//Ff8AAAAAAAAAAI3/Rf/8/1P/UP8P/7b/Bv9Q////df8I////Nf8AAAAAAAAAAP//Ff8AAAAAAAAAAIX/wP91/wP/if9d/wj/Of9d/wj/dP9D/4v/Rf/8/4D/PP8w/w3/jf8M/zD/df8J/yz/Av+I/0b/Af+I/xn/6/8u/w//tv8W/zv/wv91/xD/gP95/wH/Df91/wr//v/I/4j/Rv8B/4j/Wf8B/+v/F/+D//j/Af91/wz/gP8//wr/df8H/4j/H/+I/17/Af/r/wb/iP9G/wH/iP9Z/wL///91//j///81/wAAAAAAAAAA//8V/wAAAAAAAAAAi/9d/wj/av8I/+j/AAAAAAAAAABZ/1//i//D/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __cgets
+    size: 219
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __coninpfh
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___initconin
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetConsoleMode@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetConsoleMode@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__ReadConsoleA@20
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 26
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 40
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 45
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 65
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 73
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 79
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 97
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 103
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 191
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 197
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 207
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

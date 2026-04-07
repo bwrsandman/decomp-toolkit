@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 4f83055f0aaf9586c51e4e3574d3068c586a3558
+  signature: Vf+L/+z/i/9N/wj/Vv9X/2r/Av9f/2b/g/85/zv/df8E/wP/z//r//b///9N/xD/i//B/3T/Yf9m/4v/Ef+L/3X/DP9m/4X/0v90/0j/Zv+D//r/O/90/0L/Zv+D//r/Iv90/w7/Zv+J/xb/A//3/wP/z////03/EP90/zr/6/8m/wP/z/9m/4v/Ef9m/4X/0v90/xT/Zv+D//r/Iv90/w7/Zv+J/xb/A//3/wP/z////03/EP90/xz/6//k/2b/g/85/wD/dP8C/wP/z/9m/4v/Ef9m/4X/0v91/7j/Zv+D/zn/O/91/wv/A//P/+v/9v+L/8H/6/8D/4v/df8M/2b/g/8m/wD/K//B//f/2P8b/8D/X/8j/8H/Xv9d/8P/
+  symbols:
+  - kind: Function
+    name: __wgetpath
+    size: 144
+    flags: 1
+    section: .text
+  relocations: []

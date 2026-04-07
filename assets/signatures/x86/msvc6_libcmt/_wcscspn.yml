@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 2bd3d89cab2fc30db4b89add5139f29ba5da4147
+  signature: i/9E/yT/BP9T/1b/V/9m/4P/OP8A/3T/Kv+L/1z/JP8U/2b/i/87/2b/hf///4v/0/90/xT/Zv+L/zD/i//P/2b/O//O/3T/Ev9C/0L/Zv+L/wr/Zv+F/8n/df/x/0D/QP9m/4P/OP8A/3X/3f8r/0T/JP8Q/1//Xv9b/9H/+P/D/w==
+  symbols:
+  - kind: Function
+    name: _wcscspn
+    size: 65
+    flags: 1
+    section: .text
+  relocations: []

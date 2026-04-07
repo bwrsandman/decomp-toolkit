@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: e81476b60c32310705f8522ab76cafecb9253be3
+  signature: Vf+L/+z/V/+L/33/CP8z/8D/g//J////8v+u/0H/9//Z/0//iv9F/wz//f/y/67/R/84/wf/dP8E/zP/wP/r/wL/i//H//z/X//J/8P/
+  symbols:
+  - kind: Function
+    name: _strrchr
+    size: 39
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,31 @@
+- symbol: 0
+  hash: 823b4c6f1f9e2f2d30142964cc5f6a4febc9433f
+  signature: i/8N/wAAAAAAAAAAiv8R/4T/0v91/wP/M//A/8P/gP/6/zD/fP8T/4D/+v85/3//Dv8P/77/wv+D/+j/L/9B/4n/Df8AAAAAAAAAAMP/M//A/4D/+v9A/3T/I/+E/9L/dP/a/4D/+v9B/3z/KP+A//r/UP9//yP/D/++/9L/wf/g/wT/Qf+N/0T/EP+//4n/Df8AAAAAAAAAAIr/Ef/r/9j/iv8R/0H/gP/6/0D/if8N/wAAAAAAAAAAdP8D/4P/yP///8P/
+  symbols:
+  - kind: Function
+    name: ?getNumberOfDimensions@UnDecorator@@CAHXZ
+    size: 99
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 34
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 73
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 89
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

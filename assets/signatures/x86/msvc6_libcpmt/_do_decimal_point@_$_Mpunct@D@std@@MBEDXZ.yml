@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 62f0618024e64b5d2c41ce5a2057de5ab3e36882
+  signature: iv9B/wz/w/8=
+  symbols:
+  - kind: Function
+    name: ?do_decimal_point@?$_Mpunct@D@std@@MBEDXZ
+    size: 4
+    flags: 1
+    section: .text
+  relocations: []

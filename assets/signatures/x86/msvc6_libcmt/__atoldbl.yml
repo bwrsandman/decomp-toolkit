@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 8fbf64e23a3213b02abdac410202c501d8426444
+  signature: Vf+L/+z/g//s/wz/M//A/1D/UP9Q/2r/Af///3X/DP+N/0X/DP9Q/43/Rf/0/1D/6P8AAAAAAAAAAP//df8I/43/Rf/0/1D/6P8AAAAAAAAAAIP/xP8k/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __atoldbl
+    size: 46
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___strgtold12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ld12told
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 25
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

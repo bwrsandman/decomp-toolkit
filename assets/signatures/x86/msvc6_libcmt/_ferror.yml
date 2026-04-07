@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 4af345a70d5d04c808bf50a08e56ccd0ed1b7203
+  signature: i/9E/yT/BP+L/0D/DP+D/+D/IP/D/w==
+  symbols:
+  - kind: Function
+    name: _ferror
+    size: 11
+    flags: 1
+    section: .text
+  relocations: []

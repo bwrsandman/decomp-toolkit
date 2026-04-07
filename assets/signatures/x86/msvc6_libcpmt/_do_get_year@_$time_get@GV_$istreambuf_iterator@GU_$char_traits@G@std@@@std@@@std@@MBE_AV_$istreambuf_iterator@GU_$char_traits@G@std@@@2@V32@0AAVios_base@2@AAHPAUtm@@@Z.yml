@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 0e263876daef7aa83889049e325002ffd0cb1086
+  signature: Vf+L/+z/Uf+N/0X//P9Q/2j/8/8H/wD/AP+N/0X/FP9q/wD/UP+N/0X/DP9Q/+j/AAAAAAAAAACL/03/IP+D/8T/FP8J/wH/i/8B/6j/Av91/xz/uv9s/wf/AP8A/zn/Vf/8/3z/Bf8p/1X//P/r/w3/gf99//z/h/8A/wD/AP9+/wT/DP8C/4n/Af/2/wH/Av91/wn/i/9F/yT/i/9N//z/if9I/xT/i/9F/wj/i/9N/wz/if8I/4v/Tf8Q/4n/SP8E/8n/wv8g/wD/
+  symbols:
+  - kind: Function
+    name: ?do_get_year@?$time_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@GU?$char_traits@G@std@@@2@V32@0AAVios_base@2@AAHPAUtm@@@Z
+    size: 102
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Getint@?$time_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@CAHAAV?$istreambuf_iterator@GU?$char_traits@G@std@@@2@0HHAAH@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 24
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

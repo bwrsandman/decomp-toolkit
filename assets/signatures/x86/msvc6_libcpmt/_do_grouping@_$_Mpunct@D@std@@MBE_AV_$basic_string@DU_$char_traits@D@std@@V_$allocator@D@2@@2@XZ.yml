@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: c144c285356c9691df3bdaaa885f94968edeb174
+  signature: Vf+L/+z/Uf+K/0X/C/+D/2X//P8A/1b/i/91/wj/V/+L/3n/CP9q/wD/i//O/4j/Bv/o/wAAAAAAAAAAV//o/wAAAAAAAAAAWf9Q/1f/i//O/+j/AAAAAAAAAACL/8b/X/9e/8n/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?do_grouping@?$_Mpunct@D@std@@MBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@XZ
+    size: 54
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 26
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 32
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 42
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

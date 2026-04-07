@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 4d33f5f0d1e41a0252f4285138872ec8c07ba937
+  signature: g/98/yT/BP8A/3T/FP9q/zT/aP8AAAAAAAAAAGj/AAAAAAAAAADo/wAAAAAAAAAAg//E/wz/av8A/+j/AAAAAAAAAABZ/zP/wP/D/w==
+  symbols:
+  - kind: Function
+    name: ?set_new_handler@@YAP6AXXZP6AXXZ@Z
+    size: 38
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0M@HAOM@setnewh?4cpp?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0L@ODMK@new_p?5?$DN?$DN?50?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __assert
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_set_new_handler@@YAP6AHI@ZP6AHI@Z@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 20
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 30
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

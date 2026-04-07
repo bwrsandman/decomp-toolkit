@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 2a0b73454f6fe7702cb4bab1af5dace67549d39d
+  signature: i/9B/wz/w/8=
+  symbols:
+  - kind: Function
+    name: ?length@pcharNode@@UBEHXZ
+    size: 4
+    flags: 1
+    section: .text
+  relocations: []

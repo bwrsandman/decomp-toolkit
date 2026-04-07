@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: b10e4a32bf674b5a05e188b77ea55142de4d29c7
+  signature: WP9Z/4f/BP8k////4P8=
+  symbols:
+  - kind: Function
+    name: ?_CallMemberFunction1@@YGXPAX00@Z
+    size: 7
+    flags: 1
+    section: .text
+  relocations: []

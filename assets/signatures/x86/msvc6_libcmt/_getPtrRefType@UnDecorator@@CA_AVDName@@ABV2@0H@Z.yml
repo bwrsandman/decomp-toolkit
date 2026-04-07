@@ -1,0 +1,144 @@
+- symbol: 0
+  hash: 57550671f04b80485ab8d3c816d4d81d88dbc6c4
+  signature: Vf+L/+z/g//s/xD/of8AAAAAAAAAAIr/AP+E/8D/D/+E/8L/AP8A/wD/PP82/3z/BP88/zn/fv8E/zz/X/91/3X/g/99/xT/AP9W/43/Tf/4/w//lP/A/0j/g//g/wT/g//A/yb/UP/o/wAAAAAAAAAAi/9N/wz/6P8AAAAAAAAAAIv/df8Q/4X/wP91/xz/i//O/+j/AAAAAAAAAACF/8D/df8G//b/Rv8E/xD/df8L////df8M/43/Tf/4/+j/AAAAAAAAAACL/87/6P8AAAAAAAAAAIX/wP91/wn/Vv+N/03/+P/o/wAAAAAAAAAAjf9F//j/UP+N/0X/8P9Q/+j/AAAAAAAAAABZ/1n/i/9N/wj/UP/o/wAAAAAAAAAAi/9F/wj/Xv/J/8P/g/99/xT/AP9q/wD///91/wz/D/+U/8D/SP+D/+D/BP+D/8D/Jv9Q/43/Rf/w////df8Q/1D/6P8AAAAAAAAAAIP/xP8U/43/Tf/4/1D/6P8AAAAAAAAAAP//df8U/43/Rf/4/1D/jf9F//D/UP/o/wAAAAAAAAAAg//E/wz/6/9o/2r/Av+N/03/+P/o/wAAAAAAAAAAg/99/xT/AP+N/03/+P8P/5T/wP9I/4P/4P8E/4P/wP8m/1D/6P8AAAAAAAAAAIv/Tf8M/+j/AAAAAAAAAACF/8D/df8L////df8M/43/Tf/4/+j/AAAAAAAAAACL/03/EP/o/wAAAAAAAAAAhf/A/3X/If+L/03/DP/o/wAAAAAAAAAAhf/A/3X/Cv9q/yD/jf9N//j/6P8AAAAAAAAAAP//df8Q/43/Tf/4/+j/AAAAAAAAAACN/0X/+P+L/03/CP9Q/+j/AAAAAAAAAACL/0X/CP/J/8P/
+  symbols:
+  - kind: Function
+    name: ?getPtrRefType@UnDecorator@@CA?AVDName@@ABV2@0H@Z
+    size: 333
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??0DName@@QAE@D@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?isEmpty@DName@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??YDName@@QAEAAV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getFunctionIndirectType@UnDecorator@@CA?AVDName@@ABV2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getDataIndirectType@UnDecorator@@CA?AVDName@@ABV2@D0H@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getPtrRefDataType@UnDecorator@@CA?AVDName@@ABV2@H@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??YDName@@QAEAAV0@D@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 53
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 61
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 75
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 103
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 116
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 129
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 140
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 178
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 190
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 206
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 221
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 244
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 252
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 267
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 275
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 287
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 301
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 312
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 324
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

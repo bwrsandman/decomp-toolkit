@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: ed48978d248ee160e5e77ca39ba3eed9147b9fe8
+  signature: Vf+L/+z/Uf9T/4v/Xf8I/1b/g//7////V/+L//H/df8H/zP/wP/p/0r/Af8A/wD/i/9G/yD/i/8A/4X/wP90/xz/i/9O/zD/i/8J/wP/yP87/8H/c/8R/4v/zv/o/wAAAAAAAAAAiP8Y/w//tv/D/+n/Jf8B/wD/AP+L/07/RP/2/8H/BP8P/4T/Fv8B/wD/AP/2/8H/Cv8P/4X/Df8B/wD/AP+L/07/HP+D/zn/AP91/wT/M//b/+v/DP+L/07/MP+L/1b/DP+L/xn/K/8a/wP/2P+L/07/SP+L/8P/A/9G/0D/hf/J/4n/Rf/8/1D/dP8E////0f/r/wX/6P8AAAAAAAAAAIv/+P9Z/4X///8P/4T/0f8A/wD/AP+F/9v/fv8R/4v/Rv8M/1P///8w/1f/6P8AAAAAAAAAAIP/xP8M/+v/Df+4/wD/Av8A/wD/Of9G/0D/fv8D/4n/Rv9A//b/Rv9E/wH/dP8b/4v/Rv9M/4X/wP90/wn/i/9O/wz///8x////0P/r/wr/i/9G/wz///8w/+j/AAAAAAAAAABZ/4P/Tv9E/wH/hf/b/3X/Jv+L/0b/EP+L/03//P+J/37/PP+J/zj/i/9G/yD/if84/4v/Rv8w/4n/CP+L/0b/DP+J/zj/i/9G/xz/if84/4v/Rv8s/yH/GP/r/0//i/9G/wz/i//P/4v/3/8r/wj/Af9O/zz/i/8Q/4v/Rv8g/4v/Tv8Q/yv/2v+L/wD/Af8Z/4v/Tv8g/yv/wv8D/8f/if8B/4v/z/8r/8j/i/9G/zD/A/9N//z/if8I/4v/Rv8g/4v/Vv8M/4v/CP+L/0b/HP+L/wD/K/8C/4n/Ov+L/1b/HP8D/8f/if8C/yv/yP+L/0b/LP9B/4n/CP+L/87/6P8AAAAAAAAAAIr/Tf8I/4j/CP8P/7b/wf/r/wP/g//I////X/9e/1v/yf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?overflow@strstreambuf@std@@MAEHH@Z
+    size: 361
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 47
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 127
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 154
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 204
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 337
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

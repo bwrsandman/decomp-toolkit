@@ -1,0 +1,157 @@
+- symbol: 0
+  hash: 65740cbc0015de9f7b8347fe582f1599fe070d9d
+  signature: Vf+L/+z/g//s/xD/g/9l//T/AP9T/4v/Xf8Q/1b/av8A/4H/4/+A/wD/AP8A/1j/x/9F//D/DP8A/wD/AP///3X/DP8P/5T/wP+J/0X/+P+N/0X/8P9Q/43/Rf/8/1D/jf9F/wz/UP///xX/AAAAAAAAAACF/8D/df8S////Ff8AAAAAAAAAAFD/6P8AAAAAAAAAAFn/6f9n/wH/AP8A/+j/AAAAAAAAAACL/3X/CP+D//j///+J/wb/D/+E/yf/Af8A/wD/V/9q/x//i//I/1//wf/5/wX/I//H/4v/DP+N/wAAAAAAAAAAjf8E/8D/xv9E/4H/BP+J/+j/AAAAAAAAAACD//j///+J/0b/BP8P/4T/zv8A/wD/AP+L/8j/I//H/8H/+f8F/43/BP/A/4v/DP+N/wAAAAAAAAAAxv9E/4H/BP+J/7j/AP+A/wD/AP+F/0X/EP91/w7/9v9F/xH/QP91/0H/Of8F/wAAAAAAAAAAdf85/4v/Bv+L/8j/I//H/8H/+f8F/43/BP/A/4v/DP+N/wAAAAAAAAAAgP9k/4H/BP9//43/RP+B/wT/i/9G/wT/i//I/yP/x//B//n/Bf+N/wT/wP+L/wz/jf8AAAAAAAAAAID/ZP+B/wT/f/+N/0T/gf8E/4X/2/90/zn/i/8G/4v/yP8j/8f/wf/5/wX/jf8E/8D/i/8M/43/AAAAAAAAAACA/0z/gf8E/xD/jf9E/4H/BP+L/0b/BP+L/8j/I//H/8H/+f8F/43/BP/A/4v/DP+N/wAAAAAAAAAAgP9M/4H/BP8Q/43/RP+B/wT///91/wz///82/+j/AAAAAAAAAAD//3X//P///3b/BP/o/wAAAAAAAAAA6P8AAAAAAAAAAIP/IP8A////dv8E/+j/AAAAAAAAAACD/8T/FP/r/yP/i/8G/4v/yP8j/8f/wf/5/wX/jf8E/8D/i/8M/43/AAAAAAAAAACA/2T/gf8E/wD/6P8AAAAAAAAAAMf/AP8Y/wD/AP8A////Nv/o/wAAAAAAAAAAWf9f/+v/C//o/wAAAAAAAAAAx/8A/xj/AP8A/wD/6P8AAAAAAAAAAIP/OP8A/3T/Hf///3X/DP+L/zX/AAAAAAAAAAD//9b///91//z////W/+j/AAAAAAAAAACD/yD/AP+D/8j////r/wL/M//A/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __pipe
+    size: 450
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__CreatePipe@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __alloc_osfhnd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __fmode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __set_osfhnd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__CloseHandle@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 54
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 64
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 70
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 113
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 126
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 155
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 182
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 203
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 232
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 264
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 293
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 312
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 323
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 328
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 339
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 363
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 373
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 386
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 395
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 406
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 420
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 432
+    kind: x86_rel32
+    symbol: 11
+    addend: -4

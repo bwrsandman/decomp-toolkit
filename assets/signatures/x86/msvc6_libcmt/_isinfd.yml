@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: f96c66a94549eb6191ca401982f6e01139b93684
+  signature: i/9E/yT/CP8l/////////3//Pf8A/wD/+P9//3X/C/+D/3z/JP8E/wD/df8E/2r/Af9Y/8P/M//A/8P/
+  symbols:
+  - kind: Function
+    name: _isinfd
+    size: 30
+    flags: 2
+    section: .text
+  relocations: []

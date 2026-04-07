@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: e2a5bc057fc8c84284695fa9e91bcc523740e041
+  signature: Vv+L//H/6P8AAAAAAAAAAIv/TP8k/wj/x/8G/wAAAAAAAAAAhf/J/3T/Ev+L/0H/BP+D/+D/D/+D//j/Af90/wX/g//4/wP/df8C/zP/yf+J/07/CP+L/8b/Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??0pDNameNode@@QAE@PAVDName@@@Z
+    size: 49
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DNameNode@@IAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7pDNameNode@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 14
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

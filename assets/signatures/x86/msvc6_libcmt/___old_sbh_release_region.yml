@@ -1,0 +1,63 @@
+- symbol: 0
+  hash: 354d770b8410068f66a2cb56bbcd16dc27910240
+  signature: Vv+L/3T/JP8I/2j/AP+A/wD/AP9q/wD///92/xD///8V/wAAAAAAAAAAOf81/wAAAAAAAAAAdf8I/4v/Rv8E/6P/AAAAAAAAAACB//7/AAAAAAAAAAB0/yD/i/9G/wT/i/8O/1b/av8A/4n/CP+L/wb/i/9O/wT/if9I/wT///81/wAAAAAAAAAA//8V/wAAAAAAAAAAXv/D/4P/Df8AAAAAAAAAAP//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ___old_sbh_release_region
+    size: 86
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__VirtualFree@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___old_sbh_p_starting_region
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: ___old_small_block_heap
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __crtheap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapFree@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 23
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 39
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 65
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 71
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 79
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

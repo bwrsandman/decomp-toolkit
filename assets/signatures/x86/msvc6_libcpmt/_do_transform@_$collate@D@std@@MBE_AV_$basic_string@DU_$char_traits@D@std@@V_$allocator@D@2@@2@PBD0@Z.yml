@@ -1,0 +1,112 @@
+- symbol: 0
+  hash: 0b1bf0e1e3afeedb9dedcf2e6c8a39afd3b4e699
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/FP+K/0X/D/9T/1b/M//b/1f/U/+N/03/4P+J/13/8P+I/0X/4P/o/wAAAAAAAAAAi/99/xD/x/9F//z/Af8A/wD/AP8r/33/DP+L/8f/U/9Q/43/Tf/g/+j/AAAAAAAAAACN/03/4P/o/wAAAAAAAAAAi/91/+T/jf9N/+D/6P8AAAAAAAAAAIv/Tf/o/4v/xv8D/87/9//Y/xv/wP8j/8H/K/9F/+T/O//4/3f/D/9X////df8M////df/k/+j/AAAAAAAAAACD/8T/DP85/33/6P9z/wf/i//H/yv/Rf/o/+v/tP9X/43/Tf/g/+j/AAAAAAAAAACL/3X/CP+K/0X/4P9T/4v/zv+I/wb/6P8AAAAAAAAAAP//Nf8AAAAAAAAAAI3/Rf/g/4v/zv9T/1D/6P8AAAAAAAAAAGr/Af9Y/4n/Rf/w/1D/jf9N/+D/iP9d//z/6P8AAAAAAAAAAIv/Tf/0/4v/xv9f/17/W/9k/4n/Df8AAAAAAAAAAMn/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: ?do_transform@?$collate@D@std@@MBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@PBD0@Z
+    size: 207
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L12267
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ID@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Freeze@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?resize@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXI@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 32
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 57
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 76
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 108
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 132
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 148
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 154
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 166
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 184
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 199
+    kind: x86_abs32
+    symbol: 10
+    addend: 0

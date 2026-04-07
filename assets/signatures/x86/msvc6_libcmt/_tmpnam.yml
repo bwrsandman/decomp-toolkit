@@ -1,0 +1,95 @@
+- symbol: 0
+  hash: 7a411821e5e14ee9b6897a1d2e6f022fc26a8ef4
+  signature: U/9W/1f/av8D/+j/AAAAAAAAAAAz/9v/Wf84/x3/AAAAAAAAAAC+/wAAAAAAAAAAdf8U/1P/6P8AAAAAAAAAAFn/U/9W/+j/AAAAAAAAAABZ/4X/wP9Z/3X/D/9W/+j/AAAAAAAAAACF/8D/Wf90/+j/M////+v/M/+L/3z/JP8Q/zv/+/91/yL/6P8AAAAAAAAAAIv/+P85/1//KP91/xP/av8O/+j/AAAAAAAAAAA7/8P/Wf+J/0f/KP91/wT/i//+/+v/DP+L/3//KP9W/1f/6P8AAAAAAAAAAFn/Wf9q/wP/6P8AAAAAAAAAAFn/i//H/1//Xv9b/8P/
+  symbols:
+  - kind: Function
+    name: _tmpnam
+    size: 126
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _namebuf0
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _init_namebuf
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __access
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _genfname
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 20
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 28
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 36
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 48
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 70
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 84
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 106
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 115
+    kind: x86_rel32
+    symbol: 9
+    addend: -4

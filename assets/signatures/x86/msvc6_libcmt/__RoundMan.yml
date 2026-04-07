@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 9aa12b9506d0d3678d72037b7efb160c8c9194de
+  signature: Vf+L/+z/Uf9R/4v/Rf8M/1P/Vv9X/43/eP///2r/IP9Z/4P/Zf/8/wD/jf9f/wH/av8g/4v/w/9e/5n/9//5/2r/H/+L/8j/i//D/5n/9//+/4v/Rf8I/17/av8B/4n/Tf/4/43/BP+I/4n/Rf8M/yv/8v9a/4v/zv/T/+L/hf8Q/3T/If9D/1P///91/wj/6P8AAAAAAAAAAFn/hf/A/1n/df8O/1f///91/wj/6P8AAAAAAAAAAFn/if9F//z/Wf+L/0X/DP+D/8r///+L/87/0//i/2r/A/9Z/yH/EP+L/0X/+P9A/zv/wf99/wz/i/9V/wj/K//I/43/PP+C/zP/wP/z/6v/i/9F//z/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __RoundMan
+    size: 140
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __ZeroTail
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __IncMan
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 73
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 88
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

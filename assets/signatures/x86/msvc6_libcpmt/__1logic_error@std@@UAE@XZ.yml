@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: c2ec697e972329a22fd43e9bb9e063e3a90d0d52
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1b/i//x/4n/df/w/8f/Bv8AAAAAAAAAAIP/Zf/8/wD/av8B/43/Tv8M/+j/AAAAAAAAAACD/03//P///4v/zv/o/wAAAAAAAAAAi/9N//T/Xv9k/4n/Df8AAAAAAAAAAMn/w/8=
+  symbols:
+  - kind: Function
+    name: ??1logic_error@std@@UAE@XZ
+    size: 61
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L9817
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7logic_error@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1exception@@UAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 19
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 33
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 44
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 55
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

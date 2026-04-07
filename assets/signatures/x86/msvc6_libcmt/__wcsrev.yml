@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: ae8f3c2beb824f4f281377b0d4b140df736cb01f
+  signature: i/9M/yT/BP9W/4v/wf+L/9H/Zv+L/zH/Qf9B/2b/hf/2/3X/9v+D/+n/BP87/9H/c/8W/1P/Zv+L/xn/Zv+L/zL/Zv+J/xr/Qv9C/2b/if8x/0n/Sf87/9H/cv/s/1v/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: __wcsrev
+    size: 50
+    flags: 1
+    section: .text
+  relocations: []

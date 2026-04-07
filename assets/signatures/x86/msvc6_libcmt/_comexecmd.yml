@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: f893618c8044dd33e57b3628c91719648faac5a5
+  signature: Vf+L/+z///91/wz/jf9F/xD/UP+N/0X/FP9Q////df8U////df8Q/+j/AAAAAAAAAACD/8T/FP+D//j///91/wT/C//A/13/w/9W////df8Q////df8U////df8M////df8I/+j/AAAAAAAAAAD//3X/FP+L//D/6P8AAAAAAAAAAP//df8Q/+j/AAAAAAAAAACD/8T/GP+L/8b/Xv9d/8P/
+  symbols:
+  - kind: Function
+    name: _comexecmd
+    size: 81
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __cenvarg
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dospawn
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 51
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 61
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 69
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: 42295dbc40b2e50689ac3364571eeb595b9e23e0
+  signature: Vf+L/+z///91/wj/jf9F/wz/UP+N/0X/EP9Q////df8Q////df8M/+j/AAAAAAAAAACD/8T/FP+D//j///91/wT/C//A/13/w/9W////df8M////df8Q////df8I/2r/Av/o/wAAAAAAAAAA//91/xD/i//w/+j/AAAAAAAAAAD//3X/DP/o/wAAAAAAAAAAg//E/xj/i//G/17/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _comexecmd
+    size: 80
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __cenvarg
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dospawn
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 50
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 60
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 68
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

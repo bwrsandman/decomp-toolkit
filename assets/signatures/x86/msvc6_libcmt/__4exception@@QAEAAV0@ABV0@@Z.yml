@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 4cd8ebbb2899e06e77297266d12d6e1742266bf2
+  signature: Vv+L//H/O/90/yT/CP90/xD/6P8AAAAAAAAAAP//dP8k/wj/i//O/+j/AAAAAAAAAACL/8b/Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??4exception@@QAEAAV0@ABV0@@Z
+    size: 31
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1exception@@UAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0exception@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

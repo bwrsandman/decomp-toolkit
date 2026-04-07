@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: e9994a9f23d8a321a5477427ec688d067fc72943
+  signature: Vf+L/+z/gf/s/5T/AP8A/wD/jf+F/2z/////////x/+F/2z/////////lP8A/wD/AP9Q////Ff8AAAAAAAAAAIX/wP90/w7/g/+9/3z/////////Av91/wX/av8B/1j/yf/D/zP/wP/J/8P/
+  symbols:
+  - kind: Function
+    name: _IsThisWindowsNT
+    size: 54
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __imp__GetVersionExA@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 28
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

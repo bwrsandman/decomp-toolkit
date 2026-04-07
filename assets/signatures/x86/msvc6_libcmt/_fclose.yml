@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: b82604b6bb6c43394483806f93d514735c01d834
+  signature: Vv+L/3T/JP8I/1f/g//P////9v9G/wz/QP90/wb/g/9m/wz/AP/r/xf/Vv/o/wAAAAAAAAAAVv/o/wAAAAAAAAAAVv+L//j/6P8AAAAAAAAAAIP/xP8M/4v/x/9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: _fclose
+    size: 49
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock_file
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fclose_lk
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 23
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 29
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

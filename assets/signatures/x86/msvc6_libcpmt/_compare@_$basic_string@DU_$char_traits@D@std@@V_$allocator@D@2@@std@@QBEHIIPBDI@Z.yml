@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 203c48b479c9c3c40ba42158145f2a6429075bfd
+  signature: Vf+L/+z/U/9W/1f/i/99/wj/i//x/zn/fv8I/3P/Bf/o/wAAAAAAAAAAi/9G/wj/i/9d/wz/K//H/zv/w/9z/wL/i//Y/4v/Tf8U/zv/2f9z/wL/i//L/4v/Rv8E/1H///91/xD/i//I/wP/x//3/9n/G//J/yP/yP9R/+j/AAAAAAAAAACD/8T/DP+F/8D/df8S/zv/Xf8U/3P/Bf+D/8j////r/wj/M//A/zv/Xf8U/w//lf/A/1//Xv9b/13/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: ?compare@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEHIIPBDI@Z
+    size: 99
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Xran@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memcmp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 63
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

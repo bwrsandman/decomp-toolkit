@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: d126963b9066e62c373b290055e4cab5574668ef
+  signature: Vf+L/+z/U/9W/1f//P+L/0X/CP+L/0D/BP+D/+D/Zv+F/8D/dP8P/4v/Rf8M/8f/QP8k/wH/AP8A/wD/av8B/1j/6/9N/2r/Af+L/0X/DP///3D/FP+L/0X/DP///3D/EP+L/0X/DP///3D/CP9q/wD///91/xD/i/9F/wz///9w/wz///91/wj/6P8AAAAAAAAAAIP/xP8g/4v/Rf8M/4P/eP8k/wD/df8L////df8I////df8M/+j/AAAAAAAAAACL/13/DP+L/2P/HP+L/2v/IP///2P/GP9q/wH/WP9f/17/W/9d/8P/
+  symbols:
+  - kind: Function
+    name: ?TranslatorGuardHandler@@YA?AW4_EXCEPTION_DISPOSITION@@PAUEHExceptionRecord@@PAUTranslatorGuardRN@@PAX2@Z
+    size: 117
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ___InternalCxxFrameHandler
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_UnwindNestedFrames@@YGXPAUEHRegistrationNode@@PAUEHExceptionRecord@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 70
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

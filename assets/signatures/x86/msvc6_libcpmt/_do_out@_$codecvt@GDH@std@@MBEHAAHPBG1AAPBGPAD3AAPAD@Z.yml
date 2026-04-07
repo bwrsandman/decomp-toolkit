@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 327c57dae533e5b09ac05ed9deae75c89a0337e8
+  signature: Vf+L/+z/Uf+L/0X/DP9T/1b/i/91/xT/V/+L/33/IP+J/wb/i/9F/xj/i//Z/4n/B/+L/wb/M//J/zv/Rf8Q/4n/Xf/8/w//lf/B/4n/Tf8M/zv/Rf8Q/w//hP+X/wD/AP8A/4v/D/87/03/HP8P/4T/jP8A/wD/AP+L/1X/HP8r/9H/Of8V/wAAAAAAAAAAf/8j/2b/i/8A/43/U/8I/1L///91/wj/UP9R/+j/AAAAAAAAAACD/8T/EP+F/8D/fv9a/4P/Bv8C/wH/B/+D/2X/DP8A/+v/SP+L/03/CP9m/4v/AP+D/8P/CP+L/xH/U/9R/1D/jf9F/xb/if9V/yD/UP/o/wAAAAAAAAAAi//Y/4P/xP8Q/4X/2/9+/yz/i/8H/4v/Tf8c/yv/yP87/8v/fP8m/43/Tf8W/1P/Uf9Q/+j/AAAAAAAAAACD/wb/Av8B/x//i/9d//z/g//E/wz/g/9l/wz/AP+L/wb/6f9t/////////2r/Av9Y/+v/C/+L/03/CP+L/0X/IP+J/wH/i/9F/wz/X/9e/1v/yf/C/xz/AP8=
+  symbols:
+  - kind: Function
+    name: ?do_out@?$codecvt@GDH@std@@MBEHAAHPBG1AAPBGPAD3AAPAD@Z
+    size: 211
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __Wcrtomb
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 68
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 87
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 131
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 162
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

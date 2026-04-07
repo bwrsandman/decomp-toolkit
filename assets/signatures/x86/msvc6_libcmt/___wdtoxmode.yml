@@ -1,0 +1,76 @@
+- symbol: 0
+  hash: af6095c646905e4c77bc5ef3efc96d591834c5a3
+  signature: i/9E/yT/BP9W/4v/dP8k/wz/Jf///wD/AP8A/1f/i//O/2b/g/9+/wL/Ov91/wP/jf9O/wT/Zv+L/xH/Zv+D//r/XP90/wb/Zv+D//r/L/91/wf/Zv+D/3n/Av8A/3T/Dv+o/xD/df8K/2b/hf/S/7//AP+A/wD/AP91/wX/v/9A/0D/AP8A//b/0P+D/+D/Af9q/y7/DP8C/1b/wf/g/wf/C//4/+j/AAAAAAAAAACL//D/Wf+F//b/Wf90/0f/aP8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/hf/A/1n/dP8z/2j/AAAAAAAAAABW/+j/AAAAAAAAAABZ/4X/wP9Z/3T/Iv9o/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf+F/8D/Wf90/xH/aP8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/hf/A/1n/df8D/4P/z/9A/4v/x//B/+j/A/+D/+D/OP8L//j/i//H/8H/6P8G/4P/4P8H/wv/x/9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: ___wdtoxmode
+    size: 190
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _wcsrchr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_19OGFJ@?$AA?4?$AAe?$AAx?$AAe?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __wcsicmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_19HBNH@?$AA?4?$AAc?$AAm?$AAd?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_19PPJH@?$AA?4?$AAb?$AAa?$AAt?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_19PDDO@?$AA?4?$AAc?$AAo?$AAm?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 84
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 97
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 103
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 114
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 120
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 131
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 137
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 148
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 154
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

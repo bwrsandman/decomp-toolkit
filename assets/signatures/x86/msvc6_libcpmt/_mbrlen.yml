@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: 9338385397c2eba9800abc3ac361a8a5d0fc8bc7
+  signature: Vf+L/+z/U/9W/77/AAAAAAAAAABX/1b///8V/wAAAAAAAAAAi/89/wAAAAAAAAAAM//b/zn/Hf8AAAAAAAAAAHT/Dv9W////1/9q/xP/6P8AAAAAAAAAAFn/av8B/1v/i/9F/xD/hf/A/3X/Bf+4/wAAAAAAAAAAav8A/1D///91/wz///91/wj/av8A/+j/AAAAAAAAAACD/8T/FP+J/0X/EP+F/9v/dP8K/2r/E//o/wAAAAAAAAAAWf/r/wP/Vv///9f/i/9F/xD/X/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _mbrlen
+    size: 107
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___unguarded_readlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedIncrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedDecrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___setlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _?mbst@?1??mbrlen@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __Mbrtowc_lk
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 14
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 20
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 40
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 56
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 72
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 89
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 7dad8f61f741481225fe8d773a81935926433b4b
+  signature: Vf+L/+z/i/9F/wj/hf/A/3X/Av9d/8P/g/89/wAAAAAAAAAAAP91/xL/Zv+L/03/DP9m/4H/+f///wD/d/85/2r/Af+I/wj/WP9d/8P/jf9N/wj/g/9l/wj/AP9R/2r/AP///zX/AAAAAAAAAABQ/43/Rf8M/2r/Af9Q/2j/IP8C/wD/AP///zX/AAAAAAAAAAD//xX/AAAAAAAAAACF/8D/dP8G/4P/ff8I/wD/dP8O/+j/AAAAAAAAAADH/wD/Kv8A/wD/AP+D/8j///9d/8P/
+  symbols:
+  - kind: Function
+    name: __wctomb_lk
+    size: 105
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__WideCharToMultiByte@32
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 51
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 69
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 75
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 90
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

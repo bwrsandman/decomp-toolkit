@@ -1,0 +1,155 @@
+- symbol: 0
+  hash: 9d5e361dd44ce4abcdcb63010af5322fec8e2c24
+  signature: Vf+L/+z/U/+L/13/CP9W/1f/av8C/17/i//+/4v/A/+F/8D/dP8Q/1D/g//D/wT/6P8AAAAAAAAAAFn/jf98/wf/Af/r/+r/V//o/wAAAAAAAAAAWf+L/03/EP+F/8D/if8B/3X/C/+L/0X/FP+D/yD/AP/p/+L/AP8A/wD/i/99/wz/hf///3T/Fv+L/wf/hf/A/3T/N/9Q/4P/x/8E/+j/AAAAAAAAAABZ/43/dP8G/wH/6//q/4v/Rf8U/4v/Xf8U/4v/ff8U/4P/IP8A/4v/Rf8Q/4v/MP+L/0X/CP+J/0X/EP+L/wD/hf/A/w//hf/C/wD/AP8A/0b/6f/b/wD/AP8A/6H/AAAAAAAAAACF/8D/df8S/+j/AAAAAAAAAACF/8D/o/8AAAAAAAAAAA//hP+Z/wD/AP8A/zP/2/84/xj/dP8j/4v/+P+K/w//gP/5/z3/dP8a/1f/6P8AAAAAAAAAAI3/XP8D/wH/of8AAAAAAAAAAFn/iv8M/xj/jf88/xj/hP/J/3X/4f+L//v/A//D/4D/OP89/3X/Kf+A/3j/Af8A/3T/I/+A/3j/Av86/3X/Hf+A/3j/A/89/3X/F/+D/8D/BP9Q/+j/AAAAAAAAAACN/3z/B/8F/6H/AAAAAAAAAABZ/wP/x//r/9L/i//H/yv/w/8D/8b/UP/o/wAAAAAAAAAAWf+L/03/FP+F/8D/if8B/w//hf9V/////////4v/df8Q////Nv/o/wAAAAAAAAAAg/8m/wD/Wf/o/wAAAAAAAAAAx/8A/wz/AP8A/wD/6P8AAAAAAAAAAMf/AP8I/wD/AP8A/4P/yP///+n/wv8A/wD/AP9Q/1b/6P8AAAAAAAAAAIv/Rf8I/4v/CP+D/8D/BP9R/4n/Rf8Q/+j/AAAAAAAAAACD/8T/DP+N/3T/Bv8B/4v/Rf8Q/4v/AP+F/8D/dP8j/1D/Vv/o/wAAAAAAAAAAi/9F/xD/g/9F/xD/BP+L/wD/UP/o/wAAAAAAAAAAg//E/wz/A//w/8b/Bv8g/+n/8//+//////+L/0X/FP+A/2b///8A/4D/Jv8A/4P/ff8M/wD/i/8w/3T/Pv+L/8f/K//D/1D/of8AAAAAAAAAAAP/w/9Q/1b/6P8AAAAAAAAAACv/+/+D/8T/DP8D//f/i/99/wz/i/8H/4X/wP90/xv/UP9W/+j/AAAAAAAAAACL/wf/g//H/wT/UP/o/wAAAAAAAAAAg//E/wz/jf90/wb/Af/r/9//hf/2/3T/Dv+L/0X/FP87/zD/df8E/4D/Jv8A/0b/gP8m/wD///81/wAAAAAAAAAA6P8AAAAAAAAAAIP/Jf8AAAAAAAAAAAD/Wf8z/8D/X/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __cenvarg
+    size: 518
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __aenvptr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtGetEnvironmentStringsA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 25
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 38
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 132
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 141
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 148
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 175
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 184
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 231
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 240
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 257
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 281
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 290
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 301
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 322
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 339
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 362
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 377
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 418
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 427
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 450
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 461
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 494
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 499
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 505
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

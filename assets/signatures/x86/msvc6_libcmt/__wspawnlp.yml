@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: e6b27b2f30cbb4254faaccb3a24e12cc8603c177
+  signature: jf9E/yT/DP9Q////dP8k/wz///90/yT/DP/o/wAAAAAAAAAAg//E/wz/w/8=
+  symbols:
+  - kind: Function
+    name: __wspawnlp
+    size: 22
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __wspawnvp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

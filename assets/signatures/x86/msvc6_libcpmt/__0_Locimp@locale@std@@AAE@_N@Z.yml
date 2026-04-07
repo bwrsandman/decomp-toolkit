@@ -1,0 +1,91 @@
+- symbol: 0
+  hash: 029d937f0b11ccbb53a4e39e45b01dab1a025a73
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1P/Vv+L//H/V/+J/3X/8P/H/0b/BP8B/wD/AP8A/8f/Bv8AAAAAAAAAAIr/Tf8I/zP/wP+I/07/FP+K/03/C/+N/37/GP+J/0b/CP+J/0b/DP+J/0b/EP+I/w//UP+L/8//if9F//z/6P8AAAAAAAAAALv/AAAAAAAAAABT/+j/AAAAAAAAAABZ/1D/U/+L/8//6P8AAAAAAAAAAIv/Tf/0/8f/Bv8AAAAAAAAAAIv/xv9f/17/W/9k/4n/Df8AAAAAAAAAAMn/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ??0_Locimp@locale@std@@AAE@_N@Z
+    size: 114
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L10078
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7facet@locale@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_01FDHG@?$CK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7_Locimp@locale@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 28
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 64
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 69
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 75
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 85
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 94
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 106
+    kind: x86_abs32
+    symbol: 9
+    addend: 0

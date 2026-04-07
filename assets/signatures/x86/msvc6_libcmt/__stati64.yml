@@ -1,0 +1,234 @@
+- symbol: 0
+  hash: 487b172874ac184722a06706644fad8017627ae9
+  signature: Vf+L/+z/gf/s/2T/Av8A/wD/U/9W/4v/df8I/1f/aP8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/hf/A/1n/df8T/zP/2/+A/37/Af86/3X/M/+K/wb/Ov/D/3T/Hv84/17/Av91/xn/6P8AAAAAAAAAAGr/Av9e/4n/MP/o/wAAAAAAAAAAif8w/4P/yP///+n/hv8C/wD/AP8P/77/wP9Q/+j/AAAAAAAAAABZ/4P/6P9g/+v/Bf/o/wAAAAAAAAAAif9F/+D/jf+F/6D//v//////UP9W////Ff8AAAAAAAAAAIP/z////4n/Rf/s/zv/x/8P/4X/q/8A/wD/AP9o/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf+F/8D/Wf8P/4T/gP8A/wD/AP9o/wT/Af8A/wD/jf+F/5z//f//////Vv9Q/+j/AAAAAAAAAACL//D/g//E/wz/O//z/3T/Zf9W/+j/AAAAAAAAAACD//j/A/9Z/3T/C/9W/+j/AAAAAAAAAACF/8D/Wf90/07/Vv///xX/AAAAAAAAAACD//j/Af92/0L/V/9T/1P/U/9q/wH/av8B/2j/vP8H/wD/AP/H/4X/oP/+//////8Q/wD/AP8A/4n/nf+8//7//////4n/nf/A//7//////4j/nf/M//7//////+j/AAAAAAAAAACL/3X/DP+D/8T/HP+J/0b/JP+J/0b/IP+J/0b/KP/p/1L/Af8A/wD/6P8AAAAAAAAAAGr/Av9e/4n/MP/o/wAAAAAAAAAAif8w/+n/pv8B/wD/AP+N/0X/5P9Q/43/hf+0//7//////1D///8V/wAAAAAAAAAAhf/A/w//hP93/wH/AP8A/43/Rf/w/1D/jf9F/+T/UP///xX/AAAAAAAAAACF/8D/D/+E/2H/Af8A/wD/D/+3/0X//P9X/1D/D/+3/0X/+v9Q/w//t/9F//j/UP8P/7f/Rf/2/1D/D/+3/0X/8v9Q/w//t/9F//D/UP/o/wAAAAAAAAAAi/91/wz/g//E/xz/Of+d/6z//v//////if9G/yT/df8I/zn/nf+w//7//////3T/Vv+N/0X/5P9Q/43/hf+s//7//////1D///8V/wAAAAAAAAAAhf/A/w//hP8L/wH/AP8A/43/Rf/w/1D/jf9F/+T/UP///xX/AAAAAAAAAACF/8D/D/+E//X/AP8A/wD/D/+3/0X//P9X/1D/D/+3/0X/+v9Q/w//t/9F//j/UP8P/7f/Rf/2/1D/D/+3/0X/8v9Q/w//t/9F//D/UP/o/wAAAAAAAAAAg//E/xz/Of+d/6T//v//////if9G/yD/df8N/zn/nf+o//7//////3X/Bf+L/0b/JP/r/1b/jf9F/+T/UP+N/4X/pP/+//////9Q////Ff8AAAAAAAAAAIX/wP8P/4T/nf8A/wD/AP+N/0X/8P9Q/43/Rf/k/1D///8V/wAAAAAAAAAAhf/A/w//hP+H/wD/AP8A/w//t/9F//z/V/9Q/w//t/9F//r/UP8P/7f/Rf/4/1D/D/+3/0X/9v9Q/w//t/9F//L/UP8P/7f/Rf/w/1D/6P8AAAAAAAAAAIP/xP8c////df/s/4n/Rv8o////Ff8AAAAAAAAAAP//df8I////tf+g//7//////+j/AAAAAAAAAABZ/2b/if9G/wb/Wf9m/8f/Rv8I/wH/AP9q/wH/U/9T////tf+8//7//////+j/AAAAAAAAAACL/43/wP/+//////8z////A//B/2b/if9e/wT/if9G/xj/i/9F/+D/E//X/0j/if8G/4n/Rv8Q/4n/Vv8c/2b/if9e/wz/Zv+J/17/Cv8z/8D/6/8Y////Ff8AAAAAAAAAAFD/6P8AAAAAAAAAAFn///91/+z///8V/wAAAAAAAAAAi//H/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __stati64
+    size: 727
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_02DIIM@?$DP?$CK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __mbspbrk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mbctolower
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getdrive
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FindFirstFileA@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_03MNBA@?4?1?2?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __fullpath
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _IsRootUNCName
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __imp__GetDriveTypeA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___loctotime_t
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FileTimeToLocalFileTime@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FileTimeToSystemTime@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FindClose@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___dtoxmode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __allmul
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 52
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 92
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 109
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 128
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 134
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 162
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 177
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 189
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 201
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 252
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 277
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 287
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 311
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 333
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 377
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 419
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 441
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 485
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 529
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 551
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 595
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 610
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 624
+    kind: x86_rel32
+    symbol: 17
+    addend: -4
+  - offset: 651
+    kind: x86_rel32
+    symbol: 18
+    addend: -4
+  - offset: 700
+    kind: x86_abs32
+    symbol: 19
+    addend: 0
+  - offset: 706
+    kind: x86_rel32
+    symbol: 20
+    addend: -4
+  - offset: 716
+    kind: x86_abs32
+    symbol: 16
+    addend: 0

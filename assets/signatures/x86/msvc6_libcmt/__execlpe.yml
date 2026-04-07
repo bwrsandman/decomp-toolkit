@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 8ebc8881c888f74e8a39ee03648860735bff4c11
+  signature: g/98/yT/CP8A/43/RP8k/wz/dP8J/4v/CP+D/8D/BP+F/8n/df/3////MP+N/0T/JP8M/1D///90/yT/DP/o/wAAAAAAAAAAg//E/wz/w/8=
+  symbols:
+  - kind: Function
+    name: __execlpe
+    size: 40
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __execvpe
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 32
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

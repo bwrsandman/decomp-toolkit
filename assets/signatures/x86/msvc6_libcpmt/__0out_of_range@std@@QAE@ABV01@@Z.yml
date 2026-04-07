@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: ec007a26bfe0557744f8e62a62abb07d453b10c7
+  signature: Vv+L//H///90/yT/CP/o/wAAAAAAAAAAx/8G/wAAAAAAAAAAi//G/17/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ??0out_of_range@std@@QAE@ABV01@@Z
+    size: 24
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0logic_error@std@@QAE@ABV01@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7out_of_range@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 8
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 14
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

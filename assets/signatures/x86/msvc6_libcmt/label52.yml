@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 2bbd25185dfc63e612f13bc9a8195c6c6a6b6026
+  signature: 2f/O/9v/fP8k/wz/2f/N/9n/wP/b/zz/JP/b/3z/JP8g/+j/AAAAAAAAAADZ/83/2/9s/yT/IP+D/8T/LP/D/w==
+  symbols:
+  - kind: Function
+    name: label52
+    size: 32
+    flags: 2
+    section: .text
+  - kind: Object
+    name: '@comp.id'
+    size: 0
+    flags: 2
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: 0

@@ -1,0 +1,31 @@
+- symbol: 0
+  hash: 1622199e31e1c2676eda6793cd7f93a4437a60e5
+  signature: Vv+L/3T/JP8I/1f/i/98/yT/EP9W////N////zb/6P8AAAAAAAAAAIP/xP8M/4X/wP90/xf/jf9G/wT/UP9q/wH///8w/+j/AAAAAAAAAACD/8T/DP+F/8D/dP8D////Rv8I/43/Rv8E/1D///93/wT///8w/+j/AAAAAAAAAACD/8T/DP+F/8D/dP8D////Rv8I/43/Rv8I/1D///93/wj///8w/+j/AAAAAAAAAACD/8T/DP9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: ___add_12
+    size: 94
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___addl
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 36
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 60
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 84
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

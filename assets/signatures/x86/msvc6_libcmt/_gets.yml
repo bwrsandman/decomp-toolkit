@@ -1,0 +1,58 @@
+- symbol: 0
+  hash: 172053c7aceeba495e6c51ae021faaae5fef7bf0
+  signature: U/+L/1z/JP8I/1b/V/+//wAAAAAAAAAAi//z/1f/av8A/+j/AAAAAAAAAABZ/1n///8N/wAAAAAAAAAAeP8Q/6H/AAAAAAAAAAAP/7b/AP///wX/AAAAAAAAAADr/wf/V//o/wAAAAAAAAAAWf+D//j/Cv90/xL/g//4////dP8F/4j/Bv9G/+v/0v87//P/df8E/zP/2//r/wP/gP8m/wD/V/9q/wD/6P8AAAAAAAAAAFn/i//D/1n/X/9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: _gets
+    size: 97
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_file2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __filbuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file2
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 26
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 50
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 85
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

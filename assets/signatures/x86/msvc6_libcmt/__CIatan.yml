@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: f773ca63402e2120fdac30790e9cf3ffbdc09400
+  signature: g//s/wj/3f8U/yT/6P8AAAAAAAAAAOj/AAAAAAAAAACD/8T/CP/D/w==
+  symbols:
+  - kind: Function
+    name: __CIatan
+    size: 20
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __checkTOS_withFB
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: fn_0000001D
+    size: 0
+    flags: 0
+    section: .text
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 12
+    kind: x86_rel32
+    symbol: 2
+    addend: 0

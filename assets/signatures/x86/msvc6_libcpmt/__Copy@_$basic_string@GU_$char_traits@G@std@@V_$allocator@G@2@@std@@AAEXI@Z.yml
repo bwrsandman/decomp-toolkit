@@ -1,0 +1,68 @@
+- symbol: 0
+  hash: 7af8ff5c99757b88156ccc0e2fcd2a6de65156d9
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/DP9T/1b/V/+L/33/CP+D/8//H/+L//H/gf////3//////3//if9l//D/if91/+z/dv8D/4v/ff8I/4P/Zf/8/wD/jf9H/wL/hf/A/33/Av8z/8D/A//A/1D/6P8AAAAAAAAAAFn/if9F/wj/6/8n/4v/Rf8I/4n/Rf/o/4P/wP8C/4X/wP99/wL/M//A/wP/wP9Q/+j/AAAAAAAAAACJ/0X/CP9Z/7j/AAAAAAAAAADD/4v/df/s/4v/ff/o/4v/Rv8I/4X/wP92/yL/O//H/4v/1/93/wL/i//Q/4v/Rf8I/4v/Tv8E/4P/wP8C/4X/0v92/w3/Zv+L/xn/Zv+J/xj/QP9A/0H/Qf9K/3X/8/+L/17/CP9q/wH/i//O/+j/AAAAAAAAAACL/0X/CP+D/8D/Av+J/0b/BP+A/2D///8A/zv/3/+J/37/DP93/wL/i//7/4v/Rv8E/4v/Tf/0/4n/fv8I/2b/g/8k/3j/AP9f/17/ZP+J/w3/AAAAAAAAAABb/8n/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?_Copy@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAEXI@Z
+    size: 210
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L21842
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L21841
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?_Tidy@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 58
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 87
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 96
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 156
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 201
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

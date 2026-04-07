@@ -1,0 +1,36 @@
+- symbol: 0
+  hash: dfdb3b33cd4c62d356cd0458db18e2b6578d8a41
+  signature: Vv+L/zX/AAAAAAAAAABX/4v/Bv+F/8D/dP8x/4v/fP8k/xD/V/9Q////dP8k/xT/6P8AAAAAAAAAAIP/xP8M/4X/wP91/xH/i/8G/2b/i/8E/3j/Zv89/z3/AP90/x//Zv+F/8D/dP8a/4v/Rv8E/4P/xv8E/4X/wP91/9P/i//G/yv/Bf8AAAAAAAAAAMH/+P8C//f/2P9f/17/w/+L/8b/K/8F/wAAAAAAAAAAwf/4/wL/6//w/w==
+  symbols:
+  - kind: Function
+    name: _wfindenv
+    size: 92
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __wenviron
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __wcsnicoll
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 25
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 67
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 83
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

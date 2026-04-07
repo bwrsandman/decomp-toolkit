@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: b9c95faa32667a734ef87ad1d7d6bcbf6bc24e53
+  signature: aP8AAAAAAAAAAP//dP8k/wz///90/yT/DP/o/wAAAAAAAAAAg//E/wz/w/8=
+  symbols:
+  - kind: Function
+    name: __ld12tod
+    size: 22
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _DoubleFormat
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Function
+    name: __ld12cvt
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 14
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

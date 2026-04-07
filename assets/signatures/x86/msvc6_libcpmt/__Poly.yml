@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 9dd93db92cf65c478e450c8739207675dce9e3b0
+  signature: i/9E/yT/DP+L/0z/JP8Q/0n/3f8A/3j/Ef9B/9n/wP/c/0z/JP8E/4P/wP8I/0n/3P8A/93/2f91//D/w/8=
+  symbols:
+  - kind: Function
+    name: __Poly
+    size: 31
+    flags: 1
+    section: .text
+  relocations: []

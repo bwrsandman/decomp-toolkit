@@ -1,0 +1,52 @@
+- symbol: 0
+  hash: d04e432260ae0b61fdf07bbe2df37935fc9aa19c
+  signature: Vv+L/3T/JP8I/4X/9v90/0P/i/9G/wz/Pf8AAAAAAAAAAHT/Of9Q/+j/AAAAAAAAAAD//3b/EP/o/wAAAAAAAAAA//92/xT/6P8AAAAAAAAAAP//dv8Y/+j/AAAAAAAAAAD//3b/HP/o/wAAAAAAAAAA//92/yD/6P8AAAAAAAAAAP//dv8k/+j/AAAAAAAAAACD/8T/HP9e/8P/
+  symbols:
+  - kind: Function
+    name: __free_lc_lconv
+    size: 78
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___lconv_static_null
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 13
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 29
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 45
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 53
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 61
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 69
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

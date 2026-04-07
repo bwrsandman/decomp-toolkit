@@ -1,0 +1,45 @@
+- symbol: 0
+  hash: 52aaf9fa769bf05460fd69a0a9b9a49acfe81008
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8Q/1P/Vv9X/4n/Zf/o/4P/Zf/8/wD/i/9F/wj/i/8A/2r/Af9Y/4n/Rf/k/+v/Gf+L/0X/7P+L/wD/i/8A/zP/yf89/wX/AP8A/8D/D/+U/8H/i//B/8P/i/9l/+j/M//A/4P/Tf/8////i/9N//D/ZP+J/w3/AAAAAAAAAABf/17/W//J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: __rt_probe_read4@4
+    size: 101
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T16370
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 90
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

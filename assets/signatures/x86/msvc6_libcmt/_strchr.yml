@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 0db22fb927e7ae0bae455e98deab0c292f0bdf58
+  signature: M//A/4r/RP8k/wj/
+  symbols:
+  - kind: Function
+    name: _strchr
+    size: 6
+    flags: 1
+    section: .text
+  relocations: []

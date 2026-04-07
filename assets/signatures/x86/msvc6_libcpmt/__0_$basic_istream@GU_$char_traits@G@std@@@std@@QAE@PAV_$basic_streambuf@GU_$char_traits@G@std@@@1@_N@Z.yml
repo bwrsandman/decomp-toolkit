@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: 96ebc5d58afa1d3f5bd328c2a4c0528b04a06923
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1H/Vv8z/8D/Of9F/xD/i//x/4n/df/s/4n/Rf/w/3T/Gv/H/wb/AAAAAAAAAACJ/0b/LP/H/0b/CP8AAAAAAAAAAMf/Rf/w/wH/AP8A/wD/if9F//z/if9G/wT/i/8G////df8M/4v/QP8E////df8I/8f/BP8w/wAAAAAAAAAAi/8G/4v/SP8E/wP/zv/o/wAAAAAAAAAAi/9N//T/i//G/17/ZP+J/w3/AAAAAAAAAADJ/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0?$basic_istream@GU?$char_traits@G@std@@@std@@QAE@PAV?$basic_streambuf@GU?$char_traits@G@std@@@1@_N@Z
+    size: 104
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L10945
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_8?$basic_istream@GU?$char_traits@G@std@@@std@@7B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_7?$basic_ios@GU?$char_traits@G@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_7?$basic_istream@GU?$char_traits@G@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?init@?$basic_ios@GU?$char_traits@G@std@@@std@@IAEXPAV?$basic_streambuf@GU?$char_traits@G@std@@@2@_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 30
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 40
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 71
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 83
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 96
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

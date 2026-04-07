@@ -1,0 +1,47 @@
+- symbol: 0
+  hash: 2c5bcfa6be414a1f799f494ebeb509445ac523f5
+  signature: DP///6L/AAAAAAAAAACi/wAAAAAAAAAAov8AAAAAAAAAAKL/AAAAAAAAAACi/wAAAAAAAAAAov8AAAAAAAAAAKL/AAAAAAAAAACi/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ___lconv_init
+    size: 43
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lconv_c
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 13
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 23
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 38
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

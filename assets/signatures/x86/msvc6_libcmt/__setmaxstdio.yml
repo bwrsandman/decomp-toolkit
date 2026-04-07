@@ -1,0 +1,96 @@
+- symbol: 0
+  hash: 7bab3644dcc713136522ebab9d037a26ba6c1dfa
+  signature: Vv+L/3T/JP8I/4P//v8U/w//jP/E/wD/AP8A/4H//v8A/wj/AP8A/w//j/+4/wD/AP8A/1P/V/9q/wL/6P8AAAAAAAAAAKH/AAAAAAAAAABZ/zv/8P9+/z3/i//G/8H/4P8C/1D///81/wAAAAAAAAAA6P8AAAAAAAAAAIv/0P9Z/4X/0v9Z/3T/e/+h/wAAAAAAAAAAO//G/33/C/+L/87/jf88/4L/K//I/zP/wP/z/6v/if81/wAAAAAAAAAAi//e/4n/Ff8AAAAAAAAAAOv/Wv91/wT/i//Y/+v/VP+L/97/jf94////O//+/3z/H/+h/wAAAAAAAAAAi/8E/7j/hf/A/3T/Df/2/0D/DP+D/3X/Cv9Q/+j/AAAAAAAAAABZ/0//6//g/4P/y////4P/+////3T/J/+L/8b/wf/g/wL/UP///zX/AAAAAAAAAADo/wAAAAAAAAAAWf+F/8D/Wf90/w3/if81/wAAAAAAAAAAo/8AAAAAAAAAAOv/A/+D/8v///9q/wL/6P8AAAAAAAAAAFn/i//D/1//W/9e/8P/g//I////Xv/D/w==
+  symbols:
+  - kind: Function
+    name: __setmaxstdio
+    size: 215
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __nstream
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___piob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _realloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 31
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 36
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 58
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 71
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 92
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 100
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 122
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 141
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 165
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 170
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 182
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 187
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 199
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

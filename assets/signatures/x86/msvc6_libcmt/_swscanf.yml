@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: aa25ae3fe85bc0540043823b7899976caa080c4f
+  signature: Vf+L/+z/g//s/yD/i/9F/wj/x/9F/+z/Sf8A/wD/AP9Q/4n/Rf/o/4n/Rf/g/+j/AAAAAAAAAADR/+D/if9F/+T/jf9F/xD/UP+N/0X/4P///3X/DP9Q/+j/AAAAAAAAAACD/8T/EP/J/8P/
+  symbols:
+  - kind: Function
+    name: _swscanf
+    size: 54
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __winput
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 24
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 45
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

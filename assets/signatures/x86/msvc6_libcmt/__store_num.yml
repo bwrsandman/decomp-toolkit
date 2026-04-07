@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: fb328a20fa76bbba93f5e93bf860dc3325026728
+  signature: Vf+L/+z/Uf8z/8D/V/85/wX/AAAAAAAAAACJ/0X//P90/xP///91/xT///91/xD///91/wj/6P8AAAAAAAAAAIP/xP8M/+v/R/+L/33/FP+L/03/DP87/w//c/87/0n/Vv+L/3X/EP+N/0H/Af+F/8D/dP8l/1P/i/9F/wj/av8K/5n/W//3//v/i/8G/4D/wv8w/4j/FP8I/4v/Rf8I/5n/9//7////Rf/8/0n/g//5////if9F/wj/df/d/1v/i/9F//z/Af8G/yn/B/9e/+v/Av+J/wf/X//J/8P/
+  symbols:
+  - kind: Function
+    name: __store_num
+    size: 111
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___no_lead_zeros
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __store_number
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 28
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

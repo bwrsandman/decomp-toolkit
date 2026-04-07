@@ -1,0 +1,152 @@
+- symbol: 0
+  hash: f2032b5a9de5a30625153d0ca4eac018dc01ed2e
+  signature: Vf+L/+z/Uf9T/1b/i/91/wz/M//b/1f/i/99/wj/if9d//z/O//3/3T/If+K/wb/PP9c/3T/G/88/y//dP8X/zz/Ov90/xP/Tv87//f/dv/r/0b/Vv9X/+j/AAAAAAAAAABZ/4v/8P9Z/+v/2/+K/wb/PP86/3X/Df+N/0//Af87//H/dP8G/1f/6f/s/wD/AP8A/zz/XP90/wj/PP8v/3T/BP88/zr/df8F/4v/3v8r/9//Q/9X/+j/AAAAAAAAAACL//j/Wf+F////D/+E/8f/AP8A/wD/of8AAAAAAAAAAIn/Rf8M/2j/AAAAAAAAAABX/+j/AAAAAAAAAABZ/4X/wP9Z/3T/dP9o/wAAAAAAAAAAV//o/wAAAAAAAAAAWf+F/8D/Wf90/2P/iv8G/zz/XP90/x//PP86/3T/G/88/y//dP8X/1f/6P8AAAAAAAAAAIX/wP9Z/4n/Rf8I/3T/Wv9Q/+j/AAAAAAAAAABZ/+v/N/9X/+j/AAAAAAAAAACN/0T/GP8B/1D/6P8AAAAAAAAAAFn/hf/A/1n/dP87/1f/U////3X/CP9Q/+j/AAAAAAAAAACD/8T/DP8D/8P/UP/o/wAAAAAAAAAAK//D/1D/6P8AAAAAAAAAAIP/xP8M/4X/wP91/xb///9F//z/av8A/+j/AAAAAAAAAACL//j/Wf+F////dP8K/+n/aP////////+D/8j////r/yv/g/99//z/AP90/xz/i/9F/wz/hf/A/3T/Bf+L/0D/BP/r/wX/of8AAAAAAAAAAFD/6P8AAAAAAAAAAFn/M//A/+v/Cf///3X/CP/o/wAAAAAAAAAAWf9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: _match
+    size: 321
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __mbsdec
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _find
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _argend
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ??_C@_01PJCK@?4?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __mbscmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_02OOND@?4?4?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __strdup
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _add
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mbsnbcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _arghead
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _sort
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 45
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 109
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 117
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 123
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 134
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 140
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 166
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 180
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 189
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 199
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 216
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 227
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 235
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 252
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 292
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 298
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 311
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

@@ -1,0 +1,95 @@
+- symbol: 0
+  hash: 848128119bfa16b8bb0df861b65e4944c4137e38
+  signature: U/+L/1z/JP8I/zv/Hf8AAAAAAAAAAFb/V/9z/3L/i//D/8H/+P8F/43/PP+F/wAAAAAAAAAAi//D/4P/4P8f/43/NP/A/4v/B//B/+b/Av/2/0T/MP8E/wH/dP9S/1P/6P8AAAAAAAAAAIv/B/9Z//b/RP8w/wT/Af90/yn/U//o/wAAAAAAAAAAWf9Q////Ff8AAAAAAAAAAIX/wP91/wr///8V/wAAAAAAAAAAi//w/+v/Av8z//b/hf/2/3T/Ff/o/wAAAAAAAAAAif8w/+j/AAAAAAAAAADH/wD/Cf8A/wD/AP+D/87///9T/+j/AAAAAAAAAABZ/4v/xv/r/w7/6P8AAAAAAAAAAMf/AP8J/wD/AP8A/4P/yP///1//Xv9b/8P/
+  symbols:
+  - kind: Function
+    name: __commit
+    size: 147
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __get_osfhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FlushFileBuffers@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 23
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 49
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 73
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 83
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 98
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 105
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 120
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 130
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

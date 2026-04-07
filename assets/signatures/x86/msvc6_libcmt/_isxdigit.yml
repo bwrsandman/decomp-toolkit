@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: a2be24fb81b00eb72d24fb85592fa1eb00406992
+  signature: g/89/wAAAAAAAAAAAf9+/xH/aP+A/wD/AP8A////dP8k/wj/6P8AAAAAAAAAAFn/Wf/D/4v/RP8k/wT/i/8N/wAAAAAAAAAAiv8E/0H/Jf+A/wD/AP8A/8P/
+  symbols:
+  - kind: Function
+    name: _isxdigit
+    size: 45
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __isctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 19
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 32
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

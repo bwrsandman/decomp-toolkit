@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 6a2c392720e9096f2bd7c67ea07228f34b543288
+  signature: Zv+L/wT/JP9m/z3/f/8C/3T/Hv9m/4P/4P8g/3T/Ff+b/9//4P9m/4P/4P8g/3T/DP+4/wj/AP8A/wD/6P8AAAAAAAAAAFr/w//Z/yz/JP9a/8P/
+  symbols:
+  - kind: Function
+    name: __math_exit
+    size: 42
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __startOneArgErrorHandling
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 31
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

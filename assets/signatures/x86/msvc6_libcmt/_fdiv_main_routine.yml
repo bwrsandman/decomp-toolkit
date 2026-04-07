@@ -1,0 +1,54 @@
+- symbol: 0
+  hash: eaba791b8d094b60ec8b85f75b7b24f6e1a874eb
+  signature: 2/9s/yT/EP/b/2z/JP8E/4v/RP8k/wj/A//A/w//g/+G/wD/AP8A/zX/AP8A/wD/Dv+p/wD/AP8A/w7/dP8D/97/+f/D/8H/6P8c/4D/uP8AAAAAAAAAAAD/df8D/97/+f/D/4v/RP8k/wz/Jf///3//AP8A/3T/Z/89////f/8A/wD/dP9g/9n/fP8k/xz/i/9E/yT/HP8N/z//A/8A/wD/Jf////P/AP8A/4n/RP8k/yD/2f9s/yT/IP+L/0T/JP8Y/yX///9//wD/AP+D//j/Af90/xf/2P8N/wAAAAAAAAAA2f/J/9j/Df8AAAAAAAAAANn/yf/Z/2z/JP8c/97/+f/D/9j/Df8AAAAAAAAAANn/yf/Y/w3/AAAAAAAAAADZ/8n/2f9s/yT/HP/e//n/w/+L/0T/JP8E/wv/RP8k/wj/df8D/97/+f/D/4v/RP8k/wz/Jf///3//AP8A/3X/8v/Z/3z/JP8c/4v/RP8k/xz/Df8//wP/AP8A/yX////z/wD/AP+J/0T/JP8g/9n/bP8k/yD/i/9E/yT/GP8l////f/8A/wD/dP8R/z3///9//wD/AP90/zL/i/9E/yT/FP8D/8D/c/8q/+v/CP+L/0T/JP8U/wP/wP9y/yD/2f/J/93/2P/Z/8D/2P8N/wAAAAAAAAAA2/98/yT/BP/b/2z/JP8Q/9n/yf+b/9n/bP8k/xz/6f/4//7//////9n/bP8k/xz/3v/5/8P/
+  symbols:
+  - kind: Function
+    name: _fdiv_main_routine
+    size: 279
+    flags: 1
+    section: .text
+  - kind: Object
+    name: fdiv_risc_table
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: fdiv_scale_1
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: fdiv_scale_2
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: one_shl_63
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 40
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 110
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 118
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 133
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 141
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 248
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

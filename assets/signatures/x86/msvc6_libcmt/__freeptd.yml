@@ -1,0 +1,87 @@
+- symbol: 0
+  hash: 099e53cd9dc619f98de4a48071b02bdaa4a2b358
+  signature: of8AAAAAAAAAAIP/+P///w//hP+R/wD/AP8A/1b/i/90/yT/CP+F//b/df8N/1D///8V/wAAAAAAAAAAi//w/4X/9v90/2z/i/9G/yT/hf/A/3T/B/9Q/+j/AAAAAAAAAABZ/4v/Rv8o/4X/wP90/wf/UP/o/wAAAAAAAAAAWf+L/0b/MP+F/8D/dP8H/1D/6P8AAAAAAAAAAFn/i/9G/zj/hf/A/3T/B/9Q/+j/AAAAAAAAAABZ/4v/Rv9A/4X/wP90/wf/UP/o/wAAAAAAAAAAWf+L/0b/RP+F/8D/dP8H/1D/6P8AAAAAAAAAAFn/i/9G/1D/Pf8AAAAAAAAAAHT/B/9Q/+j/AAAAAAAAAABZ/1b/6P8AAAAAAAAAAFn/av8A////Nf8AAAAAAAAAAP//Ff8AAAAAAAAAAF7/w/8=
+  symbols:
+  - kind: Function
+    name: __freeptd
+    size: 160
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___tlsindex
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: __imp__TlsGetValue@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __XcptActTab
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__TlsSetValue@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 45
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 87
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 101
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 115
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 124
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 132
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 139
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 148
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 154
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 035194e43598a655f1d187d4f52a95f2cb6fc810
+  signature: Vv9X/4v/fP8k/wz/hf///3T/Kv+L/3f/BP+F//b/dP8j////N////zb/6P8AAAAAAAAAAFn/hf/A/1n/ff8I/4v/Dv+L/wf/if8P/4n/Bv+L/3b/BP+F//b/df/i/4v/f/8E/+v/1v9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: _sort
+    size: 55
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __mbsicmp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 22
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

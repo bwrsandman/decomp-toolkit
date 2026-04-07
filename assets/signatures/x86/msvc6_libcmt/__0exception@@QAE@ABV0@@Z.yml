@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: ee1249523f0b84fc2f1d49158d8e7517ae4dffa9
+  signature: Vv9X/4v/fP8k/wz/i//x/8f/Bv8AAAAAAAAAAIv/R/8I/4X/wP+J/0b/CP90/yX///93/wT/6P8AAAAAAAAAAED/UP/o/wAAAAAAAAAAWf+J/0b/BP+F/8D/Wf90/xP///93/wT/UP/o/wAAAAAAAAAAWf9Z/+v/Bv+L/0f/BP+J/0b/BP+L/8b/X/9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0exception@@QAE@ABV0@@Z
+    size: 74
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7exception@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 28
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 35
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 53
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

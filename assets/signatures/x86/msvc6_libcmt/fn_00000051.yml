@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 2d23ba20200b8eeff1d363e6c6e471bf43b4720a
+  signature: /P8A/4P/Tf/8////6P8AAAAAAAAAAA==
+  symbols:
+  - kind: Function
+    name: fn_00000051
+    size: 11
+    flags: 0
+    section: .text
+  - kind: Function
+    name: fn_0000005C
+    size: 0
+    flags: 0
+    section: .text
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: 0

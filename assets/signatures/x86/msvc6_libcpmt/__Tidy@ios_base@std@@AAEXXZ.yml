@@ -1,0 +1,32 @@
+- symbol: 0
+  hash: 947d8fb0ba9abcc2c6e852874b1a4b3f69345c9a
+  signature: Vv9X/4v/8f9q/wD/6P8AAAAAAAAAAIv/Rv8Y/4X/wP90/w//i/84/1D/6P8AAAAAAAAAAIX///9Z/4v/x/91//H/i/9G/xz/g/9m/xj/AP+F/8D/dP8P/4v/OP9Q/+j/AAAAAAAAAACF////Wf+L/8f/df/x/4P/Zv8c/wD/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: ?_Tidy@ios_base@std@@AAEXXZ
+    size: 66
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Callfns@ios_base@std@@AAEXW4event@12@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 22
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 48
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

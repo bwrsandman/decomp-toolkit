@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 9984cf37f372e2be9e6c7f82fba9bb2389a7961f
+  signature: Vf+L/+z/Uf9R/1b/V//o/wAAAAAAAAAAg/94/2j/AP90/yH///91/yT///91/yD///91/xj///91/xT///91/xD///91/wz///91/wj/6P8AAAAAAAAAAIP/xP8c/4X/wP91/3P/i/99/xz/jf9F//j/UP+N/0X//P9Q/1f///91/yD///91/xj/6P8AAAAAAAAAAIP/xP8U/4v/8P+L/0X//P87/0X/+P9z/0//O/8+/3z/Q/87/37/BP9//z7/i/9G/wz/i/9O/xD/wf/g/wT/A//B/4v/SP/0/4X/yf90/wb/gP95/wj/AP91/yb/av8B/4P/wP/w////df8k////df8g/1b/av8A/1D///91/xj///91/xT///91/xD///91/wz///91/wj/6P8AAAAAAAAAAIP/xP8s////Rf/8/4P/xv8U/+v/qf9f/17/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?FindHandlerForForeignException@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@HH1@Z
+    size: 170
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_CallSETranslator@@YAHPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAX2PBU_s_FuncInfo@@H1@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_GetRangeOfTrysToCheck@@YAPBU_s_TryBlockMapEntry@@PBU_s_FuncInfo@@HHPAI1@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CatchIt@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@PBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_TryBlockMapEntry@@H1E@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 8
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 40
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 70
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 151
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

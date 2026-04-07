@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 6b512a6d8da0dc5cf4febef4a96f949ff9f4627a
+  signature: Vf+L/+z/g//s/wz/i/9N/xD/Vv9X/4v/ff8I/2r/Af9a/wn/V/8Q/4v/R/8Q/4P/+f8N/w//j/8B/wH/AP8A/w//hP/q/wD/AP8A/4X/yf8P/4z/Rf8B/wD/AP+D//n/B/8P/47/vv8A/wD/AP+D//n/CP8P/4T/9P8A/wD/AP+D//n/Cf90/13/g//5/wr/dP9A/4P/+f8L/3T/Jf+D//n/DP8P/4X/G/8B/wD/AP8k/+3/Cv/B/4n/R/8Q/4v/Rf8M/4v/QP8U/4v/CP+J/w//i/9A/wT/if9H/wT/6f///wD/AP8A/yT/6/8M/wr/if9H/xD/i/9F/wz/i/9A/xT/i/8A/4n/B//p/+n/AP8A/wD/JP/p/wz/CP+J/0f/EP+L/0X/DP+L/0D/FP9m/4v/AP9m/4n/B//p/9H/AP8A/wD/JP/3/wz/Fv+J/0f/EP+L/0X/DP+L/0j/BP+L/8H/gf/h/wD/Af8A/wD/wf/o/wP/Jf+g/wD/AP8A/wv/wf/B/+j/Bf+D/+j/AP90/yj/SP90/xr/Lf///wD/AP8A/3T/C//H/wf/A/8A/wD/AP/p/5X/AP8A/wD/g/8n/wD/6f+N/wD/AP8A/8f/B/8C/wD/AP8A/+n/gv8A/wD/AP+J/xf/6/9+/yT/5f9R////df8M/wz/BP+J/0f/EP+N/0X/9P9Q/+j/AAAAAAAAAACD/8T/DP+L//D/6/83/yT/4f+J/0f/EP+L/0X/DP+L/0D/FP/Z/wD/2f8f/+v/Uv+D/+n/Dv90/zz/Sf90/yr/Sf90/yH/Sf90/wz/g//p/w7/df8//yT//v+J/0f/EP/r/zj/JP/l/77/AAAAAAAAAAAM/wT/if9H/xD/pf+l/2b/pf/r/yb/JP/1/wz/FP/r/wT/JP/l/wz/BP+J/0f/EP+L/0X/DP+L/3D/FP/r/+X/JP/j/wz/Av+J/0f/EP+L/0X/DP+L/0D/FP/d/wD/3f8f/1//Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: __FillOperand
+    size: 375
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __GetFpRegVal
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __zero80
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 261
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 318
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

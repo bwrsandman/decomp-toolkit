@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 4473f2d5fba9a5c4cd997ba6ba5a4283e7802cb2
+  signature: Vf+L/+z/g//s/yT/U/+L/13/DP9W/4v/df8I/2b/i/9L/wr/M//A/1f/if9F/+z/if9F/9z/if9F/+D/if9F/+T/Zv+L/0b/Cv+L//n/uv///3//AP8A/zP/+P8j/8L/I//K/4H/5/8A/4D/AP8A/2b/Pf///3//jf8U/wH/if9V/wj/D/+D/7j/Af8A/wD/Zv+B//n///9//w//g/+t/wH/AP8A/2b/gf/6//3/v/8P/4f/ov8B/wD/AP9m/4H/+v+//z//d/8E/zP/wP/r/zr/Zv+F/8D/uv////////9//3X/GP///0X/CP+F/1b/CP91/xD/M//A/zn/Rv8E/3X/C/85/wb/df8H/+n/b/8B/wD/AP8z/8D/Zv87/8j/df8e////Rf8I/4X/U/8I/3X/Fv85/0P/BP91/xH/Of8D/3X/Df+J/0b/CP+J/0b/BP+J/wb/6f9r/wH/AP8A/4n/Rf/w/43/Rf/g/4n/Rf/8/8f/Rf8M/wX/AP8A/wD/i/9F//D/A//A/4P/ff8M/wD/fv9J/wP/xv+N/0v/CP+J/0X/+P+L/0X/DP+J/03/9P+J/0X/6P+L/0X/+P+L/03/9P8P/7f/AP8P/7f/Cf8P/6//wf+L/03//P+D/8H//P9R/1D///8x/+j/AAAAAAAAAACD/8T/DP+F/8D/dP8G/4v/Rf/8/2b///8A/4P/Rf/4/wL/g/9t//T/Av///03/6P91/8j/g/9F//z/Av///0X/8P///03/DP+D/33/DP8A/3//nP+B/0X/CP8C/8D/AP8A/2b/g/99/wj/AP9+/yX/9v9F/+f/gP91/xj/jf9F/9z/UP/o/wAAAAAAAAAAgf9F/wj//////wD/AP9Z/2b/g/99/wj/AP9//+L/Zv+D/33/CP8A/3//Of+B/0X/CP//////AP8A/2b/g/99/wj/AP99/yv/D/+//0X/CP/3/9j/Af9F/wj/i//Y//b/Rf/c/wH/dP8D////Rf/s/43/Rf/c/1D/6P8AAAAAAAAAAEv/Wf91/+r/g/99/+z/AP90/wT/gP9N/9z/Af9m/4H/ff/c/wD/gP93/w//i/9F/9z/Jf//////Af8A/z3/AP+A/wH/AP91/zX/g/99/97///91/yz/g/9l/97/AP+D/33/4v///3X/Hf+D/2X/4v8A/2b/gf99/+b//////3X/C////0X/CP9m/8f/Rf/m/wD/gP/r/w7/Zv///0X/5v/r/wj///9F/+L/6/8D////Rf/e/4v/Rf8I/2b/Pf///3//c/8b/2b/i/9N/97/C//H/2b/if8O/4v/Tf/g/4n/Tv8C/4v/Tf/k/4n/Tv8G/2b/if9G/wr/6/8b/2b/9//f/xv///+D/2b/BP8A/4H/5/8A/wD/AP+A/4H/x/8A/4D///9//4P/Jv8A/4n/fv8I/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ___ld12mul
+    size: 544
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___addl
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___shl_12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___shr_12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 246
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 317
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 382
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: a933c8dea1d78b092a74fabef9082ea603c1ce03
+  signature: Zv+B/3z/JP8E/4D/AP8b/8D/9//Y/8P/
+  symbols:
+  - kind: Function
+    name: _iswascii
+    size: 12
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 32f0c7b4b1e41ca96e6e90df6d92b5566fae85cc
+  signature: i/9E/yT/BP///3D/HP///3D/KP9q/wD///9w/xj/6P8AAAAAAAAAAIP/xP8Q/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ___CxxLongjmpUnwind@4
+    size: 26
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___FrameUnwindToState
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

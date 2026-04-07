@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 52c7b447b6a02cf1be3eeaa3f3d0262d467a9e44
+  signature: Zv+D/3z/JP8I/wH///90/yT/BP91/wf/6P8AAAAAAAAAAOv/Bf/o/wAAAAAAAAAAWf8P/7f/wP/D/w==
+  symbols:
+  - kind: Function
+    name: _towctrans
+    size: 29
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _towupper
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _towlower
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 13
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

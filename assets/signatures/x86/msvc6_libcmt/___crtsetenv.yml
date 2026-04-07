@@ -1,0 +1,167 @@
+- symbol: 0
+  hash: 8e511fb61c6c28ce98dcf48d2f02f085ec706b75
+  signature: Vf+L/+z/Uf9R/1P/Vv9X/zP///85/33/CP90/1X/av89////df8I/+j/AAAAAAAAAACL//D/Wf87//f/Wf+J/3X/+P90/0D/Of91/wj/dP87/6H/AAAAAAAAAAAz/9v/OP9e/wH/D/+U/8P/O/8F/wAAAAAAAAAAdf8M/1D/6P8AAAAAAAAAAFn/o/8AAAAAAAAAADv/x/91/1T/Of99/wz/dP8Z/zn/Pf8AAAAAAAAAAHT/Ef/o/wAAAAAAAAAAhf/A/3T/Pv+D/8j///9f/17/W//J/8P/O//f/w//hf8M/wH/AP8A/2r/BP/o/wAAAAAAAAAAO//H/1n/o/8AAAAAAAAAAHT/3/+J/zj/Of89/wAAAAAAAAAAdf8T/2r/BP/o/wAAAAAAAAAAO//H/1n/o/8AAAAAAAAAAHT/xP+J/zj/K/91/wj/i/89/wAAAAAAAAAAif99//z/Vv///3X/CP/o/wAAAAAAAAAAi//w/1n/hf/2/1n/fP9D/4P/P/8A/3T/Pv+F/9v/dP8y////NP+3/43/PP+3/+j/AAAAAAAAAABZ/4P/P/8A/3T/C/+L/0f/BP9G/4n/B/+D/8f/BP/r//D/i//G/8H/4P8C/1D///91//z/6P8AAAAAAAAAAFn/hf/A/1n/dP88/+v/Nf+L/0X/CP+J/wT/t//r/zL/hf/b/3X/ev+F//b/ff8C//f/3v+N/wT/tf8I/wD/AP8A/1D/V//o/wAAAAAAAAAAWf+F/8D/Wf8P/4T/QP////////+L/03/CP+J/wz/sP+D/2T/sP8E/wD/o/8AAAAAAAAAAIP/ff8M/wD/dP9G////df8I/+j/AAAAAAAAAABA/0D/UP/o/wAAAAAAAAAAi//w/1n/hf/2/1n/dP8u////df8I/1b/6P8AAAAAAAAAAIv/xv9Z/yv/Rf8I/1n/A/9F//j/gP8g/wD/QP/3/9v/G//b//f/0/8j/9j/U/9W////Ff8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/M//A/+n/4P/+//////8=
+  symbols:
+  - kind: Function
+    name: ___crtsetenv
+    size: 391
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mbschr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __environ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___initenv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _copy_environ
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __wenviron
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___wtomb_environ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _findenv
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _realloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetEnvironmentVariableA@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 42
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 56
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 64
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 70
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 85
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 92
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 119
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 127
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 137
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 146
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 154
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 167
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 179
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 207
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 238
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 278
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 304
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 318
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 326
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 343
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 373
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 379
+    kind: x86_rel32
+    symbol: 9
+    addend: -4

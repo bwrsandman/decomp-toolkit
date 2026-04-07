@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: e00c73ad001084d99e72a3d6427ce3f41eac8f58
+  signature: Vf+L/+z/Uf+L/0X/DP9T/1b/i/91/xT/i/9d/xD/V/+L/33/IP+J/wb/i/9F/xj/if9N//z/if8H/4v/Bv8z/8n/O//D/w//lf/B/4n/Tf8U/zv/w/90/0v/i/8P/zv/Tf8c/3T/RP+L/1X//P+D/8L/CP9S/4v/0////3X/CP8r/9D/Uv9Q/1H/6P8AAAAAAAAAAIP/xP8U/4P/+P/+/3T/JP+D//j///90/xr/hf/A/3X/Cf///zb/6P8AAAAAAAAAAFn/QP8B/wb/g/8H/wL/g/9l/xT/AP+L/wb/6/+4/2r/Av9Y/+v/Bf+J/x7/i/9F/xT/X/9e/1v/yf/C/xz/AP8=
+  symbols:
+  - kind: Function
+    name: ?do_in@?$codecvt@GDH@std@@MBEHAAHPBD1AAPBDPAG3AAPAG@Z
+    size: 130
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __Mbrtowc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 70
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 94
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

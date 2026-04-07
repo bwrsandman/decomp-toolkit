@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 0f968e6a27699b16e0e91dd4e439fc6dc4e62529
+  signature: i/9E/yT/BP9W/4v/yP+D/+D/H//B//n/Bf+N/wT/wP++/wD/gP8A/wD/i/8M/43/AAAAAAAAAACN/1T/gf8E/4r/TP+B/wT/iv/B/yX/gP8A/wD/AP85/3T/JP8M/3X/Bf+A/+H/f//r/w3/gf98/yT/DP8A/0D/AP8A/3X/Ef+A/8n/gP/3/9j/G//A/4j/Cv9m/yX/AP/A/wP/xv9e/8P/6P8AAAAAAAAAAMf/AP8W/wD/AP8A/4P/yP///17/w/8=
+  symbols:
+  - kind: Function
+    name: __setmode_lk
+    size: 97
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 24
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 82
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

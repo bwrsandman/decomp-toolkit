@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: b3b4836b6ca88de898dcfbefb768bbcc151a7b2d
+  signature: Vf+L/+z/i/9F/wz/Vv+F/8D/dP8S/4r/AP+E/8D/dP8M/4v/df8I/4j/Bv9G/8b/Bv86/0b/6/8D/4v/df8I/4v/Vf8Q/4X/0v+L/8r/dP8o/4r/Av+E/8D/dP8i/4j/Bv+K/0H/Af9G/0H/hP/A/3X/9f9R/1L/6P8AAAAAAAAAAIr/AP9Z/zz/L/9Z/3T/CP88/1z/dP8E/8b/Bv9c/0b/i/9F/xT/hf/A/4v/yP90/w//iv8A/4T/wP90/wn/iP8G/4r/Qf8B/0b/Qf/r//P/i/9F/xj/hf/A/3T/G/+K/wj/hP/J/3T/Cf+A//n/Lv90/wT/xv8G/y7/Rv+K/wj/iP8O/0b/QP+E/8n/dP8F/+v/9P+A/yb/AP9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: __makepath
+    size: 145
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mbsdec
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 61
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

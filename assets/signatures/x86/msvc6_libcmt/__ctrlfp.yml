@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 2a5e3fe131342aa7b59b6176c5bd5cf37b9a6c9d
+  signature: Vf+L/+z/Uf+b/9n/ff/8/4v/Rf8M/4v/yP8j/0X/CP/3/9H/I/9N//z/C//I/4n/Tf8M/9n/bf8M/w//v/9F//z/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __ctrlfp
+    size: 35
+    flags: 1
+    section: .text
+  relocations: []

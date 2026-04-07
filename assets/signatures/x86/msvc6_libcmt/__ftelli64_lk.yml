@@ -1,0 +1,49 @@
+- symbol: 0
+  hash: aef54508541b256b67ed02294bbb02249de0a7b6
+  signature: Vf+L/+z/g//s/xD/U/9W/1f/i/99/wj/M//A/4v/d/8Q/zn/R/8E/4n/df/4/33/A/+J/0f/BP9q/wH/UP9Q/1b/6P8AAAAAAAAAAIv/yv+D/8T/EP+L/9j/if9N//T/hf/J/4n/Xf/w/3//Bv98/23/hf/b/3L/af9m//f/R/8M/wj/Af91/xH/i/9H/wT/mf8r/9j/G//K/4v/w/+L/9H/6f81/wH/AP8A/4v/B/+L/1f/CP+L/8j/K//K/4n/Tf/8/4v/T/8M//b/wf8D/3T/LP+L/97/i//O/8H/+/8F/4P/4f8f/4v/HP+d/wAAAAAAAAAAjf8M/8n/9v9E/4v/BP+A/3T/K/+L/8r/O//I/3P/Jf+A/zn/Cv91/wP///9F//z/Qf/r//H/9v/B/4D/df8Y/+j/AAAAAAAAAADH/wD/Fv8A/wD/AP+D/8r///+L/8L/6f/b/wD/AP8A/4v/Xf/w/wv/Xf/0/3X/Cv+L/0X//P8z/9L/6f/J/wD/AP8A//b/R/8M/wH/D/+E/7T/AP8A/wD/i/9P/wT/hf/J/3X/CP8h/03//P/p/6X/AP8A/wD/K//C/wP/wf+J/0X/CP+L/8b/wf/4/wX/jf8c/4X/AAAAAAAAAACL/8b/g//g/x//jf80/8D/i/8D/8H/5v8C//b/RP8G/wT/gP90/3T/av8C/2r/AP9q/wD///91//j/6P8AAAAAAAAAAIP/xP8Q/zv/Rf/w/3X/Iv87/1X/9P91/x3/i/9H/wj/i/9N/wj/A//I/zv/wf9z/wv/gP84/wr/df8D////Rf8I/0D/6//x//b/R/8N/yD/6/83/2r/AP///3X/9P///3X/8P///3X/+P/o/wAAAAAAAAAAuP8A/wL/AP8A/4P/xP8Q/zn/Rf8I/3f/Df+L/0//DP/2/8H/CP90/wX/9v/F/wT/dP8D/4v/R/8Y/4n/Rf8I/4v/A//2/0T/Bv8E/wT/dP8D////Rf8I/4v/Rf8I/yn/Rf/w/4P/Xf/0/wD/i/9F//z/M//S/wP/Rf/w/xP/Vf/0/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __ftelli64_lk
+    size: 400
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lseeki64
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 34
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 119
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 156
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 234
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 268
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 326
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

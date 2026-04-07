@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 0be8ffc3ff7b12a8cec2e4d987ee857c0f21c6c9
+  signature: i/9M/yT/DP9X/4X/yf8P/4T/p/8A/wD/AP+L/3z/JP8I/1b/9//H/wP/AP8A/wD/U/90/w//iv8H/0f/hP/A/3T/Of/3/8f/A/8A/wD/AP91//H/i/8H/7r////+//7/fv8D/9D/g//w////M//C/4P/x/8E/6n/AP8B/wH/gf90/+j/i/9H//z/hP/A/3T/H/+E/+T/dP8W/6n/AP8A////AP90/wr/qf8A/wD/AP///3X/z/9P/+v/Df+D/+//Av/r/wj/g//v/wP/6/8D/4P/7/8E/4v/dP8k/xT/9//G/wP/AP8A/wD/df8J/4v/2f/B/+n/Av91/07/6/8c/4r/Fv9G/4T/0v90/zP/iP8X/0f/Sf90/yP/9//G/wP/AP8A/wD/df/r/4v/2f/B/+n/Av91/zD/i//L/4P/4f8D/3T/Df+K/xb/Rv+I/xf/R/+E/9L/dP8F/0n/df/z/4j/D/9b/17/i/9E/yT/CP9f/8P/iP8X/4v/RP8k/xD/W/9e/1//w/+J/xf/g//H/wT/Sf90/9D/uv////7//v9+/4v/Bv8D/9D/g//w////M//C/4v/Fv+D/8b/BP+p/wD/Af8B/4H/dP/e/4T/0v90/9D/hP/2/3T/Kv/3/8L/AP8A////AP90/xL/9//C/wD/AP8A////df/G/4n/F/+L/0T/JP8Q/1v/Xv9f/8P/Zv+J/xf/M//S/4v/RP8k/xD/iP9X/wL/W/9e/1//w/9m/4n/F/+L/0T/JP8Q/1v/Xv9f/8P/
+  symbols:
+  - kind: Function
+    name: _strncat
+    size: 291
+    flags: 1
+    section: .text
+  relocations: []

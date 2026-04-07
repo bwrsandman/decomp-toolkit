@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 0270bdc8b30929c8089c28871619d1c3ce68d804
+  signature: Vv+L/3T/JP8I/4v/wf+L/07/BP+L/1D/BP/B/+H/HP/B//n/HP8z/8r/g//h/w//M//K/4v/0f+J/0j/BP8z/1b/BP+D/+L/EP8z/9H/i//K/4n/UP8E/zP/Tv8E/4P/4f8g/zP/yv+L/9H/if9I/wT/M/9W/wT/g//i/0D/M//R/4n/UP8E/4v/Dv+J/wj/Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 76
+    flags: 1
+    section: .text
+  relocations: []

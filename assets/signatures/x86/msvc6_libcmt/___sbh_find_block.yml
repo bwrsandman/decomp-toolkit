@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 599d692be6bea28a5231ad752357dc65cc12106d
+  signature: of8AAAAAAAAAAI3/DP+A/6H/AAAAAAAAAACN/wz/iP87/8H/c/8U/4v/VP8k/wT/K/9Q/wz/gf/6/wD/AP8Q/wD/cv8H/4P/wP8U/+v/6P8z/8D/w/8=
+  symbols:
+  - kind: Function
+    name: ___sbh_find_block
+    size: 43
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___sbh_cntHeaderList
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_pHeaderList
+    size: 4
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 9
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

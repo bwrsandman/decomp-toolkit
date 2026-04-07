@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 43990194a20f5796e2c9f98ff5fdeaab2a19417c
+  signature: i/9B//z/i/9A/wT/x/9E/wj//P8AAAAAAAAAAMP/
+  symbols:
+  - kind: Function
+    name: ??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UAE@XZ
+    size: 15
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$basic_ostream@DU?$char_traits@D@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

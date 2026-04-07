@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 38492cbfb0adedc292e835a16c37e2fae5e832ce
+  signature: Vv+L/3T/JP8I/1b/6P8AAAAAAAAAAIX/wP9Z/3T/Bf+D/8j///9e/8P/9v9G/w3/QP90/w////92/xD/6P8AAAAAAAAAAPf/2P9Z/17/G//A/8P/M//A/17/w/8=
+  symbols:
+  - kind: Function
+    name: __fflush_lk
+    size: 46
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __flush
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __commit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 31
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

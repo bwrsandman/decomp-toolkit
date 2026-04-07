@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 436c0e48f59dda33770c6ff589936ec7806c12f4
+  signature: 6P8AAAAAAAAAAIP/wP9U/8P/
+  symbols:
+  - kind: Function
+    name: ___pxcptinfoptrs
+    size: 9
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

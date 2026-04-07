@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 81db7a769a4215126c935806d64efdfa24c96dc5
+  signature: Vv9X/4v/fP8k/xD/i//H/0//hf/A/37/HP+L/3T/JP8U/1b///90/yT/EP/o/wAAAAAAAAAAg/8+////Wf9Z/3T/B/+L/8f/T/+F/8D/f//o/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: _write_multi_char
+    size: 44
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _write_char
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 23
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: e64e0186fccde4d61febad37e91f128270db85af
+  signature: Vv9X/4v/fP8k/xD/i//H/0//hf/A/37/If+L/3T/JP8Y/1b///90/yT/GP///3T/JP8U/+j/AAAAAAAAAACD/8T/DP+D/z7///90/wf/i//H/0//hf/A/3//4/9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: _write_multi_char
+    size: 49
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _write_char
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 27
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

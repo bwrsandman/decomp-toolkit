@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: de8f093a50dae78531b700aa65c2fc42ebb18a2d
+  signature: Vf+L/+z/Uf9R/4v/Rf8I/4n/Rf/4/4v/Rf8U/zP/Rf8M/yX/////////f/8z/0X/FP+J/0X//P/d/0X/+P/J/8P/
+  symbols:
+  - kind: Function
+    name: __copysign
+    size: 33
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 736f0e61d172f29a38c41de9b89594c95b26b290
+  signature: i/9U/yT/CP+L/0T/JP8E/4X/0v9W/43/Sv///3T/Df+A/zj/AP90/wj/QP+L//H/Sf+F//b/df/z/4D/OP8A/17/df8F/yv/RP8k/wT/w/+L/8L/w/8=
+  symbols:
+  - kind: Function
+    name: _strncnt
+    size: 43
+    flags: 2
+    section: .text
+  relocations: []

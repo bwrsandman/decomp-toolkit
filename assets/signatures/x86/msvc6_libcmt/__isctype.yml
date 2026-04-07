@@ -1,0 +1,32 @@
+- symbol: 0
+  hash: ceed411bc2f56d762e14a45a006e6ab1dbebe1f3
+  signature: Vf+L/+z/Uf+L/0X/CP+N/0j/Af+B//n/AP8B/wD/AP93/wz/i/8N/wAAAAAAAAAAD/+3/wT/Qf/r/1L/i//I/1b/i/81/wAAAAAAAAAAwf/5/wj/D/+2/9H/9v9E/1b/Af+A/17/dP8O/4D/Zf/+/wD/iP9N//z/iP9F//3/av8C/+v/Cf+A/2X//f8A/4j/Rf/8/2r/Af9Y/43/Tf8K/2r/Af9q/wD/av8A/1H/UP+N/0X//P9Q/2r/Af/o/wAAAAAAAAAAg//E/xz/hf/A/3X/Av/J/8P/D/+3/0X/Cv8j/0X/DP/J/8P/
+  symbols:
+  - kind: Function
+    name: __isctype
+    size: 117
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtGetStringTypeA
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 35
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 95
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

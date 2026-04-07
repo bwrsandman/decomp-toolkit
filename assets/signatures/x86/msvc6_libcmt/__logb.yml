@@ -1,0 +1,90 @@
+- symbol: 0
+  hash: 36f94f447463da0f3b0187664380ffd00a3712db
+  signature: Vf+L/+z/Uf9W/77//////wD/AP9X/1b/aP8//xP/AP8A/+j/AAAAAAAAAADd/0X/CP+L//j/i/9F/w7/Zv8l//D/f/9Z/2b/Pf/w/3//Wf91/13/Uf9R/93/HP8k/+j/AAAAAAAAAABZ/4X/wP9Z/37/MP+D//j/Av9+/x3/g//4/wP/df8m/93/Rf8I/1f/Uf9R/93/HP8k/2r/Jf/o/wAAAAAAAAAAg//E/xD/6f+H/wD/AP8A/1b/V//o/wAAAAAAAAAA3f9F/wj/Wf9Z/+v/ef/d/0X/CP/c/wX/AAAAAAAAAABX/1H/Uf/d/xz/JP/d/0X/CP9R/1H/3f8c/yT/av8l/2r/CP/r/yX/3P8d/wAAAAAAAAAA3//g/57/df8k/93/Bf8AAAAAAAAAAFf/Uf9R/9n/4P/d/xz/JP/d/0X/CP9R/1H/3f8c/yT/av8l/2r/BP/o/wAAAAAAAAAAg//E/xz/6/8t/93/Rf8I/43/Rf/8/1D/Uf9R/93/HP8k/+j/AAAAAAAAAACL/0X//P9W/0j/V//d/9j/if9F/wz/2/9F/wz/3f9d/wj/6P8AAAAAAAAAAN3/Rf8I/4P/xP8U/1//Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: __logb
+    size: 231
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __ctrlfp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __sptype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __handle_qnan1
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __real@8@3fff8000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@00000000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __d_inf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __except1
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __decomp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 48
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 80
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 95
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 111
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 137
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 148
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 173
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 195
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 217
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

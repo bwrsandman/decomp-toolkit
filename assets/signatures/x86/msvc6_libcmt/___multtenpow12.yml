@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 594cb509dad0b267dc5d29a5119e04f29f160698
+  signature: Vf+L/+z/g//s/wz/U/+7/wAAAAAAAAAAM//J/4P/6/9g/zn/Tf8M/3T/Y/99/xD/i/9F/wz/u/8AAAAAAAAAAPf/2P+J/0X/DP+D/+v/YP85/03/EP91/wb/i/9F/wj/Zv+J/wj/Of9N/wz/dP9B/1b/V/+L/0X/DP+D/8P/VP/B/33/DP8D/4P/4P8H/zv/wf90/yf/jf8E/0D/Zv+B/zz/g/8A/4D/jf80/4P/cv8M/43/ff/0/6X/pf+l////Tf/2/43/df/0/1b///91/wj/6P8AAAAAAAAAAFn/Wf8z/8n/Of9N/wz/df/D/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ___multtenpow12
+    size: 124
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __pow10pos
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pow10neg
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___ld12mul
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 106
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

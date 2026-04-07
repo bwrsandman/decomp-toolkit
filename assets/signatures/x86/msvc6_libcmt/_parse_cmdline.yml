@@ -1,0 +1,62 @@
+- symbol: 0
+  hash: 870ec10797623323b8e09ffe9ebcb2816cc4b70b
+  signature: Vf+L/+z/i/9N/xj/i/9F/xT/U/9W/4P/If8A/4v/df8Q/1f/i/99/wz/x/8A/wH/AP8A/wD/i/9F/wj/hf///3T/CP+J/zf/g//H/wT/if99/wz/gP84/yL/df9E/4r/UP8B/0D/gP/6/yL/dP8p/4T/0v90/yX/D/+2/9L/9v+C/wAAAAAAAAAABP90/wz///8B/4X/9v90/wb/iv8Q/4j/Fv9G/0D///8B/4X/9v90/9X/iv8Q/4j/Fv9G/+v/zv///wH/hf/2/3T/BP+A/yb/AP9G/4D/OP8i/3X/Rv9A/+v/Q////wH/hf/2/3T/Bf+K/xD/iP8W/0b/iv8Q/0D/D/+2/9r/9v+D/wAAAAAAAAAABP90/wz///8B/4X/9v90/wX/iv8Y/4j/Hv9G/0D/gP/6/yD/dP8J/4T/0v90/wn/gP/6/wn/df/M/4T/0v91/wP/SP/r/wj/hf/2/3T/BP+A/2b///8A/4P/Zf8Y/wD/gP84/wD/D/+E/+D/AP8A/wD/iv8Q/4D/+v8g/3T/Bf+A//r/Cf91/wP/QP/r//H/gP84/wD/D/+E/8j/AP8A/wD/hf///3T/CP+J/zf/g//H/wT/if99/wz/i/9V/xT///8C/8f/Rf8I/wH/AP8A/wD/M//b/4D/OP9c/3X/BP9A/0P/6//3/4D/OP8i/3X/LP/2/8P/Af91/yX/M////zn/ff8Y/3T/Df+A/3j/Af8i/43/UP8B/3X/BP+L/8L/6/8D/4n/ff8I/4v/ff8M/zP/0v85/1X/GP8P/5T/wv+J/1X/GP/R/+v/i//T/0v/hf/S/3T/Dv9D/4X/9v90/wT/xv8G/1z/Rv///wH/S/91//P/iv8Q/4T/0v90/0r/g/99/xj/AP91/wr/gP/6/yD/dP8//4D/+v8J/3T/Ov+D/33/CP8A/3T/Lv+F//b/dP8Z/w//tv/a//b/g/8AAAAAAAAAAAT/dP8G/4j/Fv9G/0D///8B/4r/EP+I/xb/Rv/r/w//D/+2/9L/9v+C/wAAAAAAAAAABP90/wP/QP///wH///8B/0D/6f9Y/////////4X/9v90/wT/gP8m/wD/Rv///wH/6f8X/////////4X///90/wP/g/8n/wD/i/9F/xT/X/9e/1v///8A/13/w/8=
+  symbols:
+  - kind: Function
+    name: _parse_cmdline
+    size: 436
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 65
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 134
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 361
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 386
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: c1c121324cc18ed9bab91df801d0acc9eaa03a2f
+  signature: Vf+L/+z/i/9F/xj/U/+L/13/FP9W/4P/IP8A/4P/ff8M/wD/i/91/xD/V/+L/33/CP/H/wP/Af8A/wD/AP+L/8//dP8J/4v/Vf8M/4P/Rf8M/wT/if8y/4X/9v90/wX/iv8X/4j/Fv9G////AP+A/z//Iv91/0b/jf9P/wH/iv8R/4D/+v8i/3T/Kv+E/9L/dP8m/w//tv/S//b/gv8AAAAAAAAAAAT/dP8M////AP+F//b/dP8G/4r/Ef+I/xb/Rv9B////AP+F//b/dP8F/4r/Ef+I/xb/Rv9B/+v/z////wD/hf/2/3T/BP+A/yb/AP9G/4D/Of8i/3X/Sf9B/+v/Rv///wD/hf/2/3T/Bf+K/xH/iP8W/0b/iv8R/0H/D/+2//r/9v+H/wAAAAAAAAAABP90/w////8A/4X/9v90/wj/iv8Z/4j/Hv+L/13/FP9G/0H/gP/6/yD/dP8J/4T/0v90/wn/gP/6/wn/df/J/4T/0v91/wP/Sf/r/wj/hf/2/3T/BP+A/2b///8A/zP///+A/zn/AP8P/4T/6v8A/wD/AP+K/xH/gP/6/yD/dP8F/4D/+v8J/3X/A/9B/+v/8f+A/zn/AP8P/4T/0v8A/wD/AP+D/33/DP8A/3T/Cf+L/1X/DP+D/0X/DP8E/4n/Mv///wP/hf/2/3T/Bf+K/xH/iP8W/0b///8A/8f/Rf8Y/wH/AP8A/wD/M//b/4D/Of9c/3X/BP9B/0P/6//3/4D/Of8i/3X/Jf/2/8P/Af91/x7/hf///3T/Df+A/3n/Af8i/43/Uf8B/3X/BP+L/8r/6/8E/4P/Zf8Y/wD/M//S/4X///8P/5T/wv+L//r/0f/r/4v/0/9L/4X/0v90/xD/jf9T/wH/hf/2/3T/BP/G/wb/XP9G////AP9K/3X/8/+K/xH/hP/S/3T/S/+F////df8K/4D/+v8g/3T/Qv+A//r/Cf90/z3/g/99/xj/AP90/zH/hf/2/3T/Gf8P/7b/2v/2/4P/AAAAAAAAAAAE/3T/Bv+I/xb/Rv9B////AP+K/xH/iP8W/0b/6/8S/w//tv/S//b/gv8AAAAAAAAAAAT/dP8G/4v/EP9B/0L/if8Q////AP9B/+n/XP////////+F//b/dP8E/4D/Jv8A/0b///8A/4v/Xf8U/+n/Df////////+L/0X/DP+F/8D/dP8D/4P/IP8A////A/9f/17/W/9d/8P/
+  symbols:
+  - kind: Function
+    name: _parse_cmdline
+    size: 462
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 79
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 149
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 381
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 406
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

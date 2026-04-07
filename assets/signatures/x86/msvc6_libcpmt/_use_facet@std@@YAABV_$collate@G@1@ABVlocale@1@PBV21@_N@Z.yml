@@ -1,0 +1,176 @@
+- symbol: 0
+  hash: 414445337628dee17084524afc4d7dc6ba3b7589
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/EP9W/43/Tf/w/+j/AAAAAAAAAACD/2X//P8A/7n/AAAAAAAAAADo/wAAAAAAAAAAi/9N/wj/av8B/1D/6P8AAAAAAAAAAIv/8P+F//b/df9M/zj/Rf8Q/3T/Yv+L/03/CP/o/wAAAAAAAAAAhP/A/3T/Vv+L/zX/AAAAAAAAAACF//b/df8x/2r/EP/o/wAAAAAAAAAAWf+L/8j/if9N/xD/hf/J/8b/Rf/8/wH/dP8I/1b/6P8AAAAAAAAAAOv/Av8z/8D/gP9l//z/AP9Q/+j/AAAAAAAAAABZ/6P/AAAAAAAAAACL//D/g/9N//z///+N/03/8P/o/wAAAAAAAAAAi/9N//T/i//G/17/ZP+J/w3/AAAAAAAAAADJ/8P/jf9F/xD/jf9N/+T/UP/H/0X/EP8AAAAAAAAAAOj/AAAAAAAAAACN/0X/5P9o/wAAAAAAAAAAUP/H/0X/5P8AAAAAAAAAAOj/AAAAAAAAAAA=
+  symbols:
+  - kind: Function
+    name: ?use_facet@std@@YAABV?$collate@G@1@ABVlocale@1@PBV21@_N@Z
+    size: 196
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L22168
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?id@?$collate@G@std@@2V0locale@2@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??Bid@locale@std@@QAEIXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Getfacet@locale@std@@QBEPBVfacet@12@I_N@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Iscloc@locale@std@@QBE_NXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Psave@?1??use_facet@std@@YAABV?$collate@G@2@ABVlocale@2@PBV32@_N@Z@4PBVfacet@42@B
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0?$collate@G@std@@QAE@I@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Save@?$_Tidyfac@V?$collate@G@std@@@std@@SAPAV?$collate@G@2@PAV32@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BF@MMAA@missing?5locale?5facet?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0exception@@QAE@ABQBD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __TI2?AVbad_cast@std@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Object
+    name: ??_7bad_cast@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 18
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 27
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 32
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 43
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 72
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 83
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 103
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 117
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 123
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 137
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 150
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 166
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 171
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 179
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 187
+    kind: x86_abs32
+    symbol: 17
+    addend: 0
+  - offset: 192
+    kind: x86_rel32
+    symbol: 18
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 0bd7c3b396b6bc19237763f69da84f9611db887c
+  signature: Vf+L/+z/g//s/xj/Vv9X/2r///+N/03/6P/o/wAAAAAAAAAAi//w/4v/Rf8I/2r/Bv+L//j/Wf/z/6X/X/9e/8n/wv8g/wD/
+  symbols:
+  - kind: Function
+    name: ?seekpos@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE?AV?$fpos@H@2@V32@H@Z
+    size: 36
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0?$fpos@H@std@@QAE@J@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 27dbcf643ae4f72758fc6d8923af9bb5969cc701
+  signature: Vv+L/3T/JP8M/43/Rv///4X/xv90/w3/6P8AAAAAAAAAAMf/AP8W/wD/AP8A/+v/Hf+D//7/BP93/wP/av8E/17/i/9E/yT/CP+N/0T/MP8E/1D/6P8AAAAAAAAAAFn/i//I/4X/yf91/wT/M//A/17/w/+N/0T/Mf8E/07/9//W/yP/xv9e/4n/SP/8/8P/
+  symbols:
+  - kind: Function
+    name: __aligned_malloc
+    size: 72
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 13
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 43
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

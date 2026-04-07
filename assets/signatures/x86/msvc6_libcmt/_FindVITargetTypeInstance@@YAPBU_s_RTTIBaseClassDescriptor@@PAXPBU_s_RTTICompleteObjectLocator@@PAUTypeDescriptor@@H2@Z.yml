@@ -1,0 +1,44 @@
+- symbol: 0
+  hash: 3bf0c49cefb660ec5460f57f94db5893bb4c6fd7
+  signature: Vf+L/+z/g//s/xD/U/9W/1f/i/99/wz/M//J/4v/R/8Q/4n/Tf/w/4n/Tf/8/zn/SP8I/4v/WP8M/w//hv/H/wD/AP8A/4v/M/+L/03/GP+L/wb/O//B/3T/F/+D/8H/CP+D/8D/CP9R/1D/6P8AAAAAAAAAAFn/hf/A/1n/D/+F/4f/AP8A/wD/g/9l//T/AP+D/37/BP8A/43/Q/8E/4n/Rf/4/3b/d/+L/0X/+P+L/03/EP+L/zj/i/8H/zv/wf90/xP/g//B/wj/g//A/wj/Uf9Q/+j/AAAAAAAAAABZ/4X/wP9Z/3X/RP+D/8f/CP9X////df8I/+j/AAAAAAAAAAA7/0X/FP9Z/1n/df8x/4v/ff/w/4X///90/yf/jf9G/wj/UP///3X/CP/o/wAAAAAAAAAAg//H/wj/i//Q/1f/if9V//D///91/wj/6P8AAAAAAAAAAIv/Tf/w/4P/xP8Q/zv/wf91/3b/if91//D///9F//T/g/9F//j/BP+L/0X/9P87/0b/BP9y/4z/i/99/wz///9F//z/i/9H/xD/i/9N//z/g//D/wT/O/9I/wj/D/+C/0L/////////i/9F//D/M//J/zv/wf91/0X/i/9H/xD/if9N//z/Of9I/wj/i/9Y/wz/dv81/4v/M/+L/03/GP+L/wb/O//B/3T/E/+D/8H/CP+D/8D/CP9R/1D/6P8AAAAAAAAAAFn/hf/A/1n/df8G//b/Rv8U/wP/dP8Y////Rf/8/4v/R/8Q/4v/Tf/8/4P/w/8E/zv/SP8I/3L/y/8z/8D/X/9e/1v/yf/D/4v/xv/r//f/
+  symbols:
+  - kind: Function
+    name: ?FindVITargetTypeInstance@@YAPBU_s_RTTIBaseClassDescriptor@@PAXPBU_s_RTTICompleteObjectLocator@@PAUTypeDescriptor@@H2@Z
+    size: 312
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _strcmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?PMDtoOffset@@YAHPAXABUPMD@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 55
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 108
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 126
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 152
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 169
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 268
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

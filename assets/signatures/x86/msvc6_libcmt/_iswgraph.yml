@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 851a53ec59050e5aa5988e64ee01e3e29b502afe
+  signature: aP8X/wH/AP8A////dP8k/wj/6P8AAAAAAAAAAFn/Wf/D/w==
+  symbols:
+  - kind: Function
+    name: _iswgraph
+    size: 17
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _iswctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,49 @@
+- symbol: 0
+  hash: 41962edc0212637ceb44e78f6296e7bdacf1b4e4
+  signature: Vf+L/+z/g//s/xT/U/9X/2r/Af8z//////91/xT/jf9F/xT///91/xD/V////3X/CP9Q/43/Rf/s/1D/6P8AAAAAAAAAAIv/2P+D/8T/HP/2/8P/BP90/w//g/9l//j/AP+D/2X//P8A/7//AP8C/wD/AP/r/y7/jf9F//j/UP+N/0X/7P9Q/+j/AAAAAAAAAABZ//b/w/8C/1n/df8F/4P/+P8B/3X/Bf+//4D/AP8A/wD/9v/D/wH/df8F/4P/+P8C/3X/Bv+B/8//AP8B/wD/AP+L/0X/FP+L/w3/AAAAAAAAAAAr/0X/CP+J/0H/BP+h/wAAAAAAAAAAi/9N/wz/O/9I/wT/dP8D/4P/z/9A/93/Rf/4/93/WP8Q/6H/AAAAAAAAAACJ/zj/of8AAAAAAAAAAF//W//J/8P/
+  symbols:
+  - kind: Function
+    name: __fltinf
+    size: 159
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___strgtold12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ld12tod
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _flt
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 31
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 69
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 111
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 122
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 144
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 151
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

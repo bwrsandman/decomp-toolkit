@@ -1,0 +1,96 @@
+- symbol: 0
+  hash: 10a8b32e0bea047cef3f1fc57b8d0fe5fab7d740
+  signature: Vv/o/wAAAAAAAAAA//81/wAAAAAAAAAA6P8AAAAAAAAAAIv/Ff8AAAAAAAAAAFn/i/8N/wAAAAAAAAAAi//x/yv/8v+D/8b/BP87/8b/c/89/1L/6P8AAAAAAAAAAIP/wP8Q/1D///81/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8M/4X/wP91/wT/M//2/+v/LP+L/w3/AAAAAAAAAAAr/w3/AAAAAAAAAACj/wAAAAAAAAAAwf/5/wL/jf8M/4j/if8N/wAAAAAAAAAAi/9E/yT/CP+J/wH/g/8F/wAAAAAAAAAABP+L//D/6P8AAAAAAAAAAIv/xv9e/8P/
+  symbols:
+  - kind: Function
+    name: __onexit
+    size: 126
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lockexit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___onexitbegin
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __msize
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___onexitend
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _realloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlockexit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 8
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 13
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 19
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 43
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 53
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 58
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 75
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 81
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 86
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 98
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 110
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 118
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

@@ -1,0 +1,59 @@
+- symbol: 0
+  hash: 4fad35e78b1550fa70b8ac7f181b407df151ad58
+  signature: i/9E/yT/BP9T/4v/yP+D/+D/H//B//n/Bf9W/1f/i/80/43/AAAAAAAAAACN/xz/jf8AAAAAAAAAAI3/PP/A/8H/5/8C/wP/9/+D/37/CP8A/3X/I/9q/xH/6P8AAAAAAAAAAIP/fv8I/wD/Wf91/w3/jf9G/wz/UP///xX/AAAAAAAAAAD//0b/CP9q/xH/6P8AAAAAAAAAAFn/i/8D/43/RP84/wz/UP///xX/AAAAAAAAAABf/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: __lock_fhandle
+    size: 95
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InitializeCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__EnterCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 46
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 63
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 73
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 87
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

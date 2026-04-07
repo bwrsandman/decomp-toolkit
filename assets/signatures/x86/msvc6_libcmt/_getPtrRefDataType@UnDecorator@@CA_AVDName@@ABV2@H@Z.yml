@@ -1,0 +1,124 @@
+- symbol: 0
+  hash: 03b7658d6bf9120bb5eedfd100dec2fb119f0b73
+  signature: Vf+L/+z/g//s/xj/of8AAAAAAAAAAIr/AP+E/8D/dP98/4P/ff8Q/wD/dP9O/zz/WP91/0r/i/9N/wz///8F/wAAAAAAAAAA6P8AAAAAAAAAAIX/wP90/w//i/9N/wj/aP8AAAAAAAAAAOj/AAAAAAAAAADr/37///91/wz/jf9F//D/jf9N/+j/UP9o/wAAAAAAAAAA6P8AAAAAAAAAAIv/yP/o/wAAAAAAAAAAUP+N/03/+P/o/wAAAAAAAAAAjf9F//j/6/9M/zz/Wf91/xT///91/wz///8F/wAAAAAAAAAAjf9F/+j/UP/o/wAAAAAAAAAA6/8M////df8M/43/Rf/o/1D/6P8AAAAAAAAAAFn/Wf/r/yT///91/wz/jf9F/+j/jf9N//D/UP9q/wL/6P8AAAAAAAAAAIv/yP/o/wAAAAAAAAAAUP+N/03/+P/o/wAAAAAAAAAAjf9F//j/i/9N/wj/UP/o/wAAAAAAAAAAi/9F/wj/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?getPtrRefDataType@UnDecorator@@CA?AVDName@@ABV2@H@Z
+    size: 191
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?isEmpty@DName@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_04BMNE@void?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0DName@@QAE@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_05JDPM@void?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??HDName@@QBE?AV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getArrayType@UnDecorator@@CA?AVDName@@ABV2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getBasicDataType@UnDecorator@@CA?AVDName@@ABV2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 37
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 49
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 54
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 71
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 76
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 83
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 92
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 110
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 119
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 133
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 154
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 161
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 170
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 182
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

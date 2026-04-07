@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: af18bb241782bf1afe18b3494d14ff6e2be8a41b
+  signature: i/9E/yT/BP+5/wAAAAAAAAAAO//B/3L/F/89/wAAAAAAAAAAd/8Q/yv/wf/B//j/Bf+D/8D/HP9Q/+j/AAAAAAAAAABZ/8P/g//A/yD/UP///xX/AAAAAAAAAADD/w==
+  symbols:
+  - kind: Function
+    name: __unlock_file
+    size: 47
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__LeaveCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 30
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 42
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

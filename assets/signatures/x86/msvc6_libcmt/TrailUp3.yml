@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 3b83b58e6c01ce73e0e7737696999f7eab013fc8
+  signature: iv8G/4j/B/+K/0b/Af+I/0f/Af+K/0b/Av+I/0f/Av+L/0X/CP9e/1//yf/D/5D/
+  symbols:
+  - kind: Function
+    name: TrailUp3
+    size: 24
+    flags: 2
+    section: .text
+  relocations: []

@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 8e48d64dbd1ba30023aaf1efc88afb7c10fe41c7
+  signature: Vf+L/+z/Uf9W/4v/8f+N/03//P/o/wAAAAAAAAAAg/8+/wD/df8N////Bf8AAAAAAAAAAKH/AAAAAAAAAACJ/wb/i/82/43/Tf/8/+j/AAAAAAAAAACL/8b/Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: ??Bid@locale@std@@QAEIXZ
+    size: 48
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Id_cnt@id@locale@std@@0HA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 27
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 39
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

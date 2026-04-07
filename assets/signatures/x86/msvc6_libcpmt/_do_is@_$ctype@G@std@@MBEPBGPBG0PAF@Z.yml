@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 5a6e60cfcce0bfafae18009d1df08ea63c5f41b6
+  signature: Vv9X/4v/fP8k/wz/i//x/zv/fP8k/xD/dP8q/1P/i/9c/yT/GP9m/4v/B/+L/xb/av8A/1D/i//O////Uv8w/4v/Tv8Q/0f/D/++/8D/R/9m/4v/BP9B/2b/if8D/0P/Q/87/3z/JP8U/3X/3P9b/4v/x/9f/17/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: ?do_is@?$ctype@G@std@@MBEPBGPBG0PAF@Z
+    size: 63
+    flags: 1
+    section: .text
+  relocations: []

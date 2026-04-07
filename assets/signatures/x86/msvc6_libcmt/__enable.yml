@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 42b87aadabbe14fdc6b89bb181125d6d2a64edf9
+  signature: +//D/w==
+  symbols:
+  - kind: Function
+    name: __enable
+    size: 2
+    flags: 1
+    section: .text
+  relocations: []

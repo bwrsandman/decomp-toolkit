@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: a995f4c3a24dc14d4f0e9b790311b677eba52af6
+  signature: 6P8AAAAAAAAAAIv/TP8k/wT/if9I/xT/w/8=
+  symbols:
+  - kind: Function
+    name: _srand
+    size: 13
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

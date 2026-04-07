@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 7a9b2acc8cac152ddee8ab709b86bf037c01371b
+  signature: Vf+L/+z/Uf+D/2X//P8A/+j/AAAAAAAAAACL/03/CP+J/wH/i//B/8n/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?_Gettnames@_Locinfo@std@@QBE?AV_Timevec@2@XZ
+    size: 24
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __Gettnames
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

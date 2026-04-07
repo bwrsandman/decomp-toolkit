@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 24bd8436b3762f0e97e108fab51e7035a062ada0
+  signature: i/9E/yT/CP9q/wD///9w/wT///8w////dP8k/xD/6P8AAAAAAAAAAIP/xP8Q/8P/
+  symbols:
+  - kind: Function
+    name: _fsetpos
+    size: 24
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __fseeki64
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

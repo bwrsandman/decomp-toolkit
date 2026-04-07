@@ -1,0 +1,54 @@
+- symbol: 0
+  hash: b55dd0254226e25552d8b6dbe19b50115c3cbffc
+  signature: Vf+L/+z/g//s/yD///91/wz/6P8AAAAAAAAAAIX/wP9Z/4n/Rf/k/3T/Vf+L/0X/EP9W/4n/Rf/o/4v/Rf8U/4n/Rf/s/4v/Rf8Y/4v/df8I/4n/Rf/w/4v/Rf8c/2j//////wD/AP///3X/KP+J/0X/9P+L/0X/IP+J/3X/4P+J/0X/+P+L/0X/JP+J/0X//P/o/wAAAAAAAAAAjf9F/+D/UP/o/wAAAAAAAAAAg//E/wz/hf/A/3X/B/9W/+j/AAAAAAAAAABZ/93/Rf/4/17/yf/D/2j//////wD/AP///3X/KP/o/wAAAAAAAAAA//91/wj/6P8AAAAAAAAAAN3/Rf8g/4P/xP8M/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __umatherr
+    size: 136
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __get_fname
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __ctrlfp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __matherr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __set_errno
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 83
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 116
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 124
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

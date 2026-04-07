@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: f36e1242d812b66f9820217bd94accf46d9c9fd9
+  signature: U/9V/1b/i/81/wAAAAAAAAAAV/+L/wb/hf/A/3T/TP+L/x3/AAAAAAAAAAAz/+3/Vf9V/2r///9Q/1X/av8B////0/+L//j/O//9/3T/O/+N/wT/P/9Q/+j/AAAAAAAAAACL/+j/Wf+F/+3/dP8r/1f/Vf9q//////82/2r/AP9q/wH////T/4X/wP90/xv/av8A/1X/6P8AAAAAAAAAAIv/Rv8E/4P/xv8E/1n/hf/A/1n/df+6/zP/wP9f/17/Xf9b/8P/g//I////6//2/w==
+  symbols:
+  - kind: Function
+    name: ___mbtow_environ
+    size: 104
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __environ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__MultiByteToWideChar@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtwsetenv
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 45
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 76
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

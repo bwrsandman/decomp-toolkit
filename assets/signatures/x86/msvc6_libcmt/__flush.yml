@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 07dc619344dbfd5ebc08f8004892cc97d77206ce
+  signature: U/9W/4v/dP8k/wz/M//b/1f/i/9G/wz/i//I/4P/4f8D/4D/+f8C/3X/N/9m/6n/CP8B/3T/Mf+L/0b/CP+L/z7/K//4/4X///9+/yb/V/9Q////dv8Q/+j/AAAAAAAAAACD/8T/DP87/8f/df8O/4v/Rv8M/6j/gP90/w7/JP/9/4n/Rv8M/+v/B/+D/07/DP8g/4P/y////4v/Rv8I/4P/Zv8E/wD/if8G/1//i//D/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: __flush
+    size: 92
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __write
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 45
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

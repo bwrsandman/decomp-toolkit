@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 103b2304dbec7bb15900864977a0f567460feafd
+  signature: 6P8AAAAAAAAAAMP/
+  symbols:
+  - kind: Function
+    name: __safe_fprem1
+    size: 6
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __adj_fprem1
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: 0

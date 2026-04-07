@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 78b79aa82c503f528718595be20aeb5f648ab68c
+  signature: Vf+L/+z/g/99/wz/AP9T/4v/Xf8I/1f/i//7/3//BP8z/8D/6/9K/1b/i/91/xD/Vv/o/wAAAAAAAAAAWf///03/DP90/y3///9O/wT/eP8K/4v/Dv8P/7b/Af9B/4n/Dv/r/wf/Vv/o/wAAAAAAAAAAWf+D//j///90/wn/iP8H/0f/PP8K/3T/C//r/9f/O/99/wj/df8E/zP/2//r/wP/gP8n/wD/Vv/o/wAAAAAAAAAAWf+L/8P/Xv9f/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _fgets
+    size: 98
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock_file
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __filbuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 26
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 53
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 86
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

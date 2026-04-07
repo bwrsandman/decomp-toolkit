@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: d5181e64389693b2e74f5b613c7f75a11a694157
+  signature: Vv9q/wH/Xv///3T/JP8M////dP8k/wz///8V/wAAAAAAAAAAhf/A/3T/Av8z//b/i//G/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?_ValidateRead@@YAHPBXI@Z
+    size: 28
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__IsBadReadPtr@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

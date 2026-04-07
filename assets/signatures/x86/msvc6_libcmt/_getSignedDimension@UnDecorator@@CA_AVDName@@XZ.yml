@@ -1,0 +1,76 @@
+- symbol: 0
+  hash: 66814859329279fc2c5e257a12953ab0c8b42142
+  signature: Vf+L/+z/g//s/yD/of8AAAAAAAAAAIr/AP+E/8D/df8M/4v/Tf8I/2r/Av/o/wAAAAAAAAAA6/9L/zz/P/91/zT///8F/wAAAAAAAAAAjf9F//D/UP/o/wAAAAAAAAAAWf9Q/43/Rf/o/1D/av8t/43/Tf/g/+j/AAAAAAAAAACL/8j/6P8AAAAAAAAAAFD/jf9N//j/6P8AAAAAAAAAAI3/Rf/4/+v/Cv+N/0X/4P9Q/+j/AAAAAAAAAABZ/4v/Tf8I/1D/6P8AAAAAAAAAAIv/Rf8I/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?getSignedDimension@UnDecorator@@CA?AVDName@@XZ
+    size: 109
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??0DName@@QAE@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getDimension@UnDecorator@@CA?AVDName@@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@D@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??HDName@@QBE?AV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 23
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 35
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 44
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 60
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 67
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 76
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 90
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 100
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

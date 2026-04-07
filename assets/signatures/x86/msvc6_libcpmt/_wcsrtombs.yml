@@ -1,0 +1,119 @@
+- symbol: 0
+  hash: 6d2417cf3df838550af1b00eda58d95547818818
+  signature: Vf+L/+z/g//s/xD/i/9F/wz/U/9W/1f/i/8w/7v/AAAAAAAAAAAz////U/+J/33/+P///xX/AAAAAAAAAAA5/z3/AAAAAAAAAAB0/xj/U////xX/AAAAAAAAAABq/xP/6P8AAAAAAAAAAFn/x/9F//T/Af8A/wD/AP/r/wP/if99//T/Of99/wj/df9s/2b/i/8G/1f/V/9Q/43/Rf/+/1D/6P8AAAAAAAAAAIv/+P+D/8T/EP+F////fv81/43/Rf/+/0j/if9F/wj/6/8D/4v/Rf8I/4D/PP84/wD/D/+E/7//AP8A/wD/Af99//j/Rv9G/2r/AP9q/wD/Zv+L/wb/UP+N/0X//v9Q/+j/AAAAAAAAAACL//j/g//E/xD/hf///3//1P+D/33/9P8A/3T/Cv9q/xP/6P8AAAAAAAAAAFn/6/8H/1P///8V/wAAAAAAAAAAg//I////6f+w/wD/AP8A/zn/ff8Q/3b/YP+L/0X/EP87/wX/AAAAAAAAAACN/0X//v9y/wP/i/9F/wj/if9F//D/Zv+L/wb/av8A/2r/AP9Q////df/w/+j/AAAAAAAAAACL//j/g//E/xD/hf///37/Q/+L/0X/CP87/0X/8P90/xb/Of99/xD/cv8m/43/Tf/+/1f/Uf9Q/+j/AAAAAAAAAACL/0X/CP+D/8T/DP8D/8f/gP94////AP90/yP/Af99//j/Rv9G/yn/ff8Q/4n/Rf8I/3X/oP+D/33/9P8A/3T/Nv9q/xP/6P8AAAAAAAAAAFn/6/8z/4P/Tf/4////6//q/4v/Rf8M/4P/IP8A/4P/ff/0/wD/dP8K/2r/E//o/wAAAAAAAAAAWf/r/wf/U////xX/AAAAAAAAAACL/0X/+P+N/0T/B////+v/D/9T////Ff8AAAAAAAAAAIv/Rf8M/4n/MP+L/0X/+P9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: _wcsrtombs
+    size: 360
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___unguarded_readlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedIncrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___setlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedDecrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___Wcrtomb_lk
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 27
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 49
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 82
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 135
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 157
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 167
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 189
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 216
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 249
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 289
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 317
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 327
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 343
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

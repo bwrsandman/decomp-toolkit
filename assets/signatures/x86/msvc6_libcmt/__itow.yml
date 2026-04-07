@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: e54859552d3a5851386fb713668ab9d027bedaf6
+  signature: Vf+L/+z/g//s/xT///91/xD/jf9F/+z/UP///3X/CP/o/wAAAAAAAAAAg//E/wz/jf9F/+z/av8U////df8M/2r///9Q/2r/Af9q/wD///8V/wAAAAAAAAAAi/9F/wz/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __itow
+    size: 50
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __itoa
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__MultiByteToWideChar@24
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 41
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

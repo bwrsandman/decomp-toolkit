@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 7a6987ecf99d205bb9a3db8c625e8633bcbd8290
+  signature: av9A////dP8k/wz///90/yT/DP/o/wAAAAAAAAAAg//E/wz/w/8=
+  symbols:
+  - kind: Function
+    name: _fopen
+    size: 19
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __fsopen
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

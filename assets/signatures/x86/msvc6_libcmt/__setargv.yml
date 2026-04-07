@@ -1,0 +1,113 @@
+- symbol: 0
+  hash: b5b5eee586029ce780739d5f9444d01e4be9e1aa
+  signature: Vf+L/+z/Uf9R/1P/M//b/zn/Hf8AAAAAAAAAAFb/V/91/wX/6P8AAAAAAAAAAL7/AAAAAAAAAABo/wT/Af8A/wD/Vv9T////Ff8AAAAAAAAAAKH/AAAAAAAAAACJ/zX/AAAAAAAAAACL//7/OP8Y/3T/Av+L//j/jf9F//j/UP+N/0X//P9Q/1P/U/9X/+j/AAAAAAAAAACL/0X/+P+L/03//P+N/wT/iP9Q/+j/AAAAAAAAAACL//D/g//E/xj/O//z/3X/CP9q/wj/6P8AAAAAAAAAAFn/jf9F//j/UP+N/0X//P9Q/4v/Rf/8/43/BP+G/1D/Vv9X/+j/AAAAAAAAAACL/0X//P+D/8T/FP9I/4n/Nf8AAAAAAAAAAF//Xv+j/wAAAAAAAAAAW//J/8P/
+  symbols:
+  - kind: Function
+    name: __setargv
+    size: 153
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mbctype_initialized
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___initmbctable
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _?_pgmname@?1??_setargv@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __imp__GetModuleFileNameA@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __acmdln
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pgmptr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _parse_cmdline
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __amsg_exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___argv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___argc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 19
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 24
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 37
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 48
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 72
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 87
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 103
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 126
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 139
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 146
+    kind: x86_abs32
+    symbol: 11
+    addend: 0

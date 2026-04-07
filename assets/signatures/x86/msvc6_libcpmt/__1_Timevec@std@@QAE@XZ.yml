@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 3a63b8f3d1fdffc7013ffe5e3ec90debe0ed5e13
+  signature: //8x/+j/AAAAAAAAAABZ/8P/
+  symbols:
+  - kind: Function
+    name: ??1_Timevec@std@@QAE@XZ
+    size: 9
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 3
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

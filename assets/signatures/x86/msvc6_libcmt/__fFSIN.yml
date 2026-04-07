@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 763f4ae05b0eacabf09150f0e5647ae1a74a7453
+  signature: 2f/+/5v/3//g/5v/nv96/wz/w//Z//L/m//f/+D/3f/Y/57/ev8B/8P/xv+F/3D/////////Bf/p/wAAAAAAAAAA
+  symbols:
+  - kind: Function
+    name: __fFSIN
+    size: 33
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __rtindfnpop
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 29
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 7acc85f9a289baed0af5015b3cf0766cd3198467
+  signature: i/9U/yT/BP8y/8D/i/9K/wT/M/8K//b/wf8B/3T/Av/+/8D/9v/B/wL/dP8C/7D/Af/2/8H/BP90/wL/sP8B//b/wf8I/3T/Av+w/wH/9v/B/xD/dP8C/7D/Af/2/8H/IP90/wL/sP8B/8P/
+  symbols:
+  - kind: Function
+    name: _ValidateResult
+    size: 54
+    flags: 1
+    section: .text
+  relocations: []

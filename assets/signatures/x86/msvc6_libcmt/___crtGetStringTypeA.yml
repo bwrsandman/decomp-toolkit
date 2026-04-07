@@ -1,0 +1,151 @@
+- symbol: 0
+  hash: ac28c03fe9ff72d2295e2c19ac1b6f02340d4dcb
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8Y/1P/Vv9X/4n/Zf/o/6H/AAAAAAAAAAAz/9v/O//D/3X/Pv+N/0X/5P9Q/2r/Af9e/1b/aP8AAAAAAAAAAFb///8V/wAAAAAAAAAAhf/A/3T/BP+L/8b/6/8d/43/Rf/k/1D/Vv9o/wAAAAAAAAAAVv9T////Ff8AAAAAAAAAAIX/wP8P/4T/zv8A/wD/AP9q/wL/WP+j/wAAAAAAAAAAg//4/wL/df8k/4v/Rf8c/zv/w/91/wX/of8AAAAAAAAAAP//df8U////df8Q////df8M////df8I/1D///8V/wAAAAAAAAAA6f+f/wD/AP8A/4P/+P8B/w//hf+U/wD/AP8A/zn/Xf8Y/3X/CP+h/wAAAAAAAAAAif9F/xj/U/9T////df8Q////df8M/4v/Rf8g//f/2P8b/8D/g//g/wj/QP9Q////df8Y////Ff8AAAAAAAAAAIn/Rf/g/zv/w/90/2P/if9d//z/jf88/wD/i//H/4P/wP8D/yT//P/o/wAAAAAAAAAAif9l/+j/i//0/4n/df/c/1f/U/9W/+j/AAAAAAAAAACD/8T/DP/r/wv/av8B/1j/w/+L/2X/6P8z/9v/M//2/4P/Tf/8////O//z/3T/Kf///3X/4P9W////df8Q////df8M/2r/Af///3X/GP///xX/AAAAAAAAAAA7/8P/dP8Q////df8U/1D/Vv///3X/CP///xX/AAAAAAAAAADr/wL/M//A/43/Zf/M/4v/Tf/w/2T/if8N/wAAAAAAAAAAX/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ___crtGetStringTypeA
+    size: 329
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T17182
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _?f_use@?1??__crtGetStringTypeA@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ??_C@_13A@?$AA?$AA?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__GetStringTypeW@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_01A@?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__GetStringTypeA@20
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__MultiByteToWideChar@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __alloca_probe
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memset
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 39
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 58
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 65
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 83
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 91
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 107
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 124
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 143
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 167
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 199
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 224
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 240
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 285
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 303
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 320
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

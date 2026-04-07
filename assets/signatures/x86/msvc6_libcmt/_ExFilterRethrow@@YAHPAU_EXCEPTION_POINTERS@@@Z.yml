@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: ee2017a0242cd3575e83c0b33df748ab82351704
+  signature: i/9E/yT/BP+L/wD/gf84/2P/c/9t/+D/df8Z/4P/eP8Q/wP/df8T/4H/eP8U/yD/Bf+T/xn/df8K/4P/eP8c/wD/df8E/2r/Af9Y/8P/M//A/8P/
+  symbols:
+  - kind: Function
+    name: ?ExFilterRethrow@@YAHPAU_EXCEPTION_POINTERS@@@Z
+    size: 42
+    flags: 2
+    section: .text
+  relocations: []

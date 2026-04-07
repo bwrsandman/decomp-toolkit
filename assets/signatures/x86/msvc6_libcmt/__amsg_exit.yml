@@ -1,0 +1,147 @@
+- symbol: 0
+  hash: 7a6e264d9159c82a579e8e06024e902316cc215e
+  signature: g/89/wAAAAAAAAAAAv90/wX/6P8AAAAAAAAAAP//dP8k/wT/6P8AAAAAAAAAAGj///8A/wD/AP///xX/AAAAAAAAAABZ/1n/w/8=
+  symbols:
+  - kind: Function
+    name: __amsg_exit
+    size: 37
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___error_mode
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: __FF_MSGBANNER
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __NMSG_WRITE
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __aexit_rtn
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 10
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 19
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 30
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+- symbol: 0
+  hash: be0df37b25d912d12341c68bc771a94d980a81d5
+  signature: g/89/wAAAAAAAAAAAf91/wX/6P8AAAAAAAAAAP//dP8k/wT/6P8AAAAAAAAAAGj///8A/wD/AP///xX/AAAAAAAAAABZ/1n/w/8=
+  symbols:
+  - kind: Function
+    name: __amsg_exit
+    size: 37
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___error_mode
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: __FF_MSGBANNER
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __NMSG_WRITE
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __aexit_rtn
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 10
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 19
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 30
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+- symbol: 0
+  hash: b8ca1e6db47d66a32102b3bb3148c66ceeaadf03
+  signature: of8AAAAAAAAAAIP/+P8B/3T/Df+F/8D/df8O/4P/Pf8AAAAAAAAAAAH/df8F/+j/AAAAAAAAAAD//3T/JP8E/+j/AAAAAAAAAABo////AP8A/wD///8V/wAAAAAAAAAAWf9Z/8P/
+  symbols:
+  - kind: Function
+    name: __amsg_exit
+    size: 51
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___error_mode
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ___app_type
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: __FF_MSGBANNER
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __NMSG_WRITE
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __aexit_rtn
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 16
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 24
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 33
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 44
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 66e050090f750cb5003583585a1b9a50d768a7ac
+  signature: Vv+L//H/V/+L/3z/JP8M/4v/Dv87/w//dP8a/+j/AAAAAAAAAACF/8D/dP8I/4v/EP9q/wH/i//I////Ev+L/w//if8O/+j/AAAAAAAAAACL/8b/X/9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??4locale@std@@QAEAAV01@ABV01@@Z
+    size: 47
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Decref@facet@locale@std@@QAEPAV123@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Incref@facet@locale@std@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 36
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

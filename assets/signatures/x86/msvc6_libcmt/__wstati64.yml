@@ -1,0 +1,234 @@
+- symbol: 0
+  hash: 8d509351b933aff0cc6b85ebd5abcfbe40b08731
+  signature: Vf+L/+z/gf/s/3j/BP8A/wD/U/9W/4v/df8I/1f/aP8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/hf/A/1n/df8X/zP///9m/4P/fv8C/zr/df82/2b/i/8G/2b/O//H/3T/H/9m/zn/fv8E/3X/Gf/o/wAAAAAAAAAAav8C/17/if8w/+j/AAAAAAAAAACJ/zD/g//I////6f+H/wL/AP8A/1D/6P8AAAAAAAAAAA//t//A/1n/g//o/2D/6/8F/+j/AAAAAAAAAACJ/0X/4P+N/4X/kP/9//////9Q/1b///8V/wAAAAAAAAAAg//L////if9F/+z/O//D/w//hf+s/wD/AP8A/2j/AAAAAAAAAABW/+j/AAAAAAAAAABZ/4X/wP9Z/w//hP+B/wD/AP8A/2j/BP8B/wD/AP+N/4X/iP/7//////9W/1D/6P8AAAAAAAAAAIv/8P+D/8T/DP87//f/dP9m/1b/6P8AAAAAAAAAAIP/+P8D/1n/dP8L/1b/6P8AAAAAAAAAAIX/wP9Z/3T/T/9W////Ff8AAAAAAAAAAIP/+P8B/3b/Q/9T/1f/V/9X/2r/Af9q/wH/aP+8/wf/AP8A/8f/hf+Q//3//////xD/AP8A/wD/if+9/6z//f//////if+9/7D//f//////Zv+J/73/vP/9///////o/wAAAAAAAAAAi/91/wz/g//E/xz/if9G/yT/if9G/yD/if9G/yj/6f9S/wH/AP8A/+j/AAAAAAAAAABq/wL/Xv+J/zD/6P8AAAAAAAAAAIn/MP/p/6b/Af8A/wD/jf9F/+T/UP+N/4X/pP/9//////9Q////Ff8AAAAAAAAAAIX/wP8P/4T/d/8B/wD/AP+N/0X/8P9Q/43/Rf/k/1D///8V/wAAAAAAAAAAhf/A/w//hP9h/wH/AP8A/w//t/9F//z/U/9Q/w//t/9F//r/UP8P/7f/Rf/4/1D/D/+3/0X/9v9Q/w//t/9F//L/UP8P/7f/Rf/w/1D/6P8AAAAAAAAAAIv/df8M/4P/xP8c/zn/vf+c//3//////4n/Rv8k/3X/CP85/73/oP/9//////90/1b/jf9F/+T/UP+N/4X/nP/9//////9Q////Ff8AAAAAAAAAAIX/wP8P/4T/C/8B/wD/AP+N/0X/8P9Q/43/Rf/k/1D///8V/wAAAAAAAAAAhf/A/w//hP/1/wD/AP8A/w//t/9F//z/U/9Q/w//t/9F//r/UP8P/7f/Rf/4/1D/D/+3/0X/9v9Q/w//t/9F//L/UP8P/7f/Rf/w/1D/6P8AAAAAAAAAAIP/xP8c/zn/vf+U//3//////4n/Rv8g/3X/Df85/73/mP/9//////91/wX/i/9G/yT/6/9W/43/Rf/k/1D/jf+F/5T//f//////UP///xX/AAAAAAAAAACF/8D/D/+E/53/AP8A/wD/jf9F//D/UP+N/0X/5P9Q////Ff8AAAAAAAAAAIX/wP8P/4T/h/8A/wD/AP8P/7f/Rf/8/1P/UP8P/7f/Rf/6/1D/D/+3/0X/+P9Q/w//t/9F//b/UP8P/7f/Rf/y/1D/D/+3/0X/8P9Q/+j/AAAAAAAAAACD/8T/HP///3X/7P+J/0b/KP///xX/AAAAAAAAAAD//3X/CP///7X/kP/9///////o/wAAAAAAAAAAWf9m/4n/Rv8G/1n/Zv/H/0b/CP8B/wD/av8B/1f/V////7X/rP/9///////o/wAAAAAAAAAAi/+N/7D//f//////M//b/wP/wf9m/4n/fv8E/4n/Rv8Y/4v/Rf/g/xP/0/9I/4n/Bv+J/0b/EP+J/1b/HP9m/4n/fv8M/2b/if9+/wr/M//A/+v/GP///xX/AAAAAAAAAABQ/+j/AAAAAAAAAABZ////df/s////Ff8AAAAAAAAAAIv/w/9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __wstati64
+    size: 732
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_15BBGC@?$AA?$DP?$AA?$CK?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _wcspbrk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _towlower
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getdrive
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FindFirstFileW@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_17FIDB@?$AA?4?$AA?1?$AA?2?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __wfullpath
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _IsRootUNCName
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __imp__GetDriveTypeW@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___loctotime_t
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FileTimeToLocalFileTime@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FileTimeToSystemTime@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FindClose@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___wdtoxmode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __allmul
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 56
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 66
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 82
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 113
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 132
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 138
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 166
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 181
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 193
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 205
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 257
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 282
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 292
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 316
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 338
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 382
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 424
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 446
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 490
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 534
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 556
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 600
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 615
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 629
+    kind: x86_rel32
+    symbol: 17
+    addend: -4
+  - offset: 656
+    kind: x86_rel32
+    symbol: 18
+    addend: -4
+  - offset: 705
+    kind: x86_abs32
+    symbol: 19
+    addend: 0
+  - offset: 711
+    kind: x86_rel32
+    symbol: 20
+    addend: -4
+  - offset: 721
+    kind: x86_abs32
+    symbol: 16
+    addend: 0

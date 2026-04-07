@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 606749965ddc99612f8f07477b2529fa6ee177f4
+  signature: Vf+L/+z/Uf9T/1b/V/+L/33/DP8P/6//ff8Q/4v/Rf8I/4n/ff/8/4X///+J/0X/CP+L/9//df8H/zP/wP/p/83/AP8A/wD/i/91/xT/Zv/3/0b/DP8M/wH/dP8I/4v/Rv8Y/4n/Rf8U/+v/B//H/0X/FP8A/xD/AP8A/4v/Tv8M/4H/4f8I/wH/AP8A/3T/Kf+L/0b/BP+F/8D/dP8i/zv/2P+L//v/cv8C/4v/+P9X////df8I////Nv/o/wAAAAAAAAAAKf9+/wT/Af8+/4P/xP8M/yv/3/8B/33/CP/r/0b/O/9d/xT/cv9G/4X/yf90/wv/Vv/o/wAAAAAAAAAAhf/A/1n/df95/4P/ff8U/wD/dP8N/4v/w/8z/9L/9/91/xT/i//7/yv/+v/r/wL/i//7/1f///91/wj///92/xD/6P8AAAAAAAAAAIP/xP8M/4P/+P///3T/R/8B/0X/CP8r/9j/O//H/3L/Pv+L/33//P/r/yn/i/9F/wj/Vv8P/77/AP9Q/+j/AAAAAAAAAABZ/4P/+P///1n/dP8u////Rf8I/4v/Rv8Y/0v/if9F/xT/hf/A/3//B//H/0X/FP8B/wD/AP8A/4X/2/8P/4X/UP////////+L/0X/EP9f/17/W//J/8P/g/9O/wz/IP+L/0X//P/r/wL/i//H/yv/w/8z/9L/9/91/wz/6//n/w==
+  symbols:
+  - kind: Function
+    name: __fwrite_lk
+    size: 266
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __flush
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __write
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __flsbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 95
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 125
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 163
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 198
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

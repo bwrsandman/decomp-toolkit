@@ -1,0 +1,32 @@
+- symbol: 0
+  hash: a0df0a850331387f7d0201f2b60a2729e0eddf64
+  signature: Vf+L/+z/g//s/wj/U/9W/1f/Vf/8/4v/Xf8M/4v/Rf8I//f/QP8E/wb/AP8A/wD/df93/4n/Rf/4/4v/Rf8Q/4n/Rf/8/43/Rf/4/4n/Q/8U/4v/c/8M/4v/e/8I/4P//v///3T/Vv+N/wz/dv+D/3z/j/8E/wD/dP86/1b/Vf+L/2v/EP///1T/j/8E/13/Xv+L/13/DP8L/8D/dP8o/3j/Mf+L/3v/CP9T/+j/AAAAAAAAAACD/8T/BP+L/2v/EP9W/1P/6P8AAAAAAAAAAIP/xP8I/43/DP92/4v/BP+P/4n/Q/8M////VP+P/wj/i/97/wj/jf8M/3b/i/80/4//6/+s/7j/AP8A/wD/AP/r/xz/uP8B/wD/AP8A/+v/Ff9V/4v/a/8Q/2r///9T/+j/AAAAAAAAAACD/8T/CP9d/7j/Af8A/wD/AP9d/1//Xv9b/4v/5f9d/8P/
+  symbols:
+  - kind: Function
+    name: __except_handler2
+    size: 174
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __global_unwind2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __local_unwind2
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 87
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 100
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 153
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

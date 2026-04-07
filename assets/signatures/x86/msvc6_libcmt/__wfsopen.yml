@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 315ad100561fcfcd6e5c178ed47885f80d3e75e7
+  signature: Vv/o/wAAAAAAAAAAi//w/4X/9v91/wL/Xv/D/1f/Vv///3T/JP8Y////dP8k/xj///90/yT/GP/o/wAAAAAAAAAAVv+L//j/6P8AAAAAAAAAAIP/xP8U/4v/x/9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: __wfsopen
+    size: 49
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getstream
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __wopenfile
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 29
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

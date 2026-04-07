@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: ca0ffeba7f9ce57af5b3ec63b89084fdb72d89de
+  signature: 6P8AAAAAAAAAAMf/AP8o/wD/AP8A/4P/yP///8P/
+  symbols:
+  - kind: Function
+    name: __heapadd
+    size: 15
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

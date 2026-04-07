@@ -1,0 +1,86 @@
+- symbol: 0
+  hash: 30350741bcd8e4c96d6ca53ed093f027827a9ced
+  signature: U/9V/zP/7f9W/zn/Lf8AAAAAAAAAAFf/dP96/4v/XP8k/xT/U//o/wAAAAAAAAAAQP9Q/+j/AAAAAAAAAACL//D/Wf87//X/Wf90/2H/U/9W/+j/AAAAAAAAAABq/wH/Vv/o/wAAAAAAAAAAg//E/xD/hf/A/3X/S/85/y3/AAAAAAAAAAB0/0j/i/89/wAAAAAAAAAAVf9V/2r///9T/1X/av8B////1/+L//D/O//1/3T/Lf+N/wT/Nv9Q/+j/AAAAAAAAAACL/+j/Wf+F/+3/dP8d/1b/Vf9q////U/9q/wD/av8B////1/+F/8D/dP8O/2r/AP9V/+j/AAAAAAAAAABZ/4X/wP9Z/3T/Bf+D/8j////r/wL/M//A/1//Xv9d/1v/w/8=
+  symbols:
+  - kind: Function
+    name: __putenv_lk
+    size: 148
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___env_initialized
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtsetenv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __wenviron
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__MultiByteToWideChar@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtwsetenv
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 42
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 50
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 63
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 71
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 96
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 126
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

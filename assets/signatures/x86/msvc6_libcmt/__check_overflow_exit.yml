@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 3bdf3b17f91f8e7bb2384055fd532607edf490b3
+  signature: g//s/wj/3f8U/yT/i/9E/yT/BP+D/8T/CP8l/wD/AP/w/3//6/8U/w==
+  symbols:
+  - kind: Function
+    name: __check_overflow_exit
+    size: 20
+    flags: 1
+    section: .text
+  relocations: []

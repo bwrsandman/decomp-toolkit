@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 08585d79b4eb7e032ceb9847064a83195995efb7
+  signature: i/9E/yT/BP9m/4v/SP8G/4v/0f9m/4H/4v/w/3//Zv+B//r/8P9//3X/IP/2/8H/D/91/xf/M//J/2b/Of9I/wT/df8P/2b/Of9I/wL/df8J/2b/Of8I/3X/BP9q/wH/6/8C/2r/Av9Y/8P/D/+3/8n/9//B////f///////df8X/zP/yf9m/zn/SP8E/3X/D/9m/zn/SP8C/3X/Cf9m/zn/CP91/wT/Zv8z/8D/w/9m/w3//////8P/
+  symbols:
+  - kind: Function
+    name: __Dtest
+    size: 93
+    flags: 1
+    section: .text
+  relocations: []

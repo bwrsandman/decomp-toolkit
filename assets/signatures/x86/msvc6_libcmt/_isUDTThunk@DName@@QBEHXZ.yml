@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 1cc1162576ec2973914972228187bd464d92e836
+  signature: Vv+L//H/6P8AAAAAAAAAAIX/wP91/wv/9v9G/wT/QP90/wX/av8B/1j/Xv/D/zP/wP9e/8P/
+  symbols:
+  - kind: Function
+    name: ?isUDTThunk@DName@@QBEHXZ
+    size: 27
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?isEmpty@DName@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

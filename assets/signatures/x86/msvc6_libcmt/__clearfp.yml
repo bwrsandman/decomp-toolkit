@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: b808e65d8cd1b5cf8f065e54998a5b0b615edae1
+  signature: Vf+L/+z/Uf/d/33//P/b/+L///91//z/6P8AAAAAAAAAAFn/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __clearfp
+    size: 20
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __abstract_sw
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 13
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

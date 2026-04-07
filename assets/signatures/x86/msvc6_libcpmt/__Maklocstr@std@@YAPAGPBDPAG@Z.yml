@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 4213e9c153a35fb9a2a57536218f3ea7b27bb92b
+  signature: U/+L/1z/JP8I/1X/Vv9X/1P/6P8AAAAAAAAAAIv/8P9G/43/BP82/1D/6P8AAAAAAAAAAFn/i//o/4X/9v9Z/4v//f92/xP/D/++/wP/UP/o/wAAAAAAAAAAZv+J/wf/R/9H/0P/Tv9Z/3X/7f9f/4v/xf9e/13/W//D/w==
+  symbols:
+  - kind: Function
+    name: ?_Maklocstr@std@@YAPAGPBDPAG@Z
+    size: 62
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _btowc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 22
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 41
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

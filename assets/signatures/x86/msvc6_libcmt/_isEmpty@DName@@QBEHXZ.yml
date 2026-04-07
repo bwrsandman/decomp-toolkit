@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 73fbff296783d21a739a93f8a3a9266c9de239c6
+  signature: g/85/wD/dP8M/+j/AAAAAAAAAACF/8D/dP8D/zP/wP/D/2r/Af9Y/8P/
+  symbols:
+  - kind: Function
+    name: ?isEmpty@DName@@QBEHXZ
+    size: 21
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?isValid@DName@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,95 @@
+- symbol: 0
+  hash: 24a2cd8210cdae4540c65a760fef692bb6b2dcc7
+  signature: Vv9X////Ff8AAAAAAAAAAP//Nf8AAAAAAAAAAIv/+P///xX/AAAAAAAAAACL//D/hf/2/3X/P/9q/3T/av8B/+j/AAAAAAAAAACL//D/Wf+F//b/Wf90/yb/Vv///zX/AAAAAAAAAAD//xX/AAAAAAAAAACF/8D/dP8V/1b/6P8AAAAAAAAAAFn///8V/wAAAAAAAAAAg/9O/wT///+J/wb/6/8I/2r/EP/o/wAAAAAAAAAAWf9X////Ff8AAAAAAAAAAIv/xv9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: __getptd
+    size: 103
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___tlsindex
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: __imp__TlsGetValue@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _calloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__TlsSetValue@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __initptd
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetCurrentThreadId@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __amsg_exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetLastError@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 10
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 33
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 48
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 54
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 64
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 71
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 86
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 94
+    kind: x86_abs32
+    symbol: 9
+    addend: 0

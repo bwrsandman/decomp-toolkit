@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 2ec5af935f87328446cb99fd9d9c5e09a665829a
+  signature: Vf+L/+z/g/89/wAAAAAAAAAAAP91/yn///91/xT/3f9F/wz/Uf9R/93/HP8k/1H/Uf/Z/+7/3f8c/yT/3f9F/wz/Uf9R/93/HP8k////df8I/2r/Af/o/wAAAAAAAAAAg//E/yT/Xf/D/+j/AAAAAAAAAABo//////8A/wD/x/8A/yH/AP8A/wD///91/xT/6P8AAAAAAAAAAN3/Rf8M/1n/Wf9d/8P/
+  symbols:
+  - kind: Function
+    name: __handle_qnan1
+    size: 84
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __matherr_flag
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __umatherr
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ctrlfp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 44
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 54
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

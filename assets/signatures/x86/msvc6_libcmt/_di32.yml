@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: de40776fc77ff834a4afa38d40e938076fcb0298
+  signature: i/9E/yT/CP+L/0z/JP8M/2r/BP+L/4D/nP8A/wD/AP8D/wH/i/9M/yT/CP+J/wH/WP/D/w==
+  symbols:
+  - kind: Function
+    name: _di32
+    size: 26
+    flags: 2
+    section: .text
+  relocations: []

@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 902c617fcff9c0c5e95f0fd62638fe68a61c3531
+  signature: Vf+L/+z/Uf9R/4v/Rf8U/1b/if9F//j/K//A/wP/Rf8M/4v/8f+L/03/GP9X/4v/+P+L/0b/UP+F/8D/if9N//z/dP9w/43/Tf/4/1H/UP/o/wAAAAAAAAAAWf+F/8D/Wf91/2D/hf///3T/Ev9q/wH/V////3b/UP/o/wAAAAAAAAAAg//E/wz/hf/A/3X/Sv+N/0X/+P9Q////dv9Q/+j/AAAAAAAAAABZ/4X/wP9Z/3X/OP+L/07/RP+F/8n/dP8T/4v/Rf8c/4n/Rv9A////Nf8AAAAAAAAAAGr/AP/o/wAAAAAAAAAAi/9F//j/g/9l/wz/AP+J/0X/FP+L/0X//P+J/0X/GP+L/0b/QP9q/wb/if9F/xz/Wf+N/3X/DP/r/w//av///43/Tf8M/+j/AAAAAAAAAABq/wb/i//w/1n/i/9F/wj/i//4//P/pf9f/17/yf/C/yD/AP8=
+  symbols:
+  - kind: Function
+    name: ?seekpos@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAE?AV?$fpos@H@2@V32@H@Z
+    size: 175
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _fsetpos
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fseek
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fgetpos
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0?$fpos@H@std@@QAE@J@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 41
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 106
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 113
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 153
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: f75790703d4370d19ba72d9070903dacadd514e8
+  signature: //90/yT/BP/o/wAAAAAAAAAA9//Y/xv/wP9Z//f/2P9I/8P/
+  symbols:
+  - kind: Function
+    name: _atexit
+    size: 18
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __onexit
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

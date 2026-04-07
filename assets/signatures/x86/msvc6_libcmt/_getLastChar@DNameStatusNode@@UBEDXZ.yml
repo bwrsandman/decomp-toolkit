@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: d4e60b87742629e7f5cb147f8481983e4f5f4832
+  signature: g/95/wj/Av8P/5X/wP9I/yL/Bf8AAAAAAAAAAMP/
+  symbols:
+  - kind: Function
+    name: ?getLastChar@DNameStatusNode@@UBEDXZ
+    size: 15
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_04NODD@?5?$DP?$DP?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

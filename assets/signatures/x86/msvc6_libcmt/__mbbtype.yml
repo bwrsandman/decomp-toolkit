@@ -1,0 +1,32 @@
+- symbol: 0
+  hash: 6669d3a8660bf398e457f547299f5f090a2f6b73
+  signature: i/9E/yT/CP9I/w//tv9E/yT/BP90/yf/iv+I/wAAAAAAAAAA9v/B/wT/dP8E/2r/Af9Y/8P/Zv/3/wT/Rf8AAAAAAAAAAFf/Af91/wn/9v/B/wP/df8E/4P/yP///8P/M//A/8P/iv+A/wAAAAAAAAAAJP8I//b/2P8b/8D/g//g/wP/SP/D/w==
+  symbols:
+  - kind: Function
+    name: __mbbtype
+    size: 68
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __ctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 31
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

@@ -1,0 +1,85 @@
+- symbol: 0
+  hash: 7c3db341ca6e8b9ce20b58a63c8f75667a286e2b
+  signature: of8AAAAAAAAAAFP/Vf9W/4v/Nf8AAAAAAAAAAFf/i/89/wAAAAAAAAAAhf/A/3X/JP///9f/hf/A/3T/DP/H/wX/AAAAAAAAAAAB/wD/AP8A/+v/F////9b/hf/A/3T/Zf/H/wX/AAAAAAAAAAAC/wD/AP8A/+v/Dv+D//j/Af91/wT////X/+v/Uv+D//j/Av91/0v////W/4v/Pf8AAAAAAAAAAGr/AP+L/9j/av8A/2r///9T/2r/Af///zX/AAAAAAAAAAD//9f/i//w/4X/9v90/yr/jf8E/zb/UP/o/wAAAAAAAAAAi//o/1n/hf/t/3T/Gv9W/1X/av///1P/av8B////Nf8AAAAAAAAAAP//1/+F/8D/df8O/1X/6P8AAAAAAAAAAFn/M//A/1//Xv9d/1v/w/+L/8X/6//3/w==
+  symbols:
+  - kind: Function
+    name: ___crtGetCommandLineW
+    size: 161
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _?f_use@?1??__crtGetCommandLineW@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __imp__GetCommandLineA@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetCommandLineW@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__MultiByteToWideChar@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 10
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 51
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 79
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 96
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 113
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 133
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 145
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

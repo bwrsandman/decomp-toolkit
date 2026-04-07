@@ -1,0 +1,205 @@
+- symbol: 0
+  hash: 04eafee62e63efae111ef0536f1ad48532c44a39
+  signature: Vf+L/+z/g//s/xj/U/9W/1f/av8Z/+j/AAAAAAAAAAD//3X/CP/o/wAAAAAAAAAAi//Y/1n/O/8d/wAAAAAAAAAAWf+J/13/CP91/wf/M//2/+n/cP8B/wD/AP+F/9v/D/+E/1b/Af8A/wD/M//S/7j/AAAAAAAAAAA5/xj/dP90/4P/wP8w/0L/Pf8AAAAAAAAAAHz/8f+N/0X/6P9Q/1P///8V/wAAAAAAAAAAav8B/17/O//G/w//hf8h/wH/AP8A/2r/QP+D/yX/AAAAAAAAAAAA/1n/M//A/7//AAAAAAAAAAA5/3X/6P/z/6v/qv+J/x3/AAAAAAAAAAAP/4b/6/8A/wD/AP+A/33/7v8A/w//hP+8/wD/AP8A/43/Tf/v/4r/Ef+E/9L/D/+E/6//AP8A/wD/D/+2/0H///8P/7b/0v87/8L/D/+H/5T/AP8A/wD/gP+I/wAAAAAAAAAABP9A/+v/7v+D/2X//P8A/2r/QP9Z/zP/wP+//wAAAAAAAAAAjf80/1L/8/+r/8H/5v8E/6r/jf+e/wAAAAAAAAAAgP87/wD/i//L/3T/LP+K/1H/Af+E/9L/dP8l/w//tv8B/w//tv/6/zv/x/93/xT/i/9V//z/iv+S/wAAAAAAAAAACP+Q/wAAAAAAAAAAQP87/8f/dv/1/0H/Qf+A/zn/AP91/9T///9F//z/g//D/wj/g/99//z/BP9y/8H/i/9F/wj/x/8F/wAAAAAAAAAAAf8A/wD/AP9Q/6P/AAAAAAAAAADo/wAAAAAAAAAAjf+2/wAAAAAAAAAAv/8AAAAAAAAAAKX/pf9Z/6P/AAAAAAAAAACl/+v/Uv9B/0H/gP95////AP8P/4X/R/////////+L/8b/gP+I/wAAAAAAAAAACP9A/z3///8A/wD/AP9y//H/U//o/wAAAAAAAAAAWf+j/wAAAAAAAAAAif81/wAAAAAAAAAA6/8H/4P/Jf8AAAAAAAAAAAD/M//A/7//AAAAAAAAAACr/6v/q//r/w7/g/89/wAAAAAAAAAAAP90/w//6P8AAAAAAAAAAOj/AAAAAAAAAADp/4z//v//////g//O////av8Z/+j/AAAAAAAAAABZ/4v/xv9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __setmbcp
+    size: 429
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _getSystemCP
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___mbcodepage
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___rgcode_page_info
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Function
+    name: __imp__GetCPInfo@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mblcid
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbctype
+    size: 257
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___rgctypeflag
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: ___ismbcodepage
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: _CPtoLCID
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___mbulinfo
+    size: 12
+    flags: 1
+    section: null
+  - kind: Object
+    name: _fSystemSet
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _setSBCS
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _setSBUpLow
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 29
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 57
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 70
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 83
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 102
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 111
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 123
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 173
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 191
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 206
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 239
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 245
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 278
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 288
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 293
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 299
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 304
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 312
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 335
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 350
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 356
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 362
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 370
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 378
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 389
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 397
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 402
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 417
+    kind: x86_rel32
+    symbol: 15
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 2c672c032e645e948a1f78ff9bfd83b6699f9d6c
+  signature: i/9E/yT/CP8z/8n/i/9Q/wT/hf/S/3z/Ef+L/8r/i/9U/yT/BP9W/4v/cP8I/4v/FP8R/wP/DP8y/17/i/8A/wP/wf/D/w==
+  symbols:
+  - kind: Function
+    name: ?PMDtoOffset@@YAHPAXABUPMD@@@Z
+    size: 35
+    flags: 2
+    section: .text
+  relocations: []

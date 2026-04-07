@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: 5f0bedc38ab4a9f6899732abd6263c54f3f89c01
+  signature: Vf+L/+z/g//s/yD/Vv9X/4v/ff8I/4v/9/+D/z3/AAAAAAAAAAAB/37/D/8P/7b/Bv9q/wj/UP/o/wAAAAAAAAAAWf9Z/+v/D/8P/7b/Bv+L/w3/AAAAAAAAAACK/wT/Qf+D/+D/CP+F/8D/dP8D/0b/6//S/2r/AP9q/wD/Vv/o/wAAAAAAAAAAWf9Q/43/Rf/g/1b/UP/o/wAAAAAAAAAAi/9N/wz/g//E/xT/hf/J/3T/B/+L/1D/BP8D/9b/if8R/4v/EP9m//f/wv9A/wL/dP8K/4X/yf/Z/+7/dP81/4n/Of/r/zH/9v/C/4H/dP8g/4D/Pv8t/93/Bf8AAAAAAAAAAHX/Av/Z/+D/3f9d//j/6P8AAAAAAAAAAN3/Rf/4/8f/AP8i/wD/AP8A/+v/DP/2/8b/Af90/wT/2f/u/+v/5P/d/0D/EP9f/17/yf/D/w==
+  symbols:
+  - kind: Function
+    name: _strtod
+    size: 170
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __isctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fltin2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __HUGE
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 29
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 42
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 65
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 77
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 127
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 139
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: 1d429ab665b3b226c609b01412ab8b6bb0466660
+  signature: g//s/wj/3f8U/yT/i/9E/yT/BP+D/8T/CP8l/wD/AP/w/3//dP89/z3/AP8A//D/f/90/1//Zv+L/wT/JP9m/z3/f/8C/3T/Kv9m/4P/4P8g/3X/If+b/9//4P9m/4P/4P8g/3T/GP+4/wj/AP8A/wD/g//6/x3/dP8H/+j/AAAAAAAAAABa/8P/6P8AAAAAAAAAAFr/w//Z/yz/JP9a/8P/3f8F/wAAAAAAAAAA2f/J/9n//f/d/9n/2f/A/9n/4f/c/x3/AAAAAAAAAACb/9//4P+e/7j/BP8A/wD/AP9z/8f/3P8N/wAAAAAAAAAA6/+//93/Bf8AAAAAAAAAANn/yf/Z//3/3f/Z/9n/wP/Z/+H/3P8d/wAAAAAAAAAAm//f/+D/nv+4/wP/AP8A/wD/dv+e/9z/Df8AAAAAAAAAAOv/lv8=
+  symbols:
+  - kind: Function
+    name: __check_range_exit
+    size: 163
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __startOneArgErrorHandling
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __startTwoArgErrorHandling
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: IeeeAdjU
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: DblMin
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: _zero
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: IeeeAdjO
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: DblMax
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: _infinity
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 63
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 70
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 83
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 99
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 116
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 124
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 140
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 157
+    kind: x86_abs32
+    symbol: 8
+    addend: 0

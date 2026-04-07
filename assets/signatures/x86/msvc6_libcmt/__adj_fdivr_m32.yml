@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: aa2b94179da3d22bdac67f16f1b334d27f71c8c8
+  signature: UP+L/0T/JP8I/yX/AP8A/4D/f/89/wD/AP+A/3//dP8z/9//4P8l/wD/OP8A/wD/dP8N/9n/RP8AAAAAAAAAAP7//////1j/wv8E/wD/2f/J/4P/7P8M/9v/PP8k/9n/RP8k/xT/6P8AAAAAAAAAANv/LP8k/9n/yf+D/8T/DP9Y/8L/BP8A/9j/fP8k/wj/WP/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: __adj_fdivr_m32
+    size: 76
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __fdivrp_sti_st
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 28
+    kind: x86_rel32
+    symbol: 1
+    addend: 0
+  - offset: 52
+    kind: x86_rel32
+    symbol: 1
+    addend: 0

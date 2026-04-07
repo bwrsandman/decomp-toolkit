@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 856471d6a75e4942a0eb3440503d967ae78349d0
+  signature: Zv/3/0T/JP8K//D/f/91/xX/9/9E/yT/CP//////D/8A/3X/B/+D/3z/JP8E/wD/dP8E/2r/Af9Y/8P/M//A/8P/
+  symbols:
+  - kind: Function
+    name: _isdenormald
+    size: 33
+    flags: 2
+    section: .text
+  relocations: []

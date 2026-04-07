@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 7f175270076acf521d52af66c686b83a670f5d4c
+  signature: i/9M/yT/CP9T/1b/V/+L/0H/HP+L/1D/UP/2/8L/Af8P/4T/QP8B/wD/AP+D/+L/Hv+A//r/Dv8P/4X/NP8B/wD/AP+L/1T/JP8Q/4P/+v9S/w//h//i/wD/AP8A/2r/B/+D/8v///8z//b/g//6/1H/X/9z/3H/g//6/zn/D/+C/xH/Af8A/wD/g//6/zr/dv8O/4P/+v88/w//hv/I/wD/AP8A/+n//v8A/wD/AP+L/1D/QP8r/9b/dP84/0r/dP8n/0r/dP8W/0r/df9F/4v/Uf8U/4P/+v8C/3b/Ov+D//r/Bv92/zD/O//X/3T/Mf/r/zL/i/9R/xT/O//X/3f/K////yT/lf8AAAAAAAAAAIv/Uf8U/4P/+v8D/3b/Gf87/9f/d/8Y/+v/Dv+L/1H/FP87/9f/d/8P////JP+V/wAAAAAAAAAAif9Y/0D/6/8D/4n/cP9A/4v/Qf8c/4v/UP9A/yv/1v90/0T/Sv90/yv/Sv90/xr/Sv8P/4X/kv8A/wD/AP+L/0n/FP+D//n/Av92/yf/g//5/wb/dv84/zv/z/90/x7/6/9//4v/Sf8U/zv/z/93/3j///8k/43/AAAAAAAAAACL/0n/FP+D//n/A/92/wb/O//P/3f/Zf/r/xb/if9w/0D/if9w/0T/6/9b/4v/Sf8U/zv/z/93/1T///8k/43/AAAAAAAAAACJ/1j/QP+J/1j/RP/r/0X/g//6/1P/cv9A/4P/+v9U/3f/O/+L/0D/QP+D/+j/AP90/yf/SP90/xz/SP90/w7/SP91/yr/i/9B/xj/Zv8l/2//9/8M/0X/6/8c/4v/Qf8Y/2b/Jf8r//f/DP8B/+v/Ef9m/4H/Yf8Y/yr/9//r/wz/i/9B/xj/Zv8l/2r/9/8M/0D/if9B/xj/X/9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: _AdjustExceptionResult
+    size: 346
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L17954
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L17955
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L17956
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L17957
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 133
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 161
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 225
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 261
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

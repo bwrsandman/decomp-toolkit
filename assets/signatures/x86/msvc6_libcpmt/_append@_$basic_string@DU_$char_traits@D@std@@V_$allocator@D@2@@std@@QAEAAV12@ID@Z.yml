@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 0b53a23a15bfd7c4c54dc802e791410289596d1b
+  signature: of8AAAAAAAAAAFP/i/9c/yT/CP9W/4v/8f9X/yv/Rv8I/zv/w/93/wX/6P8AAAAAAAAAAIX/2/92/zP/i//7/2r/AP8D/37/CP+L/87/V//o/wAAAAAAAAAAhP/A/3T/IP8P/77/RP8k/xT/U/9Q/4v/Rv8E/wP/Rv8I/1D/6P8AAAAAAAAAAIv/Rv8E/4P/xP8M/4n/fv8I/4D/JP84/wD/i//G/1//Xv9b/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ID@Z
+    size: 89
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Xlen@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAE_NI_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memset
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 41
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 64
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

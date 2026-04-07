@@ -1,0 +1,207 @@
+- symbol: 0
+  hash: 782db211961492d4fdd9864c34112a1cf31edf21
+  signature: Vf+L/+z/g//s/yD/3f9F/wj/3P8d/wAAAAAAAAAA3//g/57/c/8f/93/Bf8AAAAAAAAAAFH/Uf/d/xz/JP/d/0X/CP9R/1H/3f8c/yT/av8i/+j/AAAAAAAAAACD/8T/FP/J/8P/3f9F/wj/3P8d/wAAAAAAAAAA3//g/57/d/9N/93/Rf8I/9z/Tf8I/2r/CP9o/wAAAAAAAAAAav8I/2j/AAAAAAAAAABR/1H/3f8c/yT/6P8AAAAAAAAAAN3/Xf/4/93/Rf8I/4P/xP8Q/93/HP8k/+j/AAAAAAAAAADd/13/8P/d/0X/CP/d/xz/JP/o/wAAAAAAAAAA3P9N//D/Wf9Z/9z/Df8AAAAAAAAAANz/Rf/4/8n/w//d/wX/AAAAAAAAAADc/3X/CP9q/wX/aP8AAAAAAAAAAGr/Bf9o/wAAAAAAAAAAUf9R/93/Xf/4/93/Rf/4/9z/Tf/4/93/Xf/w/93/Rf/w/93/HP8k/+j/AAAAAAAAAADd/13/6P+D/8T/GP/d/0X/8P9q/wX/aP8AAAAAAAAAAGr/Bf9o/wAAAAAAAAAAUf9R/93/HP8k/+j/AAAAAAAAAADc/03/+P+D/8T/EP/d/13/+P/d/0X/CP/c/yX/AAAAAAAAAADd/13/8P/d/0X/CP/c/w3/AAAAAAAAAADc/z3/AAAAAAAAAADd/xz/JP/o/wAAAAAAAAAA3f9d/+D/3f9F//D/3f8c/yT/6P8AAAAAAAAAANz/Tf/4/93/Xf8I/93/Rf/w/93/HP8k/+j/AAAAAAAAAADc/03/6P9Z/1n/3P9F/wj/3P9N/+D/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __y0
+    size: 311
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __real@8@00000000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __d_ind
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _domain_err
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __real@8@4001f000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: _Y0q
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _Y0p
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Function
+    name: _evaluate
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __j0
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _log
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __real@8@3ffea2f9836e4e441800
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@40028000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: _P0q
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _P0p
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _Q0q
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _Q0p
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: __real@8@3ffec90fdaa22168c000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@4000c90fdaa22168c000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@40008000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _sqrt
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _cos
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _sin
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 42
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 56
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 74
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 81
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 91
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 108
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 122
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 133
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 144
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 154
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 161
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 186
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 202
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 209
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 219
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 237
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 249
+    kind: x86_abs32
+    symbol: 17
+    addend: 0
+  - offset: 255
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 263
+    kind: x86_rel32
+    symbol: 19
+    addend: -4
+  - offset: 277
+    kind: x86_rel32
+    symbol: 20
+    addend: -4
+  - offset: 294
+    kind: x86_rel32
+    symbol: 21
+    addend: -4

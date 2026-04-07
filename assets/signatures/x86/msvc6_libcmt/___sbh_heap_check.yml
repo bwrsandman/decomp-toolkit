@@ -1,0 +1,57 @@
+- symbol: 0
+  hash: fccfbe7304ca6d64ac9d059ee2db6dc09b6123ef
+  signature: Vf+L/+z/gf/s/zz/Af8A/wD/of8AAAAAAAAAAFP/Vv9X/43/BP+A/8H/4P8C/1D///81/wAAAAAAAAAA//8V/wAAAAAAAAAAhf/A/3T/CP+D/8j////p/73/Av8A/wD/i/8d/wAAAAAAAAAAM////zn/Pf8AAAAAAAAAAIn/Xf/I/4n/ff/g/w//jv+h/wL/AP8A/+v/Av8z////i/9z/xD/aP/E/0H/AP8A/1b///8V/wAAAAAAAAAAhf/A/w//hf+N/wL/AP8A/4v/Q/8M/4n/ff/U/4n/Rf/0/43/hv9E/wH/AP8A/4n/Rf/Y/4v/Q/8I/4H/xv/E/wD/AP8A/4n/Rf/s/4n/ff/o/4n/ff/Q/4n/df/E/+v/Av8z////av9A/4n/ff/c/4n/ff/k/4n/ff/8/zP/wP9Z/zn/Rf/s/43/vf/E//7///////P/q/8P/4z/2v8B/wD/AP9o/wD/gP8A/wD///91//T///8V/wAAAAAAAAAAhf/A/w//hf8x/wL/AP8A/4v/Rf/0/zP/2/+N/5D//P8P/wD/AP+D/7r/DP/w/////////43/sv8Q//D//////w//hf8j/wL/AP8A/4P/Ov///w//hf8a/wL/AP8A/4v/Dv/2/8H/Af+L//n/dP8S/0n/gf/5/wD/BP8A/wD/D/+P//j/Af8A/wD///9F//z/6/8c/4v/wf/B//j/BP9I/4P/+P8//37/A/9q/z//WP///4T/hf/E//7//////43/hP+F/8T//v//////g//5/xD/D/+M/9b/Af8A/wD/9v/B/w//D/+F/83/Af8A/wD/gf/5//D/D/8A/wD/D/+P/8H/Af8A/wD/Of98/zH//P+N/wT/Mf8P/4X/sP8B/wD/AP+L//D/O//y/3L/mP8P/4X/pP8B/wD/AP+B/8L/AP8Q/wD/AP9D/4P/+/8I/w//jP9m/////////4v/df/Y/4v/Rf/8/zn/Bv8P/4X/kv8B/wD/AP+D/2X/+P8A/43/hf/E//7//////4n/Rf/8/4v/Rv8E/4P/Zf/w/wD/jf9+/wj/i//W/zv/xv+J/1X/zP8P/4T/tf8A/wD/AP+L/13//P+L/03/8P87/wv/dP9+/4v/Tf/0/zv/wf8P/4L/af8B/wD/AP+B/8H/AP+A/wD/AP87/8H/D/+D/1v/Af8A/wD/i//I/2b/gf/h/wD/8P+D/8H/DP+N/5H/8P8P/wD/AP87/8r/D/+E/zf/Af8A/wD/O//I/3T/C/+L/xn/g//j//7/A//L/zv/yv91//H/O//K/w//hP8g/wH/AP8A/4v/CP/B//n/BP9J/4P/+f8//37/A/9q/z//Wf87/03/+P8P/4X/Df8B/wD/AP+L/03/zP85/0j/CP8P/4X/Bf8B/wD/AP///0X/8P+L/9D/i/9A/wT/if9V/8z/O//G/w//hf94/////////4P/ff/w/wD/dP8n/4v/Tf/4/4P/+f8g/33/D/+4/wD/AP8A/4D/0//o/wn/Rf/c/wn/Rf/U/+v/EP+D/8H/4P+4/wD/AP8A/4D/0//o/wn/Rf/k/wn/Rf/o/zn/cv8E/w//hf/I/wD/AP8A/4v/Tf/8/4v/Rf/w/zv/Af8P/4X/uv8A/wD/AP85/xf/D/+F/67/AP8A/wD///9F//j/g/9F//z/BP+D/33/+P9A/4v/9/8P/4z/Av////////+L/3X/xP+L/13/yP+L/0X/3P87/0b/gP8P/4X/kf8A/wD/AP+L/0X/5P87/wb/D/+F/4b/AP8A/wD/gf9F//T/AP+A/wD/AP+B/0X/2P8E/wL/AP8A/9H/Zf/s////Rf/Q/4P/xv8E/4P/ff/Q/yD/if91/8T/D/+M/8r//f//////i/9F/9T/O/8D/3X/X/+L/0X/6P87/0P/BP91/1f/g//D/xT///9F/+D/i/9F/+D/if9d/8j/O/8F/wAAAAAAAAAAD/+M/2H//f//////M//A/1//Xv9b/8n/w/9q//7/6/82/2r//P/r/zL/av/6/+v/Lv9q//j/6/8q/2r/+f/r/yb/av/7/+v/Iv9q//f/6/8e/2r/9f/r/xr/av/0/+v/Fv9q//P/6/8S/2r/9v/r/w7/av/x/+v/Cv9q//L/6/8G/2r/8P/r/wL/av/v/1j/6/++/w==
+  symbols:
+  - kind: Function
+    name: ___sbh_heap_check
+    size: 815
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___sbh_cntHeaderList
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_pHeaderList
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__IsBadWritePtr@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 50
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 58
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 89
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 185
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 737
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: a0c3e27bedc44246c21744397288d38205550234
+  signature: Vf+L/+z/Uf9T/1b/V/+L/0X/DP+D/8D/DP+J/0X//P9k/4v/Hf8A/wD/AP8A/4v/A/9k/6P/AP8A/wD/AP+L/0X/CP+L/13/DP+L/2P//P+L/23//P///+D/X/9e/1v/yf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?_JumpToContinuation@@YGXPAXPAUEHRegistrationNode@@@Z
+    size: 52
+    flags: 1
+    section: .text
+  relocations: []

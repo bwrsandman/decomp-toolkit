@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 050d0bf55819f69feebd3fad565a3243b4b12b91
+  signature: Vv+L//H/V/8z////i/8G/4v/QP8E/wP/xv/2/0D/BP8G/3X/Ev+L/0D/KP+L/8j/i/8Q////Uv8s/4P/+P///3X/A/9q/wT/X/+L/wb/i/9I/wT/A//O/4X///90/xX/i/9B/wT/C//H/4P/ef8o/wD/df8C/wz/BP9q/wD/UP/o/wAAAAAAAAAAi//G/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ
+    size: 74
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?clear@ios_base@std@@QAEXH_N@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 65
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

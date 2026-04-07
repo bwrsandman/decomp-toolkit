@@ -1,0 +1,94 @@
+- symbol: 0
+  hash: 4d65c5ad4522591f3a8e5565defc258f452a1efc
+  signature: //81/wAAAAAAAAAA6P8AAAAAAAAAAIP/6P8D/1n/9//Y/xv/wP9A/6P/AAAAAAAAAAB0/wz/x/8F/wAAAAAAAAAAAv8A/wD/AP/r/xH///81/wAAAAAAAAAA6P8AAAAAAAAAAFn/o/8AAAAAAAAAAGr/Af9o/wAAAAAAAAAA//8V/wAAAAAAAAAA9v8F/wAAAAAAAAAABP91/wf/g/8l/wAAAAAAAAAAAP/D/w==
+  symbols:
+  - kind: Function
+    name: _GetLcidFromLanguage
+    size: 86
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _pchLanguage
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _bAbbrevLanguage
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _iPrimaryLen
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _GetPrimaryLen
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _LanguageEnumProc@4
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __imp__EnumSystemLocalesA@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _iLcidState
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 7
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 21
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 29
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 46
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 52
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 59
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 65
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 71
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 80
+    kind: x86_abs32
+    symbol: 8
+    addend: 0

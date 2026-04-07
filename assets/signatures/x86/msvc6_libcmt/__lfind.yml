@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 9514fd80c262edb962ae4097ac1c46842643f212
+  signature: Vf+L/+z/U/9W/4v/df8Q/1f/M////zn/Pv92/xj/i/9d/wz/U////3X/CP///1X/GP9Z/4X/wP9Z/3T/D/8D/13/FP9H/zv/Pv9y/+v/M//A/1//Xv9b/13/w/+L/8P/6//3/w==
+  symbols:
+  - kind: Function
+    name: __lfind
+    size: 50
+    flags: 1
+    section: .text
+  relocations: []

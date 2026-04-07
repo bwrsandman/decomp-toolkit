@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: d4abcd6c3e30d955901bd15ecdde621eb2096840
+  signature: Vv9X/4v/fP8k/wz/V//o/wAAAAAAAAAAi//w/0b/Vv/o/wAAAAAAAAAAWf9Z/4X/9v+L/8j/dv8J/4r/F/+I/xH/Qf9H/07/df/3/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?_Maklocstr@std@@YAPADPBDPAD@Z
+    size: 41
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 17
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

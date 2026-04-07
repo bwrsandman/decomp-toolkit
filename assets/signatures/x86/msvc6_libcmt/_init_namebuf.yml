@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: c2970fbab0138e4f5617a0fbba4061ca82bdee10
+  signature: g/98/yT/BP8A/1b/vv8AAAAAAAAAAHT/Bf++/wAAAAAAAAAAaP8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/jf9G/wH/Wf+K/0j///+A//n/XP90/wn/gP/5/y//dP8E/8b/AP9c/0D/g/98/yT/CP8A/3T/Bf/G/wD/dP/r/wP/xv8A/3P/QP9q/yD/UP/o/wAAAAAAAAAAUP/o/wAAAAAAAAAAaP8AAAAAAAAAAFb/6P8AAAAAAAAAAIP/xP8U/17/w/8=
+  symbols:
+  - kind: Function
+    name: _init_namebuf
+    size: 97
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _namebuf0
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _namebuf1
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ??_C@_01PCFE@?2?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getpid
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ultoa
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_01PJCK@?4?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strcat
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 14
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 19
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 71
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 77
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 82
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 88
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

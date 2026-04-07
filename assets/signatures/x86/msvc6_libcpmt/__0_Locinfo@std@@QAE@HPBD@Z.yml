@@ -1,0 +1,67 @@
+- symbol: 0
+  hash: 7bee72ee88f3bfbe05a4315c0fd3d4a1dc786d80
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4r/Rf8P/1b/V/+L//H/M////4n/df/w/1f/iP8G/+j/AAAAAAAAAACK/0X/D/+N/07/EP9X/4n/ff/8/4j/Af/o/wAAAAAAAAAAiv9F/w//jf9O/yD/V//G/0X//P8B/4j/Af/o/wAAAAAAAAAAiv9F/w//jf9O/zD/V//G/0X//P8C/4j/Af/o/wAAAAAAAAAA//91/wz/i//O/8b/Rf/8/wP///91/wj/6P8AAAAAAAAAAIv/Tf/0/4v/xv9f/17/ZP+J/w3/AAAAAAAAAADJ/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0_Locinfo@std@@QAE@HPBD@Z
+    size: 119
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L12581
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Addcats@_Locinfo@std@@QAEAAV12@HPBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 44
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 80
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 97
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 111
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

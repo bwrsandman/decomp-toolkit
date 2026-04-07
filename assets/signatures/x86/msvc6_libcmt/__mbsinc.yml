@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 7af70a65c36b0e3ed0e60c89aa2e589e1f82d2ef
+  signature: i/9E/yT/BP8P/7b/CP+K/4n/AAAAAAAAAACA/+H/BP9A/4T/yf90/wH/QP/D/w==
+  symbols:
+  - kind: Function
+    name: __mbsinc
+    size: 23
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

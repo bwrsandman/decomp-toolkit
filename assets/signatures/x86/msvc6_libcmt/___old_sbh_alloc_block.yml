@@ -1,0 +1,84 @@
+- symbol: 0
+  hash: 947f54d6090c15d37904be144d3ebede169fb2d8
+  signature: Vf+L/+z/Uf9R/1P/Vv+L/zX/AAAAAAAAAABX/4v/Vv8Q/4P/+v///w//hP+f/wD/AP8A/4v/fv8I/43/jv8Y/yD/AP8A/4v/x/8r/8b/g//o/xj/wf/4/wP/wf/g/wz/A//C/zv/+f+J/0X//P9z/zr/i/8P/4v/Xf8I/zv/y/98/xr/Of9f/wT/dv8V/1P/Uf9Q/+j/AAAAAAAAAACD/8T/DP+F/8D/df91/4v/Rf/8/4n/X/8E/4P/x/8I/43/jv8Y/yD/AP8A/wX/AP8Q/wD/AP87//n/if9F//z/cv/I/+v/A/+L/13/CP+L/0b/CP+L/07/EP+N/37/GP+J/0X/+P87//j/if9N//z/c/8z/4v/B/87/8P/fP8Z/zn/X/8E/3b/FP9T/1D///91//z/6P8AAAAAAAAAAIP/xP8M/4X/wP91/yb/if9f/wT/gf9F//z/AP8Q/wD/AP+D/8f/CP87/33/+P9y/9L/6/8D/4v/Xf8I/4v/Nv87/zX/AAAAAAAAAAB0/xX/6f9D/////////4n/Nf8AAAAAAAAAACn/H/+J/37/CP/p/yj/Af8A/wD/uP8AAAAAAAAAAIv/+P+D/3//EP///3T/Bv+D/3//DP8A/3X/DP+L/z//O//4/w//hP/X/wD/AP8A/+v/6P+L/1//DP+D/2X//P8A/4v/8/+L/8P/K//3/4P/7v8Y/8H//v8D/8H/5v8M/wP/d/8Q/4P/O////3X/Ef+D/33//P8Q/33/C/+D/8D/CP///0X//P+D/zj///90/+//i/9F//z/av8E/8H/4P8M/2j/AP8Q/wD/AP9Q/1b/if9F//j///8V/wAAAAAAAAAAO//G/w//hf+4/wD/AP8A/2r/AP///3X/+P9W/+j/AAAAAAAAAACL/1X//P+D/8T/DP+F/9L/i//L/37/MP+N/0b/BP+J/1X//P+A/4j/9P8A/wD/AP///43/UP8E/4n/UP/8/7r/8P8A/wD/AP+J/xD/if8R/8f/Qf8E//H/AP8A/wD/Bf8A/xD/AP8A/4P/wf8I////Tf/8/3X/1v+J/z3/AAAAAAAAAACN/4f/GP8g/wD/AP87/8j/c/8M/4P/Of///3T/Bf+D/8H/CP/r//L/O//I/xv/wP8j/8H/if9H/wz/i/9F/wj/iP9G/wj/if9f/wj/Kf8D/yn/Rv8E/43/TP8G/wj/jf+G/wD/Af8A/wD/if8O/+v/NP/o/wAAAAAAAAAAhf/A/3T/Kf+L/0j/EP+I/1n/CP+N/1T/Gf8I/6P/AAAAAAAAAACJ/xH/uv/w/wD/AP8A/yv/0/+J/1H/BP8P/7b/0/8p/1D/GP+N/4H/AP8B/wD/AP/r/wL/M//A/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ___old_sbh_alloc_block
+    size: 520
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___old_sbh_p_starting_region
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Function
+    name: ___old_sbh_alloc_block_from_page
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___old_small_block_heap
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: __imp__VirtualAlloc@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memset
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___old_sbh_new_region
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 75
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 154
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 192
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 205
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 220
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 317
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 336
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 402
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 464
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 483
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

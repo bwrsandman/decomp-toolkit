@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 158bb212713cdb8790cc12b8eaaced7fcd7c32c3
+  signature: Vf+L/+z/gf/s/wT/Af8A/wD/jf+F//z//v//////Vv9Q/2j/BP8B/wD/AP8z//b///8V/wAAAAAAAAAAhf/A/3T/HP+A/73//f/+//////86/3X/E/8P/7b/hf/8//7//////1D/6P8AAAAAAAAAAIv/8P9Z/4P/7v9A/4v/xv9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __getdrive
+    size: 67
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetCurrentDirectoryA@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _toupper
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 26
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 52
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

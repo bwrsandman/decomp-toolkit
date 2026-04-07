@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: b38515c672f5e788ff5471ff91014d71b87aeed6
+  signature: i/9B/xz/w/8=
+  symbols:
+  - kind: Function
+    name: ?do_frac_digits@?$_Mpunct@G@std@@MBEHXZ
+    size: 4
+    flags: 1
+    section: .text
+  relocations: []

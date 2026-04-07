@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: efc86c13570df651988fdb809e2d21d0244d4f9c
+  signature: Vf+L/+z/Uf+D/2X//P8A/4P/ff8M/wD/V/+L//n/fv9b/1P/i/9d/wj/Vv+L/0f/HP+L/wD/hf/A/3T/MP+L/0//LP+L/zH/hf/2/37/J/85/3X/DP99/wP/i/91/wz/Vv9Q/1P/6P8AAAAAAAAAAIv/R/8s/wH/df/8/yn/df8M/4P/xP8M/yn/MP+L/0f/HP8D/97/Af8w/+v/Ff+L/wf/i//P////UP8U/4P/+P///3T/D/+I/wP/Q////0X//P///03/DP+D/33/DP8A/3//rP9e/1v/i/9F//z/X//J/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHPADH@Z
+    size: 116
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 52
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: efea2413d605479c5865c4234ed861cb7b8347b6
+  signature: i/9R/wj/i/9E/yT/BP87/8L/d/8O////Nf8AAAAAAAAAAFD/6P8AAAAAAAAAAOv/Cv8r/8L/av8A/1D/6P8AAAAAAAAAAML/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?resize@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXI@Z
+    size: 38
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ID@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 13
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 19
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 31
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

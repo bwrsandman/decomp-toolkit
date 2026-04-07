@@ -1,0 +1,204 @@
+- symbol: 0
+  hash: d8e0b08ecb9a74dab20493dac7d9a8052c1b87f9
+  signature: Vf+L/+z/g//s/zD/jf9N//j/6P8AAAAAAAAAAI3/Tf/w/+j/AAAAAAAAAACh/wAAAAAAAAAAhf/A/3T/c/+K/wj/gP/5/z//df9U/4D/eP8B/0D/df84/4P/Bf8AAAAAAAAAAAL/jf9F/+D/UP/o/wAAAAAAAAAAWf9Q/43/Rf/Y/1D/aP8AAAAAAAAAAI3/Tf/Q/+j/AAAAAAAAAACL/8j/6P8AAAAAAAAAAFD/jf9N/+j/6P8AAAAAAAAAAI3/Rf/o/+v/IP+A//n/P/91/xH/gP94/wH/JP91/wv/jf9F/9D/UP/o/wAAAAAAAAAA6/8J/43/Rf/Q/1D/6P8AAAAAAAAAAFn/UP+N/03/+P/o/wAAAAAAAAAAof8AAAAAAAAAAIv/Tf/8/4P/4f8P/4P/+f8D/3X/BP8z/8D/yf/D/4v/Ff8AAAAAAAAAAID/Ov8A/3T/Cf/2/wX/AAAAAAAAAAAQ/3T/Bf+D//n/Af91/wv/UP+N/03/8P/o/wAAAAAAAAAA6/8M/43/Rf/4/43/Tf/w/1D/6P8AAAAAAAAAAKH/AAAAAAAAAACF/8D/df8k/43/Tf/w/+j/AAAAAAAAAABA/2r/Af9Q/7n/AAAAAAAAAACj/wAAAAAAAAAA6P8AAAAAAAAAAIX/wP+j/wAAAAAAAAAAdP8U////Nf8AAAAAAAAAAI3/Tf/w/1D/6P8AAAAAAAAAAKH/AAAAAAAAAADJ/8P/
+  symbols:
+  - kind: Function
+    name: ??BUnDecorator@@QAEPADXZ
+    size: 276
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?name@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?getDecoratedName@UnDecorator@@CA?AVDName@@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_04GNO@CV?3?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0DName@@QAE@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??HDName@@QBE?AV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getTemplateName@UnDecorator@@CA?AVDName@@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??4DName@@QAEAAV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?disableFlags@UnDecorator@@0KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??4DName@@QAEAAV0@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?outputString@UnDecorator@@0PADA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?length@DName@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _heap
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ?maxStringLength@UnDecorator@@0HA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?getMemory@HeapManager@@QAEPAXIH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getString@DName@@QBEPADPADH@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 23
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 56
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 67
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 75
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 82
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 91
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 116
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 127
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 137
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 142
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 163
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 174
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 191
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 205
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 210
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 222
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 231
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 236
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 241
+    kind: x86_rel32
+    symbol: 17
+    addend: -4
+  - offset: 248
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 256
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 265
+    kind: x86_rel32
+    symbol: 18
+    addend: -4
+  - offset: 270
+    kind: x86_abs32
+    symbol: 13
+    addend: 0

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 0934260df6c72c7e491fc959aaf3d06db8894882
+  signature: wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEXABVlocale@2@@Z
+    size: 3
+    flags: 1
+    section: .text
+  relocations: []

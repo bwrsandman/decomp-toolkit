@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 884ea0f85176a3a647a38786d2ad086a8e2264d0
+  signature: Vf+L/+z/g//s/zT/U/9W/1f/g/9l/9j/AP/H/0X/3P8AAAAAAAAAAIv/Rf8Y/4n/Rf/g/4v/Rf8M/4n/Rf/k/4v/Rf8c/4n/Rf/o/4v/Rf8g/4n/Rf/s/4P/Zf/w/wD/g/9l//T/AP+D/2X/+P8A/4P/Zf/8/wD/x/9F//D/AAAAAAAAAACJ/2X/9P+J/23/+P9k/6H/AP8A/wD/AP+J/0X/2P+N/4X/2P////////9k/6P/AP8A/wD/AP/H/0X/zP8B/wD/AP8A/4v/Rf8I/4n/Rf/Q/4v/Rf8Q/4n/Rf/U/43/Rf/Q/1D/i/9F/wj///8w/+j/AAAAAAAAAAD//1D/aP9Z/1n/g/9l/8z/AP+D/33//P8A/3T/F/9k/4v/Hf8A/wD/AP8A/4v/A/+L/13/2P+J/wP/ZP+J/x3/AP8A/wD/AP/r/wn/i/9F/9j/ZP+j/wD/AP8A/wD/i/9F/8z/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?_CallSETranslator@@YAHPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAX2PBU_s_FuncInfo@@H1@Z
+    size: 182
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?TranslatorGuardHandler@@YA?AW4_EXCEPTION_DISPOSITION@@PAUEHExceptionRecord@@PAUTranslatorGuardRN@@PAX2@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $ExceptionContinuation$16750
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 63
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 123
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

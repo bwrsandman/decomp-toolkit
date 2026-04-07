@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: bb984701470ea73eb6cbb79c2e5b40eb7eb324e6
+  signature: g/98/yT/CP8I/3X/B/+6/wD/BP8A/wD/6/8e/4P/fP8k/wj/Cv91/wf/uv8A/wL/AP8A/+v/EP+D/3z/JP8I/xD/df8H/7r/AP8I/wD/AP/r/wL/M//S/4v/RP8k/wT/Vv+L/0j/DP+L//H/M//y/4H/5v8A/w7/AP8A/zP/8f+J/3D/DP9e/8P/
+  symbols:
+  - kind: Function
+    name: ?sbfun@std@@YAXAAVios_base@1@H@Z
+    size: 69
+    flags: 2
+    section: .text
+  relocations: []

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 335034a6cc0720e2b007ef0148078d090cba0959
+  signature: Vf+L/+z/g//s/wT/U/9R/4v/Rf8M/4P/wP8M/4n/Rf/8/4v/Rf8I/1X///91/xD/i/9N/xD/i/9t//z/6P8AAAAAAAAAAFb/V////9D/
+  symbols:
+  - kind: Function
+    name: __CallSettingFrame@12
+    size: 39
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __NLG_Notify1
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 31
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

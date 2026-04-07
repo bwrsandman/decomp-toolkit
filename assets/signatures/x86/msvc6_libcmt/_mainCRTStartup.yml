@@ -1,0 +1,252 @@
+- symbol: 0
+  hash: d196a856ba70dfbbe8cd7963ff89987e832c0eb5
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8Q/1P/Vv9X/4n/Zf/o////Ff8AAAAAAAAAADP/0v+K/9T/if8V/wAAAAAAAAAAi//I/4H/4f///wD/AP8A/4n/Df8AAAAAAAAAAMH/4f8I/wP/yv+J/w3/AAAAAAAAAADB/+j/EP+j/wAAAAAAAAAAav8B/+j/AAAAAAAAAABZ/4X/wP91/wj/av8c/+j/AAAAAAAAAABZ/+j/AAAAAAAAAACF/8D/df8I/2r/EP/o/wAAAAAAAAAAWf+D/2X//P8A/+j/AAAAAAAAAAD//xX/AAAAAAAAAACj/wAAAAAAAAAA6P8AAAAAAAAAAKP/AAAAAAAAAADo/wAAAAAAAAAA6P8AAAAAAAAAAOj/AAAAAAAAAACh/wAAAAAAAAAAo/8AAAAAAAAAAFD///81/wAAAAAAAAAA//81/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8M/4n/Rf/k/1D/6P8AAAAAAAAAAIv/Rf/s/4v/CP+L/wn/if9N/+D/UP9R/+j/AAAAAAAAAABZ/1n/w/8=
+  symbols:
+  - kind: Function
+    name: _mainCRTStartup
+    size: 229
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T17297
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetVersion@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __winminor
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __winmajor
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __winver
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __osver
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __heap_init
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fast_error_exit
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __mtinit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ioinit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetCommandLineA@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __acmdln
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtGetEnvironmentStringsA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __aenvptr
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: __setargv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __setenvp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __cinit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __environ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___initenv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___argv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___argc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _main
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __XcptFilter
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 40
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 50
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 64
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 75
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 83
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 90
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 102
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 108
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 119
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 129
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 135
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 140
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 145
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 150
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 155
+    kind: x86_rel32
+    symbol: 17
+    addend: -4
+  - offset: 160
+    kind: x86_rel32
+    symbol: 18
+    addend: -4
+  - offset: 165
+    kind: x86_rel32
+    symbol: 19
+    addend: -4
+  - offset: 170
+    kind: x86_abs32
+    symbol: 20
+    addend: 0
+  - offset: 175
+    kind: x86_abs32
+    symbol: 21
+    addend: 0
+  - offset: 182
+    kind: x86_abs32
+    symbol: 22
+    addend: 0
+  - offset: 188
+    kind: x86_abs32
+    symbol: 23
+    addend: 0
+  - offset: 193
+    kind: x86_rel32
+    symbol: 24
+    addend: -4
+  - offset: 205
+    kind: x86_rel32
+    symbol: 25
+    addend: -4
+  - offset: 222
+    kind: x86_rel32
+    symbol: 26
+    addend: -4

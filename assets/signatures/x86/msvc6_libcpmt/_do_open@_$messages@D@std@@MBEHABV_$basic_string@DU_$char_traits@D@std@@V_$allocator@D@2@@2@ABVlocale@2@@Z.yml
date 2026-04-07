@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 0fc6e8f858ce7a6e8c43053d3ce2fb0a4f791308
+  signature: M//A/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?do_open@?$messages@D@std@@MBEHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@ABVlocale@2@@Z
+    size: 5
+    flags: 1
+    section: .text
+  relocations: []

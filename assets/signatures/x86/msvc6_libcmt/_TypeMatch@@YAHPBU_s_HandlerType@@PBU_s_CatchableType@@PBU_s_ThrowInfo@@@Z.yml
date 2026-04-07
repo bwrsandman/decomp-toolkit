@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 15465926d86e6e2b02d2968b70754116b73cc5d7
+  signature: Vv9X/4v/fP8k/wz/i/9H/wT/hf/A/3T/Sv+A/3j/CP8A/43/UP8I/3T/Qf+L/3T/JP8Q/4v/Tv8E/zv/wf90/xD/g//B/wj/Uf9S/+j/AAAAAAAAAABZ/4X/wP9Z/3X/Iv/2/wb/Av90/wX/9v8H/wj/dP8Y/4v/RP8k/xT/i/8A/6j/Af90/wX/9v8H/wH/dP8J/6j/Av90/wn/9v8H/wL/df8E/zP/wP/r/wP/av8B/1j/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: ?TypeMatch@@YAHPBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_ThrowInfo@@@Z
+    size: 93
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _strcmp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 39
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

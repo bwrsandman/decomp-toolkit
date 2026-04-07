@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 402388bc29e0bf36d2567d812172424e6e5c4624
+  signature: 2/+9/2L/////////2/+t/2L/////////9v+F/2n/////////QP90/wj/xv+F/3D/////////B//D/8b/hf9w/////////wH/3P8F/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: __tosnan1
+    size: 43
+    flags: 1
+    section: .text
+  - kind: Object
+    name: One
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 38
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

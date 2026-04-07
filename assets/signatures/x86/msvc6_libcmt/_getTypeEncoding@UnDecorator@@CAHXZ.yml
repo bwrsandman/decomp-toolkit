@@ -1,0 +1,48 @@
+- symbol: 0
+  hash: 3616dd50e029a5b3d0e801c369b6fe6c21d1d8b1
+  signature: U/9V/1b/i/81/wAAAAAAAAAAM//A/1f/gP8+/1//uv8A/0D/AP8A/3X/Cf9G/4v/wv+J/zX/AAAAAAAAAACK/w7/gP/5/0H/D/+M/9j/AP8A/wD/gP/5/1r/D/+P/8//AP8A/wD/D/++/9H/uf8A/4D/AP8A/4P/6v9B/0b/C//B//b/wv8B/4n/Nf8AAAAAAAAAAHT/Bf+A/8z/IP/r/wP/gP/k/9//g//6/xj/D/+N/3r/Av8A/wD/hf/B/73///+f//////+7////7///////v/8A/wj/AP8A/3T/Bv8j/8P/C//H/+v/Av8j/8X/i//y/4P/5v8Y/3T/Lf+D//7/CP90/xb/g//+/xD/D/+F/zf/Av8A/wD/hf/B/3T/BP8k/z//6/8l/4D/5P/n/+v/IP+F/8H/dP8G/yT/v/8M/4D/6/8W/4D/5P/3/4D/zP8Q/+v/Dv+F/8H/dP8G/yT/f/8M/0D/6/8E/yP/w/8L/8f/g//i/wb/g//q/wD/D/+E/xH/Av8A/wD/Sv9K/3T/Iv9K/0r/dP8T/0r/Sv8P/4X/7v8B/wD/AP+A/+T//P+A/8z/BP/p//b/Af8A/wD/gP/k//n/gP/M/wH/6f/r/wH/AP8A/4X/wf90/wv/gP/k//r/gP/M/wL/6f/c/wH/AP8A/yP/xf/p/9X/Af8A/wD/gP/5/yT/D/+F/+j/AP8A/wD/Rv+J/zX/AAAAAAAAAACK/w7/hP/J/w//hP/G/wD/AP8A/4D/+f8v/w//jv+f/wH/AP8A/4D/+f81/37/Pv+A//n/Qf90/zH/gP/5/0L/dP8k/4D/+f9E/3T/FP+A//n/Rf8P/4X/gv8B/wD/AP+A/+T/9v+A/8z/kv/p/5r/AP8A/wD/gP/k//X/gP/M/5H/6f+P/wD/AP8A/4D/zP+Y/+n/h/8A/wD/AP+A/+T/9P+A/8z/kP/r/3//D/++/9H/uf8A/4D/AP8A/4P/6v8w/wv/wf+7////7///////hf/B/7//AP8I/wD/AP90/wb/I//D/wv/x//r/wP/gP/k/5//gP/k//3/gP/M/wX/9v/C/wH/dP8F/4D/zP8g/+v/A/+A/+T/3/+D/+L/Bv+D/+r/AP90/yv/Sv9K/3T/Ff9K/0r/D/+F/xH/Af8A/wD/hf/B/3T/BP8k/z//6/8s/4D/5P/n/+v/J/+F/8H/dP8G/yT/v/8M/4D/6/8d/4D/5P/3/4D/zP8Q/+v/Ff+F/8H/dP8G/yT/f/8M/0D/6/8L/yP/w/8L/8f/6/8F/7j//v///wD/AP9G/4n/Nf8AAAAAAAAAAOn/5P8A/wD/AP+A//n/MP8P/4z/z/8A/wD/AP+A//n/OP8P/4//xv8A/wD/AP8P/77/yf+D/8H/0P9G/4D/5P9//4P/+f8I/4n/Nf8AAAAAAAAAAA//h/+m/wD/AP8A////JP+N/wAAAAAAAAAAuf8A/4D/AP8A/4X/wf90/wj/gP/k//r/gP/M/wL/6/8D/4D/5P+f/4X/wf90/wn/JP9//wz/QP/p/5H/AP8A/wD/gP/k/+//gP/M/wj/6f+G/wD/AP8A/7n/AP+A/wD/AP+F/8H/dP8I/4D/5P/6/4D/zP8C/+v/A/+A/+T/n/+F/8H/dP8G/yT/v/8M/4D/6/9o/4D/5P/3/4D/zP8Q/+v/YP+5/wD/gP8A/wD/hf/B/3T/CP+A/+T/+v+A/8z/Av/r/wP/gP/k/5//hf/B/3T/BP8k/z//6/9E/4D/5P/n/+v/P/+A/+T/3/8L/8L/6/84/4D/5P/n/4D/zP9g/+v/MP+A/+T/v/+A/8z/IP/r/yj/gP/k/+//gP/M/2j/6/8g/4D/5P/3/4D/zP9w/+v/GP+A/8z/eP/r/xP/uP//////AP8A/+v/DP8z/8D/hP/J/w//lf/A/wX//v///wD/AP9f/17/Xf9b/8P/
+  symbols:
+  - kind: Function
+    name: ?getTypeEncoding@UnDecorator@@CAHXZ
+    size: 732
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Unknown
+    name: $L4285
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 27
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 70
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 270
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 490
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 532
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 545
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

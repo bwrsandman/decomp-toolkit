@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: 42ebcb874504866152cb0e560419686f138ba829
+  signature: Vv/o/wAAAAAAAAAAi/9w/2j/6P8AAAAAAAAAAIv/TP8k/wj/if9I/2j/i//G/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?_set_se_translator@@YAP6AXIPAU_EXCEPTION_POINTERS@@@ZP6AXI0@Z@Z
+    size: 25
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

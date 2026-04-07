@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: f4a3268517bdaca9d6be8d59eef7a3d6cefac59c
+  signature: i/9E/yT/BP9W/1f/Zv+L/xD/Zv+F/9L/dP8u/4v/TP8k/xD/i//Q/yv/0f9m/4v/Mf9m/4X/9v90/xT/D/+3/zz/Cv8P/7f/9v8r//7/df8J/0H/Qf9m/4P/PP8K/wD/df/k/2b/g/85/wD/dP8G/0D/QP/r/8r/M//A/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: _wcsstr
+    size: 65
+    flags: 1
+    section: .text
+  relocations: []

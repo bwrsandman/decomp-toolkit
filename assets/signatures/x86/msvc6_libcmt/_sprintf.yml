@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: cb16b9f1aa99aa8c410ee88ca539e18d8513600a
+  signature: Vf+L/+z/g//s/yD/i/9F/wj/Vv+J/0X/6P+J/0X/4P+N/0X/EP/H/0X/7P9C/wD/AP8A/1D/jf9F/+D///91/wz/x/9F/+T/////////f/9Q/+j/AAAAAAAAAACD/8T/DP///03/5P+L//D/eP8I/4v/Rf/g/4D/IP8A/+v/Df+N/0X/4P9Q/2r/AP/o/wAAAAAAAAAAWf9Z/4v/xv9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: _sprintf
+    size: 82
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __output
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __flsbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 42
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 71
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

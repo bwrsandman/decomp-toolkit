@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 31fc46561e67d2107505ab9c3254b009f1eb76f5
+  signature: Vv+L//H/i/8O/4X/yf90/w//6P8AAAAAAAAAAIP/+P///3T/Bf+I/0b/Bf/r/wP/g/8m/wD/iv9G/wX/xv9G/wT/Af9e/8P/
+  symbols:
+  - kind: Function
+    name: ?_Peek@?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@AAEDXZ
+    size: 36
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?sgetc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

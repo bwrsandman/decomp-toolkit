@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: a1413bec6ac9eee3a38b8e08dfdd147ef4e8f6e9
+  signature: Vv+L//H/g/9+/wT/AP90/xj/i/9G/wj/hf/A/4n/Rv8M/3T/Dv+L/wD///92/wz/if9G/wj///9W/wT/Wf/r/+j/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?Destructor@HeapManager@@QAEXXZ
+    size: 35
+    flags: 1
+    section: .text
+  relocations: []

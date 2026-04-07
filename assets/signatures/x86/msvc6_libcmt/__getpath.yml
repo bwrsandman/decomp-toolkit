@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 18b0a29b0924bab3c3e896c886d18cc70dd81703
+  signature: Vf+L/+z/i/9N/wj/gP85/zv/df8D/0H/6//4////Tf8Q/1b/i//B/3T/Tf+K/xH/i/91/wz/hP/S/3T/OP+A//r/O/90/zP/gP/6/yL/dP8L/4j/Fv9G/0H///9N/xD/dP8t/+v/Hf9B/4r/Ef+E/9L/dP8Q/4D/+v8i/3T/C/+I/xb/Rv9B////Tf8Q/3T/Fv/r/+r/gP85/wD/dP8B/0H/iv8R/4T/0v91/8j/gP85/zv/df8K/0H/6//4/4v/wf/r/wP/i/91/wz/gP8m/wD/K//B//f/2P8b/8D/Xv8j/8H/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __getpath
+    size: 116
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,81 @@
+- symbol: 0
+  hash: 70fba599af10871e6bb74790dd4e4a2c0bb56ee6
+  signature: Vf+L/+z/U/9W/1f/i/99/wz/hf///w//hP+K/wD/AP8A/2b/g/8//wD/D/+E/4D/AP8A/wD/i/9d/wj/hf/b/3X/J/9o/wj/Av8A/wD/6P8AAAAAAAAAAIv/8P9Z/4X/9v91/w3/6P8AAAAAAAAAAMf/AP8M/wD/AP8A/+v/U//H/0X/EP8E/wH/AP8A/+v/Av+L//P/jf9F/wj/UP9W////df8Q/1f///8V/wAAAAAAAAAAO/9F/xD/cv8Y/4X/2/91/wf/Vv/o/wAAAAAAAAAAWf/o/wAAAAAAAAAAx/8A/yL/AP8A/wD/6/8c/4X/wP91/xz/hf/b/3X/B/9W/+j/AAAAAAAAAABZ////Ff8AAAAAAAAAAFD/6P8AAAAAAAAAAFn/M//A/+v/Ef+L/8b/6/8N////df8Q////df8I/+j/AAAAAAAAAABZ/1n/X/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __wfullpath
+    size: 173
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetFullPathNameW@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __wgetcwd
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 40
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 52
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 86
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 101
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 107
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 129
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 136
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 142
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 162
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

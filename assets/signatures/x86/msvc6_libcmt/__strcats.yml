@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: dc39ae3759e25eb94a0e83f03d49a7cd4058a341
+  signature: V/+L/3z/JP8M/4X///9+/xr/Vv+N/3T/JP8Q////dv8E/4P/xv8E////dP8k/xD/6P8AAAAAAAAAAFn/T/9Z/3X/7P9e/1//w/8=
+  symbols:
+  - kind: Function
+    name: __strcats
+    size: 37
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strcat
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 25
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

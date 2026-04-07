@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 397738df0efba98d3ad00fc0fe6b25abcf4c03d6
+  signature: 3f9E/yT/DP9q/xj/Uf9R/93/HP8k/93/RP8k/xD/Uf9R/93/HP8k/+j/AAAAAAAAAACD/8T/FP/D/w==
+  symbols:
+  - kind: Function
+    name: __hypot
+    size: 29
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __hypothlp
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

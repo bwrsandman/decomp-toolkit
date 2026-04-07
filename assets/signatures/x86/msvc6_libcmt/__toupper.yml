@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: b135a501b4481eac713be576b2a54c1763693f10
+  signature: i/9E/yT/BP+D/8D/4P/D/w==
+  symbols:
+  - kind: Function
+    name: __toupper
+    size: 8
+    flags: 1
+    section: .text
+  relocations: []

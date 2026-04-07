@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: da2070c497cf883fa2fd0e1f00557f9d0dd927db
+  signature: Vf+L/+z/U/9W/1f/i/99/wj/i//x/zP/2/+D/2b/BP+A/4v/Rv8E/4n/Hv+L/w//O//L/3T/e/84/xn/D/+E/5D/AP8A/wD/if9N/wj/i/8H/4r/EP86/1X/DP90/zr/gP/6/1//dP8s/4D/+v8k/3T/J/+A//r/Yf98/wX/gP/6/3r/fv8d/4D/+v9B/3z/Bf+A//r/Wv9+/xP/gP/6/zD/fP8F/4D/+v85/37/Cf/2/wX/AAAAAAAAAAAB/3T/M/9D/0D/if8H/4D/OP8A/3X/vf9T/4v/zv///3X/CP/o/wAAAAAAAAAAi/8H/4r/CP+E/8n/dP8w/0D/Ov9N/wz/if8H/3T/Iv+L/0b/BP8k//P/DP8D/4P/Jv8A/4n/Rv8E/+v/Cv+L/0b/BP8k//H/DP8B/4n/Rv8E/4v/xv9f/17/W/9d/8L/CP8A/4P/Zv8E//D/6//x/4v/Rv8E/6j/D/91/+r/JP/y/wz/Av/r/+H/
+  symbols:
+  - kind: Function
+    name: ??0DName@@QAE@AAPBDD@Z
+    size: 186
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?disableFlags@UnDecorator@@0KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?doPchar@DName@@AAEXPBDH@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 90
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 113
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

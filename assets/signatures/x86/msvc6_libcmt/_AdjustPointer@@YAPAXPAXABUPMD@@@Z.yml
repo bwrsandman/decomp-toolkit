@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 10d47cd8a1ee876ac575656625fd4c1d32fa728b
+  signature: i/9M/yT/CP9W/4v/dP8k/wj/i/8B/4v/Uf8E/wP/xv+F/9L/fP8N/4v/NP8y/4v/Sf8I/4v/DP8O/wP/yv8D/8H/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?AdjustPointer@@YAPAXPAXABUPMD@@@Z
+    size: 35
+    flags: 2
+    section: .text
+  relocations: []

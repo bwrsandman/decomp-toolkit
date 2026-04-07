@@ -1,0 +1,32 @@
+- symbol: 0
+  hash: 1d56e7e57d4048a081c22b414c6c205620f0e856
+  signature: 6P8AAAAAAAAAAIP/eP9k/wD/dP8I/+j/AAAAAAAAAAD//1D/ZP/p/wAAAAAAAAAA
+  symbols:
+  - kind: Function
+    name: ?unexpected@@YAXXZ
+    size: 24
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?terminate@@YAXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

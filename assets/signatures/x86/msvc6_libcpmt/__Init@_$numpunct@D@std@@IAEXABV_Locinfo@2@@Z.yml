@@ -1,0 +1,54 @@
+- symbol: 0
+  hash: 2904b8448febc36e1a1fc54b3ec497d482ef53a8
+  signature: Vv+L//H/6P8AAAAAAAAAAIv/CP9q/wD/iv8J/4j/Tv8M/4v/SP8E/4r/Cf+I/07/Df///3D/CP/o/wAAAAAAAAAAav8A/2j/AAAAAAAAAACJ/0b/CP/o/wAAAAAAAAAAav8A/2j/AAAAAAAAAACJ/0b/EP/o/wAAAAAAAAAAg//E/xj/if9G/xT/Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?_Init@?$numpunct@D@std@@IAEXABV_Locinfo@2@@Z
+    size: 73
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _localeconv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Maklocstr@std@@YAPADPBDPAD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_05NAGO@false?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_04NCCD@true?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 29
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 36
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 44
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 51
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 59
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

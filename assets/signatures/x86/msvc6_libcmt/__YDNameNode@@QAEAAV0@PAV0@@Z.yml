@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: ddcf1cabd292a15563a0e71c0ad736900e9ca49d
+  signature: i//B/4v/TP8k/wT/hf/J/3T/HP+L/1D/BP+F/9L/dP8S/1b/i/9y/wT/hf/2/3T/BP+L/9b/6//1/4n/Sv8E/17/6/8D/4n/SP8E/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??YDNameNode@@QAEAAV0@PAV0@@Z
+    size: 41
+    flags: 1
+    section: .text
+  relocations: []

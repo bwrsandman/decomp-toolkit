@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 50bb1ef6d811b94c55ae2924c35b81310e540d8a
+  signature: aP8A/wD/A/8A/2j/AP8A/wH/AP/o/wAAAAAAAAAAWf9Z/8P/
+  symbols:
+  - kind: Function
+    name: __setdefaultprecision
+    size: 18
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __controlfp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

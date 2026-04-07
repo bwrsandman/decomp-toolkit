@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 4cc2f9d99d1a3e62d45eac06b6600aca85e7b70d
+  signature: Vf+L/+z/g//s/xj/Vv9X/2r///+N/03/6P/o/wAAAAAAAAAAi//w/4v/Rf8I/2r/Bv+L//j/Wf/z/6X/X/9e/8n/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: ?seekoff@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAE?AV?$fpos@H@2@JW4seekdir@ios_base@2@H@Z
+    size: 36
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0?$fpos@H@std@@QAE@J@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

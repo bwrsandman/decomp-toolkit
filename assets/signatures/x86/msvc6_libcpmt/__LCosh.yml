@@ -1,0 +1,89 @@
+- symbol: 0
+  hash: e340b9bfc83c11458d74eff9c3880b1aada4aaaa
+  signature: Vf+L/+z/jf9F/wj/UP/o/wAAAAAAAAAAD/+//8D/g//o/wD/Wf8P/4T/rf8A/wD/AP9I/w//hP+B/wD/AP8A/0j/dP9u/93/Rf8I/9z/Ff8AAAAAAAAAAN//4P+e/3P/Cf/Z/8D/2f/g/93/Vf8I/93/2f/c/x3/AAAAAAAAAABq////3//g/57/c/8k/1H/Uf/Z/+j/jf9F/wj/3f8c/yT/UP/o/wAAAAAAAAAA3f8F/wAAAAAAAAAA3P91/wj/g//E/xD/3P9F/wj/3P9N/xD/Xf/D/93/Rf8Q/1H/Uf+N/0X/CP/d/xz/JP9Q/+j/AAAAAAAAAACD/8T/EP9m/4X/wP98/xj/6P8AAAAAAAAAAMf/AP8i/wD/AP8A/+v/C//o/wAAAAAAAAAAx/8A/yH/AP8A/wD/3f9F/wj/Xf/D/93/Bf8AAAAAAAAAAN3/Rf8Q/9j/2f/f/+D/nv90/xj/3f/Y/+j/AAAAAAAAAADH/wD/Iv8A/wD/AP/d/wX/AAAAAAAAAABd/8P/3f9F/xD/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __LCosh
+    size: 203
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __LDtest
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __real@8@00000000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __LXbig
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __LExp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __real@8@3ffd8000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __LInf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 40
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 60
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 83
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 89
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 120
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 133
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 146
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 163
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 180
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 192
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

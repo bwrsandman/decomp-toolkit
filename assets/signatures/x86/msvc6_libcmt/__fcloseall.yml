@@ -1,0 +1,89 @@
+- symbol: 0
+  hash: ed74043f934994d7960b92ce67d917c9923fabb7
+  signature: U/9X/2r/Av8z/9v/6P8AAAAAAAAAAFn/av8D/1//Of89/wAAAAAAAAAAfv9d/1b/of8AAAAAAAAAAIv/9//B/+b/Av+L/wT/Bv+F/8D/dP9B//b/QP8M/4P/dP8N/1D/6P8AAAAAAAAAAIP/+P///1n/dP8B/0P/g////xT/fP8p/6H/AAAAAAAAAACL/wT/Bv+D/8D/IP9Q////Ff8AAAAAAAAAAKH/AAAAAAAAAAD//zT/Bv/o/wAAAAAAAAAAof8AAAAAAAAAAFn/g/8k/wb/AP9H/zv/Pf8AAAAAAAAAAHz/pf9e/2r/Av/o/wAAAAAAAAAAWf+L/8P/X/9b/8P/
+  symbols:
+  - kind: Function
+    name: __fcloseall
+    size: 129
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __nstream
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___piob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fclose
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__DeleteCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 17
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 49
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 66
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 79
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 84
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 92
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 97
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 109
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 119
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

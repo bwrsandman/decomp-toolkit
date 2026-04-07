@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: f3959d05823204ee4e03a6a67b5313dc804e080a
+  signature: Vf+L/+z/g//s/xj/3f8F/wAAAAAAAAAA3f9d//j/3f8F/wAAAAAAAAAA3f9d//D/3f9F//D/3P91//j/3P9N//j/3P9t//D/3f9d/+j/3f9F/+j/3P8d/wAAAAAAAAAA3//g/57/dv8F/2r/Af9Y/8n/w/8z/8D/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __ms_p5_test_fdiv
+    size: 62
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __real@8@4014bffffc0000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@4015800bf60000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@3fff8000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 44
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

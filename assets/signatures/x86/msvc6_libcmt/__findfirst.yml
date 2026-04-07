@@ -1,0 +1,71 @@
+- symbol: 0
+  hash: de7d23dffdb32a0ebc0a5530be44905f613593b9
+  signature: Vf+L/+z/gf/s/0D/Af8A/wD/Vv+N/4X/wP/+//////9X/1D///91/wj///8V/wAAAAAAAAAAi//4/4P//////3X/Qv///xX/AAAAAAAAAABq/wL/Xv87/8b/cv8P/4P/+P8D/3b/J/+D//j/CP90/xX/g//4/xL/dP8d/+j/AAAAAAAAAADH/wD/Fv8A/wD/AP+D/8j////r/3v/6P8AAAAAAAAAAMf/AP8M/wD/AP8A/+v/7v/o/wAAAAAAAAAAif8w/+v/5f+L/4X/wP/+//////+L/3X/DP8t/4D/AP8A/wD/9//Y/xv/wP8j/4X/wP/+//////+J/wb/jf+F/8T//v//////UP/o/wAAAAAAAAAAif9G/wT/jf+F/8z//v//////UP/o/wAAAAAAAAAAif9G/wj/jf+F/9T//v//////UP/o/wAAAAAAAAAAif9G/wz/i/+F/+D//v//////if9G/xD/jf+F/+z//v//////g//G/xT/UP9W/+j/AAAAAAAAAACD/8T/FP+L/8f/X/9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __findfirst
+    size: 205
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__FindFirstFileA@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___timet_from_ft
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 23
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 36
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 63
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 79
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 92
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 134
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 149
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 164
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 192
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

@@ -1,0 +1,36 @@
+- symbol: 0
+  hash: 37d65e4a586be0545480ec7d4bd7e2bf39df6a7f
+  signature: Vv9X/zP///85/z3/AAAAAAAAAAB0/yP/vv8AAAAAAAAAAIv/xv///3T/JP8M////MP/o/wAAAAAAAAAAWf+F/8D/Wf90/xH/g//G/wj/R/+L/8b/g/8+/wD/df/k/2b/M//A/1//Xv/D/2b/i/8E//3/AAAAAAAAAADr//P/
+  symbols:
+  - kind: Function
+    name: _wctype
+    size: 63
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _tab
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: _strcmp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 13
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 57
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

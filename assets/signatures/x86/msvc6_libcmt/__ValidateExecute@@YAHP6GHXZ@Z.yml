@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 8a20287e7970f760a24039bf7e1b066b60667547
+  signature: Vv9q/wH/Xv///3T/JP8I////Ff8AAAAAAAAAAIX/wP90/wL/M//2/4v/xv9e/8P/
+  symbols:
+  - kind: Function
+    name: ?_ValidateExecute@@YAHP6GHXZ@Z
+    size: 24
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__IsBadCodePtr@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

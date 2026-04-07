@@ -1,0 +1,49 @@
+- symbol: 0
+  hash: dceea09cdcaf857f2d58dc0cc1542f9b77d9569b
+  signature: U/9V/1b/V/+L/3z/JP8U/4P/Pf8AAAAAAAAAAAH/fv8P/w//tv8H/2r/CP9Q/+j/AAAAAAAAAABZ/1n/6/8P/w//tv8H/4v/Df8AAAAAAAAAAIr/BP9B/4P/4P8I/4X/wP90/wP/R//r/9L/D/+2/zf/R/+D//7/Lf+L/+7/dP8F/4P//v8r/3X/BP8P/7b/N/9H/zP/2/+D/z3/AAAAAAAAAAAB/37/DP9q/wT/Vv/o/wAAAAAAAAAAWf9Z/+v/C/+h/wAAAAAAAAAAiv8E/3D/g//g/wT/hf/A/3T/Df+N/wT/m/+N/1z/Rv/Q/w//tv83/0f/6//P/4P//f8t/4v/w/91/wL/9//Y/1//Xv9d/1v/w/8=
+  symbols:
+  - kind: Function
+    name: _atol
+    size: 139
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __isctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 24
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 37
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 78
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 89
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 98
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

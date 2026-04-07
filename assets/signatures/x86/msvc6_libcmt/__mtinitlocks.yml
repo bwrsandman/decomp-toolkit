@@ -1,0 +1,40 @@
+- symbol: 0
+  hash: 420f9608cb2d2b472feaa7cb073feb4bf4b1cee0
+  signature: Vv+L/zX/AAAAAAAAAAD//zX/AAAAAAAAAAD//9b///81/wAAAAAAAAAA///W////Nf8AAAAAAAAAAP//1v///zX/AAAAAAAAAAD//9b/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: __mtinitlocks
+    size: 41
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__InitializeCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __locktable
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 9
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

@@ -1,0 +1,89 @@
+- symbol: 0
+  hash: bbc79744feae0d7ed2d45448f1b8579364f150dc
+  signature: Vf+L/+z/gf/s/xT/BP8A/wD/U/9W/1f/M////zn/ff8Q/4n/ff/4/4n/ff/w/3X/B/8z/8D/6f9m/wH/AP8A/4v/Rf8I/8H/+P8F/43/HP+F/wAAAAAAAAAAi/9F/wj/g//g/x//jf80/8D/i/8D/8H/5v8C//b/RP8w/wT/IP90/w7/av8C/1f///91/wj/6P8AAAAAAAAAAIP/xP8M/4v/A/8D/8b/9v9A/wT/gP8P/4T/wf8A/wD/AP+L/0X/DP85/33/EP+J/0X//P+J/33/CP8P/4b/6v8A/wD/AP+N/4X/7P/7//////+L/03//P8r/03/DP87/03/EP9z/yn/i/9N//z///9F//z/iv8J/4D/+f8K/3X/B////0X/8P/G/wD/Df9A/4j/CP9A/4v/yP+N/5X/7P/7//////8r/8r/gf/5/wD/BP8A/wD/fP/M/4v/+P+N/4X/7P/7//////8r//j/jf9F//T/av8A/1D/jf+F/+z/+///////V/9Q/4v/A////zT/MP///xX/AAAAAAAAAACF/8D/dP9D/4v/Rf/0/wH/Rf/4/zv/x/98/wv/i/9F//z/K/9F/wz/O/9F/xD/cv+K/zP///+L/0X/+P87/8f/D/+F/5D/AP8A/wD/Of99/wj/dP9i/2r/Bf9e/zn/df8I/3X/TP/o/wAAAAAAAAAAx/8A/wn/AP8A/wD/6P8AAAAAAAAAAIn/MP/r/0H///8V/wAAAAAAAAAAif9F/wj/6//H/43/Tf/0/1f/Uf///3X/EP///3X/DP///zD///8V/wAAAAAAAAAAhf/A/3T/C/+L/0X/9P+J/33/CP+J/0X/+P/r/6f///8V/wAAAAAAAAAAif9F/wj/6/+c////df8I/+j/AAAAAAAAAABZ/4P/yP///+v/LP+L/wP/9v9E/zD/BP9A/3T/DP+L/0X/DP+A/zj/Gv8P/4T/qv/+///////o/wAAAAAAAAAAx/8A/xz/AP8A/wD/6P8AAAAAAAAAAIn/OP/r/9L/K/9F//D/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __write_lk
+    size: 395
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lseek_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__WriteFile@20
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 41
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 73
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 201
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 257
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 268
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 278
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 302
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 323
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 336
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 368
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 379
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

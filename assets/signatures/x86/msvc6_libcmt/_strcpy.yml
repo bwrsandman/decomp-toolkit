@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: ed36689ea6e096828771ab1909d12d15084bd78c
+  signature: V/+L/3z/JP8I/+v/av+N/6T/JP8A/wD/AP8A/4v///8=
+  symbols:
+  - kind: Function
+    name: _strcpy
+    size: 16
+    flags: 1
+    section: .text
+  relocations: []

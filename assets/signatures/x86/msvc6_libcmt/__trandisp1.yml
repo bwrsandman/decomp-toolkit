@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 637d9b7be962f99c298622edab2e626ab5eb64b6
+  signature: gP96/w7/Bf91/xH/Zv+L/53/XP////////+A/8//Av+A/+f//v+z/z//6/8E/2b/u/8//xP/Zv+J/53/Xv/////////Z/63/Xv////////+7/wAAAAAAAAAA2f/l/4n/lf9s/////////5v/3f+9/2D/////////xv+F/3D/////////AP+b/4r/jf9h/////////9D/4f/Q//n/0P/B/4r/wf8k/w//1/8P/77/wP+B/+H/BP8E/wD/AP+L/9r/A//Y/4P/w/8Q////I/8=
+  symbols:
+  - kind: Function
+    name: __trandisp1
+    size: 103
+    flags: 1
+    section: .text
+  - kind: Object
+    name: XAMtoTagTab
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 41
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

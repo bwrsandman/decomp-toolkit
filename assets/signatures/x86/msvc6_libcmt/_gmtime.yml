@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 0c2d025ae49af10750bffdc11ce9eae57eed09bb
+  signature: i/9E/yT/BP9T/1b/V/+L/zD/M//b/+j/AAAAAAAAAACF//b/i//4/33/B/8z/8D/6f/p/wD/AP8A/4P/f/9A/wD/df8U/2r/JP/o/wAAAAAAAAAAWf+J/0f/QP+F/8D/uf8AAAAAAAAAAHT/A/+L/0//QP+L/8b/v/+A/x//hv8H/5n/9////4v/0P9p/9L/gP/g/3n/+P8D//L/jf8U/4X/Rv8A/wD/AP+4/4D/M//h/wH/O//w/3z/G/8r//D/Qv87//D/fP8U/yv/8P+4/wD/hf/i/wH/Qv87//D/fP8F/0L/K//w/+v/A/9q/wH/W/+L/8b/if9R/xT/mf+//4D/Uf8B/wD/9////7//AAAAAAAAAACJ/0H/HP9p/8D/gP+u//7///8D//D/hf/b/3X/Bf+//wAAAAAAAAAAi/9R/xz/av8B/1j/jf9f/wT/Of8T/33/Bv9A/4P/w/8E/+v/9v+L/1H/HP9I/4n/Qf8Q/2r/B/8r/xT/h/+L/0T/JP8U/7//gP9R/wH/AP+J/1H/DP+L/wD/mf/3////X/9q/zz/g//A/wT/mf/3////i//G/7//EP8O/wD/AP+J/1H/GP+Z//f///9f/4n/Qf8I/2n/wP/w//H//////wP/8P+L/8b/mf/3////if9B/wT/a//A/zz/K//w/4P/Yf8g/wD/if8x/4v/wf9f/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: _gmtime
+    size: 266
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _tb
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: __lpdays
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __days
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 38
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 49
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 135
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 155
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

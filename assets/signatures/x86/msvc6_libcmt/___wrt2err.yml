@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: a4a5268327ad77eb6fa8603163490425947cf113
+  signature: Vf+L/+z/jf9F/wj/av8A/1D/i/9F/wj/D/++/wj/QP9R/1D/of8AAAAAAAAAAP//cP9I////Ff8AAAAAAAAAAF3/w/8=
+  symbols:
+  - kind: Function
+    name: ___wrt2err
+    size: 34
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__WriteFile@20
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

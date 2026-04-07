@@ -1,0 +1,182 @@
+- symbol: 0
+  hash: a4331c8ad0f59934f43077aa5fb1105342fc9b8d
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1H/Vv+N/03/8P/o/wAAAAAAAAAAg/9l//z/AP+D/z3/AAAAAAAAAAAA/w//hf+D/wD/AP8A/2r/KP/o/wAAAAAAAAAAWf+L/8j/if9N/+z/hf/J/8b/Rf/8/wH/dP8J/2r/AP/o/wAAAAAAAAAA6/8C/zP/wP+A/2X//P8A/1f/aP8AAAAAAAAAAKP/AAAAAAAAAADo/wAAAAAAAAAAof8AAAAAAAAAAL7/AAAAAAAAAABW/8f/QP8Q/z//AP8A/wD/of8AAAAAAAAAAI3/eP8Y/+j/AAAAAAAAAABZ/1n/UP9W/4v/z//o/wAAAAAAAAAAi/8N/wAAAAAAAAAAif8N/wAAAAAAAAAA6P8AAAAAAAAAALj/AAAAAAAAAABf/4X/wP90/wr/of8AAAAAAAAAAKP/AAAAAAAAAACL/zX/AAAAAAAAAACD/03//P///43/Tf/w/+j/AAAAAAAAAACL/03/9P+L/8b/Xv9k/4n/Df8AAAAAAAAAAMn/w/8=
+  symbols:
+  - kind: Function
+    name: ?_Init@locale@std@@CAPAV_Locimp@12@XZ
+    size: 202
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L10016
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Global@_Locimp@locale@std@@0PAV123@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0_Locimp@locale@std@@AAE@_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Tidy@locale@std@@CAXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _atexit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_01FKHJ@C?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Clocptr@_Locimp@locale@std@@0PAV123@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?_Incref@facet@locale@std@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _classic_locale
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ??1_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 17
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 27
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 41
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 76
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 81
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 86
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 91
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 96
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 109
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 117
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 128
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 134
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 140
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 145
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 150
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 160
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 165
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 171
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 183
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 196
+    kind: x86_abs32
+    symbol: 16
+    addend: 0

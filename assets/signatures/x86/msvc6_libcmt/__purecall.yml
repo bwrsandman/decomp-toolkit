@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: bb0fc4d1d127fe0be9db1064dba52acf7ba20ed6
+  signature: av8Z/+j/AAAAAAAAAABZ/8P/
+  symbols:
+  - kind: Function
+    name: __purecall
+    size: 9
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __amsg_exit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 3
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 00530349bca14930acebdcc7989b094167df5960
+  signature: //90/yT/BP///xX/AAAAAAAAAADD/w==
+  symbols:
+  - kind: Function
+    name: __seterrormode
+    size: 11
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__SetErrorMode@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

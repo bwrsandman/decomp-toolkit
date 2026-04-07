@@ -1,0 +1,122 @@
+- symbol: 0
+  hash: bc77f0a25baff5cc014a902e9fd7eda89e313a0f
+  signature: g/89/wAAAAAAAAAAAP9W/3T/Wv9o/6z/AP8A/wD/av8B/+j/AAAAAAAAAACL//D/Wf+F//b/Wf91/wX/av8B/1j/Xv/D/1b/6P8AAAAAAAAAAIX/wP9Z/3T/EP9W/+j/AAAAAAAAAABW/+j/AAAAAAAAAABZ/1n/6//g////Nf8AAAAAAAAAAIn/Nf8AAAAAAAAAAOj/AAAAAAAAAAD//zX/AAAAAAAAAADo/wAAAAAAAAAAWf+J/zX/AAAAAAAAAABZ/+v/Kf///zX/AAAAAAAAAADH/wX/AAAAAAAAAAAAAAAAAAAAAOj/AAAAAAAAAAD//zX/AAAAAAAAAADo/wAAAAAAAAAAg/8l/wAAAAAAAAAAAP9Z/1n/M//A/17/w/8=
+  symbols:
+  - kind: Function
+    name: ___init_time
+    size: 145
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _calloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __get_lc_time
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __free_lc_time
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_time_intl
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ___lc_time_curr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_time_c
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 48
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 54
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 64
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 70
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 75
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 81
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 86
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 93
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 102
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 108
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 112
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 117
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 123
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 128
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 134
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

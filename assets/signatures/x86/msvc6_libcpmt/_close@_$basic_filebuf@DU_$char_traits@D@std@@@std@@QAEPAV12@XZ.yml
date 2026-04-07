@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: ae34cdd172efd1e2362247cc6930a930e719fde3
+  signature: Vv+L//H/i/9G/1D/hf/A/3T/Gf9Q/+j/AAAAAAAAAACF/8D/Wf91/w7/av8C/1D/i//O/+j/AAAAAAAAAACL/8b/Xv/D/zP/wP9e/8P/
+  symbols:
+  - kind: Function
+    name: ?close@?$basic_filebuf@DU?$char_traits@D@std@@@std@@QAEPAV12@XZ
+    size: 39
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _fclose
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Init@?$basic_filebuf@DU?$char_traits@D@std@@@std@@IAEXPAU_iobuf@@W4_Initfl@12@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

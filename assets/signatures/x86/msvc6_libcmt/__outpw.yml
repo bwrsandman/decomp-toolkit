@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: efece9cfb8bac80f99155d9329e811530b2e4727
+  signature: Zv+L/1T/JP8E/2b/i/9E/yT/CP9m/+//w/8=
+  symbols:
+  - kind: Function
+    name: __outpw
+    size: 13
+    flags: 1
+    section: .text
+  relocations: []

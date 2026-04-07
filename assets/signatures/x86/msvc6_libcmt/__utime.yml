@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 652311c13265d92c828f4376bb9e587552bc2fcd
+  signature: Vv9o/wL/gP8A/wD///90/yT/DP/o/wAAAAAAAAAAi//w/1n/hf/2/1n/ff8F/4P/yP///17/w/9X////dP8k/xD/Vv/o/wAAAAAAAAAAVv+L//j/6P8AAAAAAAAAAIP/xP8M/4v/x/9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: __utime
+    size: 55
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __open
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __futime
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __close
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 35
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 43
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

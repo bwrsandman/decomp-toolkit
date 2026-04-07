@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: f066b5c26ad53163f86ffad57c9f262c0a43e10b
+  signature: 2f///5v/3//g/5v/nv96/xb/w/8=
+  symbols:
+  - kind: Function
+    name: __fFCOS
+    size: 10
+    flags: 1
+    section: .text
+  relocations: []

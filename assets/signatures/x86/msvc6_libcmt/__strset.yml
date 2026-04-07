@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: ec41648eb7bd84c7db824f957f98e14951cd3f19
+  signature: Vf+L/+z/V/+L/33/CP+L/9f/M//A/4P/yf////L/rv9B/0H/9//Z/4r/Rf8M/4v/+v/z/6r/i//C/1//yf/D/w==
+  symbols:
+  - kind: Function
+    name: __strset
+    size: 32
+    flags: 1
+    section: .text
+  relocations: []

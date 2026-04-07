@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: a1604842dbfc89382caf5f01f65e520e7c289995
+  signature: x/8B/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ??1time_base@std@@UAE@XZ
+    size: 7
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7facet@locale@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

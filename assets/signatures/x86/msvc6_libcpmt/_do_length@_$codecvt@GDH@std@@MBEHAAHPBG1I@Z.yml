@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 5f09fafb6559cfc0581233ffb6369cae9be6b9b2
+  signature: Vf+L/+z/U/+L/13/DP87/13/EP9W/1f/i//5/4v/8/90/zD/g/99/xT/AP92/yr/jf9H/wj/UP9m/4v/Bv///3X/CP9Q/43/Rf8O/1D/6P8AAAAAAAAAAIP/xP8Q/4X/wP9+/w//Of9F/xT/cv8K/yn/Rf8U/0b/Rv87/3X/EP91/9D/i//G/1//K//D/17/0f/4/1v/Xf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: ?do_length@?$codecvt@GDH@std@@MBEHAAHPBG1I@Z
+    size: 79
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __Wcrtomb
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 40
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

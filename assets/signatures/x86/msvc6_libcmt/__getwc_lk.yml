@@ -1,0 +1,86 @@
+- symbol: 0
+  hash: a95f407af8d63bdd3ec7d1c8695a1a5ee799e840
+  signature: Vf+L/+z/Uf9W/4v/df8I/1f/9v9G/wz/QP8P/4X/wf8A/wD/AP+L/0b/EP+D//j///90/xf/i//I/8H/+f8F/4P/4P8f/4v/DP+N/wAAAAAAAAAAjf8E/8D/jf8E/4H/6/8F/7j/AAAAAAAAAAD2/0D/BP+A/w//hP+T/wD/AP8A////Tv8E/2r/Af9f/3j/Cv+L/w7/D/+2/wH/Qf+J/w7/6/8H/1b/6P8AAAAAAAAAAFn/g//4////df8J/2b/Df//////6f+F/wD/AP8A/4v/Df8AAAAAAAAAAIj/Rf/8/w//tv/A//b/RP9B/wH/gP90/zD///9O/wT/eP8K/4v/Dv8P/7b/Af9B/4n/Dv/r/wf/Vv/o/wAAAAAAAAAAWf+D//j///91/w//D/++/0X//P9W/1D/6P8AAAAAAAAAAFn/Wf/r/7r/av8C/4j/Rf/9/1//jf9F//z/V/9Q/43/Rf8K/1D/6P8AAAAAAAAAAIP/xP8M/4P/+P///3X/Df/o/wAAAAAAAAAAx/8A/yr/AP8A/wD/6/+R/2b/i/9F/wr/6/8Z/4P/Rv8E//7/eP8M/4v/Dv9m/4v/Af+D/8H/Av+J/w7/6/8H/1b/6P8AAAAAAAAAAFn/X/9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __getwc_lk
+    size: 241
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___badioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __filbuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _ungetc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _mbtowc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __filwbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 38
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 51
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 85
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 106
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 140
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 157
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 181
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 194
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 232
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

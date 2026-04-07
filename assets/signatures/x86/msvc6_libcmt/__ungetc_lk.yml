@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: df79ecb5fec8f21a746fc1584ffe431d7b75b73a
+  signature: U/+L/1z/JP8I/4P/+////1b/dP9B/4v/dP8k/xD/i/9G/wz/qP8B/3X/CP+o/4D/dP8y/6j/Av91/y7/g/9+/wj/AP91/wf/Vv/o/wAAAAAAAAAAWf+L/wb/O/9G/wj/df8J/4P/fv8E/wD/df8U/0D/if8G//b/Rv8M/0D/dP8R////Dv+L/wb/OP8Y/3T/D/9A/4n/Bv+D/8j///9e/1v/w////w7/i/8G/4j/GP+L/0b/DP///0b/BP8k/+//DP8B/4n/Rv8M/4v/w/8l////AP8A/wD/6//h/w==
+  symbols:
+  - kind: Function
+    name: __ungetc_lk
+    size: 110
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 38
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

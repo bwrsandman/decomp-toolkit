@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: 85ea380c5640f41ee0fd7200e3642983c1631c31
+  signature: 6P8AAAAAAAAAAOn/AAAAAAAAAAA=
+  symbols:
+  - kind: Function
+    name: _$E43
+    size: 10
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _$E40
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _$E42
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: 44a4a7ccc3f705d478f6fc21e06f112be5c81675
+  signature: aP8AAAAAAAAAAOj/AAAAAAAAAABZ/8P/
+  symbols:
+  - kind: Function
+    name: _$E43
+    size: 12
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _$E42
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _atexit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

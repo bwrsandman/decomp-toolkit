@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: c8a718603f297c7e90ecd385ec1d00519b26a54d
+  signature: i/9M/yT/BP+L/wH/i/9Q//z/i//B/yv/Qv8E/4v/Uv8I/4X/0v90/wT/K//K/wP/Af/D/w==
+  symbols:
+  - kind: Function
+    name: ?FindCompleteObject@@YAPAXPAPAX@Z
+    size: 26
+    flags: 2
+    section: .text
+  relocations: []

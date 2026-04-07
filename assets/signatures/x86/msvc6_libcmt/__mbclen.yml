@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: bec32a36dff8d990d670a2debf9ec0e6da78938f
+  signature: i/9E/yT/BP9q/wD/D/+2/wD/9v+A/wAAAAAAAAAABP9Y/w//lf/A/0D/w/8=
+  symbols:
+  - kind: Function
+    name: __mbclen
+    size: 22
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

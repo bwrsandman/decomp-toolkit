@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: b65126dd2dc155f79e94e3df72d2da90e2874235
+  signature: Vf+L/+z/g//s/wz/i/9F/wz/U/9W/1f/av8g/4v/ff8I/1v/g//O////mf+L/8v/x/9F//z/A/8A/wD/AP/3//n/if9F//T/i/9F/wz/mf/3//n/g/9l/wz/AP+L/8r/0//m/yv/2v/3/9b/i/8H/4v/yP8j/87/if9N//j/i//K/9P/6P8L/0X/DP+J/wf/i/9F//j/i//L/4P/x/8E/9P/4P///03//P+J/0X/DP91/9z/i/99//T/av8C/1v/i//3/2r/CP9Z/8H/5v8C/zv/3/98/w//i/9V/wj/i//B/yv/xv+L/wT/EP+J/wT/Ef/r/wf/i/9F/wj/g/8k/wH/AP9L/4P/6f8E/3n/4P9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __ShrMan
+    size: 141
+    flags: 1
+    section: .text
+  relocations: []

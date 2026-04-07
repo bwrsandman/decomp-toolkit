@@ -1,0 +1,99 @@
+- symbol: 0
+  hash: 89e9d9a662df225a242fe028927f23218e88963f
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8M/1P/Vv9X/4n/Zf/o/4v/df8I/1b///81/wAAAAAAAAAA//8V/wAAAAAAAAAAhf/A/3X/CP9q/xD/6P8AAAAAAAAAAFn///8V/wAAAAAAAAAAif8G/6H/AAAAAAAAAACF/8D/dP8C////0P+D/2X//P8A////dv9M////Vv9I/1D/6P8AAAAAAAAAAFn/g/9N//z///8z/8D/i/9N//D/ZP+J/w3/AAAAAAAAAABf/17/W//J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: __threadstartex@4
+    size: 125
+    flags: 2
+    section: .text
+  - kind: Object
+    name: $T17052
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___tlsindex
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__TlsSetValue@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __amsg_exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetCurrentThreadId@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __FPmtinit
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __endthreadex
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 44
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 50
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 61
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 68
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 75
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 97
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 114
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

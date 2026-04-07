@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: bf6d653d5cc5f9c215b4a81689911713f500aedb
+  signature: Vf+L/+z/g//s/xD/jf9F//D/UP///xX/AAAAAAAAAAAP/7f/Tf/8/4v/Rf8I/1D/if8I/4P/SP8g////D/+3/03/+v+J/0j/BP8P/7f/Tf/4/4n/SP8I/w//t/9N//b/if9I/wz/D/+3/03/8v9J/4n/SP8Q/w//t/9N//D/gf/p/2z/B/8A/wD/if9I/xT/D/+3/03/9P+J/0j/GP/o/wAAAAAAAAAAD/+3/0X//v9Z/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __getsystime
+    size: 91
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetLocalTime@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _mktime
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 80
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

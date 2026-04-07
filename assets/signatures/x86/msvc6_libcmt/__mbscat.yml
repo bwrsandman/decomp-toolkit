@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 722d4372c9d49db32175ec782a120bb0a2c1a6b0
+  signature: i/9M/yT/BP9X//f/wf8D/wD/AP8A/3T/D/+K/wH/Qf+E/8D/dP87//f/wf8D/wD/AP8A/3X/8f+L/wH/uv////7//v9+/wP/0P+D//D///8z/8L/g//B/wT/qf8A/wH/Af+B/3T/6P+L/0H//P+E/8D/dP8j/4T/5P90/xr/qf8A/wD///8A/3T/Dv+p/wD/AP8A////dP8C/+v/zf+N/3n////r/w3/jf95//7/6/8I/43/ef/9/+v/A/+N/3n//P+L/0z/JP8M//f/wf8D/wD/AP8A/3T/Gf+K/xH/Qf+E/9L/dP9k/4j/F/9H//f/wf8D/wD/AP8A/3X/7v/r/wX/if8X/4P/x/8E/7r////+//7/fv+L/wH/A//Q/4P/8P///zP/wv+L/xH/g//B/wT/qf8A/wH/Af+B/3T/4f+E/9L/dP80/4T/9v90/yf/9//C/wD/AP///wD/dP8S//f/wv8A/wD/AP///3T/Av/r/8f/if8X/4v/RP8k/wj/X//D/2b/if8X/4v/RP8k/wj/xv9H/wL/AP9f/8P/Zv+J/xf/i/9E/yT/CP9f/8P/iP8X/4v/RP8k/wj/X//D/w==
+  symbols:
+  - kind: Function
+    name: __mbscat
+    size: 224
+    flags: 1
+    section: .text
+  relocations: []

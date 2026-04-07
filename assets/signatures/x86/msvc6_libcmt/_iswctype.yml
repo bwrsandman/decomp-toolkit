@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 125c5e6b8748143dfb33e24cc673a5f493e0d907
+  signature: Vf+L/+z/Uf9m/4H/ff8I//////90/zT/Zv+B/33/CP8A/wH/c/8Q/w//t/9F/wj/i/8N/wAAAAAAAAAAZv+L/wT/Qf/r/yP/av8A/43/Rf/8/2r/AP9Q/43/Rf8I/2r/Af9Q/2r/Af/o/wAAAAAAAAAAg//E/xj/hf/A/3X/BP8z/8D/yf/D/4v/Rf/8/w//t/9N/wz/D/+3/8D/I//B/8n/w/8=
+  symbols:
+  - kind: Function
+    name: _iswctype
+    size: 82
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __pwctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtGetStringTypeW
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 26
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 53
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 2d2a77737e24fbea05af20912098ba5ec88d9145
+  signature: Vf+L/+z/i/9F/wj/U/87/wX/AAAAAAAAAABW/w//g//Z/wD/AP8A/4v/yP+D/+D/H//B//n/Bf9q/wH/jf8E/8D/i/8M/43/AAAAAAAAAABb/4T/XP+B/wT/D/+E/7r/AP8A/wD/6P8AAAAAAAAAAIv/8P+F//b/D/+E/6v/AP8A/wD/i/9N/wz/iv8B/zz/Yf90/xT/PP9y/3T/C/88/3f/dP8M/zP/9v/p/4j/AP8A/wD/if9e/wz/6/8H/8f/Rv8M/wL/AP8A/wD/of8AAAAAAAAAAFf/M////4v/0/8h/33/DP8J/0b/DP+K/0H/Af9B/4T/wP90/1f/hf/S/3T/U/8P/77/wP+D/+j/K/90/zf/g//o/zf/dP8n/0j/dP8Y/4P/6P8L/3T/B/+D/+j/Bv90/xr/6/8q/4X///91/yb/gP9m/w3/v/+L//v/6//M/4X///91/xr/gP9O/w3/QP+L//v/6//A/4P/ff8M/wD/df8M/4n/Xf8M/+v/tf+L/0b/DP+o/4D/dP8E/zP/0v/r/6r/JP/8/wz/gP+J/0b/DP/r/6H/i/9F/wj///8F/wAAAAAAAAAAif9G/xD/X/9W/+j/AAAAAAAAAABZ/4v/xv/r/wL/M//A/17/W/9d/8P/
+  symbols:
+  - kind: Function
+    name: __fdopen
+    size: 243
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getstream
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __commode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __cflush
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 36
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 52
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 103
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 218
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 228
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

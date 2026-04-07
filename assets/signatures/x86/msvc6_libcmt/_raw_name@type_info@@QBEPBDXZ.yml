@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 3dd6ec9fe6de81b459fddca8f18d60e2763086a1
+  signature: jf9B/wj/w/8=
+  symbols:
+  - kind: Function
+    name: ?raw_name@type_info@@QBEPBDXZ
+    size: 4
+    flags: 1
+    section: .text
+  relocations: []

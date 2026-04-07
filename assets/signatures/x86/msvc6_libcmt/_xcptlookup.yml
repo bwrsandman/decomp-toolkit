@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: a451caaf99071e197201fa6909955185542e1f06
+  signature: i/9U/yT/CP+L/w3/AAAAAAAAAABW/4v/dP8k/wj/Of8y/1f/i//C/3T/Ef+N/zz/Sf+N/zz/uv+D/8D/DP87/8f/c/8E/zn/MP91//X/jf8M/0n/jf8M/4r/O//B/3P/BP85/zD/dP8C/zP/wP9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: _xcptlookup
+    size: 58
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __XcptActTabCount
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

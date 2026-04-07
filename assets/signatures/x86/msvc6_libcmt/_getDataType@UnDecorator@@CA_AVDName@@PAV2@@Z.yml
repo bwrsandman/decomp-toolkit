@@ -1,0 +1,151 @@
+- symbol: 0
+  hash: 36c03bfed67e90c266b1bfcc3d7105a28489b51f
+  signature: Vf+L/+z/g//s/0j///91/wz/jf9N//j/6P8AAAAAAAAAAKH/AAAAAAAAAACK/wD/hP/A/w//hP+f/wD/AP8A/zz/P/90/17/PP9Y/3T/DP+N/0X/+P9Q/43/Rf/g/+n/gf8A/wD/AP///wX/AAAAAAAAAACN/03/+P/o/wAAAAAAAAAAhf/A/3T/Ev+L/03/CP9o/wAAAAAAAAAA6P8AAAAAAAAAAOn/lf8A/wD/AP+N/0X/+P+N/03/0P9Q/43/Rf/Y/1D/aP8AAAAAAAAAAOj/AAAAAAAAAACL/8j/6P8AAAAAAAAAAFD/jf9N//D/6P8AAAAAAAAAAI3/Rf/w/+v/Yv///wX/AAAAAAAAAABq/wD/jf9N/8j/6P8AAAAAAAAAAFD/jf9F//j/av8A/1D/jf9F/8D/UP/o/wAAAAAAAAAAg//E/xT/jf9N//j/UP/o/wAAAAAAAAAAjf9F//j/UP+N/0X/uP9Q/+j/AAAAAAAAAABZ/1n/6/8l/43/Rf/4/43/Tf/Y/1D/jf9F/9D/UP9q/wL/6P8AAAAAAAAAAIv/yP/o/wAAAAAAAAAAUP+N/03/6P/o/wAAAAAAAAAAjf9F/+j/i/9N/wj/UP/o/wAAAAAAAAAAi/9F/wj/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?getDataType@UnDecorator@@CA?AVDName@@PAV2@@Z
+    size: 242
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@PAV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?isEmpty@DName@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_04BMNE@void?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0DName@@QAE@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_05JDPM@void?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??HDName@@QBE?AV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getDataIndirectType@UnDecorator@@CA?AVDName@@ABV2@D0H@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??4DName@@QAEAAV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getPrimaryDataType@UnDecorator@@CA?AVDName@@ABV2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 13
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 54
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 62
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 74
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 79
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 100
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 105
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 112
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 121
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 132
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 142
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 158
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 170
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 183
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 205
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 212
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 221
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 233
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

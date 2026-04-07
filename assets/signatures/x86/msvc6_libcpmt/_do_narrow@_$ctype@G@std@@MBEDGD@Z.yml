@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 0063c8f1c7a94e5ad9d2960cf1661c6508badb69
+  signature: //90/yT/BP/o/wAAAAAAAAAAWf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?do_narrow@?$ctype@G@std@@MBEDGD@Z
+    size: 13
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _wctob
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

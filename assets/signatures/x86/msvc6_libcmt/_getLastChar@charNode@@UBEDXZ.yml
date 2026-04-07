@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 1e46111fa1c55e3d03d627a99df74694f309e6d3
+  signature: iv9B/wj/w/8=
+  symbols:
+  - kind: Function
+    name: ?getLastChar@charNode@@UBEDXZ
+    size: 4
+    flags: 1
+    section: .text
+  relocations: []

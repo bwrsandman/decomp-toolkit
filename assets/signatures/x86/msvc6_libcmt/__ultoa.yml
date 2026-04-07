@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 1ac7b414e23fbaca8eeff695a6c29ce4040f9e6e
+  signature: av8A////dP8k/xD///90/yT/EP///3T/JP8Q/+j/AAAAAAAAAACL/0T/JP8Y/4P/xP8Q/8P/
+  symbols:
+  - kind: Function
+    name: __ultoa
+    size: 27
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _xtoa
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: f46c501bac887866c642952e9d24587c99f3247d
+  signature: i/9E/yT/BP+L/0z/JP8I/7r/AAAAAAAAAACJ/xD/if9I/wT/w/8=
+  symbols:
+  - kind: Function
+    name: ?setbase@std@@YA?AU?$_Smanip@H@1@H@Z
+    size: 19
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?sbfun@std@@YAXAAVios_base@1@H@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

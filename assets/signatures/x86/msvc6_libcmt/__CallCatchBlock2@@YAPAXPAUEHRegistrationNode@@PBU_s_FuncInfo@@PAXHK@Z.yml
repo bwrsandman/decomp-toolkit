@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 78ab185d0f50bff9df32a8ca81513a22df54c884
+  signature: Vf+L/+z/g//s/xT/i/9F/wz/g/9l/+z/AP+L/03/CP+J/0X/9P+L/0X/FP/H/0X/8P8AAAAAAAAAAED/if9N//j/if9F//z/ZP+h/wD/AP8A/wD/if9F/+z/jf+F/+z/////////ZP+j/wD/AP8A/wD///91/xj/Uf///3X/EP/o/wAAAAAAAAAAi//I/4v/Rf/s/2T/o/8A/wD/AP8A/4v/wf/J/8P/
+  symbols:
+  - kind: Function
+    name: ?_CallCatchBlock2@@YAPAXPAUEHRegistrationNode@@PBU_s_FuncInfo@@PAXHK@Z
+    size: 84
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?CatchGuardHandler@@YA?AW4_EXCEPTION_DISPOSITION@@PAUEHExceptionRecord@@PAUCatchGuardRN@@PAX2@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __CallSettingFrame@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 25
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 65
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: 84b1a2cb5ddb5db430e3a6be9a0c404713f40085
+  signature: Vf+L/2z/JP8I/7j//////wD/AP9X/2b/O//o/3T/Z/8z////Of89/wAAAAAAAAAAdf8U/2b/g//9/0H/cv8J/2b/g//9/1r/d/8D/4P/xf8g/2b/i//F/+v/Sf9T/1b/vv8AAAAAAAAAAFb///8V/wAAAAAAAAAAOf89/wAAAAAAAAAAi/8d/wAAAAAAAAAAdP8O/1b////T/2r/E//o/wAAAAAAAAAAWf9q/wH/X/9V/+j/AAAAAAAAAACF////Wf+L/+j/dP8K/2r/E//o/wAAAAAAAAAAWf/r/wP/Vv///9P/Xv9m/4v/xf9b/1//Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _towlower
+    size: 122
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___unguarded_readlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedIncrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___setlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedDecrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __towlower_lk
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 49
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 56
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 62
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 68
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 80
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 90
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 104
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

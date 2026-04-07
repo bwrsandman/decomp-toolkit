@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 212b43c9efb5ef64af286cba9de30fe7b171b221
+  signature: Vf+L/+z/Uf9R/93/Rf8I/1H/Uf/d/xz/JP/o/wAAAAAAAAAAWf+o/5D/Wf91/0n/3f9F/wj/Uf9R/93/HP8k/+j/AAAAAAAAAADd/13/+P/d/0X/+P/c/13/CP9Z/1n/3//g/57/df8s/93/Rf8I/9z/Nf8AAAAAAAAAAFH/Uf/d/13/CP/d/0X/CP/d/xz/JP/o/wAAAAAAAAAA3P9d/wj/Wf9Z/9//4P+e/3X/BP9q/wL/6/8C/2r/Af9Y/8n/w/8z/8D/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __d_inttype
+    size: 101
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __fpclass
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __frnd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __real@8@40008000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 33
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 58
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 74
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

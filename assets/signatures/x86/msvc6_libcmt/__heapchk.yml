@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: 7ccdb3218c121e39de5ba1ebc8300eb44877d14a
+  signature: Vv9q//7/Xv9q/wn/6P8AAAAAAAAAAFn/6P8AAAAAAAAAAIX/wP99/wP/av/8/17/av8J/+j/AAAAAAAAAABZ/2r/AP9q/wD///81/wAAAAAAAAAA//8V/wAAAAAAAAAAhf/A/3X/Jv///xX/AAAAAAAAAACD//j/eP91/xj/6P8AAAAAAAAAAMf/AP94/wD/AP8A/+j/AAAAAAAAAADH/wD/KP8A/wD/AP/r/wP/av/8/17/i//G/17/w/8=
+  symbols:
+  - kind: Function
+    name: __heapchk
+    size: 94
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_heap_check
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __crtheap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapValidate@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 13
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 38
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 44
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 54
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 64
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 75
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

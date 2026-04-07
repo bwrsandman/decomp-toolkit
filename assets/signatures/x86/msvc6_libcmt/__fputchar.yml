@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: e36f4747d08055bb7f7a270dc8b473a70764dff8
+  signature: aP8AAAAAAAAAAP//dP8k/wj/6P8AAAAAAAAAAFn/Wf/D/w==
+  symbols:
+  - kind: Function
+    name: __fputchar
+    size: 17
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _putc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 10
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 1c374f5a6224f45fbbaf5c06580adfdcaa86acdf
+  signature: M//A/8P/
+  symbols:
+  - kind: Function
+    name: ?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+    size: 3
+    flags: 1
+    section: .text
+  relocations: []

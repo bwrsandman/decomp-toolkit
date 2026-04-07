@@ -1,0 +1,54 @@
+- symbol: 0
+  hash: 1b6b9f8742848aebc899c4124120e3099eee1710
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAFH/Uf9T/1b/V/+J/2X/6P+D/2X//P8A////Tf8Q/3j/G/+L/03/CP8r/03/DP+J/03/CP///1X/FP/r/+3///91/+z/6P8AAAAAAAAAAFn/w/+L/2X/6P+D/03//P///4v/Tf/w/2T/if8N/wAAAAAAAAAAX/9e/1v/yf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: ?__ArrayUnwind@@YGXPAXIHP6EX0@Z@Z
+    size: 94
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T16522
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?ArrayUnwindFilter@@YAHPAU_EXCEPTION_POINTERS@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 64
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 83
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

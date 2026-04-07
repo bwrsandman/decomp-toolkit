@@ -1,0 +1,72 @@
+- symbol: 0
+  hash: 2b720d8d971ebbcad8c62d103cd4b25843124a1f
+  signature: g/89/wAAAAAAAAAAAP9T/1b/i/81/wAAAAAAAAAAV/90/2X/hf/2/3X/G/85/zX/AAAAAAAAAAB0/1n/6P8AAAAAAAAAAIX/wP91/1D/i/81/wAAAAAAAAAAhf/2/3T/Rv+L/1z/JP8Q/4X/2/90/z7/U//o/wAAAAAAAAAAWf+L//j/i/8G/4X/wP90/y//UP/o/wAAAAAAAAAAO//H/1n/dv8X/4v/Bv+A/zz/OP89/3X/D/9X/1P/UP/o/wAAAAAAAAAAg//E/wz/hf/A/3T/Bf+D/8b/BP/r/9P/i/8G/43/RP84/wH/6/8C/zP/wP9f/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: __getenv_lk
+    size: 125
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___env_initialized
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __environ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __wenviron
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___wtomb_environ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mbsnbicoll
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 24
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 31
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 41
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 59
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 95
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

@@ -1,0 +1,63 @@
+- symbol: 0
+  hash: 74cdfd79148257f1feca92fdc7ca19cb2727fd51
+  signature: Vv+L/3T/JP8I////dv8Q/+j/AAAAAAAAAACF/8D/Wf90/3f/gf/+/wAAAAAAAAAAdf8E/zP/wP/r/wv/gf/+/wAAAAAAAAAAdf9j/2r/Af9Y////Bf8AAAAAAAAAAGb/9/9G/wz/DP8B/3X/Uv+D/zz/hf8AAAAAAAAAAAD/U/9X/43/PP+F/wAAAAAAAAAAu/8A/xD/AP8A/3X/IP9T/+j/AAAAAAAAAACF/8D/Wf+J/wf/df8T/43/Rv8U/2r/Av+J/0b/CP+J/wb/WP+J/0b/GP+J/0b/BP/r/w3/i/8//4n/Xv8Y/4n/fv8I/4n/Pv+J/17/BP9m/4H/Tv8M/wL/Ef9q/wH/WP9f/1v/Xv/D/zP/wP9e/8P/
+  symbols:
+  - kind: Function
+    name: __stbuf
+    size: 141
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __isatty
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __cflush
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __stdbuf
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 20
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 43
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 58
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 68
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 81
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

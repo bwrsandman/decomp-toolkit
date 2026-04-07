@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: abf4e37bb8c6754e4139a73a660eb9eb6ca09dce
+  signature: w/8=
+  symbols:
+  - kind: Function
+    name: ?id@?$ctype@G@std@@$E
+    size: 1
+    flags: 1
+    section: .text
+  relocations: []

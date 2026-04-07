@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 674bc6df50cca91b49fd4f29b490567a8c73c591
+  signature: Vf+L/+z/Uf+D/2X//P8A/1P/i/9d/wz/Vv9X/4v/Q/8Q/4P/eP8I/wD/i/9w/wz/dv81/4v/Pv+L/03/GP+L/wf/O//B/3T/E/+D/8H/CP+D/8D/CP9R/1D/6P8AAAAAAAAAAFn/hf/A/1n/df8G//b/R/8U/wH/dP8Y////Rf/8/4v/Q/8Q/4v/Tf/8/4P/xv8E/zv/SP8I/3L/y/8z/8D/X/9e/1v/yf/D/4v/x//r//f/
+  symbols:
+  - kind: Function
+    name: ?FindSITargetTypeInstance@@YAPBU_s_RTTIBaseClassDescriptor@@PAXPBU_s_RTTICompleteObjectLocator@@PAUTypeDescriptor@@H2@Z
+    size: 90
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _strcmp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 46
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

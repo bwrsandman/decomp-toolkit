@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: b74ea4f20500ec349c4444b1c313678e31b51ef7
+  signature: U/9R/7v/AAAAAAAAAACL/03/CP+J/0v/CP+J/0P/BP+J/2v/DP8=
+  symbols:
+  - kind: Function
+    name: __NLG_Notify
+    size: 19
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __NLG_Destination
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

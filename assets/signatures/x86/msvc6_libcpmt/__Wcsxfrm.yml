@@ -1,0 +1,138 @@
+- symbol: 0
+  hash: 1e6de2c5bb78612e93bd7a03a1fadfba0ee47349
+  signature: Vf+L/+z/Uf9T/1b/i/91/xT/V/+L/33/DP8r/3X/EP8r/33/CP+7/wAAAAAAAAAAU//H/0X/FP////////9//9H////R//7///8V/wAAAAAAAAAAg/89/wAAAAAAAAAAAP90/xj/U////xX/AAAAAAAAAABq/xP/6P8AAAAAAAAAAFn/x/9F//z/Af8A/wD/AP/r/wT/g/9l//z/AP+L/0X/GP+F/8D/df8H/6H/AAAAAAAAAADr/wL/i/8A/4X/wP+J/0X/DP91/zP/Of9F//z/dP8K/2r/E//o/wAAAAAAAAAAWf/r/wf/U////xX/AAAAAAAAAAA7//f/d/8S/43/BP82/1D///91/xD///91/wj/6P8AAAAAAAAAAIP/xP8M/4v/xv/p/5b/AP8A/wD/V//o/wAAAAAAAAAAhf/A/1n/if9F/xj/dP9l////Nf8AAAAAAAAAAFf/UP9W/7//AP8E/wD/AP///3X/EP9X////df8M/+j/AAAAAAAAAAAz/8n/g//E/xz/O//B/4n/Rf8U/3X/KP///zX/AAAAAAAAAABR/1H/Vv///3X/EP9X////df8M/+j/AAAAAAAAAACD/8T/HP+J/0X/FP+F/8D/df8g/8f/Rf8U/////////3//6/8X/37/Ff+L/1X/CP+L/3X/GP9m/w//tv80/zH/Zv+J/zL/Qf9C/0L/O//I/3z/7v+D/33//P8A/3T/Cv9q/xP/6P8AAAAAAAAAAFn/6/8H/1P///8V/wAAAAAAAAAA//91/xj/6P8AAAAAAAAAAIv/Rf8U/1n/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __Wcsxfrm
+    size: 308
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___unguarded_readlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedIncrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___setlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedDecrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_collate_cp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtLCMapStringW
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 38
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 44
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 54
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 61
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 87
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 110
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 120
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 139
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 155
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 169
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 189
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 207
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 222
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 277
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 287
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 295
+    kind: x86_rel32
+    symbol: 12
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 967950c1b210bb25dc04037fc87c826f6e046997
+  signature: i/9B/xD/hf/A/3X/Bf+4/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ?what@logic_error@std@@UBEPBDXZ
+    size: 13
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

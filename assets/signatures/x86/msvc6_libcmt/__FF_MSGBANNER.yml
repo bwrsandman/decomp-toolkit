@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: 3dfdcbb095870e7786b403dec86792d943932255
+  signature: of8AAAAAAAAAAIP/+P8B/3T/Df+F/8D/df8q/4P/Pf8AAAAAAAAAAAH/df8h/2j//P8A/wD/AP/o/wAAAAAAAAAAof8AAAAAAAAAAFn/hf/A/3T/Av///9D/aP///wD/AP8A/+j/AAAAAAAAAABZ/8P/
+  symbols:
+  - kind: Function
+    name: __FF_MSGBANNER
+    size: 57
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___error_mode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___app_type
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __NMSG_WRITE
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __adbgmsg
+    size: 0
+    flags: 1
+    section: .bss
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 16
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 29
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 34
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 51
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: fd976703116a68b187e430a4d8533635aead7efc
+  signature: gP98/yT/BP8A/4v/Qf9E/3T/I/+o/wj/df83/4v/Uf8w/wz/CP9W/4v/cf8g/4n/Qf9E/4v/Av8D/wb/if9B/zj/i/9B/wz/i/8A/yv/Bv9e/4n/Av/r/xj/qP8I/3T/FP8k//f/if9B/0T/i/9B/yD/i/8Q/4v/Qf84/4v/Sf8w/yv/wv+J/wH/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?freeze@strstreambuf@std@@QAEX_N@Z
+    size: 72
+    flags: 1
+    section: .text
+  relocations: []

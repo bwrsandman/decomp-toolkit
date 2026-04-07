@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: fcacafc2840452ae441c1e4f90a38b502475b882
+  signature: i/9E/yT/BP+L/0D/EP/D/w==
+  symbols:
+  - kind: Function
+    name: __fileno
+    size: 8
+    flags: 1
+    section: .text
+  relocations: []

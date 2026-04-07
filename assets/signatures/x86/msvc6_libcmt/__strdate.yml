@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 13ea6d3ad56ccfb2c64b8d77b3c0ff9160206404
+  signature: Vf+L/+z/g//s/xT/U/9W/43/Rf/s/1f/UP///xX/AAAAAAAAAAAP/7f/Rf/s/2r/ZP+Z/1n/9//5/w//t/99/+7/av8K/4v/x/9e/4v/Tf8I/4v/3v+A/2H/CP8A/8b/Qf8F/y//xv9B/wL/L/+J/1X//P+Z//f/+/+z/zD/Av/D/4j/Af+L/8f/mf+L//7/9////w//t/9F//L/Av/T/4j/Uf8B/5n/9////wL/w/+I/0H/A/8P/7f/Rf/y/5n/9////4v/Rf/8/wL/0/+I/1H/BP+Z//f///9f/wL/w/+I/0H/Bv+L/0X//P+Z//f//v9e/4v/wf8C/9P/W/+I/1H/B//J/8P/
+  symbols:
+  - kind: Function
+    name: __strdate
+    size: 132
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetLocalTime@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

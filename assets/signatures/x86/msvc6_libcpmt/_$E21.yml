@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: a5ccd128102279645d701acd65f0f9e3f5d0a5ba
+  signature: uf8AAAAAAAAAAOn/AAAAAAAAAAA=
+  symbols:
+  - kind: Function
+    name: _$E21
+    size: 10
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ''
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

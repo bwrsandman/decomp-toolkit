@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: e8f6ca758d347825190db31239577c1d141df02e
+  signature: i/9M/yT/BP+K/wH/hP/A/3T/Ff9W/zz/MP98/xH/PP85/3//Df8s/zD/iP8B/0H/iv8B/4T/wP91/+3/Xv/D/zz/O/91//P/i//B/4r/UP8B/43/cP8B/4j/EP+L/8b/gP84/wD/df/x/+v/4f8=
+  symbols:
+  - kind: Function
+    name: _fix_grouping
+    size: 55
+    flags: 2
+    section: .text
+  relocations: []

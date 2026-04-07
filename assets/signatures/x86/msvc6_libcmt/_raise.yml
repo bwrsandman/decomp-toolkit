@@ -1,0 +1,141 @@
+- symbol: 0
+  hash: e565dfa6cea71cf25798375b9d7608b94432e881
+  signature: Vf+L/+z/g//s/wz/i/9F/wj/g/9l//z/AP9I/1P/Vv9I/1f/dP9n/0j/SP90/0b/g//o/wT/dP9B/4P/6P8D/3T/PP+D/+j/BP90/yr/g//o/wb/dP8Y/0j/dP8I/4P/yP///+n/Rv8B/wD/AP+L/x3/AAAAAAAAAAC//wAAAAAAAAAA6/9C/4v/Hf8AAAAAAAAAAL//AAAAAAAAAADr/zX/i/8d/wAAAAAAAAAAv/8AAAAAAAAAAOv/KP/o/wAAAAAAAAAAi//w////dv9Q////df8I/+j/AAAAAAAAAACL//j/Wf+D/8f/CP9Z/4v/H//r/x3/i/8d/wAAAAAAAAAAv/8AAAAAAAAAAGr/Af/H/0X//P8B/wD/AP8A/+j/AAAAAAAAAACL/3X/CP9Z/4P/+/8B/3X/Fv+D/33//P8A/w//hP/U/wD/AP8A/1P/6P8AAAAAAAAAAFn/6f/I/wD/AP8A/zP/yf87/9n/df8U/zn/Tf/8/3T/CP9q/wH/6P8AAAAAAAAAAFn/av8D/+j/AAAAAAAAAACL/0X/CP+D//j/CP90/wr/g//4/wv/dP8F/4P/+P8E/3X/G/+L/1b/VP+D//j/CP+J/1X/+P+J/07/VP91/0n/i/9W/1j/x/9G/1j/jP8A/wD/AP+J/1X/9P+D//j/CP91/zf/i/8N/wAAAAAAAAAAof8AAAAAAAAAAAP/wf87/8j/ff8o/43/BP9J/8H/4P8C/4v/Vv9Q/4P/wP8M/4P/ZP8C//z/AP+L/xX/AAAAAAAAAACL/z3/AAAAAAAAAABB/wP/+v87/8//fP/i/+v/Av+J/w//g/99//z/AP90/wj/av8B/+j/AAAAAAAAAABZ/4P/ff8I/wj/df8L////dv9Y/2r/CP///9P/Wf9Z/+v/Ev///3X/CP///9P/g/99/wj/C/9Z/3T/Bv+D/33/CP8E/3X/Ev+L/0X/+P+D/33/CP8I/4n/Rv9U/3X/Bv+L/0X/9P+J/0b/WP8z/8D/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: _raise
+    size: 386
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _abort_action
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _ctrlbreak_action
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _term_action
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _siglookup
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _ctrlc_action
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __First_FPE_Indx
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __Num_FPE
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 57
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 62
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 70
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 75
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 83
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 88
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 95
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 108
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 125
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 130
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 144
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 169
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 193
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 201
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 257
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 262
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 291
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 297
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 321
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

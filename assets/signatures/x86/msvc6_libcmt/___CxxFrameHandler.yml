@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 806d84bf4b9b4687d7dee7edda3d356402eb8827
+  signature: Vf+L/+z/g//s/wT/U/9W/1f//P+J/0X//P8z/8D/UP9Q/1D///91//z///91/xT///91/xD///91/wz///91/wj/6P8AAAAAAAAAAIP/xP8g/4n/Rf8U/1//Xv9b/4v/Rf8U/4v/5f9d/8P/
+  symbols:
+  - kind: Function
+    name: ___CxxFrameHandler
+    size: 54
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___InternalCxxFrameHandler
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 34
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

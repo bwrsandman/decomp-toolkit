@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 7862789b6fa5b111b10e51ea8a1513f2dbe06850
+  signature: Vf+L/+z/gf/s/wj/Af8A/wD///91/wj///8V/wAAAAAAAAAAhf/A/3T/Xv+N/4X/+P/+//////9Q/2j/Bf8B/wD/AP///xX/AAAAAAAAAACF/8D/dP9I/4r/hf/4//7//////zz/XP90/wT/PP8v/3X/CP86/4X/+f/+//////90/y7/D/+2/8D/UP/G/0X/CP89/+j/AAAAAAAAAACA/2X/C/8A/4j/Rf8J/1n/jf+F//j//v//////UP+N/0X/CP9Q/8b/Rf8K/zr///8V/wAAAAAAAAAAhf/A/3T/BP8z/8D/yf/D////Ff8AAAAAAAAAAFD/6P8AAAAAAAAAAFn/g//I////yf/D/w==
+  symbols:
+  - kind: Function
+    name: __chdir
+    size: 134
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__SetCurrentDirectoryA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetCurrentDirectoryA@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mbctoupper
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetEnvironmentVariableA@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 36
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 75
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 104
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 118
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 124
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

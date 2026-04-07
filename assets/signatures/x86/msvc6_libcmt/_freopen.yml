@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 7f1d019e7fdfa806656e576c93253467f69c4b60
+  signature: Vv+L/3T/JP8Q/1f/Vv/o/wAAAAAAAAAA9v9G/wz/g/9Z/3T/B/9W/+j/AAAAAAAAAABZ/1b/av9A////dP8k/xj/M//A/4n/Rv8I/4n/Bv///3T/JP8Y/4n/Rv8M/4n/Rv8E/+j/AAAAAAAAAABW/4v/+P/o/wAAAAAAAAAAg//E/xT/i//H/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: _freopen
+    size: 71
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock_file
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fclose_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __openfile
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 51
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

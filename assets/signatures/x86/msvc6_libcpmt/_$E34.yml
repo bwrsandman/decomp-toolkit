@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 85ea380c5640f41ee0fd7200e3642983c1631c31
+  signature: 6P8AAAAAAAAAAOn/AAAAAAAAAAA=
+  symbols:
+  - kind: Function
+    name: _$E34
+    size: 10
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _$E31
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _$E33
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

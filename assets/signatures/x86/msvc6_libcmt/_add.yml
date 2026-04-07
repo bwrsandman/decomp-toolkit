@@ -1,0 +1,45 @@
+- symbol: 0
+  hash: 731480cfeb8430f41e0f293e44108e53641a1c59
+  signature: av8I/+j/AAAAAAAAAACF/8D/Wf91/wT/g//I////w/+L/0z/JP8E/4P/YP8E/wD/if8I/4P/Pf8AAAAAAAAAAAD/dP8L/4v/Df8AAAAAAAAAAIn/Qf8E/+v/Bf+j/wAAAAAAAAAAo/8AAAAAAAAAADP/wP/D/w==
+  symbols:
+  - kind: Function
+    name: _add
+    size: 59
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _arghead
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _argend
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 3
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 28
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 37
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 47
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 52
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

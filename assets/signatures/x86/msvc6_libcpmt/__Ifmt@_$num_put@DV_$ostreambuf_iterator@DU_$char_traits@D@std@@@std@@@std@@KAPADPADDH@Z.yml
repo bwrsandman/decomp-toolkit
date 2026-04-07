@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 926c57666db7dc402ab5a49845ad207273b3621c
+  signature: i/9E/yT/BP9T/4v/XP8k/xD/9v/D/yD/xv8A/yX/jf9I/wH/dP8E/8b/Af8r/0H/9v/D/wj/dP8E/8b/Af8j/0H/i//T/8b/Af9s/4H/4v8A/w7/AP8A/0H/gf/6/wD/BP8A/wD/df8E/7P/b//r/xn/gf/6/wD/CP8A/wD/dP8G/4r/XP8k/wz/6/8L//b/0/+A/+P/BP+A/8v/C//A/+P/A/+I/xn/gP9h/wH/AP9b/8P/
+  symbols:
+  - kind: Function
+    name: ?_Ifmt@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@KAPADPADDH@Z
+    size: 90
+    flags: 1
+    section: .text
+  relocations: []

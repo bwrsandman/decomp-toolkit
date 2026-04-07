@@ -1,0 +1,59 @@
+- symbol: 0
+  hash: 98e9ad1d03ca9d4d8c3c5fc8c9313851eece5e9a
+  signature: U/8z/9v/Of8d/wAAAAAAAAAAdf8R////dP8k/wz///90/yT/DP/o/wAAAAAAAAAAWf9Z/1v/w/9W/2r/Gf/o/wAAAAAAAAAAi/90/yT/EP9Z/zj/Hv90/1X/V/+L/3z/JP8U/zj/H/+L/8f/dP8v/4r/CP8P/7b/0f/2/4L/AAAAAAAAAAAE/3T/GP86/w7/df8I/4r/SP8B/zr/Tv8B/3T/Ff84/1j/Af+N/0j/Af90/w3/i//B/+v/BP86/w7/dP8F/0D/OP8Y/3X/0f84/xj/df8W/w//tv8G//b/gP8AAAAAAAAAAAT/dP8F/0b/OP8e/3T/Bf9G/zj/Hv91/7H/X/9q/xn/6P8AAAAAAAAAAIr/Bv9Z//b/2P8b/8D/I//G/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: __mbspbrk
+    size: 149
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___ismbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strpbrk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 32
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 63
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 112
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 133
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

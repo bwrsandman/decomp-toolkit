@@ -1,0 +1,53 @@
+- symbol: 0
+  hash: a86ed1bd8eec01a67a8ed545a0d11d22ffddcba0
+  signature: Vf+L/+z/U/9W/1f/i/99/yT/M//b/43/R/8I/1D/av8X/43/Rf8U/1P/UP+N/0X/DP9Q/+j/AAAAAAAAAACL/3X/IP+D/8T/FP8J/wb/df82/zj/Xf8Q/3X/CP+N/03/DP/o/wAAAAAAAAAAgP99/xH/Ov91/yP/jf9N/wz/6P8AAAAAAAAAAI3/R/8E/1D/av87/43/Rf8U/1P/UP+N/0X/DP9Q/+j/AAAAAAAAAACD/8T/FP8J/wb/6/8D/4P/Dv8C/zn/Hv91/zP/OP9d/xD/df8I/43/Tf8M/+j/AAAAAAAAAACA/33/Ef86/3X/IP+N/03/DP/o/wAAAAAAAAAAV/9q/zv/jf9F/xT/U/9Q/43/Rf8M/1D/6P8AAAAAAAAAAIP/xP8U/wn/Bv/r/wP/g/8O/wL/i/9F/wj/i/9N/wz/X/9e/4n/CP+L/03/EP+J/0j/BP9b/13/wv8g/wD/
+  symbols:
+  - kind: Function
+    name: ?do_get_time@?$time_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AAVios_base@2@AAHPAUtm@@@Z
+    size: 177
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Getint@?$time_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@CAHAAV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@0HHAAH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Peek@?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@AAEDXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Inc@?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 27
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 50
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 64
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 84
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 111
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 125
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 142
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

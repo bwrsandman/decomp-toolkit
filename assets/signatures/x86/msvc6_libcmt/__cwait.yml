@@ -1,0 +1,77 @@
+- symbol: 0
+  hash: 74283ef59b8eb8a15e12f74d907c75c7a3860a6e
+  signature: Vf+L/+z/U/+L/13/DP+D//v///90/3L/g//7//7/dP9t/1b/av///1P///8V/wAAAAAAAAAAhf/A/3X/E/+N/0X/DP9Q/1P///8V/wAAAAAAAAAAhf/A/3T/BP+L//P/6/80/4v/Nf8AAAAAAAAAAP//1v+D//j/Bv91/xj/6P8AAAAAAAAAAMf/AP8K/wD/AP8A/+j/AAAAAAAAAADH/wD/Bv8A/wD/AP/r/wn////W/1D/6P8AAAAAAAAAAFn/g//O////if91/wz/U////xX/AAAAAAAAAACL/0X/CP+F/8D/dP8F/4v/Tf8M/4n/CP+L/8b/Xv/r/w7/6P8AAAAAAAAAAMf/AP8K/wD/AP8A/4P/yP///1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __cwait
+    size: 143
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__WaitForSingleObject@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetExitCodeProcess@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__CloseHandle@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 23
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 38
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 52
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 64
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 75
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 91
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 105
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 127
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

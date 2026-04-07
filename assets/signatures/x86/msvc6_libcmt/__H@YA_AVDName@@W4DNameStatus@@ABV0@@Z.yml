@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 0d3e6e3a876adf811d50776569c7c6843770f745
+  signature: Vf+L/+z/g//s/xD///91/xD/jf9F//j/jf9N//D/UP///3X/DP/o/wAAAAAAAAAAi//I/+j/AAAAAAAAAACL/03/CP9Q/+j/AAAAAAAAAACL/0X/CP/J/8P/
+  symbols:
+  - kind: Function
+    name: ??H@YA?AVDName@@W4DNameStatus@@ABV0@@Z
+    size: 45
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??HDName@@QBE?AV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 36
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

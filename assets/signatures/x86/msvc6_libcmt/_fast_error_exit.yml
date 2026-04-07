@@ -1,0 +1,92 @@
+- symbol: 0
+  hash: 874949b4a5c2337bc4776b1ff4880784bd2a8fea
+  signature: g/89/wAAAAAAAAAAAf91/wX/6P8AAAAAAAAAAP//dP8k/wT/6P8AAAAAAAAAAFn/aP///wD/AP8A////Ff8AAAAAAAAAAMP/
+  symbols:
+  - kind: Function
+    name: _fast_error_exit
+    size: 36
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___error_mode
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: __FF_MSGBANNER
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __NMSG_WRITE
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__ExitProcess@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 10
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 19
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 31
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+- symbol: 0
+  hash: 9d31521cec9a83ed6ca9a1252efda15c4fc78b5c
+  signature: g/89/wAAAAAAAAAAAv90/wX/6P8AAAAAAAAAAP//dP8k/wT/6P8AAAAAAAAAAFn/aP///wD/AP8A////Ff8AAAAAAAAAAMP/
+  symbols:
+  - kind: Function
+    name: _fast_error_exit
+    size: 36
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___error_mode
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: __FF_MSGBANNER
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __NMSG_WRITE
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__ExitProcess@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 10
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 19
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 31
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: 33f928c5a6d92a92e54659ffc13fb29ea0cc47b6
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1H/Vv8z/8D/Of9F/wz/i//x/4n/df/s/4n/Rf/w/3T/Gv/H/wb/AAAAAAAAAACJ/0b/LP/H/0b/CP8AAAAAAAAAAMf/Rf/w/wH/AP8A/wD/if9F//z/i/8G/4v/QP8E/8f/BP8w/wAAAAAAAAAAi/8G/4v/SP8E/wP/zv/o/wAAAAAAAAAAi/9N//T/i//G/17/ZP+J/w3/AAAAAAAAAADJ/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0?$basic_istream@DU?$char_traits@D@std@@@std@@QAE@W4_Uninitialized@1@@Z
+    size: 95
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L11020
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_8?$basic_istream@DU?$char_traits@D@std@@@std@@7B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_7?$basic_ios@DU?$char_traits@D@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_7?$basic_istream@DU?$char_traits@D@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Addstd@ios_base@std@@IAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 30
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 40
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 62
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 74
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 87
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

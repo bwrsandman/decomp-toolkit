@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 9e749fff5b1f650eb5be8b1f6d412b0f8ec122cb
+  signature: av8D/2r/AP///3T/JP8M/+j/AAAAAAAAAACD/8T/DP/D/w==
+  symbols:
+  - kind: Function
+    name: __ismbbkprint
+    size: 17
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _x_ismbbtype
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

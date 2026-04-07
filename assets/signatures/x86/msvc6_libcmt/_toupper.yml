@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: 9ddbab46d8f9df7a6076ac0563d50d32009eef3f
+  signature: U/8z/9v/Of8d/wAAAAAAAAAAdf8T/4v/RP8k/wj/g//4/2H/fP9Z/4P/+P96/3//VP+D/+j/IP9b/8P/Vv++/wAAAAAAAAAAV/9W////Ff8AAAAAAAAAADn/Hf8AAAAAAAAAAIv/Pf8AAAAAAAAAAHT/Dv9W////1/9q/xP/6P8AAAAAAAAAAFn/av8B/1v///90/yT/EP/o/wAAAAAAAAAAhf/b/1n/if9E/yT/EP90/wr/av8T/+j/AAAAAAAAAABZ/+v/A/9W////1/+L/0T/JP8Q/1//Xv9b/8P/
+  symbols:
+  - kind: Function
+    name: _toupper
+    size: 111
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___unguarded_readlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedIncrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___setlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedDecrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __toupper_lk
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 40
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 52
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 64
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 77
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

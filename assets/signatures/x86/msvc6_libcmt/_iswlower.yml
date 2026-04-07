@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 0f36ebe5921833b6219eec1ec4ff99b3e1316d47
+  signature: av8C////dP8k/wj/6P8AAAAAAAAAAFn/Wf/D/w==
+  symbols:
+  - kind: Function
+    name: _iswlower
+    size: 14
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _iswctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

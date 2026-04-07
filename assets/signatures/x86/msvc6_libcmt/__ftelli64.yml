@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 155489a9ec9f45c7620944a5c5a9de7e7453b1da
+  signature: U/9W/4v/dP8k/wz/V/9W/+j/AAAAAAAAAABW/+j/AAAAAAAAAABW/4v/+P+L/9r/6P8AAAAAAAAAAIP/xP8M/4v/x/+L/9P/X/9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: __ftelli64
+    size: 40
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock_file
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ftelli64_lk
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 15
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 25
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

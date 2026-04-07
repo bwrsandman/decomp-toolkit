@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 7c0f9ba31e3d390f70243d221b91b314c992d799
+  signature: U/9W/4v/8f9X/4v/Rv8c/4v/AP+F/8D/dP8t/4v/Tv8M/zn/Af9z/yb/i/98/yT/EP9m/4H/////////dP8G/2b/Of94//7/df8Z/4v/zv/o/wAAAAAAAAAAZv+L/8f/Zv9A/2b/9//Y/xv/wP8j/8f/6/92/4v/fP8k/xD/i/9G/1D/hf/A/3T/Z/9m/4H/////////dP9g/4P/fv84/wD/df8Y/1D/V//o/wAAAAAAAAAAWf9m/z3//////1n/i//H/3X/Tf+4//////8A/wD/6/9G/4v/fv9E/4v/X/8I/4X/2/92/zj/i//P/+j/AAAAAAAAAACL/3//BP9T////dv9Q/1f/6P8AAAAAAAAAAIP/xP8M/4T/wP90/x3///81/wAAAAAAAAAAi/9O/0T/av8A/+j/AAAAAAAAAACL/0b/PP+J/0b/QP9m/4v/RP8k/xD/6/8E/2b/Df//////X/9e/1v/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?pbackfail@?$basic_filebuf@GU?$char_traits@G@std@@@std@@MAEGG@Z
+    size: 183
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Gndec@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEPAGXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _ungetwc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Freeze@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Ungetc@std@@YA_NABDPAU_iobuf@@I@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 41
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 86
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 120
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 133
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 146
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 156
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

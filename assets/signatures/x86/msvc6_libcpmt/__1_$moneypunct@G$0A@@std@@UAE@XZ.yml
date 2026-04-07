@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 9bed157d91b0c46863472b8622fa50ae18aab378
+  signature: 6f8AAAAAAAAAAA==
+  symbols:
+  - kind: Function
+    name: ??1?$moneypunct@G$0A@@std@@UAE@XZ
+    size: 5
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1?$_Mpunct@G@std@@UAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

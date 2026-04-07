@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 1cfe8f9d759663d037766a7a073cecba79bf30c2
+  signature: i/9M/yT/CP+L/0T/JP8E/4P/4f8f/4v/0f9J/4X/0v90/xb/jf9R/wH/i//I/4H/4f8A/wD/AP+A/9H/4P+F/8n/dP8C/wz/Af9K/3X/7f/D/w==
+  symbols:
+  - kind: Function
+    name: __rotl
+    size: 41
+    flags: 1
+    section: .text
+  relocations: []

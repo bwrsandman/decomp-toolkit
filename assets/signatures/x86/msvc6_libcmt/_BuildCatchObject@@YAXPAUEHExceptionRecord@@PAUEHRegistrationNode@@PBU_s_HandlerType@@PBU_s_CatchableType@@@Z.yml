@@ -1,0 +1,157 @@
+- symbol: 0
+  hash: 609bae08b3208f75cff1a72944c24d0fc2b71b2e
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8M/1P/Vv9X/4n/Zf/o/4v/Tf8Q/4v/Qf8E/4X/wP8P/4T/df8B/wD/AP+A/3j/CP8A/w//hP9r/wH/AP8A/4v/Qf8I/4X/wP8P/4T/YP8B/wD/AP+L/1X/DP+N/3z/EP8M/4P/Zf/8/wD/9v8B/wj/dP9E/4v/df8I/2r/Af///3b/GP/o/wAAAAAAAAAAWf9Z/4X/wP8P/4T/MP8B/wD/AP9q/wH/V//o/wAAAAAAAAAAWf9Z/4X/wP8P/4T/Hv8B/wD/AP+L/0b/GP+J/wf/i/9N/xT/g//B/wj/Uf9Q/+j/AAAAAAAAAABZ/1n/if8H/+n/CP8B/wD/AP+L/3X/FP/2/wb/Af90/1L/i/9d/wj/av8B////c/8Y/+j/AAAAAAAAAABZ/1n/hf/A/w//hP/k/wD/AP8A/2r/Af9X/+j/AAAAAAAAAABZ/1n/hf/A/w//hP/S/wD/AP8A////dv8U////c/8Y/1f/6P8AAAAAAAAAAIP/xP8M/4P/fv8U/wT/D/+F/77/AP8A/wD/i/8H/4X/wP8P/4T/tP8A/wD/AP+D/8b/CP9W/+v/l/+D/37/GP8A/4v/Xf8I/2r/Af///3P/GP91/zr/6P8AAAAAAAAAAFn/Wf+F/8D/D/+E/4z/AP8A/wD/av8B/1f/6P8AAAAAAAAAAFn/Wf+F/8D/dP9+////dv8U/4P/xv8I/1b///9z/xj/6P8AAAAAAAAAAFn/Wf9Q/1f/6P8AAAAAAAAAAIP/xP8M/+v/Zv/o/wAAAAAAAAAAWf9Z/4X/wP90/1b/av8B/1f/6P8AAAAAAAAAAFn/Wf+F/8D/dP9I////dv8Y/+j/AAAAAAAAAABZ/4X/wP90/zv/9v8G/wT/dP8c/2r/Af+N/0b/CP9Q////c/8Y/+j/AAAAAAAAAABZ/1n/UP///3b/GP9X/+j/AAAAAAAAAADr/x//jf9G/wj/UP///3P/GP/o/wAAAAAAAAAAWf9Z/1D///92/xj/V//o/wAAAAAAAAAA6/8F/+j/AAAAAAAAAACD/03//P///4v/Tf/w/2T/if8N/wAAAAAAAAAAX/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?BuildCatchObject@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PBU_s_HandlerType@@PBU_s_CatchableType@@@Z
+    size: 440
+    flags: 2
+    section: .text
+  - kind: Object
+    name: $T17331
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_ValidateRead@@YAHPBXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_ValidateWrite@@YAHPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?AdjustPointer@@YAPAXPAXABUPMD@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_ValidateExecute@@YAHP6GHXZ@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_CallMemberFunction2@@YGXPAX00H@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_CallMemberFunction1@@YGXPAX00@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_inconsistency@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 98
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 116
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 144
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 174
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 192
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 214
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 262
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 280
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 301
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 310
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 320
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 334
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 348
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 372
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 384
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 398
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 410
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 417
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 431
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

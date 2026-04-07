@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: ab7c8a36224ef333c22d9b3cf40be44ee9127e3a
+  signature: av8A////dP8k/wz///90/yT/DP/o/wAAAAAAAAAAg//E/wz/w/8=
+  symbols:
+  - kind: Function
+    name: __wexecv
+    size: 19
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __wexecve
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

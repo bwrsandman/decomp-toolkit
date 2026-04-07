@@ -1,0 +1,135 @@
+- symbol: 0
+  hash: 51ae51cd477e91fe183e5b92d44c6c34a440beb6
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/IP9T/1b/if9N/+T/jf9F//D/i/9N/xj/V/9Q/+j/AAAAAAAAAABq/wH/M////1v/if99//z/U/9X/1D/6P8AAAAAAAAAAIP/Tf/8////g//E/wz/jf9N//D/if9F/+z/6P8AAAAAAAAAAIv/Rf8g/4v/cP8E/zv/9/91/wX/vv8AAAAAAAAAAID/Zf8g/wD/gP8+/y3/df8E/4j/Xf8g/0b/i/9F/+z/D/+2/w7/i/9A/xD/iv8M/0j/wf/p/wL/hP/L/3T/CP8P/7b/TP83/wH/R//r/+7/iv9F/xv/av8A/43/Tf/U/4j/Rf/U/+j/AAAAAAAAAABX/1b/jf9N/9T/6P8AAAAAAAAAAIX///+J/13//P91/wv/av8w/1P/jf9N/9T/6P8AAAAAAAAAAIr/Rf/U/4P/7P8Q/4v/9P+J/2X/7P9q/wD/i//O/4j/Bv/o/wAAAAAAAAAA//81/wAAAAAAAAAAjf9F/9T/i//O/2r/AP9Q/+j/AAAAAAAAAAD//3X/IP+L/03/5P+N/0X/6P///3X/HP///3X/GP///3X/FP///3X/EP///3X/DP9Q/+j/AAAAAAAAAACL/3X/CP+L/wj/g/9N//z///9T/4n/Dv+L/0D/BP+N/03/1P+J/0b/BP/o/wAAAAAAAAAAi/9N//T/i//G/1//Xv9k/4n/Df8AAAAAAAAAAFv/yf/C/xz/AP8=
+  symbols:
+  - kind: Function
+    name: ?do_put@?$money_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@_NAAVios_base@2@DABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z
+    size: 280
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L12656
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?getloc@ios_base@std@@QBE?AVlocale@2@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?use_facet@std@@YAABV?$ctype@D@1@ABVlocale@1@PBV21@_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1locale@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ID@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Putmfld@?$money_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@ABE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@_NAAVios_base@2@D1V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 43
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 61
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 76
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 132
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 142
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 160
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 182
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 188
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 201
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 231
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 257
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 271
+    kind: x86_abs32
+    symbol: 13
+    addend: 0

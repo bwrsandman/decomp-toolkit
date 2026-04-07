@@ -1,0 +1,59 @@
+- symbol: 0
+  hash: d8527688fdd79d641f1837e00a4943d332503a96
+  signature: U/+L/1z/JP8I/1b/i//x/zv/8/90/37/V//o/wAAAAAAAAAAjf9D/yD/jf9O/yD/UP/o/wAAAAAAAAAAi/9D/wz/if9G/wz/i/9D/xD/if9G/xD/i/9D/xT/if9G/xT/i/97/xj/g/9m/xj/AP+F////dP8w/4P/f/8I/wD/df8G/4P/f/8M/wD/dP8g////d/8E/4v/zv/o/wAAAAAAAAAAi/9P/wj/if9I/wj///93/wT/i//O/+j/AAAAAAAAAACL/0//DP+J/0j/DP+L/z//6//M/2r/Av+L/87/6P8AAAAAAAAAAIv/Q/8I/2r/AP///3b/BP+D/+D/B/+L/87/if9G/wj/6P8AAAAAAAAAAF//i//G/17/W//C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?copyfmt@ios_base@std@@QAEAAV12@ABV12@@Z
+    size: 145
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Tidy@ios_base@std@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??4locale@std@@QAEAAV01@ABV01@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Findarr@ios_base@std@@AAEAAU_Iosarray@12@H@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Callfns@ios_base@std@@AAEXW4event@12@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?clear@ios_base@std@@QAEXH_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 26
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 77
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 112
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 133
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

@@ -1,0 +1,45 @@
+- symbol: 0
+  hash: 39b8877104cea75af1656faf03e9b842791f4b81
+  signature: Vf+L/+z/U/9W/4v/df8Q/4v/Xf8I/1f/i/9G/wT/SP+A/33/FP8A/3T/Gv87/0X/DP91/xX/M//J/4P/Pv8t/w//lP/B/wP/yP8D/8v/i//B/8b/AP8w/4D/YP8B/wD/g/8+/y3/i//7/3X/Bv/G/wP/Lf+N/3v/Af+L/0b/BP+F/8D/f/8Q/2r/Af9X/+j/AAAAAAAAAABZ/8b/B/8w/1n/R//r/wL/A//4/4P/ff8M/wD/fv9E/2r/Af9X/+j/AAAAAAAAAACg/wAAAAAAAAAAWf+I/wf/i/92/wT/R/9Z/4X/9v99/yv/gP99/xT/AP90/wT/9//e/+v/B//3/97/Of91/wz/fP8D/4n/df8M////df8M/1f/6P8AAAAAAAAAAP//df8M/2r/MP9X/+j/AAAAAAAAAACD/8T/FP9f/4v/w/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __cftof2
+    size: 167
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __shift
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___decimal_point
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memset
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 72
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 101
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 142
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 153
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

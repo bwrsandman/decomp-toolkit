@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 34ee900ea72e055529444360fcbc4f975f95e2d0
+  signature: Zv8N///////C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?pbackfail@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEGG@Z
+    size: 7
+    flags: 1
+    section: .text
+  relocations: []

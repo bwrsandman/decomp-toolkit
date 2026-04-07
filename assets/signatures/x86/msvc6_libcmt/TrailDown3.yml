@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 222db9330edc3f1909e5cf85ee1c0145a9358fde
+  signature: iv9G/wP/iP9H/wP/iv9G/wL/iP9H/wL/iv9G/wH/iP9H/wH/i/9F/wj/Xv9f/8n/w/8=
+  symbols:
+  - kind: Function
+    name: TrailDown3
+    size: 25
+    flags: 2
+    section: .text
+  relocations: []

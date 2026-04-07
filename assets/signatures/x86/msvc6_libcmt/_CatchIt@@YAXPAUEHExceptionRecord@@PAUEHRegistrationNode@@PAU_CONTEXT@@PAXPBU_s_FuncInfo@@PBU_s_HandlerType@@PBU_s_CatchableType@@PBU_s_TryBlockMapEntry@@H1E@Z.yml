@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 27ff7d68a4b398001207e24314409f7c53a06b1b
+  signature: Vf+L/+z/g/99/yD/AP9T/4v/Xf8c/1b/V/+L/33/DP90/xD///91/yD/U/9X////df8I/+j/AAAAAAAAAACD/8T/EP+D/33/LP8A////df8I/3X/A/9X/+v/A////3X/LP/o/wAAAAAAAAAAi/91/yT///82////df8Y////df8U/1f/6P8AAAAAAAAAAIv/Rv8E/2j/AP8B/wD/AP///3X/KP9A/4n/R/8I////c/8M////df8Y////df8Q/1f///91/wj/6P8AAAAAAAAAAIP/xP8s/4X/wP90/wf/V/9Q/+j/AAAAAAAAAABf/17/W/9d/8P/
+  symbols:
+  - kind: Function
+    name: ?CatchIt@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@PBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_TryBlockMapEntry@@H1E@Z
+    size: 123
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?BuildCatchObject@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PBU_s_HandlerType@@PBU_s_CatchableType@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?_UnwindNestedFrames@@YGXPAUEHRegistrationNode@@PAUEHExceptionRecord@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___FrameUnwindToState
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?CallCatchBlock@@YAPAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PBU_s_FuncInfo@@PAXHK@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?_JumpToContinuation@@YGXPAXPAUEHRegistrationNode@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 27
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 50
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 67
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 100
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 114
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 771f459a8f8f5d1a9ce508ce227e434ca33f15d8
+  signature: 2/+9/2L/////////2/+t/2L/////////9v+F/2n/////////QP90/yD/2f/J/9v/vf9i/////////9v/rf9i//////////b/hf9p/////////0D/dP8J/8b/hf9w/////////wf/6/8H/8b/hf9w/////////wH/3v/B/8P/
+  symbols:
+  - kind: Function
+    name: __nan2
+    size: 63
+    flags: 1
+    section: .text
+  relocations: []

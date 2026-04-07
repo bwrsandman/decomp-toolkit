@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 73ec775a17f68920cc85d216cf630e5e09d8749f
+  signature: U/9W/1f/i/98/yT/FP+N/0f///+F/8f/dP8N/+j/AAAAAAAAAADH/wD/Fv8A/wD/AP/r/yn/g////wT/d/8D/2r/BP9f/4v/XP8k/xj/i/9E/yT/EP+N/3P/A/+D/+b//P8D/8b/jf9E/zj/BP9Q/+j/AAAAAAAAAABZ/4v/yP+F/8n/df8E/zP/wP/r/xX/jf8E/zH/jf9E/zj/BP9P//f/1/8j/8f/i//Q/yv/1v8r/8P/if9K//z/X/9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: __aligned_offset_malloc
+    size: 97
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 57
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 705443ac6676dcf6acadbb091f65875f73646ffc
+  signature: qf8A/wD/CP8A/3T/Bv+4/wf/AP8A/wD/w//c/wX/AAAAAAAAAAC4/wH/AP8A/wD/w/8=
+  symbols:
+  - kind: Function
+    name: __convertTOStoQNaN
+    size: 25
+    flags: 1
+    section: .text
+  - kind: Object
+    name: One
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

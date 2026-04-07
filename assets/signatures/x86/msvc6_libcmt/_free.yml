@@ -1,0 +1,68 @@
+- symbol: 0
+  hash: ca72392f17f8af1dd6dd9f40c026eec0b37e5a98
+  signature: Vv+L/3T/JP8I/4X/9v90/z3/av8J/+j/AAAAAAAAAABW/+j/AAAAAAAAAABZ/4X/wP9Z/3T/E/9W/1D/6P8AAAAAAAAAAGr/Cf/o/wAAAAAAAAAAg//E/wz/Xv/D/2r/Cf/o/wAAAAAAAAAAWf9W/2r/AP///zX/AAAAAAAAAAD//xX/AAAAAAAAAABe/8P/
+  symbols:
+  - kind: Function
+    name: _free
+    size: 72
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_find_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_free_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __crtheap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapFree@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 18
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 31
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 38
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 50
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 60
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 66
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

@@ -1,0 +1,142 @@
+- symbol: 0
+  hash: dcb4fff3e87d66f8b51cb449cf5a8300e0cea43c
+  signature: Vf+L/+z/g//s/3j/i/9F/xT/Vv8z//b/O//G/3X/B/8z/8D/6f+B/wD/AP8A/6P/AAAAAAAAAACL/0X/GP+N/03/iP+j/wAAAAAAAAAAif81/wAAAAAAAAAAif81/wAAAAAAAAAAif81/wAAAAAAAAAA6P8AAAAAAAAAAI3/Tf/E/+j/AAAAAAAAAACL/0X/DP+N/03/iP+j/wAAAAAAAAAAo/8AAAAAAAAAAIv/Rf8Q/4n/Nf8AAAAAAAAAAKP/AAAAAAAAAACL/0X/CP+j/wAAAAAAAAAAjf9F/8T/o/8AAAAAAAAAAI3/Rf+I/6P/AAAAAAAAAAAP/7f/Rf8c/6P/AAAAAAAAAADo/wAAAAAAAAAAuf8AAAAAAAAAAIv/8P/o/wAAAAAAAAAAi//G/17/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ___unDName
+    size: 155
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _heap
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ??0Replicator@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?name@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?m_pGetParameter@UnDecorator@@0P6APADJ@ZA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?maxStringLength@UnDecorator@@0HA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?outputString@UnDecorator@@0PADA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?pZNameList@UnDecorator@@0PAVReplicator@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?pArgList@UnDecorator@@0PAVReplicator@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?disableFlags@UnDecorator@@0KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??BUnDecorator@@QAEPADXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Destructor@HeapManager@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 24
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 35
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 47
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 58
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 66
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 77
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 82
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 91
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 96
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 104
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 112
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 120
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 129
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 134
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 139
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 146
+    kind: x86_rel32
+    symbol: 12
+    addend: -4

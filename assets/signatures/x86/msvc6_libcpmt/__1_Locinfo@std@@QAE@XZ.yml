@@ -1,0 +1,76 @@
+- symbol: 0
+  hash: 244a33f062690c42fd8d3294f35df522b460595a
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1b/i//x/4n/df/w/4v/Rv8o/8f/Rf/8/wL/AP8A/wD/hf/A/3b/Fv+L/0b/JP+F/8D/df8F/7j/AAAAAAAAAABQ/2r/AP/o/wAAAAAAAAAAWf9Z/2r/Af+N/07/MP/o/wAAAAAAAAAAav8B/43/Tv8g/8b/Rf/8/wH/6P8AAAAAAAAAAID/Zf/8/wD/av8B/43/Tv8Q/+j/AAAAAAAAAACD/03//P///2r/Af+L/87/6P8AAAAAAAAAAIv/Tf/0/17/ZP+J/w3/AAAAAAAAAADJ/8P/
+  symbols:
+  - kind: Function
+    name: ??1_Locinfo@std@@QAE@XZ
+    size: 117
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L12621
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _setlocale
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 39
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 47
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 87
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 100
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 111
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

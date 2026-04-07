@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 2156e376e8444b4ea352c64da8b886b7f5a37395
+  signature: g/89/wAAAAAAAAAAAf9+/xH/aP8X/wH/AP8A////dP8k/wj/6P8AAAAAAAAAAFn/Wf/D/4v/RP8k/wT/i/8N/wAAAAAAAAAAZv+L/wT/Qf8l/xf/Af8A/wD/w/8=
+  symbols:
+  - kind: Function
+    name: _isgraph
+    size: 46
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __isctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 19
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 32
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

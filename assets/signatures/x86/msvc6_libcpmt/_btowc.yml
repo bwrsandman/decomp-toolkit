@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 8a68f54e7e1e02269df36242780d245e1a0475f0
+  signature: Vf+L/+z/Uf9R/4v/Rf8I/4P/+P///3X/Bv9m/w3//////8n/w/+I/0X/C/+N/0X/+P+D/2X/+P8A/2r/AP9Q/43/Rf8L/2r/Af9Q/43/Rf/+/1D/6P8AAAAAAAAAAIP/xP8U/4X/wP+4//////8A/wD/fP8E/w//t/9F//7/yf/D/w==
+  symbols:
+  - kind: Function
+    name: _btowc
+    size: 65
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __Mbrtowc
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 43
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

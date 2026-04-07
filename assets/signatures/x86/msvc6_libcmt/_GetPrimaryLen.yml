@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: f83f49469d8e11683af8d2323ea109b3421a1669
+  signature: i/9U/yT/BP8z/8D/iv8K/0L/gP/5/0H/fP8F/4D/+f9a/37/Cv+A//n/Yf98/wj/gP/5/3r/f/8D/0D/6//m/8P/
+  symbols:
+  - kind: Function
+    name: _GetPrimaryLen
+    size: 33
+    flags: 2
+    section: .text
+  relocations: []

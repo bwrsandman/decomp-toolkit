@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 25b89be7a6b483ee1177c48c7dc912617c10fbac
+  signature: uv8AAAAAAAAAAOv/9P8=
+  symbols:
+  - kind: Function
+    name: _cosh
+    size: 7
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __OP_COSHjmptab
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

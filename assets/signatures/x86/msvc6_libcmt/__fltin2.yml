@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: c92efd9dc4c3bea16c8f7f6202b98c2a18a66b93
+  signature: Vf+L/+z/g//s/xj/U/9W/zP/9v9X/1b/Vv9W/1b///91/wz/jf9F//z/M////1D/jf9F/+j/UP/o/wAAAAAAAAAAi//Y/4P/xP8c//b/w/8E/3T/Df+//wD/Av8A/wD/if91//T/if91//j/6/8u/43/Rf/0/1D/jf9F/+j/UP/o/wAAAAAAAAAAWf/2/8P/Av9Z/3X/Bf+D//j/Af91/wX/v/+A/wD/AP8A//b/w/8B/3X/Bf+D//j/Av91/wb/gf/P/wD/Af8A/wD/i/9F/wj/i/9N//z/K/9N/wz/3f9F//T/if84/1//3f9Y/xD/Xv+J/0j/BP9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __fltin2
+    size: 127
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___strgtold12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ld12tod
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 29
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

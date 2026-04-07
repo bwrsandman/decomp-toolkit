@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 37a94a59942302553412cf083529e413472bfeb0
+  signature: D/+2/0T/JP8E/4v/Df8AAAAAAAAAAGb/i/8E/0H/Jf8A/4D/AP8A/8P/
+  symbols:
+  - kind: Function
+    name: _isleadbyte
+    size: 21
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

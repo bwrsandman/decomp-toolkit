@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: ee945371c2f86dd0a7c0cebf54ebff08528c23c6
+  signature: Vf+L/+z/Uf9R/43/Rf/4/1b/UP///xX/AAAAAAAAAABq/wH/av8A/2r/AP///3X//P/o/wAAAAAAAAAAi/9N//j/M//2/wP/wf8T/9b/o/8AAAAAAAAAAIn/Ff8AAAAAAAAAAF7/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ___inittime
+    size: 53
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetSystemTimeAsFileTime@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __allmul
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _start_tics
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 40
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

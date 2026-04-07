@@ -1,0 +1,95 @@
+- symbol: 0
+  hash: 2670c46f10c891202b4f883ac0bcb7746b52d2f4
+  signature: Vf+L/+z/Uf9R/1b/V/++/wAAAAAAAAAAaP8E/wH/AP8A/1b/av8A////Ff8AAAAAAAAAAKH/AAAAAAAAAACJ/zX/AAAAAAAAAACL//7/Zv+D/zj/AP90/wL/i//4/43/Rf/4/1D/jf9F//z/UP9q/wD/av8A/1f/6P8AAAAAAAAAAIv/Rf/4/4v/Tf/8/43/BP9I/9H/4P9Q/+j/AAAAAAAAAACL//D/g//E/xj/hf/2/3X/CP9q/wj/6P8AAAAAAAAAAFn/jf9F//j/UP+N/0X//P9Q/4v/Rf/8/43/BP+G/1D/Vv9X/+j/AAAAAAAAAACL/0X//P+D/8T/FP9I/4n/Nf8AAAAAAAAAAF//o/8AAAAAAAAAAF7/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __wsetargv
+    size: 143
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _?_pgmname@?1??_wsetargv@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __imp__GetModuleFileNameW@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __wcmdln
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __wpgmptr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wparse_cmdline
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __amsg_exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___wargv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___argc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 27
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 61
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 78
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 94
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 117
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 130
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 136
+    kind: x86_abs32
+    symbol: 9
+    addend: 0

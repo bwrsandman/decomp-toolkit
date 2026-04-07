@@ -1,0 +1,72 @@
+- symbol: 0
+  hash: 0e83228d40c00ec1d6b3d128638be5f7216b50ad
+  signature: Vf+L/+z/Uf9W/2r/CP8z//b/6P8AAAAAAAAAAIP/Pf8AAAAAAAAAAP7/Wf91/wX/6P8AAAAAAAAAAIP/Pf8AAAAAAAAAAP//dP8i/43/Rf/8/1b/UP///3X/CP/o/wAAAAAAAAAAWf9Q////df8I////Nf8AAAAAAAAAAP//Ff8AAAAAAAAAAIX/wP91/wP/g//O////av8I/+j/AAAAAAAAAABZ/4v/xv9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __cputs
+    size: 88
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __confh
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___initconout
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__WriteConsoleA@20
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 16
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 25
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 31
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 47
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 58
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 64
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 78
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

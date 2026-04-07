@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 1bfc4326615815aef86c033847c7e98e84907a12
+  signature: av8A/7n/AAAAAAAAAADo/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: _$E35
+    size: 13
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _ferr
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ??0?$basic_filebuf@DU?$char_traits@D@std@@@std@@QAE@W4_Uninitialized@1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 8
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

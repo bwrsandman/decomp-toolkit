@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: dc33d5fac07e683d814c144cdb8e7b698eda704d
+  signature: iv9E/yT/BP+o/yD/dP8E/2r/Bf/r/xb/qP8I/3T/BP9q/wH/6/8O/6j/BP90/wT/av8C/+v/Bv+o/wH/dP8E/2r/A/9Y/8P/D/+2/8D/g//g/wL/0f/g/8P/
+  symbols:
+  - kind: Function
+    name: __errcode
+    size: 45
+    flags: 1
+    section: .text
+  relocations: []

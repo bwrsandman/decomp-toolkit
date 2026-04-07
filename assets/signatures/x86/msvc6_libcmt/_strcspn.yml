@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: f935a8c9a4b5a64ea769ddcda9b3d64105d43d33
+  signature: Vf+L/+z/Vv8z/8D/UP9Q/1D/UP9Q/1D/UP9Q/4v/Vf8M/43/Sf8A/4r/Av8K/8D/dP8H/0L/D/+r/wT/JP/r//P/i/91/wj/g//J////kP9B/4r/Bv8K/8D/dP8H/0b/D/+j/wT/JP9z//L/i//B/4P/xP8g/17/yf/D/w==
+  symbols:
+  - kind: Function
+    name: _strcspn
+    size: 62
+    flags: 1
+    section: .text
+  relocations: []

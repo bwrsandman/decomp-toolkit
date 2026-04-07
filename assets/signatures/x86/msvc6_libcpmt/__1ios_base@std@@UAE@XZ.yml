@@ -1,0 +1,77 @@
+- symbol: 0
+  hash: 787e2c0c67ead6657ccd5e9ecc2691b4d868d3c2
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1b/i//x/4n/df/w/8f/Bv8AAAAAAAAAAIv/Rv8k/4P/Zf/8/wD/hf/A/3b/Ev/+/4j/AAAAAAAAAACL/0b/JP+A/7j/AAAAAAAAAAAA/3//B/+L/87/6P8AAAAAAAAAAI3/Tv8g/+j/AAAAAAAAAACL/03/9P9e/2T/if8N/wAAAAAAAAAAyf/D/w==
+  symbols:
+  - kind: Function
+    name: ??1ios_base@std@@UAE@XZ
+    size: 80
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L6315
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7ios_base@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: _stdopens
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ?_Tidy@ios_base@std@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1locale@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 19
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 36
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 55
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 63
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 74
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

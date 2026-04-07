@@ -1,0 +1,89 @@
+- symbol: 0
+  hash: 23de687435842e46698349d5dee982e27d3fba19
+  signature: Vf+L/+z/jf9F/wj/UP/o/wAAAAAAAAAAD/+//8D/g//o/wD/Wf8P/4T/p/8A/wD/AP9I/3T/f/9I/3T/bP/Z/0X/CP/Y/xX/AAAAAAAAAADf/+D/nv9z/wn/2f/A/9n/4P/Z/1X/CP/d/9n/2P8d/wAAAAAAAAAAav///9//4P+e/3P/I//Z/+j/Uf+N/0X/CP/Z/xz/JP9Q/+j/AAAAAAAAAADZ/0X/CP/c/z3/AAAAAAAAAACD/8T/DP/Y/0X/CP/Y/03/DP9d/8P/2f9F/wz/Uf+N/0X/CP/Z/xz/JP9Q/+j/AAAAAAAAAACD/8T/DP9m/4X/wP98/xj/6P8AAAAAAAAAAMf/AP8i/wD/AP8A/+v/C//o/wAAAAAAAAAAx/8A/yH/AP8A/wD/2f9F/wj/Xf/D/9n/Bf8AAAAAAAAAANn/Rf8M/9j/2f/f/+D/nv90/xj/3f/Y/+j/AAAAAAAAAADH/wD/Iv8A/wD/AP/Z/wX/AAAAAAAAAABd/8P/2f9F/wz/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __FCosh
+    size: 197
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __FDtest
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __real@4@00000000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __FXbig
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __FExp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __real@8@3ffd8000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __FInf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 36
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 56
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 78
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 87
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 114
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 127
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 140
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 157
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 174
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 186
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

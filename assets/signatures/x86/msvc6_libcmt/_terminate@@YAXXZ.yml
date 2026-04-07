@@ -1,0 +1,54 @@
+- symbol: 0
+  hash: 4820007cec894fcf72617bd65f73bc9941026da3
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAFH/Uf9T/1b/V/+J/2X/6P8z//b/if91//z/6P8AAAAAAAAAADn/cP9g/3T/H//H/0X//P8B/wD/AP8A/+j/AAAAAAAAAAD//1D/YP+J/3X//P/r/wv/av8B/1j/w/+L/2X/6P+D/2X/
+  symbols:
+  - kind: Function
+    name: ?terminate@@YAXXZ
+    size: 81
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T16755
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 43
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 60
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

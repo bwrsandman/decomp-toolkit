@@ -1,0 +1,110 @@
+- symbol: 0
+  hash: 0ddb36caca805c9902677f77a6ab06fd64f5fef7
+  signature: Vf+L/+z/g//s/wz/U/9W/4v/df8I/1f/M//b/zP///87//P/if9d//j/D/+E/0X/Af8A/wD/i/9V/xD/O//T/3X/B/8z/8D/6f+B/wH/AP8A/zn/Hf8AAAAAAAAAAHX/Lf87/9P/dv8i/4v/Tf8M/2b/gf85////AP8P/4f/Wf8B/wD/AP+K/wH/iP8E/zf/Zv+L/wH/Qf9B/2b/hf/A/3T/Bf9H/zv/+v9y/+H/i//H/+n/TP8B/wD/AP+D/z3/AAAAAAAAAAAB/3X/UP87/9P/dv8Q/1L///91/wz/6P8AAAAAAAAAAFn/if9F/xD/Wf+L/9D/jf9F//j/UP9T/1L/Vv9S////df8M/2j/IP8C/wD/AP///zX/AAAAAAAAAAD//xX/AAAAAAAAAAA7/8P/D/+E//3/AP8A/wD/Of9d//j/D/+F//T/AP8A/wD/OP9c/zD///8P/4X/+P8A/wD/AP/p/+L/AP8A/wD/jf9F//j/i/89/wAAAAAAAAAAUP9T/1L/Vv9q//////91/wz/aP8g/wL/AP8A////Nf8AAAAAAAAAAP//1/+L//D/O//z/3T/Ef85/13/+P8P/4X/t/8A/wD/AP+N/0b////p/73/AP8A/wD/Of9d//j/D/+F/6b/AP8A/wD///8V/wAAAAAAAAAAg//4/3r/D/+F/5f/AP8A/wD/O/91/xD/c/9S/43/Rf/4/1D/U////zX/AAAAAAAAAACN/0X//v9Q/2r/Af///3X/DP9T////Nf8AAAAAAAAAAP//1/87/8P/if9F//T/dP9u/zn/Xf/4/3X/af+N/wz/MP87/03/EP93/yH/M//S/zv/w/9+/xX/iv9M/xX//v+L/0X/CP86/8v/iP8M/wb/dP8N/0L/Rv87/1X/9P98/+v/g/9F/wz/Av/r/6n/i//G/+v/Sv85/x3/AAAAAAAAAAB1/wv///91/wz/6P8AAAAAAAAAAFn/6/83/43/Rf/4/1D/U/9T/1P/av//////df8M/2j/IP8C/wD/AP///zX/AAAAAAAAAAD//xX/AAAAAAAAAAA7/8P/dP8I/zn/Xf/4/3X/A/9I/+v/Dv/o/wAAAAAAAAAAx/8A/yr/AP8A/wD/g//I////X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __wcstombs_lk
+    size: 431
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcsncnt
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__WideCharToMultiByte@32
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 43
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 96
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 112
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 141
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 147
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 188
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 208
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 248
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 273
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 289
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 354
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 364
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 390
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 396
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 413
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

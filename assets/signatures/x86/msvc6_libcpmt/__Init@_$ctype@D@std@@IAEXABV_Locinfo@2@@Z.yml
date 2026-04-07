@@ -1,0 +1,68 @@
+- symbol: 0
+  hash: 7eadb0bdffdbb69a44cc570a6cc5791f68b6d428
+  signature: Vf+L/+z/g//s/xT/U/+L/9n/Vv9X/43/Tf/8/+j/AAAAAAAAAACN/0X/7P9Q/+j/AAAAAAAAAACN/3v/CP+L//D/pf+l/6X/pf+D/z3/AAAAAAAAAAAA/1n/df8X/4v/Q/8Q/2j/AAAAAAAAAACj/wAAAAAAAAAA6P8AAAAAAAAAAIP/Y/8U/wD/Wf+N/03//P/o/wAAAAAAAAAAX/9e/1v/yf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?_Init@?$ctype@D@std@@IAEXABV_Locinfo@2@@Z
+    size: 85
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __Getctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Cltab@?$ctype@D@std@@0PBFB
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Term@?$ctype@D@std@@KAXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _atexit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 24
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 39
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 51
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 56
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 61
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

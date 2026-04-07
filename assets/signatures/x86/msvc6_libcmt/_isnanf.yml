@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 163601b58a2ce87c29cd01a2229f311b04f509a5
+  signature: i/9M/yT/BP+4/wD/AP+A/3//I//I/zv/yP91/w7/9/9E/yT/BP//////f/8A/3T/BP9q/wH/WP/D/zP/wP/D/w==
+  symbols:
+  - kind: Function
+    name: _isnanf
+    size: 32
+    flags: 2
+    section: .text
+  relocations: []

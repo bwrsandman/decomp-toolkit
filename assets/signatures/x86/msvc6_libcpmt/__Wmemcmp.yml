@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: c1e2373387591ac5615e44717c56bcdf19e28ddf
+  signature: g/98/yT/DP8A/3b/Gv+L/0z/JP8I/4v/RP8k/wT/Zv+L/xD/Zv87/xH/df8N/0D/QP9B/0H///9M/yT/DP91/+7/M//A/8P/Zv+L/wD/Zv87/wH/G//A/yT//v9A/8P/
+  symbols:
+  - kind: Function
+    name: __Wmemcmp
+    size: 48
+    flags: 2
+    section: .text
+  relocations: []

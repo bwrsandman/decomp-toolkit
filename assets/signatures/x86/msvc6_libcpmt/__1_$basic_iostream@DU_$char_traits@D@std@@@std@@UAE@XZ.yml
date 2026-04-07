@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: efaaae45636091a7541c56fa5d4b36afb055f793
+  signature: i/9B//T/jf9R//z/i/9A/wT/x/9E/wj/9P8AAAAAAAAAAI3/Qf/0//f/2P8b/8D/I//C/4P/wP8E/4v/SP/8/4v/Sf8E/8f/RP8B//z/AAAAAAAAAACL/0L/+P+L/0D/BP/H/0T/EP/4/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ??1?$basic_iostream@DU?$char_traits@D@std@@@std@@UAE@XZ
+    size: 58
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$basic_iostream@DU?$char_traits@D@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_7?$basic_ostream@DU?$char_traits@D@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_7?$basic_istream@DU?$char_traits@D@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 13
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 39
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

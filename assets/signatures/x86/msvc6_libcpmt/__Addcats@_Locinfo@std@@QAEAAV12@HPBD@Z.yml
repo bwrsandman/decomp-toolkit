@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: 03f643916f535ceac196f18d1a3c7f00c5648995
+  signature: Vf+L/+z/Uf9W/1f/i/99/wj/M//A/4X///+J/03//P91/wz/V/9q/wD/6P8AAAAAAAAAAFn/Wf/r/yr/g////z//df8F////df8M/+v/6/8z//b/av8B/4v/zv9a/9P/4v/R//r/hf/X/3T/C////3X/DP9W/+j/AAAAAAAAAABZ/1n/Rv+D//7/Bf9+/+L/hf/A/4v/8P91/wX/vv8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/UP9W/4v/df/8/43/Tv8w/+j/AAAAAAAAAACL/8b/X/9e/8n/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?_Addcats@_Locinfo@std@@QAEAAV12@HPBD@Z
+    size: 111
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _setlocale
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_01FDHG@?$CK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 22
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 60
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 79
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 85
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 99
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

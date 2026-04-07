@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 46414e362e267aeda1e383e569b53022ff4c0738
+  signature: Vf+L/+z/g//s/xz/Uf+N/03/5P/o/wAAAAAAAAAAjf9F/+T/aP8AAAAAAAAAAFD/6P8AAAAAAAAAAA==
+  symbols:
+  - kind: Function
+    name: ?_Doraise@length_error@std@@MBEXXZ
+    size: 29
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0length_error@std@@QAE@ABV01@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __TI3?AVlength_error@std@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 19
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 25
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

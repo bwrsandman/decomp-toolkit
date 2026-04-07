@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: ffb0be3d2229241bb71d9cde43ce5fbead882713
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1P/i/9d/wj/Vv9X/4v/8f9T/4n/df/w/+j/AAAAAAAAAACK/0P/DP+D/2X//P8A/4P/w/8M/43/fv8M/2r/AP+L/8//iP8H/+j/AAAAAAAAAAD//zX/AAAAAAAAAACL/8//av8A/1P/6P8AAAAAAAAAAIv/Tf/0/8f/Bv8AAAAAAAAAAIv/xv9f/17/W/9k/4n/Df8AAAAAAAAAAMn/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ??0runtime_error@std@@QAE@ABV01@@Z
+    size: 93
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: ''
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0exception@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7runtime_error@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 24
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 48
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 54
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 64
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 73
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 85
+    kind: x86_abs32
+    symbol: 8
+    addend: 0

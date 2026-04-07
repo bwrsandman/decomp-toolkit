@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 3402650133c472f99b7a494189b908dd01e921a7
+  signature: Vf+L/+z/g/99/xD/Cv91/wz/g/99/wj/AP99/wb/av8B/2r/Cv/r/wX/av8A////df8Q////df8M////df8I/+j/AAAAAAAAAACL/0X/DP+D/8T/EP9d/8P/
+  symbols:
+  - kind: Function
+    name: __itoa
+    size: 45
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _xtoa
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 33
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

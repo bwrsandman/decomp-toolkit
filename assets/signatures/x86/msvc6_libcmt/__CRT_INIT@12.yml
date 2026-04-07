@@ -1,0 +1,232 @@
+- symbol: 0
+  hash: bc4bd1c9d564e902ea5c607e67933bd998ae5601
+  signature: i/9E/yT/CP+D//j/Af8P/4X/iP8A/wD/AP///xX/AAAAAAAAAABq/wH/o/8AAAAAAAAAAOj/AAAAAAAAAACF/8D/Wf90/zz/of8AAAAAAAAAADP/yf+K/w3/AAAAAAAAAAAl////AP8A/wD/wf8t/wAAAAAAAAAAEP+j/wAAAAAAAAAAif8N/wAAAAAAAAAAwf/g/wj/A//B/6P/AAAAAAAAAADo/wAAAAAAAAAAhf/A/3X/Cf/o/wAAAAAAAAAAM//A/+v/cv///xX/AAAAAAAAAACj/wAAAAAAAAAA6P8AAAAAAAAAAKP/AAAAAAAAAADo/wAAAAAAAAAA6P8AAAAAAAAAAOj/AAAAAAAAAADo/wAAAAAAAAAA//8F/wAAAAAAAAAA6/8+/zP/yf87/8H/df8s/zn/Df8AAAAAAAAAAH7/vf///w3/AAAAAAAAAAA5/w3/AAAAAAAAAAB1/wX/6P8AAAAAAAAAAOj/AAAAAAAAAADo/wAAAAAAAAAA6P8AAAAAAAAAAOv/DP+D//j/A/91/wf/Uf/o/wAAAAAAAAAAWf9q/wH/WP/C/wz/AP8=
+  symbols:
+  - kind: Function
+    name: __CRT_INIT@12
+    size: 217
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetVersion@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __osver
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __heap_init
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __winmajor
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __winminor
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __winver
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mtinit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __heap_term
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetCommandLineA@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __acmdln
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtGetEnvironmentStringsA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __aenvptr
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: __ioinit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __setargv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __setenvp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __cinit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___proc_attached
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: __C_Termination_Done
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __cexit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ioterm
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mtterm
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __freeptd
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 37
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 56
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 62
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 68
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 78
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 83
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 92
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 102
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 107
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 112
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 117
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 122
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 127
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 132
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 137
+    kind: x86_rel32
+    symbol: 16
+    addend: -4
+  - offset: 143
+    kind: x86_abs32
+    symbol: 17
+    addend: 0
+  - offset: 157
+    kind: x86_abs32
+    symbol: 17
+    addend: 0
+  - offset: 165
+    kind: x86_abs32
+    symbol: 17
+    addend: 0
+  - offset: 171
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 178
+    kind: x86_rel32
+    symbol: 19
+    addend: -4
+  - offset: 183
+    kind: x86_rel32
+    symbol: 20
+    addend: -4
+  - offset: 188
+    kind: x86_rel32
+    symbol: 21
+    addend: -4
+  - offset: 193
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 206
+    kind: x86_rel32
+    symbol: 22
+    addend: -4

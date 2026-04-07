@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 3cc6d1534160b2afdeb05fc80bff2079f66c98b4
+  signature: Vf+L/+z/i/9V/xD/U/+L/13/DP9W/4v/df8I/4v/Sv8M/1f/jf9+/wH/xv8G/zD/hf/b/4v/x/9+/x//if9d/wj/M//b/4r/Ef+E/9L/dP8G/w//vv/S/0H/6/8D/2r/MP9a/4j/EP9A////Tf8I/3X/6f+L/1X/EP+A/yD/AP+F/9v/fP8S/4D/Of81/3z/Df9I/4D/OP85/3X/Bf/G/wD/MP/r//X//v8A/4D/Pv8x/3X/Bf///0L/BP/r/xL/V//o/wAAAAAAAAAAQP9Q/1f/Vv/o/wAAAAAAAAAAg//E/xD/X/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __fptostr
+    size: 119
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 98
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 107
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

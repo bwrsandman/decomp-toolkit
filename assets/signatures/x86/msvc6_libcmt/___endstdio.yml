@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 0fa03acef92e523a3ebd852d4058d2106f755282
+  signature: 6P8AAAAAAAAAAID/Pf8AAAAAAAAAAAD/dP8F/+n/AAAAAAAAAADD/w==
+  symbols:
+  - kind: Function
+    name: ___endstdio
+    size: 20
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __flushall
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __exitflag
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fcloseall
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 7
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 15
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

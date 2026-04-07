@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: f17e84a23bf62c90a4237faee8ed78779438f8ce
+  signature: g/89/wAAAAAAAAAAAP91/wX/6P8AAAAAAAAAAFb/i/81/wAAAAAAAAAAiv8G/zz/Iv91/yX/iv9G/wH/Rv88/yL/dP8V/4T/wP90/xH/D/+2/8D/UP/o/wAAAAAAAAAAhf/A/1n/dP/m/0b/6//j/4D/Pv8i/3X/Df9G/+v/Cv88/yD/dv8G/0b/gP8+/yD/d//6/4r/Bv+E/8D/dP8E/zz/IP92/+n/i//G/17/w/8=
+  symbols:
+  - kind: Function
+    name: __wincmdln
+    size: 88
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mbctype_initialized
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___initmbctable
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __acmdln
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ismbblead
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 10
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 44
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

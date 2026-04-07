@@ -1,0 +1,71 @@
+- symbol: 0
+  hash: 14205244d9692b285f0814c71dbd27b130969ea8
+  signature: Vf+L/+z/gf/s/1D/Av8A/wD/jf+F/7D//f//////Vv9Q////df8I////Ff8AAAAAAAAAAIX/wP91/0L///8V/wAAAAAAAAAAav8C/17/O//G/3L/D/+D//j/A/92/yf/g//4/wj/dP8V/4P/+P8S/3T/Hf/o/wAAAAAAAAAAx/8A/xb/AP8A/wD/g//I////6/97/+j/AAAAAAAAAADH/wD/DP8A/wD/AP/r/+7/6P8AAAAAAAAAAIn/MP/r/+X/i/+F/7D//f//////i/91/wz/Lf+A/wD/AP8A//f/2P8b/8D/I/+F/7D//f//////if8G/43/hf+0//3//////1D/6P8AAAAAAAAAAIn/Rv8E/43/hf+8//3//////1D/6P8AAAAAAAAAAIn/Rv8I/43/hf/E//3//////1D/6P8AAAAAAAAAAIn/Rv8M/4v/hf/Q//3//////4n/Rv8Q/43/hf/c//3//////4P/xv8U/1D/Vv/o/wAAAAAAAAAAg//E/xT/M//A/17/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __wfindnext
+    size: 200
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__FindNextFileW@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___timet_from_ft
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcscpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 22
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 59
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 75
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 88
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 130
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 145
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 160
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 188
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

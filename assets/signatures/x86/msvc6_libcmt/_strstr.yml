@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: f24a070e961bcbe8bc1cc3bf9a8c9d2e46b92b14
+  signature: i/9M/yT/CP9X/1P/Vv+K/xH/i/98/yT/EP+E/9L/dP9p/4r/cf8B/4T/9v90/0//i//3/4v/TP8k/xT/iv8H/0b/OP/Q/3T/Ff+E/8D/dP8L/4r/Bv9G/zj/0P90/wr/hP/A/3X/9f9e/1v/X/8z/8D/w/+K/wb/Rv84//D/df/r/43/fv///4r/Yf8C/4T/5P90/yj/iv8G/4P/xv8C/zj/4P91/8T/iv9B/wP/hP/A/3T/GP+K/2b///+D/8H/Av84/+D/dP/f/+v/sf8z/8D/Xv9b/1//iv/C/+n/AAAAAAAAAACN/0f///9e/1v/X//D/4v/x/9e/1v/X//D/w==
+  symbols:
+  - kind: Function
+    name: _strstr
+    size: 128
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___from_strstr_to_strchr
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 111
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

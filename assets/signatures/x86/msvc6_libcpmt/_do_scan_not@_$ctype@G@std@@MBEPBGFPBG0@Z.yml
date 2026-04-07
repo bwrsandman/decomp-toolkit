@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: c6fb31bddd2f3b8c85422e8ab7d214ca4ac56467
+  signature: Vv+L/3T/JP8M/1f/i//5/zv/dP8k/xT/dP8X/2b/i/8G/4v/F/9Q/4v/z////3T/JP8Q////Uv8I/4T/wP90/wT/Rv9G/+v/4/+L/8b/X/9e/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: ?do_scan_not@?$ctype@G@std@@MBEPBGFPBG0@Z
+    size: 44
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 6fcdc5ccf175812acb5aa33e483d47e85ed4b4db
+  signature: Vv+L//H/i/9M/yT/CP9q/wD/6P8AAAAAAAAAAFD/6P8AAAAAAAAAAFn/if9G/wj/Wf+L/0z/JP8I/2r/AP/o/wAAAAAAAAAAUP/o/wAAAAAAAAAAWf+J/0b/DP9Z/17/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?_Init@?$time_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@IAEXABV_Locinfo@2@@Z
+    size: 51
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Getdays@_Locinfo@std@@QBEPBDXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Maklocstr@std@@YAPAGPBDPAG@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Getmonths@_Locinfo@std@@QBEPBDXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 16
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 32
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 38
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

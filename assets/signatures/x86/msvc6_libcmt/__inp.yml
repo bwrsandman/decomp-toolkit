@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 2b119b3d50e113701129f63f69f433ef22be8ff7
+  signature: M//A/2b/i/9U/yT/BP/s/8P/
+  symbols:
+  - kind: Function
+    name: __inp
+    size: 9
+    flags: 1
+    section: .text
+  relocations: []

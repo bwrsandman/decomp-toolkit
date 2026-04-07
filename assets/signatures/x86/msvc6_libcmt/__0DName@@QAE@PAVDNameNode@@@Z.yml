@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 20e4fe33395e8e4031ecc19ec72ce0ed0f3033c0
+  signature: i//B/4v/TP8k/wT/g/9g/wT/gP+J/wj/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ??0DName@@QAE@PAVDNameNode@@@Z
+    size: 15
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,77 @@
+- symbol: 0
+  hash: 0dd3c155b6fa1bb08caeb0f57ef236d28b954448
+  signature: Vf+L/+z/Uf9R/6H/AAAAAAAAAABW/4r/AP+E/8D/dP97/w//vv/w/4P/7v9B////Bf8AAAAAAAAAAIP//v8K/3f/Zv+N/03/+P/o/wAAAAAAAAAAi/8N/wAAAAAAAAAAav8C//f/0f9Y/4T/yP90/0H/g//m//7/g//u/wD/dP8o/yv/8P90/yH/K//w/3T/Gf8r//D/dP8R/yv/8P90/wn/g//u/wT/df8k/2r/Bv/r/xH/av8F/+v/Df9q/wP/6/8J/2r/BP/r/wX/UP/r/wL/av8B/+j/AAAAAAAAAABZ/1D/jf9N//j/6P8AAAAAAAAAAIv/Tf8I/43/Rf/4/1D/6P8AAAAAAAAAAOv/Dv9q/wH/6/8C/2r/Av+L/03/CP/o/wAAAAAAAAAAi/9F/wj/Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: ?getCallingConvention@UnDecorator@@CA?AVDName@@XZ
+    size: 156
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??0DName@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?disableFlags@UnDecorator@@0KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?UScore@UnDecorator@@SAPBDW4Tokens@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??4DName@@QAEAAV0@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 38
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 44
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 108
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 118
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 130
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 146
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

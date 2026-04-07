@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: ccad47f976133709aa8f0d2d13ce253fcbc71236
+  signature: Vf+L/+z/U/+L/13/CP9W/1f/i/99/wz/i//x/zn/e/8I/3P/Bf/o/wAAAAAAAAAAi/9D/wj/K//H/zv/Rf8Q/3P/A/+J/0X/EP+h/wAAAAAAAAAAK/9G/wj/O/9F/xD/d/8F/+j/AAAAAAAAAACD/33/EP8A/3b/TP+L/37/CP9q/wD/A/99/xD/i//O/1f/6P8AAAAAAAAAAIT/wP90/zj/i/9b/wT/uP8AAAAAAAAAAIX/2/90/wL/i//D/4v/Tf8M/4v/Vv8E/43/DP9I/4v/Rv8I/43/BP9C/4v/Vf8Q/2b/i/8Z/2b/if8Y/0D/QP9B/0H/Sv91//P/i/9G/wT/if9+/wj/Zv+D/yT/eP8A/4v/xv9f/17/W/9d/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: ?append@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QAEAAV12@ABV12@II@Z
+    size: 146
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Xran@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?npos@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Xlen@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Grow@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAE_NI_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_C@?1??_Nullstr@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@CAPBGXZ@4GB
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 38
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 51
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 85
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

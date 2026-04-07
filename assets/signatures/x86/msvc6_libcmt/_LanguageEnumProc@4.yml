@@ -1,0 +1,129 @@
+- symbol: 0
+  hash: a3cb6d9b19dd89a29ea0f74503b90ceabf97fa89
+  signature: Vf+L/+z/g//s/3j/Vv///3X/CP/o/wAAAAAAAAAAWf+L//D/jf9F/4j/av94/1D/of8AAAAAAAAAAPf/2P8b/8D/Zv8l/wL/8P8F/wH/EP8A/wD/UP9W////Ff8AAAAAAAAAAIX/wP91/wv/If8F/wAAAAAAAAAAav8B/1j/6/93/43/Rf+I/1D///81/wAAAAAAAAAA6P8AAAAAAAAAAFn/hf/A/1n/df8M/zn/Bf8AAAAAAAAAAHX/Ov9q/wH/6/8q/4P/Pf8AAAAAAAAAAAD/df9A/6H/AAAAAAAAAACF/8D/dP83/1D/jf9F/4j/UP///zX/AAAAAAAAAADo/wAAAAAAAAAAg//E/wz/hf/A/3X/IP9Q/1b/6P8AAAAAAAAAAFn/hf/A/1n/dP8T/4P/Df8AAAAAAAAAAAT/if81/wAAAAAAAAAAif81/wAAAAAAAAAAof8AAAAAAAAAAPf/0P/B/+j/Av+D/+D/Af9e/8n/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: _LanguageEnumProc@4
+    size: 189
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _LcidFromHexString
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _bAbbrevLanguage
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _pfnGetLocaleInfoA
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _iLcidState
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _pchLanguage
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __stricmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _iPrimaryLen
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __strnicmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _TestDefaultLanguage
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _lcidCountry
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _lcidLanguage
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 25
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 56
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 71
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 76
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 88
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 100
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 108
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 123
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 128
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 142
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 154
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 161
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 167
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 172
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

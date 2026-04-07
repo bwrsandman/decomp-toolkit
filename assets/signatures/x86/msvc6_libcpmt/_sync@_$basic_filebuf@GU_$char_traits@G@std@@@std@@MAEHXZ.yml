@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 866083b4c91689b17d81b805dd49b3c60a31c382
+  signature: i/9B/1D/hf/A/3T/D/9Q/+j/AAAAAAAAAACF/8D/Wf99/wT/g//I////w/8z/8D/w/8=
+  symbols:
+  - kind: Function
+    name: ?sync@?$basic_filebuf@GU?$char_traits@G@std@@@std@@MAEHXZ
+    size: 25
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _fflush
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

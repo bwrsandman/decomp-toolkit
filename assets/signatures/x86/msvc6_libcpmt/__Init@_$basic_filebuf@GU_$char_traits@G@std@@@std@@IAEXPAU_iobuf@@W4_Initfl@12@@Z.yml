@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: a4c0c4895776d87a751dc912722c175f431aa961
+  signature: g/98/yT/CP8B/1b/i//x/w//lP/A/4P/fP8k/wz/AP+I/0b/SP91/xv/V/+N/37/TP+L/8//6P8AAAAAAAAAAIX///90/wf/i//P/+j/AAAAAAAAAACD/2b/RP8A/1//i//O/+j/AAAAAAAAAACL/0T/JP8I/4n/Rv9Q/6H/AAAAAAAAAACJ/0b/QP+h/wAAAAAAAAAAg/9m/zj/AP+J/0b/PP9e/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?_Init@?$basic_filebuf@GU?$char_traits@G@std@@@std@@IAEXPAU_iobuf@@W4_Initfl@12@@Z
+    size: 86
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1locale@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0locale@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Init@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Stinit@?1??_Init@?$basic_filebuf@GU?$char_traits@G@std@@@std@@IAEXPAU_iobuf@@W4_Initfl@23@@Z@4HA
+    size: 4
+    flags: 1
+    section: null
+  relocations:
+  - offset: 28
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 39
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 51
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 63
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 71
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

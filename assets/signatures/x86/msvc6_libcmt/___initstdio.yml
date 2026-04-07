@@ -1,0 +1,96 @@
+- symbol: 0
+  hash: 3b938a7250771f1b5401243bd4e94c37e2e581a7
+  signature: of8AAAAAAAAAAFb/av8U/4X/wP9e/3X/B/+4/wD/Av8A/wD/6/8G/zv/xv99/wf/i//G/6P/AAAAAAAAAABq/wT/UP/o/wAAAAAAAAAAWf+j/wAAAAAAAAAAhf/A/1n/df8h/2r/BP9W/4n/Nf8AAAAAAAAAAOj/AAAAAAAAAABZ/6P/AAAAAAAAAACF/8D/Wf91/wj/av8a/+j/AAAAAAAAAABZ/zP/yf+4/wAAAAAAAAAAi/8V/wAAAAAAAAAAif8E/xH/g//A/yD/g//B/wT/Pf8AAAAAAAAAAHz/6v8z/8n/uv8AAAAAAAAAAIv/8f+L/8H/wf/+/wX/g//g/x//i/80/7X/AAAAAAAAAACN/wT/wP+L/wT/hv+D//j///90/wT/hf/A/3X/A/+D/wr///+D/8L/IP9B/4H/+v8AAAAAAAAAAHz/0f9e/8P/
+  symbols:
+  - kind: Function
+    name: ___initstdio
+    size: 168
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nstream
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: _calloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___piob
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __amsg_exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 27
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 35
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 41
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 55
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 60
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 66
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 78
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 86
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 92
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 106
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 115
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 132
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 160
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: f9ef9aaa6d92676b23dc99bf1e58563bd04e4fd9
+  signature: U/9W/4v/dP8k/wz/V/9W/zP/2//o/wAAAAAAAAAA//90/yT/GP+L//j/6P8AAAAAAAAAAFn/Wf+L/8f/T/+F/8D/dP8a////dP8k/xT/Zv+L/wb/Rv9Q/0b/6P8AAAAAAAAAAFn/Zv89//////9Z/3X/4v+D/8v//////3T/JP8U/+j/AAAAAAAAAABZ/1//i//D/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: _fputws
+    size: 77
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_file
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __putwc_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 22
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 46
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 66
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

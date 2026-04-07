@@ -1,0 +1,72 @@
+- symbol: 0
+  hash: 25b07bb2496ef4128b0551bf2f54732e35e2e12a
+  signature: g/89/wAAAAAAAAAAAP9T/1b/i/81/wAAAAAAAAAAV/90/2b/hf/2/3X/G/85/zX/AAAAAAAAAAB0/1r/6P8AAAAAAAAAAIX/wP91/1H/i/81/wAAAAAAAAAAhf/2/3T/R/+L/1z/JP8Q/4X/2/90/z//U//o/wAAAAAAAAAAWf+L//j/i/8G/4X/wP90/zD/UP/o/wAAAAAAAAAAO//H/1n/dv8Y/4v/Bv9m/4P/PP94/z3/df8P/1f/U/9Q/+j/AAAAAAAAAACD/8T/DP+F/8D/dP8F/4P/xv8E/+v/0v+L/wb/jf9E/3j/Av/r/wL/M//A/1//Xv9b/8P/
+  symbols:
+  - kind: Function
+    name: __wgetenv_lk
+    size: 126
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___env_initialized
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __wenviron
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __environ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___mbtow_environ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __wcsnicoll
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 24
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 31
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 41
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 59
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

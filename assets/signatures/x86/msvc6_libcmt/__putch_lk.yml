@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: d457e19bb3c6b8b336598c6ad456fa5a8cf9921a
+  signature: Vf+L/+z/Uf+K/0X/CP+D/z3/AAAAAAAAAAD+/4j/Rf8L/3X/Bf/o/wAAAAAAAAAAof8AAAAAAAAAAIP/+P///3T/Hf+N/03//P9q/wD/Uf+N/03/C/9q/wH/Uf9Q////Ff8AAAAAAAAAAIX/wP90/wb/D/+2/0X/C//J/8P/g//I////yf/D/w==
+  symbols:
+  - kind: Function
+    name: __putch_lk
+    size: 68
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __confh
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___initconout
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__WriteConsoleA@20
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 25
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 49
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

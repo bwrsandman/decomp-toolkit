@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: f67e95e025d9ca56d67007a0871e2712b49a06b4
+  signature: Vf+L/+z/g//s/wj/U/9W/1f/Vf/8/4v/Xf8M/4v/Rf8I//f/QP8E/wb/AP8A/wD/D/+F/4L/AP8A/wD/if9F//j/i/9F/xD/if9F//z/jf9F//j/if9D//z/i/9z/wz/i/97/wj/g//+////dP9h/43/DP92/4P/fP+P/wT/AP90/0X/Vv9V/43/a/8Q////VP+P/wT/Xf9e/4v/Xf8M/wv/wP90/zP/eP88/4v/e/8I/1P/6P8AAAAAAAAAAIP/xP8E/43/a/8Q/1b/U//o/wAAAAAAAAAAg//E/wj/jf8M/3b/av8B/4v/RP+P/wj/6P8AAAAAAAAAAIv/BP+P/4n/Q/8M////VP+P/wj/i/97/wj/jf8M/3b/i/80/4//6/+h/7j/AP8A/wD/AP/r/xz/uP8B/wD/AP8A/+v/Ff9V/43/a/8Q/2r///9T/+j/AAAAAAAAAACD/8T/CP9d/7j/Af8A/wD/AP9d/1//Xv9b/4v/5f9d/8P/
+  symbols:
+  - kind: Function
+    name: __except_handler3
+    size: 189
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __global_unwind2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __local_unwind2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __NLG_Notify
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 91
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 104
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 121
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 168
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

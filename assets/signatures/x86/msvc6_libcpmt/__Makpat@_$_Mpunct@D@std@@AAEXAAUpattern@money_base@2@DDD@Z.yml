@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: ee077fdde2b22b1fba0409403634fc906f7faf82
+  signature: Vf+L/+z/gP95/yj/AP91/0H/iv9F/wz/qP/+/3X/Ov+K/03/EP/2/8H//v91/zL/gP99/xT/AP98/yz/gP99/xT/BP9//yb//v/I//b/2P8b/8D/JP/Y/4P/wP8o//7/yf/2/9n/G//J/4P/4f/s/4P/wf8U/wP/wf8P/77/Tf8U/43/hP8I/wAAAAAAAAAA6/8F/7j/AAAAAAAAAABq/wT/UP///3X/CP/o/wAAAAAAAAAAg//E/wz/Xf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: ?_Makpat@?$_Mpunct@D@std@@AAEXAAUpattern@money_base@2@DDD@Z
+    size: 97
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0FB@PNAB@?$CLv$x?$CLv$xv$?$CLxv?$CL$xv$?$CLx?$CL$vx?$CL$vx$v?$CLx@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_04HDBI@$?$CLvx?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 68
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 75
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 86
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

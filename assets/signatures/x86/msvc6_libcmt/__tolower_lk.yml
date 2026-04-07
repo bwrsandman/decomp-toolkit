@@ -1,0 +1,63 @@
+- symbol: 0
+  hash: 97423c7758284567f31b09cef9b1bf212cefdb58
+  signature: Vf+L/+z/Uf+D/z3/AAAAAAAAAAAA/1P/Vv9X/3X/Hf+L/0X/CP+D//j/Qf8P/4z/qv8A/wD/AP+D//j/Wv8P/4//of8A/wD/AP+D/8D/IP/p/5n/AP8A/wD/i/9d/wj/v/8A/wH/AP8A/2r/Af87/9//Xv99/yX/Of81/wAAAAAAAAAAfv8L/1b/U//o/wAAAAAAAAAAWf9Z/+v/Cv+h/wAAAAAAAAAAiv8E/1j/I//G/4X/wP91/wT/i//D/+v/Zf+L/xX/AAAAAAAAAACL/8P/wf/4/wj/D/+2/8j/9v9E/0r/Af+A/3T/D/+A/2X/Cv8A/2r/Av+I/0X/CP+I/13/Cf9Y/+v/Cf+A/2X/Cf8A/4j/Xf8I/4v/xv9W/2r/AP+N/03//P9q/wP/Uf9Q/43/Rf8I/1D/V////zX/AAAAAAAAAADo/wAAAAAAAAAAg//E/yD/hf/A/3T/rv87/8b/df8G/w//tv9F//z/6/8N/w//tv9F//3/D/+2/03//P/B/+D/CP8L/8H/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __tolower_lk
+    size: 203
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __isctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtLCMapStringA
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 62
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 71
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 80
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 99
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 159
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 164
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

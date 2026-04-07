@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 35854bb5131f1e52de97a2b24d5312c16a5a325e
+  signature: i/9E/yT/BP+L/0n/IP+J/wj/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?do_pos_format@?$_Mpunct@G@std@@MBE?AUpattern@money_base@2@XZ
+    size: 12
+    flags: 1
+    section: .text
+  relocations: []

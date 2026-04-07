@@ -1,0 +1,161 @@
+- symbol: 0
+  hash: 5cb167ca15e298e03f593d3d46b8458eaa7794cc
+  signature: Vf+L/+z/U/+L/13/CP9W/1f/hf/b/3X/Dv///3X/DP/o/wAAAAAAAAAAWf/p/xj/Af8A/wD/i/91/wz/hf/2/3X/Dv9T/+j/AAAAAAAAAABZ/zP/wP/p/wP/Af8A/wD/M////4P//v/g/w//h//Z/wD/AP8A/2r/Cf/o/wAAAAAAAAAAU//o/wAAAAAAAAAAWf+J/0X/DP+F/8D/Wf8P/4T/lP8A/wD/AP87/zX/AAAAAAAAAAB3/0L/Vv9T/1D/6P8AAAAAAAAAAIP/xP8M/4X/wP90/wT/i//7/+v/K/9W/+j/AAAAAAAAAACL//j/Wf+F////dP8i/4v/Q//8/0j/O//G/3L/Av+L/8b/UP9T/1f/6P8AAAAAAAAAAFP///91/wz/6P8AAAAAAAAAAIP/xP8U/4X///91/0D/hf/2/3X/A/9q/wH/Xv+D/8b/D/+D/+b/8P9W/2r/AP///zX/AAAAAAAAAAD//xX/AAAAAAAAAACL//j/hf///3T/Hv+L/0P//P9I/zv/xv9y/wL/i//G/1D/U/9X/+j/AAAAAAAAAABT////df8M/+j/AAAAAAAAAACD/8T/FP9q/wn/6P8AAAAAAAAAAFn/6/8n/2r/Cf/o/wAAAAAAAAAAhf/2/1n/df8D/2r/Af9e/4P/xv8P/4P/5v/w/1b/U/9q/wD///81/wAAAAAAAAAA//8V/wAAAAAAAAAAi//4/4X///91/x3/g/89/wAAAAAAAAAAAP90/xT/Vv/o/wAAAAAAAAAAhf/A/1n/D/+F/wT/////////6f/4//7//////4v/x/9f/17/W/9d/8P/
+  symbols:
+  - kind: Function
+    name: _realloc
+    size: 312
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_find_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_threshold
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_resize_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_alloc_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_free_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __crtheap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapAlloc@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapReAlloc@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __newmode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __callnewh
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 36
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 68
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 87
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 97
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 114
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 139
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 148
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 177
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 183
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 207
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 216
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 226
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 236
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 260
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 266
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 278
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 287
+    kind: x86_rel32
+    symbol: 15
+    addend: -4

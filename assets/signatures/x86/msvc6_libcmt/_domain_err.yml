@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: d61a2144fadda088569a08679b5f1e925b0dd8b3
+  signature: aP//////AP8A/2j/P/8T/wD/AP/o/wAAAAAAAAAA3f9E/yT/GP9Z/1n/UP9R/1H/3f8c/yT/3f9E/yT/FP9R/1H/3f8c/yT///90/yT/GP9q/wj/6P8AAAAAAAAAAIP/xP8c/8P/
+  symbols:
+  - kind: Function
+    name: _domain_err
+    size: 51
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __ctrlfp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __except1
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 43
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

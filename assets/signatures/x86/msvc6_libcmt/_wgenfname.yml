@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: b6685c98979a12eb938c4f52eb6fef2275c7b4b1
+  signature: Vf+L/+z/Uf9R/1b/av8u////df8I/+j/AAAAAAAAAACL//D/av8g/0b/av8A/0b/Vv/o/wAAAAAAAAAAg//E/xT/QP89////f/8A/wD/cv8F/4P/yP///+v/GP+N/03/+P9q/yD/Uf9Q/+j/AAAAAAAAAABQ/1b/6P8AAAAAAAAAAIP/xP8U/zP/wP9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: _wgenfname
+    size: 73
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _wcsrchr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcstoul
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ultow
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcscpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 26
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 54
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 61
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

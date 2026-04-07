@@ -1,0 +1,81 @@
+- symbol: 0
+  hash: 1471da704d9db6aee3c34cfa8a02fb269e9305d1
+  signature: Vf+L/+z/gf/s/wj/Af8A/wD/U/+L/13/CP+F/9v/dP9U/1P/6P8AAAAAAAAAAIX/wP9Z/3X/G//o/wAAAAAAAAAAx/8A/w//AP8A/wD/6P8AAAAAAAAAAMf/AP8N/wD/AP8A/zP/wP9b/8n/w/+N/0X//P+A/2X/C/8A/1D/jf+F//j//v//////UP+N/0X/CP+A/8P/QP9o/wT/Af8A/wD/UP+I/13/CP/G/0X/Cf86/8b/Rf8K/y7///8V/wAAAAAAAAAA6/8S/43/hf/4//7//////1D/aP8E/wH/AP8A////Ff8AAAAAAAAAAIX/wP90/7f/QP89/wT/Af8A/wD/d/+v/4v/Tf8M/4X/yf91/yL/O/9F/xD/f/8D/4v/Rf8Q/1D/6P8AAAAAAAAAAFn/i//I/4X/yf91/yL/6P8AAAAAAAAAAMf/AP8M/wD/AP8A/+v/hv87/0X/EP9+/xD/6P8AAAAAAAAAAMf/AP8i/wD/AP8A/+n/cf////////+N/4X/+P/+//////9Q/1H/6P8AAAAAAAAAAFn/Wf/p/1//////////
+  symbols:
+  - kind: Function
+    name: __getdcwd_lk
+    size: 213
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __validdrive
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetFullPathNameA@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetCurrentDirectoryA@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 29
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 40
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 95
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 115
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 148
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 160
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 178
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 202
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

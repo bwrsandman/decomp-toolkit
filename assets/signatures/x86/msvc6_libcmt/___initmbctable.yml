@@ -1,0 +1,32 @@
+- symbol: 0
+  hash: b674375bd4c7eaa7aba95468afb0f0eb8a8bb6ed
+  signature: g/89/wAAAAAAAAAAAP91/xL/av/9/+j/AAAAAAAAAABZ/8f/Bf8AAAAAAAAAAAH/AP8A/wD/w/8=
+  symbols:
+  - kind: Function
+    name: ___initmbctable
+    size: 28
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mbctype_initialized
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __setmbcp
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 12
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 19
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

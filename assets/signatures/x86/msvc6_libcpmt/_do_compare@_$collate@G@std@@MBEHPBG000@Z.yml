@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 4025ba784ba3aa52426ab581d2628fe898dcc708
+  signature: Vf+L/+z/i/9F/xD/i/9N/wj/Vv87/03/DP90/yL/O/9F/xT/dP8i/2b/i/8R/2b/i/8w/2b/O//y/3f/CP9y/wv/Qf9B/0D/QP/r/+P/g//I////6/8S/2r/Af9Y/+v/Df87/0X/FP91//H/M//A/zv/Tf8M/w//lf/A/17/Xf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: ?do_compare@?$collate@G@std@@MBEHPBG000@Z
+    size: 67
+    flags: 1
+    section: .text
+  relocations: []

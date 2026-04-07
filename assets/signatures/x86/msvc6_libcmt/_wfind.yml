@@ -1,0 +1,104 @@
+- symbol: 0
+  hash: 0102af8815791669cf3ad380f0531ab0b42f5318
+  signature: g/98/yT/BP8A/3T/TP+D/z3/AAAAAAAAAAAA/3X/EP9o/1T/A/8A/wD/6P8AAAAAAAAAAFn/o/8AAAAAAAAAAKH/AAAAAAAAAACF/8D/dP8O/1D///8V/wAAAAAAAAAAg/8l/wAAAAAAAAAAAP///zX/AAAAAAAAAAD//3T/JP8I////Ff8AAAAAAAAAAIP/+P///6P/AAAAAAAAAAB1/y7/6/8p////Nf8AAAAAAAAAAP//Nf8AAAAAAAAAAP//Ff8AAAAAAAAAAIX/wP91/xb///81/wAAAAAAAAAA//8V/wAAAAAAAAAAg/8l/wAAAAAAAAAAAP8z/8D/w/+h/wAAAAAAAAAAg//A/yz/w/8=
+  symbols:
+  - kind: Function
+    name: _wfind
+    size: 136
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _?findbuf@?1??wfind@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _?_WildFindHandle@?1??wfind@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __imp__FindClose@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FindFirstFileW@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FindNextFileW@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 28
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 44
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 50
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 57
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 67
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 75
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 85
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 91
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 97
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 107
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 113
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 119
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 128
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

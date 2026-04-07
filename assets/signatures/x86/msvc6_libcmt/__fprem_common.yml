@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 2564c924646d3a993dd48a090180d8dd88795dd4
+  signature: UP9T/1H/i/9E/yT/Fv81/wD/B/8A/wD/qf8A/wf/AP8A/w//hf+D/wH/AP8A/8H/6P8L/4P/4P8P/4D/uP8AAAAAAAAAAAD/D/+E/3D/Af8A/wD/i/9E/yT/Fv8l/wD/AP///3//Pf8A/wD///9//w//hP9c/wH/AP8A/4v/RP8k/y7/Jf8A/wD///9//w//hP9N/wH/AP8A/z3/AP8A////f/8P/4T/Qv8B/wD/AP+L/0T/JP8s/wP/wP8P/4X/Nv8B/wD/AP+L/0T/JP8U/wP/wP8P/4X/Kv8B/wD/AP+L/0T/JP8Y/yX///9//wD/AP+D/8D/P/+L/1z/JP8w/4H/4////3//AP8A/yv/2P93/17/i/9E/yT/GP8l////f/8A/wD/g//A/wr/i/9c/yT/MP+B/+P///9//wD/AP8r/9j/D/+I//L/AP8A/wD/2/9s/yT/KP+L/0T/JP8Y/4v/XP8k/zD/gf/j////f/8A/wD/i//L/yv/2P+D/+P/B/+D/8v/BP8r/8v/i//Y/4H/4/8A/4D/AP8A/wv/y/+J/0z/JP8Y/9v/bP8k/xD/if9E/yT/GP/Z/8n/2f/4/9v/fP8k/yj/3f/Y/+v/ov/3/8L/Av8A/wD/AP91/wj/2/9s/yT/EP/b/3z/JP8c/9n/fP8k/zT/i/9E/yT/NP8N/z//A/8A/wD/if9E/yT/OP/Z/2z/JP84/4v/RP8k/xj/Jf///3//AP8A/4v/XP8k/zD/gf/j////f/8A/wD/K//Y/4P/4/8//4P/y/8g/4P/w/8B/4v/y/+L/0T/JP8Y/4v/XP8k/zD/gf/j////f/8A/wD/Jf8A/4D/AP8A/wv/2P+J/1z/JP8Y/9v/bP8k/xD/2f/h/9v/bP8k/yj/2f/h/9j/0f/f/+D/Jf8A/wH/AP8A/3X/Av/Y/+H/2f/J/9z/Df8AAAAAAAAAANn/yf+D/+n/Af91/+T/i/9c/yT/MP/b/3z/JP8o/93/2P/b/2z/JP8c/9v/Lf8AAAAAAAAAANn/+P/d/9j/2/9s/yT/KP/Z/2z/JP80/4H/4/8A/4D/AP8A/3T/Dv/Z/+D/6/8K/9v/bP8k/xD/2/9s/yT/KP/Z//j/9//C/wP/AP8A/wD/dP9W/93/fP8k/zz/9//C/wH/AP8A/wD/dP8f/9n/fP8k/zT/i/9E/yT/NP8N/wD/A/8A/wD/if9E/yT/OP/Z/2z/JP84/9z/Df8AAAAAAAAAANn/bP8k/zT/i/9E/yT/PP/Z/8n/3f/Y/9v/bP8k/xz/2f/J/yX/AP9D/wD/AP+D/+z/HP/Z/zT/JP+B/2T/JP8E////vP8A/wD/Cf9E/yT/BP/Z/yT/JP+D/8T/HP9Z/1v/WP/D/w==
+  symbols:
+  - kind: Function
+    name: __fprem_common
+    size: 518
+    flags: 1
+    section: .text
+  - kind: Object
+    name: fprem_risc_table
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: half
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: big_number
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: one_shr_64
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 31
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 355
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 382
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 463
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

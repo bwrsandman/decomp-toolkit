@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: b43bb14631189fe34da0a742f5f9b0608d5631b4
+  signature: Vv+L//H/i/9G/xz/i/8A/4X/wP90/xD/i/9O/yz/i/8J/wP/yP87/8H/c/8F/w//tv8A/17/w/9X/4v/Pv+L/87///9X/xT/UP+L/87///9X/wj/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: ?underflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+    size: 45
+    flags: 1
+    section: .text
+  relocations: []

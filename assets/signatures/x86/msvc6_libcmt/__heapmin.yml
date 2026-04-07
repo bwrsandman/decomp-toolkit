@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: 9a1ac15eb491754476cb3623a267f5b93c102f1d
+  signature: av8J/+j/AAAAAAAAAADo/wAAAAAAAAAAav8J/+j/AAAAAAAAAABZ/1n/av8A////Nf8AAAAAAAAAAP//Ff8AAAAAAAAAAIX/wP91/yX///8V/wAAAAAAAAAAg//4/3j/df8W/+j/AAAAAAAAAADH/wD/eP8A/wD/AP/o/wAAAAAAAAAAx/8A/yj/AP8A/wD/g//I////w/8z/8D/w/8=
+  symbols:
+  - kind: Function
+    name: __heapmin
+    size: 79
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_heapmin
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __crtheap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapCompact@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 3
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 8
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 15
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 25
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 31
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 51
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

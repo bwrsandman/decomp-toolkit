@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 01c022db165d9c383d9e0bebc3dc3268092ee201
+  signature: i/9B/xz/i/8A/4X/wP90/xD/i/9R/yz/i/8S/43/FP9Q/zv/wv9z/wT/Zv+L/wD/w/+L/wH///9Q/xD/w/8=
+  symbols:
+  - kind: Function
+    name: ?sgetc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QAEGXZ
+    size: 31
+    flags: 1
+    section: .text
+  relocations: []

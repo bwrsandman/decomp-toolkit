@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: a3794107f91e4fdff4e388d0e5f7aaee761fd8ac
+  signature: i/8J/4X/yf90/xH/6P8AAAAAAAAAAIX/wP90/wj/i/8Q/2r/Af+L/8j///8S/8P/
+  symbols:
+  - kind: Function
+    name: ??1locale@std@@QAE@XZ
+    size: 24
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Decref@facet@locale@std@@QAEPAV123@XZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

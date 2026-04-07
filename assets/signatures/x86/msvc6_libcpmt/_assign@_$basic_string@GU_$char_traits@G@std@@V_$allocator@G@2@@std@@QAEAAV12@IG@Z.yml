@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 4446ca3a0d0f9806aa6e5c7f59522bf5edb98a9a
+  signature: U/+L/1z/JP8I/zv/Hf8AAAAAAAAAAFb/i//x/3X/Bf/o/wAAAAAAAAAAav8B/1P/i//O/+j/AAAAAAAAAACE/8D/dP8u/1f/i/9+/wT/hf/b/3b/Gv+L/0T/JP8U/4v/y/9m/4v/0P/B/+L/EP9m/4v/0P+L/8L/0f/p//P/q/8T/8n/Zv/z/6v/i/9G/wT/if9e/wj/X/9m/4P/JP9Y/wD/i//G/17/W//C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?assign@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QAEAAV12@IG@Z
+    size: 88
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?npos@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Xlen@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Grow@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAE_NI_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 17
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

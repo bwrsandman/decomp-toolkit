@@ -1,0 +1,117 @@
+- symbol: 0
+  hash: 3fabe5bfd4e0351ce271a30e817883479d380d3f
+  signature: Vf+L/+z/U/+L/13/EP9W/1f/hf/b/3X/B/8z/8D/6f+7/wD/AP8A/77/AAAAAAAAAABW////Ff8AAAAAAAAAAIP/Pf8AAAAAAAAAAAD/i/89/wAAAAAAAAAAdP8U/1b////X/2r/E//o/wAAAAAAAAAAWf/H/0X/EP8B/wD/AP8A/+v/BP+D/2X/EP8A/6H/AAAAAAAAAACF/8D/df8j/zn/Rf8Q/3T/Cv9q/xP/6P8AAAAAAAAAAFn/6/8D/1b////X/1P///91/wz///91/wj/6P8AAAAAAAAAAIP/xP8M/+v/XP///zX/AAAAAAAAAABT////df8M/1P///91/wj/aP8B/xD/AP8A/1D/6P8AAAAAAAAAAIv/2P+D/8T/HP+F/9v/df8k/zn/Rf8Q/3T/Cv9q/xP/6P8AAAAAAAAAAFn/6/8D/1b////X/+j/AAAAAAAAAADH/wD/Fv8A/wD/AP+4/////////3//6/8W/4P/ff8Q/wD/dP8K/2r/E//o/wAAAAAAAAAAWf/r/wP/Vv///9f/jf9D//7/X/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __strnicoll
+    size: 212
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___unguarded_readlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedIncrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___setlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedDecrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __strnicmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_collate_cp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtCompareStringA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 34
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 53
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 72
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 88
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 106
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 117
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 136
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 157
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 168
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 194
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

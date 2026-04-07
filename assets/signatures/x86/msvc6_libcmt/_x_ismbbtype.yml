@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 382bdc7f4577591b9b153ea6bd1eb556e6c23948
+  signature: D/+2/0T/JP8E/4r/TP8k/wz/hP+I/wAAAAAAAAAAdf8c/4P/fP8k/wj/AP90/w7/D/+3/wT/Rf8AAAAAAAAAACP/RP8k/wj/6/8C/zP/wP+F/8D/df8B/8P/av8B/1j/w/8=
+  symbols:
+  - kind: Function
+    name: _x_ismbbtype
+    size: 49
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __ctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

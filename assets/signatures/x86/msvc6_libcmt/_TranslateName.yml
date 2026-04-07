@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 7e3839c2e641ec6addf0e7d387d07fc986ac31f5
+  signature: Vf+L/+z/U/9W/1f/M//b/zn/Xf8M/2r/Af9Y/3z/Q/+F/8D/dP8//4v/Rf8M/wP/w/+Z/yv/wv+L//D/i/9F/wj/0f/+////NP/w/43/PP/w/4v/Rf8Q////MP/o/wAAAAAAAAAAWf+F/8D/Wf91/wr/i/9N/xD/g//H/wT/if85/+v/C/99/wb/Tv+J/3X/DP/r/wP/jf9e/wH/O/9d/wz/fv+9/1//Xv9b/13/w/8=
+  symbols:
+  - kind: Function
+    name: _TranslateName
+    size: 88
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __stricmp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 47
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

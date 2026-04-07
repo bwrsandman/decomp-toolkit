@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 6f972c92b253522bd23c4d55ae1a19cfd71614bf
+  signature: i/9E/yT/BP+L/8j/Zv+D/zj/AP90/wj/Qf9B/2b/g/85/wD/df/4/4v/VP8k/wj/Vv9m/4v/Mv9m/4n/Mf9B/0H/Qv9C/2b/hf/2/3X/8f9e/8P/
+  symbols:
+  - kind: Function
+    name: _wcscat
+    size: 42
+    flags: 1
+    section: .text
+  relocations: []

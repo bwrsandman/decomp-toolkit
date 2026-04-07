@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 6619c72c2dc5581ab5ade6c1f5015bcd4729a7d4
+  signature: i/9E/yT/BP+6/wAAAAAAAAAAVv+L/8r/O/9B/xD/dv8F/zv/Qf8U/3L/CP+L/wn/O//K/3T/N//r/+7/qP8P/3X/Mf+L//D/uv8A/wH/AP8A/4H/5v///w//AP8A/zv/8v9y/yD/i/90/yT/DP+J/w7/i/90/yT/EP+L/8j/Zv+B/+H/AP/w/yv/wf+J/w7/K//C/17/wf/4/wT/jf9E/wj/CP/D/zP/wP9e/8P/
+  symbols:
+  - kind: Function
+    name: ___old_sbh_find_block
+    size: 87
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___old_small_block_heap
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

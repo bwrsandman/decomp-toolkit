@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: a18ca575be4f372762f99cca756dd7b4093e6d78
+  signature: uP8AAAAAAAAAAGb/i/9M/yT/BP9m/zv/CP90/w3/QP9A/z3/AAAAAAAAAAB8/+3/av8B/1j/w/8z/8D/w/8=
+  symbols:
+  - kind: Function
+    name: _TestDefaultCountry
+    size: 31
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___rglangidNotDefault
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

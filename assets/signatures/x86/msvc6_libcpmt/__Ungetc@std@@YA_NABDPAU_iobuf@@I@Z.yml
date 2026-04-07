@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 7fde20fb2378b72c14b2536184d8f7249be3b273
+  signature: i/9E/yT/BP9W/4v/dP8k/xD/V/+F//b/jf88/zD/dv8b/w//tv9H//////90/yT/EP9P/1D/6P8AAAAAAAAAAFn/g//4////Wf90/wP/Tv91/+f/hf/2/3X/BP+w/wH/6/8Y/2r/Af9f/zv/9/9z/w//K//+////dP8k/xD/6P8AAAAAAAAAAE//Wf91//P/Mv/A/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?_Ungetc@std@@YA_NABDPAU_iobuf@@I@Z
+    size: 77
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _ungetc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fgetc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 28
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 64
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

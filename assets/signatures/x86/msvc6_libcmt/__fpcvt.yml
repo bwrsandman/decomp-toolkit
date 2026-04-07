@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 8f4d23622f99839c8dd0f3881121a7cc8c588814
+  signature: Vf+L/+z/Vv/o/wAAAAAAAAAAi//w/4P/fv9E/wD/df8S/2j/Xf8B/wD/AP/o/wAAAAAAAAAAhf/A/1n/if9G/0T/dP83/4v/dv9E/7j/W/8B/wD/AP85/0X/DP9//wP/i/9F/wz/V/+L/33/CP9X/1D/Vv/o/wAAAAAAAAAAi/9N/xT/g//E/wz/M//A/4P/P/8t/w//lP/A/4n/Af+L/03/EP+L/0f/BP9f/4n/Af+L/8b/Xv9d/8P/
+  symbols:
+  - kind: Function
+    name: __fpcvt
+    size: 93
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fptostr
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 23
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

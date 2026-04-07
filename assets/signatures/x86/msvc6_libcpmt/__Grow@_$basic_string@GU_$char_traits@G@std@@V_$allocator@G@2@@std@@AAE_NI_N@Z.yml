@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 67f5ffdd702c175cff4dd4889735b3ec51c6ebc2
+  signature: Vv9X/4v/fP8k/wz/i//x/4H////9//////9//3b/Bf/o/wAAAAAAAAAAi/9O/wT/M//S/zv/yv90/yD/iv9B////Ov/C/3T/Gf88////dP8V/zv/+v91/03//v/I/1L/iP9B////i//O/+j/AAAAAAAAAAAy/8D/6/9G/zv/+v91/xb/OP9U/yT/EP90/wT/av8B/+v/5/87/8r/dP/q/4n/Vv8I/2b/if8R/+v/4v84/1T/JP8Q/3T/F/+L/0b/DP+D//j/H/93/wT/O//H/3P/GP9q/wH/i//O/+j/AAAAAAAAAADr/wX/Of9+/wz/c/8I/1f/i//O/+j/AAAAAAAAAACw/wH/X/9e/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?_Grow@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAE_NI_N@Z
+    size: 137
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Xlen@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Tidy@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Copy@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAEXI@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 54
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 111
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 126
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

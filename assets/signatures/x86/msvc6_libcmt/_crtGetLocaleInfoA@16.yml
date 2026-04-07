@@ -1,0 +1,65 @@
+- symbol: 0
+  hash: 9ac42e7d9efc7be67025e4d275b3c76b6147f4a2
+  signature: Vf+L/+z/U/9W/1f/av8a/zP/9v9f/43/BP83/4v/Xf8U/5n/K//C/9H/+P+L/8j/a//J/yz/i/+J/wAAAAAAAAAAOf9N/wj/dP8o/zn/Tf8I/3P/Bf+N/3j////r/wP/jf9w/wH/O//3/37/1P9T////df8Q////df8M////df8I////Ff8AAAAAAAAAAF//Xv9b/13/wv8Q/wD/i/9N/wz/Sf90/1v/Sf9J/3T/Tf+D/+n/BP90/z7/g//p/wT/dP8v/4H/6f/2/w//AP8A/3T/HP9J/3T/Dv9J/0n/df/G/2v/wP8s/wX/AAAAAAAAAADr/zz/a//A/yz/i/+A/wAAAAAAAAAA6/8x/2v/wP8s/4v/gP8AAAAAAAAAAOv/Jv9r/8D/LP8F/wAAAAAAAAAA6/8c/2v/wP8s/wX/AAAAAAAAAADr/xL/a//A/yz/Bf8AAAAAAAAAAOv/CP9r/8D/LP8F/wAAAAAAAAAAhf/A/w//hP94/////////4P/+/8B/w//jP9v/////////4v/df8Q/43/S////1H/UP9W/+j/AAAAAAAAAACD/8T/DP+A/2T/Hv///wD/av8B/1j/6f9h/////////w==
+  symbols:
+  - kind: Function
+    name: _crtGetLocaleInfoA@16
+    size: 230
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___rgLocInfo
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: __imp__GetLocaleInfoA@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strncpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 29
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 67
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 117
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 128
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 139
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 149
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 159
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 169
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 179
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 210
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

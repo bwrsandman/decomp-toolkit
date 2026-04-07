@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 614b1e8a75f4ed2a819827ad9c11993000f43bce
+  signature: Vf+L/+z/Uf9R/1P/Vv9X/2T/of8A/wD/AP8A/4n/Rf/4/8f/Rf/8/wAAAAAAAAAAav8A////df8M////df/8////df8I/+j/AAAAAAAAAACL/0X/DP+L/0D/BP8k//3/i/9N/wz/if9B/wT/ZP+h/wD/AP8A/wD/i/9d//j/if8D/2T/if8d/wD/AP8A/wD/X/9e/1v/yf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?_UnwindNestedFrames@@YGXPAUEHRegistrationNode@@PAUEHExceptionRecord@@@Z
+    size: 79
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $ReturnPoint$16650
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _RtlUnwind@16
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 36
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

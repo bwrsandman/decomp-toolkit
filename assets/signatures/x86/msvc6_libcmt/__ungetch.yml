@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 1b625c4b9124e9f6789974a5997330b465596e03
+  signature: Vv9q/wj/6P8AAAAAAAAAAP//dP8k/wz/6P8AAAAAAAAAAGr/CP+L//D/6P8AAAAAAAAAAIP/xP8M/4v/xv9e/8P/
+  symbols:
+  - kind: Function
+    name: __ungetch
+    size: 33
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ungetch_lk
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 13
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 22
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

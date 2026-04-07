@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 1a4d3332c56320af6cbb541f5892b32158fd28af
+  signature: i/9M/yT/CP+L/0T/JP8E/1b/Zv+L/xH/jf9w/wL/Zv+J/xD/Qf9B/2b/hf/S/3T/Cv9m/4v/Ef9m/4n/Fv9G/0b/6//v/17/w/8=
+  symbols:
+  - kind: Function
+    name: _wcscpy
+    size: 37
+    flags: 1
+    section: .text
+  relocations: []

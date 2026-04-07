@@ -1,0 +1,54 @@
+- symbol: 0
+  hash: 2987f9e403fee93a198ec402a2cebd253b0cbaf4
+  signature: Vf+L/+z/g//s/0z/U/9W/1f/jf9F/7T///91/xz/aP8AAAAAAAAAAFD/6P8AAAAAAAAAAIv/Tf8U/4v/2P+D/8T/DP+L/0H/FP+F/8D/fv8K/zv/w/9+/wb/K//D/4v/+P/r/wL/M////4v/Qf8M/yX/wP8B/wD/AP+D//j/QP90/yz/i/9F/wz/if9F//j/i/9F/xD/hf///4n/Rf/8/3b/Dv///3X/GP+N/03/+P/o/wAAAAAAAAAAT/91//L/i/9F//j/M////4n/Rf8M/4v/Rf/8/4n/Rf8Q/4v/Rf8M/43/df+0/4n/Rf/4/4v/Rf8Q/4X/2/+J/0X//P92/xf/D/++/wb/UP/o/wAAAAAAAAAAWf9Q/43/Tf/4/+j/AAAAAAAAAABG/0v/df/p/4v/Rf8U/4P/YP8U/wD/i/9F//j/if9F/wz/i/9F//z/hf///4n/Rf8Q/3b/Dv///3X/GP+N/03/DP/o/wAAAAAAAAAAT/91//L/i/9F/wj/i/9N/wz/X/9e/4n/CP+L/03/EP+J/0j/BP9b/8n/wv8Y/wD/
+  symbols:
+  - kind: Function
+    name: ?do_put@?$num_put@GV?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@GU?$char_traits@G@std@@@2@V32@AAVios_base@2@GPBX@Z
+    size: 210
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_02MHAC@?$CFp?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _sprintf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??4?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@QAEAAV01@G@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _btowc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 89
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 134
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 144
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 182
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

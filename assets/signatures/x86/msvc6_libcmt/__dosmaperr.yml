@@ -1,0 +1,57 @@
+- symbol: 0
+  hash: 5c712e2aa35dc6a9c2d5598e0ce8702df75c4937
+  signature: Vv/o/wAAAAAAAAAAi/9M/yT/CP8z//b/if8I/7j/AAAAAAAAAAA7/wj/dP8i/4P/wP8I/0b/Pf8AAAAAAAAAAHz/8f+D//n/E/9y/yL/g//5/yT/d/8d/+j/AAAAAAAAAADH/wD/Df8A/wD/AP9e/8P/6P8AAAAAAAAAAIv/DP/1/wAAAAAAAAAAXv+J/wj/w/+B//n/vP8A/wD/AP9y/xX/gf/5/8r/AP8A/wD/d/8N/+j/AAAAAAAAAADH/wD/CP8A/wD/AP9e/8P/6P8AAAAAAAAAAMf/AP8W/wD/AP8A/17/w/8=
+  symbols:
+  - kind: Function
+    name: __dosmaperr
+    size: 115
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _errtable
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 2
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 45
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 58
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 65
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 90
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 103
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

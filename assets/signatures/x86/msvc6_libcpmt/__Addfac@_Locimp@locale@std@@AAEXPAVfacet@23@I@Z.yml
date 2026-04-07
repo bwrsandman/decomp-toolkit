@@ -1,0 +1,91 @@
+- symbol: 0
+  hash: 3896bd109ab6a331c674a2b88d25dfce518aeed3
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1P/Vv+L//H/V/+N/03/8P/o/wAAAAAAAAAAi/9d/wz/g/9l//z/AP85/17/DP93/0H/jf97/wH/g////yD/c/8D/2r/IP9f/4v/x//B/+D/Av9Q////dv8I/+j/AAAAAAAAAABZ/4n/Rf8M/4X/wP9Z/3X/Bf/o/wAAAAAAAAAAi/9F/wz/if9G/wj/Of9+/wz/c/8P/4v/Rv8M/4v/Tv8I/4P/JP+B/wD///9G/wz/6//s/4v/Tf8I/+j/AAAAAAAAAACL/0b/CP+L//v/wf/n/wL/i/8M/zj/hf/J/3T/Ef/o/wAAAAAAAAAAhf/A/3T/CP+L/xD/av8B/4v/yP///xL/i/9G/wj/i/9N/wj/g/9N//z///+J/wz/OP+N/03/8P/o/wAAAAAAAAAAi/9N//T/X/9e/1v/ZP+J/w3/AAAAAAAAAADJ/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?_Addfac@_Locimp@locale@std@@AAEXPAVfacet@23@I@Z
+    size: 179
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L12452
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _realloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Nomemory@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Incref@facet@locale@std@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Decref@facet@locale@std@@QAEPAV123@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 20
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 57
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 71
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 105
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 125
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 158
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 171
+    kind: x86_abs32
+    symbol: 9
+    addend: 0

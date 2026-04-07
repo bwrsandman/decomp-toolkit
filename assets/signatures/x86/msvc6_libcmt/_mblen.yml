@@ -1,0 +1,58 @@
+- symbol: 0
+  hash: ab7a233269948b2accc3722b7f50e205abd5ef9c
+  signature: i/9M/yT/BP8z/9L/O//K/3T/av+K/wH/Ov/C/3T/ZP85/1T/JP8I/3T/Xv8P/7b/wP9W/4v/Nf8AAAAAAAAAAPb/RP9G/wH/gP9e/3T/MP+h/wAAAAAAAAAAg//4/wH/fv8i/zn/RP8k/wj/fP8c/1L/Uv9Q/1H/av8J////Nf8AAAAAAAAAAP//Ff8AAAAAAAAAAIX/wP90/wb/of8AAAAAAAAAAMP/g//I////w/9S/1L/av8B/1H/av8J////Nf8AAAAAAAAAAP//Ff8AAAAAAAAAAPf/2P8b/8D/g//g/wL/SP/D/zP/wP/D/w==
+  symbols:
+  - kind: Function
+    name: _mblen
+    size: 119
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__MultiByteToWideChar@24
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 28
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 64
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 70
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 79
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 97
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 103
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

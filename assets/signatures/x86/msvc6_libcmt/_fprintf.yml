@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 831aeb82a31b256b8240f0106519e02f4cfa73d4
+  signature: U/9W/4v/dP8k/wz/V/9W/+j/AAAAAAAAAABW/+j/AAAAAAAAAACL//j/jf9E/yT/IP9Q////dP8k/yD/Vv/o/wAAAAAAAAAAVv9X/4v/2P/o/wAAAAAAAAAAVv/o/wAAAAAAAAAAg//E/yD/i//D/1//Xv9b/8P/
+  symbols:
+  - kind: Function
+    name: _fprintf
+    size: 60
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock_file
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __stbuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __output
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ftbuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 15
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 32
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 41
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 47
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

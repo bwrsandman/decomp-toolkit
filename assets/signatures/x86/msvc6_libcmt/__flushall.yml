@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 5484474de54d1eb426c31f88a9367c2afac77ea8
+  signature: av8B/+j/AAAAAAAAAABZ/8P/
+  symbols:
+  - kind: Function
+    name: __flushall
+    size: 9
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _flsall
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 3
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

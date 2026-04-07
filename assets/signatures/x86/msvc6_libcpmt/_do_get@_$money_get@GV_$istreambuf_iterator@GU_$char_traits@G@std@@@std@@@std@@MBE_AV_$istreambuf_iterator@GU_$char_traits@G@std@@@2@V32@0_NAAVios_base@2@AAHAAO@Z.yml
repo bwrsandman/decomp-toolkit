@@ -1,0 +1,153 @@
+- symbol: 0
+  hash: 95fd33980c60f439fe97bc264f54c632ede2a9de
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/KP9T/1b/V/+N/0X/FP///3X/IP///3X/HP9Q/43/Rf8M/1D/jf9F/9z/UP/o/wAAAAAAAAAAjf9F/xT/M//b/1D/jf9N/wz/if9d//z/6P8AAAAAAAAAAIv/ff8k/4T/wP90/wP/g/8P/wH/Of9d/+T/df8I/4P/D/8C/+n/t/8A/wD/AP+K/0X/I/9T/43/Tf/M/4j/Rf/M/+j/AAAAAAAAAACL/0X/5P/G/0X//P8B/zn/Rf/Y/3P/Cv9T/1D/jf9N/8z/6P8AAAAAAAAAADP/9v85/13/5P92/z//Of91/+T/cv8V/zn/Xf/g/3T/EP+N/03/3P/o/wAAAAAAAAAAi/9F/+D/jf8E/3D/6/8F/7j/AAAAAAAAAABm/4v/AP9Q/+j/AAAAAAAAAABZ/4j/Rf8g////df8g/43/Tf/M/2r/Af/o/wAAAAAAAAAARv85/3X/5P93/8b/i/91/9D/O//z/3X/Bf++/wAAAAAAAAAA6P8AAAAAAAAAAIn/GP+N/0X/HP9T/1D/Vv/o/wAAAAAAAAAA3f9d/+z/g//E/wz/Of91/xz/dP8T/+j/AAAAAAAAAAA5/xj/df8K/93/Rf/s/4v/Rf8o/93/GP/r/wP/g/8P/wL/av8B/43/Tf/M/4j/Xf/8/+j/AAAAAAAAAACL/3X/CP+L/0X/DP+D/03//P///2r/Af+J/wb/i/9F/xD/jf9N/9z/if9G/wT/6P8AAAAAAAAAAIv/Tf/0/4v/xv9f/17/W/9k/4n/Df8AAAAAAAAAAMn/wv8k/wD/
+  symbols:
+  - kind: Function
+    name: ?do_get@?$money_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@GU?$char_traits@G@std@@@2@V32@0_NAAVios_base@2@AAHAAO@Z
+    size: 309
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L16860
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Getmfld@?$money_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@ABE?AV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@2@AAV?$istreambuf_iterator@GU?$char_traits@G@std@@@2@0_NAAVios_base@2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?equal@?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@QBE_NABV12@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAE_NI_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Freeze@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_C@?1??_Nullstr@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@CAPBGXZ@4GB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _wctob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ID@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __Stold
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Tidy@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 35
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 52
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 90
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 112
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 137
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 150
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 159
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 176
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 194
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 199
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 212
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 228
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 258
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 286
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 301
+    kind: x86_abs32
+    symbol: 15
+    addend: 0

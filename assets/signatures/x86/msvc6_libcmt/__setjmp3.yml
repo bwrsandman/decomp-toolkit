@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: d0ecdd176137a5f9aa8f4f1e50b7292b77bab74e
+  signature: i/9U/yT/BP+J/yr/if9a/wT/if96/wj/if9y/wz/if9i/xD/i/8E/yT/if9C/xT/x/9C/yD/MP8y/0P/Vv/H/0L/JP8A/wD/AP8A/2T/of8AAAAAAAAAAIn/Qv8Y/4P/+P///3X/Cf/H/0L/HP///////////+v/O/+L/0z/JP8I/wv/yf90/wr/i/9E/yT/DP+J/0L/JP9J/3X/CP+L/0D/DP+J/0L/HP/r/yH/i/9E/yT/EP+J/0L/HP9J/3T/F/9W/1f/jf90/yT/HP+N/3r/KP+D//n/Bv92/wX/uf8G/wD/AP8A//P/pf9f/17/K//A/8P/
+  symbols:
+  - kind: Function
+    name: __setjmp3
+    size: 123
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 40
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

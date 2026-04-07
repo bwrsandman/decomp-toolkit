@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: 71bc323cda216fd950fadbffbcd794f5756f8187
+  signature: i/9E/yT/BP+D//j///90/xT/g/89/wAAAAAAAAAA//91/wv/Jf///wD/AP8A/6P/AAAAAAAAAADD/4P/yP///8P/
+  symbols:
+  - kind: Function
+    name: __ungetch_lk
+    size: 33
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _chbuf
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 24
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

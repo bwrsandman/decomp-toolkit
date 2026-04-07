@@ -1,0 +1,127 @@
+- symbol: 0
+  hash: 5a4ca3aff590168ff432ac293d9f9200336e1ca7
+  signature: Vf+L/+z/g//s/xj/U/9W/77//////wD/AP9X/1b/aP8//xP/AP8A/+j/AAAAAAAAAACL/1X/Dv9Z/4v/ff8W/1n/i//Y/4v/yv+4//D/f/8A/wD/if9d//z/Zv8j/8j/Zv87/8j/D/+E/7H/Af8A/wD/i//P/2b/I//I/2b/O//I/w//hP+j/wH/AP8A/93/Rf8I/9z/Hf8AAAAAAAAAAN//4P+e/3P/CP/d/0X/CP/Z/+D/3f9d/wj/3f9F/xD/3P8d/wAAAAAAAAAA3//g/57/c/8I/93/Rf8Q/9n/4P/d/13/EP/d/0X/EP/c/13/CP/f/+D/nv92/wX/3f9F/xD/6/8D/93/Rf8I/93/Xf/4/93/Rf/4/9z/Hf8AAAAAAAAAAN//4P+e/3X/FP9W/1P/6P8AAAAAAAAAAN3/Bf8AAAAAAAAAAFn/Wf/p/9X/Af8A/wD/3f9F/wj/3P91//j/jf9F//D/UP9R/1H/3f9d/wj/3f9F/xD/3P91//j/3f9d/xD/3f9F/wj/3P9N/wj/3f9F/xD/3P9N/xD/3v/B/93/Xf/o/93/Rf/o/93/HP8k/+j/AAAAAAAAAADd/xz/JP/o/wAAAAAAAAAA3f9d/+j/3f9F//j/g//E/wz/jf9F//T/UP9R/1H/3f8c/yT/6P8AAAAAAAAAANz/Tf/o/4P/xP8E/93/Xf/4/93/Rf/4/93/HP8k/+j/AAAAAAAAAAAD/0X/9P9Z/1n/A/9F//D/Pf8A/wT/AP8A/37/PP/d/0X/+P8F/wD/+v//////UP9R/1H/3f8c/yT/6P8AAAAAAAAAAN3/Xf/4/93/Rf/4/4P/xP8M/1P/Uf9R/93/HP8k/93/Rf8Q/1H/Uf/d/xz/JP/d/0X/CP9R/1H/3f8c/yT///91/xj/av8R/+n/3v8A/wD/AP89/wP//P//////ff88/93/Rf/4/wX/AP8G/wD/AP9Q/1H/Uf/d/xz/JP/o/wAAAAAAAAAA3f9d//j/3f9F//j/g//E/wz/U/9R/1H/3f8c/yT/3f9F/xD/Uf9R/93/HP8k/93/Rf8I/1H/Uf/d/xz/JP///3X/GP9q/xL/6f+b/wD/AP8A/93/Rf/4/1D/Uf9R/93/HP8k/+j/AAAAAAAAAADd/13/+P+D/8T/DP/2/8P/IP90/xH/Vv9T/+j/AAAAAAAAAADd/0X/+P9Z/1n/6f+2/wD/AP8A/93/Rf/4/1P/Uf9R/93/HP8k/93/Rf8Q/1H/Uf/d/xz/JP/d/0X/CP9R/1H/3f8c/yT///91/xj/av8Q/+v/Uf+5//j/f/8A/wD/u///////B/8A/yP/0f9m/zv/0P91/wv/hf9d/wz/df8Y/4P/ff8I/wD/df8S/yP/+f9m/zv/+P91/zj/hf9d/xT/df8G/4P/ff8Q/wD/dP8t////df/8/93/Rf8I/9z/Rf8Q/1H/Uf/d/xz/JP/d/0X/EP9R/1H/3f8c/yT/3f9F/wj/Uf9R/93/HP8k////df8Y/2r/CP/o/wAAAAAAAAAAg//E/yT/6/87/2b/O//R/3T/GP9m/zv/+f90/xP/Vv///3X//P/o/wAAAAAAAAAA3f8F/wAAAAAAAAAAWf9Z/+v/Hv///3X//P/d/0X/EP9R/1H/3f8c/yT/3f9F/wj/Uf9R/93/HP8k////df8Y/+j/AAAAAAAAAACD/8T/GP9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __hypothlp
+    size: 645
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __ctrlfp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __real@8@00000000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _sqrt
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __decomp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __get_exp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __set_exp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __except2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __d_inf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __handle_qnan2
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 76
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 98
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 142
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 154
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 160
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 219
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 227
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 250
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 270
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 304
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 371
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 426
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 444
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 572
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 596
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 602
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 633
+    kind: x86_rel32
+    symbol: 9
+    addend: -4

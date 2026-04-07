@@ -1,0 +1,59 @@
+- symbol: 0
+  hash: 7b9006a42e8721c3f584f2372d43b09c6bc5a5ff
+  signature: Vv9X/4v/fP8k/wz/i//x/4v/z//o/wAAAAAAAAAAhf/A/3T/E/+L/0f/BP+L/87/wf/g/xz/wf/4/xz/UP/o/wAAAAAAAAAA6/83/4v/zv/o/wAAAAAAAAAAhf/A/3T/Cv9X/4v/zv/o/wAAAAAAAAAA6/8i/4v/Dv/o/wAAAAAAAAAAhf/A/4n/Bv90/wv///83/4v/yP/o/wAAAAAAAAAA6/8K/4v/Rv8E/yT/8/8M/wP/if9G/wT/i//G/1//Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??YDName@@QAEAAV0@ABV0@@Z
+    size: 100
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?isEmpty@DName@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??YDName@@QAEAAV0@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??4DName@@QAEAAV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?clone@DNameNode@@QAEPAV1@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??YDNameNode@@QAEAAV0@PAV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 32
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 41
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 53
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 77
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 1f24b18ae444adfe8bd05129bff1557f2ae84d46
+  signature: Vf+L/+z/g//s/xj/i/9F/wj/g/84/wD/df8G/4P/eP8E/wD/dP9L/43/Tf/4/1H/UP///xX/AAAAAAAAAACF/8D/dP88/43/Rf/o/1D/jf9F//j/UP///xX/AAAAAAAAAACF/8D/dP8q/w//t/9F//T/av///1D/D/+3/0X/8v9Q/w//t/9F//D/UP8P/7f/Rf/u/1D/D/+3/0X/6v9Q/w//t/9F/+j/UP/o/wAAAAAAAAAAg//E/xz/yf/D/4P/yP///8n/w/8=
+  symbols:
+  - kind: Function
+    name: ___timet_from_ft
+    size: 100
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__FileTimeToLocalFileTime@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FileTimeToSystemTime@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___loctotime_t
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 27
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 86
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

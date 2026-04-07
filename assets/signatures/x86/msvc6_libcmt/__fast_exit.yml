@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: f7dbbbe3c64c898f4d891e96593be25ffb891f28
+  signature: Zv+B/zz/JP9//wL/dP8D/9n/LP8k/1r/w/8=
+  symbols:
+  - kind: Function
+    name: __fast_exit
+    size: 13
+    flags: 1
+    section: .text
+  relocations: []

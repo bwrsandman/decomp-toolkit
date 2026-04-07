@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 65c8b9e7c5adbb7ca8a241a038eadbea1ca21d49
+  signature: Vv9q/wz/6P8AAAAAAAAAAP//dP8k/xD///90/yT/EP9q/wD/6P8AAAAAAAAAAGr/DP+L//D/6P8AAAAAAAAAAIP/xP8U/4v/xv9e/8P/
+  symbols:
+  - kind: Function
+    name: __getcwd
+    size: 39
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getdcwd_lk
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 19
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 28
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

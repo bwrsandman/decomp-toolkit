@@ -1,0 +1,54 @@
+- symbol: 0
+  hash: 4d0beaecc40dca8561987c7559357d37b9ad2711
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8Y/1P/Vv9X/4n/Zf/o/4P/ff8I/wD/df8R/zP/wP+L/03/8P9k/4n/Df8AAAAAAAAAAF//Xv9b/8n/w/+D/2X//P8A////df8I/+j/AAAAAAAAAABZ/4P/Tf/8////6//e/w==
+  symbols:
+  - kind: Function
+    name: ___RTCastToVoid
+    size: 80
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T17004
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?FindCompleteObject@@YAPAXPAPAX@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 52
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 69
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

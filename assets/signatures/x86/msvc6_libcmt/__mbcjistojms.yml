@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: a2aa89aa5e9d1fa53ae9a1bdd7c872cfc2298b3f
+  signature: gf89/wAAAAAAAAAApP8D/wD/AP90/wX/i/9E/yT/BP/D/4v/RP8k/wT/M//J/4r/zP8l////AP8A/wD/g//5/yH/i//Q/3L/QP+D//n/fv93/zv/g//6/yH/cv82/4P/+v9+/3f/Mf/2/8H/Af90/w//g//6/1//d/8F/4P/wv8f/+v/CP+D/8L/IP/r/wP/g//C/37/jf9B/9//0f/o/wX/gf8A/wD/AP89/5//AP8A/wD/dv8D/4P/wP9A/8H/4P8I/wv/wv/D/zP/wP/D/w==
+  symbols:
+  - kind: Function
+    name: __mbcjistojms
+    size: 104
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mbcodepage
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

@@ -1,0 +1,68 @@
+- symbol: 0
+  hash: 67077cd8389784d99cfe6d59a7a53f67fd3fc12c
+  signature: Vf+L/+z/Uf9R/1b/i/91/wj/hf/2/3T/Mf+A/z7/AP90/yz/aP8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/hf/A/1n/dP8b/2j/AAAAAAAAAABW/+j/AAAAAAAAAABZ/4X/wP9Z/3X/KP+N/0X/+P9q/wj/UP9q/wv/6/8L/43/Rf/4/2r/CP9Q/2j/BP8Q/wD/AP///zX/AAAAAAAAAAD//xX/AAAAAAAAAACF/8D/dP8K/43/df/4/1b/6P8AAAAAAAAAAFn/Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: _ProcessCodePage
+    size: 102
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_03EKFG@ACP?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strcmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_03DGJE@OCP?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: _lcidCountry
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _pfnGetLocaleInfoA
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _atol
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 25
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 36
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 42
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 75
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 81
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 94
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

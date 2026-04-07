@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: e99fc57e96b9272ad22fc75182081f02f0b3de1b
+  signature: i/9E/yT/BP/B/+j/CP8P/7b/wP/2/4D/AAAAAAAAAAAE/3T/Ev8P/7b/RP8k/wT/9v+A/wAAAAAAAAAACP90/wT/av8B/1j/w/8z/8D/w/8=
+  symbols:
+  - kind: Function
+    name: __ismbclegal
+    size: 40
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

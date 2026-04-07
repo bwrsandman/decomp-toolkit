@@ -1,0 +1,88 @@
+- symbol: 0
+  hash: 1deab8acb79d804bee90deb907de5fdd505f966e
+  signature: Vf+L/+z/gf/s/8z/AP8A/wD/jf9F//D/UP///xX/AAAAAAAAAACN/0X/4P9Q////Ff8AAAAAAAAAAGb/i/9F/+r/Zv87/wX/AAAAAAAAAAB1/zv/Zv+L/0X/6P9m/zv/Bf8AAAAAAAAAAHX/Lv9m/4v/Rf/m/2b/O/8F/wAAAAAAAAAAdf8h/2b/i/9F/+L/Zv87/wX/AAAAAAAAAAB1/xT/Zv+L/0X/4P9m/zv/Bf8AAAAAAAAAAHX/B/+h/wAAAAAAAAAA6/9F/43/hf80/////////1D///8V/wAAAAAAAAAAg//4////dP8b/4P/+P8C/3X/Ev9m/4P/ff/O/wD/dP8L/4P/ff/c/wD/dP8F/2r/Af9Y/+v/B/8z/8D/6/8D/4P/yP///1b/V/+N/3X/4P+//wAAAAAAAAAApf+l/6X/pf9f/6P/AAAAAAAAAABe/1D/D/+3/0X//P9Q/w//t/9F//r/UP8P/7f/Rf/4/1D/D/+3/0X/9v9Q/w//t/9F//L/UP8P/7f/Rf/w/1D/6P8AAAAAAAAAAIv/Tf8I/4P/xP8c/4X/yf90/wL/if8B/8n/w/8=
+  symbols:
+  - kind: Function
+    name: _time
+    size: 220
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetLocalTime@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetSystemTime@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _gmt_cache
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _dstflag_cache
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __imp__GetTimeZoneInformation@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___loctotime_t
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 36
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 49
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 62
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 75
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 88
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 95
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 110
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 155
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 165
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 202
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

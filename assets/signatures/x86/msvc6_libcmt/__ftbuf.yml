@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 80af4548b34ef754067b7eea4cac6a1f9931752b
+  signature: g/98/yT/BP8A/1b/dP8g/4v/dP8k/wz/9v9G/w3/EP90/xb/Vv/o/wAAAAAAAAAAgP9m/w3/7v+D/2b/GP8A/4P/Jv8A/4P/Zv8I/wD/Wf9e/8P/
+  symbols:
+  - kind: Function
+    name: __ftbuf
+    size: 42
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __flush
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

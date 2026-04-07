@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: 041f5a43c6d5057515a70a1e7b0d13b282c6bb4f
+  signature: Vv/o/wAAAAAAAAAAi/9w/2D/6P8AAAAAAAAAAIv/TP8k/wj/if9I/2D/i//G/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?set_terminate@@YAP6AXXZP6AXXZ@Z
+    size: 25
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

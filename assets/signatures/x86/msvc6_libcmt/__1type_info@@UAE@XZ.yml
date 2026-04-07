@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: da87d3471196fc8610c4abb820af8563bbd0b0fe
+  signature: Vv+L//H/av8b/8f/Bv8AAAAAAAAAAOj/AAAAAAAAAACL/3b/BP9Z/4X/9v90/wf/Vv/o/wAAAAAAAAAAWf9q/xv/6P8AAAAAAAAAAFn/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ??1type_info@@UAE@XZ
+    size: 41
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7type_info@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 12
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 26
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 34
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 42bf52407fea25be311093f1d22de8fada6d0cc1
+  signature: Vf+L/+z/g//s/yj/Vv+N/0X/CP9X/1D/jf9F//T/UP/o/wAAAAAAAAAAWf+N/0X/2P9Z/43/df/0/1D/av8A/2r/Ef+D/+z/DP+L//z/pf+l/2b/pf/o/wAAAAAAAAAAi/91/xD/i/99/xT/if9G/wj/D/++/0X/2v+J/wb/D/+//0X/2P+J/0b/BP+N/0X/3P9Q/1f/6P8AAAAAAAAAAIP/xP8g/4n/fv8M/4v/xv9f/17/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __fltout2
+    size: 92
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___dtold
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _$I10_OUTPUT
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 44
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 76
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

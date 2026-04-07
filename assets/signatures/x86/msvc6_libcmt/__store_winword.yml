@@ -1,0 +1,100 @@
+- symbol: 0
+  hash: 9cd53e045b4ebef5a2807bc10a699404726acf00
+  signature: Vf+L/+z/Uf9T/4v/Xf8I/1b/V/+A/zv/AP8P/4T/oP8A/wD/AP+L/33/FP+L/3X/EP8z/8n/Of8P/w//hP+Q/wD/AP8A/4n/Df8AAAAAAAAAAIr/A/+I/0X/C/+N/0P/Af+J/0X//P+J/0X/EP+L/0X/EP+K/1X/C/9B////Rf8Q/4r/AP86/8L/dP/w////Tf8Q/4n/Tf8I/w//vv/C/4P/+P9k/w//j/9s/wH/AP8A/w//hP8x/wH/AP8A/4P/+P8n/w//hP/S/wD/AP8A/4P/+P9B/w//hP+T/wD/AP8A/4P/+P9I/3T/c/+D//j/Tf90/z3/g//4/2H/D/+E/4D/AP8A/wD/i/8N/wAAAAAAAAAAD/+2/8L/9v9E/0H/Af+A/3T/C/+L/wb/i/9d//z/iP8Q////Bv///w//i/8G/4r/C/+I/wj///8G/0P///8P/4D/O/8A/w//hf9m/////////1//Xv9b/8n/w/9J/3T/G/9J/3T/Iv9J/3T/DP9J/3X/wP/G/0X/FP9C/+n/7f8B/wD/AP/G/0X/FP9i/+n/5P8B/wD/AP/H/wX/AAAAAAAAAAAB/wD/AP8A/8b/Rf8U/23/6f/R/wH/AP8A/0n/dP8F/0n/dP8M/+v/k//H/wX/AAAAAAAAAAAB/wD/AP8A/8b/Rf8U/0j/6f+2/wH/AP8A/2j/AAAAAAAAAABT/+j/AAAAAAAAAABZ/4X/wP9Z/3X/Bf+D/8P/Bf/r/xT/aP8AAAAAAAAAAFP/6P8AAAAAAAAAAFn/hf/A/1n/df8G/4P/w/8D/4n/Xf8Q/8b/Rf8U/3D/6f+A/wH/AP8A//b/wf8B/3T/Sv8D/9n/iv8D/4T/wP8P/4T/X/////////+D/z//AP8P/4T/Vv////////88/yf/dP8r/4v/Ff8AAAAAAAAAAA//tv/I//b/RP9K/wH/gP90/w7/g/8//wH/dv8J/4v/Dv+I/wH///8G/0P///8P/4v/Bv+K/wv/iP8I////Bv9D////D//r/77/Q//p/yH/////////A//Z/+n/Gv////////9J/3T/H/9J/3T/Jv9J/3T/EP9J/w//hf/k//7//////8b/Rf8U/0H/6f8R/wH/AP8A/8b/Rf8U/2H/6f8I/wH/AP8A/8f/Bf8AAAAAAAAAAAH/AP8A/wD/xv9F/xT/ZP/p//X/AP8A/wD/g//o/2j/D/+E/9P/AP8A/wD/g//o/wX/D/+E/6//AP8A/wD/g//o/wb/D/+E/4v/AP8A/wD/SP90/yn/g//o/wX/D/+F/5j//v//////i//B/0j/SP90/xH/SP9I/w//hf+K//7//////8b/Rf8U/1n/6f+3/wD/AP8A/8b/Rf8U/3n/6f+u/wD/AP8A/4v/Rf8M/4P/eP8I/wv/i/9F/xj/f/8I/4v/gP+Y/wD/AP8A/+v/Bv+L/4D/nP8A/wD/AP+F/8n/fv85/4P/P/8A/3b/NP+K/wj/i/8d/wAAAAAAAAAAD/+2/9H/9v9E/1P/Af+A/3T/Dv+D/z//Af92/wn/i/8W/4j/Cv///wb/QP///w//i/8O/4r/EP+I/xH///8G/0D///8P////Tf8I/4P/ff8I/wD/f//H/4v/Xf8Q/+n/P//+//////9J/3T/CP9J/3T/D//p/w7//v//////x/8F/wAAAAAAAAAAAf8A/wD/AP/G/0X/FP9T/+v/NP9J/3T/CP9J/3T/D//p//P//f//////x/8F/wAAAAAAAAAAAf8A/wD/AP/G/0X/FP9N/+v/Gf9J/3T/CP9J/3T/D//p/9j//f//////x/8F/wAAAAAAAAAAAf8A/wD/AP/G/0X/FP9J////df8Y/1f/Vv///3X/DP///3X/FP/o/wAAAAAAAAAAg//E/xT/6/+U/w==
+  symbols:
+  - kind: Function
+    name: __store_winword
+    size: 719
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___no_lead_zeros
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_05BDJK@am?1pm?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __stricmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_03MKGK@a?1p?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __expandtime
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 37
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 134
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 216
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 243
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 261
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 267
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 283
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 289
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 346
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 436
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 563
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 632
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 659
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 686
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 710
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

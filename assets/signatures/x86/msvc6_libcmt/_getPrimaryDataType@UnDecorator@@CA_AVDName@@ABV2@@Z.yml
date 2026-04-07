@@ -1,0 +1,201 @@
+- symbol: 0
+  hash: 250d3ebcc4806e7cb5e173128faf550f32b8a7bc
+  signature: Vf+L/+z/g//s/2j/U/+N/03/8P/o/wAAAAAAAAAAof8AAAAAAAAAADP/2/8P/77/CP8r/8v/D/+E/0T/Af8A/wD/g//p/yT/dP93/4P/6f8d/3T/N/9J/3T/Ef///3X/DP+N/0X/0P9Q/+j/AAAAAAAAAADp/w//Af8A/wD/aP8AAAAAAAAAAI3/Tf/w/+j/AAAAAAAAAACL/03/DP/o/wAAAAAAAAAAhf/A/3X/Cv9q/yD/jf9N//D/6P8AAAAAAAAAAP//df8M/43/Tf/4/+j/AAAAAAAAAACN/0X/+P///wX/AAAAAAAAAACD/03//P8Q/1P/UP+N/0X/8P9Q/43/Rf/I/1D/6P8AAAAAAAAAAIP/xP8Q/43/Tf/o/1D/6P8AAAAAAAAAAI3/Rf/o/+n/7P8A/wD/AP+K/0j/Af+A//n/JP90/y3/Ov/L/3X/Qv///3X/DP+N/0X/yP+N/03/+P9Q/2r/Av/o/wAAAAAAAAAAi//I/+j/AAAAAAAAAABQ/43/Tf/g/+j/AAAAAAAAAACN/0X/4P/p/7f/AP8A/wD/QP9A/6P/AAAAAAAAAAAP/77/CP8r/8v/dP9y/4P/6f9B/3T/V/9J/3T/Pv9J/3T/D/+L/03/CP9q/wH/6P8AAAAAAAAAAOn/mP8A/wD/AP9A/1P/jf9N/8D/o/8AAAAAAAAAAOj/AAAAAAAAAABQ/1P///91/wz/jf9F/7j/UP/o/wAAAAAAAAAAUP+N/0X/sP9Q/+j/AAAAAAAAAACD/8T/HP/r/2P/QP9q/wH///91/wz/o/8AAAAAAAAAAI3/Rf+o/1D/6P8AAAAAAAAAAOv/JP///3X/DP9A/6P/AAAAAAAAAACN/0X/oP9Q/+j/AAAAAAAAAABZ/1n/6/83////df8M/43/Rf+Y/2r/Av9Q/+j/AAAAAAAAAACD/8T/DP/r/yT///91/wz/jf9F/8j/jf9N//j/UP9q/wL/6P8AAAAAAAAAAIv/yP/o/wAAAAAAAAAAUP+N/03/2P/o/wAAAAAAAAAAjf9F/9j/i/9N/wj/UP/o/wAAAAAAAAAAi/9F/wj/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?getPrimaryDataType@UnDecorator@@CA?AVDName@@ABV2@@Z
+    size: 408
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?getBasicDataType@UnDecorator@@CA?AVDName@@ABV2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_08CACH@volatile?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??4DName@@QAEAAV0@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?isEmpty@DName@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??YDName@@QAEAAV0@D@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getPtrRefType@UnDecorator@@CA?AVDName@@ABV2@0H@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??HDName@@QBE?AV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getDataIndirectType@UnDecorator@@CA?AVDName@@ABV2@D0H@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getPtrRefDataType@UnDecorator@@CA?AVDName@@ABV2@H@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getFunctionIndirectType@UnDecorator@@CA?AVDName@@ABV2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??H@YA?AVDName@@W4DNameStatus@@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 16
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 54
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 64
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 72
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 80
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 94
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 105
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 114
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 133
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 145
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 182
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 189
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 198
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 213
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 241
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 256
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 261
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 275
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 285
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 301
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 310
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 321
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 330
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 348
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 370
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 377
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 386
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 398
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: 419254cfae2ecc98779da8d416154ab645a6a560
+  signature: Vv+L/3T/JP8I/zv/Nf8AAAAAAAAAAHP/OP+L/87/i//G/8H/+f8F/4P/4P8f/4v/DP+N/wAAAAAAAAAAjf8E/8D/9v9E/4H/BP8B/3T/Hf9X/1b/6P8AAAAAAAAAAFb/6P8AAAAAAAAAAFb/i//4/+j/AAAAAAAAAACD/8T/DP+L/8f/X/9e/8P/6P8AAAAAAAAAAMf/AP8J/wD/AP8A/+j/AAAAAAAAAACD/yD/AP+D/8j///9e/8P/
+  symbols:
+  - kind: Function
+    name: __close
+    size: 93
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __close_lk
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 43
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 49
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 57
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 70
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

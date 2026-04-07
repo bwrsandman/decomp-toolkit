@@ -1,0 +1,66 @@
+- symbol: 0
+  hash: 7f8f494f714803d05877b579431ff6cfd9012a06
+  signature: Vf+L/+z/U/9W/1f/i/99/wj/g/9l/wj/AP+L//f/6P8AAAAAAAAAAID/P/8A/4v/2P90/wb/Rv+A/z7/AP91//r/Tv87//f/cv83/1b/V//o/wAAAAAAAAAAWf+F/8D/Wf91/yr/gP8+/1j/D/+F/4f/AP8A/wD/g/99/wj/Bf99/xv/av8K/4v/w/8z/9L/Wf/3//H///9F/wj/i//D/4D/wv8w/4j/Fv8z/9L/9//x/4v/2P/r/8T/gP8+/1j/df9h/4P/ff8I/wX/fP9b/8b/Bv9h/8f/Rf8I/2L/AP8A/wD/6P8AAAAAAAAAAIv/GP/o/wAAAAAAAAAAg/8g/wD/av8A/1f/6P8AAAAAAAAAAFn/hf/A/1n/dP8K/+j/AAAAAAAAAACD/zj/Df91/xj/6P8AAAAAAAAAAIP/IP8A/4P/ff8I/3v/dP8V/4r/Rf8I////Rf8I/4j/Bv/r/9D/6P8AAAAAAAAAAIn/GP+L/8f/6/8J/+j/AAAAAAAAAACJ/xj/M//A/1//Xv9b/13/w/8=
+  symbols:
+  - kind: Function
+    name: __mktemp
+    size: 202
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___threadid
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ismbstrail
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __access
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 41
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 115
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 122
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 133
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 144
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 154
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 178
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 189
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

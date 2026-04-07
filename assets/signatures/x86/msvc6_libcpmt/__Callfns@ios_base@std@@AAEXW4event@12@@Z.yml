@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: a504b913979e19f86bbda3aaeb6edb535cc01448
+  signature: Vv9X/4v/+f+L/3f/HP+F//b/dP8S////dv8E/1f///90/yT/FP///1b/CP+L/zb/g//E/wz/6//q/1//Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?_Callfns@ios_base@std@@AAEXW4event@12@@Z
+    size: 34
+    flags: 1
+    section: .text
+  relocations: []

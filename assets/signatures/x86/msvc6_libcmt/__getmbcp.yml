@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 49793a1729a1b044e6e9a2b4b1abc966b175457e
+  signature: of8AAAAAAAAAAPf/2P8b/8D/I/8F/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: __getmbcp
+    size: 16
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___ismbcodepage
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mbcodepage
+    size: 4
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 2b0a93c63ad82a4d566e88137476fa45f0f601e0
+  signature: Vf+L/+z/g//E/+D/if9F/+D/i/9F/xj/if9F//D/i/9F/xz/if9F//T/6/8J/w==
+  symbols:
+  - kind: Function
+    name: __startTwoArgErrorHandling
+    size: 23
+    flags: 1
+    section: .text
+  relocations: []

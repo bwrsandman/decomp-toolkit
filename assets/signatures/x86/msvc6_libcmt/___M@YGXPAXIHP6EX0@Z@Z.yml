@@ -1,0 +1,54 @@
+- symbol: 0
+  hash: 3cf616a6dd3ec54ac8957205588deada7ca4d8f8
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8M/1P/Vv9X/4P/Zf/k/wD/i/91/wz/i//G/w//r/9F/xD/Af9F/wj/g/9l//z/AP///03/EP94/wv/Kf91/wj/i/9N/wj///9V/xT/6//w/8f/Rf/k/wH/AP8A/wD/g/9N/wAAAAAAAAAAAP8A/wD/i/9N//D/ZP+J/w3/AAAAAAAAAABf/17/W//J/8L/EP8A/w==
+  symbols:
+  - kind: Function
+    name: ??_M@YGXPAXIHP6EX0@Z@Z
+    size: 104
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T16509
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: fn_00000068
+    size: 0
+    flags: 0
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 80
+    kind: x86_rel32
+    symbol: 4
+    addend: 0
+  - offset: 93
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

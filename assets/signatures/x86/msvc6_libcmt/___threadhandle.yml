@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 9484162355601a5786245f75b75f9a3bf1f2b90d
+  signature: //8l/wAAAAAAAAAA
+  symbols:
+  - kind: Function
+    name: ___threadhandle
+    size: 6
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetCurrentThread@0
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

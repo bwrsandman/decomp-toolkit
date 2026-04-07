@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 9f3992d33164e78de6a176afd751f32291ce6d29
+  signature: 3f9E/yT/DP9q/xH/Uf9R/93/HP8k/93/RP8k/xD/Uf9R/93/HP8k/+j/AAAAAAAAAACD/8T/FP/D/w==
+  symbols:
+  - kind: Function
+    name: __cabs
+    size: 29
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __hypothlp
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

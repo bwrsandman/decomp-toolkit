@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: b43acdc6d174dd9130e9ee7411d753416bbe690c
+  signature: V/+L/3z/JP8M/4X///90/xr/Vv+L/3T/JP8M/1b/6P8AAAAAAAAAAED/UP9W/wP/9/9W/+j/AAAAAAAAAACD/8T/EP9e/1//w/8=
+  symbols:
+  - kind: Function
+    name: __shift
+    size: 37
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 6c2a6169c859378bfdca20a996845ab1e6d3b8a8
+  signature: UP+D/+z/LP/b/3z/JP8M/9v/PP8k/wAAAAAAAAAA//+D/8T/LP9Y/8P/
+  symbols:
+  - kind: Function
+    name: __safe_fdivr
+    size: 21
+    flags: 1
+    section: .text
+  - kind: Object
+    name: '@comp.id'
+    size: 0
+    flags: 2
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: 0

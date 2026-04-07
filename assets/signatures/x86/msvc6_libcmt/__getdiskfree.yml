@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 3a5667ef3c3e8c70b1c4c7d27678960171e51390
+  signature: Vf+L/+z/i/9F/wj/hf/A/3X/BP8z/8n/6/8e/4P/+P8a/3b/Bf9q/1f/WP9d/8P/BP9A/4D/Zf8L/wD/jf9N/wj/iP9F/wj/xv9F/wn/Ov/G/0X/Cv9c/4v/Rf8M/1D/jf9Q/wT/Uv+N/1D/DP+D/8D/CP9S/1D/Uf///xX/AAAAAAAAAACF/8D/df8I////Ff8AAAAAAAAAAF3/w/8z/8D/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __getdiskfree
+    size: 83
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetDiskFreeSpaceA@20
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 63
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 73
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

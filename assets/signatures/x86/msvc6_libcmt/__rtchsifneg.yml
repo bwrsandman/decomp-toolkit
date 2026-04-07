@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 3afc507e5a78f1fe8d8d09cacb34228b95a5ae7c
+  signature: Cv/J/3T/Av/Z/+D/w/8=
+  symbols:
+  - kind: Function
+    name: __rtchsifneg
+    size: 7
+    flags: 1
+    section: .text
+  relocations: []

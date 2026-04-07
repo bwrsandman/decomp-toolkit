@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 52847f6060d22d0dcc6ef4e177a479d3b70e94b8
+  signature: g/95/wj/AP/H/wH/AAAAAAAAAAB0/wn///9x/wT/6P8AAAAAAAAAAFn/w/8=
+  symbols:
+  - kind: Function
+    name: ??1exception@@UAE@XZ
+    size: 22
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7exception@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 16
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

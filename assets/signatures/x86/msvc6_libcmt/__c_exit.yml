@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: c9b98cd1c13d3a40edfee42301de8d4b1099eb65
+  signature: av8B/2r/Af9q/wD/6P8AAAAAAAAAAIP/xP8M/8P/
+  symbols:
+  - kind: Function
+    name: __c_exit
+    size: 15
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _doexit
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

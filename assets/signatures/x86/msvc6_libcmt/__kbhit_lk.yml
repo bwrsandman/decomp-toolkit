@@ -1,0 +1,81 @@
+- symbol: 0
+  hash: 5c2fa4501cdaf8d728a606325e8dfe68c293434e
+  signature: Vf+L/+z/Uf9R/4P/Pf8AAAAAAAAAAP//Vv9X/w//hf+l/wD/AP8A/4P/Pf8AAAAAAAAAAP7/df8F/+j/AAAAAAAAAACh/wAAAAAAAAAAg//4////D/+E/4D/AP8A/wD/jf9N//j/Uf9Q////Ff8AAAAAAAAAAIX/wP90/3H/i/91//j/hf/2/3T/av+N/wT/tv/B/+D/Av+D/8D/A/8k//z/6P8AAAAAAAAAAIv//P+F////dP9U/43/Rf/8/1D/Vv9X////Nf8AAAAAAAAAAP//Ff8AAAAAAAAAAIX/wP90/z7/i/9F//z/hf/A/3T/N/87/0X/+P93/zL/hf/A/3b/Lv+N/3f/BP9m/4P/P/8B/3X/Fv+D/z7/AP90/xH/gP9+/wr/AP91/yP/Vv/o/wAAAAAAAAAAhf/A/1n/df8Y////Tf/8/4P/x/8U/4P/xv8U/4P/ff/8/wD/d//V/zP/wP+N/2X/8P9f/17/yf/D/2r/Af9Y/+v/9P8=
+  symbols:
+  - kind: Function
+    name: __kbhit_lk
+    size: 190
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _chbuf
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: __coninpfh
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___initconin
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetNumberOfConsoleInputEvents@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __alloca_probe
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__PeekConsoleInputA@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getextendedkeycode
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 30
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 35
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 55
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 82
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 100
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 106
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 152
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

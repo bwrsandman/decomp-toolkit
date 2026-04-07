@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: eeb390e222ec5277629ec869988b4bb39dc3cbc3
+  signature: Vf+L/+z/i/9F/wz/i/9V/xT/U/9W/43/NP8C/4v/Qf8g/1f/i/8Q/4X/0v90/wj/Of9R/zz/c/8D/4n/Uf88/4P/z////zv/9/8P/4T/hf8A/wD/AP/2/0X/JP8B/3T/T/+L/1H/HP+L/xL/hf/S/3T/Rv+F//b/fP9w/4v/Qf8M/4v/Wf88/4v/AP8r/9j/O//z/3//Yv8r/8L/i/9R/yz/A//G/yn/Av+L/1H/HP8B/wL/9v9F/yT/Av90/1D/i/9R/yD/i/8a/4X/2/90/0f/i/9B/xz/i/84/4v/Qf8w/4v/AP+J/zr/i/9J/zD/A//D/yv/x/+J/wH/6/8w//b/Rf8k/wL/dP8o/4v/EP+F/9L/dP8i/4X/9v98/x7/i/9B/wz/i/9Z/zz/i/8A/yv/2P87//P/f/8Q/yv/wv+L/1H/MP8D/8b/Kf8C/4v/Sf8g/wH/Af/r/wL/i//3/1b/jf9N/wz/6P8AAAAAAAAAAIv/8P+L/0X/CP9q/wb/i//4/1n/8/+l/1//Xv9b/13/wv8g/wD/
+  symbols:
+  - kind: Function
+    name: ?seekpos@strstreambuf@std@@MAE?AV?$fpos@H@2@V32@H@Z
+    size: 204
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0?$fpos@H@std@@QAE@J@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 181
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

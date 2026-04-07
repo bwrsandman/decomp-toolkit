@@ -1,0 +1,143 @@
+- symbol: 0
+  hash: 60826628b9890cdc6801fdf1bcd548ef855fa295
+  signature: U/9V/1b/i/90/yT/EP87/zX/AAAAAAAAAABX/w//g//v/wD/AP8A/4v/zv+L/8b/wf/5/wX/g//g/x//i/8M/43/AAAAAAAAAACN/wT/wP/2/0T/gf8E/wH/D/+E/9D/AP8A/wD/Vv/o/wAAAAAAAAAAM//b/2r/Af9T/1b/6P8AAAAAAAAAAIv/6P+D/8T/EP+D//3///91/wz/Vv/o/wAAAAAAAAAAWf/p/7z/AP8A/wD/g/98/yT/GP8B/3T/C/+D/3z/JP8Y/wP/if9c/yT/FP91/wj/x/9E/yT/FP8J/wD/AP8A/1P/M///////dP8k/yD/Of9c/yT/IP9T/1X/Vv91/w//6P8AAAAAAAAAAFn/UP///xX/AAAAAAAAAADr/w3/6P8AAAAAAAAAAFn/UP///xX/AAAAAAAAAACF/8D/df8I////Ff8AAAAAAAAAAIv/+P85/1z/JP8U/37/Ff87//v/dP8R/2j/6P8D/wD/AP///xX/AAAAAAAAAAD//0z/JP8U/+v/rf9W/+j/AAAAAAAAAAA7//v/Wf90/y3/g/98/yT/GP8B/3T/Ev+D/3z/JP8Y/wP/dP8L/1f/6P8AAAAAAAAAAOn/af/////////o/wAAAAAAAAAAx/8A/yT/AP8A/wD/6P8AAAAAAAAAAIn/OP/r/xf/M//A/+v/Fv/o/wAAAAAAAAAAx/8A/wn/AP8A/wD/6P8AAAAAAAAAAIP/IP8A/4P/yP///1//Xv9d/1v/w/8=
+  symbols:
+  - kind: Function
+    name: __locking
+    size: 286
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lseek_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __get_osfhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__UnlockFile@20
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__LockFile@20
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__Sleep@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 53
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 64
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 80
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 133
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 141
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 148
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 156
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 166
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 189
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 201
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 226
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 236
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 247
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 260
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 271
+    kind: x86_rel32
+    symbol: 13
+    addend: -4

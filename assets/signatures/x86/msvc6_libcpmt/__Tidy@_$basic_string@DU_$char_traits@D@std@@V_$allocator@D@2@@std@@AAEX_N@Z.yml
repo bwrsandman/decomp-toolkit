@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 9d3aa35c17a2bb5afed7d7f8acf855b9916b7539
+  signature: gP98/yT/BP8A/1b/i//x/3T/Iv+L/0b/BP+F/8D/dP8b/43/SP///4r/QP///4T/wP90/wr/PP///3T/Bv/+/8j/iP8B/+v/B/9R/+j/AAAAAAAAAABZ/4P/Zv8E/wD/g/9m/wj/AP+D/2b/DP8A/17/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 60
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 39
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

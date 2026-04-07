@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 77da111bc4ad87bc6f2462b09ed601f989a9e07b
+  signature: av8B/2j/B/8B/wD/AP///3T/JP8M/+j/AAAAAAAAAACD/8T/DP/D/w==
+  symbols:
+  - kind: Function
+    name: __ismbbalnum
+    size: 20
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _x_ismbbtype
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

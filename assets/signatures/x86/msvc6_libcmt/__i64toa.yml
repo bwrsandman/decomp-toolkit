@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 918fb499bbba016117f5051d4fa3923a80203613
+  signature: Vf+L/+z/M//A/4P/ff8U/wr/df8P/zn/Rf8M/3//Cv98/wX/Of9F/wj/c/8D/2r/Af9Y/1D///91/xT///91/xD///91/wz///91/wj/6P8AAAAAAAAAAIv/Rf8Q/13/w/8=
+  symbols:
+  - kind: Function
+    name: __i64toa
+    size: 49
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _x64toa@20
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 40
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

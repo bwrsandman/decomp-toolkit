@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 4f59d30010f2a186ff257288efcb927e06d07a35
+  signature: Vf+L/+z/U/8z/9v/OP9d/xj/Vv+L/3X/FP9X/4v/ff8I/3T/G/8z/8D/Of9d/wz/D/+f/8D/UP8z/8D/g/8+/y3/D/+U/8D/A//H/1D/6P8AAAAAAAAAAFn/Wf+D/z7/Lf+L/8f/df8G/8b/B/8t/43/R/8B/zn/Xf8M/37/Ev+K/1D/Af+N/0j/Af+I/xD/i//B/4r/Df8AAAAAAAAAAIj/CP8z/8n/OP9d/xj/aP8AAAAAAAAAAA//lP/B/wP/yP8D/03/DP9R/+j/AAAAAAAAAAA5/13/EP9Z/1n/i//I/3T/A//G/wH/Rf+L/0b/DP9B/4D/OP8w/3T/PP+L/17/BP9L/3n/Bf/3/9v/xv8B/y3/Qf+D//v/ZP98/xH/i//D/2r/ZP+Z/17/9//+/wD/Af+L/8P/mf/3//7/i//a/0H/g//7/wr/fP8R/4v/w/9q/wr/mf9e//f//v8A/wH/i//D/5n/9//+/4v/2v8A/1n/Af+L/8f/X/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __cftoe2
+    size: 194
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __shift
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___decimal_point
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_05OFLO@e?$CL000?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 40
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 76
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 88
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 102
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

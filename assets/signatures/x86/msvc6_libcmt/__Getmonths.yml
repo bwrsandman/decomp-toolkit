@@ -1,0 +1,62 @@
+- symbol: 0
+  hash: e69dae03943a7e08a16ac36841de9e24a2dd2da8
+  signature: Vf+L/+z/Uf9R/4P/Zf/8/wD/U/9W/1f/i/89/wAAAAAAAAAAx/9F//j/DP8A/wD/AP+N/3f/OP///3b/MP/o/wAAAAAAAAAA//82/4v/2P/o/wAAAAAAAAAAA/9F//z/Wf+D/8b/BP///03/+P9Z/43/RP8Y/wL/if9F//z/df/b/0D/UP/o/wAAAAAAAAAAi//w/1n/hf/2/4n/df/4/3T/O/9q/wz/g//H/2j/W//G/wb/Ov///3f/0P9G/1b/6P8AAAAAAAAAAFD/6P8AAAAAAAAAAAP/8P/G/wb/Ov///zf/Rv9W/+j/AAAAAAAAAABQ/+j/AAAAAAAAAACD/8T/GP8D//D/g//H/wT/S/91/87/gP8m/wD/i/9F//j/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __Getmonths
+    size: 149
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_time_curr
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 32
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 41
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 68
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 97
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 103
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 117
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 123
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: f55b8ecbe0b19b80df481288c58fe4e8dc158d8d
+  signature: i/9E/yT/BP9W/2r/Av+L/9D/Zv+L/zD/Wf8D/8H/Zv+F//b/dP8F/2b/i/8w/+v/9P9m/4v/dP8k/wz/K//B/zv/wv90/wv/Zv85/zD/dP8G/yv/wf87/8L/df/1/2b/i/8I/2b/K//O/17/Zv/3/9n/G//J//f/0f8j/8H/w/8=
+  symbols:
+  - kind: Function
+    name: _wcsrchr
+    size: 64
+    flags: 1
+    section: .text
+  relocations: []

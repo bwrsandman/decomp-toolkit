@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: e5150c0c5dbe2d46f90fedf0b8c4760011983d98
+  signature: V/9q/0D/Wf8z/8D/v/8AAAAAAAAAAPP/q/+q/zP/wP+//wAAAAAAAAAAo/8AAAAAAAAAAKP/AAAAAAAAAACj/wAAAAAAAAAAq/+r/6v/X//D/w==
+  symbols:
+  - kind: Function
+    name: _setSBCS
+    size: 41
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __mbctype
+    size: 257
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mbulinfo
+    size: 12
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mbcodepage
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___ismbcodepage
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mblcid
+    size: 4
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 27
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

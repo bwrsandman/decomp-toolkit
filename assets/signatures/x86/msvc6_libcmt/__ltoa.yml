@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: f923bf2c3f30afb1925c9eccfe4a5ebb393f521a
+  signature: Vf+L/+z/M//A/4P/ff8Q/wr/df8I/zn/Rf8I/33/A/9q/wH/WP9Q////df8Q////df8M////df8I/+j/AAAAAAAAAACL/0X/DP+D/8T/EP9d/8P/
+  symbols:
+  - kind: Function
+    name: __ltoa
+    size: 42
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _xtoa
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 30
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 7c3d5e77c1cf10d9965a49304a7dec0255a04516
+  signature: Vf+L/+z/Uf/o/wAAAAAAAAAAi/9N/wj/if9F//z/hf/J/3X/A/+L/0j/HP9m/4v/Ef9W/2b/hf/S/1f/dP8v/4v/Rf8M/2b/i/8A/4v/df8M/2b/hf/A/3T/Ef+L//j/Zv87//r/dP8K/0b/Rv9m/4v/Pv9m/4X///91//H/Zv+D/z7/AP90/wr/Qf9B/2b/i/8R/2b/hf/S/3X/1/9m/4v/Ef+J/03/CP9m/4X/0v90/zf/i/9F/wz/Zv+L/wD/i/91/wz/Zv+F/8D/dP8R/4v/+P9m/zv/+v90/wr/Rv9G/2b/i/8+/2b/hf///3X/8f9m/4P/Pv8A/3X/DP9B/0H/Zv+L/xH/Zv+F/9L/df/X/+v/Bv9m/4P/If8A/0H/Qf+L/0X//P9f/17/if9I/xz/i/9F/wj/K//B//f/2P8b/8D/I/9F/wj/yf/D/w==
+  symbols:
+  - kind: Function
+    name: _wcstok
+    size: 167
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

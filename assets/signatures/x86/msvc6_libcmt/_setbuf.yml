@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 2fffdd901472d70aa4feb124ff7c98098b161a23
+  signature: M//A/zn/RP8k/wj/df8G/1D/av8E/1D/6/8K/2j/AP8C/wD/AP9Q////dP8k/xD///90/yT/EP/o/wAAAAAAAAAAg//E/xD/w/8=
+  symbols:
+  - kind: Function
+    name: _setbuf
+    size: 37
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _setvbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 29
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

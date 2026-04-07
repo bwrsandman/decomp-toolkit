@@ -1,0 +1,127 @@
+- symbol: 0
+  hash: d58c1e60d3bd1b1b231f99f6fafc17820df99d21
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/LP9T/4v/Xf8I/1b/V/8z////i//x/zv/3/99/0n/iv9F/wv/V/+N/03/5P+I/0X/5P/o/wAAAAAAAAAAvv8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/UP9W/43/Tf/k/+j/AAAAAAAAAACN/0X/5P+N/03/yP9Q/4n/ff/8/+j/AAAAAAAAAACN/0X/yP9o/wAAAAAAAAAAUP/H/0X/yP8AAAAAAAAAAOj/AAAAAAAAAACL/0b/GP8z/8n/O//H/3T/Jv85/1j/BP90/07/O//P/3X/DP85/3j/CP91/wf/Of94/wz/df8C/4v/yP+L/wD/O//H/3X/5f87/8//dP8H/4n/Wf8E/4v/wf/r/y3/av8Q/+j/AAAAAAAAAAA7/8f/Wf90/xD/i/9O/xj/if9Y/wT/if8I/4n/eP8I/4n/eP8M/+v/Av8z/8D/O//H/4n/Rv8Y/3X/Bf/o/wAAAAAAAAAAi/9G/xj/i/9N//T/X/9e/1v/ZP+J/w3/AAAAAAAAAADJ/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?_Findarr@ios_base@std@@AAEAAU_Iosarray@12@H@Z
+    size: 209
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L6391
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0BP@INPK@invalid?5ios?3?3iword?1pword?5index?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0runtime_error@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __TI3?AVfailure@ios_base@std@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Object
+    name: ??_7failure@ios_base@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Nomemory@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 38
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 43
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 49
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 60
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 75
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 83
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 91
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 96
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 150
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 185
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 201
+    kind: x86_abs32
+    symbol: 13
+    addend: 0

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 2f24c3a6f314582269ea189802e393bbe242005f
+  signature: jf9E/yT/DP9q/wD/UP///3T/JP8Q////dP8k/xD/6P8AAAAAAAAAAIP/xP8Q/8P/
+  symbols:
+  - kind: Function
+    name: __spawnl
+    size: 24
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __spawnve
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

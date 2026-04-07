@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 923083ce34247ca3925d9c087d106c665d1a5c1d
+  signature: av8B/2r/AP+5/wAAAAAAAAAA6P8AAAAAAAAAAMP/
+  symbols:
+  - kind: Function
+    name: _$E40
+    size: 15
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ?cerr@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@W4_Uninitialized@1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 10
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: a03a84b82080225b40a0512df621df538c32883b
+  signature: av8B////dP8k/wj/6P8AAAAAAAAAAFn/Wf/D/w==
+  symbols:
+  - kind: Function
+    name: _iswupper
+    size: 14
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _iswctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

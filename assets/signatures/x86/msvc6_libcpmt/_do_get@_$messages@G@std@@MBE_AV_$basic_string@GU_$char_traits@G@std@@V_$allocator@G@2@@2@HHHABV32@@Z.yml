@@ -1,0 +1,59 @@
+- symbol: 0
+  hash: 810e68cdcd547ae7a15060327cc2a704bf6ee169
+  signature: Vf+L/+z/Uf9T/zP/2/85/13/FP9W/1f/if9d//z/df8L/4v/ef8I/4v/df8I/4r/Rf8L/+v/D/+D/33/FP8B/3X/Jf+L/3n/DP+L/3X/CP+K/0X/C/9T/4v/zv+I/wb/6P8AAAAAAAAAAFf/6P8AAAAAAAAAAFn/UP9X/4v/zv/o/wAAAAAAAAAA6/8h/4v/ff8Y/4v/df8I/1P/i//O/4r/B/+I/wb/6P8AAAAAAAAAAP//Nf8AAAAAAAAAAIv/zv9T/1f/6P8AAAAAAAAAAIv/xv9f/17/W//J/8L/FP8A/w==
+  symbols:
+  - kind: Function
+    name: ?do_get@?$messages@G@std@@MBE?AV?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@2@HHHABV32@@Z
+    size: 113
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Tidy@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?assign@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QAEAAV12@PBGI@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?npos@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?assign@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QAEAAV12@ABV12@II@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 49
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 55
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 85
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 91
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 100
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

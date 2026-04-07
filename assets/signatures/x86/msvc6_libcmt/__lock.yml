@@ -1,0 +1,86 @@
+- symbol: 0
+  hash: 612d06fee09dcd7567379cf4dc19008cdd75dd2a
+  signature: Vf+L/+z/i/9F/wj/Vv+D/zz/hf8AAAAAAAAAAAD/jf80/4X/AAAAAAAAAAB1/z7/V/9q/xj/6P8AAAAAAAAAAIv/+P9Z/4X///91/wj/av8R/+j/AAAAAAAAAABZ/2r/Ef/o/wAAAAAAAAAAg/8+/wD/Wf9X/3X/Cv///xX/AAAAAAAAAACJ/z7/6/8G/+j/AAAAAAAAAABZ/2r/Ef/o/wAAAAAAAAAAWf9f////Nv///xX/AAAAAAAAAABe/13/w/8=
+  symbols:
+  - kind: Function
+    name: __lock
+    size: 97
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __locktable
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __amsg_exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__InitializeCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__EnterCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 28
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 42
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 50
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 63
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 72
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 80
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 90
+    kind: x86_abs32
+    symbol: 8
+    addend: 0

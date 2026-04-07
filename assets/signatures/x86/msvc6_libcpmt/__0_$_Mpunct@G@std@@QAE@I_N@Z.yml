@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: 968753d7cbed5cfe940d72345f26103d4f5134dc
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/RP+L/0X/CP9W/4v/8f+J/3X/8P+J/0b/BP+K/0X/DP+D/2X//P8A/2j/AAAAAAAAAACN/03/sP+I/0b/KP/H/wb/AAAAAAAAAADo/wAAAAAAAAAAUP+L/87/xv9F//z/Af/o/wAAAAAAAAAAgP9l//z/AP+N/03/sP/o/wAAAAAAAAAAi/9N//T/i//G/17/ZP+J/w3/AAAAAAAAAADJ/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0?$_Mpunct@G@std@@QAE@I_N@Z
+    size: 95
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L23520
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_01FKHJ@C?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_7?$_Mpunct@G@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0_Locinfo@std@@QAE@PBD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Init@?$_Mpunct@G@std@@IAEXABV_Locinfo@2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1_Locinfo@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 33
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 50
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 87
+    kind: x86_abs32
+    symbol: 8
+    addend: 0

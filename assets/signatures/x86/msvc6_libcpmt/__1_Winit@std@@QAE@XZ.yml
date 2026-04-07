@@ -1,0 +1,81 @@
+- symbol: 0
+  hash: 23d4f6271418263471c80daa333a3d3db16055da
+  signature: Vf+L/+z/Uf9T/43/Tf/8/+j/AAAAAAAAAAD//w3/AAAAAAAAAACN/03//P8P/5T/w//o/wAAAAAAAAAAhP/b/1v/dP8e/7n/AAAAAAAAAADo/wAAAAAAAAAAuf8AAAAAAAAAAOj/AAAAAAAAAAC5/wAAAAAAAAAA6P8AAAAAAAAAAMn/w/8=
+  symbols:
+  - kind: Function
+    name: ??1_Winit@std@@QAE@XZ
+    size: 67
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Init_cnt@_Winit@std@@0HA
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: ??1_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?wcout@std@@3V?$basic_ostream@GU?$char_traits@G@std@@@1@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?flush@?$basic_ostream@GU?$char_traits@G@std@@@std@@QAEAAV12@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?wcerr@std@@3V?$basic_ostream@GU?$char_traits@G@std@@@1@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?wclog@std@@3V?$basic_ostream@GU?$char_traits@G@std@@@1@A
+    size: 0
+    flags: 1
+    section: .bss
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 26
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 36
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 41
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 46
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 51
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 56
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 61
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

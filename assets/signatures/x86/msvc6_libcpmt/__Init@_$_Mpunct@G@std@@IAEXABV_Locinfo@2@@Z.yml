@@ -1,0 +1,89 @@
+- symbol: 0
+  hash: 2877908d7133d16b0e172e4bd645b863ce65df01
+  signature: U/9W/1f/i//5/+j/AAAAAAAAAACL//D/i/9G/xT/D/++/wD/UP/o/wAAAAAAAAAAZv+J/0f/DP+L/0b/GP8P/77/AP9Q/+j/AAAAAAAAAAAz/9v/Zv+J/0f/Dv9T////dv8c/+j/AAAAAAAAAACD/8T/EP84/1//KP+J/0f/CP90/wX/i/9G/wz/6/8D/4v/Rv8Q/1P/UP/o/wAAAAAAAAAAif9H/xD/iv9G/y7/Wf86/8P/Wf98/wn/PP8E/3//Bf+L/0b/IP/r/wX/uP8AAAAAAAAAAFP/UP/o/wAAAAAAAAAAif9H/xT/iv9G/y//Wf86/8P/Wf98/wn/PP8E/3//Bf+L/0b/JP/r/wX/uP8AAAAAAAAAAFP/UP/o/wAAAAAAAAAAOP9f/yj/Wf9Z/4n/R/8Y/3T/Bf+K/0b/KP/r/wP/iv9G/yn/D/++/8D/O//D/4n/R/8c/3z/Bf+D//j/f/98/wP/if9f/xz/iv9G/y7/i//P/1D/iv9G/yr/UP+K/0b/K/9Q/43/R/8g/1D/6P8AAAAAAAAAAIr/Rv8v/4v/z/9Q/4r/Rv8s/1D/iv9G/y3/UP+N/0f/JP9Q/+j/AAAAAAAAAABf/17/W//C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?_Init@?$_Mpunct@G@std@@IAEXABV_Locinfo@2@@Z
+    size: 235
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _localeconv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _btowc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Maklocstr@std@@YAPADPBDPAD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Maklocstr@std@@YAPAGPBDPAG@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_00A@?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_01GJD@?9?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Makpat@?$_Mpunct@G@std@@AAEXAAUpattern@money_base@2@DDD@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 36
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 51
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 77
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 103
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 110
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 136
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 143
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 202
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 225
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

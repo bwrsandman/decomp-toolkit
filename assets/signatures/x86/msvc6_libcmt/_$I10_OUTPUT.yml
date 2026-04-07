@@ -1,0 +1,116 @@
+- symbol: 0
+  hash: 174b2dc2318606dff5cf55440487f49fbc6a8497
+  signature: Vf+L/+z/g//s/xz/i/9F/xD/U/+L/13/HP9W/4v/yP++////f/8A/wD/gf/h/wD/gP8A/wD/I//G/2b/hf/J/1f/xv9F/+T/zP/G/0X/5f/M/8b/Rf/m/8z/xv9F/+f/zP/G/0X/6P/M/8b/Rf/p/8z/xv9F/+r/zP/G/0X/6//M/8b/Rf/s/8z/xv9F/+3/zP/G/0X/7v/7/8b/Rf/v/z//x/9F//z/Af8A/wD/AP+L/9D/dP8G/8b/Q/8C/y3/6/8E/8b/Q/8C/yD/i/99/wz/Zv+F/9L/df8e/4X///91/xr/Of99/wj/df8V/2b/g/8j/wD/xv9D/wL/IP/G/0P/A/8B/8b/Q/8E/zD/6f/+/wH/AP8A/2b/O//W/3X/ev+4/wD/AP8A/4D/Zv/H/wP/Af8A/zv/+P91/wb/g/99/wj/AP90/w//9//H/wD/AP8A/0D/df8H/2j/AAAAAAAAAADr/0b/Zv+F/8n/dP8V/4H///8A/wD/AP/A/3X/Df+D/33/CP8A/3X/Lv9o/wAAAAAAAAAA6/8P/zv/+P91/yP/g/99/wj/AP91/x3/aP8AAAAAAAAAAI3/Q/8E/1D/6P8AAAAAAAAAAFn/xv9D/wP/Bf9Z/4P/Zf/8/wD/6f9u/wH/AP8A/2j/AAAAAAAAAACN/0P/BP9Q/+j/AAAAAAAAAABZ/8b/Q/8D/wb/Wf/r/+H/D/+3/8L/i//P/4v/8P/B/+n/GP9p/8D/EP9N/wD/AP/B/+7/CP9m/4P/Zf/w/wD/av8B/43/DP9O/2b/if9V//r/a//J/03/if99//b/jf+0/wH/DP/t/7z/7P+L/0X/CP/B//7/EP+J/0X/8v8P/7//xv/3/9j/UP+N/0X/8P9Q/+j/AAAAAAAAAACD/8T/DP9m/4H/ff/6////P/9y/xD/jf9F/+T/Rv9Q/43/Rf/w/1D/6P8AAAAAAAAAAFn/Wf/2/0X/GP8B/2b/if8z/3T/Ef+L/33/FP8P/7//xv8D//j/hf///3//CP/p//H//v//////i/99/xT/g////xX/fv8D/2r/Ff9f/w//t/91//r/gf/u//7/P/8A/wD/Zv+D/2X/+v8A/8f/Rf8c/wj/AP8A/wD/jf9F//D/UP/o/wAAAAAAAAAA//9N/xz/Wf91//H/hf/2/33/F//3/97/gf/m////AP8A/wD/fv8N/43/Rf/w/1D/6P8AAAAAAAAAAE7/Wf91//P/jf9P/wH/jf9D/wT/hf/J/4n/Rf8c/37/UP+J/03/FP+N/3X/8P+N/33/CP+l/6X/jf9F//D/UP+l/+j/AAAAAAAAAACN/0X/8P9Q/+j/AAAAAAAAAACN/0X/CP9Q/43/Rf/w/1D/6P8AAAAAAAAAAI3/Rf/w/1D/6P8AAAAAAAAAAIr/Rf/7/4v/Tf8c/4D/Zf/7/wD/g//E/xT/BP8w////Rf8c////Tf8U/4j/Af91/7b/i/9F/xz/iv9I////SP9I/4D/+f81/43/S/8E/3z/MP87/8H/cv8P/4D/OP85/3X/Bv/G/wD/MP9I/+v/8f87/8H/c/8E/0D/Zv///wP//v8A/yr/w/8s/wP/iP9D/wP/D/++/8D/gP9k/xj/BP8A/4v/Rf/8/1//Xv9b/8n/w/87/8H/cv8M/4D/OP8w/3X/A/9I/+v/9P87/8H/c//Z/2b/g/8j/wD/xv9D/wL/IP/G/0P/A/8B/8b/Af8w/4D/Y/8F/wD/av8B/1j/6//T/w==
+  symbols:
+  - kind: Function
+    name: _$I10_OUTPUT
+    size: 659
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_06LKFM@1?$CDSNAN?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_05EDPF@1?$CDIND?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_05BGNL@1?$CDINF?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_06PAPI@1?$CDQNAN?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ___multtenpow12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___ld12mul
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___shl_12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___shr_12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___add_12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 174
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 200
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 217
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 226
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 246
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 255
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 333
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 358
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 428
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 457
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 495
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 504
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 517
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 526
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

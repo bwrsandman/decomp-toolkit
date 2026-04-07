@@ -1,0 +1,98 @@
+- symbol: 0
+  hash: 75a582f85514dc4e7e9e198317791aa12995d5d2
+  signature: Vf+L/+z/Uf9R/4v/Rf8M/1P/Vv8z//b/Of91/xT/V/+L/zj/if91//z/df8H/8f/Rf8U/wAAAAAAAAAAu/8AAAAAAAAAAFP///8V/wAAAAAAAAAAOf81/wAAAAAAAAAAdP8Y/1P///8V/wAAAAAAAAAAav8T/+j/AAAAAAAAAABZ/8f/Rf/4/wH/AP8A/wD/6/8D/4n/df/4/zn/df8I/3X/Rf9W/77/////////f////3X/FP9W/43/Rf8K/1f/UP/o/wAAAAAAAAAAg//E/xT/hf/A/3z/Dv90/2f///9F//z/av8A////df8U/wP/+P/r/+D/g/99//j/AP90/wr/av8T/+j/AAAAAAAAAABZ/+v/B/9T////Ff8AAAAAAAAAAIP/yP///+v/Wf85/3X/EP92/zX/vv////////9//2r/AP///3X/FP9W/1f///91/wj/6P8AAAAAAAAAAIP/xP8U/4X/wP98/xL/dP8W////Rf/8/4P/Rf8I/wL/A//4////Tf8Q/3X/2v/r/wj/g/9N//z////r/wL/M////4v/Rf8M/4n/OP+D/33/+P8A/3T/Cv9q/xP/6P8AAAAAAAAAAFn/6/8H/1P///8V/wAAAAAAAAAAi/9F//z/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: _mbsrtowcs
+    size: 245
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _?mbst@?1??mbsrtowcs@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ___unguarded_readlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedIncrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___setlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedDecrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __Mbrtowc_lk
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 26
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 31
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 38
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 44
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 60
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 98
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 132
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 142
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 172
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 223
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 233
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

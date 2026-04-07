@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: ff8d5d562d33dba49278f10eaa1ab51949aeeb42
+  signature: av8B/1j/w/8=
+  symbols:
+  - kind: Function
+    name: ?do_encoding@codecvt_base@std@@MBEHXZ
+    size: 4
+    flags: 1
+    section: .text
+  relocations: []

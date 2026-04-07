@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 164d969aab5e2049dbe67f705181e6d387c15f6c
+  signature: Vf+L/+z/gf/s/0j/Av8A/wD/U/9W/1f/i/99/wz/M//2/4r/H/9H/4T/2/+J/3X/9P+J/3X/7P+J/33/DP8P/4T/9P8G/wD/AP+L/03/8P8z/9L/6/8I/4v/Tf/w/4v/df/Q/zP/0v85/1X/7P8P/4z/3P8G/wD/AP+A//v/IP98/xP/gP/7/3j/f/8O/w//vv/D/4r/gP8AAAAAAAAAAIP/4P8P/+v/Av8z/8D/D/++/4T/xv8AAAAAAAAAAMH/+P8E/4P/+P8H/4n/Rf/Q/w//h/+a/wb/AP8A////JP+F/wAAAAAAAAAAg/9N//D///+J/1X/zP+J/1X/2P+J/1X/4P+J/1X/5P+J/1X//P+J/1X/3P/p/3j/Bv8A/wD/D/++/8P/g//o/yD/dP87/4P/6P8D/3T/Lf+D/+j/CP90/x//SP9I/3T/Ev+D/+j/A/8P/4X/Wf8G/wD/AP+D/03//P8I/+n/UP8G/wD/AP+D/03//P8E/+n/R/8G/wD/AP+D/03//P8B/+n/Pv8G/wD/AP+A/03//P+A/+n/Nf8G/wD/AP+D/03//P8C/+n/LP8G/wD/AP+A//v/Kv91/yP/jf9F/xD/UP/o/wAAAAAAAAAAhf/A/1n/if9F/+D/D/+N/xL/Bv8A/wD/g/9N//z/BP/3/9j/if9F/+D/6f8=
+  symbols:
+  - kind: Function
+    name: __output
+    size: 256
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lookuptable
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Unknown
+    name: $L17894
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _get_int_arg
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 76
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 91
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 113
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 230
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

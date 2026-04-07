@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 7b5993350f0908552684ee835a4dd33545b203ef
+  signature: g//I////wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?overflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHH@Z
+    size: 6
+    flags: 1
+    section: .text
+  relocations: []

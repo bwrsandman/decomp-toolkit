@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 33c40454ae13d4451967b19b5f0f2bf09d266f3a
+  signature: Vf+L/+z/g//s/yj/3f9F/wj/jf9F/9j/Vv9Q/43/Rf/w/1D/Uf9R/93/HP8k/+j/AAAAAAAAAACL/0j/BP+L/0X/EP+D/8T/EP+N/1H///+D//r///98/xv/jf9w////O//W/3//FP8r/8H/UP+N/0X/CP///3X/FP9Q/+j/AAAAAAAAAACD/8T/DP/r/xP/SP9q/wD/UP+N/0X/CP///3X/FP9Q/+j/AAAAAAAAAACD/8T/EP+L//D/iv8I/4T/yf90/wv/Ov8N/wAAAAAAAAAAdP8D/0D/6//v/4r/CP9A/4T/yf90/yD/iv8I/4T/yf90/wj/gP/5/2X/dP8D/0D/6//y/4v/yP9I/4D/OP8w/3T/+v+K/xH/QP9B/4T/0v+I/xD/df/2/4v/xv9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __gcvt
+    size: 154
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __fltout2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __cftof
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __cftoe
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___decimal_point
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 24
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 63
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 84
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 101
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

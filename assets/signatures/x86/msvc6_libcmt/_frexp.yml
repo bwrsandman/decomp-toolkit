@@ -1,0 +1,77 @@
+- symbol: 0
+  hash: 1adf6a9ff85b4f8fe657383f81fd703a716e537e
+  signature: Vf+L/+z/Vv++//////8A/wD/V/9W/2j/P/8T/wD/AP/o/wAAAAAAAAAAi//4/4v/Rf8O/2b/Jf/w/3//Wf9m/z3/8P9//1n/df9m/4v/Rf8Q/1H/3f9F/wj/g/8I////Uf/d/xz/JP/o/wAAAAAAAAAAWf+F/8D/Wf9+/yj/g//4/wL/fv8a/4P/+P8D/3X/Hv/d/0X/CP9X/1H/Uf/d/xz/JP9q/xf/6P8AAAAAAAAAAIP/xP8Q/+v/Tv/d/wX/AAAAAAAAAABX/+v/Cv/d/0X/CP/c/wX/AAAAAAAAAABX/1H/Uf/d/xz/JP/d/0X/CP9R/1H/3f8c/yT/av8X/2r/CP/o/wAAAAAAAAAAg//E/xz/6/8g////df8Q/93/Rf8I/1H/Uf/d/xz/JP/o/wAAAAAAAAAA3f9d/wj/Vv9X/+j/AAAAAAAAAADd/0X/CP+D/8T/FP9f/17/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _frexp
+    size: 176
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __ctrlfp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __sptype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __handle_qnan1
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __d_ind
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __real@8@3fff8000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __except1
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __decomp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 53
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 85
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 96
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 108
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 131
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 152
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 162
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

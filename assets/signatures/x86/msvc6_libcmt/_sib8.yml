@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 4e292757ef4f4771154d799465e84491f10d814a
+  signature: Vf+L/+z/U/+L/13/EP9W/1f/D/+2/xP/av8B/4v/wv9e/4v/yv9q/wf/wf/o/wP/X//B/+n/Bv8j/8f/0//m/4v/Tf8M/4P/+P8E/3T/Tf8j/8f/O//H/3f/R////yT/hf8AAAAAAAAAAIv/gf+w/wD/AP8A/+v/Ov+L/4H/rP8A/wD/AP/r/zL/i/+B/6j/AP8A/wD/6/8q/4v/gf+k/wD/AP8A/+v/Iv+L/4H/xP8A/wD/AP/r/xr/i/+B/7T/AP8A/wD/6/8S/4v/gf+g/wD/AP8A/+v/Cv+L/4H/nP8A/wD/AP/r/wL/M//A/yP/1/+D//r/BP91/xb/D/+2/1P/Af8P/6//xv8D/8L/A/+B/8T/AP8A/wD/i/9N/wj/if8B/+v/Y/8j/9f/O//X/3f/TP///yT/lf8AAAAAAAAAAIv/kf+w/wD/AP8A/+v/Nv+L/5H/rP8A/wD/AP/r/y7/i/+R/6j/AP8A/wD/6/8m/4v/kf+k/wD/AP8A/+v/Hv+L/5H/xP8A/wD/AP/r/xb/i/+R/7T/AP8A/wD/6/8O/4v/kf+g/wD/AP8A/+v/Bv+L/5H/nP8A/wD/AP+L/03/CP+J/xH/6/8G/4v/Tf8I/4P/If8A/w//tv9T/wH/D/+v/8b/A//C/wH/Af9q/wL/WP9f/17/W/9d/8P/
+  symbols:
+  - kind: Function
+    name: _sib8
+    size: 255
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L17997
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L17998
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 49
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 157
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

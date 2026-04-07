@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: c9efdc8ac3d8ceb1556ea077b1bf4873a895fe96
+  signature: i/9M/yT/BP9m/4P/Of8A/43/Qf8C/3T/Cv9m/4v/EP9A/0D/Zv+F/9L/df/2/yv/wf/R//j/SP/D/w==
+  symbols:
+  - kind: Function
+    name: _wcslen
+    size: 29
+    flags: 1
+    section: .text
+  relocations: []

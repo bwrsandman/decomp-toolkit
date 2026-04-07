@@ -1,0 +1,91 @@
+- symbol: 0
+  hash: ef6f285140b25b1c3fd82768ee011b16ea799b63
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1H/U/9W/43/Rf/w/1f/i//x/1D/if91/+z/x/9F//D/AAAAAAAAAADo/wAAAAAAAAAAi/9d/wj/g/9l//z/AP+N/37/DP9q/wD/iv8D/4v/z/+I/wf/6P8AAAAAAAAAAP//Nf8AAAAAAAAAAIv/z/9q/wD/U//o/wAAAAAAAAAAi/9N//T/x/8G/wAAAAAAAAAAi//G/1//Xv9b/2T/if8N/wAAAAAAAAAAyf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??0logic_error@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z
+    size: 100
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L9787
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_00A@?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0exception@@QAE@ABQBD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7logic_error@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 27
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 32
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 55
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 61
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 71
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 80
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 92
+    kind: x86_abs32
+    symbol: 9
+    addend: 0

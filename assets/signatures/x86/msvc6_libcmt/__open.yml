@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: a385545ab1bf2113229f749e8484d7c8d56bc17b
+  signature: //90/yT/DP9q/0D///90/yT/EP///3T/JP8Q/+j/AAAAAAAAAACD/8T/EP/D/w==
+  symbols:
+  - kind: Function
+    name: __open
+    size: 23
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __sopen
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

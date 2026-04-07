@@ -1,0 +1,60 @@
+- symbol: 0
+  hash: f28c30fbcc79262c045b3bf25a975c4df99edf77
+  signature: i/9U/yT/BP9T/1b/i/9a/wz/9v/H/wH/dP9f/2b/i/9S/wj/M//A/zP/yf++/wAAAAAAAAAAZv85/xb/dP8R/4P/xv8K/0H/gf/+/wAAAAAAAAAAfP/v/+n/jP8A/wD/AP/2/8P/A/90/wz/jf8E/4n/jf8E/0X/AAAAAAAAAADr/3v/9v/D/wz/dP8M/43/BP+J/43/BP9F/wAAAAAAAAAA6/9q//b/w/8Q/43/BP+J/3T/Cf+N/wT/Rf8AAAAAAAAAAOv/Wf+N/wT/Rf8AAAAAAAAAAOv/UP/2/8P/A/90/w3/D/+3/0L/CP+N/wT/xf8AAAAAAAAAAOv/K//2/8P/DP90/w3/D/+3/0L/CP+N/wT/xf8AAAAAAAAAAOv/Gf8P/7f/Qv8I//b/w/8Q/3T/Cf+N/wT/xf8AAAAAAAAAAOv/B/+N/wT/xf8AAAAAAAAAAIr/CP+E/8n/dP8F/4D/+f/g/3X/Bv+A/3j/Af8A/3X/Av8z/8D/Xv9b/8P/
+  symbols:
+  - kind: Function
+    name: __getextendedkeycode
+    size: 192
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _EnhancedKeys
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _NormalKeys
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 23
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 38
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 60
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 77
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 94
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 103
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 121
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 139
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 157
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 166
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

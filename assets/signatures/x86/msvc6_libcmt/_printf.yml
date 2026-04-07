@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: aafe28545b8c0828250d165f5b6ec02a48c0c78c
+  signature: U/9W/77/AAAAAAAAAABX/1b/av8B/+j/AAAAAAAAAABW/+j/AAAAAAAAAACL//j/jf9E/yT/IP9Q////dP8k/yD/Vv/o/wAAAAAAAAAAVv9X/4v/2P/o/wAAAAAAAAAAVv9q/wH/6P8AAAAAAAAAAIP/xP8o/4v/w/9f/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: _printf
+    size: 65
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_file2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __stbuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __output
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ftbuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file2
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 12
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 18
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 35
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 44
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 52
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

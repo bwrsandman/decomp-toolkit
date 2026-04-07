@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 850b7724113d858864430fba0a7b5a38fc928be6
+  signature: Vv9q/wj/6P8AAAAAAAAAAOj/AAAAAAAAAABq/wj/i//w/+j/AAAAAAAAAABZ/4v/xv9Z/17/w/8=
+  symbols:
+  - kind: Function
+    name: __getche
+    size: 28
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getche_lk
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 9
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 18
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

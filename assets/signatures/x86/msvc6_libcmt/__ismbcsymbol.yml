@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 6d129d2680f5df80fedf54208052e11b6c6055f1
+  signature: gf89/wAAAAAAAAAApP8D/wD/AP91/x3/i/9E/yT/BP89/0H/gf8A/wD/cv8S/z3/rP+B/wD/AP93/wv/Pf9//4H/AP8A/3T/BP9q/wH/WP/D/zP/wP/D/w==
+  symbols:
+  - kind: Function
+    name: __ismbcsymbol
+    size: 44
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mbcodepage
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

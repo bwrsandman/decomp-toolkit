@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 7856dd101d4f77f649a4ffed1a51991ec4b138ef
+  signature: i/9E/yT/BP+F/8D/dP8O/4P/fP8k/wj/AP90/wf/iv9J/wj/iP8I/+v/Av8z/8D/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?getString@charNode@@UBEPADPADH@Z
+    size: 27
+    flags: 1
+    section: .text
+  relocations: []

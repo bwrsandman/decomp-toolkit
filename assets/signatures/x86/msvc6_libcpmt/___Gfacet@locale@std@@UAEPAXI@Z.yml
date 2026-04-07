@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 6f25b3a20aa5fb57780189f099a96c3ce1b5d6aa
+  signature: 9v9E/yT/BP8B/1b/i//x/8f/Bv8AAAAAAAAAAHT/B/9W/+j/AAAAAAAAAABZ/4v/xv9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??_Gfacet@locale@std@@UAEPAXI@Z
+    size: 29
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7facet@locale@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

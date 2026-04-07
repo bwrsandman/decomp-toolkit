@@ -1,0 +1,84 @@
+- symbol: 0
+  hash: 52562d85ec3ee2a9c538f1d326347cf04658582f
+  signature: U/9V/1b/V//o/wAAAAAAAAAAi//w/4P/fv88/wD/df8U/2r/NP/o/wAAAAAAAAAAif9G/zz/Wf+F/8D/uP8AAAAAAAAAAHT/A/+L/0b/PP+L/3T/JP8U/4v/2P+L/07/GP+N/xT/Sf+L/07/EP+N/zz/Sf8z/8n/Zv8P/77/rP8K/wAAAAAAAAAAZv+J/yj/Zv8P/77/rP8P/wAAAAAAAAAAZv+J/2j/CP9B/0D/QP+D//n/A/98/9//av8g/1//Zv+J/zj/g//A/wj/Zv+J/zj///92/wz/g//A/wL/UP/o/wAAAAAAAAAAZv+J/zj///92/wj/g//A/wL/UP/o/wAAAAAAAAAAZv/H/wD/Ov8A////dv8E/4P/wP8C/1D/6P8AAAAAAAAAAGb/x/8A/zr/AP///zb/g//A/wL/UP/o/wAAAAAAAAAAi//I/2r/ZP9m/4n/Of+L/0b/FP+Z/1//g//B/wL/9////4P/wP8T/1D/Uf/o/wAAAAAAAAAAi//I/4v/Rv8U/1f/mf9e//f//v9S/1H/6P8AAAAAAAAAAIP/xP8w/2b/x/8A/wr/AP9m/4P/YP8C/wD/i//D/1//Xv9d/1v/w/8=
+  symbols:
+  - kind: Function
+    name: __wasctime
+    size: 229
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _buf
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ___dnames
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mnames
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _store_dt
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 31
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 65
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 77
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 113
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 128
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 145
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 161
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 188
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 205
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

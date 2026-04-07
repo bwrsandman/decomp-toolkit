@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: e4c8dcf1cc0a3bec65c2456dac23428e3e6c2841
+  signature: 6P8AAAAAAAAAAIP/wP8I/8P/
+  symbols:
+  - kind: Function
+    name: __errno
+    size: 9
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

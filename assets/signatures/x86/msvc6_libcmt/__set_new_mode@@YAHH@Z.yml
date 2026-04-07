@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: b475fafa2d552fbb76ba6b30e86b622b68e8d0cc
+  signature: i/9M/yT/BP+L/8H/g//g/wH/O//B/3T/BP+D/8j////D/6H/AAAAAAAAAACJ/w3/AAAAAAAAAADD/w==
+  symbols:
+  - kind: Function
+    name: ?_set_new_mode@@YAHH@Z
+    size: 29
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __newmode
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 24
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

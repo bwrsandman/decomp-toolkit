@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 40ec1eea88ca9dc38ee2f4ff9a6f657db495cd79
+  signature: Vf+L/+z/U/9W/4v/df8Q/1f/i/99/wz/i/8P/4P/Pv8B/3b/Hv+L/0X/CP9q/wr/mf9b//f/+/+L/0X/CP+A/8L/MP+I/xH/Qf+Z//f/+////w7/hf/A/4n/Rf8I/3//3f+L/wf/if8P/0n/iv8Y/4r/Ef+I/xn/Sf+I/xD/QP87/8H/cv/y/1//Xv9b/13/w/8=
+  symbols:
+  - kind: Function
+    name: __store_number
+    size: 73
+    flags: 2
+    section: .text
+  relocations: []

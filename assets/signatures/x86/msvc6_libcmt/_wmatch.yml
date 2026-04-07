@@ -1,0 +1,143 @@
+- symbol: 0
+  hash: e37f8b8ea89f7dec53e2c6e2bf206a41b139854b
+  signature: Vf+L/+z/Uf9R/4v/Tf8I/1P/Vv+L/3X/DP9X/zP///+J/33//P87//H/dP8c/2b/i/8G/2b/Pf9c/wD/dP8T/2b/Pf8v/wD/dP8N/2b/Pf86/wD/dP8H/07/Tv+J/3X/DP/r/+D/Zv+L/wb/Zv89/zr/AP91/w3/jf9R/wL/O//y/3T/Bv9R/+n/C/8B/wD/AP9m/z3/XP8A/3T/DP9m/z3/L/8A/3T/Bv9m/z3/Ov8A/3X/B/+L//7/K//5/9H///9H/1H/6P8AAAAAAAAAAIv/2P9Z/4X/2/8P/4T/3v8A/wD/AP+h/wAAAAAAAAAAif9F//j/aP8AAAAAAAAAAFP/6P8AAAAAAAAAAFn/hf/A/1n/D/+E/4f/AP8A/wD/aP8AAAAAAAAAAFP/6P8AAAAAAAAAAFn/hf/A/1n/dP92/2b/i/8G/2b/Pf9c/wD/dP8n/2b/Pf86/wD/dP8h/2b/Pf8v/wD/dP8b/1P/6P8AAAAAAAAAAIX/wP9Z/4n/Rf8I/3T/Zv9Q/+j/AAAAAAAAAACF/8D/Wf91/1v/6/9D/1P/6P8AAAAAAAAAAAP/x/+N/0T/AP8C/1D/6P8AAAAAAAAAAFn/hf/A/1n/dP9B/1P/V////3X/CP+N/zT/P/9Q/+j/AAAAAAAAAACD/8T/DP8D/8b/UP/o/wAAAAAAAAAAK//G/1D/6P8AAAAAAAAAAIP/xP8M/4X/wP91/xn/i/91/wz///9F//z/av8A/+j/AAAAAAAAAACL/9j/Wf+F/9v/dP8K/+n/Uf////////+D/8j////r/yv/g/99//z/AP90/xz/i/9F//j/hf/A/3T/Bf+L/0D/BP/r/wX/of8AAAAAAAAAAFD/6P8AAAAAAAAAAFn/M//A/+v/Cf///3X/CP/o/wAAAAAAAAAAWf9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: _wmatch
+    size: 351
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _wfind
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _argend
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ??_C@_13DOBH@?$AA?4?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _wcscmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_15PLEI@?$AA?4?$AA?4?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __wcsdup
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wadd
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcsncpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcscpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _arghead
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _wsort
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 100
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 116
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 124
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 130
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 145
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 151
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 184
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 198
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 211
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 223
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 243
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 254
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 262
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 282
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 322
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 328
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 341
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

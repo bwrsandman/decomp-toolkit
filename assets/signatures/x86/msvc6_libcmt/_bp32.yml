@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 0d9385df418ebddfb34c8a95efab14af4a4bea5a
+  signature: i/9E/yT/CP+L/0z/JP8M/2r/BP+L/4D/tP8A/wD/AP8D/wH/i/9M/yT/CP+J/wH/WP/D/w==
+  symbols:
+  - kind: Function
+    name: _bp32
+    size: 26
+    flags: 2
+    section: .text
+  relocations: []

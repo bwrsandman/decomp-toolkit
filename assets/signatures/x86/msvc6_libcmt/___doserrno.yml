@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: cbf792aaad9f2145c0ce57a2f86005ce332aba03
+  signature: 6P8AAAAAAAAAAIP/wP8M/8P/
+  symbols:
+  - kind: Function
+    name: ___doserrno
+    size: 9
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

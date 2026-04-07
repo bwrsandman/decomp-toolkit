@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 95cb78a24324a50e1da3f8eac5364fa49e7d0eaf
+  signature: gf89/wAAAAAAAAAApP8D/wD/AP9W/3X/JP+L/3T/JP8I/1b/6P8AAAAAAAAAAIX/wP9Z/3T/Ff+B//7/n/+I/wD/AP9y/w3/gf/+/3L/mP8A/wD/d/8F/2r/Af9Y/17/w/8z/8D/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: __ismbcl1
+    size: 53
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ismbclegal
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 19
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

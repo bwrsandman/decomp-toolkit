@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 556b9a6422a790b06614d3076e1124f9de884ccf
+  signature: av8Q////dP8k/wj/6P8AAAAAAAAAAFn/Wf/D/w==
+  symbols:
+  - kind: Function
+    name: _iswpunct
+    size: 14
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _iswctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

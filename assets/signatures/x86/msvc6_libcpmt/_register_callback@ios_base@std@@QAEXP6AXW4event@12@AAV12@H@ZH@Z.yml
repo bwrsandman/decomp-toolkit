@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: edb53d626a00a92e5f226b0b9bb488745530851e
+  signature: Vv+L//H/av8M/+j/AAAAAAAAAACF/8D/Wf90/xX/i/9O/xz/if8I/4v/TP8k/wz/if9I/wT/i/9M/yT/CP+J/0j/CP/r/wL/M//A/4n/Rv8c/17/hf/A/3X/Bf/o/wAAAAAAAAAAwv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?register_callback@ios_base@std@@QAEXP6AXW4event@12@AAV12@H@ZH@Z
+    size: 54
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Nomemory@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 47
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

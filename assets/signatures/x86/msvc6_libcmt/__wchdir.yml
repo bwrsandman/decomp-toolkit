@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 97d6574e9f434fd9418f82089c36e1ca9c95fe9f
+  signature: Vf+L/+z/gf/s/xT/Av8A/wD///91/wj///8V/wAAAAAAAAAAhf/A/3T/Zv+N/4X/7P/9//////9Q/2j/Bf8B/wD/AP///xX/AAAAAAAAAACF/8D/dP9Q/4v/hf/s//3//////2b/Pf9c/wD/dP8G/2b/Pf8v/wD/df8J/2b/O/+F/+7//f//////dP8x/1D/Zv/H/0X/+P89/wD/6P8AAAAAAAAAAGb/g/9l//7/AP9m/4n/Rf/6/1n/jf+F/+z//f//////UP+N/0X/+P9Q/2b/x/9F//z/Ov8A////Ff8AAAAAAAAAAIX/wP90/wT/M//A/8n/w////xX/AAAAAAAAAABQ/+j/AAAAAAAAAABZ/4P/yP///8n/w/8=
+  symbols:
+  - kind: Function
+    name: __wchdir
+    size: 142
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__SetCurrentDirectoryW@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetCurrentDirectoryW@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _towupper
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetEnvironmentVariableW@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 36
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 79
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 112
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 126
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 132
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 596fa4638beeaf3fe245d51ca13da2f2c2e5eb3c
+  signature: i/9E/yT/BP8t/6T/A/8A/wD/dP8i/4P/6P8E/3T/F/+D/+j/Df90/wz/SP90/wP/M//A/8P/uP8E/wT/AP8A/8P/uP8S/wT/AP8A/8P/uP8E/wj/AP8A/8P/uP8R/wT/AP8A/8P/
+  symbols:
+  - kind: Function
+    name: _CPtoLCID
+    size: 51
+    flags: 2
+    section: .text
+  relocations: []

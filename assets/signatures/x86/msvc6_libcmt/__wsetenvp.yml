@@ -1,0 +1,106 @@
+- symbol: 0
+  hash: afbf7f4068db3ffbed45f19b6cf100e800454ebd
+  signature: Vv+L/zX/AAAAAAAAAABX/zP///9m/4v/Bv9m/4X/wP90/xT/Zv89/z3/AP90/wH/R/9W/+j/AAAAAAAAAABZ/43/dP9G/wL/6//k/43/BP+9/wT/AP8A/wD/UP/o/wAAAAAAAAAAi//4/1n/hf///4n/Pf8AAAAAAAAAAHX/CP9q/wn/6P8AAAAAAAAAAFn/i/81/wAAAAAAAAAAZv+D/z7/AP90/0H/U/9W/+j/AAAAAAAAAACL/9j/Wf9D/2b/g/8+/z3/dP8l/43/BP8b/1D/6P8AAAAAAAAAAIX/wP9Z/4n/B/91/wj/av8J/+j/AAAAAAAAAABZ/1b///83/+j/AAAAAAAAAABZ/4P/x/8E/1n/Zv+D/zz/Xv8A/43/NP9e/3X/wf9b////Nf8AAAAAAAAAAOj/AAAAAAAAAACD/yX/AAAAAAAAAAAA/4P/J/8A/1n/X//H/wX/AAAAAAAAAAAB/wD/AP8A/17/w/8=
+  symbols:
+  - kind: Function
+    name: __wsetenvp
+    size: 184
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __wenvptr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __wenviron
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __amsg_exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcscpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___env_initialized
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 27
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 47
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 58
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 67
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 74
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 87
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 106
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 120
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 129
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 151
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 156
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 162
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 174
+    kind: x86_abs32
+    symbol: 8
+    addend: 0

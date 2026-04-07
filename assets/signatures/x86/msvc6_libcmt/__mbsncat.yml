@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: fe576f2328d00ea6919340bdeb364724ff8691a8
+  signature: Vf+L/+z/U/8z/9v/Of9d/xD/df8I/4v/Rf8I/+n/o/8A/wD/AP85/x3/AAAAAAAAAAB1/xb///91/xD///91/wz///91/wj/6P8AAAAAAAAAAIP/xP8M/+n/hf8A/wD/AP9W/1f/av8Z/+j/AAAAAAAAAACL/3X/CP9Z/4v//v+K/wb/Rv+E/8D/df/5/07/Vv9X/+j/AAAAAAAAAABZ/4X/wP9Z/3T/Af9O////Tf8Q/4v/Tf8M/4r/Af8P/7b/0P/2/4L/AAAAAAAAAAAE/4j/Bv90/w//iv9B/wH/Rv9B/4j/Bv9G/0H/Ov/D/3T/FP/r/wb/Rv9B/zr/w/90/w//i/9F/xD///9N/xD/hf/A/3X/0f/r/wP/iP9e//7/i//G/yv/x/9I/1D/V//o/wAAAAAAAAAAWf+D//j/Af9Z/3X/Bf+I/17////r/wL/iP8e/2r/Gf/o/wAAAAAAAAAAWf+L/8f/X/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __mbsncat
+    size: 185
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___ismbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strncat
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ismbslead
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mbsbtype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 37
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 54
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 75
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 99
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 152
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 173
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

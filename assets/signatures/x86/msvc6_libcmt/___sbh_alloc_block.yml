@@ -1,0 +1,81 @@
+- symbol: 0
+  hash: d007ffdf9373f3d854d2c21c86f766cb1f0e8214
+  signature: Vf+L/+z/g//s/xT/of8AAAAAAAAAAIv/Ff8AAAAAAAAAAFP/Vv+N/wT/gP9X/43/PP+C/4v/Rf8I/4n/ff/8/43/SP8X/4P/4f/w/4n/Tf/w/8H/+f8E/0n/g//5/yD/ff8O/4P/zv///9P/7v+D/03/+P///4n/df/0/+v/EP+D/8H/4P+D/8j///8z//b/0//o/4n/df/0/4n/Rf/4/6H/AAAAAAAAAACL/9j/O//f/4n/Xf8I/3P/Gf+L/0v/BP+L/zv/I/9N//j/I//+/wv/z/91/wv/g//D/xT/O/9d//z/if9d/wj/cv/n/zv/Xf/8/3X/ef+L/9r/O//Y/4n/Xf8I/3P/Ff+L/0v/BP+L/zv/I/9N//j/I//+/wv/z/91/wX/g//D/xT/6//m/zv/2P91/1n/O/9d//z/c/8R/4P/e/8I/wD/df8I/4P/w/8U/4n/Xf8I/+v/7f87/13//P91/yb/i//a/zv/2P+J/13/CP9z/w3/g/97/wj/AP91/wX/g//D/xT/6//u/zv/2P91/w7/6P8AAAAAAAAAAIv/2P+F/9v/if9d/wj/dP8U/1P/6P8AAAAAAAAAAFn/i/9L/xD/if8B/4v/Q/8Q/4P/OP///3X/B/8z/8D/6f8P/wL/AP8A/4n/Hf8AAAAAAAAAAIv/Q/8Q/4v/EP+D//r///+J/1X//P90/xT/i/+M/5D/xP8A/wD/AP+L/3z/kP9E/yP/Tf/4/yP//v8L/8//df83/4v/kP/E/wD/AP8A/4v/cP9E/yP/Vf/4/yP/df/0/4P/Zf/8/wD/jf9I/0T/C//W/4v/df/0/3X/F/+L/5H/hP8A/wD/AP///0X//P8j/1X/+P+D/8H/BP+L//7/I/85/wv/1/90/+n/i/9V//z/i//K/zP///9p/8n/BP8C/wD/AP+N/4z/Af9E/wH/AP8A/4n/Tf/0/4v/TP+Q/0T/I//O/3X/Df+L/4z/kP/E/wD/AP8A/2r/IP8j/03/+P9f/4X/yf98/wX/0f/h/0f/6//3/4v/Tf/0/4v/VP/5/wT/i/8K/yv/Tf/w/4v/8f+J/03/+P/B//7/BP9O/4P//v8//37/A/9q/z//Xv87//f/D/+E/w3/Af8A/wD/i/9K/wT/O/9K/wj/df9h/4P///8g/33/K/+7/wD/AP8A/4D/i//P/9P/6/+L/03//P+N/3z/OP8E//f/0/+J/13/7P8j/1z/iP9E/4n/XP+I/0T//v8P/3X/OP+L/13/CP+L/03/7P8h/wv/6/8x/43/T//g/7v/AP8A/wD/gP/T/+v/i/9N//z/jf98/zj/BP+N/4z/iP/E/wD/AP8A//f/0/8h/xn//v8P/4n/Xf/s/3X/C/+L/13/CP+L/03/7P8h/0v/BP/r/wP/i/9d/wj/i/9K/wj/i/96/wT/g/99//j/AP+J/3n/BP+L/0r/BP+L/3r/CP+J/3n/CP8P/4T/lP8A/wD/AP+L/03/9P+L/3z/8f8E/43/DP/x/4n/ev8E/4n/Sv8I/4n/Uf8E/4v/Sv8E/4n/Uf8I/4v/Sv8E/zv/Sv8I/3X/ZP+K/0z/Bv8E/4P//v8g/4j/Tf8L/33/Kf/+/8H/gP99/wv/AP+I/0z/Bv8E/3X/C/+//wD/AP8A/4D/i//O/9P/7/8J/zv/v/8A/wD/AP+A/4v/zv/T/+//i/9N//z/Cf98/4j/RP/r/y///v/B/4D/ff8L/wD/iP9M/wb/BP91/w3/jf9O/+D/v/8A/wD/AP+A/9P/7/8J/3v/BP+L/03//P+N/7z/iP/E/wD/AP8A/43/Tv/g/77/AP8A/wD/gP/T/+7/Cf83/4v/Tf/4/4X/yf90/wv/if8K/4n/TP8R//z/6/8D/4v/Tf/4/4v/df/w/wP/0f+N/07/Af+J/wr/if9M/zL//P+L/3X/9P+L/w7/hf/J/43/ef8B/4n/Pv91/xr/O/8d/wAAAAAAAAAAdf8S/4v/Tf/8/zv/Df8AAAAAAAAAAHX/B/+D/yX/AAAAAAAAAAAA/4v/Tf/8/4n/CP+N/0L/BP9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ___sbh_alloc_block
+    size: 777
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___sbh_cntHeaderList
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_pHeaderList
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_pHeaderScan
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_alloc_new_region
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___sbh_alloc_new_group
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___sbh_pHeaderDefer
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_indGroupDefer
+    size: 4
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 13
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 81
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 205
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 220
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 247
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 740
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 751
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 759
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

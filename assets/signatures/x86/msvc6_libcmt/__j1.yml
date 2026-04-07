@@ -1,0 +1,162 @@
+- symbol: 0
+  hash: fb4b93e1540e1fde68d6592e9757a3b0f54de8ae
+  signature: Vf+L/+z/g//s/yT/3f9F/wj/3P8d/wAAAAAAAAAAx/9F//z/Af8A/wD/AP/f/+D/nv9z/wz/3f9F/wj/g/9N//z////Z/+D/3f9d/wj/3f9F/wj/3P8d/wAAAAAAAAAA3//g/57/d/8v/93/Rf8I/9z/Tf8I/2r/BP9o/wAAAAAAAAAAav8K/2j/AAAAAAAAAABR/1H/3f8c/yT/6P8AAAAAAAAAANv/Rf/8/4P/xP8Y/93/Xf/s/9z/Tf/s/9z/Tf8I/8n/w//d/wX/AAAAAAAAAADc/3X/CP9q/wX/aP8AAAAAAAAAAGr/Bf9o/wAAAAAAAAAAUf9R/93/Xf/0/93/Rf/0/9z/Tf/0/93/Xf/s/93/Rf/s/93/HP8k/+j/AAAAAAAAAADd/13/5P+D/8T/GP/d/0X/7P9q/wX/aP8AAAAAAAAAAGr/Bf9o/wAAAAAAAAAAUf9R/93/HP8k/+j/AAAAAAAAAADc/03/9P+D/8T/EP/d/13/9P/d/0X/CP/c/yX/AAAAAAAAAADd/13/7P/d/0X/CP/c/w3/AAAAAAAAAADc/z3/AAAAAAAAAADd/xz/JP/o/wAAAAAAAAAA3f9d/9z/3f9F/+z/3f8c/yT/6P8AAAAAAAAAANz/Tf/k/93/Xf8I/93/Rf/s/93/HP8k/+j/AAAAAAAAAADc/03/9P9Z/1n/3P9t/wj/3P9N/9z/2/9F//z/3f9d/wj/3P9N/wj/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __j1
+    size: 278
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __real@8@00000000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@4001f000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: _J1q
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _J1p
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Function
+    name: _evaluate
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __real@8@40028000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: _P1q
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _P1p
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _Q1q
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _Q1p
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: __real@8@400096cbe3f9990e9000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@4000c90fdaa22168c000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@40008000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _sqrt
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _cos
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _sin
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 44
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 62
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 69
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 79
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 102
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 112
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 119
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 144
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 160
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 167
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 177
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 195
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 207
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 213
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 221
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 235
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 252
+    kind: x86_rel32
+    symbol: 16
+    addend: -4

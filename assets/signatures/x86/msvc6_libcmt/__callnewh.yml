@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: b33bb2dd1c26a3f425357c3d5f5c2227f919999d
+  signature: of8AAAAAAAAAAIX/wP90/w////90/yT/BP///9D/hf/A/1n/dP8E/2r/Af9Y/8P/M//A/8P/
+  symbols:
+  - kind: Function
+    name: __callnewh
+    size: 27
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_pnhHeap@@3P6AHI@ZA
+    size: 0
+    flags: 1
+    section: .bss
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

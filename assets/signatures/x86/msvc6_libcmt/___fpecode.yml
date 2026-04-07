@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 08da3bec798b0fb25627c1f9af8f32fc7cc95abd
+  signature: 6P8AAAAAAAAAAIP/wP9Y/8P/
+  symbols:
+  - kind: Function
+    name: ___fpecode
+    size: 9
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

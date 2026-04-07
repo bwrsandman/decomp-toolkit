@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: 675aabdc6d1138c14ffc6b8fc80c793d07a3465a
+  signature: aP9A/wH/AP8A/2r/AP///zX/AAAAAAAAAAD//xX/AAAAAAAAAACF/8D/o/8AAAAAAAAAAHX/Af/D/4P/Jf8AAAAAAAAAAAD/g/8l/wAAAAAAAAAAAP9q/wH/o/8AAAAAAAAAAMf/Bf8AAAAAAAAAABD/AP8A/wD/WP/D/w==
+  symbols:
+  - kind: Function
+    name: ___sbh_heap_init
+    size: 62
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __crtheap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapAlloc@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_pHeaderList
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_pHeaderDefer
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_cntHeaderList
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_pHeaderScan
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_sizeHeaderList
+    size: 4
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 31
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 38
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 52
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

@@ -1,0 +1,81 @@
+- symbol: 0
+  hash: e13f341da3fe8bac93c6e4bc95896a9dfa3a4fbc
+  signature: Vv+L/3T/JP8I/zv/Nf8AAAAAAAAAAHP/cP+L/87/i//G/8H/+f8F/4P/4P8f/4v/DP+N/wAAAAAAAAAAjf8E/8D/9v9E/4H/BP8B/3T/Vf9X/1b/6P8AAAAAAAAAAGr/Af9q/wD/Vv/o/wAAAAAAAAAAi//4/4P/xP8Q/4P//////3T/K/9q/wL/av8A/1b/6P8AAAAAAAAAAIP/xP8M/4P/+P///3T/Gf87//j/df8F/2r/Af9f/+v/E/9q/wD/V/9W/+j/AAAAAAAAAACD/8T/DP8z////6/8D/4P/z////1b/6P8AAAAAAAAAAFn/i//H/1//Xv/D/+j/AAAAAAAAAADH/wD/Cf8A/wD/AP/o/wAAAAAAAAAAg/8g/wD/g//I////Xv/D/w==
+  symbols:
+  - kind: Function
+    name: __eof
+    size: 149
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lseek_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 43
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 53
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 99
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 115
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 126
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 137
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

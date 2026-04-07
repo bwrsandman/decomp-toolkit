@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 6134b93fef71799443b1fc3e37e419485e13a4be
+  signature: Vf+L/+z/Uf9R/4P/ff8I/wD///91/xD/dP8b/43/Rf/4/1D/6P8AAAAAAAAAAIv/Rf8M/1n/Wf+L/03/+P+J/wj/i/9N//z/if9I/wT/yf/D/43/Rf8Q/1D/6P8AAAAAAAAAAIv/Rf8M/1n/Wf+L/03/EP+J/wj/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __fassign
+    size: 62
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __atodbl
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __atoflt
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 46
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

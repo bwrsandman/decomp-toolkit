@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: c955adec7df93eae8b2fb224145bf2f3bb0a30aa
+  signature: i/9B/xz/i/8A/4X/wP90/zr/i/9R/wz/O/8C/3b/M/+L/1T/JP8E/4P/+v///3T/C/86/1D///90/wb/9v9B/0T/Av91/x//i/9B/yz///8A/4v/Qf8c////CP+D//r///91/wT/M//A/+v/D/+L/0H/HP+L/wD/iP8Q/w//tv/C/+v/A/+D/8j////C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?pbackfail@strstreambuf@std@@MAEHH@Z
+    size: 73
+    flags: 1
+    section: .text
+  relocations: []

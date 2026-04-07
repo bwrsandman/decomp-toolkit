@@ -1,0 +1,58 @@
+- symbol: 0
+  hash: 28f85dc46789e14443df63499f23a8f6c6380dde
+  signature: i/9E/yT/BP+D/yX/AAAAAAAAAAAA/4P/+P/+/3X/EP/H/wX/AAAAAAAAAAAB/wD/AP8A////Jf8AAAAAAAAAAIP/+P/9/3X/EP/H/wX/AAAAAAAAAAAB/wD/AP8A////Jf8AAAAAAAAAAIP/+P/8/3X/D/+h/wAAAAAAAAAAx/8F/wAAAAAAAAAAAf8A/wD/AP/D/w==
+  symbols:
+  - kind: Function
+    name: _getSystemCP
+    size: 74
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _fSystemSet
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __imp__GetOEMCP@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetACP@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 39
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 49
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 59
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 65
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

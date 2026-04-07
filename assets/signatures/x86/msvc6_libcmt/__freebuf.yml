@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 7554e36ef9baf321bfc273da005d56a370827795
+  signature: Vv+L/3T/JP8I/4v/Rv8M/6j/g/90/x3/qP8I/3T/Gf///3b/CP/o/wAAAAAAAAAAZv+B/2b/DP/3//v/M//A/1n/if8G/4n/Rv8I/4n/Rv8E/17/w/8=
+  symbols:
+  - kind: Function
+    name: __freebuf
+    size: 43
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

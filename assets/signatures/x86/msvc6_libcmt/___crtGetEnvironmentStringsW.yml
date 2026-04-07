@@ -1,0 +1,146 @@
+- symbol: 0
+  hash: 15b23b861f4865ca34a605ec830955c62d2781d2
+  signature: Uf+h/wAAAAAAAAAAU/+L/x3/AAAAAAAAAABV/1b/M//2/zP/7f9X/4v/Pf8AAAAAAAAAAIX/wP91/yz////X/4v/8P+F//b/dP8M/8f/Bf8AAAAAAAAAAAH/AP8A/wD/6/8d////0/+L//D/hf/2/w//hP/F/wD/AP8A/8f/Bf8AAAAAAAAAAAL/AP8A/wD/6/9c/4P/+P8B/3X/Uv+F//b/df8M////1/+L//D/hf/2/w//hP+k/wD/AP8A/zP/yf+L/8b/Zv85/w7/dP8O/0D/QP9m/zn/CP91//n/QP9A/2b/Of8I/3X/8v8r/8b/QP9A/4v/2P9T/+j/AAAAAAAAAACL//j/Wf+F////df8L/1b///8V/wAAAAAAAAAAi//H/+v/cf9T/1b/V//o/wAAAAAAAAAAg//E/wz/6//o/4P/+P8C/3X/Xf+F//b/df8I////0/+L//D/hf/2/3T/Uf+A/z7/AP+L//7/dP8t/2r/AP9q/wD/av///1f/av8B////Nf8AAAAAAAAAAP//Ff8AAAAAAAAAAIX/wP90/zH/V/8D/+j/6P8AAAAAAAAAAID/fP8H/wH/AP+N/3z/B/8B/1n/df/T/0X/if9s/yT/EP+N/0T/Lf8A/1D/6P8AAAAAAAAAAIv/2P9Z/4X/2/91/w//Vv///xX/AAAAAAAAAAAz/8D/X/9e/13/W/9Z/8P/gP8+/wD/i//u/4v/+/90/z//i/9M/yT/EP+L/8f/K//D/9H/+P8r/8j/Uf9X/2r///9V/2r/Af///zX/AAAAAAAAAAD//xX/AAAAAAAAAACF/8D/dP8i/1X/6P8AAAAAAAAAAFf/jf9s/yj/Af/o/wAAAAAAAAAAgP99/wD/AP9Z/1n/jf98/0f/Av91/8H/Zv+D/yf/AP/r/wn/U//o/wAAAAAAAAAAWf8z/9v/Vv///xX/AAAAAAAAAACL/8P/6/+Y/w==
+  symbols:
+  - kind: Function
+    name: ___crtGetEnvironmentStringsW
+    size: 365
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _?f_use@?1??__crtGetEnvironmentStringsW@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __imp__GetEnvironmentStrings@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetEnvironmentStringsW@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FreeEnvironmentStringsW@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__MultiByteToWideChar@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FreeEnvironmentStringsA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 9
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 40
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 64
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 126
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 140
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 152
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 196
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 202
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 214
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 241
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 255
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 297
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 303
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 313
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 323
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 347
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 357
+    kind: x86_abs32
+    symbol: 10
+    addend: 0

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 03b40dfad248794d1babf13343c0752aae5e1e57
+  signature: i/9E/yT/BP+L/0z/JP8I/1b/i/90/yT/EP9X/zv/yP+L//j/c/8d/43/FP9x/zv/wv9z/xb/hf/2/43/DP9w/3b/IP9K/0r/Sf9J/07/Zv+L/zr/Zv+J/zn/df/z/+v/Ef+F//b/dv8N/2b/i/8R/2b/if8X/0f/R/9B/0H/Tv91//P/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: _wmemmove
+    size: 69
+    flags: 1
+    section: .text
+  relocations: []

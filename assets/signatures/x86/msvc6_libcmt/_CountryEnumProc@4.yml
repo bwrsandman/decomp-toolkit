@@ -1,0 +1,99 @@
+- symbol: 0
+  hash: bdd8929ad0cdb27c392222646e94452d8829c125
+  signature: Vf+L/+z/g//s/3j/Vv///3X/CP/o/wAAAAAAAAAAWf+L//D/jf9F/4j/av94/1D/of8AAAAAAAAAAPf/2P8b/8D/Zv8l/wX/8P8F/wL/EP8A/wD/UP9W////Ff8AAAAAAAAAAIX/wP91/wv/If8F/wAAAAAAAAAAav8B/1j/6/9A/43/Rf+I/1D///81/wAAAAAAAAAA6P8AAAAAAAAAAFn/hf/A/1n/df8e/1b/6P8AAAAAAAAAAIX/wP9Z/3T/E/+D/w3/AAAAAAAAAAAE/4n/Nf8AAAAAAAAAAIn/Nf8AAAAAAAAAAKH/AAAAAAAAAAD3/9D/wf/o/wL/g//g/wH/Xv/J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: _CountryEnumProc@4
+    size: 134
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _LcidFromHexString
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _bAbbrevCountry
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _pfnGetLocaleInfoA
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _iLcidState
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _pchCountry
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __stricmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _TestDefaultCountry
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _lcidCountry
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _lcidLanguage
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 25
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 56
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 71
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 76
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 88
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 99
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 106
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 112
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 117
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

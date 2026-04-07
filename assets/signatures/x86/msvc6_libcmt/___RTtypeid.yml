@@ -1,0 +1,121 @@
+- symbol: 0
+  hash: 8634d766c16fe07984c7cf153c1f4c84fb27b165
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P80/1P/Vv9X/4n/Zf/o/4v/Rf8I/4X/wP91/xv/aP8AAAAAAAAAAI3/Tf/Y/+j/AAAAAAAAAABo/wAAAAAAAAAAjf9F/9j/UP/o/wAAAAAAAAAAg/9l//z/AP+L/wD/i/9w//z/if91/+T/av8I////dv8M////Ff8AAAAAAAAAAIX/wP91/xb/i/9G/wz/g/9N//z///+L/03/8P9k/4n/Df8AAAAAAAAAAF//Xv9b/8n/w/9o/wAAAAAAAAAAjf9N/8z/6P8AAAAAAAAAAGj/AAAAAAAAAACN/0X/zP9Q/+j/AAAAAAAAAACL/0X/7P+L/wD/i/8A/zP/yf89/wX/AP8A/8D/D/+U/8H/i//B/8P/
+  symbols:
+  - kind: Function
+    name: ___RTtypeid
+    size: 168
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T17052
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CE@DOMJ@Attempted?5a?5typeid?5of?5NULL?5point@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0bad_typeid@@QAE@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __TI2?AVbad_typeid@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__IsBadReadPtr@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CB@OFOA@Bad?5read?5pointer?5?9?5no?5RTTI?5data?$CB@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0__non_rtti_object@@QAE@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __TI3?AV__non_rtti_object@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 54
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 59
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 68
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 91
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 112
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 122
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 130
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 135
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 144
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

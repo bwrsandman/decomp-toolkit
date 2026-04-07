@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 41c9e1b393022b6cdb5d85d21769792c9309f75f
+  signature: i/9M/yT/DP9X/4X/yf90/3r/Vv9T/4v/2f+L/3T/JP8U//f/xv8D/wD/AP8A/4v/fP8k/xD/df8H/8H/6f8C/3X/b//r/yH/iv8G/0b/iP8H/0f/Sf90/yX/hP/A/3T/Kf/3/8b/A/8A/wD/AP91/+v/i//Z/8H/6f8C/3X/Uf+D/+P/A/90/w3/iv8G/0b/iP8H/0f/hP/A/3T/L/9L/3X/8/+L/0T/JP8Q/1v/Xv9f/8P/9//H/wP/AP8A/wD/dP8S/4j/B/9H/0n/D/+E/4r/AP8A/wD/9//H/wP/AP8A/wD/df/u/4v/2f/B/+n/Av91/2z/iP8H/0f/S/91//r/W/9e/4v/RP8k/wj/X//D/4n/F/+D/8f/BP9J/3T/r/+6/////v/+/37/i/8G/wP/0P+D//D///8z/8L/i/8W/4P/xv8E/6n/AP8B/wH/gf90/97/hP/S/3T/LP+E//b/dP8e//f/wv8A/wD///8A/3T/DP/3/8L/AP8A/wD///91/8b/if8X/+v/GP+B/+L//////wD/AP+J/xf/6/8O/4H/4v///wD/AP8A/4n/F//r/wT/M//S/4n/F/+D/8f/BP8z/8D/Sf90/wr/M//A/4n/B/+D/8f/BP9J/3X/+P+D/+P/A/91/4X/i/9E/yT/EP9b/17/X//D/w==
+  symbols:
+  - kind: Function
+    name: _strncpy
+    size: 254
+    flags: 1
+    section: .text
+  relocations: []

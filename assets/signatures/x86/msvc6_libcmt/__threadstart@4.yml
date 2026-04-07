@@ -1,0 +1,90 @@
+- symbol: 0
+  hash: b651c01de77e917ab94e804ffcd564e8a37c632c
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8M/1P/Vv9X/4n/Zf/o/4v/df8I/1b///81/wAAAAAAAAAA//8V/wAAAAAAAAAAhf/A/3X/CP9q/xD/6P8AAAAAAAAAAFn/of8AAAAAAAAAAIX/wP90/wL////Q/4P/Zf/8/wD///92/0z///9W/0j/Wf/o/wAAAAAAAAAAg/9N//z///8z/8D/i/9N//D/ZP+J/w3/AAAAAAAAAABf/17/W//J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: __threadstart@4
+    size: 116
+    flags: 2
+    section: .text
+  - kind: Object
+    name: $T17055
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___tlsindex
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__TlsSetValue@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __amsg_exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __FPmtinit
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __endthread
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 44
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 50
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 61
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 67
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 89
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 105
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

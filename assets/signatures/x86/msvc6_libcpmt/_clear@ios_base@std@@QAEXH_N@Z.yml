@@ -1,0 +1,131 @@
+- symbol: 0
+  hash: ba8956113b984671c1774286231379d7d7acb611
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/LP+L/0X/CP9T/4P/4P8H/4n/Qf8E/4v/Sf8I/yP/yP90/2//M//b/zj/Xf8M/3T/B/9T/1P/6P8AAAAAAAAAAPb/wf8E/1b/dP8H/77/AAAAAAAAAADr/w//9v/B/wL/vv8AAAAAAAAAAHX/Bf++/wAAAAAAAAAAiv9F/w//U/+N/03/5P+I/0X/5P/o/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf9Q/1b/jf9N/+T/6P8AAAAAAAAAAI3/Rf/k/43/Tf/I/1D/if9d//z/6P8AAAAAAAAAAI3/Rf/I/2j/AAAAAAAAAABQ/8f/Rf/I/wAAAAAAAAAA6P8AAAAAAAAAAF7/i/9N//T/W/9k/4n/Df8AAAAAAAAAAMn/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?clear@ios_base@std@@QAEXH_N@Z
+    size: 156
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L6112
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BA@HGGD@ios?3?3badbit?5set?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@KPBH@ios?3?3failbit?5set?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@NGIA@ios?3?3eofbit?5set?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0runtime_error@std@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __TI3?AVfailure@ios_base@std@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Object
+    name: ??_7failure@ios_base@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 40
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 51
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 61
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 68
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 83
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 89
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 100
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 115
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 123
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 131
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 136
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 148
+    kind: x86_abs32
+    symbol: 13
+    addend: 0

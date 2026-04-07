@@ -1,0 +1,179 @@
+- symbol: 0
+  hash: acfe248f88755130f469b4325967ebbfa849fbac
+  signature: Vf+L/+z/g//s/xz/i/9N/wz/U/8z/9v/Vv/2/8H/gP9X/8f/Rf/k/wz/AP8A/wD/if9d/+j/dP8J/4n/Xf/s/8b/Rf///xD/6/8L/4D/Zf///wD/x/9F/+z/Af8A/wD/AP+4/wD/gP8A/wD/hf/I/3X/Ef/2/8X/QP91/wj/Of8F/wAAAAAAAAAAdP8E/4D/Tf///4D/av8D/4v/wf9e/yP/xv8r/8P/dP8c/0j/dP8Q/0j/D/+F/6T/AP8A/wD/x/9F//T/AP8A/wD/wP/r/xD/x/9F//T/AP8A/wD/QP/r/wf/x/9F//T/AP8A/wD/gP+L/0X/EP+D//j/EP90/yb/g//4/yD/dP8Y/4P/+P8w/3T/Cv+D//j/QP91/3T/if91//D/6/8V/8f/Rf/w/wL/AP8A/wD/6/8M/8f/Rf/w/wH/AP8A/wD/6/8D/4n/Xf/w/7r/AP8H/wD/AP+4/wD/BP8A/wD/I//K/7//AP8B/wD/AP87/8j/f/8x/3T/Kv87/8v/dP8m/zv/z/90/xn/gf/5/wD/Av8A/wD/dP9N/4H/+f8A/wP/AP8A/3X/K//H/0X/+P8C/wD/AP8A/+v/TP/H/0X/+P8E/wD/AP8A/+v/Q/+J/3X/+P/r/z7/gf/5/wD/Bf8A/wD/dP8v/4H/+f8A/wb/AP8A/3T/Hv87/8r/dP8j/+j/AAAAAAAAAADH/wD/Fv8A/wD/AP/o/wAAAAAAAAAAif8Y/4P/yP///+n/rP8B/wD/AP/H/0X/+P8F/wD/AP8A/+v/B//H/0X/+P8B/wD/AP8A/4v/Rf8M/77/gP8A/wD/AP+F/8f/dP8T/4v/Df8AAAAAAAAAAPf/0f8j/03/FP/2/8H/gP91/wP/av8B/17/qP9A/3T/Cv+B/87/AP8A/wD/BP+A/03/9v8B//b/xP8Q/3T/Av8L//f/qP8g/3T/CP+B/87/AP8A/wD/CP/r/wr/qP8Q/3T/Bv+B/87/AP8A/wD/EP/o/wAAAAAAAAAAi//Y/4P/z////zv/3/91/xr/6P8AAAAAAAAAAMf/AP8Y/wD/AP8A/+j/AAAAAAAAAACD/yD/AP+L/8f/6f8q/wH/AP8A/2r/AP9W////df/4/43/Rf/k/1D///91//D///91//T///91/wj///8V/wAAAAAAAAAAi//w/zv/9/91/xT///8V/wAAAAAAAAAAUP/o/wAAAAAAAAAAWf+L//f/6f/u/wD/AP8A/1b///8V/wAAAAAAAAAAhf/A/3X/Cf9W////Ff8AAAAAAAAAAOv/2P+D//j/Av91/wb/gP9N////QP/r/wn/g//4/wP/df8E/4D/Tf///wj/Vv9T/+j/AAAAAAAAAACL/8P/Wf/B//j/Bf9Z/4r/Tf///43/PP+F/wAAAAAAAAAAi//D/4D/yf8B/4P/4P8f/4j/Tf8L/43/NP/A/4v/B//B/+b/Av+A/2X/C/9I/4j/TP8w/wT/df94//b/wf+A/3T/c//2/0X/DP8C/3T/bf9q/wL/av///1P/6P8AAAAAAAAAAIP/xP8M/4P/+P///4n/Rf/w/3X/Gf/o/wAAAAAAAAAAgf84/4P/AP8A/wD/dP9L/1P/6P8AAAAAAAAAAFn/g//O////6/9Y/4D/Zf8T/wD/jf9F/xP/av8B/1D/U//o/wAAAAAAAAAAg//E/wz/hf/A/3X/Fv+A/33/E/8a/3X/EP///3X/8P9T/+j/AAAAAAAAAABZ/4P/+P///1n/dP/H/2r/AP9q/wD/U//o/wAAAAAAAAAAg//E/wz/g//4////dP+1/4D/ff8L/wD/df8R//b/Rf8M/wj/dP8L/4v/B/+A/0z/MP8E/yD/jf9E/zD/BP+L//P/U//o/wAAAAAAAAAAWf+L/8b/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __sopen
+    size: 719
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __fmode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __umaskval
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __alloc_osfhnd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__CreateFileA@28
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetFileType@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__CloseHandle@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __set_osfhnd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lseek_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __close
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __read_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __chsize_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 65
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 261
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 272
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 316
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 377
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 391
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 402
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 437
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 449
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 455
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 470
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 481
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 510
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 527
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 577
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 593
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 607
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 629
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 651
+    kind: x86_rel32
+    symbol: 16
+    addend: -4
+  - offset: 668
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 707
+    kind: x86_rel32
+    symbol: 17
+    addend: -4

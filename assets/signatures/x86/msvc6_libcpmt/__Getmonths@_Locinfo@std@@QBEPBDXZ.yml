@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: bd94f8a49c1ef47f395d2fe69ec4c000839f5515
+  signature: Vv9X/4v/8f/o/wAAAAAAAAAAi//4/4X///90/xj/V//o/wAAAAAAAAAAWf9Q/1f/jf9O/xD/6P8AAAAAAAAAAFf/6P8AAAAAAAAAAFn/g/9+/xj/AP90/xL/i/92/xT/hf/2/3X/B/+4/wAAAAAAAAAA6/8J/4v/xv/r/wX/uP8AAAAAAAAAAF//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?_Getmonths@_Locinfo@std@@QBEPBDXZ
+    size: 71
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __Getmonths
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0IH@JLLA@?3Jan?3January?3Feb?3February?3Mar?3Ma@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 17
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 28
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 34
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 53
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 64
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: ad22876b6afd2825c12db7344a645916c695c86c
+  signature: Vf+L/+z/i/9F/wj/Vv+J/0X/CP+N/0X/CP+L//H/UP/o/wAAAAAAAAAAx/8G/wAAAAAAAAAAi//G/17/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??0__non_rtti_object@@QAE@PBD@Z
+    size: 34
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0exception@@QAE@ABQBD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7__non_rtti_object@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 23
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

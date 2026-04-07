@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 46723d5f4ee5b119ec65179ef46f4c5df2305966
+  signature: Vv+L/3T/JP8I/1f/Vv8z////6P8AAAAAAAAAAED/UP/o/wAAAAAAAAAAWf+F/8D/Wf90/yz/iv8O/4v/0P+E/8n/dP8d/4D/+f8i/3X/BP9G/0f/6/8E/4j/CP9A/0b/iv8O/4T/yf91/+3/hf///3T/Bv8g/wj/i//C/+v/Cf9S/+j/AAAAAAAAAABZ/zP/wP9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: __stripquote
+    size: 76
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 17
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 66
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

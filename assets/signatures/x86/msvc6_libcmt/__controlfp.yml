@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 30c930348968c04d45c5d361a66e4162962d9a79
+  signature: i/9E/yT/CP8l///////3////UP///3T/JP8I/+j/AAAAAAAAAABZ/1n/w/8=
+  symbols:
+  - kind: Function
+    name: __controlfp
+    size: 22
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __control87
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,76 @@
+- symbol: 0
+  hash: 613774d212886259ecdc8b8d09807665ce7b0aed
+  signature: Vf+L/+z/i/9F/wz/U/9W/1f/i/99/wj/i//Z/zn/R/8I/3P/Bf/o/wAAAAAAAAAAi/9H/wj/i/9N/wz/i//w/yv/8f85/3X/EP9z/wP/i/91/xD/O//f/3X/If///zX/AAAAAAAAAAAD//H/i//L/1b/6P8AAAAAAAAAAP//df8M/4v/y/9q/wD/6P8AAAAAAAAAAOn/hv8A/wD/AP+F//b/dv8//zv/8P91/zv/i/9H/wT/hf/A/3X/Bf+4/wAAAAAAAAAAgP94/////v9z/yn/av8B/4v/y//o/wAAAAAAAAAAi/9H/wT/hf/A/3X/Bf+4/wAAAAAAAAAAif9D/wT/i/9P/wj/if9L/wj/i/9P/wz/if9L/wz//v9A////6/9D/2r/Af9W/4v/y//o/wAAAAAAAAAAhP/A/3T/Nf+L/3//BP+4/wAAAAAAAAAAhf///3T/Av+L/8f/i/9N/wz/hf/2/43/DP9I/4v/Q/8E/3b/D/+L/9b/Zv+L/zn/Zv+J/zj/QP9A/0H/Qf9K/3X/8/+L/0P/BP+J/3P/CP9m/4P/JP9w/wD/X/+L/8P/Xv9b/13/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: ?assign@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QAEAAV12@ABV12@II@Z
+    size: 222
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Xran@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?npos@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?erase@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QAEAAV12@II@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_C@?1??_Nullstr@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@CAPBGXZ@4GB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Tidy@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Grow@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAE_NI_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 48
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 58
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 70
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 95
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 110
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 122
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 152
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 164
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 86e075c7c0db8cbdba9524b0f41d6eb347577ba0
+  signature: i/9E/yT/CP+L/0z/JP8E/1b/av8D/yv/yP9a/4v/MP+J/zT/Af+D/8D/BP9K/3X/9f9e/8P/
+  symbols:
+  - kind: Function
+    name: __CopyMan
+    size: 27
+    flags: 1
+    section: .text
+  relocations: []

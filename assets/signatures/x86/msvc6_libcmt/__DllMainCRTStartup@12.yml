@@ -1,0 +1,58 @@
+- symbol: 0
+  hash: 70bcc44266a3321985400b257ae13e7521e47784
+  signature: Vf+L/+z/U/+L/13/CP9W/4v/df8M/1f/i/99/xD/hf/2/3X/Cf+D/z3/AAAAAAAAAAAA/+v/Jv+D//7/Af90/wX/g//+/wL/df8i/6H/AAAAAAAAAACF/8D/dP8J/1f/Vv9T////0P+F/8D/dP8M/1f/Vv9T/+j/AAAAAAAAAACF/8D/df8E/zP/wP/r/07/V/9W/1P/6P8AAAAAAAAAAIP//v8B/4n/Rf8M/3X/DP+F/8D/df83/1f/UP9T/+j/AAAAAAAAAACF//b/dP8F/4P//v8D/3X/Jv9X/1b/U//o/wAAAAAAAAAAhf/A/3X/A/8h/0X/DP+D/33/DP8A/3T/Ef+h/wAAAAAAAAAAhf/A/3T/CP9X/1b/U////9D/if9F/wz/i/9F/wz/X/9e/1v/Xf/C/wz/AP8=
+  symbols:
+  - kind: Function
+    name: __DllMainCRTStartup@12
+    size: 157
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___proc_attached
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: __pRawDllMain
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __CRT_INIT@12
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _DllMain@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 39
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 60
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 76
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 113
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 131
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

@@ -1,0 +1,85 @@
+- symbol: 0
+  hash: cc10af5d059a29f9e6cbd6553a9affe4a9896bfa
+  signature: Vf+L/+z/g//s/xD/U/9W/4v/8f9X/4v/Rv8c/4v/AP+F/8D/dP8a/4v/Tv8s/4v/Cf8D/8j/O//B/3P/D/+L/87/6P8AAAAAAAAAAA//tv8A/+n/4v8A/wD/AP+L/0b/UP+F/8D/df8I/4P/yP///+n/0/8A/wD/AP+D/37/OP8A/3X/FP9Q/+j/AAAAAAAAAACD//j///9Z/3T/5v8P/7b/wP/p/7n/AP8A/wD/i/9G/0D/i/9O/0T/if9G/zz///81/wAAAAAAAAAAav8A/+j/AAAAAAAAAAD//3b/UP/o/wAAAAAAAAAAg//4////Wf90/7r/i/9O/0T/UP9q/wH/6P8AAAAAAAAAAIv/fv9E/4v/Rv88/4v/z/+J/0b/QP/o/wAAAAAAAAAAi/9e/0T/i/9H/wT/i//L/4n/Rf/4/+j/AAAAAAAAAACL/0//CP+L/0X/+P+N/33/9P+L/1v/BP9X/43/ff8A/wP/yP9X//f/2P+N/33///8b/8D/V/+N/33/8P8j/8H/i/9O/zj/V/9Q/43/Rv9A/4v/Ef9T/1D///9S/xD/g//o/wD/dP8y/0j/dP+Q/0j/SP8P/4X/UP////////+L/0b/RP+D/3j/CP8B/w//gv97/////////4v/8P+L/87/6P8AAAAAAAAAAGr/Af+N/0X//////3b/BP9Q/+j/AAAAAAAAAACD/8T/DP8P/7b/Rf///1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?uflow@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+    size: 277
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Gninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _fgetc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ID@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Freeze@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 34
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 69
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 98
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 105
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 113
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 130
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 146
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 162
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 247
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 261
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

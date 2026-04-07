@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: d748b01ac568243eaf23f03f5aaebaf22768c7cf
+  signature: Vv9q/xn/6P8AAAAAAAAAAIv/dP8k/wz/Wf+L/0z/JP8M/4v/wf9J/4X/wP90/xz/iv8G/4T/wP90/xb/D/+2/8D/9v+A/wAAAAAAAAAABP90/wb/Rv+A/z7/AP90/wP/Rv/r/97/Tv9q/xn/6P8AAAAAAAAAAIv/xv9Z/yv/RP8k/wj/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: __mbsnbcnt
+    size: 68
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 35
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 55
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

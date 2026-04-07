@@ -1,0 +1,66 @@
+- symbol: 0
+  hash: 10c915a81d81bd9b7756b1b0c0954c66e564a629
+  signature: Vf+L/+z/Uf9R/1P/i/9d/yT/Vv+L/3X/IP9X/1P/Vv+L//n///91/xz/jf9N//j/i/8H////df8Y////df8U////df8Q////df8M/1H/i//P////UP8U/4v/CP+D/z7/AP+J/03/DP+L/0D/BP+J/0X/EP91/zb/hP/A/3X/CP+N/03/DP/o/wAAAAAAAAAAgP99/xH/IP91/yT/jf9N/wz/6P8AAAAAAAAAAI3/Q/8M/1D/av8f/43/Rf8U/2r/Af9Q/43/Rf8M/1D/6P8AAAAAAAAAAIP/xP8U/wn/Bv/r/wP/g/8O/wL/g/8+/wD/df9w/4D/ff8Q/wD/df8I/43/Tf8M/+j/AAAAAAAAAACA/33/Ef8s/3X/XP+N/03/DP/o/wAAAAAAAAAAjf9F/xT/jf9N/wz/UP/o/wAAAAAAAAAAhP/A/3X/RP84/0X/EP91/wj/jf9N/wz/6P8AAAAAAAAAAID/ff8R/yD/df8x/43/Tf8M/+j/AAAAAAAAAABT/1b///91/xz/i/8H/43/Tf/4////df8Y////df8U////df8Q////df8M/1H/i//P////UP8Y/4v/CP+J/03/DP+L/0D/BP+J/0X/EP/r/wP/g/8O/wL/jf9F/xT/jf9N/wz/UP/o/wAAAAAAAAAAhP/A/3T/A/+D/w7/Af+L/0X/CP+L/03/DP9f/17/if8I/4v/Tf8Q/4n/SP8E/1v/yf/C/yD/AP8=
+  symbols:
+  - kind: Function
+    name: ?do_get_date@?$time_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AAVios_base@2@AAHPAUtm@@@Z
+    size: 277
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Peek@?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@AAEDXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Inc@?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Getint@?$time_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@CAHAAV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@0HHAAH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?equal@?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@QBE_NABV12@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 68
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 82
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 103
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 132
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 146
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 158
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 175
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 189
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 245
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

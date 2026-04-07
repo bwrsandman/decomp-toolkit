@@ -1,0 +1,36 @@
+- symbol: 0
+  hash: 4fa216cca7f03919ef389ae938d29a898adf7a8b
+  signature: Vf+L/+z/g//s/wz/g/9l//z/AP9T/4v/Xf8M/1b/V/+L/0P/EP+D/3j/CP8A/4v/eP8M/w//hv+J/wD/AP8A/4v/N/+L/03/GP+L/wb/O//B/3T/E/+D/8H/CP+D/8D/CP9R/1D/6P8AAAAAAAAAAFn/hf/A/1n/df9W/4P/Zf/0/wD/g/9+/wT/AP+N/0f/BP+J/0X/+P92/0b/i/9F//j/i/9N/xD/i/8Y/4v/A/87/8H/dP8T/4P/wf8I/4P/wP8I/1H/UP/o/wAAAAAAAAAAWf+F/8D/Wf91/xP/g//D/wj/U////3X/CP/o/wAAAAAAAAAAO/9F/xT/Wf9Z/3T/c////0X/9P+D/0X/+P8E/4v/Rf/0/zv/Rv8E/3L/vf+L/13/DP///0X//P+L/0P/EP+L/03//P+D/8f/BP87/0j/CP8P/4L/d/////////+L/0P/EP+D/2X//P8A/4P/eP8I/wD/i/94/wz/dv81/4v/N/+L/03/GP+L/wb/O//B/3T/E/+D/8H/CP+D/8D/CP9R/1D/6P8AAAAAAAAAAFn/hf/A/1n/df8G//b/Rv8U/wP/dP8Y////Rf/8/4v/Q/8Q/4v/Tf/8/4P/x/8E/zv/SP8I/3L/y/8z/8D/X/9e/1v/yf/D/4v/xv/r//f/
+  symbols:
+  - kind: Function
+    name: ?FindMITargetTypeInstance@@YAPBU_s_RTTIBaseClassDescriptor@@PAXPBU_s_RTTICompleteObjectLocator@@PAUTypeDescriptor@@H2@Z
+    size: 249
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _strcmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?PMDtoOffset@@YAHPAXABUPMD@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 52
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 101
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 119
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 205
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

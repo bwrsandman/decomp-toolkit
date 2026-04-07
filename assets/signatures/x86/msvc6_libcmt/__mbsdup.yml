@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: c46fd0590a6385c2d8d2ab707326ddc6a054f9a5
+  signature: Vv+L/3T/JP8I/4X/9v90/x7/Vv/o/wAAAAAAAAAAQP9Q/+j/AAAAAAAAAABZ/4X/wP9Z/3T/C/9W/1D/6P8AAAAAAAAAAFn/Wf9e/8P/M//A/17/w/8=
+  symbols:
+  - kind: Function
+    name: __mbsdup
+    size: 43
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 18
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 31
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

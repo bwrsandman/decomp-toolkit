@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: d36d0e73f1dfeaef791acfbaf71909808386b8b4
+  signature: 6P8AAAAAAAAAAOj/AAAAAAAAAACj/wAAAAAAAAAA6P8AAAAAAAAAANv/4v/D/w==
+  symbols:
+  - kind: Function
+    name: __fpmath
+    size: 23
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __cfltcvt_init
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __ms_p5_mp_test_fdiv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __adjust_fdiv
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: __setdefaultprecision
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 11
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 16
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

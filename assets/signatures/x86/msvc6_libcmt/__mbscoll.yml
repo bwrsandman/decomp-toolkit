@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: d6b62be8c31b86e3b59a43f78e8ad68f7bd57314
+  signature: //81/wAAAAAAAAAAav//////dP8k/xD/av//////dP8k/xT/av8A////Nf8AAAAAAAAAAOj/AAAAAAAAAACD/8T/HP+F/8D/df8G/7j/////////f//D/4P/wP/+/8P/
+  symbols:
+  - kind: Function
+    name: __mbscoll
+    size: 48
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mblcid
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtCompareStringA
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

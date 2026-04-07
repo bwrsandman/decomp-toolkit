@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 4221261b81379eaaad3316eacad26bc2a7c8e305
+  signature: Uf9T/1X/Vv+L/zX/AAAAAAAAAABX/zP///+L/wb/O//H/3T/Tv+L/x3/AAAAAAAAAABX/1f/V/9X/2r///9Q/1f/av8B////0/+L/+j/O//v/3T/Pv9V/+j/AAAAAAAAAAA7/8f/Wf+J/0T/JP8Q/3T/L/9X/1f/Vf9Q/2r//////zb/V/9q/wH////T/4X/wP90/x7/V////3T/JP8U/+j/AAAAAAAAAACL/0b/BP+D/8b/BP9Z/zv/x/9Z/3X/uP8z/8D/X/9e/13/W/9Z/8P/g//I////6//1/w==
+  symbols:
+  - kind: Function
+    name: ___wtomb_environ
+    size: 110
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __wenviron
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__WideCharToMultiByte@32
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtsetenv
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 21
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 45
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

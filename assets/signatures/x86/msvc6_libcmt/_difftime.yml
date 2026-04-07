@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 51a79a5651e920f6f3a672cb38ef46d1c5fe67da
+  signature: Vf+L/+z/i/9F/wj/K/9F/wz/if9F/wj/2/9F/wj/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _difftime
+    size: 17
+    flags: 1
+    section: .text
+  relocations: []

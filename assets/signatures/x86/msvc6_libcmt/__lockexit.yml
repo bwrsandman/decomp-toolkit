@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 2b0532333786727f4db6828b97a0a420ba2afd99
+  signature: av8N/+j/AAAAAAAAAABZ/8P/
+  symbols:
+  - kind: Function
+    name: __lockexit
+    size: 9
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 3
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

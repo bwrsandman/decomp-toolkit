@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 2e3b9dfca97e27a3b01704da618eb7110c65efdb
+  signature: Vv+L/3T/JP8I/zv/Nf8AAAAAAAAAAFf/d/8h/2r/Cf/o/wAAAAAAAAAAVv/o/wAAAAAAAAAAav8J/4v/+P/o/wAAAAAAAAAAg//E/wz/hf///3T/BP+L/8f/6/8c/4X/9v91/wP/av8B/17/g//G/w//g//m//D/Vv9q/wD///81/wAAAAAAAAAA//8V/wAAAAAAAAAAX/9e/8P/
+  symbols:
+  - kind: Function
+    name: __heap_alloc
+    size: 78
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___sbh_threshold
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_alloc_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __crtheap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapAlloc@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 17
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 23
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 32
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 65
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 71
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

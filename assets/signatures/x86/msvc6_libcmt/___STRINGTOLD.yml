@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: db0ea9ee8e1866e872b3ab4d31c46c945a32debf
+  signature: Vf+L/+z/g//s/wz/M//A/1b/UP9Q/1D/jf9F//T///91/xT///91/xD///91/wz/UP/o/wAAAAAAAAAA//91/wj/i//w/43/Rf/0/1D/6P8AAAAAAAAAAIP/xP8k/4P/+P8B/3X/A/+D/87/Av+L/8b/Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: ___STRINGTOLD
+    size: 60
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___strgtold12
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __ld12told
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 26
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 40
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

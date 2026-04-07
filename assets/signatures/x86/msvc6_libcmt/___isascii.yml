@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: f288668746f0a77146df8661d539cbb98de692c5
+  signature: gf98/yT/BP+A/wD/AP8A/xv/wP/3/9j/w/8=
+  symbols:
+  - kind: Function
+    name: ___isascii
+    size: 13
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: d2d13bb04d0203a8ccb6dec696daa008f914d293
+  signature: g//I////w/8=
+  symbols:
+  - kind: Function
+    name: ?underflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+    size: 4
+    flags: 1
+    section: .text
+  relocations: []

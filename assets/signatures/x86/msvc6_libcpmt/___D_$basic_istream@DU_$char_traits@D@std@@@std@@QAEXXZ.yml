@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 06d71c0282293f136d750a08ed65ec2c2888fcef
+  signature: i/8B/4P/wf8I/4v/QP8E/8f/RP8I//j/AAAAAAAAAADp/wAAAAAAAAAA
+  symbols:
+  - kind: Function
+    name: ??_D?$basic_istream@DU?$char_traits@D@std@@@std@@QAEXXZ
+    size: 21
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$basic_istream@DU?$char_traits@D@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??1?$basic_ios@DU?$char_traits@D@std@@@std@@UAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 17
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

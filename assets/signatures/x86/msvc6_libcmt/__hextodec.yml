@@ -1,0 +1,83 @@
+- symbol: 0
+  hash: 4b27310e74b486932ff472f975e3dd2b6c5a116c
+  signature: g/89/wAAAAAAAAAAAf9W/37/EP+L/3T/JP8I/2r/BP9W/+j/AAAAAAAAAABZ/1n/6/8P/4v/dP8k/wj/of8AAAAAAAAAAIr/BP9w/4P/4P8E/4X/wP91/wb/g//m/9//g//u/wf/i//G/17/w/8=
+  symbols:
+  - kind: Function
+    name: __hextodec
+    size: 55
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __isctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 31
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+- symbol: 0
+  hash: 95857ed0544caa387bbb14e8671c1f92296a0147
+  signature: Vv+L/3T/JP8I/2b/9//G/wD///91/zj/g/89/wAAAAAAAAAAAf9+/xP/i//G/2r/BP8l////AP8A/wD/UP/o/wAAAAAAAAAAWf9Z/+v/E/+L/w3/AAAAAAAAAACL/8b/Jf///wD/AP8A/4r/BP9B/4P/4P8E/4X/wP90/wX/Zv+L/8b/Xv/D/2r/Av9W/+j/AAAAAAAAAABZ/4X/wP9Z/43/Rv/Z/3X/A/+N/0b/+f9e/8P/
+  symbols:
+  - kind: Function
+    name: __hextodec
+    size: 90
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __isctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _iswctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 32
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 42
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 72
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

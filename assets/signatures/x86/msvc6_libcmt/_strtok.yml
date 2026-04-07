@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: ba08cc34a8bcc68681be03676d4905e031e91fac
+  signature: Vf+L/+z/g//s/yD/U/9W/4v/df8M/1f/6P8AAAAAAAAAAGr/CP+J/0X/DP9Z/zP/wP+N/33/4P9q/wf/8/+r/1//iv8W/7P/Af8P/7b/yv+L/8H/I//P/8H/6P8D/9L/4/+N/0T/Bf/g/wj/GP9G/4T/0v91/+X/i/9V/wj/hf/S/3X/Bv+L/0X/DP+L/1D/GP+K/wL/av8B/w//tv/w/4v/zv9b/yP/z//T/+P/wf/u/wP/iv9M/zX/4P+E/9n/dP8H/4T/wP90/wP/Qv/r/+D/i//a/4r/Av+E/8D/dP8e/w//tv/w/4v/zv9q/wH/I//P/1j/0//g/8H/7v8D/4r/TP81/+D/hP/B/3X/A/9C/+v/4P+A/yL/AP9C/4v/Rf8M/1//Xv+J/1D/GP+L/8P/K//C//f/2P8b/8D/I//D/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: _strtok
+    size: 164
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 13
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

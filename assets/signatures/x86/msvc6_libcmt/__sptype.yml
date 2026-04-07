@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 7d1d6ba35b6bba5a6bc742ac31fb1f0a38e31ea5
+  signature: Vf+L/+z/M//S/4H/ff8M/wD/AP/w/3//df8J/zn/Vf8I/3X/Fv9q/wH/6/88/4H/ff8M/wD/AP/w////df8J/zn/Vf8I/3X/BP9q/wL/6/8q/4v/Tf8O/7j/+P9//wD/AP8j/8j/Zv87/8j/df8E/2r/A//r/xf/Zv+B//n/8P9//3X/E//3/0X/DP//////B/8A/3X/Bf85/1X/CP90/wX/av8E/1j/Xf/D/zP/wP9d/8P/
+  symbols:
+  - kind: Function
+    name: __sptype
+    size: 90
+    flags: 1
+    section: .text
+  relocations: []

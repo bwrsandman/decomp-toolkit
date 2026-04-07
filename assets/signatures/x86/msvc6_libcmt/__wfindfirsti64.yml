@@ -1,0 +1,80 @@
+- symbol: 0
+  hash: ea59a9918325e9361e233037c42babb729041ef5
+  signature: Vf+L/+z/gf/s/1D/Av8A/wD/Vv+N/4X/sP/9//////9X/1D///91/wj///8V/wAAAAAAAAAAi//4/4P//////3X/Rf///xX/AAAAAAAAAABq/wL/Xv87/8b/cv8P/4P/+P8D/3b/Kv+D//j/CP90/xj/g//4/xL/dP8g/+j/AAAAAAAAAADH/wD/Fv8A/wD/AP+D/8j////p/5n/AP8A/wD/6P8AAAAAAAAAAMf/AP8M/wD/AP8A/+v/6//o/wAAAAAAAAAAif8w/+v/4v+L/4X/sP/9//////+L/3X/DP8t/4D/AP8A/wD/U//3/9j/G//A/yP/hf+w//3//////4n/Bv+N/4X/tP/9//////9Q/+j/AAAAAAAAAACJ/0b/BP+N/4X/vP/9//////9Q/+j/AAAAAAAAAACJ/0b/CP+N/4X/xP/9//////9Q/+j/AAAAAAAAAACD/8T/DP+J/0b/DP9q/wH/av8A/2r/AP///7X/zP/9///////o/wAAAAAAAAAAi/+N/9D//f//////M//b/wP/wf8T/9P/if9G/xD/if9W/xT/jf+F/9z//f//////g//G/xj/UP9W/+j/AAAAAAAAAABZ/4v/x/9Z/1v/X/9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __wfindfirsti64
+    size: 238
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__FindFirstFileW@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___timet_from_ft
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __allmul
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcscpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 23
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 36
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 63
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 82
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 95
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 138
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 153
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 168
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 191
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 225
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: a1ab30c6fd188507881fc92e442434ccb664b302
+  signature: i/9E/yT/BP9W/4v/8f+D/2b/LP8A/4n/Rv8o/8b/Rv8w/yD/6P8AAAAAAAAAAIP/fv8o/wD/df8R/4v/Rv8E/2r/AP8M/wT/i//O/wz/BP9Q/+j/AAAAAAAAAACA/3z/JP8M/wD/dP8H/4v/zv/o/wAAAAAAAAAAXv/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?init@?$basic_ios@DU?$char_traits@D@std@@@std@@IAEXPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@_N@Z
+    size: 64
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Init@ios_base@std@@IAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?clear@ios_base@std@@QAEXH_N@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Addstd@ios_base@std@@IAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 42
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 56
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

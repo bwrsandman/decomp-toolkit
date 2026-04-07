@@ -1,0 +1,116 @@
+- symbol: 0
+  hash: ef37ce93e46bedc1bc24b788ffc4bb7a6b59d0c1
+  signature: Vf+L/+z/g//s/wz/Vv++//////8A/wD/V/9W/2j/P/8T/wD/AP/o/wAAAAAAAAAA3f9F/wj/i//4/4v/Rf8O/2b/Jf/w/3//Wf9m/z3/8P9//1n/df9u/1H/Uf/d/xz/JP/o/wAAAAAAAAAAWf+F/8D/Wf9+/zD/g//4/wL/fv9k/4P/+P8D/3X/Jv/b/0X/EP9X/1H/Uf/d/13/9P/d/0X/9P/d/xz/JP/d/0X/CP9R/1H/3f8c/yT/av8Z/+j/AAAAAAAAAACD/8T/GP/p/3b/Af8A/wD/3f9F/wj/3P8F/wAAAAAAAAAAV/9R/1H/3f8c/yT/2/9F/xD/Uf9R/93/Xf/0/93/Rf/0/93/HP8k/93/Rf8I/1H/Uf/d/xz/JP9q/xn/av8I/+n/IP8B/wD/AP/c/x3/AAAAAAAAAADf/+D/nv91/xH/Vv9X/+j/AAAAAAAAAADd/0X/CP9Z/1n/6f8s/wH/AP8A/93/Rf8I/43/Rf/8/1D/Uf9R/93/HP8k/+j/AAAAAAAAAACL/0X/EP+D/8T/DP/d/13/9P+F/8D/i//I/33/Av/3/9n/gf/5/////////3//f/8F/4v/Tf/8/wP/wf89/wD/Cv8A/wD/fv89/93/Rf/0/1f/Uf9R/93/HP8k/93/Bf8AAAAAAAAAAFH/Uf/d/xz/JP/o/wAAAAAAAAAAWf9Z/93/HP8k/9v/Rf8Q/93/Xf/0/93/Rf/0/1H/Uf/d/xz/JP/d/0X/CP9R/1H/3f8c/yT/av8Z/2r/Ef/p/5H/AP8A/wD/Pf8A/wT/AP8A/37/Lf/d/0X/9P8F/wD/+v//////UP9R/1H/3f8c/yT/6P8AAAAAAAAAAN3/Xf/0/93/Rf/0/4P/xP8M/1f/Uf9R/93/HP8k/9v/Rf8Q/93/Xf/0/93/Rf/0/+v/tv89/wP/9v//////ff8T/1f/Uf/Z/+7/Uf/d/xz/JP/b/0X/EP/d/13/9P/d/0X/9P/r/zL/Pf8D//z//////33/Rv/d/0X/9P8F/wD/Bv8A/wD/UP9R/1H/3f8c/yT/6P8AAAAAAAAAAN3/Xf/0/93/Rf/0/4P/xP8M/1f/Uf9R/93/HP8k/9v/Rf8Q/93/Xf/0/93/Rf/0/1H/Uf/d/xz/JP/d/0X/CP9R/1H/3f8c/yT/av8Z/2r/Ev/o/wAAAAAAAAAAg//E/yT/6/8e/93/Rf/0/1D/Uf9R/93/HP8k/+j/AAAAAAAAAADd/13/9P9W/1f/6P8AAAAAAAAAAN3/Rf/0/4P/xP8U/1//Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: _ldexp
+    size: 486
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __ctrlfp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __sptype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __handle_qnan2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __real@8@3fff8000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@00000000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __decomp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __d_inf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __copysign
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __set_exp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __except2
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 50
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 113
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 156
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 168
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 195
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 247
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 257
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 319
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 397
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 443
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 462
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 472
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 3c1adcc8606799c0666702418f809f69b47a77c0
+  signature: Vv+L/3T/JP8I/zv/dP8k/wz/dP8c/1f/jf95/wj/D/+3/wb/V/9Q/+j/AAAAAAAAAABm/4n/Bv9G/0b/Wf87/3T/JP8U/1n/df/p/1//i//G/17/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?do_toupper@?$ctype@G@std@@MBEPBGPAGPBG@Z
+    size: 45
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __Toupper
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

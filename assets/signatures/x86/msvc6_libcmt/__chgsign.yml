@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 28f1577a89886874ff868d1490620858c60bbf38
+  signature: Vf+L/+z/Uf9R/4v/Rf8I/4n/Rf/4/4v/Rf8M//f/0P+L/8j/M/9N/wz/gf/h/////////3//M//I/4n/Tf/8/93/Rf/4/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __chgsign
+    size: 37
+    flags: 1
+    section: .text
+  relocations: []

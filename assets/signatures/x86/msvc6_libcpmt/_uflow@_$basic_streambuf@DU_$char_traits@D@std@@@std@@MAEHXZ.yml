@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: bcf052388f6e4c23988df5991c2867525ae11ccd
+  signature: Vv+L//H/i/8G////UP8Q/4P/+P///3X/BP8L/8D/Xv/D/4v/zv/o/wAAAAAAAAAAD/+2/wD/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEHXZ
+    size: 29
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Gninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

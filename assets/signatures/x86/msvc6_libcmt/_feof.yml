@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 713323c7486fb409a9fa7a6af61c10e52c1dd14a
+  signature: i/9E/yT/BP+L/0D/DP+D/+D/EP/D/w==
+  symbols:
+  - kind: Function
+    name: _feof
+    size: 11
+    flags: 1
+    section: .text
+  relocations: []

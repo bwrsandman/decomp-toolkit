@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: 79e32dbb4386b83ddbd1dbfb56349e900a27dedc
+  signature: i/9E/yT/CP9W/4v/dP8k/wj/hf/A/37/QP9T/1f/jf9+/wj/i//Y/4v/Rv8E/2r/A//B/+j/C/+D/+D/B/9Q/1f/6P8AAAAAAAAAAIv/Rv8E/4P/xP8M/4v/yP9m/4H/4f8A//j/gf/B/wD/CP8A/wD/M//I/4H/4f8A/zj/AP8A/zP/yP9L/4n/Tv8E/3X/y/9f/1v/Xv/D/33/K/+L/07/BP9q/wD/i//B/4P/xv8I/2b/Jf8A//j/SP8z/8H/Jf8A/zj/AP8A/zP/wf+J/0b//P/B/+j/C/+D/+D/B/9Q/1b/6P8AAAAAAAAAAIP/xP8M/17/w/8=
+  symbols:
+  - kind: Function
+    name: __AdjustStack
+    size: 124
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __SetTag
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 34
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 115
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 53b5861f13d16adb6b53e8ac72f601a3af694fe0
+  signature: g//s/yz/2/98/yT/DP/b/zz/JP/o/wAAAAAAAAAAg//E/yz/w/8=
+  symbols:
+  - kind: Function
+    name: __fdivrp_sti_st
+    size: 19
+    flags: 1
+    section: .text
+  - kind: Object
+    name: '@comp.id'
+    size: 0
+    flags: 2
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: 0

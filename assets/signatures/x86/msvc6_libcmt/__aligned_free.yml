@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 744a7843ed52d44b9e12498f4af0e08cede59e52
+  signature: i/9E/yT/BP+F/8D/dP8L/yT//P///3D//P/o/wAAAAAAAAAAWf/D/w==
+  symbols:
+  - kind: Function
+    name: __aligned_free
+    size: 20
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 551b6b0d7841c633cc0d94621ba49722f7fd3cf4
+  signature: Vf+L/+z/Uf+L/03/CP+L/1X/EP9T/1b/i/9x/wT/V/+L/zn/jf+Z//j/AP8A/wD/O//y/4n/ff/8/4v/x/+J/13/CP9y/yH/jf8E/xf/iP8X/zv/w/9z/wf/Af8R/yn/Uf8E/+v/Cf+D/2H/BP8A/43/Qf8I/4n/Af+N/0f/CP/p/87/AP8A/wD/A//3/4D/Pv8A/3T/Av+L/8b/jf80/xD/O//z/3P/Q/+K/xj/hP/b/3X/MP9q/wH/jf9Y/wH/Xv+A/zv/AP91/wT/Q/9G/+v/9/87//L/c/9O/zv/Rf/8/3X/Bf+J/3H/BP/r/wz/Kf91/wz/Of9V/wz/D/+C/5n/AP8A/wD/i/99//z/i//D/+v/Bf8P/7b/8/8D/8b/jf80/xD/O/91/wj/cv+9/43/cf8I/zv/9/9z/37/jf8E/xb/O/9F/wj/c/92/4r/Bv+E/8D/df9A/2r/Af+N/17/Af9Y/4D/O/8A/3X/Jf9D/0D/6//3/43/HP8Q/zv/Xf8I/3P/Cf8r//L/if8Z/4n/cf8E/+v/Cf+D/2H/BP8A/43/cf8I/4n/Mf+I/xD/g//A/wj/6/82/zv/wv9z/xP/Kf9F/wz/Of9V/wz/cv80/4v/8//r/67/D/+2/8D/A//w/+v/p/+N/xz/Fv87/13/CP9z/wn/K//C/4n/Gf+J/0H/BP/r/wn/g/9h/wT/AP+N/0H/CP+J/wH/iP8W/43/Rv8I/2v/yf8P/8H/4P8E/yv/wf/r/wL/M//A/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ___old_sbh_alloc_block_from_page
+    size: 292
+    flags: 1
+    section: .text
+  relocations: []

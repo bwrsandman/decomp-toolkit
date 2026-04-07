@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 99b2e1e1c7744cf081ed3c190229f63ee4d8f171
+  signature: Vf+L/+z/i/9F/xT/i/9V/xD/U/9W/4v/df8Y/1f/g/8m/wD/g/99/wz/AP/H/wD/Af8A/wD/AP+L/0X/CP90/wn/i/9N/wz/g/9F/wz/BP+J/xH/av8i/1v/Zv85/xj/df8//2b/i/9I/wL/g//A/wL/av8C/1//Zv87/8v/dP8b/2b/hf/J/3T/Fv///wb/hf/S/3T/CP9m/4v/CP9m/4n/Cv8D/9f/Zv+L/wz/OP8D/8f/6//g////Bv+F/9L/dP8G/2b/g/8i/wD/A//X/2b/Of8Y/3X/Pf8D/8f/6/85/2r/Av9f////Bv+F/9L/dP8I/2b/i/8I/2b/if8K/wP/1/9m/4v/CP8D/8f/Zv+D//n/IP90/wv/Zv+F/8n/dP8L/2b/g//5/wn/df/c/2b/hf/J/3X/BP8r/8f/6/8J/4X/0v90/wX/Zv+D/2L//v8A/4P/Zf8Y/wD/Zv+D/zj/AP90/xP/Zv+L/wj/Zv+D//n/IP90/wb/Zv+D//n/Cf91/wT/A//H/+v/7f8z/8n/Zv85/wj/D/+E/7X/AP8A/wD/Of9N/wz/dP8J/4v/Tf8M/4P/Rf8M/wT/if8R/4v/Tf8U////Af/H/0X/CP8B/wD/AP8A/zP/2/9m/4P/OP9c/3X/Bf8D/8f/Q//r//X/Zv+D/zj/Iv91/y3/9v/D/wH/df8m/zP///85/33/GP90/w7/Zv+D/3j/Av8i/43/SP8C/3X/BP+L/8H/6/8D/4n/ff8I/zP/yf9q/wL/Of9N/xj/X/8P/5T/wf+J/03/GP/R/+v/i//L/0v/hf/J/3T/Ef9D/4X/0v90/wf/Zv/H/wL/XP8A/wP/1////wb/S/91//D/Zv+L/wj/Zv+F/8n/dP8q/4P/ff8Y/wD/df8M/2b/g//5/yD/dP8e/2b/g//5/wn/dP8Y/4P/ff8I/wD/dP8L/4X/0v90/wX/Zv+J/wr/A//X////Bv8D/8f/6f9v/////////4X/0v90/wb/Zv+D/yL/AP8D/9f///8G/+n/J/////////+L/0X/DP9f/17/O//B/1v/dP8C/4n/CP+L/0X/FP///wD/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _wparse_cmdline
+    size: 410
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 20f058101d2378f7c27d9dbe708553b5a4ce2583
+  signature: Vf+L/+z/i/9F/xT/i/9N/xD/U/9W/4v/df8Y/1f/g/8m/wD/g/99/wz/AP/H/wD/Af8A/wD/AP+L/0X/CP90/wn/i/9V/wz/g/9F/wz/BP+J/wr/av8C/4X/yf9f/3T/CP9m/4v/EP9m/4n/Ef8D/8////8G/2r/Iv9b/2b/Of8Y/3X/N/+D/8D/Av9m/4v/EP9m/zv/0/90/xf/Zv+F/9L/dP8S////Bv+F/8n/dP8I/2b/i/8Q/2b/if8R/wP/z/8D/8f/6//h////Bv+F/8n/dP8G/2b/g/8h/wD/A//P/2b/Of8Y/3X/Ov8D/8f/6/82////Bv+F/8n/dP8I/2b/i/8Q/2b/if8R/wP/z/9m/4v/EP8D/8f/Zv+D//r/IP90/wv/Zv+F/9L/dP8L/2b/g//6/wn/df/c/2b/hf/S/3X/BP8r/8f/6/8J/4X/yf90/wX/Zv+D/2H//v8A/4P/Zf8Y/wD/Zv+D/zj/AP90/xP/Zv+L/xD/Zv+D//r/IP90/wb/Zv+D//r/Cf91/wT/A//H/+v/7f8z/9L/Zv85/xD/D/+E/8P/AP8A/wD/Of9V/wz/dP8J/4v/Vf8M/4P/Rf8M/wT/if8K/4v/Vf8U////Av+F/8n/dP8I/2b/i/8Q/2b/if8R/wP/z////wb/x/9F/wj/Af8A/wD/AP8z/9v/Zv+D/zj/XP91/wX/A//H/0P/6//1/2b/g/84/yL/df8t//b/w/8B/3X/Jv8z////Of99/xj/dP8O/2b/g/94/wL/Iv+N/1D/Av91/wT/i//C/+v/A/+J/33/CP8z/9L/av8C/zn/Vf8Y/1//D/+U/8L/if9V/xj/0f/r/4v/0/9L/4X/0v90/xH/Q/+F/8n/dP8H/2b/x/8B/1z/AP8D/8////8G/0v/df/w/2b/i/8Q/2b/hf/S/3T/Kv+D/33/GP8A/3X/DP9m/4P/+v8g/3T/Hv9m/4P/+v8J/3T/GP+D/33/CP8A/3T/C/+F/8n/dP8F/2b/if8R/wP/z////wb/A//H/+n/b/////////+F/8n/dP8G/2b/g/8h/wD/A//P////Bv/p/xn/////////i/9F/wz/X/9e/zv/wv9b/3T/Av+J/xD/i/9F/xT///8A/13/w/8=
+  symbols:
+  - kind: Function
+    name: _wparse_cmdline
+    size: 430
+    flags: 2
+    section: .text
+  relocations: []

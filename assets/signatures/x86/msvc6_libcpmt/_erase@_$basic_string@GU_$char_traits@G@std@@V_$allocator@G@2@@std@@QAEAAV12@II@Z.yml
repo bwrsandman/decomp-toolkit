@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 90151b7a1bf9dd1d8254064b95e03c86fd60236a
+  signature: U/9W/4v/dP8k/wz/V/+L//n/Of93/wj/c/8F/+j/AAAAAAAAAACL/8//6P8AAAAAAAAAAIv/R/8I/4v/XP8k/xT/K//G/zv/w/9z/wL/i//Y/4X/2/92/zf/i/9P/wT/K//D/1D/jf8E/x7/jf8E/0H/UP+N/wT/cf9Q/+j/AAAAAAAAAACL/3f/CP+D/8T/DP8r//P/i//P/2r/AP9W/+j/AAAAAAAAAACE/8D/dP8L/4v/R/8E/4n/d/8I/2b/g/8k/3D/AP+L/8f/X/9e/1v/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?erase@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QAEAAV12@II@Z
+    size: 108
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Xran@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Split@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _wmemmove
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Grow@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAE_NI_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 22
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 63
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

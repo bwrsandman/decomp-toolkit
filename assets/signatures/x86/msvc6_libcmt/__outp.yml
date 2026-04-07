@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 09ddb51097913a2e8ac90c47ba183af67401d3dc
+  signature: M//A/2b/i/9U/yT/BP+K/0T/JP8I/+7/w/8=
+  symbols:
+  - kind: Function
+    name: __outp
+    size: 13
+    flags: 1
+    section: .text
+  relocations: []

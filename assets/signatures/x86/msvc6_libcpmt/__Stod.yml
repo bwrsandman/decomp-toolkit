@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: c6d232598bb48439737d0f7c92cf381616734d70
+  signature: //90/yT/CP///3T/JP8I/+j/AAAAAAAAAACL/0T/JP8U/1n/hf/A/1n/fv8T/4v/yP8z/8D/2f/A/9z/Df8AAAAAAAAAAEn/3f/Z/3X/8/+F/8D/ff8P//f/2P/Z/8D/3P8N/wAAAAAAAAAASP/d/9n/df/z/8P/
+  symbols:
+  - kind: Function
+    name: __Stod
+    size: 60
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strtod
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __real@8@4002a000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@3ffbccccccccccccd000
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 31
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 50
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

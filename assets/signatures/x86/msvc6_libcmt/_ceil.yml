@@ -1,0 +1,81 @@
+- symbol: 0
+  hash: cff3ff42f41df46f44a97964be7fcc42ac78f9ce
+  signature: Vf+L/+z/Uf9R/1P/Vv++//////8A/wD/Vv///zX/AAAAAAAAAADo/wAAAAAAAAAA3f9F/wj/Wf+L/9j/i/9F/w7/Wf9R/2b/Jf/w/3//Uf9m/z3/8P9//93/HP8k/3X/Vf/o/wAAAAAAAAAAWf+F/8D/Wf9+/y3/g//4/wL/fv8a/4P/+P8D/3X/I//d/0X/CP9T/1H/Uf/d/xz/JP9q/wz/6P8AAAAAAAAAAIP/xP8Q/+v/cP9W/1P/6P8AAAAAAAAAAN3/Rf8I/1n/Wf/r/2L/3f9F/wj/3P8F/wAAAAAAAAAAU/9R/1H/3f8c/yT/3f9F/wj/Uf9R/93/HP8k/2r/DP9q/wj/6/89/+j/AAAAAAAAAADd/13/+P/d/0X/+P/c/13/CP9Z/1n/3//g/57/df8O/1b/U//o/wAAAAAAAAAA3f9F//j/Wf9Z/+v/Iv/2/8P/IP91/+3/3f9F//j/U/9R/1H/3f8c/yT/3f9F/wj/Uf9R/93/HP8k/2r/DP9q/xD/6P8AAAAAAAAAAIP/xP8c/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: _ceil
+    size: 207
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _newcw
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Function
+    name: __ctrlfp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __sptype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __handle_qnan1
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __real@8@3fff8000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __frnd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __except1
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 50
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 82
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 94
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 110
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 135
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 158
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 196
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

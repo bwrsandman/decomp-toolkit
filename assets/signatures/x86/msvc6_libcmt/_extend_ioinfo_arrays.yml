@@ -1,0 +1,45 @@
+- symbol: 0
+  hash: ccb52e60af1a9f529a368c0a2caf59cf67164b6c
+  signature: U/+L/1z/JP8I/zv/Hf8AAAAAAAAAAFb/V/98/1D/vv8AAAAAAAAAAL//gP8E/wD/AP+D/z7/AP91/zb/V//o/wAAAAAAAAAAhf/A/1n/dP88/4P/Bf8AAAAAAAAAACD/if8G/43/iP+A/wT/AP8A/zv/wf9z/xj/gP9g/wT/AP+D/wj///+D/2D/CP8A/8b/QP8F/wr/i/8O/4P/wP8k/wP/z//r/+T/g//G/wT/O/8d/wAAAAAAAAAAff+6/zP/wP9f/17/W//D/4P/yP///+v/9/8=
+  symbols:
+  - kind: Function
+    name: _extend_ioinfo_arrays
+    size: 106
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 16
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 32
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 43
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 89
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

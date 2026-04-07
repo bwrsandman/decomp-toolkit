@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 8e10775c12e314c205995c87596215a863577eb5
+  signature: i/9c/yT/BP+L/yv/i/9z/xj/ZP87/zX/AAAAAAAAAAB0/wn/Vv/o/wAAAAAAAAAAg//E/wT/g//+/wD/dP8w/43/Q/8g/1D/6P8AAAAAAAAAAAv/wP90/xb/i/9D/yD/Pf8w/zL/Q/9W/3X/DP+L/0P/JP8L/8D/dP8S/1P////Q/+v/Df+L/0P/HP9Q/1b/6P8AAAAAAAAAAIP/xP8I/2r/AP+L/0P/FP/o/wAAAAAAAAAAi//T/4v/Wv8E/4v/ev8I/4v/cv8M/4v/RP8k/wj/g//4/wH/g//Q/wD/i/9i/xD/g//E/wT///9i/xT/w/8=
+  symbols:
+  - kind: Function
+    name: _longjmp
+    size: 121
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __global_unwind2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __rt_probe_read4@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __local_unwind2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __NLG_Notify
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 86
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

@@ -1,0 +1,127 @@
+- symbol: 0
+  hash: 52499724bbbecbfd8e526a42e1012be33fe2eb30
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1H/U/9W/1f/M//b/zn/Xf8U/4v/8f9q/wH/if91/+z/if9d//D/X/90/xb/x/8G/wAAAAAAAAAAif9e/3j/x/9G/1T/AAAAAAAAAACJ/33/8P+J/13//P9T/43/Rv8E/1f/U/9Q/4v/zv/o/wAAAAAAAAAAif99//z/i/99/wj/O//7/3T/FP/2/0X/EP8I/3T/Dv9X/+j/AAAAAAAAAAAD/8f/Wf+J/0X/FP/r/wP/if99/xT/jf9+/wT/if99/xD/jf9P/zT/6P8AAAAAAAAAAIv/z//G/0X//P8C/8f/B/8AAAAAAAAAAOj/AAAAAAAAAABT/4v/z////3X/FP/G/0X//P8D/8f/B/8AAAAAAAAAAP//df8I////df8M/+j/AAAAAAAAAACL/wb/i/9N//T/X/+L/0D/BP/H/wT/MP8AAAAAAAAAAIv/xv9e/1v/ZP+J/w3/AAAAAAAAAADJ/8L/EP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0ostrstream@std@@QAE@PADHH@Z
+    size: 191
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L10436
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_8ostrstream@std@@7B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_7?$basic_ios@DU?$char_traits@D@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@PAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N1@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0locale@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$basic_streambuf@DU?$char_traits@D@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Init@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7strstreambuf@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Init@strstreambuf@std@@IAEXHPAD0H@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7ostrstream@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 35
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 65
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 87
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 112
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 124
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 129
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 145
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 156
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 172
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 183
+    kind: x86_abs32
+    symbol: 13
+    addend: 0

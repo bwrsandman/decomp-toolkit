@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: edfb73ae2143eca0f01d69ca48abd0fae8adfdc1
+  signature: Vv/o/wAAAAAAAAAAi/8w/9v/4//o/wAAAAAAAAAAhf/2/3T/Fv+L/0b/BP/3/wD/CP8A/wH/AP90/wv/g/9g/yD/AP/H/0D/JP//////AP8A/17/w/8=
+  symbols:
+  - kind: Function
+    name: __fpreset
+    size: 43
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___pxcptinfoptrs
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __setdefaultprecision
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 11
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

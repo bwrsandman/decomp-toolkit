@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 369ec0bab2b40cb45628c5b044d47e0650b16c58
+  signature: Vf+L/+z/i/9F/wj/hf/A/3T/JP+A/2X/C/8A/wT/QP+I/0X/CP+N/0X/CP9Q/8b/Rf8J/zr/xv9F/wr/XP///xX/AAAAAAAAAACF/8D/dP8K/4P/+P8B/3T/Bf9q/wH/WP9d/8P/M//A/13/w/8=
+  symbols:
+  - kind: Function
+    name: __validdrive
+    size: 55
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetDriveTypeA@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 33
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

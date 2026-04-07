@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 4631431760f35d803476b926b855838ec25e4de5
+  signature: i/9E/yT/CP+L/0z/JP8M/2r/BP+L/4D/sP8A/wD/AP8D/wH/i/9M/yT/CP+J/wH/WP/D/w==
+  symbols:
+  - kind: Function
+    name: _ax32
+    size: 26
+    flags: 2
+    section: .text
+  relocations: []

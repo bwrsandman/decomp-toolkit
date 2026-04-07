@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: ddfba9ebe54bde24a8af2e27c4afe860d932fae7
+  signature: Vv+N/3H/pP9X/43/fv9c/4v/z//o/wAAAAAAAAAAi//P/+j/AAAAAAAAAAD2/0T/JP8M/wH/dP8H/1b/6P8AAAAAAAAAAFn/i//G/1//Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??_Gstrstream@std@@UAEPAXI@Z
+    size: 43
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1strstream@std@@UAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1?$basic_ios@DU?$char_traits@D@std@@@std@@UAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 18
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 31
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

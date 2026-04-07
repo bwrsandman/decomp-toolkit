@@ -1,0 +1,62 @@
+- symbol: 0
+  hash: 96f684a61e0d75ef61112ddfc54204dac1855033
+  signature: Vf+L/+z/Uf9R/1P/Vv+L/zX/AAAAAAAAAABX/4n/df/4/zP/2//H/0X//P8H/wD/AP8A////dv8c/+j/AAAAAAAAAAD//zb/i//4/+j/AAAAAAAAAAAD/8P/Wf+D/8b/BP///03//P9Z/43/XP84/wL/df/f/0P/U//o/wAAAAAAAAAAi//w/1n/hf/2/4n/df/8/3T/O/+L/33/+P9q/wf/W//G/wb/Ov///zf/Rv9W/+j/AAAAAAAAAABQ/+j/AAAAAAAAAAAD//D/xv8G/zr///93/xz/Rv9W/+j/AAAAAAAAAABQ/+j/AAAAAAAAAACD/8T/GP8D//D/g//H/wT/S/91/87/gP8m/wD/i/9F//z/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __Getdays
+    size: 143
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_time_curr
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 30
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 39
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 90
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 111
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 117
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

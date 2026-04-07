@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 9ef8fb18d5a98b15bf0c452a364cbb5cfd28d6c4
+  signature: i/9M/yT/BP/3/8H/A/8A/wD/AP90/xT/iv8B/0H/hP/A/3T/QP/3/8H/A/8A/wD/AP91//H/Bf8A/wD/AP8A/4v/Af+6/////v/+/37/A//Q/4P/8P///zP/wv+D/8H/BP+p/wD/Af8B/4H/dP/o/4v/Qf/8/4T/wP90/zL/hP/k/3T/JP+p/wD/AP///wD/dP8T/6n/AP8A/wD///90/wL/6//N/43/Qf///4v/TP8k/wT/K//B/8P/jf9B//7/i/9M/yT/BP8r/8H/w/+N/0H//f+L/0z/JP8E/yv/wf/D/43/Qf/8/4v/TP8k/wT/K//B/8P/
+  symbols:
+  - kind: Function
+    name: _strlen
+    size: 123
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,76 @@
+- symbol: 0
+  hash: 5dd1df77788cbbfd4dd180b7d1fcf8b4527fcc7c
+  signature: Vf+L/+z/V/9W/1P/i/9N/xD/C//J/w//hP/Z/wD/AP8A/4v/df8I/4v/ff8M/43/Bf8AAAAAAAAAAIP/eP8I/wD/df9F/7f/Qf+z/1r/tv8g/43/Sf8A/4r/Jv9G/4r/B/9H/zj/xP90/xj/OP/8/3L/Bv84/9z/d/8C/wL/5v84//j/cv8G/zj/2P93/wL/Av/G/zj/xP91/wj/Sf91/9v/6f+U/wD/AP8A/7n///////////8P/4L/if8A/wD/AP/3/9n/6f+C/wD/AP8A//D///8F/wAAAAAAAAAAg/89/wAAAAAAAAAAAP9//wT/av8A/+v/Gf/w////Df8AAAAAAAAAAIv/2f9q/xP/6P8AAAAAAAAAAMf/BP8k/wH/AP8A/wD/i//L/zP/wP8z/9v/jf9J/wD/iv8G/0b/iv8f/0f/OP/Y/3T/Gv9R/1D/U//o/wAAAAAAAAAAi//Y/4P/xP8E/+j/AAAAAAAAAACD/8T/BP9Z/zj/2P91/wX/Sf91/9n/6/8J/7n///////////9y/wL/9//Z/1j/C//A/3X/Cf/w////Df8AAAAAAAAAAOv/Dv+L/9n/av8T/+j/AAAAAAAAAACD/8T/BP+L/8v/i//B/1v/Xv9f/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __memicmp
+    size: 241
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___unguarded_readlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___setlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __tolower_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 25
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 107
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 113
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 127
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 136
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 170
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 180
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 214
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 225
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

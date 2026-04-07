@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: acccba1d6371dd99737878d36d48fc339ce0ba48
+  signature: g/98/yT/BP///3T/D////3T/JP8I////dP8k/wj/6P8AAAAAAAAAAFn/Wf/D/w==
+  symbols:
+  - kind: Function
+    name: __un_inc
+    size: 23
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __ungetc_lk
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 538a70ada4f43be78414cc61f8ef76bca70abcbc
+  signature: Zv+B/3z/JP8E//////90/w////90/yT/CP///3T/JP8I/+j/AAAAAAAAAABZ/1n/w/8=
+  symbols:
+  - kind: Function
+    name: __un_inc
+    size: 25
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __ungetwc_lk
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

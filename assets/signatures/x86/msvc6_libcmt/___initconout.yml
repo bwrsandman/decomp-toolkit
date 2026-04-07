@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: b1c6b7bc4a40108fe2a84fbe8dbc49ef2215d4e7
+  signature: M//A/1D/UP9q/wP/UP9q/wP/aP8A/wD/AP9A/2j/AAAAAAAAAAD//xX/AAAAAAAAAACj/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ___initconout
+    size: 31
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_07GLCC@CONOUT$?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__CreateFileA@28
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __confh
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 21
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

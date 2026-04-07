@@ -1,0 +1,77 @@
+- symbol: 0
+  hash: 6e1bd94c69100cfb22297983a689872b48889b82
+  signature: Vf+L/+z/Vv9X/2r/Gf/o/wAAAAAAAAAAi/99/wj/Wf+L//f/gP8//wD/dP9Z/w//tv8O/4r/gf8AAAAAAAAAAKj/BP90/zf/av8B/43/Rf8I////Nf8AAAAAAAAAAGr/Av9Q/2r/Av9W/2j/AP8B/wD/AP///zX/AAAAAAAAAADo/wAAAAAAAAAAg//E/yD/hf/A/3T/Mv+L/03/CP+D//j/Af+I/w7/fv8U/0b/iP8u/+v/D/8k/xD/PP8Q/3X/B/8P/7b/if8AAAAAAAAAAIj/Dv9G/4D/Pv8A/3X/p/9q/xn/6P8AAAAAAAAAAFn/i//H/1//Xv9d/8P/av8Z/+j/AAAAAAAAAABZ/zP/wP/r//D/
+  symbols:
+  - kind: Function
+    name: __mbslwr
+    size: 138
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mblcid
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtLCMapStringA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbcasemap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 28
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 43
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 60
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 65
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 100
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 115
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 129
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

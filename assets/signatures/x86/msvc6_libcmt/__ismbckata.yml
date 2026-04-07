@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 831e12b65e59ef3ac351821978e65dfe15f3b4e3
+  signature: gf89/wAAAAAAAAAApP8D/wD/AP91/x3/i/9E/yT/BP89/0D/g/8A/wD/cv8S/z3/lv+D/wD/AP93/wv/Pf9//4P/AP8A/3T/BP9q/wH/WP/D/zP/wP/D/w==
+  symbols:
+  - kind: Function
+    name: __ismbckata
+    size: 44
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mbcodepage
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

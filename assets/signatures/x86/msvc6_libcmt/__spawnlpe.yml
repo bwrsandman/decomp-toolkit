@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: e160b725bd1706590fb847d6949a1a376b2a9d5a
+  signature: Vf+L/+z/g/99/xD/AP+N/0X/FP90/wn/i/8I/4P/wP8E/4X/yf91//f///8w/43/Rf8Q/1D///91/wz///91/wj/6P8AAAAAAAAAAIP/xP8Q/13/w/8=
+  symbols:
+  - kind: Function
+    name: __spawnlpe
+    size: 43
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __spawnvpe
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 34
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

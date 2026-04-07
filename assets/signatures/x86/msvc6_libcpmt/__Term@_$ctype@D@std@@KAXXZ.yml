@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 1dc77f1abeb4850c8801a45bbf8bc941065f1a2b
+  signature: //81/wAAAAAAAAAA6P8AAAAAAAAAAFn/w/8=
+  symbols:
+  - kind: Function
+    name: ?_Term@?$ctype@D@std@@KAXXZ
+    size: 13
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Cltab@?$ctype@D@std@@0PBFB
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 7
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

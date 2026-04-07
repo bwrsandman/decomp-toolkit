@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: da806d002283650865ade58f18f018849daaabd4
+  signature: Vf+L/+z/Uf+L/03/CP9T/1b/V/+L/3H/EP+L/0H/CP8z/9v/hf/A/3z/Bf/R/+D/Q//r//f/i//D/2r/P/9p/8D/BP8C/wD/AP9a/43/hP8w/0T/Af8A/wD/if9F//z/if9A/wj/if9A/wT/g//A/wj/Sv91//T/i//7/2r/BP/B/+f/D/8D/3n/DP9o/wD/EP8A/wD/aP8A/4D/AP8A/1f///8V/wAAAAAAAAAAhf/A/3X/CP+D/8j////p/5P/AP8A/wD/jf+X/wD/cP8A/wD/O//6/3f/PP+N/0f/EP+D/0j/+P///4P/iP/s/w//AP8A////jf+I//z/D/8A/wD/x/9A//z/8P8P/wD/AP+J/wj/jf+I//z/7///////if9I/wT/x/+A/+j/D/8A/wD/8P8P/wD/AP8F/wD/EP8A/wD/jf9I//D/O//K/3b/x/+L/0X//P+N/0//DP8F//j/Af8A/wD/av8B/1//if9I/wT/if9B/wj/jf9K/wz/if9I/wj/if9B/wT/g/9k/57/RP8A/4n/vP+e/8T/AP8A/wD/iv9G/0P/iv/I//7/wf+E/8D/i/9F/wj/iP9O/0P/df8D/wn/eP8E/7r/AP8A/wD/gP+L/8v/0//q//f/0v8h/1D/CP+L/8P/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ___sbh_alloc_new_group
+    size: 251
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__VirtualAlloc@16
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 83
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 02aa8d3076f63e0b9381f74fb9537b63a7b6e292
+  signature: i/9B/wT/hf/A/3X/Bf+4/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ?what@exception@@UBEPBDXZ
+    size: 13
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0BC@OIDF@Unknown?5exception?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 6d4a9cd60bd46942afc959e0a7afa4269eab7c67
+  signature: i/9M/yT/BP8z/8D/Of8F/wAAAAAAAAAAVv+L//H/df8O////dP8k/wz/Uf/o/wAAAAAAAAAAWf9Z/17/w/9T/4v/XP8k/xD/i//T/8H/6v8I/zr/0P90/xb/OP8B/3T/G/+I/xH/Qf84/wH/dP8F/4j/Gf9B/+v/8P/G/0H///8g/+v/6v84/wH/dP8F/4j/Gf9B/+v/9/+L/8b/W/9e/8P/
+  symbols:
+  - kind: Function
+    name: __mbsset
+    size: 81
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___ismbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __strset
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 23
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 2076797b01bf12d56ac561780163d2220869d456
+  signature: Vf+L/+z/Vv8z/8D/UP9Q/1D/UP9Q/1D/UP9Q/4v/Vf8M/43/Sf8A/4r/Av8K/8D/dP8H/0L/D/+r/wT/JP/r//P/i/91/wj/g//J////kP9B/4r/Bv8K/8D/dP8H/0b/D/+j/wT/JP9y//L/i//B/4P/xP8g/17/yf/D/w==
+  symbols:
+  - kind: Function
+    name: _strspn
+    size: 62
+    flags: 1
+    section: .text
+  relocations: []

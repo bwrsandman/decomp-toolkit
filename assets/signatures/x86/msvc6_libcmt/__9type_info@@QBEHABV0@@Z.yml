@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 67cfe19f8d90830673adfca3d07e3a9bc9aa8d2d
+  signature: i/9E/yT/BP+D/8H/Cf+D/8D/Cf9R/1D/6P8AAAAAAAAAAPf/2P9Z/xv/wP9Z//f/2P/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??9type_info@@QBEHABV0@@Z
+    size: 28
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strcmp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 13
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

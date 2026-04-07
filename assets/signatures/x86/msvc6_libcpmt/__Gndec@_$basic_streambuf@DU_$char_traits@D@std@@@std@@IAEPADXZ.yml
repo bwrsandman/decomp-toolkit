@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: e977faece2b74cd72020ab0844c1bed9ebf4b4cb
+  signature: i/9B/yz///8A/4v/Qf8c////CP+L/0H/HP+L/wD/w/8=
+  symbols:
+  - kind: Function
+    name: ?_Gndec@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ
+    size: 16
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 28c9a26de484539ff587d1ed3d78d56130dc7826
+  signature: 2f/A/9n//P/Y/9n/sf8A/5v/3//g/57/df8X/9z/Df8AAAAAAAAAAP7/wf/Z/8D/2f/8/97/2f+b/9//4P+e/3X/Av/+/8H/w//d/9j/w/8=
+  symbols:
+  - kind: Function
+    name: fn_000001F5
+    size: 40
+    flags: 0
+    section: .text
+  - kind: Object
+    name: __half
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 16
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

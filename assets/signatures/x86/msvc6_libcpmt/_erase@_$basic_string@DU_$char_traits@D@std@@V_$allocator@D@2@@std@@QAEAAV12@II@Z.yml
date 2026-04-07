@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 23ed26c964b784e6dd660ab72a9e889148dec5f0
+  signature: U/9W/4v/dP8k/wz/V/+L//n/Of93/wj/c/8F/+j/AAAAAAAAAACL/8//6P8AAAAAAAAAAIv/R/8I/4v/XP8k/xT/K//G/zv/w/9z/wL/i//Y/4X/2/92/zL/i/9P/wT/K//D/wP/zv9Q/43/BP8Z/1D/Uf/o/wAAAAAAAAAAi/93/wj/g//E/wz/K//z/4v/z/9q/wD/Vv/o/wAAAAAAAAAAhP/A/3T/Cv+L/0f/BP+J/3f/CP+A/yT/Bv8A/4v/x/9f/17/W//C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z
+    size: 103
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Xran@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Split@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAE_NI_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 22
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 77
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

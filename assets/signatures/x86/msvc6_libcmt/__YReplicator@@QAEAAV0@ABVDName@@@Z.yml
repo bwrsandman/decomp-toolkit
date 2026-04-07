@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 29ebb84e3f148fe9681c470ea97426e853ae864c
+  signature: Vv+L//H/g/8+/wn/dP85/4v/TP8k/wj/6P8AAAAAAAAAAIX/wP91/yz/UP9q/wj/uf8AAAAAAAAAAOj/AAAAAAAAAACF/8D/dP8N////dP8k/wj/i//I/+j/AAAAAAAAAADr/wL/M//A/4X/wP90/wj///8G/4v/Dv+J/0T/jv8E/4v/xv9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??YReplicator@@QAEAAV0@ABVDName@@@Z
+    size: 71
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?isEmpty@DName@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _heap
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ?getMemory@HeapManager@@QAEPAXIH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 13
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 25
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 30
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 45
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

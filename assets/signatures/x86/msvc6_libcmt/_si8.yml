@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 894cdf155161c9e79ae71d89c0745b3c9756d3f2
+  signature: i/9E/yT/DP+L/0z/JP8I/2r/Af8P/7b/AP+L/4n/oP8A/wD/AP8D/8j/i/9E/yT/CP+J/wj/WP/D/w==
+  symbols:
+  - kind: Function
+    name: _si8
+    size: 29
+    flags: 2
+    section: .text
+  relocations: []

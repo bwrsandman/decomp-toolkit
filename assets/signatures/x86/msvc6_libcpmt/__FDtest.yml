@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 5bfabb4d569ea9f4c145737930aed315eeed4954
+  signature: i/9M/yT/BP9m/4v/Qf8C/4v/0P9m/4H/4v+A/3//Zv+B//r/gP9//3X/Ev+o/3//df8K/2b/g/85/wD/df8E/2r/Af/r/wL/av8C/1j/w/8P/7f/wP+p////f///////df8K/2b/g/85/wD/df8E/2b/M//A/8P/Zv8N///////D/w==
+  symbols:
+  - kind: Function
+    name: __FDtest
+    size: 65
+    flags: 1
+    section: .text
+  relocations: []

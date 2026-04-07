@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 96dcebb91b2ab870c8f0c0c21fc9e70e7fbbdf93
+  signature: Zv+L/1T/JP8E/+3/w/8=
+  symbols:
+  - kind: Function
+    name: __inpd
+    size: 7
+    flags: 1
+    section: .text
+  relocations: []

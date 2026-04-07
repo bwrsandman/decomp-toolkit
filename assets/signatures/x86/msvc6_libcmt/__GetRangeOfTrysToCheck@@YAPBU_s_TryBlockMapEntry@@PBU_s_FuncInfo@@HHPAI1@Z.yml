@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: 690027c4389ec0a4bcdd1f0ae96a17fc73e42269
+  signature: Vf+L/+z/Uf9T/1b/g/99/wz/AP9X/4v/ff8I/4v/d/8M/4v/X/8Q/4v/xv+J/3X/CP+J/0X//P98/zn/g//+////df8F/+j/AAAAAAAAAACL/03/EP9O/43/BP+2/zn/TP+D/wT/jf8E/4P/ff8F/zv/SP8I/37/Bf+D//7///91/wz/i/9F/wj///9N/wz/if9F//z/if91/wj/g/99/wz/AP99/8r/i/9F//z/i/9N/xT/Rv+J/zH/i/9N/xj/if8B/zv/R/8M/3f/BP87//D/dv8F/+j/AAAAAAAAAACN/wT/tv9f/17/jf8E/4P/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?_GetRangeOfTrysToCheck@@YAPBU_s_TryBlockMapEntry@@PBU_s_FuncInfo@@HHPAI1@Z
+    size: 123
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_inconsistency@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 36
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 108
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

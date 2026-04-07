@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: cb30d71d1559e92299db8588b7d0b79af8208aa0
+  signature: Vf+L/+z/g//s/yj/jf9F/9j/Vv9Q/43/Rf/w/1D/i/9F/wj/Uf9R/93/AP/d/xz/JP/o/wAAAAAAAAAAi/91/xD/jf9F//D/UP+L/0X/9P8D/8b/UP8z/8D/g/99//D/Lf8P/5T/wP8D/0X/DP9Q/+j/AAAAAAAAAACN/0X/8P9q/wD/UP9W////df8M/+j/AAAAAAAAAACL/0X/DP+D/8T/LP9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __cftof
+    size: 85
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __fltout2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fptostr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __cftof2
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 26
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 57
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 72
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

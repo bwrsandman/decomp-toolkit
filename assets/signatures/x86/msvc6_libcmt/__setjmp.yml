@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 562ab682a0c8eed3247d9dea3499276abc42af63
+  signature: i/9U/yT/BP+J/yr/if9a/wT/if96/wj/if9y/wz/if9i/xD/i/8E/yT/if9C/xT/ZP+h/wAAAAAAAAAAif9C/xj/g//4////df8J/8f/Qv8c////////////6/8G/4v/QP8M/4n/Qv8c/yv/wP/D/w==
+  symbols:
+  - kind: Function
+    name: __setjmp
+    size: 56
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 26
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

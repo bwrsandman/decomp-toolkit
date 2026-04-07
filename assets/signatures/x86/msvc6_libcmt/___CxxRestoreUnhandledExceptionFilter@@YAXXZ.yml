@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: af7af45ac2ea0f8841b66a05c0b15d23e045a50e
+  signature: //81/wAAAAAAAAAA//8V/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ?__CxxRestoreUnhandledExceptionFilter@@YAXXZ
+    size: 13
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _pOldExceptFilter
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __imp__SetUnhandledExceptionFilter@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 8
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

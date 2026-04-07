@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 0d6ffbae58171e874d8b65bfd5719c802def471a
+  signature: i/9E/yT/CP+L/1T/JP8M/2r/A/+N/wz/AP9Y/9P/4P/T/+L/i/9M/yT/BP8j/9D/9//Q/yP/Af8L/9D/if8R/8P/
+  symbols:
+  - kind: Function
+    name: __SetTag
+    size: 33
+    flags: 1
+    section: .text
+  relocations: []

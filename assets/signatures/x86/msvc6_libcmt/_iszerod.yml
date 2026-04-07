@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 9946e74eaab8bd4683d8083090007cc4b7b8549d
+  signature: 9/9E/yT/CP////////9//3X/C/+D/3z/JP8E/wD/df8E/2r/Af9Y/8P/M//A/8P/
+  symbols:
+  - kind: Function
+    name: _iszerod
+    size: 24
+    flags: 2
+    section: .text
+  relocations: []

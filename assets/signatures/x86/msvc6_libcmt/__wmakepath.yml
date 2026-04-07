@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 979a5184e5bb1e6021f77102cc77a536c0e0c67f
+  signature: Vf+L/+z/i/9F/wz/Vv9q/wL/hf/A/17/dP8Z/2b/i/8I/2b/hf/J/3T/Ef+L/0X/CP9m/4n/CP8D/8b/Zv/H/wD/Ov8A/wP/xv/r/wP/i/9F/wj/i/9V/xD/hf/S/3T/Lv9m/4v/Cv9m/4X/yf90/yb/A//W/2b/if8I/wP/xv9m/4v/Cv9m/4X/yf91//H/Zv+L/1L//v9m/4P/+v8v/3T/Df9m/4P/+v9c/3T/B/9m/8f/AP9c/wD/A//G/4v/Vf8U/4X/0v90/xH/Zv+L/wr/Zv+F/8n/dP8J/2b/if8I/wP/xv8D/9b/6//v/4v/Vf8Y/4X/0v90/zH/Zv+L/wr/Zv+F/8n/dP8N/2b/g//5/y7/dP8H/2b/x/8A/y7/AP8D/8b/Zv+L/wr/Zv+J/wj/A//G/4P/wv8C/2b/hf/J/3T/EP9m/4v/Cv9m/4n/CP8D/8b/A//W/+v/7/9m/4P/IP8A/17/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __wmakepath
+    size: 182
+    flags: 1
+    section: .text
+  relocations: []

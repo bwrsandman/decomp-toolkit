@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: ba6094c564f22f5f1bed2ce7ebbe304bce739e84
+  signature: i/9E/yT/Cv+L/0z/JP8M/8H/6P8E/2b/Jf///wf/D/+//8D/3f9E/yT/BP+N/4T/CP8C//z//////1D/Uf9R/93/HP8k/+j/AAAAAAAAAACD/8T/DP/D/w==
+  symbols:
+  - kind: Function
+    name: __add_exp
+    size: 44
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __set_exp
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 36
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

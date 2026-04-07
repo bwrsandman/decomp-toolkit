@@ -1,0 +1,36 @@
+- symbol: 0
+  hash: 6a5adea26119fe22f4d16cafcb874d2717f39d91
+  signature: Vf+L/+z/Uf9R/93/Rf8I/9z/Hf8AAAAAAAAAAFb/3//g/57/df8M/9n/7v8z//b/3f9d//j/6f+W/wD/AP8A/zP/yf9m//f/Rf8O//D/f/91/2X/9/9F/wz//////w//AP91/wX/Of9N/wj/dP9X/93/Rf8I/9z/Hf8AAAAAAAAAAL7/A//8///////f/+D/nv9z/wX/av8B/1j/6/8C/zP/wP/2/0X/Dv8Q/3X/E//R/2X/DP/2/0X/C/+A/3T/BP+D/03/DP8B/9H/Zf8I/07/6//n/2b/gf9l/w7/7////zv/wf90/wT/gP9N/w//gP/d/0X/CP9R/1H/Uf/d/xz/JP/o/wAAAAAAAAAA3f9d//j/g//E/wz/6/8n/93/Rf8I/1H/Uf9R/93/HP8k/+j/AAAAAAAAAACL/0X/Dv+D/8T/DP/d/13/+P/B/+j/BP9m/yX///8H/w//v//w/4H/7v/+/wP/AP8A/4v/Rf8Q/93/Rf/4/4n/MP9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __decomp
+    size: 193
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __real@8@00000000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __set_exp
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 61
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 131
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 153
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

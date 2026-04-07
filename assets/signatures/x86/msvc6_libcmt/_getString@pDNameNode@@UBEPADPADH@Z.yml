@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: b2a8fbcbf7721444e676c75542be6cd53fb7808b
+  signature: i/9J/wj/M//A/zv/yP90/xn/Of9E/yT/BP90/xP/Of9E/yT/CP90/w3///90/yT/CP///3T/JP8I/+j/AAAAAAAAAADC/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?getString@pDNameNode@@UBEPADPADH@Z
+    size: 37
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getString@DName@@QBEPADPADH@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 30
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

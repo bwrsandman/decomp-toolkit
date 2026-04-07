@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: d8c7c88846c4dfc10bd994f6822eb61b620b425d
+  signature: i//B/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAEPAV12@PADH@Z
+    size: 5
+    flags: 1
+    section: .text
+  relocations: []

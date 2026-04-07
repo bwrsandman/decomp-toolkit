@@ -1,0 +1,159 @@
+- symbol: 0
+  hash: 4c9792ff98e2ff765e99242c90a410747531c17e
+  signature: Vv9X////dP8k/wz/6P8AAAAAAAAAAIv/8P9G/1b/6P8AAAAAAAAAAIv/+P9Z/4X///9Z/w//hP+l/wD/AP8A/1b///90/yT/EP9X/+j/AAAAAAAAAACD/8T/DP+F/8D/df8M/1f/6P8AAAAAAAAAAFn/6f+H/wD/AP8A/1P/av8C/1v/U//o/wAAAAAAAAAAgP8//wD/Wf90/x3/V//o/wAAAAAAAAAAUP9X/1P/6P8AAAAAAAAAAFP/aP8AAAAAAAAAAFP/6P8AAAAAAAAAAIP/xP8c/1f/6P8AAAAAAAAAAFn/6P8AAAAAAAAAAIP/OP8A/3z/GP/o/wAAAAAAAAAAi/8A/zv/Bf8AAAAAAAAAAH3/Cf/o/wAAAAAAAAAAi/8A/+v/Bf+h/wAAAAAAAAAAi/80/4X/AAAAAAAAAABW/+j/AAAAAAAAAABQ/1b/U//o/wAAAAAAAAAAav8B/2j/AAAAAAAAAABT/+j/AAAAAAAAAABT/+j/AAAAAAAAAACD/8T/IP9b/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: __wperror
+    size: 200
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcstombs
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __write_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_02HFBK@?3?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __sys_nerr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __sys_errlist
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_01BJG@?6?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __unlock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 16
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 39
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 52
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 68
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 80
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 88
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 94
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 100
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 109
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 115
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 125
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 133
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 140
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 149
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 156
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 162
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 170
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 177
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 183
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 189
+    kind: x86_rel32
+    symbol: 13
+    addend: -4

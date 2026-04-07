@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 28038134e4d91f5e7f06efe727f1c7233e5c13e9
+  signature: i/9E/yT/BP+j/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ___set_app_type
+    size: 10
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___app_type
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

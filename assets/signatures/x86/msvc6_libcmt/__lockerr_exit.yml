@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 178396e00b589fc65aaa2c6a0b7b57abcbf321e6
+  signature: //90/yT/BP9q/wD///8V/wAAAAAAAAAAaP///wD/AP8A////Ff8AAAAAAAAAAMP/
+  symbols:
+  - kind: Function
+    name: __lockerr_exit
+    size: 24
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__FatalAppExitA@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__ExitProcess@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 19
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

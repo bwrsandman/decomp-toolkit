@@ -1,0 +1,54 @@
+- symbol: 0
+  hash: 996bbb25dfd5fc1ab7cafaa361f2d8bf9c2799c2
+  signature: g/89/wAAAAAAAAAAAP91/yT/av8L/+j/AAAAAAAAAACD/z3/AAAAAAAAAAAA/1n/df8L/+j/AAAAAAAAAAD//wX/AAAAAAAAAABq/wv/6P8AAAAAAAAAAFn/w/8=
+  symbols:
+  - kind: Function
+    name: ___tzset
+    size: 46
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _?first_time@?1??__tzset@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __tzset_lk
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 12
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 33
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 40
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

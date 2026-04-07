@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 1e9a7d3247a995672a19d2689a3207f67ec1028d
+  signature: i/9M/yT/BP+L/8H/Zv+D/zn/AP90/wz/Zv+L/1T/JP8I/2b/if8R/0H/Qf/r/+7/w/8=
+  symbols:
+  - kind: Function
+    name: __wcsset
+    size: 25
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: d379cd2b4fac11f0f5e1d608bbe75e77e4db34fc
+  signature: Vf+L/+z/g//s/xD/i/9F/wj/Vv9X/4P/Zf/8/wD/Zv+L/0j/Cv9q/0D/i//x/4H/4f8A/4D/AP8A/4v/+f+L/0j/Bv+J/03/8P+L/0j/Av8P/7f/AP/B/+D/EP+J/0X/+P+N/0X/8P9Q/4H/5v///3//AP8A/4n/Tf/0/+j/AAAAAAAAAABZ/4X/wP9Z/3T/CP+5/wD/AP8A/4D/Rv/r/wP/i/9N//D/Zv+B//7///9//3X/B//H/0X//P8B/wD/AP8A/4v/Rf8M/wv//v+J/0j/BP+L/03/9P9m/4n/eP8I/4n/CP+L/0X//P9f/17/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __ld12told
+    size: 122
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __RoundMan
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 63
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

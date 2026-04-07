@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: d296a376336fa0317a759520c75595ffde3fca77
+  signature: Vv+L/3T/JP8I/1b/6P8AAAAAAAAAAIv/Rv8Q/4P/Zv8M/8//g//4////Wf90/xf/i//I/8H/+f8F/4P/4P8f/4v/DP+N/wAAAAAAAAAAjf8E/8D/jf8E/4H/6/8F/7j/AAAAAAAAAACA/2D/BP/9/1b/6P8AAAAAAAAAAFn/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: _clearerr
+    size: 65
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock_file
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___badioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 35
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 48
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 58
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

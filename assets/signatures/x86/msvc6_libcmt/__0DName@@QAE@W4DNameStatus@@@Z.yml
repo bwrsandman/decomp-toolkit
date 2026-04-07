@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 8c8fe9d99d2db162d04017a36da8723330f4b704
+  signature: Vv9X/4v/fP8k/wz/i//x/4P///8B/3T/Cf+D////A/90/wT/M//J/+v/Av+L/8//i/9G/wT/av8A/4v/0P9q/xD/M//R/7n/AAAAAAAAAACD/+L/D/8z/9D/if9W/wT/6P8AAAAAAAAAAIX/wP90/wr/V/+L/8j/6P8AAAAAAAAAAOv/Av8z/8D/g/9m/wT/j/+L/07/BP+F/8D/if8G/3X/Cf+D/+H/8/+D/8n/A/+J/07/BP+L/8b/X/9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0DName@@QAE@W4DNameStatus@@@Z
+    size: 98
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _heap
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ?getMemory@HeapManager@@QAEPAXIH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DNameStatusNode@@QAE@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 36
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 49
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 61
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

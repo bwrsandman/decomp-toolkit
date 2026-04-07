@@ -1,0 +1,126 @@
+- symbol: 0
+  hash: d7927bebd7100ea086d8192ad6020dfde2ceeb7e
+  signature: of8AAAAAAAAAAIX/wP8P/4T/w/8A/wD/AP+L/w3/AAAAAAAAAABo/wD/QP8A/wD/wf/h/w//A/9I/wz/aP8A/4D/AP8A/1H///8V/wAAAAAAAAAAi/8N/wAAAAAAAAAAof8AAAAAAAAAALr/AP8A/wD/gP/T/+r/Cf9Q/wj/of8AAAAAAAAAAIv/Df8AAAAAAAAAAIv/QP8Q/4P/pP+I/8T/AP8A/wD/AP+h/wAAAAAAAAAAi/9A/xD//v9I/0P/of8AAAAAAAAAAIv/SP8Q/4D/ef9D/wD/df8J/4P/YP8E//7/of8AAAAAAAAAAIP/eP8I////df9M/4P/Pf8AAAAAAAAAAAH/fv9D////cP8Q/2r/AP///zX/AAAAAAAAAAD//xX/AAAAAAAAAACh/wAAAAAAAAAAi/8V/wAAAAAAAAAAjf8E/4D/wf/g/wL/i//I/6H/AAAAAAAAAAAr/8j/jf9M/xH/7P9R/43/SP8U/1H/UP/o/wAAAAAAAAAAg//E/wz///8N/wAAAAAAAAAAg/8l/wAAAAAAAAAAAP/D/w==
+  symbols:
+  - kind: Function
+    name: ___sbh_heapmin
+    size: 209
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___sbh_pHeaderDefer
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_indGroupDefer
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__VirtualFree@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_cntHeaderList
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: __crtheap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapFree@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_pHeaderList
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 38
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 44
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 49
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 64
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 70
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 86
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 97
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 115
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 127
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 141
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 147
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 152
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 158
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 171
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 188
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 197
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 203
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

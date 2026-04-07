@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 2fefc7b429177d4ccd5c32ec6169d28bfba06e63
+  signature: i/9E/yT/BP9T/1b/V/9m/4v/EP9m/4X/0v90/yn/i/9c/yT/FP9m/4v/O/9m/4X///+L//P/dP8R/4v/z/9m/zv/yv90/xb/Rv9G/2b/i/8O/2b/hf/J/3X/8f9A/0D/Zv+L/xD/Zv+F/9L/df/e/zP/wP9f/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: _wcspbrk
+    size: 62
+    flags: 1
+    section: .text
+  relocations: []

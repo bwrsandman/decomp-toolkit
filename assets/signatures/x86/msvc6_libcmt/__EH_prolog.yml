@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 1f1ec9bdc5b8e1ff53d3c29ca4db4ec3f02f1319
+  signature: av///1D/ZP+h/wD/AP8A/wD/UP+L/0T/JP8M/2T/if8l/wD/AP8A/wD/if9s/yT/DP+N/2z/JP8M/1D/w/8=
+  symbols:
+  - kind: Function
+    name: __EH_prolog
+    size: 31
+    flags: 1
+    section: .text
+  relocations: []

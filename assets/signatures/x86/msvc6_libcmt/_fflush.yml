@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: c1608166c2118d10a63ed0cfc911ac83bbc9b4f0
+  signature: Vv+L/3T/JP8I/4X/9v91/wn/Vv/o/wAAAAAAAAAAWf9e/8P/V/9W/+j/AAAAAAAAAABW/+j/AAAAAAAAAABW/4v/+P/o/wAAAAAAAAAAg//E/wz/i//H/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: _fflush
+    size: 47
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _flsall
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __lock_file
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fflush_lk
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 35
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

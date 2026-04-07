@@ -1,0 +1,45 @@
+- symbol: 0
+  hash: 35ccbd91bca6a767233166430a1a1589812d532f
+  signature: gf89/wAAAAAAAAAApP8D/wD/AP+L/0T/JP8E/3X/Xf+D//j/IP9y/w7/g//4/37/d/8J/w//t/8E/0X/AAAAAAAAAADD/z3/3P8A/wD/AP91/wb/uP+P/4P/AP8A/8P/Pf+h/wD/AP8A/1b/cv80/z3/3/8A/wD/AP93/y3/iv8N/wAAAAAAAAAAM//2/4T/yf90/yH/uv8AAAAAAAAAAA//tv/J/zv/wf90/w3/iv9K/wT/g//C/wT/Rv+E/8n/df/u/17/w/8P/7f/BP+1/wAAAAAAAAAAXv/D/w==
+  symbols:
+  - kind: Function
+    name: __mbbtombc
+    size: 110
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _mbbtable
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _mbctable
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 30
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 65
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 76
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 104
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: fc222fd9648ea2035e8ccff185b30ee6cd25cedd
+  signature: Vv+L//H/av8D/43/Tv8s/+j/AAAAAAAAAABq/wH/jf9O/zT/6P8AAAAAAAAAAIP/Dv///4v/xv9e/8P/
+  symbols:
+  - kind: Function
+    name: ??0Replicator@@QAE@XZ
+    size: 30
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 19
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

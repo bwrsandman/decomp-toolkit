@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 922b5b9b5bfb4e4a13b4b0c7c399dccfe05c438e
+  signature: Vf+L/+z/Uf9R/4v/Rf8M/1b/i/91/wj/if9F//j/i/9F/xD/V/9W/4n/Rf/8/+j/AAAAAAAAAACD/8////9Z/zv/x/91/w3/6P8AAAAAAAAAAMf/AP8J/wD/AP8A/+v/Kf///3X/FP+N/03//P9R////df/4/1D///8V/wAAAAAAAAAAO//H/4n/Rf/4/3X/F////xX/AAAAAAAAAACF/8D/dP8N/1D/6P8AAAAAAAAAAFn/i//H/4v/1//r/yH/i//G/4P/5v8f/8H/+P8F/43/DP/2/4v/BP+F/wAAAAAAAAAAgP9k/4j/BP/9/4v/Vf/8/43/RP+I/wT/i/9F//j/X/9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __lseeki64_lk
+    size: 133
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __get_osfhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetFilePointer@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 24
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 62
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 75
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 85
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 110
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

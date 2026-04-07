@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 5fbe7897b49f49b9b4bb46b551f1a81902409505
+  signature: Vf+L/+z/Uf+D/33/CP8A/1P/Vv9X/3X/Df/o/wAAAAAAAAAAx/8A/xb/AP8A/wD/6/89/4v/Rf8I/4v/df8Q/yT//P+L/3j//P+N/0b///+F/8b/if99//z/df/e/4P//v8E/3f/A/9q/wT/Xv9X/+j/AAAAAAAAAAAr/33/CP+L/9j/i/9F/wz/A//f/43/RP8w/wT/UP/o/wAAAAAAAAAAWf+F/8D/Wf91/wT/M//A/+v/K/+N/3z/MP8E/07/9//W/yP//v87/13/DP+J/0f//P92/wP/i/9d/wz/U////3X/CP9X/+j/AAAAAAAAAAD//3X//P/o/wAAAAAAAAAAg//E/xD/i//H/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __aligned_realloc
+    size: 139
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __msize
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 57
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 77
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 117
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 125
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 9b2daac79b35c4fbcc516f8bfce6de878f94be27
+  signature: jf9U/yT/DP/o/wAAAAAAAAAA
+  symbols:
+  - kind: Function
+    name: _pow
+    size: 9
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __fload_withFB
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

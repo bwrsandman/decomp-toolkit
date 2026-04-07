@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: e60111ab3accfdc05d553cb2b075d930b604be90
+  signature: i//B/4P/YP8E/wD/g/9g/wj/AP/H/wD/AAAAAAAAAADD/w==
+  symbols:
+  - kind: Function
+    name: ??0exception@@QAE@XZ
+    size: 17
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7exception@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

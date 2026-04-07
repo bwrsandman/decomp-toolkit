@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: de9eed178b1d69b2f7407c3e99a6ae998e1f5b64
+  signature: i/9E/yT/BP+L/wD/gf84/2P/c/9t/+D/dP8D/zP/wP/D/+n/AAAAAAAAAAA=
+  symbols:
+  - kind: Function
+    name: ?FrameUnwindFilter@@YAHPAU_EXCEPTION_POINTERS@@@Z
+    size: 22
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?terminate@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

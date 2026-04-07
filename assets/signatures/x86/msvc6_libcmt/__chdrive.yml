@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: 718ab8c61561f2a9ca25a6a868ab54e3d3c3e18f
+  signature: Vf+L/+z/U/+L/13/CP+D//v/Af98/0v/g//7/x//f/9G/1b/av8M/+j/AAAAAAAAAACA/2X/Cv8A/1n/jf9F/wj/gP/D/0D/UP+I/13/CP/G/0X/Cf86////Ff8AAAAAAAAAAIX/wP90/w//M//2/2r/DP/o/wAAAAAAAAAAWf+L/8b/Xv/r/yv///8V/wAAAAAAAAAAUP/o/wAAAAAAAAAAWf+D/87////r/+H/6P8AAAAAAAAAAMf/AP8N/wD/AP8A/+j/AAAAAAAAAADH/wD/D/8A/wD/AP+D/8j///9b/13/w/8=
+  symbols:
+  - kind: Function
+    name: __chdrive
+    size: 115
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetCurrentDirectoryA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 46
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 59
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 71
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 77
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 88
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 99
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

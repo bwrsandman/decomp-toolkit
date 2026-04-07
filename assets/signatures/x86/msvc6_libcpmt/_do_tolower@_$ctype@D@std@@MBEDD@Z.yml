@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: cab94b7bff990188fc63ecc3b478a20cf348c9bb
+  signature: D/+2/0T/JP8E/4P/wf8I/1H/UP/o/wAAAAAAAAAAWf9Z/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?do_tolower@?$ctype@D@std@@MBEDD@Z
+    size: 20
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __Tolower
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

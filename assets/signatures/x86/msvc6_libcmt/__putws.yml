@@ -1,0 +1,68 @@
+- symbol: 0
+  hash: d44b64f1dd92458576b0b87a6033d5234b9e3dce
+  signature: Vf+L/+z/Uf9T/1b/vv8AAAAAAAAAAFf/Vv9q/wH/u///////AP8A/+j/AAAAAAAAAABW/+j/AAAAAAAAAACL/33/CP+D/8T/DP+J/0X//P9m/4v/B/9m/4X/wP90/xL/R/9W/1D/R//o/wAAAAAAAAAAWf9m/zv/w/9Z/3T/E//r/+b/Vv9q/wr/6P8AAAAAAAAAAFn/Zv87/8P/Wf90/wL/M//b/1b///91//z/6P8AAAAAAAAAAFb/av8B/+j/AAAAAAAAAACD/8T/EP+L/8P/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __putws
+    size: 110
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_file2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __stbuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __putwc_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ftbuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file2
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 53
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 70
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 88
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

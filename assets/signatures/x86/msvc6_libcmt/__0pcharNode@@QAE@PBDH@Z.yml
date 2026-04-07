@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 8b549548258a230cde6dfb000f0b44e076f62781
+  signature: Vf+L/+z/U/9W/1f/i//x/+j/AAAAAAAAAACL/33/DP8z/9v/O//7/8f/Bv8AAAAAAAAAAHX/FP85/13/CP90/zn///91/wj/6P8AAAAAAAAAAIv/+P9Z/zv/+/90/yr/Of9d/wj/dP8l/1P/V/+5/wAAAAAAAAAA6P8AAAAAAAAAADv/w/+J/0b/CP+J/37/DP90/xX/V////3X/CP9Q/+j/AAAAAAAAAACD/8T/DP/r/wb/if9e/wj/if9e/wz/i//G/1//Xv9b/13/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ??0pcharNode@@QAE@PBDH@Z
+    size: 105
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DNameNode@@IAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7pcharNode@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?strlen@@YAIPBD@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _heap
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ?getMemory@HeapManager@@QAEPAXIH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?strncpy@@YAPADPADPBDI@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 37
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 56
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 61
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

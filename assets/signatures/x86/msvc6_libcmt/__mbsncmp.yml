@@ -1,0 +1,63 @@
+- symbol: 0
+  hash: 00420b9c8bade94f75e27c0a291789dab0657659
+  signature: Vf+L/+z/g/99/xD/AP9T/1b/V/8P/4T/nf8A/wD/AP+D/z3/AAAAAAAAAAAA/3X/Fv///3X/EP///3X/DP///3X/CP/o/wAAAAAAAAAAg//E/wz/6f+A/wD/AP8A/2r/Gf/o/wAAAAAAAAAA//9N/xD/i/91/wz/i/99/wj/Wf9m/w//tv8P/w//tv/B/0f/if9N/wz/9v+A/wAAAAAAAAAABP90/xb/iv8H/4T/wP91/wb/g/9l/wz/AP/r/wr/M//S/0f/iv/x/4r/0P+J/1X/DP9m/w//tv8e/w//tv/D/0b/9v+A/wAAAAAAAAAABP90/xP/iv8G/4T/wP91/wT/M//b/+v/Cf8z/8n/Rv+K/+v/iv/I/4v/2f9m/zn/Xf8M/3X/IP9m/4P/ff8M/wD/dP8K/4v/Rf8Q////Tf8Q/4X/wP91/5v/av8Z/+j/AAAAAAAAAABZ/zP/wP9f/17/W/9d/8P/av8Z/+j/AAAAAAAAAABm/zv/Xf8M/1n/G//A/4P/4P8C/0j/6//n/w==
+  symbols:
+  - kind: Function
+    name: __mbsncmp
+    size: 200
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___ismbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strncmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 35
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 50
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 77
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 116
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 168
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 183
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

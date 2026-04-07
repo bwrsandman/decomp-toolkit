@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 22beb061ac47678a3697372632d2182dd2b99f7f
+  signature: Vf+L/+z/Uf+b/93/ff/+/w//v/9F//7/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __statfp
+    size: 14
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,95 @@
+- symbol: 0
+  hash: c736ee7b0ec47facdc9fb9b4fabcd3994a607926
+  signature: U/9W/1f/av8D/+j/AAAAAAAAAAAz/9v/Wf9m/zn/Hf8AAAAAAAAAAL7/AAAAAAAAAAB1/xT/U//o/wAAAAAAAAAAWf9T/1b/6P8AAAAAAAAAAFn/hf/A/1n/df8P/1b/6P8AAAAAAAAAAIX/wP9Z/3T/6P8z////6/8z/4v/fP8k/xD/O//7/3X/Iv/o/wAAAAAAAAAAi//4/zn/X/8s/3X/E/9q/xr/6P8AAAAAAAAAADv/w/9Z/4n/R/8s/3X/BP+L//7/6/8M/4v/f/8s/1b/V//o/wAAAAAAAAAAWf9Z/2r/A//o/wAAAAAAAAAAWf+L/8f/X/9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: __wtmpnam
+    size: 127
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _namebuf0
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _winit_namebuf
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __waccess
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wgenfname
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcscpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 16
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 21
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 29
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 49
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 71
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 85
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 107
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 116
+    kind: x86_rel32
+    symbol: 9
+    addend: -4

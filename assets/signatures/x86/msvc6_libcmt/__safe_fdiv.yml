@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 63c76b7fbcdefb2e5217b8a7c62e1aa0a2058a12
+  signature: UP+D/+z/LP/b/zz/JP/b/3z/JP8M/+j/AAAAAAAAAACD/8T/LP9Y/8P/
+  symbols:
+  - kind: Function
+    name: __safe_fdiv
+    size: 21
+    flags: 1
+    section: .text
+  - kind: Object
+    name: '@comp.id'
+    size: 0
+    flags: 2
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: 0

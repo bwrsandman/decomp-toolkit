@@ -1,0 +1,89 @@
+- symbol: 0
+  hash: 5c390fee8ac0b9f2fb4afde9c48ecb98722719f7
+  signature: U/9W/1f/av8C/zP/2/8z////6P8AAAAAAAAAADP/9v9Z/zn/Nf8AAAAAAAAAAH7/dP+h/wAAAAAAAAAAi/8E/7D/hf/A/3T/X//2/0D/DP+D/3T/Wf9Q/1b/6P8AAAAAAAAAAKH/AAAAAAAAAABZ/1n/i/8E/7D/i/9I/wz/9v/B/4P/dP8w/4P/fP8k/xD/Af91/w//UP/o/wAAAAAAAAAAg//4////Wf90/x3/Q//r/xr/g/98/yT/EP8A/3X/E//2/8H/Av90/w7/UP/o/wAAAAAAAAAAg//4////Wf91/wL/C//4/6H/AAAAAAAAAAD//zT/sP9W/+j/AAAAAAAAAABZ/1n/Rv87/zX/AAAAAAAAAAB8/4z/av8C/+j/AAAAAAAAAACD/3z/JP8U/wH/Wf+L/8P/dP8C/4v/x/9f/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: _flsall
+    size: 164
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __nstream
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___piob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_file2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fflush_lk
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock_file2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 19
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 46
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 51
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 77
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 104
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 117
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 126
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 135
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 144
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

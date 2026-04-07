@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: c5337bc2f7a1bbb830e2a7c9e8494350b817c016
+  signature: //90/yT/BP/o/wAAAAAAAAAAWf+L/0z/JP8I/4n/Af+J/1H/BP+L/xH/g//I////I/9R/wT/O//Q/3T/Av8z/8D/w/8=
+  symbols:
+  - kind: Function
+    name: _fgetpos
+    size: 34
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __ftelli64
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

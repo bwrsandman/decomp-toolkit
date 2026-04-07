@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: c88ba07e57c679b82b9c1d88f753400d7bff3c1c
+  signature: Vf+L/+z/g/99/wz/AP9W/1f/i/99/wj/i//3/3//BP8z/8D/6/9F////df8Q/+j/AAAAAAAAAABZ////Tf8M/3T/KP///3X/EP/o/wAAAAAAAAAAD/+3/8D/Pf//////AP8A/1n/dP8N/2b/if8G/0b/Rv9m/z3/Cv8A/3T/Cv/r/9v/O//3/3X/BP8z////6/8E/2b/g/8m/wD///91/xD/6P8AAAAAAAAAAFn/i//H/1//Xv9d/8P/
+  symbols:
+  - kind: Function
+    name: _fgetws
+    size: 93
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock_file
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getwc_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 24
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 38
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 82
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

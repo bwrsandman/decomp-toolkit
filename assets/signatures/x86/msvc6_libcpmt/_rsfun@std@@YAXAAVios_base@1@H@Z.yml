@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 845b6340ddfdf90351d792617aa41c7b0b5f865e
+  signature: i/9M/yT/CP+L/0T/JP8E//f/0f8h/0j/DP/D/w==
+  symbols:
+  - kind: Function
+    name: ?rsfun@std@@YAXAAVios_base@1@H@Z
+    size: 14
+    flags: 2
+    section: .text
+  relocations: []

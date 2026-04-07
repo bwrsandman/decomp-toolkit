@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 82accae33523c34e0e806a95becb3cdf7aef9845
+  signature: Vv++/wAAAAAAAAAAV/9W/2r/AP/o/wAAAAAAAAAAjf9E/yT/GP9Q////dP8k/xj/Vv/o/wAAAAAAAAAAVv9q/wD/i//4/+j/AAAAAAAAAACD/8T/HP+L/8f/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: _wscanf
+    size: 48
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_file2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __winput
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file2
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 26
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 36
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

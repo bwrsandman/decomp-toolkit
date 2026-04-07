@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 454d66aac33bf283271e3fd0c4eee22465f96a0e
+  signature: //90/yT/BP/o/wAAAAAAAAAAWf/D/w==
+  symbols:
+  - kind: Function
+    name: __LDtest
+    size: 11
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __Dtest
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

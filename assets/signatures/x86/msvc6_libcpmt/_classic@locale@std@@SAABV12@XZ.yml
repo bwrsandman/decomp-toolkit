@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 380f85ca826f46c41bb98a449fb5c78cb6dbebeb
+  signature: Vf+L/+z/Uf/o/wAAAAAAAAAAjf9N//z/6P8AAAAAAAAAAI3/Tf/8/+j/AAAAAAAAAAC4/wAAAAAAAAAAyf/D/w==
+  symbols:
+  - kind: Function
+    name: ?classic@locale@std@@SAABV12@XZ
+    size: 32
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Init@locale@std@@CAPAV_Locimp@12@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _classic_locale
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 13
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 21
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 26
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

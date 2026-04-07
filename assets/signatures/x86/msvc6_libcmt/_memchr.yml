@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 72d699b1041dc6206ac1cda20c430ee011eb148e
+  signature: i/9E/yT/DP9T/4X/wP90/0r/i/9U/yT/CP8z/9v/iv9c/yT/DP/3/8L/A/8A/wD/AP90/xL/iv8K/0L/Mv/L/3T/bP9I/3T/Lv/3/8L/A/8A/wD/AP91/+7/g//o/wT/cv8S/1f/i//7/8H/4/8I/wP/3/+L//v/wf/j/xD/A//f/+v/F/9f/4P/wP8E/3T/Cv+K/wr/Qv8y/8v/dP8+/0j/df/2/1v/w/+D/+j/BP9y/+n/i/8K/zP/y/+//////v/+/37/A//5/4P/8f///zP/z/+D/8L/BP+B/+H/AP8B/wH/gf90/+D/i/9K//z/Mv/L/3T/I/8y/+v/dP8Z/8H/6f8Q/zL/y/90/wz/Mv/r/3T/Av/r/8j/X/+N/0L///9b/8P/jf9C//7/X/9b/8P/jf9C//3/X/9b/8P/jf9C//z/X/9b/8P/
+  symbols:
+  - kind: Function
+    name: _memchr
+    size: 165
+    flags: 1
+    section: .text
+  relocations: []

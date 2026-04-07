@@ -1,0 +1,57 @@
+- symbol: 0
+  hash: 447803792833e0b94725b4c2bc4989f69b12ffc2
+  signature: U/+L/1z/JP8M/4v/w/9L/1b/V/+F/8D/fv8h/4v/fP8k/xj/i/90/yT/EP8P/77/Bv9X/1D/Rv/o/wAAAAAAAAAAg/8/////Wf9Z/3T/B/+L/8P/S/+F/8D/f//n/1//Xv9b/8P/
+  symbols:
+  - kind: Function
+    name: _write_string
+    size: 51
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _write_char
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 29
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 8949e7ad2d84dadd60c57204a5bf26e615eb5053
+  signature: U/+L/1z/JP8M/4v/w/9L/1b/V/+F/8D/fv8m/4v/fP8k/xz/i/90/yT/EP8P/77/Bv9X/0b///90/yT/HP9Q/+j/AAAAAAAAAACD/8T/DP+D/z////90/wf/i//D/0v/hf/A/3//4v9f/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: _write_string
+    size: 56
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _write_char
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 33
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 494ce8a4feef42ba90a50dabe7493c1f242422c6
+  signature: U/+L/1z/JP8M/4v/w/9L/1b/V/+F/8D/fv8n/4v/fP8k/xz/i/90/yT/EP9m/4v/Bv9X////dP8k/xz/Rv9G/1D/6P8AAAAAAAAAAIP/xP8M/4P/P////3T/B/+L/8P/S/+F/8D/f//h/1//Xv9b/8P/
+  symbols:
+  - kind: Function
+    name: _write_string
+    size: 57
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _write_char
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 34
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

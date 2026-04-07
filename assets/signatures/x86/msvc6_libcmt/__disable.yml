@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: b25b7e93a8793aa3d38ea6d8e72b77048911c11f
+  signature: +v/D/w==
+  symbols:
+  - kind: Function
+    name: __disable
+    size: 2
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: f6e055590dca9a6798a20b980d819696c4b02e93
+  signature: Vv9X/4v/8f/o/wAAAAAAAAAAi//4/4X///90/xf/V//o/wAAAAAAAAAAWf9Q/1f/i//O/+j/AAAAAAAAAABX/+j/AAAAAAAAAABZ/4P/fv8I/wD/dP8S/4v/dv8E/4X/9v91/wf/uP8AAAAAAAAAAOv/Cf+L/8b/6/8F/7j/AAAAAAAAAABf/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?_Getdays@_Locinfo@std@@QBEPBDXZ
+    size: 70
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __Getdays
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0FG@ILEN@?3Sun?3Sunday?3Mon?3Monday?3Tue?3Tuesd@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 17
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 33
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 52
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 63
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

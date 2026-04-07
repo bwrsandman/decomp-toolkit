@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: 1e247bfc0f501eb5414cbc3e20fd1029a1427cef
+  signature: Vf+L/+z/Uf9W/4v/8f+N/03//P/o/wAAAAAAAAAAg/9+/yT/CP9z/xv/i/9G/yT/i/8M/4X/AAAAAAAAAACF/8n/dP8N/zv/zv90/wn/QP+D//j/CP+J/0b/JP9y/+X/i/9G/yT/jf9N//z/if80/4X/AAAAAAAAAACL/3b/JP/+/4b/AAAAAAAAAADo/wAAAAAAAAAAXv/J/8P/
+  symbols:
+  - kind: Function
+    name: ?_Addstd@ios_base@std@@IAEXXZ
+    size: 78
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _stdstr
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _stdopens
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ??1_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 27
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 57
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 66
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 71
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

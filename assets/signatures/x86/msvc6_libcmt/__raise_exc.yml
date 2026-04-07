@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 3518d93bfa3fbde4a8bab511faf6e157cd3ce99d
+  signature: Vf+L/+z/i/9N/wj/M//A/1P/Vv+J/0H/BP+L/03/CP9X/2r/Af+J/0H/CP+L/03/CP9b/4n/Qf8M/4r/Tf8Q//b/wf8Q/3T/Df+L/0X/CP/H/0X/EP+P/wD/AP/A/wn/WP8E//b/wf8C/3T/Dv+L/0X/CP/H/0X/EP+T/wD/AP/A/4P/SP8E/wL/hP/L/3T/Dv+L/0X/CP/H/0X/EP+R/wD/AP/A/4P/SP8E/wT/9v/B/wT/dP8O/4v/Rf8I/8f/Rf8Q/47/AP8A/8D/g/9I/wT/CP/2/8H/CP90/w7/i/9F/wj/x/9F/xD/kP8A/wD/wP+D/0j/BP8Q/4v/df8M/4v/Rf8I/2r/Av+L/w7/i/9Q/wj/9//R/yP/y/+D/+L/7//B/+H/BP8L/8r/X/+J/0j/CP+L/w7/i/9F/wj/9//R/4v/UP8I/4P/4f8E/9H/4f+D/+L/9/8L/8r/if9I/wj/i/8O/4v/Rf8I//f/0f+L/1D/CP/R/+n/g//h/wT/g//i//v/C//K/4n/SP8I/4v/Dv+L/0X/CP/3/9H/i/9Q/wj/wf/p/wP/I//P/4P/4v/9/wv/yv+J/0j/CP+L/w7/i/9F/wj/9//R/4v/UP8I/8H/6f8F/yP/y/+D/+L//v8L/8r/if9I/wj/6P8AAAAAAAAAAIT/w/90/wf/i/9N/wj/g/9J/wz/EP+o/wT/dP8H/4v/Tf8I/4P/Sf8M/wj/qP8I/3T/B/+L/03/CP+D/0n/DP8E/6j/EP90/wb/i/9N/wj/Cf95/wz/qP8g/3T/Bv+L/0X/CP8J/1j/DP+L/wb/uf8A/wz/AP8A/yP/wf90/zT/Pf8A/wT/AP8A/3T/H/89/wD/CP8A/wD/dP8M/zv/wf91/yj/i/9F/wj/g/8I/wP/6/8g/4v/Rf8I/4v/CP+D/+H//v8L/8//6/8K/4v/Rf8I/4v/CP+D/+H//f8L/8v/if8I/+v/Bv+L/0X/CP+D/yD//P+L/wb/uf8A/wP/AP8A/yP/wf90/yD/Pf8A/wL/AP8A/3T/DP87/8H/df8i/4v/Rf8I/4P/IP/j/+v/Gv+L/0X/CP+L/wj/g//h/+f/g//J/wT/6/8L/4v/Rf8I/4v/CP+D/+H/6/+D/8n/CP+J/wj/i/9F/wj/i/9N/xT/gf/h////D/8A/wD/i/8Q/8H/4f8F/4H/4v8f/wD//v///wv/yv+J/wj/i/9F/wj/Cf9Y/yD/i/9F/wj/i/9I/yD/g//h/+P/C//P/4n/SP8g/4v/Rf8Y/93/AP+L/0X/CP/d/1j/EP+L/0X/CP8J/1j/UP+L/0X/CP+L/0j/UP+D/+H/4/8L/8//i/99/xz/if9I/1D/i/9F/wj/3f8H/93/WP9A/+j/AAAAAAAAAACN/0X/CP9Q/1P/av8A////df8Q////Ff8AAAAAAAAAAIv/Rf8I//b/QP8I/xD/dP8D/4P/Jv/+//b/QP8I/wj/dP8D/4P/Jv/7//b/QP8I/wT/dP8D/4P/Jv/3//b/QP8I/wL/dP8D/4P/Jv/v/4T/WP8I/3T/A/+D/yb/3/+L/wj/uv////P//////4P/4f8D/4P/6f8A/3T/Jf9J/3T/Fv9J/3T/Cf9J/3X/Hv+A/07/Af8M/+v/GP+L/w7/gP/l//v/gP/N/wj/6/8I/4v/Dv+A/+X/9/+A/83/BP+J/w7/6/8C/yH/Fv+L/wj/wf/p/wL/g//h/wf/g//p/wD/dP8T/0n/dP8H/0n/df8W/yH/Fv/r/xL/i/8O/yP/yv+A/83/Av/r/wf/i/8O/yP/yv+A/83/A/+J/w7/3f9A/0D/3f8f/1//Xv9b/13/w/8=
+  symbols:
+  - kind: Function
+    name: __raise_exc
+    size: 691
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __statfp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __clrfp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__RaiseException@16
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 247
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 519
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 535
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

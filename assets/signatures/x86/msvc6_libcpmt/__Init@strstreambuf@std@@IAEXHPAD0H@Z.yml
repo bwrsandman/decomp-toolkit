@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: e50f9864777a1f42bc76592da228b1ce9f5cbf6f
+  signature: Vf+L/+z/U/9W/1f/i//x/+j/AAAAAAAAAACL/33/DP+L/0X/FP8z/9v/if9G/0T/O//7/4n/Xv84/4n/Xv88/4n/Xv9I/4n/Xv9M/3X/F/+L/03/CP+D//n/IP99/wX/uf8A/wL/AP8A/wz/BP+J/07/QP+J/0b/RP/r/2r/i/9F/wj/O//D/33/B/+4/////////3//6/8J/3X/B/9X/+j/AAAAAAAAAABZ/4v/Tf8Q/43/FP84/zv/y/+J/17/QP+J/1b/PP91/xH/i/9O/wz/if85/4v/Tv8c/4n/Of+L/07/LP+J/wH/6/8y/zv/z/9z/wT/i//P/+v/Bv87/9H/c/8C/4v/yv+L/1b/EP8r/8H/A//H/4n/Cv+L/1b/IP+J/wr/i/9W/zD/K//P/4n/Av+L/0b/DP+J/zj/i/9G/xz/if84/4v/Rv8s/4n/CP9f/17/W/9d/8L/EP8A/w==
+  symbols:
+  - kind: Function
+    name: ?_Init@strstreambuf@std@@IAEXHPAD0H@Z
+    size: 176
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Init@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

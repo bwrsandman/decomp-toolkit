@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 2790ba006f10a4b7206f5ea1dcd990583115d181
+  signature: Vf+L/+z//P+L/0X/DP9q/wD/UP///3D/EP///3D/CP9q/wD///91/xD///9w/wz///91/wj/6P8AAAAAAAAAAIP/xP8g/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?CatchGuardHandler@@YA?AW4_EXCEPTION_DISPOSITION@@PAUEHExceptionRecord@@PAUCatchGuardRN@@PAX2@Z
+    size: 37
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ___InternalCxxFrameHandler
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 28
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

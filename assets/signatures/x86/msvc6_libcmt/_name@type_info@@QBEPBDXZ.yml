@@ -1,0 +1,85 @@
+- symbol: 0
+  hash: d32993efea3b3b425b03195f984a5c814f96a8c5
+  signature: V/+L//n/g/9//wT/AP91/2X/Vv9o/wD/KP8A/wD/aP8AAAAAAAAAAGj/AAAAAAAAAACN/0f/Cf9q/wD/UP9q/wD/6P8AAAAAAAAAAIv/8P9W/+j/AAAAAAAAAACD/8T/HP9I/wP/xv+A/zj/IP91/wb/gP8g/wD/SP/r//X/av8b/+j/AAAAAAAAAABW/+j/AAAAAAAAAABA/1D/6P8AAAAAAAAAAFb/UP+J/0f/BP/o/wAAAAAAAAAAVv/o/wAAAAAAAAAAav8b/+j/AAAAAAAAAACD/8T/HP9e/4v/R/8E/1//w/8=
+  symbols:
+  - kind: Function
+    name: ?name@type_info@@QBEPBDXZ
+    size: 115
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___unDName
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 21
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 34
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 42
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 66
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 72
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 79
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 89
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 95
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 102
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

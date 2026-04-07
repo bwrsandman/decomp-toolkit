@@ -1,0 +1,86 @@
+- symbol: 0
+  hash: 38158f9e13314fb9de0fb8a4d5a7c22ecadb478f
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1b/i//x/4n/df/w/43/Tv80/+j/AAAAAAAAAACD/2X//P8A/4v/zv/H/wb/AAAAAAAAAADo/wAAAAAAAAAAjf9O/0z/x/9F//z/Af8A/wD/AP/o/wAAAAAAAAAAav8A/4v/zv///3X/CP/G/0X//P8C/8f/Bv8AAAAAAAAAAOj/AAAAAAAAAACL/03/9P+L/8b/Xv9k/4n/Df8AAAAAAAAAAMn/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ??0?$basic_filebuf@DU?$char_traits@D@std@@@std@@QAE@PAU_iobuf@@@Z
+    size: 96
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L11046
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0locale@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$basic_streambuf@DU?$char_traits@D@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Init@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$basic_filebuf@DU?$char_traits@D@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Init@?$basic_filebuf@DU?$char_traits@D@std@@@std@@IAEXPAU_iobuf@@W4_Initfl@12@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 21
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 33
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 38
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 53
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 70
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 75
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 88
+    kind: x86_abs32
+    symbol: 8
+    addend: 0

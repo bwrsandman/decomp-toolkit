@@ -1,0 +1,76 @@
+- symbol: 0
+  hash: 281bbae9f5e7b5738b0bda4051e6aa5d066f33ba
+  signature: Vf+L/+z/V/9W/1P/i/9N/xD/C//J/w//hP/p/wD/AP8A/4v/df8I/4v/ff8M/43/Bf8AAAAAAAAAAIP/eP8I/wD/df9O/7f/Qf+z/1r/tv8g/43/Sf8A/4r/Jv8K/+T/iv8H/3T/If8K/8D/dP8d/0b/R/84//z/cv8G/zj/3P93/wL/Av/m/zj/+P9y/wb/OP/Y/3f/Av8C/8b/OP/E/3X/Df9J/3X/1/8z/8n/OP/E/w//hP+b/wD/AP8A/7n///////////8P/4L/kP8A/wD/AP/3/9n/6f+J/wD/AP8A//D///8F/wAAAAAAAAAAg/89/wAAAAAAAAAAAP9//wT/av8A/+v/Gf/w////Df8AAAAAAAAAAIv/2f9q/xP/6P8AAAAAAAAAAMf/BP8k/wH/AP8A/wD/i//L/zP/wP8z/9v/i////4r/Bv8L/8D/iv8f/3T/I/8L/9v/dP8f/0b/R/9R/1D/U//o/wAAAAAAAAAAi//Y/4P/xP8E/+j/AAAAAAAAAACD/8T/BP9Z/zv/w/91/wn/Sf91/9X/M//J/zv/w/90/wn/uf///////////3L/Av/3/9n/WP8L/8D/df8J//D///8N/wAAAAAAAAAA6/8O/4v/2f9q/xP/6P8AAAAAAAAAAIP/xP8E/4v/y/+L/8H/W/9e/1//yf/D/w==
+  symbols:
+  - kind: Function
+    name: __strnicmp
+    size: 257
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___unguarded_readlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___setlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __tolower_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 25
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 116
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 122
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 136
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 145
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 182
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 192
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 230
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 241
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

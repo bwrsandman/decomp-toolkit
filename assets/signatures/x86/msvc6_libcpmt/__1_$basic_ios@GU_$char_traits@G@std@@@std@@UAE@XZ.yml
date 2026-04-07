@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 1b182ac6a1fd8ace5fb2f72fb810852e5cf8c1fd
+  signature: x/8B/wAAAAAAAAAA6f8AAAAAAAAAAA==
+  symbols:
+  - kind: Function
+    name: ??1?$basic_ios@GU?$char_traits@G@std@@@std@@UAE@XZ
+    size: 11
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$basic_ios@GU?$char_traits@G@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??1ios_base@std@@UAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 7
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

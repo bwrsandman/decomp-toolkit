@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: a0c6e4c86e1b6f6f66afdc0e9f41511cb70878be
+  signature: i/9B/wz/i/9U/yT/CP87/9D/fv8C/4v/0P+L/0n/CP8z/8D/O//I/3T/GP85/0T/JP8E/3T/Ev87/9D/dP8O/1L/Uf///3T/JP8M/+j/AAAAAAAAAACD/8T/DP/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?getString@pcharNode@@UBEPADPADH@Z
+    size: 49
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?strncpy@@YAPADPADPBDI@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 39
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

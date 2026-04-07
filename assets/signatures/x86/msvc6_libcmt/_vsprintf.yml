@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: e1a7980ee84d74a3c96c68ab66330013f88e1b67
+  signature: Vf+L/+z/g//s/yD/i/9F/wj/Vv///3X/EP+J/0X/6P+J/0X/4P+N/0X/4P///3X/DP/H/0X/7P9C/wD/AP8A/8f/Rf/k/////////3//UP/o/wAAAAAAAAAAg//E/wz///9N/+T/i//w/3j/CP+L/0X/4P+A/yD/AP/r/w3/jf9F/+D/UP9q/wD/6P8AAAAAAAAAAFn/Wf+L/8b/Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: _vsprintf
+    size: 81
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __output
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __flsbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 41
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 70
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

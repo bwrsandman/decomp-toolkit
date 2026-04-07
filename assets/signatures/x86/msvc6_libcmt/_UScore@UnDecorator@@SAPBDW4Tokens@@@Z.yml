@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 61fd7f0e95a9a0976f1f1a4b6ac5c6bd96aa6278
+  signature: of8AAAAAAAAAAPf/0P+o/wH/i/9E/yT/BP+L/wT/hf8AAAAAAAAAAHX/Av9A/0D/w/8=
+  symbols:
+  - kind: Function
+    name: ?UScore@UnDecorator@@SAPBDW4Tokens@@@Z
+    size: 25
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?disableFlags@UnDecorator@@0KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: _tokenTable
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 16
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

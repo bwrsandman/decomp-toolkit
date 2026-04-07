@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: c001a8ce3c9204b92576f1ee8280b7a75930465a
+  signature: i/9E/yT/BP+L/8j/g//g/x//wf/5/wX/jf8E/8D/i/8M/43/AAAAAAAAAACN/0T/gf8M/1D///8V/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: __unlock_fhandle
+    size: 34
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__LeaveCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 29
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

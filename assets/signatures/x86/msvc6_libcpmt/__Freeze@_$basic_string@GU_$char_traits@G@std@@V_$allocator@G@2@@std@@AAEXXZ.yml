@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 1bfbddf4976503dac1397e3257c80c7455ea1f36
+  signature: Vv+L//H/i/9G/wT/hf/A/3T/Ff+K/0D///+E/8D/dP8O/zz///90/wr/av8A////dv8I/+j/AAAAAAAAAACL/3b/BP+F//b/dP8E/4D/Tv//////Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?_Freeze@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAEXXZ
+    size: 44
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Grow@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAE_NI_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 27
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

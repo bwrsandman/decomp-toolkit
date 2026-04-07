@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 9745db7daa7462c291c029e92534b4f8cfc02aa3
+  signature: i/9M/yT/BP/3/0H/BP8G/wD/AP8A/7j/Af8A/wD/AP90/w//i/9E/yT/CP+L/1T/JP8Q/4n/Av+4/wP/AP8A/wD/w/8=
+  symbols:
+  - kind: Function
+    name: __unwind_handler
+    size: 34
+    flags: 2
+    section: .text
+  relocations: []

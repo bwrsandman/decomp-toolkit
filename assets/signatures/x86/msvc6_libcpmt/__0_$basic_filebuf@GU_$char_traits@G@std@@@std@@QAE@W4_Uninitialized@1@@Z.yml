@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 1fdaa030dfa9b2c5eecb8aec3d8e7a894e637076
+  signature: i//B/8f/AP8AAAAAAAAAAML/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0?$basic_filebuf@GU?$char_traits@G@std@@@std@@QAE@W4_Uninitialized@1@@Z
+    size: 11
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$basic_filebuf@GU?$char_traits@G@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 4
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 03ca8e818bd006b46dc86568634a2f233da50a1c
+  signature: Vf+L/+z/g//s/yD/Vv+L//H/V/+L/0b/UP+F/8D/dP9C////df8Q////df8M/1D/6P8AAAAAAAAAAIP/xP8M/4X/wP91/y//jf9F//j/UP///3b/UP/o/wAAAAAAAAAAWf+F/8D/Wf91/x3/If9F/+D/i/9F//j/if9F/+j/i/9F//z/if9F/+z/i/9G/0D/av8G/4n/Rf/w/1n/jf91/+D/6/8P/2r///+N/03/4P/o/wAAAAAAAAAAav8G/4v/8P9Z/4v/Rf8I/4v/+P/z/6X/X/9e/8n/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: ?seekoff@?$basic_filebuf@DU?$char_traits@D@std@@@std@@MAE?AV?$fpos@H@2@JW4seekdir@ios_base@2@H@Z
+    size: 111
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _fseek
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fgetpos
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0?$fpos@H@std@@QAE@J@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 25
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 44
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 89
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

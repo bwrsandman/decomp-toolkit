@@ -1,0 +1,57 @@
+- symbol: 0
+  hash: ea8b8fbec3058741315f725541e91f4bd7f3e17d
+  signature: U/9W/4v/dP8k/wz/V/8z////6P8AAAAAAAAAAIv/yP9m/zn/Pv90/wT/Rv9G/+v/9/9O/07/Zv+D/z7/WP8P/4X/hf8A/wD/AP+D////Bf99/xz/av8K/4v/wf8z/9L/W//3//P/U/+L/8H/Wf9H/4P/wv8w/2b/if8W/zP/0v/3//H/i//I/+v/0/9m/4P/Pv9Y/3X/Xv+D////Bf98/1n/av9i/2b/x/8G/2H/AP9b/+j/AAAAAAAAAACL/zj/6P8AAAAAAAAAAIP/IP8A/2r/AP///3T/JP8U/+j/AAAAAAAAAABZ/4X/wP9Z/3T/Cv/o/wAAAAAAAAAAg/84/w3/df8T/+j/AAAAAAAAAACD/yD/AP+D//v/e/90/xP/Zv+J/x7/Q//r/9L/6P8AAAAAAAAAAIn/OP+L/0T/JP8Q/+v/Cf/o/wAAAAAAAAAAif84/zP/wP9f/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: __wmktemp
+    size: 176
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___threadid
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __waccess
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 90
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 97
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 111
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 122
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 132
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 151
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 164
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

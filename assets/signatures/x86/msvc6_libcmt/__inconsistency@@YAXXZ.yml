@@ -1,0 +1,68 @@
+- symbol: 0
+  hash: 135822b1e9dabe51aa7589df8ae887a66eec3fd7
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAFH/Uf9T/1b/V/+J/2X/6P+D/2X//P8A/6H/AAAAAAAAAACF/8D/dP8W/8f/Rf/8/wH/AP8A/wD////Q/+v/B/9q/wH/WP/D/4v/Zf/o/4P/Zf/8/wD/g/9N//z///8AAAAAAAAAAAD/6f8AAAAAAAAAAA==
+  symbols:
+  - kind: Function
+    name: ?_inconsistency@@YAXXZ
+    size: 86
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T16773
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?__pInconsistency@@3P6AXXZA
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: fn_00000051
+    size: 0
+    flags: 0
+    section: .text
+  - kind: Function
+    name: ?terminate@@YAXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 76
+    kind: x86_rel32
+    symbol: 5
+    addend: 0
+  - offset: 82
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

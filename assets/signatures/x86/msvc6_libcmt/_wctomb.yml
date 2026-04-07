@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: 4d2051a326a31e0946204d9bfeacb8f9d2755562
+  signature: Vf+L/+z/U/9W/77/AAAAAAAAAABX/1b///8V/wAAAAAAAAAAi/89/wAAAAAAAAAAM//b/zn/Hf8AAAAAAAAAAHT/Dv9W////1/9q/xP/6P8AAAAAAAAAAFn/av8B/1v///91/wz///91/wj/6P8AAAAAAAAAAFn/if9F/wz/hf/b/1n/dP8K/2r/E//o/wAAAAAAAAAAWf/r/wP/Vv///9f/i/9F/wz/X/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _wctomb
+    size: 89
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___unguarded_readlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedIncrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedDecrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___setlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __wctomb_lk
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 14
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 20
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 40
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 55
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 71
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

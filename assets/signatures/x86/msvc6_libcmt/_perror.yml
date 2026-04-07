@@ -1,0 +1,119 @@
+- symbol: 0
+  hash: 027091f34b9904f922f38d7edbfe600b4a294c1f
+  signature: Vv9X/2r/Av9f/1f/6P8AAAAAAAAAAIv/dP8k/xD/Wf+F//b/dP8i/4D/Pv8A/3T/Hf9W/+j/AAAAAAAAAABQ/1b/V//o/wAAAAAAAAAAV/9o/wAAAAAAAAAAV//o/wAAAAAAAAAAg//E/xz/6P8AAAAAAAAAAIP/OP8A/3z/GP/o/wAAAAAAAAAAi/8A/zv/Bf8AAAAAAAAAAH3/Cf/o/wAAAAAAAAAAi/8A/+v/Bf+h/wAAAAAAAAAAi/80/4X/AAAAAAAAAABW/+j/AAAAAAAAAABQ/1b/V//o/wAAAAAAAAAAav8B/2j/AAAAAAAAAABX/+j/AAAAAAAAAABX/+j/AAAAAAAAAACD/8T/IP9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: _perror
+    size: 139
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __write_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_02HFBK@?3?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __sys_nerr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __sys_errlist
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_01BJG@?6?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __unlock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 35
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 41
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 47
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 55
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 73
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 80
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 89
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 96
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 102
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 110
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 117
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 123
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 129
+    kind: x86_rel32
+    symbol: 9
+    addend: -4

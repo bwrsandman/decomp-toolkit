@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 6a6756ef0a8a8b40eb6e8aa7a08de0faae9fe038
+  signature: Vv+L/3T/JP8I/4v/Bv+B/zj/Y/9z/23/4P91/xT/g/94/xD/A/91/w7/gf94/xT/IP8F/5P/Gf91/wX/6f8AAAAAAAAAAKH/AAAAAAAAAACF/8D/dP8U/1D/6P8AAAAAAAAAAIX/wP9Z/3T/Cf9W////Ff8AAAAAAAAAAOv/Av8z/8D/Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?__CxxUnhandledExceptionFilter@@YGJPAU_EXCEPTION_POINTERS@@@Z
+    size: 70
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?terminate@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _pOldExceptFilter
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ?_ValidateExecute@@YAHP6GHXZ@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 31
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 36
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 46
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 58
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

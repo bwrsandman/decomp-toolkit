@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: a25a3b0fd0b005b83d9a6444c19071763e050396
+  signature: jf9E/yT/CP9q/wD/UP///3T/JP8M/+j/AAAAAAAAAACD/8T/DP/D/w==
+  symbols:
+  - kind: Function
+    name: __execl
+    size: 20
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __execve
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

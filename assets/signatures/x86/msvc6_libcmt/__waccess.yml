@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 2f46bba6e694c7f67db86ce97c623593605cd272
+  signature: //90/yT/BP///xX/AAAAAAAAAACD//j///91/xH///8V/wAAAAAAAAAAUP/o/wAAAAAAAAAAWf+D/8j////D/6j/Af90/x//9v9E/yT/CP8C/3T/GP/o/wAAAAAAAAAAx/8A/w3/AP8A/wD/6P8AAAAAAAAAAMf/AP8F/wD/AP8A/+v/2f8z/8D/w/8=
+  symbols:
+  - kind: Function
+    name: __waccess
+    size: 70
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetFileAttributesW@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 23
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 44
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 55
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

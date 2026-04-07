@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 142ebaa3c11bfc61e3d97522d400ac87696a58c9
+  signature: V/+L/3z/JP8I/zP/yf+F////df8E/zP/wP9f/8P/g/8//wD/jf9H/wT/dP8K/4v/EP9B/4P/wP8E/4X/0v91//b/U/9V/43/BP+N/wT/AP8A/wD/Vv9Q/+j/AAAAAAAAAACL//D/Wf+F//b/i//u/3X/CP9q/wn/6P8AAAAAAAAAAFn/i/8H/4v/3/+F/8D/dP8T/1D/g//D/wT/6P8AAAAAAAAAAIn/Bv+L/wP/Wf+D/8b/BP/r/+n/g/8m/wD/i//F/17/Xf9b/1//w/8=
+  symbols:
+  - kind: Function
+    name: _copy_environ
+    size: 103
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __amsg_exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __strdup
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 45
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 61
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 79
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

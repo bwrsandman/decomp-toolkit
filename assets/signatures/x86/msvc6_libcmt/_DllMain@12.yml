@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: fa5f523f395ec4d950cb6768afa4fe36d2f36a7c
+  signature: av8B/1j/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: _DllMain@12
+    size: 6
+    flags: 1
+    section: .text
+  relocations: []

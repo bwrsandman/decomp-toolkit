@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 06bd2da31a14fa4b91fd197401add372dd0d76aa
+  signature: Vv+L//H/V/8z////jf9O/yD/O//P/3T/Bf/o/wAAAAAAAAAAV/9X/4v/zv+J/37/CP/H/0b/DP8B/wL/AP8A/8f/Rv8Q/wb/AP8A/wD/if9+/xT/if9+/xj/if9+/xz/6P8AAAAAAAAAAF//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?_Init@ios_base@std@@IAEXXZ
+    size: 56
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0locale@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?clear@ios_base@std@@QAEXH_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 49
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

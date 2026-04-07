@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 45a16662a7494121c33ccf2aa8dbfed73b60a614
+  signature: Vf+L/+z/g//s/1D/Vv+L/3X/FP///3X/HP+L/0b/DP9Q/43/Rf/4/2r/ZP9Q/+j/AAAAAAAAAACD/8T/DP9Q/43/Rf+w/1D/6P8AAAAAAAAAAFD/jf9F/7D/UP+N/0X/8P///3X/GP9W////df8Q////df8M/1D/6P8AAAAAAAAAAIv/yP+L/0X/CP+D/8T/KP+L/xH/if8Q/17/i/9J/wT/if9I/wT/yf/C/xj/AP8=
+  symbols:
+  - kind: Function
+    name: ?do_put@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DJ@Z
+    size: 88
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Ifmt@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@KAPADPADDH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _sprintf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Iput@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@KA?AV?$ostreambuf_iterator@DU?$char_traits@D@std@@@2@V32@AAVios_base@2@DPADI@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 24
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 61
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

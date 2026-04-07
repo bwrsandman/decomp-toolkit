@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 28e650a9d51467e11cc72a782b7484d51f95a0c9
+  signature: i/9E/yT/BP+D/wD/BP+L/wD/Zv+L/0D//P/D/w==
+  symbols:
+  - kind: Function
+    name: _get_short_arg
+    size: 14
+    flags: 2
+    section: .text
+  relocations: []

@@ -1,0 +1,84 @@
+- symbol: 0
+  hash: a5ccd128102279645d701acd65f0f9e3f5d0a5ba
+  signature: uf8AAAAAAAAAAOn/AAAAAAAAAAA=
+  symbols:
+  - kind: Function
+    name: _$E31
+    size: 10
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??_D?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: 44a4a7ccc3f705d478f6fc21e06f112be5c81675
+  signature: aP8AAAAAAAAAAOj/AAAAAAAAAABZ/8P/
+  symbols:
+  - kind: Function
+    name: _$E31
+    size: 12
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?id@?$collate@D@std@@$E
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _atexit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: 1bfc4326615815aef86c033847c7e98e84907a12
+  signature: av8A/7n/AAAAAAAAAADo/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: _$E31
+    size: 13
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _wfout
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ??0?$basic_filebuf@GU?$char_traits@G@std@@@std@@QAE@W4_Uninitialized@1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 8
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

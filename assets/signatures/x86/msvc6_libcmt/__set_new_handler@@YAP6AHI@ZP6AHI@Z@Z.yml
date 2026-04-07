@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 07fa80a6b4d9671375a878a2f804bf6504b665fa
+  signature: Vv9q/wn/6P8AAAAAAAAAAIv/RP8k/wz/i/81/wAAAAAAAAAAav8J/6P/AAAAAAAAAADo/wAAAAAAAAAAWf+L/8b/Wf9e/8P/
+  symbols:
+  - kind: Function
+    name: ?_set_new_handler@@YAP6AHI@ZP6AHI@Z@Z
+    size: 36
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_pnhHeap@@3P6AHI@ZA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 14
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 21
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 26
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

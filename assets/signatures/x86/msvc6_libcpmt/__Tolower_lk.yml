@@ -1,0 +1,68 @@
+- symbol: 0
+  hash: 9ff1881c6a0f9fabb9af7d12030a2b0ddd58844e
+  signature: Vf+L/+z/Uf9R/4v/Rf8M/4X/wP91/w//of8AAAAAAAAAAIn/Rf/8/6H/AAAAAAAAAADr/wj/i/8I/4v/QP8E/4n/Tf/8/4P/ff/8/wD/U/9W/4n/Rf/4/1f/df8d/4v/Rf8I/4P/+P9B/w//jP+o/wD/AP8A/4P/+P9a/w//j/+f/wD/AP8A/4P/wP8g/+n/l/8A/wD/AP+L/13/CP++/wD/Af8A/wD/av8B/zv/3v9f/33/Jf85/z3/AAAAAAAAAAB+/wv/V/9T/+j/AAAAAAAAAABZ/1n/6/8K/6H/AAAAAAAAAACK/wT/WP8j/8f/hf/A/3X/BP+L/8P/6/9j/4v/Ff8AAAAAAAAAAIv/w//B//j/CP8P/7b/yP/2/0T/Sv8B/4D/dP8P/4D/Zf8K/wD/av8C/4j/Rf8I/4j/Xf8J/1j/6/8J/4D/Zf8J/wD/iP9d/wj/i//H/1f/jf9N/wz///91//j/av8D/1H/UP+N/0X/CP9Q/1b///91//z/6P8AAAAAAAAAAIP/xP8g/4X/wP90/7D/O//H/3X/Bv8P/7b/Rf8M/+v/Df8P/7b/Rf8N/w//tv9N/wz/wf/g/wj/C//B/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __Tolower_lk
+    size: 232
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __isctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtLCMapStringA
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 13
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 21
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 93
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 102
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 111
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 130
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 193
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

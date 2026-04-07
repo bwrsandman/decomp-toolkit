@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: c86183d1aa98ca0b767e86bdb1af95626c5b9956
+  signature: //90/yT/BP///xX/AAAAAAAAAACD//j///90/xz/9v9E/yT/CP+A/3T/BP8k//7/6/8C/wz/Af9Q////dP8k/wj///8V/wAAAAAAAAAAhf/A/3X/Ef///xX/AAAAAAAAAABQ/+j/AAAAAAAAAABZ/4P/yP///8P/M//A/8P/
+  symbols:
+  - kind: Function
+    name: __chmod
+    size: 63
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetFileAttributesA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetFileAttributesA@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 35
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 51
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

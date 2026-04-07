@@ -1,0 +1,186 @@
+- symbol: 0
+  hash: c5a29ddef4d2a48dad50a5311630f4217d186dbd
+  signature: Vf+L/+z/g//s/zD/of8AAAAAAAAAAFb/i//I//f/0f/2/8X/gP90/wr/9v/E/xD/df8F/2r/Af9e/+v/Av8z//b/jf9N//j/6P8AAAAAAAAAAKH/AAAAAAAAAAAP/77/AP///wX/AAAAAAAAAACD/+j/AP8P/4T/tv8A/wD/AP+D/+j/VP90/1//SP90/1X/SP90/0v/SP91/2P/i/81/wAAAAAAAAAAjf9F/+D/9//W/8H/7v8P/1D/g//m/wH/6P8AAAAAAAAAAFn/UP+N/0X/2P9Q/2j/AAAAAAAAAACN/03/0P/o/wAAAAAAAAAAi//I/+j/AAAAAAAAAABQ/43/Tf/o/+j/AAAAAAAAAACN/0X/6P+N/03/+P9Q/+j/AAAAAAAAAADr/xv/aP8AAAAAAAAAAOv/DP9o/wAAAAAAAAAA6/8F/2j/AAAAAAAAAACN/03/+P/o/wAAAAAAAAAAjf9N//D/6P8AAAAAAAAAAIX/9v90/wz/jf9F//j/jf9N//D/UP/o/wAAAAAAAAAAjf9F/9D/UP/o/wAAAAAAAAAAWf9Q/43/Tf/o/+j/AAAAAAAAAACN/0X/6P+N/03/8P9Q/+j/AAAAAAAAAACL/03/CP+N/0X/8P9Q/+j/AAAAAAAAAADr/xP/i/9N/wj///8N/wAAAAAAAAAAaP8AAAAAAAAAAOj/AAAAAAAAAACL/0X/CP9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?getECSUDataType@UnDecorator@@CA?AVDName@@XZ
+    size: 271
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?disableFlags@UnDecorator@@0KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??0DName@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?getEnumType@UnDecorator@@CA?AVDName@@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_05OOP@enum?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0DName@@QAE@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??HDName@@QBE?AV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??4DName@@QAEAAV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_06FJFG@class?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_07EFPK@struct?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_06HODG@union?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??4DName@@QAEAAV0@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getScopedName@UnDecorator@@CA?AVDName@@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??YDName@@QAEAAV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0P@DBCM@?$GAunknown?5ecsu?8?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 37
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 42
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 51
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 80
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 97
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 108
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 116
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 123
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 132
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 144
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 151
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 158
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 165
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 173
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 181
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 197
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 206
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 216
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 228
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 240
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 251
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 256
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 261
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

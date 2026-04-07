@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 980db83a6acd899d69e4b70263c9ac25a5f3b3e2
+  signature: Vf+L/+z/V/9W/4v/ff8I/4v/1/+L//f/M//A/4P/yf////L/rv+D//n//v90/xL/T/9P/zv/9/9z/wz/iv8m/4r/B/+I/wb/iP8n/0b/T//r//D/i//C/17/X//J/8P/
+  symbols:
+  - kind: Function
+    name: __strrev
+    size: 48
+    flags: 1
+    section: .text
+  relocations: []

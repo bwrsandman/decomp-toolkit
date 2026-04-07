@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: f19ec87ab1a88efbe6a53699eb7c939941fc0eea
+  signature: //90/yT/DP/d/0T/JP8I/1H/Uf/d/xz/JP/o/wAAAAAAAAAAg//E/wz/w/8=
+  symbols:
+  - kind: Function
+    name: __scalb
+    size: 22
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _ldexp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

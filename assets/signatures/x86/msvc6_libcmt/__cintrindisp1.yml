@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 0945d261af70b6ca2194c432608cba7174a57d93
+  signature: Vf+L/+z/gf/E/zD//f//////U/+b/9n/vf9c/////////4P/Pf8AAAAAAAAAAAD/dP8b/+j/AAAAAAAAAACA/43/OP/9//////8B/4D/pf84//3///////3/6P8AAAAAAAAAAFv/yf/D/93/lf96/////////+v/3f8=
+  symbols:
+  - kind: Function
+    name: __cintrindisp1
+    size: 61
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __matherr_flag
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __trandisp1
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: fn_000000CA
+    size: 0
+    flags: 0
+    section: .text
+  relocations:
+  - offset: 19
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 27
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 46
+    kind: x86_rel32
+    symbol: 3
+    addend: 0

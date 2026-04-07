@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 7bbfa84ff5a240fd2bfc353f884a444a5800dc62
+  signature: Vf+L/+z/Uf+L/0X/CP9m/z3//////3X/Bf9m/wv/wP/J/8P/g/89/wAAAAAAAAAAAP91/xH/Zv89/0H/AP9y/1L/Zv89/1r/AP93/0z/g//A/yD/yf/D/2b/Pf8A/wH/c/8U/2r/Af9Q/+j/AAAAAAAAAABZ/4X/wP9Z/3X/Bv9m/4v/Rf8I/8n/w/9q/wD/jf9F//7/av8B/1D/jf9F/wj/av8B/1D/aP8A/wH/AP8A////Nf8AAAAAAAAAAOj/AAAAAAAAAACD/8T/HP+F/8D/Zv+L/0X/CP90/wT/Zv+L/0X//v/J/8P/
+  symbols:
+  - kind: Function
+    name: __towlower_lk
+    size: 117
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _iswctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtLCMapStringW
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 54
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 91
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 96
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

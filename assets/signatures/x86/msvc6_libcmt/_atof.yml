@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 540be92a3473e23dac3d44ad68c579a2e750ad1f
+  signature: Vf+L/+z/g//s/xj/Vv+L/3X/CP+D/z3/AAAAAAAAAAAB/37/D/8P/7b/Bv9q/wj/UP/o/wAAAAAAAAAAWf9Z/+v/D/8P/7b/Bv+L/w3/AAAAAAAAAACK/wT/Qf+D/+D/CP+F/8D/dP8D/0b/6//S/2r/AP9q/wD/Vv/o/wAAAAAAAAAAWf9Q/43/Rf/o/1b/UP/o/wAAAAAAAAAA3f9A/xD/g//E/xT/Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: _atof
+    size: 87
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __isctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fltin2
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 39
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 62
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

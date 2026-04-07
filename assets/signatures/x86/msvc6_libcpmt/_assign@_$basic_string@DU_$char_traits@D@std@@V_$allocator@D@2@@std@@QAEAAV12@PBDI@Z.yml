@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 09b1b037d0751322d3f03cf14c10b715118a2dc8
+  signature: Vv9X/4v/fP8k/xD/av8B/4v/8f9X/+j/AAAAAAAAAACE/8D/dP8a/1f///90/yT/EP///3b/BP/o/wAAAAAAAAAAi/9G/wT/g//E/wz/if9+/wj/gP8k/zj/AP+L/8b/X/9e/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+    size: 53
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAE_NI_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 29
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

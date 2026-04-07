@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 08df4bd89489580239900f78d41b7a0b4636c416
+  signature: jf9E/yT/BP9W/4v/8f9Q/+j/AAAAAAAAAADH/wb/AAAAAAAAAACL/8b/Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??0bad_alloc@std@@QAE@PBD@Z
+    size: 25
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0exception@@QAE@ABQBD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7bad_alloc@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 8fe3f36a01b22834fd637f6a45fa91f523bcf325
+  signature: Vf+L/+z/Uf9R/93/Rf8I/9n//P/d/13/+P/d/0X/+P/J/8P/
+  symbols:
+  - kind: Function
+    name: __frnd
+    size: 18
+    flags: 1
+    section: .text
+  relocations: []

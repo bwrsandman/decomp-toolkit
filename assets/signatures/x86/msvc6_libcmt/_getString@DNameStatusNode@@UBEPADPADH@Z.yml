@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 068d9819686424d56a5ac9a3726f6d33744be83d
+  signature: i/9B/wz/i/9U/yT/CP87/9D/fv8C/4v/0P8z/8D/g/95/wj/Av91/xz/Of9E/yT/BP90/xb/O//Q/3T/Ev9S/2j/AAAAAAAAAAD//3T/JP8M/+j/AAAAAAAAAACD/8T/DP/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?getString@DNameStatusNode@@UBEPADPADH@Z
+    size: 52
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_04NODD@?5?$DP?$DP?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?strncpy@@YAPADPADPBDI@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 33
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 42
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 1d83313a94c0693bbd3ec444df77faf2ad9246a7
+  signature: jf9R/xT/jf9B/wT/if9R/xz/jf9R/xj/if9R/yD/jf9R/yT/if9R/yz/jf9R/yj/if9B/wz/jf9B/wj/if9R/zD/M//S/4n/Qf8Q/4n/EP+L/0H/IP+J/xD/i/9B/zD/if8Q/4v/Qf8M/4n/EP+L/0H/HP+J/xD/i/9B/yz/if8Q/8P/
+  symbols:
+  - kind: Function
+    name: ?_Init@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXXZ
+    size: 66
+    flags: 1
+    section: .text
+  relocations: []

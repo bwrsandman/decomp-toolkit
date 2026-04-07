@@ -1,0 +1,269 @@
+- symbol: 0
+  hash: e027823aaea35ff7e997e257d10cd9e04b7eee2e
+  signature: Vf+L/+z/g//s/3j/U/9W/1f///91/wj/6P8AAAAAAAAAAFn/i//w/43/Rf+I/2r/eP9Q/6H/AAAAAAAAAAD3/9j/G//A/2b/Jf8F//D/Bf8C/xD/AP8A/1D/Vv///xX/AAAAAAAAAACF/8D/D/+E/xP/Af8A/wD/jf9F/4j/UP///zX/AAAAAAAAAADo/wAAAAAAAAAAWf+7/wL/8P//////hf/A/1n/v/8B/xD/AP8A/w//hf+8/wD/AP8A/43/Rf+I/2r/eP9Q/6H/AAAAAAAAAAD3/9j/G//A/yP/w/8D/8f/UP9W////Ff8AAAAAAAAAAIX/wP8P/4T/zf8A/wD/AP+N/0X/iP9Q////Nf8AAAAAAAAAAOj/AAAAAAAAAABZ/4X/wP9Z/3X/F/9m/4H/Df8AAAAAAAAAAAT/A/+J/zX/AAAAAAAAAACJ/zX/AAAAAAAAAADr/23/9v8F/wAAAAAAAAAAAv91/2T/of8AAAAAAAAAAIX/wP90/zr/UP+N/0X/iP9Q////Nf8AAAAAAAAAAOj/AAAAAAAAAACD/8T/DP+F/8D/df8j////Nf8AAAAAAAAAAIP/Df8AAAAAAAAAAAL/if81/wAAAAAAAAAA6P8AAAAAAAAAADv/Bf8AAAAAAAAAAFn/df8j/+v/rP/2/wX/AAAAAAAAAAAB/3X/GP9W/+j/AAAAAAAAAACF/8D/Wf90/w3/g/8N/wAAAAAAAAAAAf+J/zX/AAAAAAAAAACL/w3/AAAAAAAAAAC4/wD/A/8A/wD/I//I/zv/yP8P/4T/wP8A/wD/AP+N/0X/iP9q/3j/UP+h/wAAAAAAAAAA9//Y/xv/wP8j/8P/A//H/1D/Vv///xX/AAAAAAAAAACF/8D/df8P/4P/Jf8AAAAAAAAAAAD/av8B/1j/6f+f/wD/AP8A/43/Rf+I/1D///81/wAAAAAAAAAA6P8AAAAAAAAAAFn/hf/A/1n/df8x/4D/Df8AAAAAAAAAAAL/M////zn/Pf8AAAAAAAAAAHX/V/85/z3/AAAAAAAAAAB0/0////81/wAAAAAAAAAA6P8AAAAAAAAAADv/Bf8AAAAAAAAAAFn/df87/2r/Af/r/yv/M////zn/Pf8AAAAAAAAAAHX/Qv+h/wAAAAAAAAAAO//H/3T/Of9Q/43/Rf+I/1D///81/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8M/4X/wP91/yL/V/9W/+j/AAAAAAAAAABZ/4X/wP9Z/3T/Ff+A/w3/AAAAAAAAAAAB/zn/Pf8AAAAAAAAAAHX/Bv+J/zX/AAAAAAAAAACh/wAAAAAAAAAA9//Q/8H/6P8C/4P/4P8B/1//Xv9b/8n/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: _LangCountryEnumProc@4
+    size: 516
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _LcidFromHexString
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _bAbbrevCountry
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _pfnGetLocaleInfoA
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _pchCountry
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __stricmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _bAbbrevLanguage
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _pchLanguage
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _iLcidState
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _lcidCountry
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _lcidLanguage
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _iPrimaryLen
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __strnicmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _TestDefaultCountry
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _TestDefaultLanguage
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 13
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 27
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 48
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 66
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 71
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 102
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 118
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 136
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 141
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 154
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 162
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 168
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 176
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 184
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 199
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 204
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 217
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 223
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 230
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 235
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 241
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 252
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 261
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 272
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 279
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 285
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 311
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 327
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 337
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 356
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 361
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 373
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 382
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 390
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 398
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 403
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 409
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 424
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 431
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 446
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 451
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 465
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 477
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 484
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 492
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 497
+    kind: x86_abs32
+    symbol: 8
+    addend: 0

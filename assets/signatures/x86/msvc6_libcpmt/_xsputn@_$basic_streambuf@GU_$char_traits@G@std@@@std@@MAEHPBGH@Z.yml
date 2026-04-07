@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: aa662e7e2827b0d2bf9ea37797ee01c10972a4f6
+  signature: Vf+L/+z/Uf+D/2X//P8A/4P/ff8M/wD/U/9W/1f/i//5/37/a/+L/3X/CP+L/0f/IP+L/wj/hf/J/3T/QP+L/0f/MP+L/wD/0f/g/9H/+P+F/8D/fv8z/zn/Rf8M/33/A/+L/0X/DP+F/8D/i//W/3b/Ev+J/0X/CP9m/4v/Gv9m/4n/Gf9B/0H/Qv9C////Tf8I/3X/8f8B/0X//P8p/0X/DP9Q/4v/z/+N/zT/Rv/o/wAAAAAAAAAA6/8Z/2b/i/8G/4v/F/9Q/4v/z////1L/BP9m/z3//////3T/Dv9G/0b///9F//z///9N/wz/g/99/wz/AP9//5j/i/9F//z/X/9e/1v/yf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?xsputn@?$basic_streambuf@GU?$char_traits@G@std@@@std@@MAEHPBGH@Z
+    size: 136
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?pbump@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEXH@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 89
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

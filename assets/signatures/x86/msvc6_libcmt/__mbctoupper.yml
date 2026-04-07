@@ -1,0 +1,59 @@
+- symbol: 0
+  hash: 617d528253a952687bedf623dc6fa99366b73bc4
+  signature: Vf+L/+z/Uf9T/4v/Xf8I/4H/+////wD/AP8A/3b/Uf+L/8P/iP9d/wv/wf/o/wj/iP9F/wr/D/+2/8D/9v+A/wAAAAAAAAAABP90/0//av8B/43/Rf/8////Nf8AAAAAAAAAAGr/Av9Q/43/Rf8K/2r/Av9Q/2j/AP8C/wD/AP///zX/AAAAAAAAAADo/wAAAAAAAAAAg//E/yD/hf/A/3T/JP8P/7b/Rf/8/w//tv9N//3/wf/g/wj/A//B/+v/F/+K/4P/AAAAAAAAAAAk/yD/PP8g/3X/Cf8P/7b/g/8AAAAAAAAAAOv/Av+L/8P/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __mbctoupper
+    size: 123
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mblcid
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtLCMapStringA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbcasemap
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 32
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 66
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 71
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 99
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 112
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: c148038782cd36ed32f22b0288867071f9b97b51
+  signature: i/9E/yT/BP87/wX/AAAAAAAAAABy/wP/M//A/8P/i//I/4P/4P8f/8H/+f8F/43/BP/A/4v/DP+N/wAAAAAAAAAAiv9E/4H/BP+D/+D/QP/D/w==
+  symbols:
+  - kind: Function
+    name: __isatty
+    size: 41
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 29
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

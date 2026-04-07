@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 7b23e2586cad93fc6e04c69a4d26fdeeb750df01
+  signature: i/9M/yT/BP8z/8D/gP85/wD/dP8E/0D/Qf/r//f/w/8=
+  symbols:
+  - kind: Function
+    name: ?strlen@@YAIPBD@Z
+    size: 16
+    flags: 2
+    section: .text
+  relocations: []

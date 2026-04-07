@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 22f07211689eaf35e0ac69895a41202f15454796
+  signature: Vf+L/+z/Vv9q/y7///91/wj/6P8AAAAAAAAAAIv/8P9q/yD/Rv9q/wD/Vv/o/wAAAAAAAAAAg//E/xT/QP89////f/8A/wD/cv8F/4P/yP///+v/GP+N/03/CP9q/yD/Uf9Q/+j/AAAAAAAAAABQ/1b/6P8AAAAAAAAAAIP/xP8U/zP/wP9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: _genfname
+    size: 70
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __mbsrchr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strtoul
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ultoa
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 23
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 51
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 58
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

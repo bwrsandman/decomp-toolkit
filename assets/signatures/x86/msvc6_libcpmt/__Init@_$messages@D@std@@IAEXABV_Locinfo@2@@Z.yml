@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 556f0572b21276a2d9032cd402bd6e2cfa221ebc
+  signature: Vv9q/wD/i//x/2j/AAAAAAAAAADo/wAAAAAAAAAAav8A/2j/AAAAAAAAAACJ/0b/CP/o/wAAAAAAAAAAg//E/xD/if9G/wz/Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?_Init@?$messages@D@std@@IAEXABV_Locinfo@2@@Z
+    size: 40
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_02ELCB@no?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Maklocstr@std@@YAPADPBDPAD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_03LGKI@yes?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 18
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 26
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

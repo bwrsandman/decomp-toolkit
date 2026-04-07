@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: a54fadcb6cb37ce195084b4aa231e72e95152066
+  signature: Vf+L/+z/Vv+L/3X/CP9X/7////8A/wD/AP9m/4v/Tv8C/4v/wf/B/+j/B/8j/8f/Zv87/8f/df8X//b/wf9//3X/Cv9m/4P/Pv8A/3X/BP9q/wH/6/8C/2r/Av9Y/+n/yP8A/wD/AP9m/4X/wP91/xT/Vv/o/wAAAAAAAAAAZv+F/8D/Wf9+/wj/Zv8z/8D/6f+v/wD/AP8A/4v/Tf8M/w//v//A/wP/yP87/8//fP8Z//b/Rv8D/4D/2f8F/wAAAAAAAAAAdP8C/9n/4P/Z/x7/Zv+4/wH/AP/p/4r/AP8A/wD/Zv+L/0b/Av+F/8n/fv8P/2b/Jf9//4D/wf/h/wf/C//B/2b/if9G/wL/6/9v/4v/0P+D/+D/f/+B/+L/AP+A/wD/AP8M/4D/Sf9m/4n/Rv8C/4P/+f/p/33/Cv9m/4P/Jv8A/2b/if9W/wL/6/+b/2b/g//5//D/f/8L/2b/g/9m/wL/AP9m/4n/Bv+D/8H/EP/3/9n/i//5/2b/hf///4n/ff8M/3T/Lf9m/4v/Rv8C/1P/av8Q/4v/2P9Z/yv/z//T/+P/Zv+L/8//if9d/wj/Zv+L/x7/Zv/T/+v/i/9N/wj/C//L/1v/Zv+J/w7/Zv+L/8//Zv/T/+j/Zv+J/0b/Av9m/wn/Vv8C/2b/Df//////X/9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: __FDscale
+    size: 256
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __FDnorm
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __FInf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 59
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 95
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

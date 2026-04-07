@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 3922245a3a95c4549402734845e900fefdece9b2
+  signature: 6P+3/wD/AAAAAAAAAAA=
+  symbols:
+  - kind: Function
+    name: __rtnospopde
+    size: 7
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __rtnospop
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 3
+    kind: x86_rel32
+    symbol: 1
+    addend: 0

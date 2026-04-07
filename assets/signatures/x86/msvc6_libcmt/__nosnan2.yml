@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: c67ceb9e22f71a72a055c99715395e2775f108ce
+  signature: 2f/J/w==
+  symbols:
+  - kind: Function
+    name: __nosnan2
+    size: 2
+    flags: 1
+    section: .text
+  relocations: []

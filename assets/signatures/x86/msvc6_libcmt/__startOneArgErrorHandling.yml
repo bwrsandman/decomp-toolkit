@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 6a69cbd34b8854392c7219c096f6e5b48c37cd97
+  signature: Vf+L/+z/g//E/+D/if9F/+D/3f9d//j/if9N/+T/i/9F/xD/i/9N/xT/if9F/+j/if9N/+z/jf9F/wj/jf9N/+D/UP9R/1L/6P8AAAAAAAAAAIP/xP8M/93/Rf/4/2b/gf99/wj/f/8C/3T/A//Z/23/CP/J/8P/
+  symbols:
+  - kind: Function
+    name: __startOneArgErrorHandling
+    size: 60
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __87except
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 37
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

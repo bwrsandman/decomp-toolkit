@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 6cacc597cd9cedd2458af393e05ec58f8048ed36
+  signature: g//s/xD/2f/J/93/HP8k/93/VP8k/wj/i/9E/yT/DP8AAAAAAAAAAAD/g//E/xD/w/8=
+  symbols:
+  - kind: Function
+    name: __CIpow
+    size: 25
+    flags: 1
+    section: .text
+  - kind: Function
+    name: fn_00000022
+    size: 0
+    flags: 0
+    section: .text
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: 0

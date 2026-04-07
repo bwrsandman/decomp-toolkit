@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: ced41273231f9bafd84917c2e6f2a04d064bd9d6
+  signature: Vf+L/+z/av8A////df8U////df8Q////df8M////df8I/+j/AAAAAAAAAACL/0X/EP9d/8P/
+  symbols:
+  - kind: Function
+    name: __ui64toa
+    size: 27
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _x64toa@20
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

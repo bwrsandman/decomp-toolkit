@@ -1,0 +1,59 @@
+- symbol: 0
+  hash: 813012e5bfbc7ed180bdfd194df27438fe34b37f
+  signature: Vf+L/+z/Uf9R/6H/AAAAAAAAAACK/wD/hP/A/3T/Jv88/0H/dP8E/2r/Af/r/yD///8F/wAAAAAAAAAAaP8AAAAAAAAAAI3/Tf/4/+j/AAAAAAAAAACL/03/CP9Q/+j/AAAAAAAAAADr/wr/av8C/4v/Tf8I/+j/AAAAAAAAAACL/0X/CP/J/8P/
+  symbols:
+  - kind: Function
+    name: ?getVCallThunkType@UnDecorator@@CA?AVDName@@XZ
+    size: 69
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ??_C@_06MJGO@?$HLflat?$HN?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0DName@@QAE@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 31
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 39
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 48
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 60
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

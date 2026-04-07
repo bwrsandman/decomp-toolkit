@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 920e062ba0558c1467cb784d3987fb5d73d39e4d
+  signature: g/98/yT/BP/g/3f/Iv///3T/JP8E/+j/AAAAAAAAAACF/8D/Wf91/xb/Of9E/yT/CP90/xD///90/yT/BP/o/wAAAAAAAAAAhf/A/1n/df/e/zP/wP/D/w==
+  symbols:
+  - kind: Function
+    name: __nh_malloc
+    size: 44
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __heap_alloc
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __callnewh
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 32
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

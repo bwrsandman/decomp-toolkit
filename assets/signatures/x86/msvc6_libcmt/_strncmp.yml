@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 1bfb5e89aba8ec5e319e53426820097687e5d8c3
+  signature: Vf+L/+z/V/9W/1P/i/9N/xD/4/8m/4v/2f+L/33/CP+L//f/M//A//L/rv/3/9n/A//L/4v//v+L/3X/DP/z/6b/iv9G////M//J/zr/R////3f/BP90/wT/Sf9J//f/0f+L/8H/W/9e/1//yf/D/w==
+  symbols:
+  - kind: Function
+    name: _strncmp
+    size: 56
+    flags: 1
+    section: .text
+  relocations: []

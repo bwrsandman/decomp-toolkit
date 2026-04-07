@@ -1,0 +1,27 @@
+- symbol: 0
+  hash: 87dba7e8da6934e54709f1e4c85ceb3143fa8462
+  signature: i/9M/yT/BP+F/8n/fP8c/4P/+f8C/37/C/+D//n/A/91/xL/of8AAAAAAAAAAMP/of8AAAAAAAAAAIn/Df8AAAAAAAAAAMP/g//I////w/8=
+  symbols:
+  - kind: Function
+    name: __set_error_mode
+    size: 40
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___error_mode
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 31
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

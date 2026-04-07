@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: a57fe08994afb717615a1a4c86f88ba82c975f5e
+  signature: Vf+L/+z/U/+L/13/CP9W/1f/i/99/wz/i//x/zn/e/8I/3P/Bf/o/wAAAAAAAAAAi/9D/wj/K//H/zv/Rf8Q/3P/A/+J/0X/EP+h/wAAAAAAAAAAK/9G/wj/O/9F/xD/d/8F/+j/AAAAAAAAAACD/33/EP8A/3b/Qv+L/37/CP9q/wD/A/99/xD/i//O/1f/6P8AAAAAAAAAAIT/wP90/y7/i/9D/wT/hf/A/3X/Bf+4/wAAAAAAAAAAi/9N/wz///91/xD/A//B/1D/i/9G/wT/A/9G/wj/UP/o/wAAAAAAAAAAi/9G/wT/g//E/wz/if9+/wj/gP8k/zj/AP+L/8b/X/9e/1v/Xf/C/wz/AP8=
+  symbols:
+  - kind: Function
+    name: ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z
+    size: 136
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Xran@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Xlen@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAE_NI_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 38
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 51
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 89
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 110
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

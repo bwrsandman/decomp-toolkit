@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 14e933ac5862b65aee59c87fec04588c60f864e0
+  signature: Vv+L/3T/JP8I/2r/AP+D/yb/AP///xX/AAAAAAAAAABm/4H/OP9N/1r/df8U/4v/SP88/4X/yf90/w3/A//B/4r/SP8a/4j/Dv+K/0D/G/+I/0b/Af9e/8P/
+  symbols:
+  - kind: Function
+    name: __GetLinkerVersion
+    size: 45
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetModuleHandleA@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

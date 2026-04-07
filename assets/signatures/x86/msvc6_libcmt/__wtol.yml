@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 064256ff48ec3324b45e6c032c7969cbc97853a0
+  signature: Vf+L/+z/g//s/xT/M//A/43/Tf/s/1D/UP9q/xT/Uf9q//////91/wj/UP9Q////Ff8AAAAAAAAAAI3/Rf/s/1D/6P8AAAAAAAAAAFn/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __wtol
+    size: 41
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__WideCharToMultiByte@32
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _atol
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 25
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 34
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,72 @@
+- symbol: 0
+  hash: 2e550c30995086d82367f651bf6ccae6f17286df
+  signature: Vf+L/+z/g//s/xz/3f9F/wz/3P8d/wAAAAAAAAAAU/9W/9//4P+e/3P/Iv/d/wX/AAAAAAAAAABR/1H/3f8c/yT/3f9F/wz/Uf9R/93/HP8k/2r/JP/o/wAAAAAAAAAAg//E/xT/6f+0/wD/AP8A/4v/Xf8I/2r/Af9e/4X/2/+J/3X//P99/w3/9//b//b/w/8B/3T/BP+D/03//P///4X/2/91/xr/3f9F/wz/Uf9R/93/HP8k/+j/AAAAAAAAAADb/0X//P9Z/1n/3f9d/wz/3P9N/wz/6/9+/93/Rf8M/1H/Uf87/97/3f8c/yT/df8S/+j/AAAAAAAAAADb/0X//P9Z/1n/3f9d/wz/3P9N/wz/6/9g/+j/AAAAAAAAAADd/13/7P/d/0X/DP/d/xz/JP/o/wAAAAAAAAAA3f9d//T/3f8F/wAAAAAAAAAA3P91/wz/Wf87/97/Wf+J/3X/CP/d/13/5P9+/yn/2/9F/wj///9F/wj/Of9d/wj/3f9d/wz/3f9F/wz/3P9N/+T/3P9N//T/3P9l/+z/3f9d/wz/3f9F//T/3f9d/+z/3f9F/wz/3f9d//T/fP/X/9v/Rf/8/93/Xf/k/93/Rf/k/9z/Tf8M/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __yn
+    size: 240
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __real@8@00000000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __d_ind
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _domain_err
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __y0
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __y1
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __real@8@40008000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 24
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 44
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 123
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 141
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 155
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 164
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

@@ -1,0 +1,107 @@
+- symbol: 0
+  hash: 472c9890ef2593239955b26a6c97fdaebb297232
+  signature: Vf+L/+z/g//s/xj/i/9F/wz/gP9l/+z/AP+L/0D/CP+D//j///+J/0X/8P98/wj/i/9N/xj/O/9B/wT/fP8F/+j/AAAAAAAAAABT/1b/i/91/wj/u/9j/3P/bf/g/1f/v/8g/wX/k/8Z/zn/Hv8P/4X/S/8B/wD/AP+D/37/EP8D/3X/Yv85/37/FP91/13/g/9+/xz/AP91/1f/6P8AAAAAAAAAAIP/eP9s/wD/D/+E/yb/Af8A/wD/6P8AAAAAAAAAAIv/cP9s/+j/AAAAAAAAAACL/0D/cP9q/wH/Vv+J/0X/EP/G/0X/7P8B/+j/AAAAAAAAAABZ/4X/wP9Z/3X/Bf/o/wAAAAAAAAAAOf8e/w//hf/5/wD/AP8A/4P/fv8Q/wP/df8Q/zn/fv8U/3X/C/+D/37/HP8A/3X/Bf/o/wAAAAAAAAAAOf8e/w//hf/b/wD/AP8A/4P/fv8Q/wP/D/+F/9H/AP8A/wD/Of9+/xT/D/+F/8j/AP8A/wD/i/99//D/jf9F/+j/UP+N/0X//P9Q/1f///91/yD///91/xj/6P8AAAAAAAAAAIP/xP8U/4v/2P+L/0X//P87/0X/6P8P/4P/i/8A/wD/AP85/zv/f/98/zv/e/8E/3//d/+L/0P/EP+J/0X/CP+L/0P/DP+F/8D/if9F//T/fv9k/4v/Rv8c/4v/QP8M/43/eP8E/4v/AP+F/8D/if9F//j/fv8f////dv8c////N////3X/CP/o/wAAAAAAAAAAg//E/wz/hf/A/3X/Gv///03/+P+D/8f/BP85/0X/+P9//+H///9N//T/g/9F/wj/EP+D/33/9P8A/3//wv/r/yT///91/+z///91/yT///91/yD/U////zf///91/wj///91/xj///91/xT///91/xD///91/wz/Vv/o/wAAAAAAAAAAg//E/yz/i/99//D///9F//z/g//D/xT/6f9p/////////4D/ff8c/wD/dP8K/2r/Af9W/+j/AAAAAAAAAABZ/1n/X/9e/1v/yf/D/4D/ff8c/wD/df8g////df8k////df8g////df/w////df8Y////df8U////df8Q////df8M/1b/6P8AAAAAAAAAAIP/xP8g/+v/1f/p/wAAAAAAAAAA
+  symbols:
+  - kind: Function
+    name: ?FindHandler@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@EH1@Z
+    size: 435
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?_inconsistency@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_ValidateRead@@YAHPBXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_GetRangeOfTrysToCheck@@YAPBU_s_TryBlockMapEntry@@PBU_s_FuncInfo@@HHPAI1@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?TypeMatch@@YAHPBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_ThrowInfo@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?CatchIt@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@PBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_TryBlockMapEntry@@H1E@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?_DestructExceptionObject@@YAXPAUEHExceptionRecord@@E@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?FindHandlerForForeignException@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@HH1@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?terminate@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 33
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 79
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 94
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 102
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 120
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 131
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 161
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 211
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 284
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 350
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 381
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 421
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 431
+    kind: x86_rel32
+    symbol: 9
+    addend: -4

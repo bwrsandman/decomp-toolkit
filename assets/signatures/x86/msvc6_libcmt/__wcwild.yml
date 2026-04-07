@@ -1,0 +1,120 @@
+- symbol: 0
+  hash: 93da89bfd928e0d92c4a335f0851ef94fd0b5a39
+  signature: g/8l/wAAAAAAAAAAAP+D/yX/AAAAAAAAAAAA/1b/i/81/wAAAAAAAAAAi/8G/4X/wP90/z7/Zv+L/wj/g//A/wL/Zv+D//n/Iv+J/wb/df8D/1D/6/8e/2j/AAAAAAAAAABQ/+j/AAAAAAAAAABZ/4X/wP9Z/3T/C/9Q////Nv/o/wAAAAAAAAAAWf/r/wf///82/+j/AAAAAAAAAACF/8D/Wf91/yj/g//G/wT/6/+8/6H/AAAAAAAAAAAz//b/hf/A/3T/Bv+L/0D/BP9G/+v/9v+N/wT/tf8E/wD/AP8A/1D/6P8AAAAAAAAAAIX/wP9Z/3X/Bf+D/8j///9e/8P/i/8N/wAAAAAAAAAAo/8AAAAAAAAAAIn/Nf8AAAAAAAAAAIX/yf90/wz/i/8R/4n/EP+L/0n/BP+D/8D/BP/r//D/g/8g/wD/of8AAAAAAAAAAIX/wP90/xL/i/9I/wT/UP+J/w3/AAAAAAAAAADo/wAAAAAAAAAAWf/r/+X/M//A/17/w/8=
+  symbols:
+  - kind: Function
+    name: __wcwild
+    size: 196
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _argend
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _arghead
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ___wargv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_15IKB@?$AA?$CK?$AA?$DP?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _wcspbrk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wmatch
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _wadd
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___argc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 9
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 51
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 75
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 90
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 115
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 131
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 136
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 142
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 166
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 180
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 185
+    kind: x86_rel32
+    symbol: 10
+    addend: -4

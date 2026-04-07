@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: c1e45ee62bc90328dab49be6643cc6a9be4cc993
+  signature: Vf+L/+z/Vv9X/2r/dP9q/wH/M////+j/AAAAAAAAAACL//D/Wf+F//b/Wf90/zv/Vv/o/wAAAAAAAAAAWf+L/0X/EP///3X/HP+D/07/BP///4n/Rv9I/4v/Rf8U////df8Y/4n/Rv9M/1b/aP8AAAAAAAAAAP//df8M////df8I////Ff8AAAAAAAAAAIX/wP91/xz///8V/wAAAAAAAAAAi//4/1b/6P8AAAAAAAAAAIX///9Z/3T/B/9X/+j/AAAAAAAAAABZ/zP/wP9f/17/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __beginthreadex
+    size: 107
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _calloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __initptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __threadstartex@4
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __imp__CreateThread@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 26
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 55
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 67
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 77
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 85
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

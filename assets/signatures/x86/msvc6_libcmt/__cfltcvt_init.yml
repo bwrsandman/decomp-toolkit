@@ -1,0 +1,84 @@
+- symbol: 0
+  hash: 24216ad99570e8a64d0969170c62ad3b8c7d1356
+  signature: uP8AAAAAAAAAAMf/Bf8AAAAAAAAAAAAAAAAAAAAAo/8AAAAAAAAAAMf/Bf8AAAAAAAAAAAAAAAAAAAAAx/8F/wAAAAAAAAAAAAAAAAAAAADH/wX/AAAAAAAAAAAAAAAAAAAAAKP/AAAAAAAAAADD/w==
+  symbols:
+  - kind: Function
+    name: __cfltcvt_init
+    size: 56
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __cfltcvt
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __cfltcvt_tab
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __cropzeros
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fassign
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __forcdecpt
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __positive
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 7
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 16
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 36
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 51
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

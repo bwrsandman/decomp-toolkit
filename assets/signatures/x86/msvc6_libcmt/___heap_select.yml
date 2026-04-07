@@ -1,0 +1,109 @@
+- symbol: 0
+  hash: 80cce0f3b1c34ca84a5b08e7507ba7a8d8191bb4
+  signature: Vf+L/+z/uP8s/xL/AP8A/+j/AAAAAAAAAACN/4X/aP////////9T/1D/x/+F/2j/////////lP8A/wD/AP///xX/AAAAAAAAAACF/8D/dP8a/4P/vf94/////////wL/df8R/4P/vf9s/////////wX/cv8I/2r/Af9Y/+n/Av8B/wD/AP+N/4X/1P/t//////9o/5D/EP8A/wD/UP9o/wAAAAAAAAAA//8V/wAAAAAAAAAAhf/A/w//hP/Q/wD/AP8A/zP/2/+N/43/1P/t//////84/53/1P/t//////90/xP/iv8B/zz/Yf98/wj/PP96/3//BP8s/yD/iP8B/0H/OP8Z/3X/7f+N/4X/1P/t//////9q/xb/UP9o/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8M/4X/wP91/wj/jf+F/9T/7f//////6/9J/43/hf9k//7//////2j/BP8B/wD/AP9Q/1P///8V/wAAAAAAAAAAOP+d/2T//v//////jf+N/2T//v//////dP8T/4r/Af88/2H/fP8I/zz/ev9//wT/LP8g/4j/Af9B/zj/Gf91/+3/jf+F/2T//v//////UP+N/4X/1P/t//////9Q/+j/AAAAAAAAAABZ/1n/O//D/3T/Pv9q/yz/UP/o/wAAAAAAAAAAWf87/8P/Wf90/zD/QP+L/8j/OP8Y/3T/Dv+A/zn/O/91/wT/iP8Z/+v/Af9B/zj/Gf91//L/av8K/1P/UP/o/wAAAAAAAAAAg//E/wz/g//4/wL/dP8d/4P/+P8D/3T/GP+D//j/Af90/xP/jf9F//z/UP/o/wAAAAAAAAAAgP99//z/Bv9Z/xv/wP+D/8D/A/9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ___heap_select
+    size: 328
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __chkstk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetVersionExA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BF@BBGL@__MSVCRT_HEAP_SELECT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__GetEnvironmentVariableA@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BH@PHHF@__GLOBAL_HEAP_SELECTED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strncmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetModuleFileNameA@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strstr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strchr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strtol
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __GetLinkerVersion
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 33
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 80
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 86
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 143
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 148
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 182
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 234
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 248
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 284
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 311
+    kind: x86_rel32
+    symbol: 11
+    addend: -4

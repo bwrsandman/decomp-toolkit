@@ -1,0 +1,32 @@
+- symbol: 0
+  hash: 0b9a442896074356fe0cba1c36b81b8855cb1c9c
+  signature: Vf+L/+z/g//s/yD/i/9F/wj/Vv///3X/FP+J/0X/6P+J/0X/4P+L/0X/DP///3X/EP8D/8D/if9F/+T/jf9F/+D/UP/H/0X/7P9C/wD/AP8A/+j/AAAAAAAAAACD/8T/DP///03/5P+L//D/eP8L/4v/Rf/g/4D/IP8A////Rf/g/+v/Df+N/0X/4P9Q/2r/AP/o/wAAAAAAAAAAWf9Z////Tf/k/3j/CP+L/0X/4P+A/yD/AP/r/w3/jf9F/+D/UP9q/wD/6P8AAAAAAAAAAFn/Wf+L/8b/Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: __vsnwprintf
+    size: 111
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __woutput
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __flsbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 42
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 100
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

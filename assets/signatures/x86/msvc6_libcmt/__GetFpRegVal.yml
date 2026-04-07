@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 31015b71bbfbab23f9f178694428caeafb045472
+  signature: Vv+L/3T/JP8M/1f/i/9G/wT/wf/o/wv/g//g/wf/A/9E/yT/FP94/xH/g//4/wj/ff8M/43/BP+A/9H/4P8r//D/g//G/2L/6/8F/77/AAAAAAAAAACL/0T/JP8M/4v/+P+l/6X/Zv+l/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: __GetFpRegVal
+    size: 56
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __zero80
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 39
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

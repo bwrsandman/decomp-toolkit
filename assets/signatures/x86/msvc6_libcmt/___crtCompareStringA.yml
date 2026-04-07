@@ -1,0 +1,171 @@
+- symbol: 0
+  hash: 503d7a225fffe77807a336ea1c4dfcc951c602ee
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8w/1P/Vv9X/4n/Zf/o/zP/2/85/x3/AAAAAAAAAABq/wH/X/91/0D/V/+4/wAAAAAAAAAAUP9X/1D/U/9T////Ff8AAAAAAAAAAIX/wP90/wj/if89/wAAAAAAAAAA6/8j/1f/uP8AAAAAAAAAAFD/V/9Q/1P/U////xX/AAAAAAAAAACF/8D/D/+E/wD/Av8A/wD/x/8F/wAAAAAAAAAAAv8A/wD/AP+L/3X/FP87//P/fv8Q/1b///91/xD/6P8AAAAAAAAAAFn/Wf+L//D/if91/xT/Of9d/xz/fv8Q////df8c////df8Y/+j/AAAAAAAAAABZ/1n/if9F/xz/of8AAAAAAAAAAIP/+P8C/3X/G////3X/HP///3X/GP9W////df8Q////df8M////df8I////Ff8AAAAAAAAAAOn/p/8B/wD/AP87/8f/D/+F/53/Af8A/wD/Of9d/yD/df8I/6H/AAAAAAAAAACJ/0X/IP87//P/dP8J/zn/Xf8c/w//hf+Y/wD/AP8A/zv/df8c/3X/CP9q/wL/WP/p/3j/Af8A/wD/Of99/xz/fv8H/4v/x//p/2z/Af8A/wD/O//3/3//Qf+N/0X/xP9Q////df8g////Ff8AAAAAAAAAAIX/wP8P/4T/Uf8B/wD/AP87//P/fv8s/4P/ff/E/wL/cv8i/43/Rf/K/zj/Xf/K/3T/Gv+K/1D/Af86/9P/dP8T/4v/Tf8Q/4r/Cf86/wj/cv8E/zr/yv92/63/QP9A/zj/GP91/+b/av8D/+v/pf85/13/HP9+/zH/g/99/8T/Av9y/6X/jf9F/8r/OP9d/8r/dP+d/4r/UP8B/zr/0/90/5b/i/9N/xj/iv8J/zr/CP9y/wj/Ov/K/w//hv94/////////0D/QP84/xj/df/i/+n/ev////////9T/1P/Vv///3X/EP9q/wn///91/yD///8V/wAAAAAAAAAAif9F/+T/O//D/w//hP/P/wD/AP8A/4n/Xf/8/wP/wP+D/8D/A/8k//z/6P8AAAAAAAAAAIn/Zf/o/4v/xP+J/0X/3P+D/03//P///+v/Fv9q/wH/WP/D/4v/Zf/o/zP/2/+J/13/3P+D/03//P///4v/df8U/2r/Af9f/zn/Xf/c/w//hP+T/wD/AP8A////df/k////df/c/1b///91/xD/V////3X/IP+L/zX/AAAAAAAAAAD//9b/hf/A/3T/ef9T/1P///91/xz///91/xj/av8J////df8g////1v+L//D/if91/+D/O//z/3T/Yf+J/33//P+N/wT/Nv+D/8D/A/8k//z/6P8AAAAAAAAAAIn/Zf/o/4v//P+J/33/2P+D/03//P///+v/Ev9q/wH/WP/D/4v/Zf/o/zP/2/8z////g/9N//z///+L/3X/4P87//v/dP8t/1b/V////3X/HP///3X/GP9q/wH///91/yD///8V/wAAAAAAAAAAhf/A/3T/Fv9W/1f///91/+T///91/9z///91/wz///91/wj///8V/wAAAAAAAAAA6/8C/zP/wP+N/2X/tP+L/03/8P9k/4n/Df8AAAAAAAAAAF//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ___crtCompareStringA
+    size: 637
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T17215
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _?f_use@?1??__crtCompareStringA@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ??_C@_13A@?$AA?$AA?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__CompareStringW@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_01A@?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__CompareStringA@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strncnt
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetCPInfo@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__MultiByteToWideChar@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __alloca_probe
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 64
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 74
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 82
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 93
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 107
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 127
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 150
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 160
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 187
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 210
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 268
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 395
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 421
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 486
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 532
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 587
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 611
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 628
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

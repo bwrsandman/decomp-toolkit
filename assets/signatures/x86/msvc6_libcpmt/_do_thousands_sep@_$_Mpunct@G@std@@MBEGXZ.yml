@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: d4331523bbaaafa1af1cc09d3c706b1512f08cdc
+  signature: Zv+L/0H/Dv/D/w==
+  symbols:
+  - kind: Function
+    name: ?do_thousands_sep@?$_Mpunct@G@std@@MBEGXZ
+    size: 5
+    flags: 1
+    section: .text
+  relocations: []

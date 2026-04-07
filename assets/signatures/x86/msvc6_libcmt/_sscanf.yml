@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 22151c373e4ab6dd85ee9c45b6fd2f62aedd779b
+  signature: Vf+L/+z/g//s/yD/i/9F/wj/x/9F/+z/Sf8A/wD/AP9Q/4n/Rf/o/4n/Rf/g/+j/AAAAAAAAAACJ/0X/5P+N/0X/EP9Q/43/Rf/g////df8M/1D/6P8AAAAAAAAAAIP/xP8Q/8n/w/8=
+  symbols:
+  - kind: Function
+    name: _sscanf
+    size: 52
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __input
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 24
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 43
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

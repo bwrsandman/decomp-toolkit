@@ -1,0 +1,62 @@
+- symbol: 0
+  hash: c64054b93b9f772492eab7803e95167c52342cb6
+  signature: U/9W/1f/av8B/1v/U//o/wAAAAAAAAAAg/98/yT/FP8A/1n/df8P/4v/Nf8AAAAAAAAAALj/AAAAAAAAAABq/wL/6/8N/4v/Nf8AAAAAAAAAALj/AAAAAAAAAABq/xX/hf/2/1//df8L/1P/6P8AAAAAAAAAAFn/M//A/+v/HP87//P/dP8P/4P/IP8A/1P/6P8AAAAAAAAAAFf////W/1n/6/8G/1P/6P8AAAAAAAAAAFn/i//D/1//Xv9b/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: _ctrlevent_capture@4
+    size: 98
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _ctrlc_action
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _ctrlbreak_action
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 27
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 37
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 55
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 85
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

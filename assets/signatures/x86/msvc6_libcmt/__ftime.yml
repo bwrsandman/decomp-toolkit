@@ -1,0 +1,106 @@
+- symbol: 0
+  hash: f68080f87373cda26424cf9bc4dd6e225a203afb
+  signature: Vf+L/+z/gf/s/7T/AP8A/wD/U/9W/1f/6P8AAAAAAAAAAKH/AAAAAAAAAABq/zz/mf9Z/4v/df8I//f/+f9m/4n/Rv8G/43/Rf/4/1D///8V/wAAAAAAAAAAi/99//z/i/9d//j/av8A/2j/AP9G/8P/I/9X/1P/6P8AAAAAAAAAADv/Bf8AAAAAAAAAAIn/Rf8I/3T/Tv+N/4X/TP////////9Q////Ff8AAAAAAAAAAIP/+P///3T/J/+D//j/Av91/xn/Zv+D/33/5v8A/3T/Ev+D/33/9P8A/3T/DP/H/wX/AAAAAAAAAAAB/wD/AP8A/+v/EP+D/yX/AAAAAAAAAAAA/+v/B/+D/w3/AAAAAAAAAAD//4v/Rf8I/4v/ff/8/4v/Xf/4/6P/AAAAAAAAAABm/6H/AAAAAAAAAABq/wD/aP8Q/yf/AP8A/1f/U/9m/4n/Rv8I/+j/AAAAAAAAAABq/wD/aP/o/wP/AP8A/1L/UP/o/wAAAAAAAAAAgf/r/wD/gP8+/9X/av8A/4H/3//e/7H/nf8B/2j/gP+W/5j/AP9X/1P/Zv+J/0b/BP/o/wAAAAAAAAAAif8G/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __ftime
+    size: 229
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___tzset
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __timezone
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetSystemTimeAsFileTime@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __aulldiv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _elapsed_minutes_cache
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __imp__GetTimeZoneInformation@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _dstflag_cache
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Function
+    name: __aullrem
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 13
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 61
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 67
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 85
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 114
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 126
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 135
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 150
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 156
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 174
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 188
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 218
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

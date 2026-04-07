@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 6371ccef8d1b1d68d97dd297084c7d5ab693843b
+  signature: Vf+L/+z/g//s/1D///91/xT/jf9F/7D/UP///3X/DP///3X/CP/o/wAAAAAAAAAAg//E/xD/jf9F/7D/av9Q////df8Q/2r///9Q/2r/Af9q/wD///8V/wAAAAAAAAAAi/9F/xD/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __ui64tow
+    size: 53
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __ui64toa
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__MultiByteToWideChar@24
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 44
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

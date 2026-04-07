@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 10ec41f6c07b81975edc31e670fd2c62a65f42b2
+  signature: Vv+L/3T/JP8I/zv/dP8k/wz/c/8N/4v/Bv+F/8D/dP8C////0P+D/8b/BP/r/+3/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: __initterm
+    size: 26
+    flags: 2
+    section: .text
+  relocations: []

@@ -1,0 +1,150 @@
+- symbol: 0
+  hash: 8602ce52728030fb116b7083a49b20db2f302687
+  signature: g/89/wAAAAAAAAAAAP9W/3T/dv9q/zD/av8B/+j/AAAAAAAAAACL//D/Wf+F//b/Wf91/wX/av8B/1j/Xv/D/1b/6P8AAAAAAAAAAIX/wP9Z/3T/EP9W/+j/AAAAAAAAAABW/+j/AAAAAAAAAABZ/1n/6//g/6H/AAAAAAAAAACL/wD/if8G/6H/AAAAAAAAAACL/0D/BP+J/0b/BP+h/wAAAAAAAAAAi/9A/wj/if9G/wj///81/wAAAAAAAAAAif81/wAAAAAAAAAA6P8AAAAAAAAAAP//Nf8AAAAAAAAAAOj/AAAAAAAAAABZ/4n/Nf8AAAAAAAAAAFn/6/9H/6H/AAAAAAAAAAD//zX/AAAAAAAAAACL/wj/if8N/wAAAAAAAAAAi/9I/wT/if8N/wAAAAAAAAAAi/9A/wj/o/8AAAAAAAAAAMf/Bf8AAAAAAAAAAAAAAAAAAAAA6P8AAAAAAAAAAP//Nf8AAAAAAAAAAOj/AAAAAAAAAACD/yX/AAAAAAAAAAAA/1n/Wf8z/8D/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ___init_monetary
+    size: 203
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _calloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __get_lc_lconv
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __free_lc_lconv
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lconv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lconv_intl
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ___lconv_c
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 34
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 45
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 51
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 60
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 69
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 80
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 92
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 98
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 103
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 109
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 114
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 121
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 129
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 135
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 143
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 152
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 160
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 166
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 170
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 175
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 181
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 186
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 192
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: e0c9a0e079c780359ccb4e3c09953aedfa436528
+  signature: 6P8AAAAAAAAAAKH/AAAAAAAAAACD//j///90/w7/UP///xX/AAAAAAAAAACD/w3/AAAAAAAAAAD//8P/
+  symbols:
+  - kind: Function
+    name: __mtterm
+    size: 30
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtdeletelocks
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___tlsindex
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: __imp__TlsFree@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 6
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 24
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: b498631182d84f31d0f48217bf2e1931c4502dde
+  signature: av8K/+j/AAAAAAAAAABq/xb/6P8AAAAAAAAAAFn/Wf9q/wP/6P8AAAAAAAAAAA==
+  symbols:
+  - kind: Function
+    name: _abort
+    size: 23
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __NMSG_WRITE
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _raise
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __exit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 3
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 10
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 19
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

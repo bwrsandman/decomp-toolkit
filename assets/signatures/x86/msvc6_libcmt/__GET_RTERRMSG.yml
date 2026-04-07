@@ -1,0 +1,31 @@
+- symbol: 0
+  hash: 46716129e887a40966233ba2212238564e39cf1a
+  signature: i/9M/yT/BP8z/9L/uP8AAAAAAAAAADv/CP90/wv/g//A/wj/Qv89/wAAAAAAAAAAfP/x/4v/wv/B/+D/A/87/4j/AAAAAAAAAAB1/wf/i/+A/wAAAAAAAAAAw/8z/8D/w/8=
+  symbols:
+  - kind: Function
+    name: __GET_RTERRMSG
+    size: 49
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _rterrs
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

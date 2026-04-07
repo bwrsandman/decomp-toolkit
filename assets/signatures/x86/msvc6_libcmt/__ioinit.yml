@@ -1,0 +1,126 @@
+- symbol: 0
+  hash: caa145da621acf95a8063ac19d2d5ce84348e7d1
+  signature: Vf+L/+z/g//s/0j/U/9W/1f/aP+A/wT/AP8A/+j/AAAAAAAAAACL//D/Wf+F//b/df8I/2r/G//o/wAAAAAAAAAAWf+J/zX/AAAAAAAAAADH/wX/AAAAAAAAAAAg/wD/AP8A/43/hv+A/wT/AP8A/zv/8P9z/x7/gP9m/wT/AP+D/w7///+D/2b/CP8A/8b/Rv8F/wr/of8AAAAAAAAAAIP/xv8k/wX/gP8E/wD/AP/r/97/jf9F/7j/UP///xX/AAAAAAAAAABm/4P/ff/q/wD/D/+E/9H/AP8A/wD/i/9F/+z/hf/A/w//hP/G/wD/AP8A/4v/OP+N/1j/BP+N/wT/O/+J/0X//P+4/wD/CP8A/wD/O//4/3z/Av+L//j/Of89/wAAAAAAAAAAff9W/77/AAAAAAAAAABo/4D/BP8A/wD/6P8AAAAAAAAAAIX/wP9Z/3T/PP+D/wX/AAAAAAAAAAAg/4n/Bv+N/4j/gP8E/wD/AP87/8H/c/8c/4D/YP8E/wD/g/8I////g/9g/wj/AP/G/0D/Bf8K/4v/Dv+D/8D/JP+B/8H/gP8E/wD/AP/r/+D/g//G/wT/Of89/wAAAAAAAAAAfP+3/+v/Bv+L/z3/AAAAAAAAAAAz//b/hf///37/TP+L/0X//P+L/wj/g//5////dP84/4r/A/+o/wH/dP8y/6j/CP91/wv/Uf///xX/AAAAAAAAAACF/8D/dP8j/4v/zv+L/8b/wf/5/wX/g//g/x//i/8M/43/AAAAAAAAAACN/wT/wP+N/wT/gf+L/03//P+L/wn/if8I/4r/C/+I/0j/BP+D/0X//P8E/0b/Q/87//f/fP+0/zP/2/+L/w3/AAAAAAAAAACN/wT/2/+D/zz/gf///43/NP+B/3X/Tf+F/9v/xv9G/wT/gf91/wX/av/2/1j/6/8K/4v/w/9I//f/2P8b/8D/g//A//X/UP///xX/AAAAAAAAAACL//j/g///////dP8X/1f///8V/wAAAAAAAAAAhf/A/3T/DP8l////AP8A/wD/if8+/4P/+P8C/3X/Bv+A/07/BP9A/+v/D/+D//j/A/91/wr/gP9O/wT/CP/r/wT/gP9O/wT/gP9D/4P/+/8D/3z/l////zX/AAAAAAAAAAD//xX/AAAAAAAAAABf/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __ioinit
+    size: 444
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __amsg_exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 256
+    flags: 1
+    section: null
+  - kind: Object
+    name: __nhandle
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetStartupInfoA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetFileType@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetStdHandle@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetHandleCount@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 29
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 36
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 76
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 96
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 146
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 153
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 163
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 174
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 224
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 234
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 267
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 288
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 324
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 366
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 380
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 429
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 435
+    kind: x86_abs32
+    symbol: 8
+    addend: 0

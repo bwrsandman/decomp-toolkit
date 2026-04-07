@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 5fcbdaf5c3f23a930919019acc3eff20b65e9d7c
+  signature: Vf+L/+z/Uf+L/wH///91/wj/g/9l//z/AP///1D/DP+L/0X/CP/J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?grouping@?$numpunct@G@std@@QBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@XZ
+    size: 23
+    flags: 1
+    section: .text
+  relocations: []

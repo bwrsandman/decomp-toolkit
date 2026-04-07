@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 58d5e099169179b9c1f7a5466d16d88349683f35
+  signature: gf89/wAAAAAAAAAApP8D/wD/AP91/xj/gf98/yT/BP+f/4L/AP8A/3L/Dv+B/3z/JP8E//H/gv8A/wD/d/8E/2r/Af9Y/8P/M//A/8P/
+  symbols:
+  - kind: Function
+    name: __ismbchira
+    size: 39
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mbcodepage
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 980fe12dab8aa4c601ce9ccf6a04cafb8b3a8edd
+  signature: i/9U/yT/CP+L/w3/AAAAAAAAAABW/4v/dP8k/wj/Of9y/wT/V/+L/8L/dP8S/43/PP9J/43/PP+6/4P/wP8M/zv/x/9z/wX/Of9w/wT/df/0/43/DP9J/43/DP+K/zv/wf9z/wX/Of9w/wT/dP8C/zP/wP9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: _siglookup
+    size: 61
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __XcptActTabCount
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

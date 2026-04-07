@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: 1bbbecefbfd39f5814d0393b0d18b5c9077d9e30
+  signature: Vf+L/+z/Uf9R/6H/AAAAAAAAAACA/zj/P/91/xH///8F/wAAAAAAAAAAjf9F//j/UP/o/wAAAAAAAAAA6/8J/43/Rf/4/1D/6P8AAAAAAAAAAFn/i/9N/wj/UP/o/wAAAAAAAAAAi/9F/wj/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?getSymbolName@UnDecorator@@CA?AVDName@@XZ
+    size: 56
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?getOperatorName@UnDecorator@@CA?AVDName@@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getZName@UnDecorator@@CA?AVDName@@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 47
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

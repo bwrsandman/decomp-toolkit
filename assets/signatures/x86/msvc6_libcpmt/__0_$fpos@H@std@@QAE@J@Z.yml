@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: 4ad2612a2a9e9ded1f5375ccb624b30eba64fb28
+  signature: Vf+L/+z/i/9F/wj/Vv+L//H/jf9N/wj/if8G/6H/AAAAAAAAAACJ/0b/CP+h/wAAAAAAAAAAif9G/wz/6P8AAAAAAAAAAKH/AAAAAAAAAACN/03/CP+J/0b/EP/o/wAAAAAAAAAAi//G/17/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??0?$fpos@H@std@@QAE@J@Z
+    size: 58
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Fpz@std@@3_JB
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Stz@?$fpos@H@std@@0HA
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 23
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 31
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 36
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 47
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: c1873e5505754e0ede096b194694ee3547688230
+  signature: g/98/yT/BP8A/1b/vv8AAAAAAAAAAHT/Bf++/wAAAAAAAAAAaP8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/jf9G/wL/Wf9m/4v/SP/+/2b/g//5/1z/dP8N/2b/g//5/y//dP8H/2b/x/8A/1z/AP9A/0D/g/98/yT/CP8A/3T/B/9m/8f/AP90/wD/6/8F/2b/x/8A/3P/AP9A/2r/IP9A/1D/6P8AAAAAAAAAAFD/6P8AAAAAAAAAAGj/AAAAAAAAAABW/+j/AAAAAAAAAACD/8T/FP9e/8P/
+  symbols:
+  - kind: Function
+    name: _winit_namebuf
+    size: 108
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _namebuf0
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _namebuf1
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ??_C@_13HMCP@?$AA?2?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _wcscpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getpid
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ultow
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_13DOBH@?$AA?4?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _wcscat
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 14
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 19
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 82
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 88
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 93
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 99
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

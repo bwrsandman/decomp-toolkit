@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 95f74906a8a161fe46c2a81711ed852b7ad9f421
+  signature: Vv9X/4v/+f+L/3f/BP+F//b/dP8i/4r/Rv///4T/wP90/xv/PP///3T/F/9q/wH/6P8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/UP9W/4v/z//o/wAAAAAAAAAAX/9e/8P/
+  symbols:
+  - kind: Function
+    name: ?_Split@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAEXXZ
+    size: 48
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Tidy@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?assign@?$basic_string@GU?$char_traits@G@std@@V?$allocator@G@2@@std@@QAEAAV12@PBGI@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 25
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 31
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 41
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

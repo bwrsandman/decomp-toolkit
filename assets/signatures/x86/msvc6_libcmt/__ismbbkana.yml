@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: b97d77d13a4d1f0f743a28903bca9fefc7d4a2aa
+  signature: gf89/wAAAAAAAAAApP8D/wD/AP91/xj/av8D/2r/AP///3T/JP8M/+j/AAAAAAAAAACD/8T/DP+F/8D/dP8E/2r/Af9Y/8P/M//A/8P/
+  symbols:
+  - kind: Function
+    name: __ismbbkana
+    size: 39
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _x_ismbbtype
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

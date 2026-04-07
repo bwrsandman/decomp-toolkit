@@ -1,0 +1,86 @@
+- symbol: 0
+  hash: 34f391a11402fde63c179012397fbad0919a7636
+  signature: Vf+L/+z/Vv9X/+j/AAAAAAAAAACD/z3/AAAAAAAAAAAA/4v/+P91/xL///91/wz///91/wj/6P8AAAAAAAAAAFn/Wf/p/4H/AP8A/wD/i/9F/wj/hf/A/3X/B/+L/0f/IP+F/8D/dP8R////df8M/1D/6P8AAAAAAAAAAIv/8P9Z/4X/9v9Z/3X/BP8z/8D/6/9e/2r/Gf/o/wAAAAAAAAAAiv8G/1n/hP/A/3T/RP8P/7b/wP/2/4D/AAAAAAAAAAAE/3T/Bv+A/37/Af8A/3T/Mv///3X/DP9W/+j/AAAAAAAAAABZ/4X/wP9Z/3T/HP+K/wj/hP/J/3T/Fv8P/7b/yf/2/4H/AAAAAAAAAAAE/3T/BP+A/yD/AP9A/4D/IP8A/0D/6/8C/zP/wP+J/0f/IP/r/wL/M//2/2r/Gf/o/wAAAAAAAAAAWf+L/8b/X/9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: __mbstok
+    size: 172
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___ismbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strtok
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mbsspnp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mbspbrk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 12
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 28
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 58
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 77
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 93
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 111
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 132
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 161
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

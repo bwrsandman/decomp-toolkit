@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: ad7c16ddb9e6fe1dd77c81f058e18e74668e9640
+  signature: Vf+L/+z/U/9W/1f/i/99/wj/aP+I/wD/AP8A/2r/AP9X/+j/AAAAAAAAAACL/3X/DP+D/8T/DP+K/wb/hP/A/3T/HP88/y7/df8f/4D/fv8B/wD/jf9G/wH/dP8W/4H/x/+A/wD/AP8A/1D/V//o/wAAAAAAAAAAWf9Z/zP/wP/p/4L/AP8A/wD/g/9l/wz/AP9o/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf+F/8D/Wf90/2r/g/99/wz/AP+K/xz/MP+N/zz/MP91/xH/g//4/0D/ff9Z/4D/+/8u/3T/VP9Q/1b///91/wj/6/80/4P/ff8M/wH/df8U/4P/+P9A/33/Qv+A//v/X/90/z3/UP+L/0X/CP9W/4P/wP9A/+v/Gf+D/33/DP8C/3X/Lf+E/9v/dP8F/4D/+/8s/3X/JP9Q/4v/Rf8I/1b/Bf+A/wD/AP8A/1D/6P8AAAAAAAAAAIP/xP8M/4D/+/8s/3T/hv+E/9v/dP+C////Rf8M/43/d/8B/+v/hf+D/8j///9f/17/W/9d/8P/
+  symbols:
+  - kind: Function
+    name: ___lc_strtolc
+    size: 204
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memset
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_03DBOJ@_?4?0?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strcspn
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strncpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 56
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 74
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 80
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 172
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

@@ -1,0 +1,190 @@
+- symbol: 0
+  hash: 5f71c6896ad008cc76a1f8141e96132864af75e5
+  signature: Vf+L/+z/gf/s/6T/Af8A/wD/i/9V/wj/M//J/7j/AAAAAAAAAAA7/xD/dP8L/4P/wP8I/0H/Pf8AAAAAAAAAAHz/8f9W/4v/8f/B/+b/A/87/5b/AAAAAAAAAAAP/4X/HP8B/wD/AP+h/wAAAAAAAAAAg//4/wH/D/+E/+j/AP8A/wD/hf/A/3X/Df+D/z3/AAAAAAAAAAAB/w//hP/X/wD/AP8A/4H/+v/8/wD/AP8A/w//hP/x/wD/AP8A/43/hf9c//7//////2j/BP8B/wD/AP9Q/2r/AP///xX/AAAAAAAAAACF/8D/df8T/43/hf9c//7//////2j/AAAAAAAAAABQ/+j/AAAAAAAAAABZ/1n/jf+F/1z//v//////V/9Q/43/vf9c//7//////+j/AAAAAAAAAABA/1n/g//4/zz/dv8p/43/hf9c//7//////1D/6P8AAAAAAAAAAIv/+P+N/4X/XP/+//////+D/+j/O/9q/wP/A//4/2j/AAAAAAAAAABX/+j/AAAAAAAAAACD/8T/EP+N/4X/YP////////9o/wAAAAAAAAAAUP/o/wAAAAAAAAAAjf+F/2D/////////V/9Q/+j/AAAAAAAAAACN/4X/YP////////9o/wAAAAAAAAAAUP/o/wAAAAAAAAAA//+2/wAAAAAAAAAAjf+F/2D/////////UP/o/wAAAAAAAAAAaP8Q/yD/Af8A/43/hf9g/////////2j/AAAAAAAAAABQ/+j/AAAAAAAAAACD/8T/LP9f/+v/Jv+N/0X/CP+N/7b/AAAAAAAAAABq/wD/UP///zb/6P8AAAAAAAAAAFn/UP///zb/av/0////Ff8AAAAAAAAAAFD///8V/wAAAAAAAAAAXv/J/8P/
+  symbols:
+  - kind: Function
+    name: __NMSG_WRITE
+    size: 339
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _rterrs
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: ___error_mode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___app_type
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetModuleFileNameA@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BH@NNCD@?$DMprogram?5name?5unknown?$DO?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_03NAME@?4?4?4?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strncpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BK@DEOK@Runtime?5Error?$CB?6?6Program?3?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strcat
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_02JJJH@?6?6?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CF@JPDF@Microsoft?5Visual?5C?$CL?$CL?5Runtime?5Lib@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ___crtMessageBoxA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetStdHandle@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__WriteFile@20
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 72
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 111
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 126
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 132
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 153
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 172
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 192
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 198
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 212
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 218
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 231
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 242
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 248
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 254
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 266
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 282
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 288
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 303
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 313
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 325
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 332
+    kind: x86_abs32
+    symbol: 16
+    addend: 0

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 58ac8f7aee764ee6599e314bb925734c8af6df77
+  signature: M//A/2T/i/8N/wD/AP8A/wD/gf95/wT/AAAAAAAAAAB1/xD/i/9R/wz/i/9S/wz/Of9R/wj/df8F/7j/Af8A/wD/AP/D/w==
+  symbols:
+  - kind: Function
+    name: __abnormal_termination
+    size: 35
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unwind_handler
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

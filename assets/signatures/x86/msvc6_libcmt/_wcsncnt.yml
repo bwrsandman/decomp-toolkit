@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 32576568ca3351b390157f58b106c8b269cdeacf
+  signature: Vf+L/+z/i/9N/wz/i/9F/wj/M//S/zv/yv90/xv/Zv85/xD/dP8F/0D/QP9J/3X/9v87/8r/dP8N/2b/Of8Q/3X/CP8r/0X/CP/R//j/QP9d/8P/i/9F/wz/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _wcsncnt
+    size: 47
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: d1a9aee78109c47c1a24018bb776612da3c019c4
+  signature: i/9U/yT/CP+L/0T/JP8E/4X/0v9W/43/Sv///3T/D/9m/4P/OP8A/3T/Cf9A/4v/8f9A/0n/hf/2/3X/8f9m/4P/OP8A/17/df8H/yv/RP8k/wT/0f/4/8P/i//C/8P/
+  symbols:
+  - kind: Function
+    name: _wcsncnt
+    size: 48
+    flags: 2
+    section: .text
+  relocations: []

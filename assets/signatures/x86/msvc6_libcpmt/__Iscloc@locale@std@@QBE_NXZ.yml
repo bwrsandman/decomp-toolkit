@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: b70b56eac1ab16487b81fef11ac646b60360a794
+  signature: Vf+L/+z/Uf9T/1b/i//x/43/Tf/8/+j/AAAAAAAAAACL/wb/i/8N/wAAAAAAAAAAO//B/3T/D/8y/9v/OP9Y/xT/dP8K/zn/Df8AAAAAAAAAAHX/Av+z/wH/jf9N//z/6P8AAAAAAAAAAIr/w/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?_Iscloc@locale@std@@QBE_NXZ
+    size: 59
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Clocptr@_Locimp@locale@std@@0PAV123@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?_Global@_Locimp@locale@std@@0PAV123@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??1_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 20
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 37
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 49
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

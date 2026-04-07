@@ -1,0 +1,106 @@
+- symbol: 0
+  hash: c85e6674d12531f8ae7b386b40b08b4f3cf94c79
+  signature: of8AAAAAAAAAAFP/Vv9X/2r/Av+L//H/X/87/8f/df8H/2j/AAAAAAAAAADr/1r/hf/A/7v/AAAAAAAAAAB1/zX/av8B/2j/AAAAAAAAAAD//xX/AAAAAAAAAACF/8D/df8a/1P///8V/wAAAAAAAAAAaP8AAAAAAAAAAOj/AAAAAAAAAABZ/4n/Pf8AAAAAAAAAAOv/Jf87/8f/df8G/4n/Pf8AAAAAAAAAAIP/Pf8AAAAAAAAAAAH/df8K/2r/Af///xX/AAAAAAAAAADr/+3/Of89/wAAAAAAAAAAdf8H/1P///8V/wAAAAAAAAAAi//G/1//Xv9b/8P/
+  symbols:
+  - kind: Function
+    name: ??0_Lockit@std@@QAE@XZ
+    size: 126
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __InitFlag
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: __CritSec
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __imp__InterlockedExchange@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InitializeCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_CleanUp@std@@YAXXZ
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _atexit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__Sleep@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__EnterCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 27
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 36
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 58
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 63
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 70
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 82
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 88
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 99
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 107
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 116
+    kind: x86_abs32
+    symbol: 8
+    addend: 0

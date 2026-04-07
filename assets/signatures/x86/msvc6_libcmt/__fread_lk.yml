@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: c2474d75c14890926bcc264e3ac1e9d0d57e00b9
+  signature: Vf+L/+z/Uf9T/1b/V/+L/33/DP8P/6//ff8Q/4v/Xf8I/4v/z/+F////if99//z/if9N/wj/df8H/zP/wP/p/6n/AP8A/wD/i/91/xT/Zv/3/0b/DP8M/wH/dP8I/4v/Rv8Y/4n/Rf8U/+v/DP/H/0X/FP8A/xD/AP8A/+v/A/+L/03/CP9m//f/Rv8M/wz/Af90/yr/i/9G/wT/hf/A/3T/I/87/8j/i//5/3L/Av+L//j/V////zb/U//o/wAAAAAAAAAAKf99/wj/Kf9+/wT/Af8+/4P/xP8M/wP/3/+L/33//P/r/0v/O/9N/xT/cv8u/4P/ff8U/wD/i//B/3T/Cf8z/9L/9/91/xT/i//B/yv/wv9Q/1P///92/xD/6P8AAAAAAAAAAIP/xP8M/4X/wP90/zb/g//4////dP83/yn/Rf8I/wP/2P/r/xj/Vv/o/wAAAAAAAAAAg//4////Wf90/yj/iP8D/4v/Rv8Y/0P///9N/wj/if9F/xT/g/99/wj/AP8P/4X/dv////////+L/0X/EP9f/17/W//J/8P/g/9O/wz/EP/r/wT/g/9O/wz/IP+L/8f/M//S/yv/Rf8I//f/df8M/+v/5f8=
+  symbols:
+  - kind: Function
+    name: __fread_lk
+    size: 232
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __read
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __filbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 95
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 145
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 170
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

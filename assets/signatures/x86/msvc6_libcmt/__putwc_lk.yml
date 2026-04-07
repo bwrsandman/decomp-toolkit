@@ -1,0 +1,68 @@
+- symbol: 0
+  hash: 4c4bea9dff4fe315f2d7cbe3b71a0f14bbb56501
+  signature: Vf+L/+z/Vv+L/3X/DP/2/0b/DP9A/w//hf/F/wD/AP8A/4v/Rv8Q/4P/+P///3T/F/+L/8j/wf/5/wX/g//g/x//i/8M/43/AAAAAAAAAACN/wT/wP+N/wT/gf/r/wX/uP8AAAAAAAAAAPb/QP8E/4D/D/+E/5f/AP8A/wD///91/wj/jf9F/wz/UP/o/wAAAAAAAAAAWf+D//j///9Z/3X/FP/o/wAAAAAAAAAAx/8A/yr/AP8A/wD/Zv8N///////p/5D/AP8A/wD/g//4/wH/df8s////Tv8E/3j/D/+L/wb/iv9N/wz/iP8I/w//tv9F/wz///8G/+v/Df8P/77/Rf8M/1b/UP/o/wAAAAAAAAAAWf9Z/4P/+P///3T/zP9m/4v/Rf8I/+v/X////07/BP94/w//i/8G/4r/Tf8M/4j/CP///wb/D/+2/0X/DP/r/w3/D/++/0X/DP9W/1D/6P8AAAAAAAAAAFn/Wf+D//j///90/6D///9O/wT/eP8N/4v/Bv+K/03/Df+I/wj/D/+2/0X/Df/r/6z/D/++/0X/Df9W/+v/rv+D/0b/BP/+/3j/Df+L/w7/i/9F/wj/Zv+J/wH/g/8G/wL/6/8N/w//t/9F/wj/Vv9Q/+j/AAAAAAAAAABZ/1n/Xv9d/8P/
+  symbols:
+  - kind: Function
+    name: __putwc_lk
+    size: 249
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___badioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wctomb
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __flsbuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __flswbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 36
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 49
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 71
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 83
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 134
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 178
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 240
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: c7c14be88dbdbcc3a41e72cb340d149ebb9474a3
+  signature: Vf+L/+z/Uf9T/1b/i/81/wAAAAAAAAAAV/+D/37/EP///w//hP+U/wD/AP8A/4P/Zf/8/wD/jf++/xD/IP8A/wD/u/8A//D/P/8A/4H/P//w/wD/AP8A/3X/Of+L/8P/aP8A/0D/AP8A/wP/Rv8Q/2j/AP8Q/wD/AP9Q////Ff8AAAAAAAAAAIX/wP90/x//g/8P//////8N/wAAAAAAAAAAi/9G/wz/hf/A/3T/BP87/8f/dv8D/4n/fv8M////Rf/8////Tf8I/3T/Df+B/+v/AP8Q/wD/AP+D/+//CP+F/9v/ff+y/4P/ff/8/wD/i//O/4v/dv8E/3T/LP+D/3n/GP///3X/Jv9q/wH/jf9B/yD/Wv+D/zj///91/wz/Qv+D/8D/CP+B//r/AP8E/wD/AP98/+//gf/6/wD/BP8A/wD/df8H/1H/6P8AAAAAAAAAAFn/O/81/wAAAAAAAAAAdP8K/4P/ff8I/wD/D/+P/1D/////////X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ___old_sbh_decommit_pages
+    size: 194
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___old_small_block_heap
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: __imp__VirtualFree@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___old_sbh_decommitable_pages
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ___old_sbh_release_region
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 64
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 77
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 166
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 173
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

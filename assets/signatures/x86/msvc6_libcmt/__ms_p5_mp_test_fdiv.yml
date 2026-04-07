@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 0c3a48fa8a57d8991e5016a0b67fd96f0b90e671
+  signature: aP8AAAAAAAAAAP//Ff8AAAAAAAAAAIX/wP90/xX/aP8AAAAAAAAAAFD///8V/wAAAAAAAAAAhf/A/3T/Bf9q/wD////Q/8P/6f8AAAAAAAAAAA==
+  symbols:
+  - kind: Function
+    name: __ms_p5_mp_test_fdiv
+    size: 41
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_08OBID@KERNEL32?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__GetModuleHandleA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BK@JEGK@IsProcessorFeaturePresent?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__GetProcAddress@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ms_p5_test_fdiv
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 7
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 16
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 23
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 37
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

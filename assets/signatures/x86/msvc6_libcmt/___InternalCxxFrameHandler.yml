@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 00174717f6b8c9469fc362a4a9a62d2e9fd9234d
+  signature: Vf+L/+z/Vv+L/3X/GP9X/7//IP8F/5P/Gf85/z7/dP8F/+j/AAAAAAAAAACL/0X/CP/2/0D/BP9m/3T/H/+D/37/BP8A/3T/b/+D/33/HP8A/3X/af9q////Vv///3X/FP///3X/DP/o/wAAAAAAAAAAg//E/xD/6/9W/4P/fv8M/wD/dP9Q/4H/OP9j/3P/bf/g/3X/LP85/3j/FP92/yf/i/9I/xz/i/9J/wj/hf/J/3T/Hf8P/7b/Vf8k/1L///91/yD///91/xz/Vv///3X/FP///3X/EP///3X/DP9Q////0f+D/8T/IP/r/x////91/yD///91/xz///91/yT/Vv///3X/FP///3X/EP///3X/DP9Q/+j/AAAAAAAAAACD/8T/IP9q/wH/WP9f/17/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: ___InternalCxxFrameHandler
+    size: 155
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_inconsistency@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___FrameUnwindToState
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?FindHandler@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@EH1@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 53
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 141
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

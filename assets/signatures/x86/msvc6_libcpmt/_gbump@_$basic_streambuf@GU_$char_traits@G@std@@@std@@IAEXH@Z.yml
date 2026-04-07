@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 7a3718214c2934f3a10d07dd4c619367aaed6559
+  signature: i/9B/yz/i/9U/yT/BP8p/xD/i/9B/xz/jf8M/xL/Af8I/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?gbump@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEXH@Z
+    size: 20
+    flags: 1
+    section: .text
+  relocations: []

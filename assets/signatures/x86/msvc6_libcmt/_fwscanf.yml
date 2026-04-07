@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 7c3d1867bea275d9e1c28283747a6b714e4c8bd5
+  signature: Vf+L/+z/Vv///3X/CP/o/wAAAAAAAAAAjf9F/xD/UP///3X/DP///3X/CP/o/wAAAAAAAAAA//91/wj/i//w/+j/AAAAAAAAAACD/8T/FP+L/8b/Xv9d/8P/
+  symbols:
+  - kind: Function
+    name: _fwscanf
+    size: 45
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock_file
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __winput
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 23
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 33
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

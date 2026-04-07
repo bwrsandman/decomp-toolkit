@@ -1,0 +1,162 @@
+- symbol: 0
+  hash: d02fa0b5a9d6b681519dde4a5c2db1bb20fd5775
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8Y/1P/Vv9X/4n/Zf/o/zP///85/z3/AAAAAAAAAABq/wH/Xv91/xv/Vv+4/wAAAAAAAAAAUP9W/1D/V/9X////Ff8AAAAAAAAAAIX/wP90/2f/if81/wAAAAAAAAAAi/9d/xT/O//f/37/EP9T////df8Q/+j/AAAAAAAAAABZ/1n/i//Y/4n/Xf8U/zn/ff8c/37/EP///3X/HP///3X/GP/o/wAAAAAAAAAAWf9Z/4n/Rf8c/zv/3/8P/4T/a/8B/wD/AP85/33/HP8P/4T/Yv8B/wD/AP+h/wAAAAAAAAAAO//G/3X/Rv///3X/HP///3X/GP9T////df8Q////df8M////df8I////Ff8AAAAAAAAAAOn/Wv8B/wD/AP9W/7j/AAAAAAAAAABQ/1b/UP9X/1f///8V/wAAAAAAAAAAhf/A/3T/D//H/wX/AAAAAAAAAAAC/wD/AP8A/+n/e/////////8z/8D/6f8v/wH/AP8A/4P/+P8C/3X/9P85/33/IP91/wj/of8AAAAAAAAAAIn/Rf8g/1f/V/9X/1f/U////3X/EP++/yD/Av8A/wD/Vv///3X/IP///xX/AAAAAAAAAACJ/0X/3P87/8f/dP/J/4n/ff/8/4P/wP8D/yT//P/o/wAAAAAAAAAAif9l/+j/i//E/4n/Rf/g/4P/Tf/8////6/8V/2r/Af9Y/8P/i/9l/+j/M////4n/ff/g/4P/Tf/8////vv8g/wL/AP8A/zn/ff/g/3T/lP9X/1f///91/9z///91/+D///91/xT///91/xD/Vv///3X/IP+L/x3/AAAAAAAAAAD//9P/hf/A/w//hP9y/////////1f/V/9X/1f///91/xz///91/xj/Vv///3X/IP///9P/if9F/9j/O//H/w//hP9X/////////8f/Rf/8/wH/AP8A/wD/g//A/wP/JP/8/+j/AAAAAAAAAACJ/2X/6P+L/9z/if9d/+T/g/9N//z////r/xT/av8B/1j/w/+L/2X/6P8z////M//b/4P/Tf/8////vv8g/wL/AP8A/zv/3/8P/4T/HP////////9X/1f///91/9j/U////3X/HP///3X/GP9W////df8g////Ff8AAAAAAAAAAIX/wP8P/4T//v/+/////////3X/2P9T////df/c////df/g////df8M////df8I////Ff8AAAAAAAAAAOv/HP+L/8P/K/9F/xz/df8F/2r/Av9Y/+v/EP8z/8n/O//H/w//nf/B/0n/g//h//7/g//B/wP/i//B/43/Zf/M/4v/Tf/w/2T/if8N/wAAAAAAAAAAX/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ___crtCompareStringW
+    size: 539
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T17193
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _?f_use@?1??__crtCompareStringW@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ??_C@_13A@?$AA?$AA?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__CompareStringW@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcsncnt
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_01A@?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__CompareStringA@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__WideCharToMultiByte@32
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __alloca_probe
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 64
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 74
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 90
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 113
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 140
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 166
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 177
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 188
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 198
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 229
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 255
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 275
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 339
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 393
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 457
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 487
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 530
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

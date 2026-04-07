@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: 02c6d82aefc0442b329fd87697ffa0ecaef76162
+  signature: i/9M/yT/BP+h/wAAAAAAAAAAgf/h/4D/Af8A/wD/if8N/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: __umask
+    size: 22
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __umaskval
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

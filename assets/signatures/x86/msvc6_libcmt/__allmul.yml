@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: d5b307b4db45b6b868a5ce357538d1fcddbc2a0b
+  signature: i/9E/yT/CP+L/0z/JP8Q/wv/yP+L/0z/JP8M/3X/Cf+L/0T/JP8E//f/4f/C/xD/AP9T//f/4f+L/9j/i/9E/yT/CP/3/2T/JP8U/wP/2P+L/0T/JP8I//f/4f8D/9P/W//C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: __allmul
+    size: 52
+    flags: 1
+    section: .text
+  relocations: []

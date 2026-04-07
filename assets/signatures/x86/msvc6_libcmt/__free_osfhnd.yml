@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: f92dc95647311ed28c0d19eb637ccdc5c5e316b0
+  signature: i/9M/yT/BP9W/zv/Df8AAAAAAAAAAFf/c/9Y/4v/wf/B//j/Bf+N/zz/hf8AAAAAAAAAAIv/wf+D/+D/H/+N/zT/wP+L/wf/wf/m/wL/A//G//b/QP8E/wH/dP83/4P/OP///3T/Mv+D/z3/AAAAAAAAAAAB/3X/H/8z/8D/K//I/3T/EP9J/3T/CP9J/3X/E/9Q/2r/9P/r/wj/UP9q//X/6/8D/1D/av/2////Ff8AAAAAAAAAAIv/B/+D/wz/MP///zP/wP/r/xb/6P8AAAAAAAAAAMf/AP8J/wD/AP8A/+j/AAAAAAAAAACD/yD/AP+D/8j///9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: __free_osfhnd
+    size: 127
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___app_type
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetStdHandle@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 54
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 88
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 103
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 114
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 9d84c208aa1aed1e83d03e452d94cdab971812ed
+  signature: Vf+L/+z/i/9F/wj///80/4X/AAAAAAAAAAD//xX/AAAAAAAAAABd/8P/
+  symbols:
+  - kind: Function
+    name: __unlock
+    size: 21
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __locktable
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: __imp__LeaveCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

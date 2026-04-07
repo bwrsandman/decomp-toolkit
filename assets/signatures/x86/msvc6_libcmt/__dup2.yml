@@ -1,0 +1,172 @@
+- symbol: 0
+  hash: b61c47b11db8b1cf51ed7ffee1f3a11721ee0e9e
+  signature: Vf+L/+z/Uf9R/4v/Df8AAAAAAAAAAIv/Rf8I/1P/Vv87/8H/V/8P/4P/iP8A/wD/AP+L/9D/g//g/x//wf/6/wX/jf88/8D/i/8E/5X/AAAAAAAAAACN/xz/lf8AAAAAAAAAAMH/5/8C/4n/Xf/4//b/RP84/wT/Af90/2L/i/91/wz/gf/+/wD/CP8A/wD/c/9X/zv/8f98/xj/Vv/o/wAAAAAAAAAAhf/A/1n/dP8N/+j/AAAAAAAAAADH/wD/DP8A/wD/AP/r/07/Of91/wj/ff8L////df8I/+j/AAAAAAAAAABW/+v/C/9+/xD/Vv/o/wAAAAAAAAAA//91/wj/6P8AAAAAAAAAAFn/Wf+L/wP/9v9E/zj/BP8B/3X/K////3X/CP/o/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf9Z/+j/AAAAAAAAAADH/wD/Cf8A/wD/AP/o/wAAAAAAAAAAg/8g/wD/g//I////X/9e/1v/yf/D/zn/df8I/3X/B/8z////6f+S/wD/AP8A/4v/xv/B//j/Bf+N/xz/hf8AAAAAAAAAAIv/xv+D/+D/H/+N/zT/wP+L/wP/wf/m/wL/9v9E/zD/BP8B/3T/Cf///3X/DP/o/wAAAAAAAAAAWf9q/wL/av8B/43/Rf/8/2r/AP9Q////Ff8AAAAAAAAAAFD///91/wj/6P8AAAAAAAAAAFn/UP///xX/AAAAAAAAAABQ////Ff8AAAAAAAAAAIX/wP91/wj///8V/wAAAAAAAAAA6/8P////df/8////df8M/+j/AAAAAAAAAABZ/zP/wP9Z/4X/wP90/wz/UP/o/wAAAAAAAAAAWf+D/8/////r/xP/i/9F//j/i/8L/4v/AP+K/0T/OP8E/yT/7/8z////iP9E/zH/BP+L/3X/DP///3X/CP/o/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf+L/8f/Wf/p/0b/////////
+  symbols:
+  - kind: Function
+    name: __dup2
+    size: 369
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _extend_ioinfo_arrays
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __close_lk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetCurrentProcess@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __get_osfhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__DuplicateHandle@28
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __set_osfhnd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 39
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 80
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 90
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 111
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 122
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 130
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 149
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 155
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 162
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 173
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 208
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 236
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 253
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 262
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 270
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 277
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 287
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 300
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 314
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 350
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 356
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

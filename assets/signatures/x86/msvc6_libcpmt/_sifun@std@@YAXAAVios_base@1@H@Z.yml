@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 5a425cc991bf0a6e6d4ff10c7c1fc53da2454207
+  signature: i/9E/yT/CP+L/0z/JP8E/4v/0P8l////f/8A/wD/9//S/yP/Uf8M/wv/0P+J/1H/DP/D/w==
+  symbols:
+  - kind: Function
+    name: ?sifun@std@@YAXAAVios_base@1@H@Z
+    size: 26
+    flags: 2
+    section: .text
+  relocations: []

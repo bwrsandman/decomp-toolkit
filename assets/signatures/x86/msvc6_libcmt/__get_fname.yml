@@ -1,0 +1,27 @@
+- symbol: 0
+  hash: 885eb5f70cd054b7cf550350bd54c1e11decc05f
+  signature: M//J/7j/AAAAAAAAAACL/xD/O/9U/yT/BP90/w7/g//A/wj/Qf89/wAAAAAAAAAAfP/t/zP/wP/D/4v/BP/N/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: __get_fname
+    size: 37
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _?_names@?1??_get_fname@@9@9
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

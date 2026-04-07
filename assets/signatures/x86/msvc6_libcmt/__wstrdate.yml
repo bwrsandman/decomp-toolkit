@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 5243e1fd7913752149c50d337b74478877e563f9
+  signature: Vf+L/+z/g//s/xT/U/9W/43/Rf/s/1f/UP///xX/AAAAAAAAAAAP/7f/Rf/s/2r/ZP+Z/1n/9//5/w//t/9d/+7/av8K/4v/w/9f/4v/Tf8I/4v/9/9q/zD/Zv+D/2H/EP8A/2b/x/9B/wr/L/8A/2b/x/9B/wT/L/8A/4n/Vf/8/5n/9//+/17/A//G/2b/if8B/4v/w/+Z/4v/3//3//v/D/+3/0X/8v8D/9b/Zv+J/1H/Av+Z//f/+/8D/8b/Zv+J/0H/Bv8P/7f/Rf/y/5n/9//7/4v/Rf/8/wP/1v9m/4n/Uf8I/5n/9//7/wP/xv9m/4n/Qf8M/4v/Rf/8/5n/9////1//i//B/wP/1v9e/2b/if9R/w7/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __wstrdate
+    size: 144
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetLocalTime@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 64f7332d5ceaca80dc59265532783dd49d85e466
+  signature: Vv+L//H/6P8AAAAAAAAAAPb/RP8k/wj/Af90/wf/Vv/o/wAAAAAAAAAAWf+L/8b/Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??_G?$moneypunct@D$0A@@std@@UAEPAXI@Z
+    size: 28
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1?$moneypunct@D$0A@@std@@UAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 17
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

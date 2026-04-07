@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 56ab2ca98bbf1ae3cf216ae79d9c570c2400d43d
+  signature: Vv+L/3T/JP8I/1b/6P8AAAAAAAAAAIP/+P8F/1n/cv9b/4r/Bv88/1z/dP8E/zz/L/91/1H/iv9G/wH/PP9c/3T/BP88/y//df9G/4r/Tv8D/43/Rv8D/zL/0v86/8r/dP8Q/4D/+f9c/3T/C/+A//n/L/90/wb/iv9I/wH/QP/r/+z/OP8Q/3T/Jv9A/zj/EP90/yH/iv8I/zr/yv90/w3/gP/5/1z/dP8I/4D/+f8v/3T/A/9A/+v/7f84/xD/dP8F/zj/UP8B/3X/Bf9q/wH/WP9e/8P/M//A/17/w/8=
+  symbols:
+  - kind: Function
+    name: _IsRootUNCName
+    size: 112
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 0705b23a9ad567f025682e9c70ba50932091f9e5
+  signature: Vv+L/3T/JP8I/1b/6P8AAAAAAAAAAIP/+P8F/1n/cv91/2b/i/8G/2b/Pf9c/wD/dP8G/2b/Pf8v/wD/df9m/2b/i/9G/wL/Zv89/1z/AP90/wb/Zv89/y//AP91/1b/Zv+L/07/Bv+N/0b/Bv8z/9L/Zv87/8r/dP8T/2b/g//5/1z/dP8N/2b/g//5/y//dP8H/0D/QP9m/4v/CP/r/+j/Zv85/xD/dP8w/4P/wP8C/2b/Of8Q/3T/KP9m/4v/CP9m/zv/yv90/xD/Zv+D//n/XP90/wr/Zv+D//n/L/90/wT/QP9A/+v/6P9m/zn/EP90/wb/Zv85/1D/Av91/wX/av8B/1j/Xv/D/zP/wP9e/8P/
+  symbols:
+  - kind: Function
+    name: _IsRootUNCName
+    size: 138
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

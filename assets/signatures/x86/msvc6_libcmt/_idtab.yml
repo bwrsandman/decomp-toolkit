@@ -1,0 +1,49 @@
+- symbol: 0
+  hash: d47365c2e90ad7fea14fb6feeec789c58dbf5ff4
+  signature: i/8N/wAAAAAAAAAAi/8V/wAAAAAAAAAAVv+L/8H/jf80/9H/V/+L/3z/JP8M/zv/xv9z/wv/Of84/3T/B/+D/8D/CP87/8b/cv/1/zv/xv9y/zD/hf///3X/Kv+N/wT/1f8I/wD/AP8A/1D/Uf/o/wAAAAAAAAAAWf+F/8D/Wf90/xb/i/8N/wAAAAAAAAAA//8F/wAAAAAAAAAAo/8AAAAAAAAAAI3/BP/I/+v/Av8z/8D/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: _idtab
+    size: 93
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___idpairs
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___idtabsiz
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _realloc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 8
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 56
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 68
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 74
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 79
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

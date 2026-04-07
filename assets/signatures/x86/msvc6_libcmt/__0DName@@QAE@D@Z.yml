@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: ac3251360e792e0357a835fe4d0fea55931d3750
+  signature: Vv+L//H/g/9m/wT/gP+D/yb/AP+A/3z/JP8I/wD/dP8M/43/RP8k/wj/av8B/1D/6P8AAAAAAAAAAIv/xv9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0DName@@QAE@D@Z
+    size: 35
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?doPchar@DName@@AAEXPBDH@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 25
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

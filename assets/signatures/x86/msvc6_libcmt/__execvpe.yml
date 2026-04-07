@@ -1,0 +1,145 @@
+- symbol: 0
+  hash: 3840015f7817e5a6075bb5ac3f4c646e5d1a71b2
+  signature: Vf+L/+z/Uf9T/1b///91/xD/i/91/wj///91/wz/Vv/o/wAAAAAAAAAAg//E/wz/6P8AAAAAAAAAAIP/OP8C/w//hf9C/wH/AP8A/2r/XP9W/+j/AAAAAAAAAABZ/4X/wP9Z/w//hf8w/wH/AP8A/2r/L/9W/+j/AAAAAAAAAABZ/4X/wP9Z/w//hf8e/wH/AP8A/zj/Bv90/wr/gP9+/wH/Ov8P/4T/EP8B/wD/AP9o/wAAAAAAAAAA6P8AAAAAAAAAAIX/wP9Z/4n/Rf/8/w//hP/6/wD/AP8A/2j/BP8B/wD/AP/o/wAAAAAAAAAAi//w/1n/hf/2/4v/3v8P/4T/4/8A/wD/AP9X/4v/Tf/8/4r/Af+E/8D/dP8X/zz/O/90/xP/jf+W/wL/Af8A/wD/O//a/3P/Cf+I/wP/Q/9B/4n/Tf/8/+v/4/+A/yP/AP+K/0P///+N/3v///88/1z/i//e/3X/Dv9q/1z/Vv/o/wAAAAAAAAAAWf87//j/Wf/r/wL/PP8v/3T/Df9o/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf9Z/1b/6P8AAAAAAAAAAP//df8I/4v/+P/o/wAAAAAAAAAAA//4/1n/gf///wT/Af8A/wD/Wf9z/3D///91/wj/Vv/o/wAAAAAAAAAA//91/xD///91/wz/Vv/o/wAAAAAAAAAAg//E/xT/6P8AAAAAAAAAAIP/OP8C/3T/O/9q/1z/Vv/o/wAAAAAAAAAAWf87//D/Wf90/w7/av8v/1b/6P8AAAAAAAAAAFn/O//w/1n/df8y/43/fv8B/2r/XP9X/+j/AAAAAAAAAABZ/zv/+P9Z/3T/Dv9q/y//V//o/wAAAAAAAAAAWf87//j/Wf91/xP/i/9F//z/gP84/wD/dP8L////Rf/8/4X/wP8P/4X/Jv////////9W/+j/AAAAAAAAAABZ/1//Xv+D/8j///9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __execvpe
+    size: 367
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __execve
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mbschr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_04LNMG@PATH?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _getenv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mbsrchr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_01PCFE@?2?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strcat
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 25
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 42
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 60
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 89
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 94
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 116
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 185
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 200
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 206
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 214
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 224
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 245
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 257
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 265
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 278
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 292
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 309
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 323
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 354
+    kind: x86_rel32
+    symbol: 11
+    addend: -4

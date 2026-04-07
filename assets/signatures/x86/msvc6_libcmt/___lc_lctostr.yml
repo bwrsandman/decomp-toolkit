@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: 6aefa945760fa5da0db34473e2798fc935a2f8c7
+  signature: Vv+L/3T/JP8M/1b///90/yT/DP/o/wAAAAAAAAAAgP9+/0D/AP+N/0b/QP9Z/1n/dP8U/1D/aP8AAAAAAAAAAGr/Av///3T/JP8U/+j/AAAAAAAAAACD/8T/EP+A/77/gP8A/wD/AP8A/43/hv+A/wD/AP8A/17/dP8U/1D/aP8AAAAAAAAAAGr/Av///3T/JP8Q/+j/AAAAAAAAAACD/8T/EP/D/w==
+  symbols:
+  - kind: Function
+    name: ___lc_lctostr
+    size: 83
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_01NON@_?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __strcats
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_01PJCK@?4?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 28
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 39
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 64
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 75
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

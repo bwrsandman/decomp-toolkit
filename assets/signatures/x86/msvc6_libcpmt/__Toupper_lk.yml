@@ -1,0 +1,68 @@
+- symbol: 0
+  hash: 039e3b9f002c01efe201496cbf949c2325da86de
+  signature: Vf+L/+z/Uf+L/0X/DP9T/4X/wP9W/3X/Df+L/zX/AAAAAAAAAACh/wAAAAAAAAAA6/8F/4v/MP+L/0D/BP+F//b/if9F//z/df8d/4v/Rf8I/4P/+P9h/w//jP+r/wD/AP8A/4P/+P96/w//j/+i/wD/AP8A/4P/6P8g/+n/mv8A/wD/AP+L/13/CP+B//v/AP8B/wD/AP99/yj/g/89/wAAAAAAAAAAAf9+/wz/av8C/1P/6P8AAAAAAAAAAFn/Wf/r/wv/of8AAAAAAAAAAIr/BP9Y/4P/4P8C/4X/wP91/wT/i//D/+v/Z/+L/xX/AAAAAAAAAACL/8P/wf/4/wj/D/+2/8j/9v9E/0r/Af+A/3T/Dv+A/2X/Cv8A/4j/Rf8I/4j/Xf8J/2r/Av/r/wn/gP9l/wn/AP+I/13/CP9q/wH/WP+N/03/DP9q/wH///91//z/av8D/1H/UP+N/0X/CP9Q/2j/AP8C/wD/AP9W/+j/AAAAAAAAAACD/8T/IP+F/8D/dP+t/4P/+P8B/3X/Bv8P/7b/Rf8M/+v/Df8P/7b/Rf8N/w//tv9N/wz/wf/g/wj/C//B/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __Toupper_lk
+    size: 225
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __isctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtLCMapStringA
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 80
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 91
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 100
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 120
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 186
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

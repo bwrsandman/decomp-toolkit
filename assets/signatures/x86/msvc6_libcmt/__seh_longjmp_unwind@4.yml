@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 32c89d296462b8d9acbf29081f0eda0bd4ee9194
+  signature: Vf+L/0z/JP8I/4v/Kf+L/0H/HP9Q/4v/Qf8Y/1D/6P8AAAAAAAAAAIP/xP8I/13/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: __seh_longjmp_unwind@4
+    size: 27
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __local_unwind2
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

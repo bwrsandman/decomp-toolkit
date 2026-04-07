@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 66cfc72bd03a90569da70f14ca285345da594461
+  signature: Vf+L/+z/g//s/1j/i/9F/xD/U/9W/4v/df8M/w//t/8I/4v/Bv9X/0j/if9N/xD/dP8r/0j/dP8k/0j/dP8d/0j/dP8W/0j/dP8f/0j/SP90/wf/SP91/27/av8Q/+v/Fv/H/wb/Af8A/wD/AP/r/2L/av8S/+v/Cv9q/xH/6/8G/2r/BP/r/wL/av8I/1v/jf9+/xj/Uf9X/1P/6P8AAAAAAAAAAIP/xP8M/4X/wP91/0H/i/9F/wj/g//4/xD/dP8Q/4P/+P8W/3T/C/+D//j/Hf90/wb/g/9l/+D//v/r/xL/i/9N/+D/3f9G/xD/g//h/+P/3f9d/9D/g//J/wP/if9N/+D/jf9O/wj/V/9R/1D/jf9F/xD/U/9Q/43/Rf+o/1D/6P8AAAAAAAAAAIP/xP8Y/2j//////wD/AP///3X/EP/o/wAAAAAAAAAAg/8+/wj/Wf9Z/3T/FP+D/z3/AAAAAAAAAAAA/3X/C/9W/+j/AAAAAAAAAACF/8D/Wf91/wj///82/+j/AAAAAAAAAABZ/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __87except
+    size: 208
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __handle_exc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __raise_exc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ctrlfp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __matherr_flag
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __matherr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __set_errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 79
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 148
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 164
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 177
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 186
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 198
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

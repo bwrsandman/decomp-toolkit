@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 51e22ff1002c9c57f26f9942451892d90275434e
+  signature: 2f/z/8P/
+  symbols:
+  - kind: Function
+    name: __adj_fpatan
+    size: 3
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 8d3d43317bcb77b4fb90f5cb7974a27bd6a8d74b
+  signature: uv8AAAAAAAAAAOn/AAAAAAAAAAA=
+  symbols:
+  - kind: Function
+    name: __CIsinh
+    size: 10
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __OP_SINHjmptab
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __cintrindisp1
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

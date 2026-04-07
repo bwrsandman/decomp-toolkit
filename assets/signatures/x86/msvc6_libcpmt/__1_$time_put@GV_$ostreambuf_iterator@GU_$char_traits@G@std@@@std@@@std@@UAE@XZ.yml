@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 6bea2bad641e60f880836411ff18c6fcd41231a6
+  signature: Vv+L//H///92/wj/x/8G/wAAAAAAAAAA6P8AAAAAAAAAAFn/x/8G/wAAAAAAAAAAXv/D/w==
+  symbols:
+  - kind: Function
+    name: ??1?$time_put@GV?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@UAE@XZ
+    size: 26
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$time_put@GV?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7facet@locale@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 13
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 20
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

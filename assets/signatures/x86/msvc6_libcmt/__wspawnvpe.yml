@@ -1,0 +1,129 @@
+- symbol: 0
+  hash: 7f446f06803a0a606138e7b56a4edc2c1dcae0d5
+  signature: Vf+L/+z/Uf9R/1b/V////3X/FP///3X/EP///3X/DP///3X/CP/o/wAAAAAAAAAAg//E/xD/g//4////if9F//j/D/+F/xP/Af8A/wD/6P8AAAAAAAAAAIP/OP8C/w//hf8F/wH/AP8A/2r/L////3X/DP/o/wAAAAAAAAAAWf+F/8D/Wf8P/4X/8f8A/wD/AP9o/wAAAAAAAAAA6P8AAAAAAAAAAIv/+P9Z/4X///8P/4T/3P8A/wD/AP9o/wj/Av8A/wD/6P8AAAAAAAAAAIv/8P9Z/4X/9v8P/4T/x/8A/wD/AP9T/7v/A/8B/wD/AP9T/1b/V//o/wAAAAAAAAAAg//E/wz/if9F//z/hf/A/w//hP+j/wD/AP8A/2b/g/8+/wD/D/+E/5n/AP8A/wD/Vv/o/wAAAAAAAAAAjf9E/0b//v9Z/2b/i/8A/2b/Pf9c/wD/dP8T/2b/Pf8v/wD/dP8N/2j/AAAAAAAAAABW/+j/AAAAAAAAAABZ/1n/Vv/o/wAAAAAAAAAA//91/wz/i//4/+j/AAAAAAAAAAAD//j/Wf+B////BP8B/wD/AP9Z/3P/Vv///3X/DP9W/+j/AAAAAAAAAAD//3X/FP///3X/EP9W////df8I/+j/AAAAAAAAAACD/8T/GP+D//j///+J/0X/+P91/zP/6P8AAAAAAAAAAIP/OP8C/3T/H/9m/4v/Bv9m/z3/XP8A/3T/Bv9m/z3/L/8A/3X/Gv9m/4v/Rv8C/2b/Pf9c/wD/dP8G/2b/Pf8v/wD/df8K/1P/Vv///3X//P/p/0r/////////Vv/o/wAAAAAAAAAAWf9b/4v/Rf/4/1//Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: __wspawnvpe
+    size: 321
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __wspawnve
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcschr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_19KDPP@?$AAP?$AAA?$AAT?$AAH?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __wgetenv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __wgetpath
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_13HMCP@?$AA?2?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _wcscat
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 40
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 74
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 79
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 100
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 125
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 155
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 180
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 186
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 194
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 204
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 225
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 240
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 256
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 308
+    kind: x86_rel32
+    symbol: 11
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 5dfd7c90392000d01580c38bd6ab99f08f33f57c
+  signature: i/9U/yT/BP8z/8D/iv8K/0L/hP/J/3T/K/+A//n/Yf98/wr/gP/5/2b/f/8F/4D/wf/Z/+v/Df+A//n/Qf98/wj/gP/5/0b/f/8D/4D/wf/5/wX//f//////D/8P/77/yf/B/+D/BP8D/8H/6//O/8P/
+  symbols:
+  - kind: Function
+    name: _LcidFromHexString
+    size: 57
+    flags: 2
+    section: .text
+  relocations: []

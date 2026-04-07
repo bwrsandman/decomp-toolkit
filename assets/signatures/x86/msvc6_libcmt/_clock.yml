@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: e3876def210430a79d5c5d2d2020cb7aad9c4eaf
+  signature: Vf+L/+z/Uf9R/43/Rf/4/1f/UP///xX/AAAAAAAAAABq/wH/av8A/2r/AP///3X//P/o/wAAAAAAAAAAK/8F/wAAAAAAAAAAi/9N//j/G/8V/wAAAAAAAAAAM////wP/wf9X/xP/1/9o/xD/J/8A/wD/Uv9Q/+j/AAAAAAAAAABf/8n/w/8=
+  symbols:
+  - kind: Function
+    name: _clock
+    size: 67
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetSystemTimeAsFileTime@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __allmul
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _start_tics
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __aulldiv
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 32
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 60
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 3381ac00725b53b800d613812dcb3aba2f9f9a12
+  signature: of8AAAAAAAAAAIX/wP90/wL////Q/1b/6P8AAAAAAAAAAIv/8P+F//b/df8I/2r/EP/o/wAAAAAAAAAAWf9W/+j/AAAAAAAAAABZ////dP8k/wj///8V/wAAAAAAAAAAXv/D/w==
+  symbols:
+  - kind: Function
+    name: __endthreadex
+    size: 50
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __FPmtterm
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __amsg_exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __freeptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__ExitThread@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 13
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 26
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 33
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 44
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

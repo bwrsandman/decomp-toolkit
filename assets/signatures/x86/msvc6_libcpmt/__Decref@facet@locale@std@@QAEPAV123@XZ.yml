@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 80b956555a5e9ab04d716ef1c5cd71064df349fb
+  signature: Vf+L/+z/Uf9W/1f/i//5/43/Tf/8/+j/AAAAAAAAAACL/0f/BP+F/8D/dv8J/4P/+P///3P/BP9I/4n/R/8E/4v/d/8E/43/Tf/8//f/3v8b//b/9//W/yP/9//o/wAAAAAAAAAAi//G/1//Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: ?_Decref@facet@locale@std@@QAEPAV123@XZ
+    size: 57
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 47
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: c17785a42d57380fd6de1932cb95c5687d0918dc
+  signature: Vf+L/+z/Uf/d/33//v/b/+L/D/+//0X//v/J/8P/
+  symbols:
+  - kind: Function
+    name: __clrfp
+    size: 15
+    flags: 1
+    section: .text
+  relocations: []

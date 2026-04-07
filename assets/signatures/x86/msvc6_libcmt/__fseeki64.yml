@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 5ce886e050b8192ee7081417dee28e5200ab33d8
+  signature: Vf+L/+z/Vv///3X/CP/o/wAAAAAAAAAA//91/xT///91/xD///91/wz///91/wj/6P8AAAAAAAAAAP//df8I/4v/8P/o/wAAAAAAAAAAg//E/xj/i//G/17/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __fseeki64
+    size: 47
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock_file
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fseeki64_lk
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock_file
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 25
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 35
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

@@ -1,0 +1,91 @@
+- symbol: 0
+  hash: 2a3965b4bc9b19c32976e53cc27b519c9d4a8266
+  signature: U/9W/4v/dP8k/wz/V/8P/6//dP8k/xT/g//+/+D/i//e/3f/Df+F//b/df8D/2r/Af9e/4P/xv8P/4P/5v/w/zP///+D//7/4P93/zr/O/8d/wAAAAAAAAAAd/8d/2r/Cf/o/wAAAAAAAAAAU//o/wAAAAAAAAAAav8J/4v/+P/o/wAAAAAAAAAAg//E/wz/hf///3X/K/9W/2r/CP///zX/AAAAAAAAAAD//xX/AAAAAAAAAACL//j/hf///3X/Iv+D/z3/AAAAAAAAAAAA/3T/Gf9W/+j/AAAAAAAAAACF/8D/Wf90/xT/6/+p/1P/av8A/1f/6P8AAAAAAAAAAIP/xP8M/4v/x/9f/17/W//D/zP/wP/r//j/
+  symbols:
+  - kind: Function
+    name: _calloc
+    size: 141
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___sbh_threshold
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_alloc_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __crtheap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapAlloc@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __newmode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __callnewh
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memset
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 41
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 50
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 56
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 81
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 87
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 99
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 108
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 124
+    kind: x86_rel32
+    symbol: 9
+    addend: -4

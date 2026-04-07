@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: ea9d78ee90fb61618b833941ab3db8cac95ac8ee
+  signature: i/9E/yT/BP+K/xX/AAAAAAAAAACK/wj/hP/J/3T/DP86/8r/dP8I/4r/SP8B/0D/hP/J/3X/9P+K/wj/QP+E/8n/dP8q/4r/CP+E/8n/dP8N/4D/+f9l/3T/CP+A//n/Rf90/wP/QP/r/+3/i//I/0j/gP84/zD/dP/6/zj/EP91/wH/SP+K/xH/QP9B/4T/0v+I/xD/df/2/8P/
+  symbols:
+  - kind: Function
+    name: __cropzeros
+    size: 78
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___decimal_point
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

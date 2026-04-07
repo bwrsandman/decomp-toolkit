@@ -1,0 +1,72 @@
+- symbol: 0
+  hash: 97d9491da387e5b5161c20fc300a541905053a84
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8M/1P/Vv9X/4n/Zf/o/4v/Xf8I/4v/c/8I/4n/df/k/4v/ff8Q/zv/df8U/3T/Vf+D//7///9+/wX/O/93/wT/fP8F/+j/AAAAAAAAAACD/2X//P8A/4v/R/8I/4v/RP/w/wT/hf/A/3T/DP9o/wP/Af8A/wD/U/9Q/+j/AAAAAAAAAACD/03//P///+v/Gv///3X/7P/o/wAAAAAAAAAAWf/D/4v/Zf/o/4P/Tf/8////i/99/xD/i/9d/wj/i/91/+T/i/9H/wj/i/80//D/if91/+T/6/+m/4n/c/8I/4v/Tf/w/2T/if8N/wAAAAAAAAAAX/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ___FrameUnwindToState
+    size: 158
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T17295
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_inconsistency@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __CallSettingFrame@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?FrameUnwindFilter@@YAHPAU_EXCEPTION_POINTERS@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 66
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 107
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 149
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

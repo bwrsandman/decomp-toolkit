@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: d58522962c12cb9b80a9399df4d3f2fc4cc407db
+  signature: i/9U/yT/BP+F/9L/fP8b/4P/+v8J/3//Fv+L/wH/g//4////dP8K/zv/0P9//wb/i/9E/5H/BP/r/wj/jf9B/zT/6/8D/43/Qf8s/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??AReplicator@@QBEABVDName@@H@Z
+    size: 41
+    flags: 1
+    section: .text
+  relocations: []

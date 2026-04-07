@@ -1,0 +1,59 @@
+- symbol: 0
+  hash: a54ec0233bdd2558b563b404a7bba6ea5932bc83
+  signature: Vv9q/wn/6P8AAAAAAAAAAIv/dP8k/wz/Vv/o/wAAAAAAAAAAWf+F/8D/Wf90/xD/i/92//z/av8J/4P/7v8J/+j/AAAAAAAAAABZ/+v/Gf9q/wn/6P8AAAAAAAAAAFn/Vv9q/wD///81/wAAAAAAAAAA//8V/wAAAAAAAAAAi//w/4v/xv9e/8P/
+  symbols:
+  - kind: Function
+    name: __msize
+    size: 69
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_find_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __crtheap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapSize@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 14
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 33
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 43
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 53
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 59
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

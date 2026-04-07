@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: ddfa33994ae2a893d13996f418403e6eb41f38b9
+  signature: av8S/+j/AAAAAAAAAABZ/8P/
+  symbols:
+  - kind: Function
+    name: __heap_abort
+    size: 9
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __amsg_exit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 3
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

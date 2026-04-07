@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: d000601e883eb5a0a871d83b92e63822037a9d49
+  signature: Vf+L/+z/g//s/1j///91/yj/jf9F/yD/UP///3X/CP/o/wAAAAAAAAAAg//E/wz/hf/A/3X/Lv+L/0X/4P8k/+P/DP8D/4n/Rf/g/43/Rf8g/1D/jf9F/xD/UP+N/0X/KP///3X/DP/d/0X/GP///3X/CP/d/13/0P9Q/43/Rf+o/1D/6P8AAAAAAAAAAIP/xP8Y////df8I/+j/AAAAAAAAAACD/z3/AAAAAAAAAAAA/1n/df8t/4X/wP90/yn///91/yj/3f9F/yD/Uf9R/93/HP8k/93/Rf8Y/1H/Uf/d/xz/JP/d/0X/EP9R/1H/3f8c/yT///91/wz/UP/o/wAAAAAAAAAAg//E/yT/yf/D/1D/6P8AAAAAAAAAAMf/BP8k//////8A/wD///91/yj/6P8AAAAAAAAAAN3/Rf8g/1n/Wf/J/8P/
+  symbols:
+  - kind: Function
+    name: __except2
+    size: 165
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __handle_exc
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __raise_exc
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __errcode
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __matherr_flag
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __umatherr
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __set_errno
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __ctrlfp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 67
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 78
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 84
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 128
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 139
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 154
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

@@ -1,0 +1,147 @@
+- symbol: 0
+  hash: 94ae2ac1f1bd168472834048b0213740a3ba8234
+  signature: Vf+L/+z/Uf+L/03/CP9T/zv/Df8AAAAAAAAAAFb/V/8P/4P/1/8A/wD/AP+L/8H/wf/4/wX/jf88/4X/AAAAAAAAAACL/8H/g//g/x//jf80/8D/i/8H/8H/5v8C//b/RP8w/wT/Af8P/4T/s/8A/wD/AP9R/+j/AAAAAAAAAACL/wf/Wf+K/1z/MP8E/+j/AAAAAAAAAACL//j/g///////df8d/+j/AAAAAAAAAADH/wD/GP8A/wD/AP/o/wAAAAAAAAAA//91/wj/g/8g/wD/6P8AAAAAAAAAAOv/W/+L/zX/AAAAAAAAAABq/wL/av8B/43/Rf/8/2r/AP9Q////1v9Q////df8I/+j/AAAAAAAAAABZ/1D////W/1D///8V/wAAAAAAAAAAhf/A/3X/Cv///xX/AAAAAAAAAACL//D/6/8N////df/8/1f/6P8AAAAAAAAAAFn/M//2/1n/V//o/wAAAAAAAAAA//91/wj/6P8AAAAAAAAAAFn/hf/2/1n/dP8J/1b/6P8AAAAAAAAAAFn/6/8y/4v/z/+L/8f/gP/j/+//wf/5/wX/g//g/x//i/8M/43/AAAAAAAAAACN/wT/wP+I/1z/gf8E/4v/x//r/xb/6P8AAAAAAAAAAMf/AP8J/wD/AP8A/+j/AAAAAAAAAACD/yD/AP+D/8j///9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __dup
+    size: 264
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __alloc_osfhnd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock_fhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetCurrentProcess@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __get_osfhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__DuplicateHandle@28
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __set_osfhnd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 30
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 60
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 72
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 84
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 95
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 106
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 114
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 135
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 146
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 156
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 169
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 179
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 187
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 199
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 222
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 238
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 249
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

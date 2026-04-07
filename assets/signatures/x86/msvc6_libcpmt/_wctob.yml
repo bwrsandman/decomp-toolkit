@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 7304b790262617547284d9b1ffebe563f974b83b
+  signature: Vf+L/+z/Zv+B/33/CP//////dP8e/2r/AP9q/wD///91/wj/jf9F/wr/UP/o/wAAAAAAAAAAg//E/xD/g//4/wH/df8G/w//vv9F/wr/Xf/D/4P/yP///13/w/8=
+  symbols:
+  - kind: Function
+    name: _wctob
+    size: 46
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __Wcrtomb
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 23
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

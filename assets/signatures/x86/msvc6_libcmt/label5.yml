@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 3e13b40af291e0bc1c54ca1518301a06d343ce14
+  signature: 3v/4/4P/xP8s/8P/
+  symbols:
+  - kind: Function
+    name: label5
+    size: 6
+    flags: 2
+    section: .text
+  relocations: []

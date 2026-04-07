@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 1a28ad4e97cb1f0ef3a9e350c5ec7caac8d65dc4
+  signature: av8C/1j/w/8=
+  symbols:
+  - kind: Function
+    name: ?do_date_order@?$time_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBEHXZ
+    size: 4
+    flags: 1
+    section: .text
+  relocations: []

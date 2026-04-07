@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: 749758654900e0c78b30590bcf4871263e7688cd
+  signature: Vf+L/+z/g//s/yT/U/9W/4v/df8I/1f/i//+/zP/2/9m/4v/Bv9q/wj/UP/o/wAAAAAAAAAAWf+F/8D/Wf90/wn/R/9q/wj/R/9m/4v/B//r/+v/V//o/wAAAAAAAAAAjf9E/wD/Av9Q/+j/AAAAAAAAAABm/4P/P/8A/1n/Wf+L/8j/if9N//j/dP8r/4v/x/+J/03//P+L//f/Zv+L/wD/UP///3X//P/o/wAAAAAAAAAAWf+F/8D/Wf9+/w//A//Y////Rf/8/0b/Rv+L/8b/Zv+D/z7/AP91/9//i/91/wj/i/9F//j/av8A/2r/AP+A/yT/GP8A/0P/U/9Q/43/Rf/c/1D/6P8AAAAAAAAAAP//df/4/4v/2P/o/wAAAAAAAAAAi/9F/wz/g//E/xj/hf/A/3T/CP+L/0v/BP+N/wz/T/+J/wj/i/8L/2b/9//B/0D/Av90/wr/hf/A/9n/7v90/zb/if8w/+v/Mv/2/8H/gf90/yH/Zv+D/z//Lf/d/wX/AAAAAAAAAAB1/wL/2f/g/93/Xf/0/+j/AAAAAAAAAADd/0X/9P/H/wD/Iv8A/wD/AP/r/wz/9v/F/wH/dP8E/9n/7v/r/+T/3f9D/xD/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: _wcstod
+    size: 239
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _iswctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wctomb
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fltin2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __HUGE
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 23
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 44
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 54
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 86
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 133
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 143
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 195
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 207
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 7ffef17030b90f37bcbc7d1c0b6423b3dd5b2f01
+  signature: Zv+L/1T/JP8E/2b/7f/D/w==
+  symbols:
+  - kind: Function
+    name: __inpw
+    size: 8
+    flags: 1
+    section: .text
+  relocations: []

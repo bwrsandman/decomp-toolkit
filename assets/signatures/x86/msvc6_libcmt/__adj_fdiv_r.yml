@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: c41caacd556617bc309cf752ac6b6d68aebebdbc
+  signature: g//s/yz/g//g/z////8k/4X/AAAAAAAAAAA=
+  symbols:
+  - kind: Function
+    name: __adj_fdiv_r
+    size: 13
+    flags: 1
+    section: .text
+  - kind: Object
+    name: dispatch_table
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

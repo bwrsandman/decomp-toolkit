@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: b404b82fc27eb1f11f49007b904875b6b2daf32a
+  signature: //90/yT/BP/o/wAAAAAAAAAAhf/A/1n/dP8I/1D/6P8AAAAAAAAAAFn/w/8z/8D/w/8=
+  symbols:
+  - kind: Function
+    name: _ctime
+    size: 25
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _localtime
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _asctime
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 16
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

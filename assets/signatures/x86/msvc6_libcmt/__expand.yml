@@ -1,0 +1,77 @@
+- symbol: 0
+  hash: 049561f7d2d4c5ac57573e12e1c461b4bcedc732
+  signature: U/9W/4v/dP8k/xD/g//+/+D/dv8E/zP/wP/r/2X/av8J/+j/AAAAAAAAAACL/1z/JP8Q/1P/6P8AAAAAAAAAAFn/hf/A/1n/dP8p/1f/M////zv/Nf8AAAAAAAAAAHf/Ef9W/1P/UP/o/wAAAAAAAAAAg//E/wz/hf/A/3T/Av+L//v/av8J/+j/AAAAAAAAAABZ/4v/x/9f/+v/Jf9q/wn/6P8AAAAAAAAAAIX/9v9Z/3X/A/9q/wH/Xv+D/8b/D/+D/+b/8P9W/1P/av8Q////Nf8AAAAAAAAAAP//Ff8AAAAAAAAAAF7/W//D/w==
+  symbols:
+  - kind: Function
+    name: __expand
+    size: 119
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_find_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_threshold
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_resize_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __crtheap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapReAlloc@16
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 28
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 43
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 53
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 69
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 82
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 106
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 112
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

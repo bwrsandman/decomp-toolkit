@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 12f424f4cd3c9b028d0895d2b3bb9427fbb80a78
+  signature: Vf+L/+z/Vv8z/8D/UP9Q/1D/UP9Q/1D/UP9Q/4v/Vf8M/43/Sf8A/4r/Av8K/8D/dP8H/0L/D/+r/wT/JP/r//P/i/91/wj/iv8G/wr/wP90/wr/Rv8P/6P/BP8k/3P/8/+N/0b///+D/8T/IP9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: _strpbrk
+    size: 58
+    flags: 1
+    section: .text
+  relocations: []

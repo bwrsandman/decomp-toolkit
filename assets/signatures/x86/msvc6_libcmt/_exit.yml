@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 07ee255498733f3a8e033af41437e5660040c90b
+  signature: av8A/2r/AP///3T/JP8M/+j/AAAAAAAAAACD/8T/DP/D/w==
+  symbols:
+  - kind: Function
+    name: _exit
+    size: 17
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _doexit
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

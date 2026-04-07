@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 9bc13429a8a45bde2f345b9246b8b4b28304c998
+  signature: of8AAAAAAAAAAFb/i/81/wAAAAAAAAAAg//4////dP8I/4P/+P/+/3T/A/9Q////1v+h/wAAAAAAAAAAg//4////dP8I/4P/+P/+/3T/A/9Q////1v9e/8P/
+  symbols:
+  - kind: Function
+    name: ___termcon
+    size: 45
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __confh
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: __imp__CloseHandle@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __coninpfh
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 8
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

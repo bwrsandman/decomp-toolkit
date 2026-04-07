@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 3c6b4229a05a3233b7833916eabe9ef92f2f53b0
+  signature: U/+L/1z/JP8I/4v/Q/8E/8H/6P8L/4P/4P8H/wP/RP8k/wz/eP9b/4P/+P8I/33/Vv9W/43/DP+A/1f/i//7/9H/4f8r//n/i/9M/yT/GP+D/8f/Yv+L//H/pf+l/2b/pf9m/4v/cf8I/7r///9//wD/AP8j//L/dP8P/zP/yf87//L/D/+U/8H/Sf+D/+H//v9B/0H/6/8S/4P/Of8A/3X/Cv+D/3n/BP8A/3X/BP9q/wH/6/8C/2r/Av9Z/1H/g//D/wj/UP9T/+j/AAAAAAAAAACD/8T/DP9f/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: __SetFpRegVal
+    size: 113
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __SetTag
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 102
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

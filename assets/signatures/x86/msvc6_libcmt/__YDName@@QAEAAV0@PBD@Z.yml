@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: dc85707479442912c3299e0a78db04c005adfa3f
+  signature: Vv9X/4v/fP8k/wz/i//x/4X///90/1n/gP8//wD/dP9U/+j/AAAAAAAAAACF/8D/dP8K/1f/i//O/+j/AAAAAAAAAADr/0H/i/8O/+j/AAAAAAAAAACF/8D/if8G/3T/Kv9q/wD/av8Q/7n/AAAAAAAAAADo/wAAAAAAAAAAhf/A/3T/DP9q/wD/V/+L/8j/6P8AAAAAAAAAAOv/Av8z/8D/i/8O/1D/6P8AAAAAAAAAAOv/Cv+L/0b/BP8k//P/DP8D/4n/Rv8E/4v/xv9f/17/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ??YDName@@QAEAAV0@PBD@Z
+    size: 108
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?isEmpty@DName@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??4DName@@QAEAAV0@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?clone@DNameNode@@QAEPAV1@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _heap
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ?getMemory@HeapManager@@QAEPAXIH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0pcharNode@@QAE@PBDH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??YDNameNode@@QAEAAV0@PAV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 30
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 39
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 54
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 59
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 85
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

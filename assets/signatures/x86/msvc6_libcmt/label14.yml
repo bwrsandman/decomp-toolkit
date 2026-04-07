@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 030c93b5c73bb5a6f3121a310fe3628ab43a12ab
+  signature: 2/98/yT/DP/b/zz/AAAAAAAAAAD/////2/9s/yT/DP+D/8T/LP/D/w==
+  symbols:
+  - kind: Function
+    name: label14
+    size: 20
+    flags: 2
+    section: .text
+  - kind: Object
+    name: '@comp.id'
+    size: 0
+    flags: 2
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_rel32
+    symbol: 1
+    addend: 0

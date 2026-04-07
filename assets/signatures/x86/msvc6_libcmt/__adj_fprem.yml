@@ -1,0 +1,40 @@
+- symbol: 0
+  hash: d5dc80e24c2988e41a054fb058502d5d7e23943e
+  signature: Uv+D/+z/MP/b/3z/JP8Y/9v/PP8k/zP/0v+L/0T/JP8G/6n/AP8A////f/90/wr/AAAAAAAAAAD//4P/xP8w/1r/w//b/yz/JP/b/2z/JP8Y/4v/BP8k/wv/RP8k/wT/dP95/9n/yf/b/3z/JP8M/9v/LP8k/9n/yf+D/8r/Av/Z/3z/JP8k/4v/RP8k/yT/Df8//wP/AP8A/4n/RP8k/yj/2f9s/yT/KP+L/0T/JP8g/yX///9//wD/AP89/77/f/8A/wD/d/8Y/4P/yv8B/9z/Df8AAAAAAAAAANv/fP8k/xj/3P8N/wAAAAAAAAAA2/88/yT/6/8g/9n/fP8k/yT/i/9E/yT/JP8N/wD/A/8A/wD/if9E/yT/KP/Z/2z/JP8o/93/2P/c/w3/AAAAAAAAAADb/zz/JP/Z/2z/JP8AAAAAAAAAAP////+D/8T/MP9a/8P/2f/4/4P/xP8w/1r/w/8=
+  symbols:
+  - kind: Function
+    name: __adj_fprem
+    size: 178
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __fprem_common
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: one_shl_64
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 24
+    kind: x86_rel32
+    symbol: 1
+    addend: 0
+  - offset: 106
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 116
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 150
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 160
+    kind: x86_rel32
+    symbol: 1
+    addend: 0

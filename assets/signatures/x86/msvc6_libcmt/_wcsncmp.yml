@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 8709b5885649f49536aeb6ddbbd59b2e706b14d1
+  signature: Vf+L/+z/g/99/xD/AP91/wT/M//A/13/w////03/EP+L/1X/DP+L/03/CP90/xb/Zv+L/wH/Zv+F/8D/dP8O/2b/O/8C/3X/Cf9B/0H/Qv9C////Tf8Q/3X/6v8P/7f/Af8P/7f/Cv8r/8H/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _wcsncmp
+    size: 56
+    flags: 1
+    section: .text
+  relocations: []

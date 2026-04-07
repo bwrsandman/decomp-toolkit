@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: e4df4976ac6d5634bcfaf5837928847aa3b006d9
+  signature: Vf+L/+z///9x/wz/jf9F/xT/av8A/1D/jf9F/wz/UP/o/wAAAAAAAAAAg//E/xD/hf/A/33/CP+L/0X/IP+D/wj/Av/r/wj/i/9N/yT/0f/4/4n/Qf8Q/4v/Rf8I/4v/Tf8M/4n/CP+L/03/EP+J/0j/BP9d/8L/IP8A/w==
+  symbols:
+  - kind: Function
+    name: ?do_get_monthname@?$time_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AAVios_base@2@AAHPAUtm@@@Z
+    size: 62
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Getloctxt@std@@YAHAAV?$istreambuf_iterator@DU?$char_traits@D@std@@@1@0IPBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

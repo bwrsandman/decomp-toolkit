@@ -1,0 +1,80 @@
+- symbol: 0
+  hash: ee1a9db0eb52216643a194471c2975512c534625
+  signature: Vf+L/+z/gf/s/1D/Av8A/wD/jf+F/7D//f//////Vv9Q////df8I////Ff8AAAAAAAAAAIX/wP91/0X///8V/wAAAAAAAAAAav8C/17/O//G/3L/D/+D//j/A/92/yr/g//4/wj/dP8Y/4P/+P8S/3T/IP/o/wAAAAAAAAAAx/8A/xb/AP8A/wD/g//I////6f+Z/wD/AP8A/+j/AAAAAAAAAADH/wD/DP8A/wD/AP/r/+v/6P8AAAAAAAAAAIn/MP/r/+L/i/+F/7D//f//////i/91/wz/Lf+A/wD/AP8A/1f/9//Y/xv/wP8j/4X/sP/9//////+J/wb/jf+F/7T//f//////UP/o/wAAAAAAAAAAif9G/wT/jf+F/7z//f//////UP/o/wAAAAAAAAAAif9G/wj/jf+F/8T//f//////UP/o/wAAAAAAAAAAg//E/wz/if9G/wz/av8B/2r/AP9q/wD///+1/8z//f//////6P8AAAAAAAAAAIv/jf/Q//3//////zP///8D/8H/E//X/4n/Rv8Q/4n/Vv8U/43/hf/c//3//////4P/xv8Y/1D/Vv/o/wAAAAAAAAAAWf8z/8D/Wf9f/17/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __wfindnexti64
+    size: 233
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__FindNextFileW@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___timet_from_ft
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __allmul
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcscpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 22
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 59
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 78
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 91
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 134
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 149
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 164
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 187
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 221
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

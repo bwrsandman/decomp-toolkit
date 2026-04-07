@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: b438bbb9032f70e8088b0c8fed6f395e2e5f4eaa
+  signature: 6P8AAAAAAAAAAMf/AP8o/wD/AP8A/zP/wP/D/w==
+  symbols:
+  - kind: Function
+    name: __heapused
+    size: 14
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

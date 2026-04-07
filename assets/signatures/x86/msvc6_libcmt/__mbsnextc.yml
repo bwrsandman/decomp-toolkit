@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: ce75d1d33212c5a7d092c04f8f2d3d613108d3ab
+  signature: i/9M/yT/BP8z/9L/D/+2/wH/9v+A/wAAAAAAAAAABP90/wb/wf/g/wj/i//Q/0H/D/+2/wH/A//C/8P/
+  symbols:
+  - kind: Function
+    name: __mbsnextc
+    size: 30
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

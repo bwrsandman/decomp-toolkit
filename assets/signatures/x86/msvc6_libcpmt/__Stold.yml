@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 26e14468eca60ddd876d2abde6735773ba951d1e
+  signature: //90/yT/DP///3T/JP8M////dP8k/wz/6P8AAAAAAAAAAIP/xP8M/8P/
+  symbols:
+  - kind: Function
+    name: __Stold
+    size: 21
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __Stod
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 13
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

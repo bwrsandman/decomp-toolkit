@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: ff07d0f8442a509f20e63513eb44cc28545fc5d4
+  signature: Vf+L/+z/Uf+L/1X/EP9T/4v/Xf8M/1b/D/+2/wr/V/+L/33/CP+D/2X//P8A/4v/w/8r/0f/EP/B//j/DP87/03/FP+N/3z/x/8Y/3b/Ev+L/0X/FP8r/8j/iP8C/wH/D//H/0f/BP/x/wD/AP8A/+v/YP9z/2X/i/9F/xT/jf80/wL/jf+D//j/AP8A/wD/O//G/3L/Vf+N/wT/Ef87/8b/c/8K/4D/OP8A/3X/A/9A/+v/9P87/8b/df9C/4r/Rf8U/4j/Av+L/wP/O//Q/3f/K/87//D/dv8n/43/g//4/wD/AP8A/zv/8P9z/xT/M//A/4n/M/84/wb/df8H/0D/gP88/wb/AP90//n/if9D/wT/6/8J/4P/Y/8E/wD/jf9D/wj/if8D/yv/Tf8U/wH/D//H/0X//P8B/wD/AP8A/4v/Rf/8/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ___old_sbh_resize_block
+    size: 169
+    flags: 1
+    section: .text
+  relocations: []

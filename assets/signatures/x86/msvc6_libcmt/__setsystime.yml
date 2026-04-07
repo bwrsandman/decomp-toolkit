@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: b183665894a16d3b7ffdc67c036464694226c0a5
+  signature: Vf+L/+z/g//s/xD/Vv+L/3X/CP9W/+j/AAAAAAAAAABm/4v/Rv8U/1n/Zv8F/2z/B/9m/4n/Rf/w/2b/i/9G/xD/Zv9A/2b/if9F//L/Zv+L/0b/DP9m/4n/Rf/2/2b/i/9G/wj/Zv+J/0X/+P9m/4v/Rv8E/2b/if9F//r/Zv+L/wb/Zv+J/0X//P9m/4v/Rf8M/2b/if9F//7/jf9F//D/UP///xX/AAAAAAAAAACF/8D/Xv91/wj///8V/wAAAAAAAAAAyf/D/zP/wP/J/8P/
+  symbols:
+  - kind: Function
+    name: __setsystime
+    size: 105
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _mktime
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetLocalTime@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 84
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 95
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

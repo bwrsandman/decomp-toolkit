@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: d2cd23b8d25d58294352d9de6ea7307d9a3ca693
+  signature: Vf+L/+z/U/+L/13/DP9W/4v/df8Q/1f/M////zn/Pv92/xX/U////3X/CP///1X/GP9Z/4X/wP9Z/3T/Gf8D/13/FP9H/zv/Pv9y/+v///91/xT///91/wj/U//o/wAAAAAAAAAAg//E/wz///8G/1//i//D/17/W/9d/8P/
+  symbols:
+  - kind: Function
+    name: __lsearch
+    size: 63
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 47
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

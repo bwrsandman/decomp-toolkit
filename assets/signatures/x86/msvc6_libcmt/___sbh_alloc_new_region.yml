@@ -1,0 +1,110 @@
+- symbol: 0
+  hash: f43840779dc59d897ef2fb1d39b9adb0dae954f0
+  signature: of8AAAAAAAAAAIv/Df8AAAAAAAAAAFb/V/8z////O//B/3X/MP+N/0T/if9Q/8H/4P8C/1D///81/wAAAAAAAAAAV////zX/AAAAAAAAAAD//xX/AAAAAAAAAAA7/8f/dP9h/4P/Bf8AAAAAAAAAABD/o/8AAAAAAAAAAKH/AAAAAAAAAACL/w3/AAAAAAAAAABo/8T/Qf8A/wD/av8I/43/BP+A////Nf8AAAAAAAAAAI3/NP+B////Ff8AAAAAAAAAADv/x/+J/0b/EP90/yr/av8E/2j/AP8g/wD/AP9o/wD/AP8Q/wD/V////xX/AAAAAAAAAAA7/8f/if9G/wz/df8U////dv8Q/1f///81/wAAAAAAAAAA//8V/wAAAAAAAAAAM//A/+v/F/+D/07/CP///4n/Pv+J/37/BP///wX/AAAAAAAAAACL/0b/EP+D/wj///+L/8b/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: ___sbh_alloc_new_region
+    size: 177
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___sbh_cntHeaderList
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_sizeHeaderList
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_pHeaderList
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: __crtheap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapReAlloc@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapAlloc@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__VirtualAlloc@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapFree@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 7
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 29
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 36
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 52
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 58
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 63
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 69
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 85
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 94
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 120
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 137
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 143
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 162
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: c13d965ec950c243395acd43fac54f701d1579dd
+  signature: Vf+L/+z/Uf9R/1P/Vv+L/zX/AAAAAAAAAABX/4v/ff8M/zP/2/+J/13/+P+J/13//P+K/wf/PP9h/3T/Gv88/3L/dP8P/zz/d/8P/4X/Iv8B/wD/AP+5/wH/A/8A/wD/6/8M/zP/yf+D/87/Af/r/wj/uf8J/wH/AP8A/4P/zv8C/2r/Af9a/4r/R/8B/0f/Ov/D/w//hP/j/wD/AP8A/zv/0/8P/4T/2/8A/wD/AP8P/77/wP+D//j/VP9//3L/dP9g/4P/6P8r/3T/Rf+D/+j/Gf90/zb/g//o/w7/dP8c/0j/D/+F/6z/AP8A/wD/Of9d//z/D/+F/6P/AP8A/wD/x/9F//z/Af8A/wD/AP+D/8n/IP/r/7f/Of9d//z/D/+F/47/AP8A/wD/x/9F//z/Af8A/wD/AP+D/8n/EP/r/6L/9v/B/0D/df99/4P/yf9A/+v/mP/2/8H/Av91/3P/g//h//7/g//m//z/g//J/wL/gf/O/4D/AP8A/wD/6/+C/7j/AP8Q/wD/AP+F/8j/df9Z/wv/yP/p/3L/////////g//o/2L/dP9I/0j/dP8u/4P/6P8L/3T/Ev+D/+j/Bv91/0D/9v/F/8D/df87/4D/zf9A/+n/U/////////85/13/+P91/y7/x/9F//j/Af8A/wD/AP+B/+b///+////////p/zz/////////Of9d//j/df8X/8f/Rf/4/wH/AP8A/wD/gf/O/wD/QP8A/wD/6f8l//////////b/xf/A/3T/B/8z/9L/6f8Z/////////4D/zf+A/+n/Ef////////9o/6T/Af8A/wD///91/xD/Uf///3X/CP/o/wAAAAAAAAAAi//I/4P/xP8Q/zv/y/99/wT/M//A/+v/Gv+L/0X/FP///wX/AAAAAAAAAACJ/3D/DP+J/1j/BP+J/xj/if9Y/wj/if9Y/xz/if9I/xD/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __openfile
+    size: 368
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __commode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __sopen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __cflush
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 320
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 342
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

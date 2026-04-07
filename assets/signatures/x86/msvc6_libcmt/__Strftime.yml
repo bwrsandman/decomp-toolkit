@@ -1,0 +1,104 @@
+- symbol: 0
+  hash: ab0424d3cc2af4ff43b5391c928160ca16672782
+  signature: Vf+L/+z/Uf9R/4v/Rf8Y/1P/Vv8z//b/O//G/1f/df8F/6H/AAAAAAAAAACJ/0X//P+L/0X/DP+//wAAAAAAAAAAif9F/xj/V////xX/AAAAAAAAAAA5/zX/AAAAAAAAAACL/x3/AAAAAAAAAAB0/xT/V////9P/av8T/+j/AAAAAAAAAABZ/8f/Rf/4/wH/AP8A/wD/6/8D/4n/df/4/zn/df8Y/3b/d/+L/3X/EP+K/wb/hP/A/3T/bv88/yX/dP8y/4v/Ff8AAAAAAAAAAA//tv/I//b/RP9K/wH/gP90/xL/g/99/xj/Af92/wz/i/9N/wj/iP8B////Rf8I/0b///9N/xj/i/9N/wj/iv8G/4j/Af///0X/CP9G////Tf8Y/+v/Mv+D/yX/AAAAAAAAAAAA/0b/gP8+/yP/df8L/8f/Bf8AAAAAAAAAAAH/AP8A/wD/Rv///3X//P+N/0X/GP9Q/43/Rf8I/1D/iv8G////df8U/1D/6P8AAAAAAAAAAIP/xP8U/0b/g/99/xj/AP93/4z/g/99//j/AP90/wr/av8T/+j/AAAAAAAAAABZ/+v/A/9X////0/+D/33/GP8A/1//Xv9b/3b/Dv+L/0X/CP+A/yD/AP+L/0X/DP8r/0X/GP/J/8P/M//A/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __Strftime
+    size: 250
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_time_curr
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: ___unguarded_readlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedIncrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___setlc_active
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__InterlockedDecrement@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___alternate_form
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __expandtime
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 29
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 39
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 51
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 63
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 100
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 150
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 163
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 190
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 213
+    kind: x86_rel32
+    symbol: 10
+    addend: -4

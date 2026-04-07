@@ -1,0 +1,77 @@
+- symbol: 0
+  hash: 83d1d343c57abce15e1e232d01741d516bfcec30
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/43/Tf/w/+j/AAAAAAAAAACL/w3/AAAAAAAAAACD/2X//P8A/+j/AAAAAAAAAACF/8D/dP8I/4v/EP9q/wH/i//I////Ev+D/yX/AAAAAAAAAAAA/4P/Tf/8////jf9N//D/6P8AAAAAAAAAAIv/Tf/0/2T/if8N/wAAAAAAAAAAyf/D/w==
+  symbols:
+  - kind: Function
+    name: ?_Tidy@?$_Tidyfac@V?$collate@G@std@@@std@@SAXXZ
+    size: 77
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L23610
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Facsav@?$_Tidyfac@V?$collate@G@std@@@std@@0PAV?$collate@G@2@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?_Decref@facet@locale@std@@QAEPAV123@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1_Lockit@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 15
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 21
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 30
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 48
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 61
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 71
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

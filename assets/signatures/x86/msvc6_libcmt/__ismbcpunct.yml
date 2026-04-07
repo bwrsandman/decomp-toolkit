@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 7e00cc51714a6509fa5a6e222bbe697046d09a97
+  signature: Vf+L/+z/Uf+L/03/CP+B//n///8A/wD/AP92/1r/Zv+D/2X//P8A/1f/M//A/43/ff/+/2b/q/+L/8H/iP9N/wv/wf/o/wj/g/89/wAAAAAAAAAAAP+I/0X/Cv9f/3T/Tv9q/wH/jf9F//z///81/wAAAAAAAAAA//81/wAAAAAAAAAAUP+N/0X/Cv9q/wL/UP9q/wH/6P8AAAAAAAAAAIP/xP8c/4X/wP90/yj/Zv+D/33//v8A/3X/If/2/0X//P8Q/3T/G/9q/wH/WP/J/8P/D/+2/8H/9v8E/0X/AAAAAAAAAAAQ/3X/7v/2/4D/AAAAAAAAAAAC/3X/5f8z/8D/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __ismbcpunct
+    size: 131
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___ismbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mblcid
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtGetStringTypeA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __ctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 38
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 56
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 62
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 76
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 111
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 120
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

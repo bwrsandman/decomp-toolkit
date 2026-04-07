@@ -1,0 +1,68 @@
+- symbol: 0
+  hash: 55ba1791949f1036ab4694545e711b591ef20715
+  signature: Vf+L/+z/V/9W/4v/df8M/4v/Tf8Q/4v/ff8I/4v/wf+L/9H/A//G/zv//v92/wj/O//4/w//gv94/wH/AP8A//f/x/8D/wD/AP8A/3X/FP/B/+n/Av+D/+L/A/+D//n/CP9y/yn/8/+l////JP+V/wAAAAAAAAAAi//H/7r/A/8A/wD/AP+D/+n/BP9y/wz/g//g/wP/A//I////JP+F/wAAAAAAAAAA//8k/43/AAAAAAAAAACQ////JP+N/wAAAAAAAAAAkP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  symbols:
+  - kind: Function
+    name: _memcpy
+    size: 112
+    flags: 1
+    section: .text
+  - kind: Object
+    name: TrailUpVec
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: LeadUpVec
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: UnwindUpVec
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: LeadUp1
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: LeadUp2
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: LeadUp3
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 56
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 80
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 87
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 95
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 100
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 104
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 108
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

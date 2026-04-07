@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: dceb9055e4172ed020519322a93bdd5161eeea90
+  signature: Vf+L/+z/Vv+L//H/i/9N/wj/jf9F/wj/UP/o/wAAAAAAAAAAi/8I/4n/Tv8I/4P/IP8A////df8I/+j/AAAAAAAAAABZ/17/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?_Init@?$time_put@GV?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@IAEXABV_Locinfo@2@@Z
+    size: 40
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Gettnames@_Locinfo@std@@QBE?AV_Timevec@2@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 30
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

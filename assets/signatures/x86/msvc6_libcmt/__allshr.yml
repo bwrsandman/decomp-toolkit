@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: fce07ebf2f40b5d58cb0d2cf1c3ca10ade528175
+  signature: gP/5/0D/c/8W/4D/+f8g/3P/Bv8P/63/0P/T//r/w/+L/8L/wf/6/x//gP/h/x//0//4/8P/wf/6/x//i//C/8P/
+  symbols:
+  - kind: Function
+    name: __allshr
+    size: 33
+    flags: 1
+    section: .text
+  relocations: []

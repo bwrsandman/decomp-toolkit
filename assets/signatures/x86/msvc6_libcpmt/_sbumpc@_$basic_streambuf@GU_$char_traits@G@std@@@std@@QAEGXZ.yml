@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 3400ca0d5cfdbccda43bf623a9e74614e4ada4a5
+  signature: i/9B/xz/i/8A/4X/wP90/xX/i/9R/yz/i/8S/43/FP9Q/zv/wv9z/wn/6P8AAAAAAAAAAGb/i/8A/8P/i/8B////UP8U/8P/
+  symbols:
+  - kind: Function
+    name: ?sbumpc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@QAEGXZ
+    size: 36
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Gninc@?$basic_streambuf@GU?$char_traits@G@std@@@std@@IAEPAGXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 22
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

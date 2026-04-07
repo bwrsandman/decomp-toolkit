@@ -1,0 +1,76 @@
+- symbol: 0
+  hash: edf7c4b36c305887e391cc81e8e6cef5f7740692
+  signature: Vf+L/+z/gf/s/wj/Af8A/wD/U/9W/1f/av8A////df8I/+j/AAAAAAAAAABZ/4X/wP9Z/3X/I/+L/3X/EP9o/wT/Af8A/wD///91/wj/Vv/o/wAAAAAAAAAAg//E/wz/hf/A/w//hf/O/wD/AP8A/yD/Bv/p/8f/AP8A/wD///91/wz/6P8AAAAAAAAAAIX/wP9Z/w//hP+w/wD/AP8A/7//BP8B/wD/AP+N/43/+P/+//////9X/1H/UP/o/wAAAAAAAAAAg//E/wz/if9F/wz/hf/A/w//hP+P/wD/AP8A/4D/vf/4//7//////wD/D/+E/4L/AP8A/wD/jf+F//j//v//////UP/o/wAAAAAAAAAAi//Y/1n/D/++/4T/Hf/3//7//////43/tP8d//j//v//////g//4/y//dP8P/4P/+P9c/3T/Cv+D//j/Ov90/wX/xv8G/1z/Rv9D////df8I/+j/AAAAAAAAAAAD/8P/Wf87/8f/d/8e////df8I/1b/6P8AAAAAAAAAAI3/hf/4//7//////2r/AP9Q/+j/AAAAAAAAAACD/8T/EP+F/8D/dP8Q/43/hf/4//7//////1f/UP///3X/DP/p/3H/////////jf+F//j//v//////UP///3X/EP/o/wAAAAAAAAAAWf9Z/+v/Bv+L/0X/EP+A/yD/AP9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __searchenv
+    size: 267
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __access
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fullpath
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _getenv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getpath
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 41
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 67
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 95
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 134
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 180
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 196
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 210
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 248
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

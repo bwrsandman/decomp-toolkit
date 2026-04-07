@@ -1,0 +1,32 @@
+- symbol: 0
+  hash: c74098cf3eae3a368e79a69b59c9490514379638
+  signature: Vf+L/+z/Vv+L/3X/FP+F//b/ff8L/1b///91/wj/6P8AAAAAAAAAAFn/Wf///3X/EP///3X/DP///3X/CP/o/wAAAAAAAAAAg//E/wz/hf/2/37/C/9W////df8I/+j/AAAAAAAAAABZ/1n/Xv9d/8P/
+  symbols:
+  - kind: Function
+    name: __UpdateFpCtxt
+    size: 57
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __AdjustStack
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __UpdateResult
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 32
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 48
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

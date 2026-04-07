@@ -1,0 +1,84 @@
+- symbol: 0
+  hash: 7c615fbaa8eaf0b2312b6fc824211eb8051a8ba3
+  signature: U/9V/1b/V//o/wAAAAAAAAAAi//w/4P/fv84/wD/df8U/2r/Gv/o/wAAAAAAAAAAif9G/zj/Wf+F/8D/uP8AAAAAAAAAAHT/A/+L/0b/OP+L/3T/JP8U/4v/2P+L/07/GP+N/zz/Sf+L/07/EP+N/yz/Sf8z/8n/iv+U/w//AAAAAAAAAABB/4j/EP+K/5T/Kf8AAAAAAAAAAIj/UP8E/0D/g//5/wP/fP/m/8b/AP8g/4P/wP8E/8b/AP8g////dv8M/0D/UP/o/wAAAAAAAAAAxv8A/yD///92/wj/QP9Q/+j/AAAAAAAAAADG/wD/Ov///3b/BP9A/1D/6P8AAAAAAAAAAMb/AP86////Nv9A/1D/6P8AAAAAAAAAAIv/yP9q/2T/X//G/wH/IP+L/0b/FP+Z//f///+D/8D/E/9B/1D/Uf/o/wAAAAAAAAAAi//I/4v/Rv8U/1f/mf9e//f//v9S/1H/6P8AAAAAAAAAAIP/xP8w/8b/AP8K/4D/YP8B/wD/i//D/1//Xv9d/1v/w/8=
+  symbols:
+  - kind: Function
+    name: _asctime
+    size: 202
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getptd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _buf
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ___dnames
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mnames
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _store_dt
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 31
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 63
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 73
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 101
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 114
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 127
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 139
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 164
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 181
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

@@ -1,0 +1,126 @@
+- symbol: 0
+  hash: ffeda5099925ba47054e9235d44609f54c950eba
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P88/1P/Vv9X/4n/Zf/o/4v/df8I/4X/9v91/xH/M//A/4v/Tf/w/2T/if8N/wAAAAAAAAAAX/9e/1v/yf/D/4P/Zf/8/wD/Vv/o/wAAAAAAAAAAWf+L//j/if99/9T/i/8G/4v/QP/8/4n/Rf/c/yv/df8M/4n/df8I/yv/9/+J/3X/2P+L/0j/EP+L/0n/BP/2/8H/Af91/xD///91/xT/Vv///3X/EP9Q/1f/6P8AAAAAAAAAAOv/Gv/2/8H/Av///3X/FP9W////df8Q/1D/V/91/wf/6P8AAAAAAAAAAOv/Bf/o/wAAAAAAAAAAg//E/xT/if9F/+T/hf/A/3T/Gv+D/8D/CP9Q/1f/6P8AAAAAAAAAAFn/Wf8D/8f/if9F/+D/g/9N//z////p/3X/////////M//A/4n/Rf/g/zn/Rf8Y/3T/7f/H/0X/xP8AAAAAAAAAAI3/Rf/E/1D/jf9N/8j/6P8AAAAAAAAAAGj/AAAAAAAAAACN/0X/yP9Q/+j/AAAAAAAAAACL/0X/7P+L/wD/i/8A/zP/yf89/wX/AP8A/8D/D/+U/8H/i//B/8P/
+  symbols:
+  - kind: Function
+    name: ___RTDynamicCast
+    size: 249
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T17070
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?FindCompleteObject@@YAPAXPAPAX@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?FindSITargetTypeInstance@@YAPBU_s_RTTIBaseClassDescriptor@@PAXPBU_s_RTTICompleteObjectLocator@@PAUTypeDescriptor@@H2@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?FindMITargetTypeInstance@@YAPBU_s_RTTIBaseClassDescriptor@@PAXPBU_s_RTTICompleteObjectLocator@@PAUTypeDescriptor@@H2@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?FindVITargetTypeInstance@@YAPBU_s_RTTIBaseClassDescriptor@@PAXPBU_s_RTTICompleteObjectLocator@@PAUTypeDescriptor@@H2@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?PMDtoOffset@@YAHPAXABUPMD@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_0BC@OEMP@Bad?5dynamic_cast?$CB?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0bad_cast@@QAE@ABQBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __TI2?AVbad_cast@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 68
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 118
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 139
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 146
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 166
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 199
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 211
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 216
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 225
+    kind: x86_rel32
+    symbol: 12
+    addend: -4

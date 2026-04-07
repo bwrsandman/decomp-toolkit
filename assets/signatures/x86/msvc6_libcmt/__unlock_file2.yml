@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 4a059e0dcc8318eefe42882095a8672e468f4cb6
+  signature: i/9E/yT/BP+D//j/FP99/wv/g//A/xz/UP/o/wAAAAAAAAAAWf/D/4v/RP8k/wj/g//A/yD/UP///xX/AAAAAAAAAADD/w==
+  symbols:
+  - kind: Function
+    name: __unlock_file2
+    size: 35
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __unlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__LeaveCriticalSection@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 30
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

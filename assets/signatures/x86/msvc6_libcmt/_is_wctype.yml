@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: d2e92c7d10a03e84bd4ac28e676318cf757f41cb
+  signature: //90/yT/CP///3T/JP8I/+j/AAAAAAAAAABZ/1n/w/8=
+  symbols:
+  - kind: Function
+    name: _is_wctype
+    size: 16
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _iswctype
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

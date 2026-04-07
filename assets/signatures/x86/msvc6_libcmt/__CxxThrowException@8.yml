@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: f3ad6e9d6fc80cd351bd1629fefad08b8682ce2e
+  signature: Vf+L/+z/g//s/yD/i/9F/wj/Vv9X/2r/CP9Z/77/AAAAAAAAAACN/33/4P/z/6X/if9F//j/i/9F/wz/if9F//z/jf9F//T/UP///3X/8P///3X/5P///3X/4P///xX/AAAAAAAAAABf/17/yf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 58
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _?ExceptionTemplate@?1??_CxxThrowException@@9@8@4UEHExceptionRecord@@B
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __imp__RaiseException@16
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 48
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

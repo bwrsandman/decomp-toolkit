@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: a514521fde9994fbec04f6068607533e93d172da
+  signature: aP9X/wH/AP8A////dP8k/wj/6P8AAAAAAAAAAFn/Wf/D/w==
+  symbols:
+  - kind: Function
+    name: _iswprint
+    size: 17
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _iswctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

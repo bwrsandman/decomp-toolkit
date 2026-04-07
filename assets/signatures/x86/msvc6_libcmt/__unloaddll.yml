@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 4a79116d829f45e9b038a33efeebe13df3acc67d
+  signature: //90/yT/BP///xX/AAAAAAAAAACF/8D/df8G////Jf8AAAAAAAAAADP/wP/D/w==
+  symbols:
+  - kind: Function
+    name: __unloaddll
+    size: 23
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__FreeLibrary@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 16
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

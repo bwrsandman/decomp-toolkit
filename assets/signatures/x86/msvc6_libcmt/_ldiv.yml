@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 57a8352980e9f055e0e235f3b86dd31e3ef244e0
+  signature: Vf+L/+z/i/9F/wj/mf/3/33/DP+L/8j/i/9F/wj/mf/3/33/DP+D/33/CP8A/33/CP+F/9L/fv8E/0H/K/9V/wz/i//B/13/w/8=
+  symbols:
+  - kind: Function
+    name: _ldiv
+    size: 37
+    flags: 1
+    section: .text
+  relocations: []

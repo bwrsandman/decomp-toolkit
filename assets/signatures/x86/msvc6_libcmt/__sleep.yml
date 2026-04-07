@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 3b0af0a36e101b0701291855440d854b7fe9ad4e
+  signature: i/9E/yT/BP+F/8D/df8D/2r/Af9Y/1D///8V/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: __sleep
+    size: 19
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__Sleep@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

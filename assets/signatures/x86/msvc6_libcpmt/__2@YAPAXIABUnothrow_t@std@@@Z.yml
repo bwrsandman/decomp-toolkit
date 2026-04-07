@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 47636412d58cf3e43a64d43850ac90ce4e5b317b
+  signature: Vv9X/4v/fP8k/wz/V//o/wAAAAAAAAAAi//w/1n/hf/2/3X/C/9X/+j/AAAAAAAAAACF/8D/Wf91/+j/i//G/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ??2@YAPAXIABUnothrow_t@std@@@Z
+    size: 35
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __callnewh
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

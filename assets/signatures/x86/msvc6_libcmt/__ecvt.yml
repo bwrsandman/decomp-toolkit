@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 83aeb7b17e3a4c5a36bc454160a9306f9afef2d5
+  signature: Vf+L/+z/g//s/yj/3f9F/wj/jf9F/9j/Vv9Q/43/Rf/w/1D/Uf9R/93/HP8k/+j/AAAAAAAAAAD//3X/GP+L/3X/EP///3X/FP9W/1D/6P8AAAAAAAAAAI3/DP8w/4P/xP8g/4D/Of8A/17/dP8D/4D/If8A/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __ecvt
+    size: 61
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __fltout2
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fpcvt
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 24
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 40
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
