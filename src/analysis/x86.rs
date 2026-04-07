@@ -16,10 +16,10 @@ use crate::{
 /// size pass [`compute_x86_function_sizes`].  Keep opaque — callers just
 /// thread it through.
 pub struct X86FunctionSizeData {
-    /// fn_va → raw (uncapped) instruction-end VA from phase-1 disassembly.
-    fn_raw_ends: BTreeMap<u32, u32>,
-    /// fn_va → VAs of jump tables referenced by indirect JMPs in that function.
-    fn_tables: BTreeMap<u32, Vec<u32>>,
+    /// (section, fn_va) → raw (uncapped) instruction-end VA from phase-1 disassembly.
+    fn_raw_ends: BTreeMap<(SectionIndex, u32), u32>,
+    /// (section, fn_va) → VAs of jump tables referenced by indirect JMPs in that function.
+    fn_tables: BTreeMap<(SectionIndex, u32), Vec<u32>>,
     /// Snapshot of code sections (idx, base, data).
     code_snap: Vec<(SectionIndex, u64, Vec<u8>)>,
 }
@@ -42,30 +42,10 @@ pub struct X86FunctionSizeData {
 /// [`compute_x86_function_sizes`] **after** all other symbol-discovery passes
 /// (e.g. RTTI) have run, so that size caps account for every function entry.
 pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
-    // Seed worklist: PE entry point + any Function symbols already in symbols.txt.
-    // `pending` is both the worklist and the dedup set, stored as a BTreeSet
-    // so that pop_first() always processes the lowest address first.  This
-    // guarantees that a containing function (lower VA) is fully disassembled
-    // and its spans recorded before any interior address (higher VA) from the
-    // same function body reaches the dequeue check.
-    let mut pending: BTreeSet<u32> = BTreeSet::new();
-
-    let enqueue = |addr: u32, pending: &mut BTreeSet<u32>| {
-        pending.insert(addr);
-    };
-
-    if let Some(entry_va) = obj.entry {
-        enqueue(entry_va as u32, &mut pending);
-    }
-    for (_, sym) in obj.symbols.iter() {
-        if sym.kind == ObjSymbolKind::Function {
-            if let Some(addr) = sym.section.map(|_| sym.address as u32) {
-                enqueue(addr, &mut pending);
-            }
-        }
-    }
-
-    // Snapshot code sections so we can borrow data while mutating obj.
+    // Snapshot code sections first so we can resolve VAs to (section, offset) pairs
+    // during seeding.  COFF .obj relocatables set all section addresses to 0, so we
+    // track (section_index, va) pairs throughout — not bare VAs — to avoid conflating
+    // functions that live in different COMDAT sections at the same offset.
     let code_snap: Vec<(SectionIndex, u64, Vec<u8>)> = obj
         .sections
         .iter()
@@ -97,38 +77,71 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
             .map(|(_, base, data)| (*base, data.as_slice()))
     };
 
-    // Instruction spans decoded in phase 1: start VA → exclusive end VA.
-    // Phase 2 uses this to reject any address that falls within a known
-    // instruction (both starts and interior bytes), preventing false splits
-    // at addresses that are inside multi-byte instruction operands.
-    let mut decoded_spans: BTreeMap<u32, u32> = BTreeMap::new();
+    // `pending` stores (section_index, va) pairs.  Using the section index as part
+    // of the key ensures that two functions in different sections at the same VA
+    // (the common case for COFF COMDAT .obj files where every section starts at 0)
+    // are treated as distinct worklist entries and both get disassembled.
+    let mut pending: BTreeSet<(SectionIndex, u32)> = BTreeSet::new();
 
-    // Uncapped function sizes: fn_va → raw instruction-end VA.
+    let enqueue = |key: (SectionIndex, u32), pending: &mut BTreeSet<(SectionIndex, u32)>| {
+        pending.insert(key);
+    };
+
+    // Seed worklist: PE entry point + any Function symbols already known.
+    if let Some(entry_va) = obj.entry {
+        if let Some((sec_idx, _)) = find_code(entry_va as u32) {
+            enqueue((sec_idx, entry_va as u32), &mut pending);
+        }
+    }
+    for (_, sym) in obj.symbols.iter() {
+        if sym.kind == ObjSymbolKind::Function {
+            if let Some(sec_idx) = sym.section {
+                enqueue((sec_idx, sym.address as u32), &mut pending);
+            }
+        }
+    }
+
+    // Snapshot of pre-existing relocation addresses (from COFF .obj loading).
+    // Keyed by (section, va) so that two sections at offset 0 don't share entries.
+    // For Relocatable objects, displacement bytes at these sites are unresolved
+    // placeholders — the computed branch targets must not be trusted.
+    let coff_reloc_sites: BTreeSet<(SectionIndex, u32)> =
+        if obj.kind == crate::obj::ObjKind::Relocatable {
+            obj.sections
+                .iter()
+                .filter(|(_, s)| s.kind == ObjSectionKind::Code)
+                .flat_map(|(sec_idx, s)| {
+                    s.relocations.iter().map(move |(addr, _)| (sec_idx, addr))
+                })
+                .collect()
+        } else {
+            BTreeSet::new()
+        };
+
+    // Instruction spans decoded in phase 1: (section, start_va) → exclusive end VA.
+    // Keyed by section so spans from one section don't shadow another section's
+    // addresses at the same offset.
+    let mut decoded_spans: BTreeMap<(SectionIndex, u32), u32> = BTreeMap::new();
+
+    // Uncapped function sizes: (section, fn_va) → raw instruction-end VA.
     // Capping against the next function start is deferred to
     // compute_x86_function_sizes, which runs after RTTI adds its own entries.
-    let mut fn_raw_ends: BTreeMap<u32, u32> = BTreeMap::new();
+    let mut fn_raw_ends: BTreeMap<(SectionIndex, u32), u32> = BTreeMap::new();
     // Jump-table VAs per function for the deferred size pass.
-    let mut fn_tables: BTreeMap<u32, Vec<u32>> = BTreeMap::new();
+    let mut fn_tables: BTreeMap<(SectionIndex, u32), Vec<u32>> = BTreeMap::new();
 
-    let mut fn_count = 0u32;
+    let mut fn_new_count = 0u32;
     let mut rel_count = 0u32;
     let mut data_scanned = false;
 
     loop {
-        if let Some(fn_va) = pending.pop_first() {
+        if let Some((fn_sec_idx, fn_va)) = pending.pop_first() {
             // A phase-2 candidate may have been enqueued before we knew its
             // address fell inside another function's instruction span.  Skip it
-            // now that decoded_spans is more complete.  Because we process in
-            // ascending address order, any containing function (lower VA) will
-            // already have been disassembled and its spans recorded.
-            if is_within_decoded_span(fn_va, &decoded_spans) {
+            // now that decoded_spans is more complete.
+            if is_within_decoded_span(fn_sec_idx, fn_va, &decoded_spans) {
                 continue;
             }
-
-            let (fn_sec_idx, _) = match find_code(fn_va) {
-                Some(v) => v,
-                None => continue,
-            };
 
             // Ensure a Function symbol exists at this entry.
             if obj
@@ -144,8 +157,17 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                     flags: ObjSymbolFlagSet(ObjSymbolFlags::none()),
                     ..Default::default()
                 })?;
-                fn_count += 1;
+                fn_new_count += 1;
             }
+
+            // Hoist the section data lookup for this function so that all instruction
+            // decoding uses fn_sec_idx's bytes — not whichever section find_code(pc)
+            // happens to return first (which can be the wrong section when multiple
+            // COMDAT sections share the same base VA of 0).
+            let (fn_base, fn_data) = match snap_for_section(fn_sec_idx) {
+                Some(v) => v,
+                None => continue,
+            };
 
             // Recursively disassemble the function body.
             let mut visited: BTreeSet<u32> = BTreeSet::new();
@@ -160,24 +182,25 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                     continue;
                 }
 
-                let (sec_idx, _) = match find_code(pc) {
-                    Some(v) => v,
-                    None => continue,
+                // Decode from this function's own section.  Using find_code(pc) would
+                // return the wrong section for functions in COMDAT sections that share
+                // the same base VA as another section (the COFF .obj case where every
+                // section starts at 0).
+                let off = match (pc as u64).checked_sub(fn_base).map(|o| o as usize) {
+                    Some(o) if o < fn_data.len() => o,
+                    _ => continue,
                 };
-                let (base, data) = match snap_for_section(sec_idx) {
-                    Some(v) => v,
-                    None => continue,
-                };
-                let off = (pc as u64 - base) as usize;
+                // sec_idx for this instruction is fn_sec_idx.
+                let sec_idx = fn_sec_idx;
 
                 let mut decoder =
-                    Decoder::with_ip(32, &data[off..], pc as u64, DecoderOptions::NONE);
+                    Decoder::with_ip(32, &fn_data[off..], pc as u64, DecoderOptions::NONE);
                 let mut instr = Instruction::default();
                 decoder.decode_out(&mut instr);
                 if instr.is_invalid() {
                     continue;
                 }
-                decoded_spans.insert(pc, pc + instr.len() as u32);
+                decoded_spans.insert((fn_sec_idx, pc), pc + instr.len() as u32);
 
                 let next_pc = pc + instr.len() as u32;
 
@@ -199,7 +222,21 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
 
                     FlowControl::Call => {
                         if instr.op0_kind() == OpKind::NearBranch32 {
+                            // For COFF .obj files, the displacement may be an
+                            // unresolved placeholder (external symbol). Skip if
+                            // the operand sits on a COFF relocation site.
+                            let operand_va = if instr.code() == Code::Call_rel32_32 {
+                                pc + 1
+                            } else {
+                                next_pc - 4
+                            };
                             let target = instr.near_branch32();
+                            if coff_reloc_sites.contains(&(sec_idx, operand_va)) {
+                                // Unresolved external — don't trust the displacement.
+                                // Still continue to the next instruction.
+                                flow.push_back(next_pc);
+                                continue;
+                            }
                             if let Some((tgt_sec, _)) = find_code(target) {
                                 // Ensure the callee has a Function symbol now so the
                                 // relocation can reference it directly (no lbl_ needed).
@@ -220,17 +257,9 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                                         flags: ObjSymbolFlagSet(ObjSymbolFlags::none()),
                                         ..Default::default()
                                     })?;
-                                    fn_count += 1;
+                                    fn_new_count += 1;
                                 }
-                                enqueue(target, &mut pending);
-
-                                // Operand offset: for E8 rel32 the operand is at byte 1;
-                                // for other encodings use instruction end - 4.
-                                let operand_va = if instr.code() == Code::Call_rel32_32 {
-                                    pc + 1
-                                } else {
-                                    next_pc - 4
-                                };
+                                enqueue((tgt_sec, target), &mut pending);
                                 add_rel32(
                                     obj, sec_idx, operand_va, tgt_sec, target, &mut rel_count,
                                 )?;
@@ -241,11 +270,16 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
 
                     FlowControl::UnconditionalBranch => {
                         if instr.op0_kind() == OpKind::NearBranch32 {
+                            let operand_va = next_pc - 4;
+                            if coff_reloc_sites.contains(&(sec_idx, operand_va)) {
+                                // Unresolved external — don't follow.
+                                continue;
+                            }
                             let target = instr.near_branch32();
                             if let Some((tgt_sec, _)) = find_code(target) {
                                 // Tail call if target already has a Function symbol or is
                                 // pending as one; otherwise treat as within-function JMP.
-                                let is_tail_call = pending.contains(&target)
+                                let is_tail_call = pending.contains(&(tgt_sec, target))
                                     || obj
                                         .symbols
                                         .kind_at_section_address(
@@ -272,10 +306,9 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                                             flags: ObjSymbolFlagSet(ObjSymbolFlags::none()),
                                             ..Default::default()
                                         })?;
-                                        fn_count += 1;
+                                        fn_new_count += 1;
                                     }
-                                    enqueue(target, &mut pending);
-                                    let operand_va = next_pc - 4;
+                                    enqueue((tgt_sec, target), &mut pending);
                                     add_rel32(
                                         obj, sec_idx, operand_va, tgt_sec, target, &mut rel_count,
                                     )?;
@@ -316,14 +349,14 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
             // Record the raw end and jump tables for the post-pass size computation.
             let raw_end = visited
                 .iter()
-                .filter_map(|&pc| decoded_spans.get(&pc).copied())
+                .filter_map(|&pc| decoded_spans.get(&(fn_sec_idx, pc)).copied())
                 .max()
                 .unwrap_or(fn_va);
             if raw_end > fn_va {
-                fn_raw_ends.insert(fn_va, raw_end);
+                fn_raw_ends.insert((fn_sec_idx, fn_va), raw_end);
             }
             if !potential_tables.is_empty() {
-                fn_tables.insert(fn_va, potential_tables);
+                fn_tables.insert((fn_sec_idx, fn_va), potential_tables);
             }
         } else if !data_scanned {
             // Phase 2: scan non-code sections for 4-byte-aligned pointer slots
@@ -343,13 +376,14 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                 let mut i = 0usize;
                 while i + 4 <= data.len() {
                     let va = u32::from_le_bytes(data[i..i + 4].try_into().unwrap());
-                    if find_code(va).is_some()
-                        && !pending.contains(&va)
-                        && !is_within_decoded_span(va, &decoded_spans)
-                        && decode_valid(va, &code_snap)
-                    {
-                        enqueue(va, &mut pending);
-                        ptr_count += 1;
+                    if let Some((sec_idx, _)) = find_code(va) {
+                        if !pending.contains(&(sec_idx, va))
+                            && !is_within_decoded_span(sec_idx, va, &decoded_spans)
+                            && decode_valid(va, &code_snap)
+                        {
+                            enqueue((sec_idx, va), &mut pending);
+                            ptr_count += 1;
+                        }
                     }
                     i += 4;
                 }
@@ -381,9 +415,14 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
             if sym.kind != ObjSymbolKind::Function {
                 return None;
             }
+            let sec = sym.section?;
             let va = sym.address as u32;
-            if let Some((&start, &end)) = decoded_spans
-                .range((std::ops::Bound::Unbounded, std::ops::Bound::Included(va)))
+            // Search only within this symbol's section to avoid cross-section false positives.
+            if let Some((&(_s, start), &end)) = decoded_spans
+                .range((
+                    std::ops::Bound::Included((sec, 0)),
+                    std::ops::Bound::Included((sec, va)),
+                ))
                 .next_back()
             {
                 if start < va && va < end {
@@ -406,7 +445,8 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
     }
 
     log::info!(
-        "x86 analysis: {fn_count} functions discovered, {rel_count} rel32 relocations added"
+        "{}: x86 analysis: {fn_new_count} functions discovered, {rel_count} rel32 relocations added",
+        obj.name
     );
     Ok(X86FunctionSizeData { fn_raw_ends, fn_tables, code_snap })
 }
@@ -447,18 +487,16 @@ pub fn compute_x86_function_sizes(obj: &mut ObjInfo, data: X86FunctionSizeData) 
 
     let mut size_updates: Vec<(SymbolIndex, ObjSymbol)> = Vec::new();
 
-    for (&fn_va, &raw_end) in &fn_raw_ends {
-        let (fn_sec_idx, _) = match find_code(fn_va) {
-            Some(v) => v,
-            None => continue,
-        };
+    // fn_raw_ends is now keyed by (section_index, fn_va) so functions in separate
+    // sections at the same VA (COFF COMDAT) are handled independently.
+    for (&(fn_sec_idx, fn_va), &raw_end) in &fn_raw_ends {
         let (sec_base, sec_data) = match snap_for_section(fn_sec_idx) {
             Some(v) => v,
             None => continue,
         };
         let sec_end = sec_base as u32 + sec_data.len() as u32;
 
-        // Cap at the next known function entry (after RTTI).
+        // Cap at the next known function entry in the same section (after RTTI).
         let next_fn = fn_entries_by_sec
             .get(&fn_sec_idx)
             .and_then(|entries| {
@@ -485,7 +523,7 @@ pub fn compute_x86_function_sizes(obj: &mut ObjInfo, data: X86FunctionSizeData) 
         fn_end = fn_end.min(cap);
 
         // 2. Extend over embedded jump tables (capped).
-        if let Some(tables) = fn_tables.get(&fn_va) {
+        if let Some(tables) = fn_tables.get(&(fn_sec_idx, fn_va)) {
             for &table_va in tables {
                 if table_va < raw_end || table_va >= cap { continue; }
                 let mut t = table_va;
@@ -519,13 +557,20 @@ pub fn compute_x86_function_sizes(obj: &mut ObjInfo, data: X86FunctionSizeData) 
     Ok(())
 }
 
-/// Returns `true` if `va` falls within any span in `decoded_spans`.
-/// Spans are stored as start → exclusive_end. This catches both instruction
-/// starts (va == start) and interior bytes (start < va < end).
-fn is_within_decoded_span(va: u32, decoded_spans: &BTreeMap<u32, u32>) -> bool {
-    use std::ops::Bound::Unbounded;
-    if let Some((&_start, &end)) =
-        decoded_spans.range((Unbounded, std::ops::Bound::Included(va))).next_back()
+/// Returns `true` if `va` in `sec_idx` falls within any span in `decoded_spans`.
+/// Spans are stored as (section, start) → exclusive_end.  Searching is scoped to
+/// `sec_idx` so that spans from one section never shadow another section's addresses.
+fn is_within_decoded_span(
+    sec_idx: SectionIndex,
+    va: u32,
+    decoded_spans: &BTreeMap<(SectionIndex, u32), u32>,
+) -> bool {
+    if let Some((&(_s, _start), &end)) = decoded_spans
+        .range((
+            std::ops::Bound::Included((sec_idx, 0)),
+            std::ops::Bound::Included((sec_idx, va)),
+        ))
+        .next_back()
     {
         va < end
     } else {

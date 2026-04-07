@@ -10,7 +10,10 @@ use crate::{
         ObjInfo, ObjSectionKind, ObjSplit, ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags,
         ObjSymbolKind,
     },
-    util::signatures::{apply_signature, check_signatures, check_signatures_str, parse_signatures},
+    util::signatures::{
+        apply_signature, apply_signature_x86, check_signatures, check_signatures_str,
+        check_signatures_x86, parse_signatures,
+    },
 };
 
 const SIGNATURES: &[(&str, &str)] = &[
@@ -465,6 +468,172 @@ pub fn update_ctors_dtors(obj: &mut ObjInfo) -> Result<()> {
                 flags: ObjSymbolFlagSet(ObjSymbolFlags::Global.into()),
                 ..Default::default()
             })?;
+        }
+    }
+    Ok(())
+}
+
+// ── x86 / COFF / PE signatures ───────────────────────────────────────────────
+//
+// Mirrors the PPC SIGNATURES / POST_SIGNATURES tables above, but for x86 PE
+// targets.  Signature files live under assets/signatures/x86/**/*.yml and are
+// compiled in automatically by build.rs — add a .yml file and rebuild.
+//
+// An optional runtime directory can also be passed for project-specific sigs.
+
+include!(concat!(env!("OUT_DIR"), "/x86_signatures_generated.rs"));
+
+
+/// Load all *.yml files from `dir` and return them as `(stem, content)` pairs.
+/// Errors reading individual files are logged and skipped.
+fn load_sig_dir(dir: &std::path::Path) -> Vec<(String, String)> {
+    let mut out = Vec::new();
+    let entries = match std::fs::read_dir(dir) {
+        Ok(e) => e,
+        Err(e) => {
+            log::warn!("x86 signatures dir '{}': {e}", dir.display());
+            return out;
+        }
+    };
+    for entry in entries.flatten() {
+        let path = entry.path();
+        if path.extension().and_then(|e| e.to_str()) != Some("yml") {
+            continue;
+        }
+        let stem = path
+            .file_stem()
+            .and_then(|s| s.to_str())
+            .unwrap_or("")
+            .to_string();
+        match std::fs::read_to_string(&path) {
+            Ok(content) => out.push((stem, content)),
+            Err(e) => log::warn!("Failed to read '{}': {e}", path.display()),
+        }
+    }
+    out
+}
+
+fn apply_signature_x86_for_symbol(obj: &mut ObjInfo, name: &str, sig_str: &str) -> Result<()> {
+    let sigs = parse_signatures(sig_str)?;
+    for symbol_idx in obj.symbols.for_name(name).map(|(i, _)| i).collect_vec() {
+        let symbol = &obj.symbols[symbol_idx];
+        let Some(section_index) = symbol.section else { continue };
+        let addr = symbol.address as u32;
+        let section = &obj.sections[section_index];
+        if let Some(sig) = check_signatures_x86(section, addr, &sigs, None)? {
+            apply_signature_x86(obj, SectionAddress::new(section_index, addr), &sig)?;
+        }
+    }
+    Ok(())
+}
+
+/// Check the PE entry point and every already-named symbol against all
+/// compiled-in x86 signatures, plus any extra .yml files in `sig_dir`.
+pub fn apply_signatures_x86(obj: &mut ObjInfo, sig_dir: Option<&std::path::Path>) -> Result<()> {
+    let dir_sigs = sig_dir.map(load_sig_dir).unwrap_or_default();
+    let all: Vec<(&str, &str)> = SIGNATURES_X86
+        .iter()
+        .map(|&(n, s)| (n, s))
+        .chain(dir_sigs.iter().map(|(n, s)| (n.as_str(), s.as_str())))
+        .collect();
+
+    if all.is_empty() { return Ok(()); }
+
+    // Check entry point.
+    if let Some(entry) = obj.entry.map(|n| n as u32) {
+        if let Ok((entry_sec_idx, entry_sec)) = obj.sections.at_address(entry) {
+            for (_, sig_str) in &all {
+                let parsed = parse_signatures(sig_str)?;
+                if let Some(sig) = check_signatures_x86(entry_sec, entry, &parsed, None)? {
+                    apply_signature_x86(obj, SectionAddress::new(entry_sec_idx, entry), &sig)?;
+                    break;
+                }
+            }
+        }
+    }
+
+    // Check every already-named symbol.
+    for (name, sig_str) in &all {
+        apply_signature_x86_for_symbol(obj, name, sig_str)?;
+    }
+    Ok(())
+}
+
+/// Scan all code functions against all compiled-in x86 signatures plus any
+/// extra .yml files in `sig_dir`.
+pub fn apply_signatures_post_x86(
+    obj: &mut ObjInfo,
+    sig_dir: Option<&std::path::Path>,
+) -> Result<()> {
+    let dir_sigs = sig_dir.map(load_sig_dir).unwrap_or_default();
+    let all_strs: Vec<&str> = SIGNATURES_X86
+        .iter()
+        .map(|&(_, s)| s)
+        .chain(dir_sigs.iter().map(|(_, s)| s.as_str()))
+        .collect();
+
+    if all_strs.is_empty() { return Ok(()); }
+    log::debug!("Checking post-analysis x86 signatures ({} file(s))", all_strs.len());
+
+    // Pre-compute function sizes per section (gap to next function entry).
+    // This is used to reject false-positive matches where a short signature
+    // happens to match the start of a longer, unrelated function.
+    use std::collections::BTreeMap;
+    let mut fn_sizes: BTreeMap<u32, u32> = BTreeMap::new(); // fn_va → size
+    for (section_index, _) in obj.sections.by_kind(ObjSectionKind::Code) {
+        let sec = &obj.sections[section_index];
+        let sec_end = (sec.address + sec.size) as u32;
+        let mut addrs: Vec<u32> = obj
+            .symbols
+            .for_section(section_index)
+            .filter(|(_, s)| s.kind == ObjSymbolKind::Function)
+            .map(|(_, s)| s.address as u32)
+            .collect();
+        addrs.sort_unstable();
+        addrs.dedup();
+        for (i, &addr) in addrs.iter().enumerate() {
+            let next = addrs.get(i + 1).copied().unwrap_or(sec_end);
+            fn_sizes.insert(addr, next - addr);
+        }
+    }
+
+    for sig_str in &all_strs {
+        let parsed = parse_signatures(sig_str)?;
+        let mut matches: Vec<(u32, crate::util::signatures::FunctionSignature)> = Vec::new();
+        for (section_index, section) in obj.sections.by_kind(ObjSectionKind::Code) {
+            for (symbol_index, symbol) in obj
+                .symbols
+                .for_section(section_index)
+                .filter(|(_, s)| s.kind == ObjSymbolKind::Function)
+            {
+                let addr = symbol.address as u32;
+                // Prefer the symbol's own size (from compute_x86_function_sizes, which strips
+                // NOP/INT3 padding) over the gap-to-next-function, which includes padding and
+                // would cause the size check in check_signature_x86 to reject valid matches.
+                let size = if symbol.size_known && symbol.size > 0 {
+                    Some(symbol.size as u32)
+                } else {
+                    fn_sizes.get(&addr).copied()
+                };
+                if let Some(sig) = check_signatures_x86(section, addr, &parsed, size)? {
+                    matches.push((symbol_index, sig));
+                }
+            }
+        }
+        // If a signature matches multiple functions it's ambiguous — skip it.
+        if matches.len() > 1 {
+            let name = &parsed[0].symbols[parsed[0].symbol as usize].name;
+            log::debug!(
+                "Skipping ambiguous x86 signature '{}' ({} matches)",
+                name,
+                matches.len()
+            );
+            continue;
+        }
+        for (symbol_index, sig) in matches {
+            let symbol = &obj.symbols[symbol_index];
+            let addr = SectionAddress::new(symbol.section.unwrap(), symbol.address as u32);
+            apply_signature_x86(obj, addr, &sig)?;
         }
     }
     Ok(())

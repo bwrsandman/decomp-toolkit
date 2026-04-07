@@ -941,6 +941,9 @@ fn add_padding_symbols(obj: &mut ObjInfo) -> Result<()> {
         }
 
         let mut to_add = vec![];
+        // Collect (address, new_size) for auto-generated symbols whose stale size
+        // from a previous run now overlaps a newly-detected symbol.
+        let mut to_truncate: Vec<(u64, u64)> = vec![];
         let mut iter = obj
             .symbols
             .for_section(section_index)
@@ -1038,20 +1041,53 @@ fn add_padding_symbols(obj: &mut ObjInfo) -> Result<()> {
                 }
                 Ordering::Equal => {}
                 Ordering::Greater => {
-                    bail!(
-                        "Symbol {} ({:#010X}..{:#010X}) overlaps with symbol {} ({:#010X}..{:#010X}, align {})",
-                        symbol.name,
-                        symbol.address,
-                        symbol.address + symbol.size,
-                        next_name,
-                        next_address,
-                        next_end,
-                        next_align
-                    );
+                    // Auto-generated labels (lbl_*, gap_*, pad_*) may carry stale
+                    // sizes written by a previous run that are now invalid because
+                    // new symbols were detected between runs (e.g. vftables).
+                    // Truncate them to the next symbol's start address instead of
+                    // failing; they'll be re-emitted with the correct size this run.
+                    let is_autogen = symbol.name.starts_with("lbl_")
+                        || symbol.name.starts_with("gap_")
+                        || symbol.name.starts_with("pad_");
+                    if is_autogen {
+                        let new_size = (next_address as u64).saturating_sub(symbol.address);
+                        log::debug!(
+                            "Truncating stale auto-generated symbol {} size {:#x} → {:#x}",
+                            symbol.name,
+                            symbol.size,
+                            new_size
+                        );
+                        to_truncate.push((symbol.address, new_size));
+                    } else {
+                        bail!(
+                            "Symbol {} ({:#010X}..{:#010X}) overlaps with symbol {} ({:#010X}..{:#010X}, align {})",
+                            symbol.name,
+                            symbol.address,
+                            symbol.address + symbol.size,
+                            next_name,
+                            next_address,
+                            next_end,
+                            next_align
+                        );
+                    }
                 }
             }
         }
         drop(iter);
+
+        for (addr, new_size) in to_truncate {
+            let idxs: Vec<SymbolIndex> = obj
+                .symbols
+                .at_section_address(section_index, addr as u32)
+                .filter(|(_, s)| s.size_known)
+                .map(|(idx, _)| idx)
+                .collect();
+            for idx in idxs {
+                let mut sym = obj.symbols[idx].clone();
+                sym.size = new_size;
+                obj.symbols.replace(idx, sym)?;
+            }
+        }
 
         for symbol in to_add {
             obj.symbols.add_direct(symbol)?;
@@ -1319,11 +1355,11 @@ pub fn split_obj(
     globalize_symbols: bool,
 ) -> Result<Vec<ObjInfo>> {
     let mut objects: Vec<ObjInfo> = vec![];
-    let mut object_symbols: Vec<Vec<Option<SymbolIndex>>> = vec![];
+    let mut object_symbols: Vec<HashMap<u32, SymbolIndex>> = vec![];
     let mut name_to_obj: HashMap<String, usize> = HashMap::new();
     for unit in &obj.link_order {
         name_to_obj.insert(unit.name.clone(), objects.len());
-        object_symbols.push(vec![None; obj.symbols.count() as usize]);
+        object_symbols.push(HashMap::new());
         let mut split_obj = ObjInfo::new(
             ObjKind::Relocatable,
             obj.architecture,
@@ -1467,7 +1503,7 @@ pub fn split_obj(
                     s.section == Some(section_index) && !is_linker_generated_label(&s.name)
                 })
             {
-                if symbol_idxs[symbol_idx as usize].is_some() {
+                if symbol_idxs.contains_key(&symbol_idx) {
                     continue; // should never happen?
                 }
 
@@ -1502,7 +1538,7 @@ pub fn split_obj(
                     name_hash: symbol.name_hash,
                     demangled_name_hash: symbol.demangled_name_hash,
                 })?;
-                symbol_idxs[symbol_idx as usize] = Some(new_index);
+                symbol_idxs.insert(symbol_idx, new_index);
             }
 
             // For mwldeppc 2.7 and above, a .comment section is required to link without error
@@ -1557,7 +1593,7 @@ pub fn split_obj(
         let symbol_idxs = &mut object_symbols[obj_idx];
         for (_section_index, section) in out_obj.sections.iter_mut() {
             for (reloc_address, reloc) in section.relocations.iter_mut() {
-                match symbol_idxs[reloc.target_symbol as usize] {
+                match symbol_idxs.get(&reloc.target_symbol).copied() {
                     Some(out_sym_idx) => {
                         reloc.target_symbol = out_sym_idx;
                     }
@@ -1590,7 +1626,7 @@ pub fn split_obj(
                             symbols_to_globalize.push((reloc.target_symbol, new_name));
                         }
 
-                        symbol_idxs[reloc.target_symbol as usize] = Some(out_sym_idx);
+                        symbol_idxs.insert(reloc.target_symbol, out_sym_idx);
                         out_obj.symbols.add_direct(ObjSymbol {
                             name: target_sym.name.clone(),
                             demangled_name: target_sym.demangled_name.clone(),
@@ -1636,7 +1672,7 @@ pub fn split_obj(
     if globalize_symbols {
         for (obj, symbol_map) in objects.iter_mut().zip(&object_symbols) {
             for (globalize_idx, new_name) in &symbols_to_globalize {
-                if let Some(symbol_idx) = symbol_map[*globalize_idx as usize] {
+                if let Some(&symbol_idx) = symbol_map.get(globalize_idx) {
                     let mut symbol = obj.symbols[symbol_idx].clone();
                     symbol.name.clone_from(new_name);
                     if symbol.flags.is_local() {

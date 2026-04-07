@@ -1,10 +1,11 @@
 use std::{
-    collections::BTreeMap,
+    collections::{BTreeMap, HashMap},
     fs,
     fs::DirBuilder,
     io::Write,
     time::Instant,
 };
+use rayon::prelude::*;
 
 use anyhow::{Context, Result, bail};
 use argp::FromArgs;
@@ -18,6 +19,7 @@ use crate::{
         objects::{detect_objects, detect_strings},
         pe::detect_pe_symbols,
         rtti::detect_rtti,
+        signatures::{apply_signatures_post_x86, apply_signatures_x86},
         x86::{analyze_x86_functions, compute_x86_function_sizes},
     },
     cmd::{
@@ -32,8 +34,12 @@ use crate::{
         coff::{apply_base_relocations, create_function_splits, process_coff, write_coff},
         config::{apply_splits_file, apply_symbols_file, write_splits_file, write_symbols_file},
         dep::DepFile,
-        file::{FileReadInfo, buf_writer, touch, verify_hash},
+        file::{FileReadInfo, buf_writer, process_rsp, touch, verify_hash},
         lcf::{generate_ldscript, obj_path_for_unit},
+        signatures::{
+            FunctionSignature, compare_signature, generate_all_signatures_x86,
+            generate_signature_x86,
+        },
         split::{split_obj, update_splits},
     },
     vfs::open_file,
@@ -51,6 +57,38 @@ pub struct Args {
 #[argp(subcommand)]
 enum SubCommand {
     Split(SplitArgs),
+    Sigs(SignaturesArgs),
+    SigsLib(SigsLibArgs),
+}
+
+#[derive(FromArgs, PartialEq, Eq, Debug)]
+/// Generate x86 byte-pattern signatures from COFF/PE object files.
+#[argp(subcommand, name = "sigs")]
+pub struct SignaturesArgs {
+    #[argp(positional, from_str_fn(crate::util::path::native_path))]
+    /// input COFF/PE files (or @response files)
+    files: Vec<Utf8NativePathBuf>,
+    #[argp(option, short = 's')]
+    /// symbol name
+    symbol: String,
+    #[argp(option, short = 'o', from_str_fn(crate::util::path::native_path))]
+    /// output .yml file
+    out_file: Utf8NativePathBuf,
+}
+
+#[derive(FromArgs, PartialEq, Eq, Debug)]
+/// Generate x86 signatures for every defined function across all .obj members of one or
+/// more static libraries (.lib), writing one .yml per symbol into an output directory.
+/// Multiple .lib files (e.g. different compiler versions) are merged: symbols with
+/// differing byte patterns produce multiple entries in the same .yml.
+#[argp(subcommand, name = "sigs-lib")]
+pub struct SigsLibArgs {
+    #[argp(positional, from_str_fn(crate::util::path::native_path))]
+    /// input static library (.lib) files
+    lib_files: Vec<Utf8NativePathBuf>,
+    #[argp(option, short = 'o', from_str_fn(crate::util::path::native_path))]
+    /// output directory for .yml signature files
+    out_dir: Utf8NativePathBuf,
 }
 
 #[derive(FromArgs, PartialEq, Eq, Debug)]
@@ -74,7 +112,118 @@ pub struct SplitArgs {
 pub fn run(args: Args) -> Result<()> {
     match args.command {
         SubCommand::Split(c_args) => split(c_args),
+        SubCommand::Sigs(c_args) => signatures(c_args),
+        SubCommand::SigsLib(c_args) => sigs_lib(c_args),
     }
+}
+
+fn sigs_lib(args: SigsLibArgs) -> Result<()> {
+    use object::read::archive::ArchiveFile;
+
+    let out_dir = args.out_dir.with_encoding();
+    fs::DirBuilder::new().recursive(true).create(&out_dir)?;
+
+    let mut by_symbol: HashMap<String, HashMap<String, FunctionSignature>> = HashMap::new();
+    let mut total_members = 0u32;
+
+    for lib_path in &args.lib_files {
+        let lib_path_native = lib_path.with_encoding();
+        info!("Processing {}", lib_path_native);
+        let lib_data = fs::read(&lib_path_native)
+            .with_context(|| format!("Failed to read '{lib_path_native}'"))?;
+        let archive = ArchiveFile::parse(lib_data.as_slice())
+            .with_context(|| format!("Failed to parse archive '{lib_path_native}'"))?;
+        let mut member_count = 0u32;
+
+        for member in archive.members() {
+            let member: object::read::archive::ArchiveMember =
+                member.with_context(|| format!("Error reading member in '{lib_path_native}'"))?;
+            let member_name = String::from_utf8_lossy(member.name()).into_owned();
+
+            // Copy into a fresh Vec so the data starts at a heap-aligned address.
+            // Without the `unaligned` object crate feature, parsing fails if the member
+            // happens to sit at an odd offset within the archive buffer.
+            let data: Vec<u8> = member
+                .data(lib_data.as_slice())
+                .with_context(|| format!("Failed to read member '{member_name}'"))?
+                .to_vec();
+
+            let sigs = match generate_all_signatures_x86(&data, &member_name) {
+                Ok(s) => s,
+                Err(e) => {
+                    log::debug!("Skipping '{member_name}': {e:?}");
+                    continue;
+                }
+            };
+            if sigs.is_empty() {
+                continue;
+            }
+            member_count += 1;
+            for (sym_name, sig) in sigs {
+                let entry = by_symbol.entry(sym_name).or_default();
+                if let Some(existing) = entry.get_mut(&sig.hash) {
+                    compare_signature(existing, &sig).ok();
+                } else {
+                    entry.insert(sig.hash.clone(), sig);
+                }
+            }
+        }
+
+        info!("  {} object member(s) with signatures", member_count);
+        total_members += member_count;
+    }
+
+    info!(
+        "Processed {} total member(s), writing signatures for {} symbol(s)",
+        total_members,
+        by_symbol.len()
+    );
+    let mut written = 0u32;
+    for (sym_name, hash_map) in &by_symbol {
+        let mut sigs: Vec<_> = hash_map.values().cloned().collect();
+        sigs.sort_by_key(|s| s.signature.len());
+
+        let safe_name = sym_name.replace(['/', '\\', ':', '*', '?', '"', '<', '>', '|'], "_");
+        let out_path = out_dir.join(format!("{safe_name}.yml"));
+        let mut f = buf_writer(&out_path)?;
+        serde_yaml::to_writer(&mut f, &sigs)?;
+        f.flush()?;
+        written += 1;
+    }
+    info!("Wrote {written} .yml file(s) to '{out_dir}'");
+    Ok(())
+}
+
+fn signatures(args: SignaturesArgs) -> Result<()> {
+    let files = process_rsp(&args.files)?;
+
+    let mut sigs: HashMap<String, FunctionSignature> = HashMap::new();
+    for path in files {
+        info!("Processing {}", path);
+        let sig = match generate_signature_x86(&path, &args.symbol) {
+            Ok(Some(s)) => s,
+            Ok(None) => continue,
+            Err(e) => {
+                eprintln!("Failed: {e:?}");
+                continue;
+            }
+        };
+        info!("Hash {}", sig.hash);
+        if let Some(existing) = sigs.get_mut(&sig.hash) {
+            compare_signature(existing, &sig)?;
+        } else {
+            sigs.insert(sig.hash.clone(), sig);
+        }
+    }
+
+    let mut sigs: Vec<FunctionSignature> = sigs.into_values().collect();
+    info!("{} unique signature(s)", sigs.len());
+    sigs.sort_by_key(|s| s.signature.len());
+
+    let mut out = buf_writer(&args.out_file)?;
+    serde_yaml::to_writer(&mut out, &sigs)?;
+    out.flush()?;
+    Ok(())
 }
 
 struct ModuleState<'a> {
@@ -122,6 +271,10 @@ fn load_analyze_coff(
     // Discover functions and rel32 relocations by scanning code.
     // Returns size data to be applied after RTTI runs.
     let size_data = analyze_x86_functions(&mut obj)?;
+
+    // Apply x86 signatures for already-known symbols (entry point, named stubs).
+    let sig_dir_buf: Option<Utf8NativePathBuf> = config.x86_signatures.as_ref().map(|p| p.with_encoding());
+    apply_signatures_x86(&mut obj, sig_dir_buf.as_ref().map(|p| std::path::Path::new(p.as_str())))?;
 
     if let Some(map_path) = &config.base.map {
         let map_path = map_path.with_encoding();
@@ -230,6 +383,10 @@ fn split_write_coff(
         compute_x86_function_sizes(&mut module.obj, size_data)?;
     }
 
+    // Post-analysis signature scan: check all functions against the sig dir.
+    let sig_dir_buf: Option<Utf8NativePathBuf> = config.x86_signatures.as_ref().map(|p| p.with_encoding());
+    apply_signatures_post_x86(&mut module.obj, sig_dir_buf.as_ref().map(|p| std::path::Path::new(p.as_str())))?;
+
     // Convert Function-kind symbols into per-function splits (mirrors DOL Tracker behaviour)
     if !config.symbols_known {
         debug!("Creating function splits");
@@ -280,9 +437,17 @@ fn split_write_coff(
         extract: Vec::with_capacity(module.config.extract.len()),
     };
 
+    // Serialize all split objects in parallel (CPU-bound), then write serially.
+    let serialized: Vec<Result<Vec<u8>>> = split_objs
+        .par_iter()
+        .map(|split_obj| write_coff(split_obj, config.export_all))
+        .collect();
+
     let mut object_paths = BTreeMap::new();
-    for (unit, split_obj) in module.obj.link_order.iter().zip(&split_objs) {
-        let out_obj = write_coff(split_obj, config.export_all)?;
+    for ((unit, split_obj), out_obj) in
+        module.obj.link_order.iter().zip(&split_objs).zip(serialized)
+    {
+        let out_obj = out_obj?;
         let obj_path = obj_path_for_unit(&unit.name);
         let out_path = obj_dir.join(&obj_path);
         if let Some(existing) = object_paths.insert(obj_path, unit) {

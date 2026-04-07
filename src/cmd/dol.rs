@@ -237,6 +237,10 @@ pub struct ProjectConfig {
     /// Optional base path for all object files.
     #[serde(with = "unix_path_serde_option", default, skip_serializing_if = "is_default")]
     pub object_base: Option<Utf8UnixPathBuf>,
+    /// Directory containing x86 byte-pattern signature files (*.yml).
+    /// Loaded at analysis time; mirrors assets/signatures/x86/ for PPC.
+    #[serde(with = "unix_path_serde_option", default, skip_serializing_if = "is_default")]
+    pub x86_signatures: Option<Utf8UnixPathBuf>,
     /// Whether to extract objects from a disc image into object base. If false, the files
     /// will be used from the disc image directly without extraction.
     #[serde(default = "bool_true", skip_serializing_if = "is_true")]
@@ -262,6 +266,7 @@ impl Default for ProjectConfig {
             globalize_symbols: true,
             object_base: None,
             extract_objects: true,
+            x86_signatures: None,
         }
     }
 }

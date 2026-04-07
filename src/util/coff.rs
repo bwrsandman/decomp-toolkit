@@ -5,7 +5,8 @@ use cwdemangle::demangle;
 use flagset::Flags;
 use object::{
     Architecture, BinaryFormat, Endianness, Object, ObjectKind, ObjectSection, ObjectSymbol,
-    RelocationEncoding, RelocationKind, SectionKind, SymbolFlags, SymbolKind, SymbolScope,
+    RelocationEncoding, RelocationKind, RelocationTarget, SectionKind, SymbolFlags, SymbolKind,
+    SymbolScope,
     write::{
         Object as WriteObject, Relocation, RelocationFlags,
         SectionId, Symbol, SymbolId, SymbolSection as WriteSymbolSection,
@@ -81,6 +82,9 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
     }
 
     let mut symbols: Vec<ObjSymbol> = vec![];
+    // Maps COFF symbol index → our ObjSymbol vector index.
+    // Needed to resolve COFF relocation targets for .obj files.
+    let mut coff_sym_map: std::collections::BTreeMap<usize, usize> = Default::default();
     let mut stack_address: Option<u32> = None;
     let mut stack_end: Option<u32> = None;
     let mut db_stack_addr: Option<u32> = None;
@@ -90,6 +94,7 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
     let mut sda2_base: Option<u32> = None;
 
     for symbol in obj_file.symbols() {
+        let coff_idx = symbol.index().0;
         let symbol_name = match symbol.name() {
             Ok(n) if !n.is_empty() => n,
             _ => continue,
@@ -130,6 +135,7 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
             flags = ObjSymbolFlagSet(flags.0 | ObjSymbolFlags::Local);
         }
 
+        coff_sym_map.insert(coff_idx, symbols.len());
         symbols.push(ObjSymbol {
             name: symbol_name.to_string(),
             demangled_name: demangle(symbol_name, &Default::default()),
@@ -141,6 +147,41 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
             kind: symbol_kind,
             ..Default::default()
         });
+    }
+
+    // For relocatable (.obj) files, read COFF section relocations so that
+    // analyze_x86_functions can distinguish resolved vs unresolved operands.
+    if kind == ObjKind::Relocatable {
+        for section in obj_file.sections() {
+            let sec_idx = match section_indexes.get(section.index().0).copied().flatten() {
+                Some(idx) => idx,
+                None => continue,
+            };
+            let sec_addr = sections[sec_idx].address;
+            for (offset, reloc) in section.relocations() {
+                let target_sym = match reloc.target() {
+                    RelocationTarget::Symbol(idx) => {
+                        match coff_sym_map.get(&idx.0) {
+                            Some(&our_idx) => our_idx as u32,
+                            None => continue,
+                        }
+                    }
+                    _ => continue,
+                };
+                let reloc_kind = match reloc.kind() {
+                    RelocationKind::Relative => ObjRelocKind::X86Rel32,
+                    RelocationKind::Absolute => ObjRelocKind::X86Abs32,
+                    _ => continue,
+                };
+                let addr = sec_addr + offset;
+                sections[sec_idx].relocations.replace(addr as u32, ObjReloc {
+                    kind: reloc_kind,
+                    target_symbol: target_sym,
+                    addend: reloc.addend(),
+                    module: None,
+                });
+            }
+        }
     }
 
     // Extract ImageBase from the PE optional header (x86 PE32 only)
