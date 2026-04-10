@@ -116,12 +116,32 @@ static_regex!(
 static_regex!(LINKER_SYMBOLS_START, "^\\s*Linker generated symbols:\\s*$");
 static_regex!(LINKER_SYMBOL_ENTRY, "^\\s*(?P<name>\\S+)\\s+(?P<addr>[0-9A-Fa-f]+|\\.{0,8})\\s*$");
 
+// PE map file format (MSVC linker)
+static_regex!(PE_SECTION_HEADER, "^\\s*Start\\s+Length\\s+Name\\s+Class\\s*$");
+static_regex!(PE_SYMBOL_HEADER, "^\\s*Address\\s+Publics by Value\\s+Rva\\+Base\\s+Lib:Object\\s*$");
+static_regex!(PE_STATIC_SYMBOLS, "^\\s*Static symbols\\s*$");
+// " 0001:00000000 004a5470H .text                   CODE"
+static_regex!(PE_MAP_SECTION_DEF, "^\\s*(?P<seg>[0-9A-Fa-f]{4}):(?P<off>[0-9A-Fa-f]{8})\\s+(?P<size>[0-9A-Fa-f]+)H\\s+(?P<name>\\S+)\\s+(?P<class>\\w+)\\s*$");
+// " 0001:00000000       sym_name      0000000000401000     source.obj"
+static_regex!(PE_MAP_SYMBOL, "^\\s*(?P<seg>[0-9A-Fa-f]{4}):(?P<off>[0-9A-Fa-f]{8})\\s+(?P<name>\\S+)\\s+(?P<addr>[0-9A-Fa-f]{16})\\s+(?P<source>.+?)\\s*$");
+
 #[derive(Debug)]
 pub struct SectionInfo {
     pub name: String,
     pub address: u32,
     pub size: u32,
     pub file_offset: u32,
+}
+
+/// Symbol parsed from an MSVC PE map file, keyed by absolute virtual address.
+#[derive(Debug, Clone)]
+pub struct PeMapSymbol {
+    pub name: String,
+    pub demangled: Option<String>,
+    pub address: u32,
+    pub unit: String,
+    pub is_function: bool,
+    pub is_static: bool,
 }
 
 #[derive(Default)]
@@ -135,6 +155,8 @@ pub struct MapInfo {
     pub link_map_symbols: HashMap<SymbolRef, SymbolEntry>,
     pub section_symbols: IndexMap<String, BTreeMap<u32, Vec<SymbolEntry>>>,
     pub section_units: HashMap<String, Vec<(u32, String)>>,
+    // Symbols from MSVC PE map files (applied by absolute VA rather than section name)
+    pub pe_symbols: Vec<PeMapSymbol>,
     // For common BSS inflation correction
     pub common_bss_start: Option<u32>,
     pub mw_comment_version: Option<u8>,
@@ -166,11 +188,20 @@ struct SectionLayoutState {
     last_address: u32,
 }
 
+#[derive(Default)]
+struct PeMapState {
+    /// segment number (1-based hex) → true if CODE class
+    segment_is_code: BTreeMap<u16, bool>,
+    in_symbols: bool,
+    is_static: bool,
+}
+
 enum ProcessMapState {
     None,
     LinkMap(LinkMapState),
     SectionLayout(SectionLayoutState),
     MemoryMap,
+    PeMap(PeMapState),
     LinkerGeneratedSymbols,
 }
 
@@ -200,9 +231,54 @@ impl StateMachine {
                     self.switch_state(ProcessMapState::MemoryMap)?;
                 } else if LINKER_SYMBOLS_START.is_match(&line) {
                     self.switch_state(ProcessMapState::LinkerGeneratedSymbols)?;
+                } else if PE_SECTION_HEADER.is_match(&line) {
+                    // MSVC PE map file: "Start   Length   Name   Class" header
+                    self.switch_state(ProcessMapState::PeMap(Default::default()))?;
+                } else if line.trim().starts_with("Timestamp is ")
+                    || line.trim().starts_with("Preferred load address is ")
+                    || (line.starts_with(' ') && !line.trim().contains(' '))
+                {
+                    // Skip PE map file preamble (executable name, timestamp, load address)
                 } else {
                     bail!("Unexpected line while processing map: '{line}'");
                 }
+            }
+            ProcessMapState::PeMap(state) => {
+                if let Some(caps) = PE_MAP_SECTION_DEF.captures(&line) {
+                    // Track which segments are CODE so we can set symbol kind later
+                    let seg = u16::from_str_radix(&caps["seg"], 16)?;
+                    let is_code = caps["class"].trim() == "CODE";
+                    state.segment_is_code.entry(seg).or_insert(is_code);
+                } else if PE_SYMBOL_HEADER.is_match(&line) {
+                    state.in_symbols = true;
+                } else if PE_STATIC_SYMBOLS.is_match(&line) {
+                    state.is_static = true;
+                } else if state.in_symbols {
+                    if let Some(caps) = PE_MAP_SYMBOL.captures(&line) {
+                        let seg = u16::from_str_radix(&caps["seg"], 16)?;
+                        let source = caps["source"].trim().to_string();
+                        // Skip absolute symbols (seg 0000) and linker-inserted ones
+                        if seg == 0 || source == "<absolute>" || source == "<linker-defined>" {
+                            return Ok(());
+                        }
+                        let addr = u64::from_str_radix(&caps["addr"], 16)? as u32;
+                        let name = caps["name"].to_string();
+                        let is_function =
+                            state.segment_is_code.get(&seg).copied().unwrap_or(false);
+                        let demangled = demangle(&name, &DemangleOptions::default());
+                        let is_static = state.is_static;
+                        self.result.pe_symbols.push(PeMapSymbol {
+                            name,
+                            demangled,
+                            address: addr,
+                            unit: source,
+                            is_function,
+                            is_static,
+                        });
+                    }
+                    // else: other lines in symbol section (entry point, unknown) — ignore
+                }
+                // else: non-symbol-section lines (section defs already handled) — ignore
             }
             ProcessMapState::LinkMap(state) => {
                 if let Some(captures) = LINK_MAP_ENTRY.captures(&line) {
@@ -739,7 +815,99 @@ fn normalize_section_name(name: &str) -> &str {
     }
 }
 
+/// Returns true for auto-generated symbol names that appear in PE map files but are not
+/// real function names (jump table entries, constructor markers, dtk auto-labels, etc.)
+fn is_pe_map_autogenerated(name: &str) -> bool {
+    name.starts_with("_jmp_addr_")
+        || name.starts_with("_globl_ct_")
+        || name.starts_with("fn_")
+        || name.starts_with("lbl_")
+        || name.starts_with(".Lbl_")
+        || name.starts_with("pad_")
+        || name.starts_with("gap_")
+}
+
+fn apply_pe_map_symbols(pe_symbols: &[PeMapSymbol], obj: &mut ObjInfo) -> Result<()> {
+    // Build a section index lookup from VA range.
+    // Use data.len() (file-backed size) rather than virtual size so BSS symbols
+    // at addresses beyond file data don't get placed in the wrong section.
+    let section_ranges: Vec<(SectionIndex, u64, u64, ObjSectionKind)> = obj
+        .sections
+        .iter()
+        .map(|(idx, s)| {
+            // Clamp the effective end to the file-backed data region to avoid BSS overlap
+            let file_end = s.address + s.data.len() as u64;
+            let end = if s.kind == ObjSectionKind::Bss { s.address + s.size } else { file_end };
+            (idx, s.address, end, s.kind)
+        })
+        .collect();
+
+    let find_section = |addr: u32| -> Option<(SectionIndex, ObjSectionKind)> {
+        section_ranges
+            .iter()
+            .find(|(_, start, end, _)| addr as u64 >= *start && (addr as u64) < *end)
+            .map(|(idx, _, _, kind)| (*idx, *kind))
+    };
+
+    // Add public symbols only. Static symbols in PE maps are typically auto-generated
+    // assembly labels (e.g. .Lbl_addr_*, _jmp_addr_*) that add no useful information.
+    let mut renamed = 0usize;
+    let mut skipped = 0usize;
+    for pe_sym in pe_symbols {
+        if pe_sym.is_static || is_pe_map_autogenerated(&pe_sym.name) {
+            continue;
+        }
+        let Some((section_index, section_kind)) = find_section(pe_sym.address) else {
+            skipped += 1;
+            continue;
+        };
+        // Only handle function symbols: rename existing functions with their real names.
+        // Data symbols (vtables, statics, etc.) are skipped — they can overlap with
+        // already-sized symbols like vtables detected via RTTI.
+        if !pe_sym.is_function || section_kind != ObjSectionKind::Code {
+            continue;
+        }
+        // Only rename an *existing* function — never create a new split boundary.
+        // Creating new function starts conflicts with sizes established by x86 analysis.
+        let has_existing = obj
+            .symbols
+            .at_section_address(section_index, pe_sym.address)
+            .any(|(_, s)| s.kind == ObjSymbolKind::Function);
+        if !has_existing {
+            continue;
+        }
+        let kind = SymbolKind::Function;
+        let entry = SymbolEntry {
+            name: pe_sym.name.clone(),
+            demangled: pe_sym.demangled.clone(),
+            kind,
+            visibility: SymbolVisibility::Global,
+            unit: Some(pe_sym.unit.clone()),
+            address: pe_sym.address,
+            size: 0,
+            align: None,
+            unused: false,
+        };
+        add_symbol(obj, &entry, Some(section_index), true)?;
+        renamed += 1;
+    }
+    if renamed > 0 || skipped > 0 {
+        log::debug!("PE map: renamed {renamed} existing functions, skipped {skipped} (no matching section)");
+    }
+    // Note: splits are intentionally NOT generated from PE map symbols.
+    // Split boundaries come from splits.txt and x86 analysis; the PE map
+    // only provides symbol names at already-known addresses.
+    Ok(())
+}
+
 pub fn apply_map(mut result: MapInfo, obj: &mut ObjInfo) -> Result<()> {
+    // PE map files are handled separately: symbols are matched by absolute VA.
+    // Skip the Metrowerks-style section matching entirely for PE maps.
+    if !result.pe_symbols.is_empty() {
+        apply_pe_map_symbols(&result.pe_symbols, obj)?;
+        return Ok(());
+    }
+
     if result.sections.is_empty() && obj.kind == ObjKind::Executable {
         log::warn!("Memory map section missing, attempting to recreate");
         for (section_name, symbol_map) in &result.section_symbols {
