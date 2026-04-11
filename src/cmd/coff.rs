@@ -35,7 +35,8 @@ use crate::{
         config::{apply_splits_file, apply_symbols_file, write_splits_file, write_symbols_file},
         dep::DepFile,
         file::{FileReadInfo, buf_writer, process_rsp, touch, verify_hash},
-        lcf::{generate_ldscript, obj_path_for_unit},
+        lcf::obj_path_for_unit,
+        rsp::{PeHeaderInfo, generate_link_rsp},
         signatures::{
             FunctionSignature, compare_signature, generate_all_signatures_x86,
             generate_signature_x86,
@@ -229,6 +230,7 @@ fn signatures(args: SignaturesArgs) -> Result<()> {
 struct ModuleState<'a> {
     obj: ObjInfo,
     size_data: Option<crate::analysis::x86::X86FunctionSizeData>,
+    pe_header: Option<PeHeaderInfo>,
     config: &'a ModuleConfig,
     symbols_cache: Option<FileReadInfo>,
     splits_cache: Option<FileReadInfo>,
@@ -238,27 +240,28 @@ struct ModuleState<'a> {
 fn load_coff_module(
     config: &ModuleConfig,
     object_base: &ObjectBase,
-) -> Result<(ObjInfo, Option<u32>, Utf8NativePathBuf)> {
+) -> Result<(ObjInfo, Option<u32>, Option<PeHeaderInfo>, Utf8NativePathBuf)> {
     let object_path = object_base.join(&config.object);
     log::debug!("Loading {}", object_path);
-    let (obj, image_base) = {
+    let (obj, image_base, pe_header) = {
         let mut file = object_base.open(&config.object)?;
         let data = file.map()?;
         if let Some(hash_str) = &config.hash {
             verify_hash(data, hash_str)?;
         }
+        let pe_header = PeHeaderInfo::parse(data);
         let (mut obj, image_base) = process_coff(data, config.name())?;
         detect_pe_symbols(&mut obj, data)?;
-        (obj, image_base)
+        (obj, image_base, pe_header)
     };
-    Ok((obj, image_base, object_path))
+    Ok((obj, image_base, pe_header, object_path))
 }
 
 fn load_analyze_coff(
     config: &ProjectConfig,
     object_base: &ObjectBase,
-) -> Result<(ObjInfo, crate::analysis::x86::X86FunctionSizeData, Vec<Utf8NativePathBuf>, Option<FileReadInfo>, Option<FileReadInfo>)> {
-    let (mut obj, image_base, object_path) = load_coff_module(&config.base, object_base)?;
+) -> Result<(ObjInfo, crate::analysis::x86::X86FunctionSizeData, Option<PeHeaderInfo>, Vec<Utf8NativePathBuf>, Option<FileReadInfo>, Option<FileReadInfo>)> {
+    let (mut obj, image_base, pe_header, object_path) = load_coff_module(&config.base, object_base)?;
     let mut dep = vec![object_path];
 
     info!("Loading and analyzing COFF/PE binary");
@@ -343,7 +346,7 @@ fn load_analyze_coff(
         );
     }
 
-    Ok((obj, size_data, dep, splits_cache, symbols_cache))
+    Ok((obj, size_data, pe_header, dep, splits_cache, symbols_cache))
 }
 
 fn write_if_changed(path: &Utf8NativePath, contents: &[u8]) -> Result<()> {
@@ -431,7 +434,7 @@ fn split_write_coff(
     let mut out_config = OutputModule {
         name: module_name,
         module_id: module.obj.module_id,
-        ldscript: out_dir.join("ldscript.lcf").with_unix_encoding(),
+        ldscript: out_dir.join("link.rsp").with_unix_encoding(),
         units: Vec::with_capacity(split_objs.len()),
         entry,
         extract: Vec::with_capacity(module.config.extract.len()),
@@ -471,26 +474,17 @@ fn split_write_coff(
         write_if_changed(&out_path, &out_obj)?;
     }
 
-    // Generate ldscript.lcf
-    let ldscript_template = if let Some(template_path) = &module.config.ldscript_template {
-        let template_path = template_path.with_encoding();
-        let template = fs::read_to_string(&template_path)
-            .with_context(|| format!("Failed to read linker script template '{template_path}'"))?;
-        module.dep.push(template_path);
-        Some(template)
-    } else {
-        None
-    };
-    let mut force_active = module.config.force_active.clone();
-    if let Some(entry_sym) = &out_config.entry {
-        if !force_active.contains(entry_sym) {
-            force_active.push(entry_sym.clone());
-        }
-    }
-    let ldscript_string =
-        generate_ldscript(&module.obj, ldscript_template.as_deref(), &force_active)?;
-    let ldscript_path = out_config.ldscript.with_encoding();
-    write_if_changed(&ldscript_path, ldscript_string.as_bytes())?;
+    // Generate link.rsp (MSVC/lld-link response file)
+    let force_includes = module.config.force_active.clone();
+    let obj_dir = out_config.ldscript.parent().unwrap().join("obj").with_unix_encoding();
+    let rsp_string = generate_link_rsp(
+        &module.obj,
+        module.pe_header.as_ref().unwrap_or(&PeHeaderInfo::default()),
+        &obj_dir,
+        &force_includes,
+    )?;
+    let rsp_path = out_config.ldscript.with_encoding();
+    write_if_changed(&rsp_path, rsp_string.as_bytes())?;
 
     Ok(out_config)
 }
@@ -531,7 +525,7 @@ fn split(args: SplitArgs) -> Result<()> {
     let mut dep = DepFile::new(out_config_path.clone());
 
     let start = Instant::now();
-    let (obj, size_data, obj_dep, splits_cache, symbols_cache) =
+    let (obj, size_data, pe_header, obj_dep, splits_cache, symbols_cache) =
         load_analyze_coff(&config, &object_base)
             .with_context(|| format!("While loading '{}'", config.base.file_name()))?;
     dep.extend(obj_dep);
@@ -557,6 +551,7 @@ fn split(args: SplitArgs) -> Result<()> {
     let mut module = ModuleState {
         obj,
         size_data: Some(size_data),
+        pe_header,
         config: &config.base,
         symbols_cache,
         splits_cache,
