@@ -138,7 +138,6 @@ impl ObjRelocations {
     pub fn new(relocations: Vec<(u32, ObjReloc)>) -> Result<Self, ExistingRelocationError> {
         let mut map = BTreeMap::new();
         for (address, reloc) in relocations {
-            let address = address & !3;
             match map.entry(address) {
                 btree_map::Entry::Vacant(e) => e.insert(reloc),
                 btree_map::Entry::Occupied(e) => {
@@ -152,7 +151,6 @@ impl ObjRelocations {
     pub fn len(&self) -> usize { self.relocations.len() }
 
     pub fn insert(&mut self, address: u32, reloc: ObjReloc) -> Result<(), ExistingRelocationError> {
-        let address = address & !3;
         match self.relocations.entry(address) {
             btree_map::Entry::Vacant(e) => e.insert(reloc),
             btree_map::Entry::Occupied(e) => {

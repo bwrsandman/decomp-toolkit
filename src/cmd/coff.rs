@@ -29,14 +29,14 @@ use crate::{
         },
         shasum::file_sha1_string,
     },
-    obj::{ObjInfo, ObjKind, ObjRelocKind, best_match_for_reloc},
+    obj::{ObjInfo, ObjKind, ObjRelocKind, ObjSymbolFlags, ObjSymbolKind, best_match_for_reloc},
     util::{
         coff::{apply_base_relocations, create_function_splits, process_coff, write_coff},
         config::{apply_splits_file, apply_symbols_file, write_splits_file, write_symbols_file},
         dep::DepFile,
         file::{FileReadInfo, buf_writer, process_rsp, touch, verify_hash},
         lcf::obj_path_for_unit,
-        rsp::{PeHeaderInfo, generate_link_rsp},
+        rsp::{PeHeaderInfo, generate_args_rsp, generate_objs_rsp},
         signatures::{
             FunctionSignature, compare_signature, generate_all_signatures_x86,
             generate_signature_x86,
@@ -390,6 +390,61 @@ fn split_write_coff(
     let sig_dir_buf: Option<Utf8NativePathBuf> = config.x86_signatures.as_ref().map(|p| p.with_encoding());
     apply_signatures_post_x86(&mut module.obj, sig_dir_buf.as_ref().map(|p| std::path::Path::new(p.as_str())))?;
 
+    // Deduplicate public symbol names before creating function splits.
+    // Two identical functions (e.g. CRT statics) or COMDAT-folded RTTI data
+    // can end up with the same public name at different addresses.  Keep the
+    // first occurrence and rename duplicates so each split object has unique
+    // public symbols.  Relocations use symbol indices, so the renamed symbol
+    // is still reachable from all callers.
+    //
+    // This must run BEFORE create_function_splits so that split units use the
+    // already-deduplicated names.  If it ran after, two split ranges would be
+    // assigned to the same unit (creating two .text sections in one object)
+    // and the renamed unit would be missing from the link order.
+    {
+        use std::collections::HashMap;
+        let mut name_to_addr: HashMap<String, u64> = HashMap::new();
+        let mut renames: Vec<(u32, String)> = Vec::new();
+        for (idx, sym) in module.obj.symbols.iter() {
+            match sym.kind {
+                ObjSymbolKind::Section => continue,
+                _ => {}
+            }
+            if sym.name.is_empty() {
+                continue;
+            }
+            if sym.flags.0.contains(ObjSymbolFlags::NoExport)
+                || sym.flags.0.contains(ObjSymbolFlags::Local)
+            {
+                continue;
+            }
+            match name_to_addr.entry(sym.name.clone()) {
+                std::collections::hash_map::Entry::Vacant(e) => {
+                    e.insert(sym.address);
+                }
+                std::collections::hash_map::Entry::Occupied(e) => {
+                    if *e.get() != sym.address {
+                        let prefix =
+                            if sym.kind == ObjSymbolKind::Object { "data" } else { "fn" };
+                        let generated = format!("{prefix}_{:#010x}", sym.address);
+                        log::warn!(
+                            "Duplicate {} name '{}' at {:#010X} (already at {:#010X}); \
+                             renaming to '{generated}'",
+                            prefix, sym.name, sym.address, e.get()
+                        );
+                        renames.push((idx, generated));
+                    }
+                }
+            }
+        }
+        for (idx, new_name) in renames {
+            let mut sym = module.obj.symbols[idx].clone();
+            sym.name = new_name;
+            sym.demangled_name = None;
+            module.obj.symbols.replace(idx, sym)?;
+        }
+    }
+
     // Convert Function-kind symbols into per-function splits (mirrors DOL Tracker behaviour)
     if !config.symbols_known {
         debug!("Creating function splits");
@@ -411,7 +466,8 @@ fn split_write_coff(
 
     debug!("Splitting {} objects", module.obj.link_order.len());
     let module_name = module.config.name().to_string();
-    let split_objs = split_obj(&module.obj, Some(module_name.as_str()), config.globalize_symbols)?;
+    let split_objs =
+        split_obj(&module.obj, Some(module_name.as_str()), config.globalize_symbols)?;
 
     debug!("Writing object files");
     DirBuilder::new()
@@ -434,7 +490,7 @@ fn split_write_coff(
     let mut out_config = OutputModule {
         name: module_name,
         module_id: module.obj.module_id,
-        ldscript: out_dir.join("link.rsp").with_unix_encoding(),
+        ldscript: out_dir.join("args.rsp").with_unix_encoding(),
         units: Vec::with_capacity(split_objs.len()),
         entry,
         extract: Vec::with_capacity(module.config.extract.len()),
@@ -474,17 +530,20 @@ fn split_write_coff(
         write_if_changed(&out_path, &out_obj)?;
     }
 
-    // Generate link.rsp (MSVC/lld-link response file)
+    // Generate args.rsp (flags) and objs.rsp (object file list)
     let force_includes = module.config.force_active.clone();
-    let obj_dir = out_config.ldscript.parent().unwrap().join("obj").with_unix_encoding();
-    let rsp_string = generate_link_rsp(
-        &module.obj,
-        module.pe_header.as_ref().unwrap_or(&PeHeaderInfo::default()),
-        &obj_dir,
-        &force_includes,
-    )?;
-    let rsp_path = out_config.ldscript.with_encoding();
-    write_if_changed(&rsp_path, rsp_string.as_bytes())?;
+    let out_dir_path = out_config.ldscript.parent().unwrap();
+    let obj_dir = out_dir_path.join("obj").with_unix_encoding();
+    let pe_default = PeHeaderInfo::default();
+    let pe = module.pe_header.as_ref().unwrap_or(&pe_default);
+
+    let args_string = generate_args_rsp(&module.obj, pe, &force_includes)?;
+    let args_path = out_config.ldscript.with_encoding();
+    write_if_changed(&args_path, args_string.as_bytes())?;
+
+    let objs_string = generate_objs_rsp(&module.obj, &obj_dir)?;
+    let objs_path = out_dir_path.join("objs.rsp").with_encoding();
+    write_if_changed(&objs_path, objs_string.as_bytes())?;
 
     Ok(out_config)
 }

@@ -250,9 +250,14 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
             || (export_all
                 && !sym.flags.0.contains(ObjSymbolFlags::NoExport)
                 && matches!(sym.kind, ObjSymbolKind::Function | ObjSymbolKind::Object));
+        // Label (Unknown) symbols with a defined section are code labels that
+        // may be referenced cross-object by DISP32 relocations.  Promote them
+        // to Linkage scope so lld can resolve the cross-object reference.
+        let is_defined_label =
+            sym.kind == ObjSymbolKind::Unknown && sym.section.is_some();
         let scope = if sym.flags.0.contains(ObjSymbolFlags::Weak) {
             SymbolScope::Linkage
-        } else if is_exported {
+        } else if is_exported || is_defined_label {
             SymbolScope::Linkage
         } else {
             SymbolScope::Compilation
@@ -261,7 +266,10 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
             ObjSymbolKind::Function => SymbolKind::Text,
             ObjSymbolKind::Object => SymbolKind::Data,
             ObjSymbolKind::Section => SymbolKind::Section,
-            ObjSymbolKind::Unknown => SymbolKind::Label,
+            // COFF does not support Label-class defined symbols; lld rejects
+            // them with "should not refer to special section 0".  Emit as Text
+            // (function) so they are accepted as code labels.
+            ObjSymbolKind::Unknown => SymbolKind::Text,
         };
         let sid = out.add_symbol(Symbol {
             name: sym.name.as_bytes().to_vec(),
@@ -309,10 +317,22 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
                 continue;
             }
             let sym_id = symbol_ids[reloc.target_symbol as usize];
+            // The object crate's coff_adjust_addend adds 4 to the addend for
+            // IMAGE_REL_I386_REL32, storing it as the implicit addend in the
+            // section data.  lld-link then computes sym_rva - P - 4 + A_implicit,
+            // so the net effect with our addend A is: sym_rva - P - 4 + (A + 4) =
+            // sym_rva - P + A.  For the CALL/JMP displacement to be correct
+            // (sym_rva - P - 4 + A) we must subtract 4 here so the crate writes
+            // A - 4 + 4 = A, and lld gets sym_rva - P - 4 + A. ✓
+            let coff_addend = if reloc.kind == ObjRelocKind::X86Rel32 {
+                reloc.addend - 4
+            } else {
+                reloc.addend
+            };
             out.add_relocation(sid, Relocation {
                 offset: offset as u64,
                 symbol: sym_id,
-                addend: reloc.addend,
+                addend: coff_addend,
                 flags: RelocationFlags::Generic { kind, encoding, size },
             })
             .with_context(|| {
@@ -423,6 +443,19 @@ pub fn create_function_splits(obj: &mut ObjInfo) -> Result<()> {
         .map(|(idx, _)| idx)
         .collect();
 
+    // Track which unit names are already in use (across all sections) to
+    // ensure each split gets a unique unit name.  A duplicate name (e.g. two
+    // LOCAL static functions with the same name) would cause split_obj to put
+    // both ranges into the same object file, producing two .text sections.
+    let mut unit_name_to_addr: std::collections::HashMap<String, u32> =
+        std::collections::HashMap::new();
+    // Pre-populate with splits already present (from splits.txt / user config).
+    for (_sec_idx, section) in obj.sections.iter() {
+        for (addr, split) in section.splits.iter() {
+            unit_name_to_addr.insert(split.unit.clone(), addr);
+        }
+    }
+
     let mut total = 0u32;
     for sec_idx in code_sections {
         let section_end = {
@@ -453,8 +486,33 @@ pub fn create_function_splits(obj: &mut ObjInfo) -> Result<()> {
                 .map(|(next_addr, _)| *next_addr)
                 .unwrap_or(section_end);
 
+            // Ensure unit name is unique.  Duplicate function names (e.g. a
+            // LOCAL static that appears twice due to COMDAT folding) would
+            // otherwise merge two disjoint address ranges into one object.
+            let unit = match unit_name_to_addr.entry(name.clone()) {
+                std::collections::hash_map::Entry::Vacant(e) => {
+                    e.insert(*addr);
+                    name.clone()
+                }
+                std::collections::hash_map::Entry::Occupied(e) if *e.get() == *addr => {
+                    // Same address — already handled (split exists check above
+                    // should have caught this, but be safe).
+                    name.clone()
+                }
+                std::collections::hash_map::Entry::Occupied(_) => {
+                    // Duplicate: generate an address-unique unit name.
+                    let generated = format!("fn_{:#010x}", addr);
+                    log::warn!(
+                        "Duplicate split unit name '{}' at {:#010X}; using '{}'",
+                        name, addr, generated
+                    );
+                    unit_name_to_addr.insert(generated.clone(), *addr);
+                    generated
+                }
+            };
+
             obj.sections[sec_idx].splits.push(*addr, ObjSplit {
-                unit: name.clone(),
+                unit,
                 end,
                 align: Some(1), // x86 functions have no guaranteed alignment
                 common: false,

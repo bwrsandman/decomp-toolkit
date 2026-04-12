@@ -270,51 +270,84 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
 
                     FlowControl::UnconditionalBranch => {
                         if instr.op0_kind() == OpKind::NearBranch32 {
-                            let operand_va = next_pc - 4;
-                            if coff_reloc_sites.contains(&(sec_idx, operand_va)) {
-                                // Unresolved external — don't follow.
-                                continue;
-                            }
                             let target = instr.near_branch32();
-                            if let Some((tgt_sec, _)) = find_code(target) {
-                                // Tail call if target already has a Function symbol or is
-                                // pending as one; otherwise treat as within-function JMP.
-                                let is_tail_call = pending.contains(&(tgt_sec, target))
-                                    || obj
-                                        .symbols
-                                        .kind_at_section_address(
+                            // Only 5-byte near JMPs (e9 XX XX XX XX) have a 4-byte
+                            // displacement field that needs a DISP32 relocation.
+                            // Short JMPs (eb XX, Jmp_rel8_32) have a 1-byte displacement
+                            // that is self-contained in the object data — no reloc needed.
+                            let is_near32 = instr.code() == Code::Jmp_rel32_32;
+                            if is_near32 {
+                                let operand_va = next_pc - 4;
+                                if coff_reloc_sites.contains(&(sec_idx, operand_va)) {
+                                    // Unresolved external — don't follow.
+                                    continue;
+                                }
+                                if let Some((tgt_sec, _)) = find_code(target) {
+                                    // Tail call if target already has a Function symbol or is
+                                    // pending as one; otherwise treat as within-function JMP.
+                                    let is_tail_call = pending.contains(&(tgt_sec, target))
+                                        || obj
+                                            .symbols
+                                            .kind_at_section_address(
+                                                tgt_sec,
+                                                target,
+                                                ObjSymbolKind::Function,
+                                            )?
+                                            .is_some();
+                                    if is_tail_call {
+                                        if obj
+                                            .symbols
+                                            .kind_at_section_address(
+                                                tgt_sec,
+                                                target,
+                                                ObjSymbolKind::Function,
+                                            )?
+                                            .is_none()
+                                        {
+                                            obj.symbols.add_direct(ObjSymbol {
+                                                name: format!("fn_{:08X}", target),
+                                                address: target as u64,
+                                                section: Some(tgt_sec),
+                                                kind: ObjSymbolKind::Function,
+                                                flags: ObjSymbolFlagSet(ObjSymbolFlags::none()),
+                                                ..Default::default()
+                                            })?;
+                                            fn_new_count += 1;
+                                        }
+                                        enqueue((tgt_sec, target), &mut pending);
+                                        add_rel32(
+                                            obj,
+                                            sec_idx,
+                                            operand_va,
                                             tgt_sec,
                                             target,
-                                            ObjSymbolKind::Function,
-                                        )?
-                                        .is_some();
-                                if is_tail_call {
-                                    if obj
-                                        .symbols
-                                        .kind_at_section_address(
-                                            tgt_sec,
-                                            target,
-                                            ObjSymbolKind::Function,
-                                        )?
-                                        .is_none()
-                                    {
-                                        obj.symbols.add_direct(ObjSymbol {
-                                            name: format!("fn_{:08X}", target),
-                                            address: target as u64,
-                                            section: Some(tgt_sec),
-                                            kind: ObjSymbolKind::Function,
-                                            flags: ObjSymbolFlagSet(ObjSymbolFlags::none()),
-                                            ..Default::default()
-                                        })?;
-                                        fn_new_count += 1;
+                                            &mut rel_count,
+                                        )?;
+                                    } else {
+                                        // Within-function jump — follow without relocation.
+                                        flow.push_back(target);
                                     }
-                                    enqueue((tgt_sec, target), &mut pending);
-                                    add_rel32(
-                                        obj, sec_idx, operand_va, tgt_sec, target, &mut rel_count,
-                                    )?;
-                                } else {
-                                    // Within-function jump — follow without relocation.
-                                    flow.push_back(target);
+                                }
+                            } else {
+                                // Short JMP (eb XX): no DISP32 reloc; still follow the
+                                // target to ensure reachable code is analyzed.
+                                if let Some((tgt_sec, _)) = find_code(target) {
+                                    let is_tail_call = pending.contains(&(tgt_sec, target))
+                                        || obj
+                                            .symbols
+                                            .kind_at_section_address(
+                                                tgt_sec,
+                                                target,
+                                                ObjSymbolKind::Function,
+                                            )?
+                                            .is_some();
+                                    if is_tail_call {
+                                        // Enqueue the function for analysis but do NOT add a
+                                        // DISP32 reloc — the 1-byte displacement is baked in.
+                                        enqueue((tgt_sec, target), &mut pending);
+                                    } else {
+                                        flow.push_back(target);
+                                    }
                                 }
                             }
                         }

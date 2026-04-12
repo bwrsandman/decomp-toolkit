@@ -161,6 +161,10 @@ fn detect_imports(obj: &mut ObjInfo, pe: &PeFile32, _data: &[u8]) -> Result<()> 
     let iat_map: std::collections::HashMap<u32, &str> =
         iat_symbols.iter().map(|(va, n)| (*va as u32, n.as_str())).collect();
 
+    // Pre-build a set of already-used symbol names so duplicate thunks don't collide.
+    let mut used_names: std::collections::HashSet<String> =
+        obj.symbols.iter().map(|(_, s)| s.name.clone()).collect();
+
     for (sec_idx, sec) in obj.sections.iter().filter(|(_, s)| s.kind == ObjSectionKind::Code) {
         let base = sec.address as u32;
         let d = &sec.data;
@@ -170,30 +174,39 @@ fn detect_imports(obj: &mut ObjInfo, pe: &PeFile32, _data: &[u8]) -> Result<()> 
                 let target = u32::from_le_bytes(d[i + 2..i + 6].try_into().unwrap());
                 if let Some(imp_name) = iat_map.get(&target) {
                     let thunk_va = base + i as u32;
+                    if obj.symbols.at_section_address(sec_idx, thunk_va).next().is_some() {
+                        i += 1;
+                        continue;
+                    }
                     // Derive thunk name: "__imp__SetWindowPos" → "_SetWindowPos"
                     // (strip double underscore, keep single)
-                    let thunk_name = imp_name
+                    let preferred = imp_name
                         .strip_prefix("__imp__")
                         .map(|n| format!("_{}", n))
                         .unwrap_or_else(|| imp_name.to_string());
-                    if obj
-                        .symbols
-                        .at_section_address(sec_idx, thunk_va)
-                        .next()
-                        .is_none()
-                    {
-                        obj.symbols.add_direct(ObjSymbol {
-                            name: thunk_name,
-                            address: thunk_va as u64,
-                            section: Some(sec_idx),
-                            size: 6,
-                            size_known: true,
-                            kind: ObjSymbolKind::Function,
-                            flags: ObjSymbolFlagSet(ObjSymbolFlags::none()),
-                            ..Default::default()
-                        })?;
-                        thunk_count += 1;
-                    }
+                    // If the preferred name is already taken (e.g. two thunks for the same
+                    // import), fall back to a generated name so there's no duplicate symbol.
+                    let thunk_name = if used_names.contains(&preferred) {
+                        log::warn!(
+                            "PE thunk {thunk_va:#010X}: name '{preferred}' already in use, \
+                             using generated name"
+                        );
+                        format!("fn_{thunk_va:#010x}")
+                    } else {
+                        preferred
+                    };
+                    used_names.insert(thunk_name.clone());
+                    obj.symbols.add_direct(ObjSymbol {
+                        name: thunk_name,
+                        address: thunk_va as u64,
+                        section: Some(sec_idx),
+                        size: 6,
+                        size_known: true,
+                        kind: ObjSymbolKind::Function,
+                        flags: ObjSymbolFlagSet(ObjSymbolFlags::none()),
+                        ..Default::default()
+                    })?;
+                    thunk_count += 1;
                 }
             }
             i += 1;
