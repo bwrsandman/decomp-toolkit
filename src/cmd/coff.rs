@@ -29,7 +29,10 @@ use crate::{
         },
         shasum::file_sha1_string,
     },
-    obj::{ObjInfo, ObjKind, ObjRelocKind, ObjSymbolFlags, ObjSymbolKind, best_match_for_reloc},
+    obj::{
+        ObjInfo, ObjKind, ObjRelocKind, ObjSymbol, ObjSymbolFlags, ObjSymbolKind, ObjSymbolScope,
+        SymbolIndex, best_match_for_reloc,
+    },
     util::{
         coff::{apply_base_relocations, create_function_splits, process_coff, write_coff},
         config::{apply_splits_file, apply_symbols_file, is_auto_symbol, write_splits_file, write_symbols_file},
@@ -59,6 +62,7 @@ pub struct Args {
 enum SubCommand {
     Split(SplitArgs),
     Diff(DiffArgs),
+    Apply(ApplyArgs),
     Sigs(SignaturesArgs),
     SigsLib(SigsLibArgs),
 }
@@ -91,6 +95,18 @@ pub struct SigsLibArgs {
     #[argp(option, short = 'o', from_str_fn(crate::util::path::native_path))]
     /// output directory for .yml signature files
     out_dir: Utf8NativePathBuf,
+}
+
+#[derive(FromArgs, PartialEq, Eq, Debug)]
+/// Applies updated symbols from a linked PE to the project configuration.
+#[argp(subcommand, name = "apply")]
+pub struct ApplyArgs {
+    #[argp(positional, from_str_fn(crate::util::path::native_path))]
+    /// input configuration file
+    config: Utf8NativePathBuf,
+    #[argp(positional, from_str_fn(crate::util::path::native_path))]
+    /// linked PE (.exe) to read symbols from
+    exe_file: Utf8NativePathBuf,
 }
 
 #[derive(FromArgs, PartialEq, Eq, Debug)]
@@ -127,6 +143,7 @@ pub fn run(args: Args) -> Result<()> {
     match args.command {
         SubCommand::Split(c_args) => split(c_args),
         SubCommand::Diff(c_args) => diff(c_args),
+        SubCommand::Apply(c_args) => apply(c_args),
         SubCommand::Sigs(c_args) => signatures(c_args),
         SubCommand::SigsLib(c_args) => sigs_lib(c_args),
     }
@@ -337,6 +354,170 @@ fn diff(args: DiffArgs) -> Result<()> {
         log::error!("{} mismatch(es) found", mismatches);
         std::process::exit(1);
     }
+    log::info!("OK");
+    Ok(())
+}
+
+fn apply(args: ApplyArgs) -> Result<()> {
+    log::info!("Loading {}", args.config);
+    let mut config_file = open_file(&args.config, true)?;
+    let config: ProjectConfig = serde_yaml::from_reader(config_file.as_mut())?;
+    let object_base = find_object_base(&config)?;
+
+    let (mut obj, image_base, _, _) = load_coff_module(&config.base, &object_base)?;
+    if let Some(base) = image_base {
+        apply_base_relocations(&mut obj, base)?;
+    }
+
+    let Some(symbols_path) = &config.base.symbols else {
+        bail!("No symbols file specified in config");
+    };
+    let symbols_path = symbols_path.with_encoding();
+    let Some(symbols_cache) = apply_symbols_file(&symbols_path, &mut obj)? else {
+        bail!("Symbols file '{}' does not exist", symbols_path);
+    };
+
+    log::info!("Loading {}", args.exe_file);
+    let linked_data =
+        fs::read(args.exe_file.with_encoding()).context("Failed to read linked PE")?;
+    let (linked_obj, _) = process_coff(&linked_data, "linked")?;
+
+    let mut replacements: Vec<(SymbolIndex, ObjSymbol)> = vec![];
+    for (orig_idx, orig_sym) in obj.symbols.iter() {
+        if orig_sym.section.is_none() {
+            continue;
+        }
+        if matches!(orig_sym.kind, ObjSymbolKind::Section) {
+            continue;
+        }
+
+        let Ok((linked_section_index, _)) =
+            linked_obj.sections.at_address(orig_sym.address as u32)
+        else {
+            log::warn!(
+                "Symbol {} (type {:?}, size {:#X}) at {:#010X}: no section in linked PE",
+                orig_sym.name,
+                orig_sym.kind,
+                orig_sym.size,
+                orig_sym.address
+            );
+            continue;
+        };
+
+        // Find by name first, then fall back to matching kind at same address.
+        let linked_sym = linked_obj
+            .symbols
+            .at_section_address(linked_section_index, orig_sym.address as u32)
+            .find(|(_, s)| s.name == orig_sym.name)
+            .or_else(|| {
+                linked_obj
+                    .symbols
+                    .at_section_address(linked_section_index, orig_sym.address as u32)
+                    .find(|(_, s)| s.kind == orig_sym.kind)
+            });
+
+        let Some((_, linked_sym)) = linked_sym else {
+            log::warn!(
+                "Symbol not in linked PE: {} (type {:?}, size {:#X}) at {:#010X}",
+                orig_sym.name,
+                orig_sym.kind,
+                orig_sym.size,
+                orig_sym.address
+            );
+            continue;
+        };
+
+        let mut updated = orig_sym.clone();
+        if linked_sym.name != orig_sym.name {
+            log::info!(
+                "Renaming {} → {} (type {:?}) at {:#010X}",
+                orig_sym.name,
+                linked_sym.name,
+                orig_sym.kind,
+                orig_sym.address
+            );
+            updated.name.clone_from(&linked_sym.name);
+        }
+        if linked_sym.size != orig_sym.size {
+            log::info!(
+                "Resizing {} (type {:?}) {:#X} → {:#X} at {:#010X}",
+                orig_sym.name,
+                orig_sym.kind,
+                orig_sym.size,
+                linked_sym.size,
+                orig_sym.address
+            );
+            updated.size = linked_sym.size;
+            updated.size_known = true;
+        }
+        let linked_scope = linked_sym.flags.scope();
+        if linked_scope != ObjSymbolScope::Unknown
+            && linked_scope != orig_sym.flags.scope()
+            // Don't promote an explicit Local to Global just because lld exported it
+            && !(linked_scope == ObjSymbolScope::Global
+                && orig_sym.flags.scope() == ObjSymbolScope::Local)
+        {
+            log::info!(
+                "Changing scope of {} (type {:?}) {:?} → {:?} at {:#010X}",
+                orig_sym.name,
+                orig_sym.kind,
+                orig_sym.flags.scope(),
+                linked_scope,
+                orig_sym.address
+            );
+            updated.flags.set_scope(linked_scope);
+        }
+        if updated != *orig_sym {
+            replacements.push((orig_idx, updated));
+        }
+    }
+
+    // Add symbols present in the linked PE but missing from the original.
+    for (_, linked_sym) in linked_obj.symbols.iter() {
+        if matches!(linked_sym.kind, ObjSymbolKind::Section | ObjSymbolKind::Unknown)
+            || is_auto_symbol(linked_sym)
+            || linked_sym.section.is_none()
+        {
+            continue;
+        }
+        let Ok((orig_section_index, _)) = obj.sections.at_address(linked_sym.address as u32)
+        else {
+            continue;
+        };
+        let already_present = obj
+            .symbols
+            .at_section_address(orig_section_index, linked_sym.address as u32)
+            .any(|(_, s)| s.name == linked_sym.name || s.kind == linked_sym.kind);
+        if !already_present {
+            log::info!(
+                "Adding {} (type {:?}, size {:#X}) at {:#010X}",
+                linked_sym.name,
+                linked_sym.kind,
+                linked_sym.size,
+                linked_sym.address
+            );
+            obj.symbols.add_direct(ObjSymbol {
+                name: linked_sym.name.clone(),
+                demangled_name: linked_sym.demangled_name.clone(),
+                address: linked_sym.address,
+                section: Some(orig_section_index),
+                size: linked_sym.size,
+                size_known: linked_sym.size_known,
+                flags: linked_sym.flags,
+                kind: linked_sym.kind,
+                align: linked_sym.align,
+                data_kind: linked_sym.data_kind,
+                name_hash: linked_sym.name_hash,
+                demangled_name_hash: linked_sym.demangled_name_hash,
+            })?;
+        }
+    }
+
+    for (idx, updated) in replacements {
+        obj.symbols.replace(idx, updated)?;
+    }
+
+    write_symbols_file(&symbols_path, &obj, Some(symbols_cache))?;
     log::info!("OK");
     Ok(())
 }
