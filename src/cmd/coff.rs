@@ -32,7 +32,7 @@ use crate::{
     obj::{ObjInfo, ObjKind, ObjRelocKind, ObjSymbolFlags, ObjSymbolKind, best_match_for_reloc},
     util::{
         coff::{apply_base_relocations, create_function_splits, process_coff, write_coff},
-        config::{apply_splits_file, apply_symbols_file, write_splits_file, write_symbols_file},
+        config::{apply_splits_file, apply_symbols_file, is_auto_symbol, write_splits_file, write_symbols_file},
         dep::DepFile,
         file::{FileReadInfo, buf_writer, process_rsp, touch, verify_hash},
         lcf::obj_path_for_unit,
@@ -58,6 +58,7 @@ pub struct Args {
 #[argp(subcommand)]
 enum SubCommand {
     Split(SplitArgs),
+    Diff(DiffArgs),
     Sigs(SignaturesArgs),
     SigsLib(SigsLibArgs),
 }
@@ -93,6 +94,18 @@ pub struct SigsLibArgs {
 }
 
 #[derive(FromArgs, PartialEq, Eq, Debug)]
+/// Diffs symbols in a linked PE against the original.
+#[argp(subcommand, name = "diff")]
+pub struct DiffArgs {
+    #[argp(positional, from_str_fn(crate::util::path::native_path))]
+    /// input configuration file
+    config: Utf8NativePathBuf,
+    #[argp(positional, from_str_fn(crate::util::path::native_path))]
+    /// linked PE (.exe) to compare against
+    exe_file: Utf8NativePathBuf,
+}
+
+#[derive(FromArgs, PartialEq, Eq, Debug)]
 /// Splits a COFF/PE binary into relocatable objects.
 #[argp(subcommand, name = "split")]
 pub struct SplitArgs {
@@ -113,6 +126,7 @@ pub struct SplitArgs {
 pub fn run(args: Args) -> Result<()> {
     match args.command {
         SubCommand::Split(c_args) => split(c_args),
+        SubCommand::Diff(c_args) => diff(c_args),
         SubCommand::Sigs(c_args) => signatures(c_args),
         SubCommand::SigsLib(c_args) => sigs_lib(c_args),
     }
@@ -224,6 +238,106 @@ fn signatures(args: SignaturesArgs) -> Result<()> {
     let mut out = buf_writer(&args.out_file)?;
     serde_yaml::to_writer(&mut out, &sigs)?;
     out.flush()?;
+    Ok(())
+}
+
+fn diff(args: DiffArgs) -> Result<()> {
+    log::info!("Loading {}", args.config);
+    let mut config_file = open_file(&args.config, true)?;
+    let config: ProjectConfig = serde_yaml::from_reader(config_file.as_mut())?;
+    let object_base = find_object_base(&config)?;
+
+    let (mut obj, image_base, _, _) = load_coff_module(&config.base, &object_base)?;
+    if let Some(base) = image_base {
+        apply_base_relocations(&mut obj, base)?;
+    }
+    if let Some(symbols_path) = &config.base.symbols {
+        apply_symbols_file(&symbols_path.with_encoding(), &mut obj)?;
+    }
+
+    log::info!("Loading {}", args.exe_file);
+    let linked_data =
+        fs::read(args.exe_file.with_encoding()).context("Failed to read linked PE")?;
+    let (linked_obj, _) = process_coff(&linked_data, "linked")?;
+
+    let mut mismatches = 0u32;
+
+    for (_, orig_sym) in obj.symbols.iter().filter(|(_, s)| {
+        s.size > 0
+            && s.section.is_some()
+            && !matches!(s.kind, ObjSymbolKind::Unknown | ObjSymbolKind::Section)
+            && !s.flags.is_stripped()
+            && !is_auto_symbol(s)
+    }) {
+        let orig_section_index = orig_sym.section.unwrap();
+        let orig_section = &obj.sections[orig_section_index];
+
+        // BSS has no raw data to compare
+        if orig_section.kind == crate::obj::ObjSectionKind::Bss {
+            continue;
+        }
+
+        let orig_start = orig_sym.address as u32;
+        let orig_end = orig_start + orig_sym.size as u32;
+        let orig_data = match orig_section.data_range(orig_start, orig_end) {
+            Ok(d) => d,
+            Err(_) => {
+                log::warn!(
+                    "Symbol {} at {:#010X} extends past section boundary, skipping",
+                    orig_sym.name,
+                    orig_sym.address
+                );
+                continue;
+            }
+        };
+
+        let Ok((linked_section_index, linked_section)) =
+            linked_obj.sections.at_address(orig_start)
+        else {
+            log::error!(
+                "Symbol {} (size {:#X}) at {:#010X}: no section in linked PE covers this address",
+                orig_sym.name,
+                orig_sym.size,
+                orig_sym.address
+            );
+            mismatches += 1;
+            continue;
+        };
+        let _ = linked_section_index;
+
+        let linked_data = match linked_section.data_range(orig_start, orig_end) {
+            Ok(d) => d,
+            Err(_) => {
+                log::error!(
+                    "Symbol {} (size {:#X}) at {:#010X}: extends past linked section boundary",
+                    orig_sym.name,
+                    orig_sym.size,
+                    orig_sym.address
+                );
+                mismatches += 1;
+                continue;
+            }
+        };
+
+        if orig_data != linked_data {
+            log::error!(
+                "Data mismatch for {} (type {:?}, size {:#X}) at {:#010X}",
+                orig_sym.name,
+                orig_sym.kind,
+                orig_sym.size,
+                orig_sym.address
+            );
+            log::error!("Original: {}", hex::encode_upper(orig_data));
+            log::error!("Linked:   {}", hex::encode_upper(linked_data));
+            mismatches += 1;
+        }
+    }
+
+    if mismatches > 0 {
+        log::error!("{} mismatch(es) found", mismatches);
+        std::process::exit(1);
+    }
+    log::info!("OK");
     Ok(())
 }
 
