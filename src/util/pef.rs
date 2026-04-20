@@ -524,15 +524,15 @@ pub fn process_pef(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
                 read_container(data, sh).context("Reading xdata container")?,
             ),
             PefSectionKind::PatternInitData => {
-                // TODO (P5): decompress pattern stream.  For now, allocate a
-                // zero buffer of the unpacked size so section indices stay
-                // stable and downstream analysis has correct extents.
-                log::warn!(
-                    "PEF section {pef_idx}: PatternInitData decompression not yet implemented; \
-                     using zero-filled placeholder ({} bytes)",
-                    sh.unpacked_size
-                );
-                (ObjSectionKind::Data, vec![0u8; sh.unpacked_size as usize])
+                let compressed = read_container(data, sh)
+                    .context("Reading pidata container")?;
+                let mut buf = decompress_pidata(&compressed, sh.unpacked_size as usize)
+                    .with_context(|| format!("Decompressing PEF pidata section {pef_idx}"))?;
+                // total_size > unpacked_size tail is zero-initialised BSS.
+                if sh.total_size as usize > buf.len() {
+                    buf.resize(sh.total_size as usize, 0);
+                }
+                (ObjSectionKind::Data, buf)
             }
             PefSectionKind::Loader => unreachable!(),
             PefSectionKind::Debug
@@ -798,6 +798,68 @@ pub fn process_pef(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
         info.reloc_section_count
     );
 
+    // Resolve TVector entry points to real code addresses.  A PEF TVector is
+    // two 32-bit words: (code_ptr, toc_ptr).  After relocations are applied,
+    // the section data at (mainSection, mainOffset) holds the resolved VAs.
+    // Emit `_start`/`_init_fn`/`_term_fn` function symbols at the code VAs and
+    // point `obj.entry` at the real start address.
+    let entry_triples = [
+        ("_start", info.main_section, info.main_offset),
+        ("_init_fn", info.init_section, info.init_offset),
+        ("_term_fn", info.term_section, info.term_offset),
+    ];
+    for (tag, sec, off) in entry_triples {
+        if sec < 0 {
+            continue;
+        }
+        let pef_idx = sec as usize;
+        let Some(tvec_obj_idx) = pef_to_obj.get(pef_idx).copied().flatten() else {
+            continue;
+        };
+        let code_va = {
+            let section = &obj.sections[tvec_obj_idx];
+            let off = off as usize;
+            if off + 4 > section.data.len() {
+                log::warn!("TVector {tag} offset {off:#X} past section end");
+                continue;
+            }
+            u32::from_be_bytes(*array_ref!(section.data, off, 4))
+        };
+        if code_va == 0 {
+            continue;
+        }
+        let Some((code_sec_idx, code_sec)) = obj
+            .sections
+            .iter()
+            .find(|(_, s)| {
+                s.kind == ObjSectionKind::Code
+                    && code_va as u64 >= s.address
+                    && (code_va as u64) < s.address + s.size
+            })
+        else {
+            log::warn!("TVector {tag} target {code_va:#X} not in any code section");
+            continue;
+        };
+        if tag == "_start" {
+            obj.entry = Some(code_va as u64);
+        }
+        log::info!(
+            "PEF {}: TVector {} → {:#010X} (section {})",
+            name, tag, code_va, code_sec.name
+        );
+        let _ = obj.symbols.add_direct(ObjSymbol {
+            name: tag.to_string(),
+            demangled_name: None,
+            address: code_va as u64,
+            section: Some(code_sec_idx),
+            size: 0,
+            size_known: false,
+            flags: ObjSymbolFlagSet(ObjSymbolFlags::Global | ObjSymbolFlags::Exported),
+            kind: ObjSymbolKind::Function,
+            ..Default::default()
+        });
+    }
+
     // PEF has no single ImageBase; each section carries its own default_address.
     Ok((obj, None))
 }
@@ -810,6 +872,133 @@ fn read_container(data: &[u8], sh: &PefSectionHeader) -> Result<Vec<u8>> {
         bail!("Section container extends past EOF");
     }
     Ok(data[sh.container_offset as usize..end].to_vec())
+}
+
+// -------------------- PatternInitData decompression --------------------
+//
+// A PatternInitData section's container is a stream of opcodes that expand to
+// `unpacked_size` bytes.  Each opcode byte encodes:
+//   bits 7..5: 3-bit opcode
+//   bits 4..0: 5-bit immediate count ("N").
+// If the 5-bit count is zero, the real count follows as a variable-length
+// unsigned integer (high bit = continuation, 7 bits per byte, big-endian).
+// Additional varints (customSize, repeatCount) follow for opcodes 3 and 4.
+//
+// Opcode semantics (see Apple PEFBinaryFormat.h, Ghidra SectionHeader.java):
+//   0 Zero:        emit N zero bytes
+//   1 BlockCopy:   copy N bytes from the stream
+//   2 RepeatedBlock:
+//        blockSize = N; repeat = varint + 1
+//        read blockSize bytes, emit them `repeat` times
+//   3 InterleaveRepeatBlockWithBlockCopy:
+//        commonSize = N; customSize = varint; repeat = varint
+//        read commonSize bytes (common), emit common,
+//        then `repeat` times: read customSize bytes, emit them, emit common
+//   4 InterleaveRepeatBlockWithZero:
+//        commonSize = N; customSize = varint; repeat = varint
+//        emit commonSize zeros,
+//        then `repeat` times: read customSize bytes, emit them, emit zeros
+/// Read one variable-length count from the pidata stream.  Advances `input`.
+fn unpack_next_value(input: &mut &[u8]) -> Result<u32> {
+    let mut result: u32 = 0;
+    loop {
+        let (&byte, rest) =
+            input.split_first().context("pidata stream truncated reading varint")?;
+        *input = rest;
+        result = result
+            .checked_shl(7)
+            .context("pidata varint overflow")?
+            | u32::from(byte & 0x7F);
+        if byte & 0x80 == 0 {
+            return Ok(result);
+        }
+    }
+}
+
+/// Expand a PEF PatternInitData container into its unpacked representation.
+pub fn decompress_pidata(compressed: &[u8], unpacked_size: usize) -> Result<Vec<u8>> {
+    let mut out: Vec<u8> = Vec::with_capacity(unpacked_size);
+    let mut input: &[u8] = compressed;
+    while let Some((&first, rest)) = input.split_first() {
+        input = rest;
+        let opcode = (first >> 5) & 0x07;
+        let mut count = u32::from(first & 0x1F);
+        if count == 0 {
+            count = unpack_next_value(&mut input)?;
+        }
+        match opcode {
+            0 => {
+                // Zero
+                out.resize(out.len() + count as usize, 0);
+            }
+            1 => {
+                // BlockCopy
+                let size = count as usize;
+                let (block, rest) = input
+                    .split_at_checked(size)
+                    .context("pidata BlockCopy past end of stream")?;
+                out.extend_from_slice(block);
+                input = rest;
+            }
+            2 => {
+                // RepeatedBlock: emit block (repeat+1) times
+                let block_size = count as usize;
+                let repeat = unpack_next_value(&mut input)?
+                    .checked_add(1)
+                    .context("pidata RepeatedBlock count overflow")?;
+                let (block, rest) = input
+                    .split_at_checked(block_size)
+                    .context("pidata RepeatedBlock past end of stream")?;
+                for _ in 0..repeat {
+                    out.extend_from_slice(block);
+                }
+                input = rest;
+            }
+            3 => {
+                // InterleaveRepeatBlockWithBlockCopy
+                let common_size = count as usize;
+                let custom_size = unpack_next_value(&mut input)? as usize;
+                let repeat = unpack_next_value(&mut input)? as usize;
+                let (common, mut rest) = input
+                    .split_at_checked(common_size)
+                    .context("pidata IRB/Copy common past end of stream")?;
+                out.extend_from_slice(common);
+                for _ in 0..repeat {
+                    let (custom, next) = rest
+                        .split_at_checked(custom_size)
+                        .context("pidata IRB/Copy custom past end of stream")?;
+                    out.extend_from_slice(custom);
+                    out.extend_from_slice(common);
+                    rest = next;
+                }
+                input = rest;
+            }
+            4 => {
+                // InterleaveRepeatBlockWithZero
+                let common_size = count as usize;
+                let custom_size = unpack_next_value(&mut input)? as usize;
+                let repeat = unpack_next_value(&mut input)? as usize;
+                out.resize(out.len() + common_size, 0);
+                for _ in 0..repeat {
+                    let (custom, next) = input
+                        .split_at_checked(custom_size)
+                        .context("pidata IRB/Zero custom past end of stream")?;
+                    out.extend_from_slice(custom);
+                    out.resize(out.len() + common_size, 0);
+                    input = next;
+                }
+            }
+            _ => bail!("Unknown PEF pidata opcode {opcode}"),
+        }
+    }
+    if out.len() != unpacked_size {
+        bail!(
+            "PEF pidata decompression size mismatch: got {}, expected {}",
+            out.len(),
+            unpacked_size
+        );
+    }
+    Ok(out)
 }
 
 /// Serialize an `ObjInfo` back into a PEF container.
