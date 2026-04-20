@@ -856,17 +856,38 @@ pub fn process_pef(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
             "PEF {}: TVector {} → {:#010X} (section {})",
             name, tag, code_va, code_sec.name
         );
-        let _ = obj.symbols.add_direct(ObjSymbol {
-            name: tag.to_string(),
-            demangled_name: None,
-            address: code_va as u64,
-            section: Some(code_sec_idx),
-            size: 0,
-            size_known: false,
-            flags: ObjSymbolFlagSet(ObjSymbolFlags::Global | ObjSymbolFlags::Exported),
-            kind: ObjSymbolKind::Function,
-            ..Default::default()
-        });
+        // Relocation application may have already synthesized a `lbl_<addr>`
+        // placeholder at `code_va` (TVectors are referenced from pidata before
+        // we classify them as code).  Rename it in place so CFA merges its
+        // discovered function size into this entry symbol rather than leaving
+        // a stale auto-label next to an un-sized `_start`.
+        let existing_lbl_idx = obj
+            .symbols
+            .at_section_address(code_sec_idx, code_va)
+            .find(|(_, s)| s.name == format!("lbl_{:08X}", code_va))
+            .map(|(i, _)| i);
+        if let Some(idx) = existing_lbl_idx {
+            let existing = obj.symbols[idx].clone();
+            obj.symbols.replace(idx, ObjSymbol {
+                name: tag.to_string(),
+                demangled_name: None,
+                kind: ObjSymbolKind::Function,
+                flags: ObjSymbolFlagSet(ObjSymbolFlags::Global | ObjSymbolFlags::Exported),
+                ..existing
+            })?;
+        } else {
+            let _ = obj.symbols.add_direct(ObjSymbol {
+                name: tag.to_string(),
+                demangled_name: None,
+                address: code_va as u64,
+                section: Some(code_sec_idx),
+                size: 0,
+                size_known: false,
+                flags: ObjSymbolFlagSet(ObjSymbolFlags::Global | ObjSymbolFlags::Exported),
+                kind: ObjSymbolKind::Function,
+                ..Default::default()
+            });
+        }
     }
 
     // PEF has no single ImageBase; each section carries its own default_address.
