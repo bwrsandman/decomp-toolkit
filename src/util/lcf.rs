@@ -97,10 +97,49 @@ pub fn generate_ldscript_partial(
     Ok(out)
 }
 
+/// Sanitize a unit name into a filesystem- and build-system-safe path component.
+/// Uses `_`-prefixed letter codes to encode characters that are special to ninja
+/// (treats `$` as a variable sigil; quotes paths with `@`, `~`, etc. in rsp files)
+/// or to shells (`?` glob wildcard). `_` is self-escaped as `__` to avoid collisions.
+fn sanitize_unit_name(unit: &str) -> String {
+    let mut out = String::with_capacity(unit.len() * 2);
+    for c in unit.chars() {
+        match c {
+            '_' => out.push_str("__"),
+            '$' => out.push_str("_d"),
+            '?' => out.push_str("_q"),
+            '@' => out.push_str("_a"),
+            c => out.push(c),
+        }
+    }
+    out
+}
+
+/// Truncate `stem` so that `stem + ext` fits within 255 bytes (Linux NAME_MAX).
+/// When truncation is needed, appends a 64-bit FNV-1a hash of the full stem so
+/// the result is unique even when two long names share the same prefix.
+fn fit_filename(stem: String, ext: &str) -> String {
+    const NAME_MAX: usize = 255;
+    if stem.len() + ext.len() <= NAME_MAX {
+        return stem;
+    }
+    // FNV-1a 64-bit of the full stem
+    let mut hash: u64 = 0xcbf29ce484222325;
+    for b in stem.bytes() {
+        hash ^= b as u64;
+        hash = hash.wrapping_mul(0x100000001b3);
+    }
+    let suffix = format!("_{hash:016x}");
+    let max_stem = NAME_MAX - ext.len() - suffix.len();
+    format!("{}{suffix}", &stem[..max_stem])
+}
+
 pub fn obj_path_for_unit(unit: &str) -> Utf8NativePathBuf {
-    Utf8UnixPath::new(unit).with_encoding().with_extension("o")
+    let stem = fit_filename(sanitize_unit_name(unit), ".o");
+    Utf8UnixPath::new(&stem).with_encoding().with_extension("o")
 }
 
 pub fn asm_path_for_unit(unit: &str) -> Utf8NativePathBuf {
-    Utf8UnixPath::new(unit).with_encoding().with_extension("s")
+    let stem = fit_filename(sanitize_unit_name(unit), ".s");
+    Utf8UnixPath::new(&stem).with_encoding().with_extension("s")
 }
