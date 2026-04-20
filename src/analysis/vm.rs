@@ -430,14 +430,13 @@ impl VM {
                         }
                     }
                     Opcode::Bclr => BranchTarget::Return,
-                    _ => {
-                        let value = ins.branch_dest(ins_addr.address).unwrap();
-                        if let Some(target) = section_address_for(obj, ins_addr, value) {
-                            BranchTarget::Address(target)
-                        } else {
-                            BranchTarget::Unknown
-                        }
-                    }
+                    _ => match ins.branch_dest(ins_addr.address) {
+                        Some(value) => match section_address_for(obj, ins_addr, value) {
+                            Some(target) => BranchTarget::Address(target),
+                            None => BranchTarget::Unknown,
+                        },
+                        None => BranchTarget::Unknown,
+                    },
                 };
 
                 // If branching with link, use function call semantics
