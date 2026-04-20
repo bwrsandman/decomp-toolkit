@@ -18,9 +18,9 @@
 //!   - Loader parse: imported libraries + imported symbols → extern ObjSymbols
 //!                   exported symbol hash table → defined ObjSymbols
 //!   - Entry points (main/init/term) → function ObjSymbols
+//!   - Relocation opcode VM → `ObjReloc`s (section-targeted + import-targeted)
 //!
 //! Not yet implemented (tracked in TODO.md):
-//!   - Relocation opcode VM (`apply_pef_relocations` is a no-op)
 //!   - CodeWarrior traceback table scan for in-code function names / sizes
 //!   - PatternInitData decompression
 //!   - PEF writer (`write_pef`) for relink step
@@ -29,11 +29,12 @@ use anyhow::{Context, Result, bail};
 use cwdemangle::demangle;
 
 use crate::{
+    analysis::cfa::SectionAddress,
     array_ref,
     obj::{
-        ObjArchitecture, ObjInfo, ObjKind, ObjSection, ObjSectionKind, ObjSymbol,
-        ObjSymbolFlagSet, ObjSymbolFlags, ObjSymbolKind,
-        SectionIndex as ObjSectionIndex,
+        ObjArchitecture, ObjInfo, ObjKind, ObjReloc, ObjRelocKind, ObjSection, ObjSectionKind,
+        ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags, ObjSymbolKind,
+        SectionIndex as ObjSectionIndex, SymbolIndex,
     },
 };
 
@@ -47,6 +48,7 @@ pub const PEF_SECTION_HEADER_SIZE: usize = 28;
 pub const PEF_LOADER_INFO_HEADER_SIZE: usize = 56;
 pub const PEF_IMPORTED_LIBRARY_SIZE: usize = 24;
 pub const PEF_EXPORTED_SYMBOL_SIZE: usize = 10;
+pub const PEF_LOADER_RELOC_HEADER_SIZE: usize = 12;
 
 // PEF imported-symbol class codes (low nibble of class byte).
 pub const PEF_CLASS_CODE: u8 = 0;
@@ -324,6 +326,20 @@ pub struct PefExportedSymbol {
     pub section_index: i16,
 }
 
+/// PEF Loader Relocation Header (12 bytes).  One entry per relocated section.
+#[derive(Debug, Clone, Copy)]
+pub struct PefLoaderRelocationHeader {
+    /// PEF section index of the target section being fixed up.
+    pub section_index: u16,
+    pub reserved_a: u16,
+    /// Number of 16-bit relocation chunks (NOT individual instructions — some
+    /// instructions span two chunks).
+    pub reloc_count: u32,
+    /// Byte offset of the first relocation chunk, relative to
+    /// `reloc_instr_offset` in the loader info header.
+    pub first_reloc_offset: u32,
+}
+
 /// Resolve a NUL-terminated C string anchored at `abs` inside `data`.
 fn read_c_string(data: &[u8], abs: usize) -> Result<&str> {
     if abs > data.len() {
@@ -456,9 +472,10 @@ pub fn parse_loader_section(
 /// Parse a PEF binary into an `ObjInfo`.
 ///
 /// Converts instantiated sections (Code / UnpackedData / ConstantData /
-/// PatternInitData) into `ObjSection`s, then parses the Loader section to
-/// populate external and exported `ObjSymbols`.  Relocations are filled in
-/// later by `apply_pef_relocations` (P3).
+/// PatternInitData) into `ObjSection`s, parses the Loader section to populate
+/// external and exported `ObjSymbols`, then walks the relocation opcode
+/// stream to emit `ObjReloc`s and materialize fully-resolved VAs in section
+/// data.
 pub fn process_pef(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
     let container = PefContainer::parse(data)?;
 
@@ -564,6 +581,11 @@ pub fn process_pef(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
 
     // Build ObjSymbols.
     let mut symbols: Vec<ObjSymbol> = Vec::new();
+    // Track the obj symbol index assigned to each imported symbol.  The
+    // relocation VM references imports by pef import index, so we need to
+    // translate back to ObjSymbol indices when emitting ObjRelocs.
+    let mut import_sym_indices: Vec<SymbolIndex> =
+        Vec::with_capacity(imported_symbols.len());
 
     // Imported symbols become extern (section = None).  Prefix weak imports
     // with the library name so same-name symbols from different libs don't
@@ -578,6 +600,7 @@ pub fn process_pef(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
             flags.set_scope(crate::obj::ObjSymbolScope::Weak);
         }
         let demangled = demangle(&imp.name, &Default::default());
+        let idx = symbols.len() as SymbolIndex;
         symbols.push(ObjSymbol {
             name: imp.name.clone(),
             demangled_name: demangled,
@@ -589,6 +612,7 @@ pub fn process_pef(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
             kind: pef_class_to_symbol_kind(imp.symbol_class),
             ..Default::default()
         });
+        import_sym_indices.push(idx);
         log::trace!("import {:>2}:{} {} ({})", imp.library_index, imp.name, lib_name, imp.symbol_class);
     }
 
@@ -694,6 +718,44 @@ pub fn process_pef(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
         sections,
     );
     obj.entry = entry;
+
+    // Precompute pef_idx → default_address map for the reloc VM.
+    let pef_section_default_addr: Vec<u32> =
+        container.sections.iter().map(|sh| sh.default_address).collect();
+    // Pick default sectionC / sectionD: first Code section index for C,
+    // first UnpackedData section for D.  PEFBinaryFormat.h states the VM
+    // defaults are sections 0 and 1, which matches this convention for
+    // normal CodeWarrior PEF layouts.
+    let default_section_c = container
+        .sections
+        .iter()
+        .position(|sh| matches!(sh.kind(), Some(PefSectionKind::Code)))
+        .unwrap_or(0);
+    let default_section_d = container
+        .sections
+        .iter()
+        .position(|sh| matches!(sh.kind(), Some(PefSectionKind::UnpackedData)))
+        .unwrap_or(1);
+
+    let reloc_count = apply_pef_relocations(
+        &mut obj,
+        loader,
+        &info,
+        libraries.len(),
+        &pef_to_obj,
+        &pef_section_default_addr,
+        &import_sym_indices,
+        default_section_c,
+        default_section_d,
+    )
+    .context("Applying PEF relocations")?;
+    log::info!(
+        "PEF {}: {} relocations applied across {} target sections",
+        name,
+        reloc_count,
+        info.reloc_section_count
+    );
+
     // PEF has no single ImageBase; each section carries its own default_address.
     Ok((obj, None))
 }
@@ -717,7 +779,692 @@ pub fn write_pef(_obj: &ObjInfo) -> Result<Vec<u8>> {
     bail!("PEF writer not yet implemented")
 }
 
-/// Reconstruct absolute + relative relocations from the Loader section's
-/// relocation opcode stream.  Mirrors `apply_base_relocations` for PE.
-/// Not yet implemented (P3).
-pub fn apply_pef_relocations(_obj: &mut ObjInfo) -> Result<()> { Ok(()) }
+/// Parse the PEF loader relocation header table.  The table lives immediately
+/// after the imported symbol table inside the loader section.
+pub fn parse_reloc_headers(
+    loader: &[u8],
+    info: &PefLoaderInfoHeader,
+    library_count: usize,
+) -> Result<Vec<PefLoaderRelocationHeader>> {
+    let base = PEF_LOADER_INFO_HEADER_SIZE
+        + library_count * PEF_IMPORTED_LIBRARY_SIZE
+        + info.total_imported_symbol_count as usize * 4;
+    let count = info.reloc_section_count as usize;
+    let end = base + count * PEF_LOADER_RELOC_HEADER_SIZE;
+    if end > loader.len() {
+        bail!("Reloc header table extends past loader section end");
+    }
+    let mut out = Vec::with_capacity(count);
+    for i in 0..count {
+        let off = base + i * PEF_LOADER_RELOC_HEADER_SIZE;
+        let entry = &loader[off..off + PEF_LOADER_RELOC_HEADER_SIZE];
+        out.push(PefLoaderRelocationHeader {
+            section_index: u16::from_be_bytes(*array_ref!(entry, 0, 2)),
+            reserved_a: u16::from_be_bytes(*array_ref!(entry, 2, 2)),
+            reloc_count: u32::from_be_bytes(*array_ref!(entry, 4, 4)),
+            first_reloc_offset: u32::from_be_bytes(*array_ref!(entry, 8, 4)),
+        });
+    }
+    Ok(out)
+}
+
+// -------------------- Relocation opcode constants --------------------
+//
+// Opcode groups identified by the top 7 bits of the 16-bit chunk.  See
+// Apple's PEFBinaryFormat.h / Mac OS Runtime Architectures ch. 11.
+
+// "DSKP": top 2 bits == 00.  0x00..=0x1F occupy the full 5-bit subrange
+// because only the top 2 bits (of the top 7) are significant.
+const OP7_DSKP_MIN: u16 = 0x00;
+const OP7_DSKP_MAX: u16 = 0x1F;
+// Run group: 010_0xxx
+const OP7_BY_SECT_C: u16 = 0x20;
+const OP7_BY_SECT_D: u16 = 0x21;
+const OP7_TVECTOR12: u16 = 0x22;
+const OP7_TVECTOR8: u16 = 0x23;
+const OP7_VTABLE8: u16 = 0x24;
+const OP7_IMPORT_RUN: u16 = 0x25;
+// SmIndex group: 011_00xx
+const OP7_SM_BY_IMPORT: u16 = 0x30;
+const OP7_SM_SET_SECT_C: u16 = 0x31;
+const OP7_SM_SET_SECT_D: u16 = 0x32;
+const OP7_SM_BY_SECTION: u16 = 0x33;
+// IncrPosition: 100_0xxx (0x40..=0x47)
+const OP7_INCR_POS_MIN: u16 = 0x40;
+const OP7_INCR_POS_MAX: u16 = 0x47;
+// SmRepeat: 100_1xxx (0x48..=0x4F)
+const OP7_SM_REPEAT_MIN: u16 = 0x48;
+const OP7_SM_REPEAT_MAX: u16 = 0x4F;
+// SetPosition: 101_000x (0x50..=0x51) — 2-chunk
+const OP7_SET_POS_MIN: u16 = 0x50;
+const OP7_SET_POS_MAX: u16 = 0x51;
+// LgByImport: 101_001x (0x52..=0x53) — 2-chunk
+const OP7_LG_BY_IMPORT_MIN: u16 = 0x52;
+const OP7_LG_BY_IMPORT_MAX: u16 = 0x53;
+// LgRepeat: 101_100x (0x58..=0x59) — 2-chunk
+const OP7_LG_REPEAT_MIN: u16 = 0x58;
+const OP7_LG_REPEAT_MAX: u16 = 0x59;
+// LgSetOrBySection: 101_101x (0x5A..=0x5B) — 2-chunk
+const OP7_LG_SET_OR_SECTION_MIN: u16 = 0x5A;
+const OP7_LG_SET_OR_SECTION_MAX: u16 = 0x5B;
+
+// LgSetOrBySection 4-bit subopcodes (bits [9:6] of the first chunk).
+const LG_SUBOP_BY_SECTION: u32 = 0x0;
+const LG_SUBOP_SET_SECT_C: u32 = 0x1;
+const LG_SUBOP_SET_SECT_D: u32 = 0x2;
+
+// Extract an `(offset, length)` bit-field from a 16-bit chunk, following the
+// PEFRelocField macro convention from PEFBinaryFormat.h.
+#[inline]
+fn rfield(chunk: u16, offset: u16, length: u16) -> u32 {
+    let shift = 16 - (offset + length);
+    ((chunk as u32) >> shift) & ((1u32 << length) - 1)
+}
+
+/// Pending fixup produced by the relocation VM, awaiting symbol resolution.
+#[derive(Debug, Clone, Copy)]
+enum PendingRelocTarget {
+    /// Target is an absolute VA in the PEF's default-address space.
+    Va(u32),
+    /// Target is an imported symbol with the given obj symbol index.
+    Import(SymbolIndex),
+}
+
+#[derive(Debug, Clone, Copy)]
+struct PendingFixup {
+    /// Byte offset into the target section where the 32-bit slot lives.
+    offset: u32,
+    target: PendingRelocTarget,
+    /// Value originally stored at the slot, pre-add.  For import fixups this
+    /// becomes the ObjReloc addend directly.
+    original_word: u32,
+}
+
+/// Apply all relocations described by a single loader-relocation header.
+///
+/// The VM maintains four pieces of state per section:
+///   * `reloc_addr` — current byte offset within the target section
+///   * `section_c` / `section_d` — default_address of the currently-selected
+///     code/data anchor section (changed by SetSectC / SetSectD)
+///   * `import_index` — next imported symbol to resolve
+///
+/// Each fixup reads the existing 32-bit word, computes the target (either an
+/// absolute VA = `stored + section_base` or an imported symbol with the
+/// stored word as addend), writes the resolved absolute VA back into the
+/// section (for VA targets) or leaves the stored word alone (for imports),
+/// and records a `PendingFixup` for later conversion to `ObjReloc`.
+fn execute_reloc_vm(
+    instr_stream: &[u8],
+    header: &PefLoaderRelocationHeader,
+    target_section: &mut [u8],
+    pef_section_default_addr: &[u32],
+    import_sym_indices: &[SymbolIndex],
+    default_section_c: usize,
+    default_section_d: usize,
+    pending: &mut Vec<PendingFixup>,
+) -> Result<()> {
+    let start = header.first_reloc_offset as usize;
+    let total_chunks = header.reloc_count as usize;
+    let total_bytes = total_chunks * 2;
+    if start + total_bytes > instr_stream.len() {
+        bail!(
+            "Reloc header for PEF section {} extends past instruction stream ({}+{} > {})",
+            header.section_index,
+            start,
+            total_bytes,
+            instr_stream.len()
+        );
+    }
+    let instrs = &instr_stream[start..start + total_bytes];
+
+    let initial_c = pef_section_default_addr.get(default_section_c).copied().unwrap_or(0);
+    let initial_d = pef_section_default_addr.get(default_section_d).copied().unwrap_or(0);
+    let mut reloc_addr: u32 = 0;
+    let mut section_c: u32 = initial_c;
+    let mut section_d: u32 = initial_d;
+    let mut import_index: u32 = 0;
+
+    // Inline helpers capturing the section buffer.  These mutate the
+    // in-memory section data to contain fully-resolved VAs and enqueue a
+    // pending ObjReloc.
+    macro_rules! read_word {
+        ($off:expr) => {{
+            let o = $off as usize;
+            if o + 4 > target_section.len() {
+                bail!(
+                    "Reloc at offset {:#x} past section end ({} bytes)",
+                    $off,
+                    target_section.len()
+                );
+            }
+            u32::from_be_bytes(*array_ref!(target_section, o, 4))
+        }};
+    }
+    macro_rules! write_word {
+        ($off:expr, $val:expr) => {{
+            let o = $off as usize;
+            target_section[o..o + 4].copy_from_slice(&($val as u32).to_be_bytes());
+        }};
+    }
+    macro_rules! fixup_va {
+        ($off:expr, $base:expr) => {{
+            let orig = read_word!($off);
+            let va = orig.wrapping_add($base);
+            write_word!($off, va);
+            pending.push(PendingFixup {
+                offset: $off,
+                target: PendingRelocTarget::Va(va),
+                original_word: orig,
+            });
+        }};
+    }
+    macro_rules! fixup_import {
+        ($off:expr, $idx:expr) => {{
+            let orig = read_word!($off);
+            let Some(&sym_idx) = import_sym_indices.get($idx as usize) else {
+                bail!(
+                    "Reloc references out-of-range import index {} (have {} imports)",
+                    $idx,
+                    import_sym_indices.len()
+                );
+            };
+            pending.push(PendingFixup {
+                offset: $off,
+                target: PendingRelocTarget::Import(sym_idx),
+                original_word: orig,
+            });
+        }};
+    }
+
+    // Cap total VM chunk executions to guard against pathological repeat
+    // loops in malformed input.  Legit PEFs run at most reloc_count chunks
+    // linearly — repeats multiply that, so use a generous 16x budget.
+    let budget = total_chunks.saturating_mul(16).max(1024);
+    let mut executed: usize = 0;
+
+    let mut ip: usize = 0;
+    while ip < total_chunks {
+        executed += 1;
+        if executed > budget {
+            bail!("PEF reloc VM exceeded execution budget ({} chunks)", budget);
+        }
+        let chunk = u16::from_be_bytes([instrs[ip * 2], instrs[ip * 2 + 1]]);
+        let op7 = chunk >> 9;
+
+        match op7 {
+            // RelocBySectDWithSkip(skip, count)
+            OP7_DSKP_MIN..=OP7_DSKP_MAX => {
+                let skip_count = rfield(chunk, 2, 8);
+                let reloc_count = rfield(chunk, 10, 6);
+                reloc_addr = reloc_addr.wrapping_add(skip_count.wrapping_mul(4));
+                for _ in 0..reloc_count {
+                    fixup_va!(reloc_addr, section_d);
+                    reloc_addr = reloc_addr.wrapping_add(4);
+                }
+                ip += 1;
+            }
+            // Run group: run-length encoded fixups.  Length field is
+            // stored-minus-1 so value N means N+1 iterations.
+            OP7_BY_SECT_C => {
+                let run = rfield(chunk, 7, 9) + 1;
+                for _ in 0..run {
+                    fixup_va!(reloc_addr, section_c);
+                    reloc_addr = reloc_addr.wrapping_add(4);
+                }
+                ip += 1;
+            }
+            OP7_BY_SECT_D => {
+                let run = rfield(chunk, 7, 9) + 1;
+                for _ in 0..run {
+                    fixup_va!(reloc_addr, section_d);
+                    reloc_addr = reloc_addr.wrapping_add(4);
+                }
+                ip += 1;
+            }
+            OP7_TVECTOR12 => {
+                let run = rfield(chunk, 7, 9) + 1;
+                for _ in 0..run {
+                    fixup_va!(reloc_addr, section_c);
+                    fixup_va!(reloc_addr.wrapping_add(4), section_d);
+                    reloc_addr = reloc_addr.wrapping_add(12);
+                }
+                ip += 1;
+            }
+            OP7_TVECTOR8 => {
+                let run = rfield(chunk, 7, 9) + 1;
+                for _ in 0..run {
+                    fixup_va!(reloc_addr, section_c);
+                    fixup_va!(reloc_addr.wrapping_add(4), section_d);
+                    reloc_addr = reloc_addr.wrapping_add(8);
+                }
+                ip += 1;
+            }
+            OP7_VTABLE8 => {
+                let run = rfield(chunk, 7, 9) + 1;
+                for _ in 0..run {
+                    fixup_va!(reloc_addr, section_d);
+                    reloc_addr = reloc_addr.wrapping_add(8);
+                }
+                ip += 1;
+            }
+            OP7_IMPORT_RUN => {
+                let run = rfield(chunk, 7, 9) + 1;
+                for _ in 0..run {
+                    fixup_import!(reloc_addr, import_index);
+                    import_index = import_index.wrapping_add(1);
+                    reloc_addr = reloc_addr.wrapping_add(4);
+                }
+                ip += 1;
+            }
+            // SmIndex group
+            OP7_SM_BY_IMPORT => {
+                let index = rfield(chunk, 7, 9);
+                fixup_import!(reloc_addr, index);
+                import_index = index.wrapping_add(1);
+                reloc_addr = reloc_addr.wrapping_add(4);
+                ip += 1;
+            }
+            OP7_SM_SET_SECT_C => {
+                let index = rfield(chunk, 7, 9) as usize;
+                section_c = *pef_section_default_addr
+                    .get(index)
+                    .with_context(|| format!("SmSetSectC index {} out of range", index))?;
+                ip += 1;
+            }
+            OP7_SM_SET_SECT_D => {
+                let index = rfield(chunk, 7, 9) as usize;
+                section_d = *pef_section_default_addr
+                    .get(index)
+                    .with_context(|| format!("SmSetSectD index {} out of range", index))?;
+                ip += 1;
+            }
+            OP7_SM_BY_SECTION => {
+                let index = rfield(chunk, 7, 9) as usize;
+                let base = *pef_section_default_addr
+                    .get(index)
+                    .with_context(|| format!("SmBySection index {} out of range", index))?;
+                fixup_va!(reloc_addr, base);
+                reloc_addr = reloc_addr.wrapping_add(4);
+                ip += 1;
+            }
+            // IncrPosition: offset field is stored-minus-1.
+            OP7_INCR_POS_MIN..=OP7_INCR_POS_MAX => {
+                let off = rfield(chunk, 4, 12) + 1;
+                reloc_addr = reloc_addr.wrapping_add(off);
+                ip += 1;
+            }
+            // SmRepeat(chunkCount-1, repeatCount-1): re-execute the
+            // `chunkCount` chunks preceding this instruction `repeatCount`
+            // additional times.
+            OP7_SM_REPEAT_MIN..=OP7_SM_REPEAT_MAX => {
+                let chunk_count = rfield(chunk, 4, 4) + 1;
+                let repeat_count = rfield(chunk, 8, 8) + 1;
+                if chunk_count as usize > ip {
+                    bail!(
+                        "SmRepeat at chunk {} wants {} preceding chunks but only {} exist",
+                        ip,
+                        chunk_count,
+                        ip
+                    );
+                }
+                let back_ip = ip - chunk_count as usize;
+                // Execute the block repeat_count additional times.  Use a
+                // local budget to avoid a runaway nested-repeat situation;
+                // the outer `executed` counter also catches this.
+                for _ in 0..repeat_count {
+                    let mut sub_ip = back_ip;
+                    while sub_ip < ip {
+                        executed += 1;
+                        if executed > budget {
+                            bail!("PEF reloc VM exceeded execution budget during repeat");
+                        }
+                        let c =
+                            u16::from_be_bytes([instrs[sub_ip * 2], instrs[sub_ip * 2 + 1]]);
+                        // Re-dispatch a subset of opcodes (the ones that
+                        // commonly appear inside a repeat block).  Nested
+                        // repeats aren't used by real toolchains.
+                        let sub_op7 = c >> 9;
+                        match sub_op7 {
+                            OP7_DSKP_MIN..=OP7_DSKP_MAX => {
+                                let skip_count = rfield(c, 2, 8);
+                                let reloc_count = rfield(c, 10, 6);
+                                reloc_addr = reloc_addr.wrapping_add(skip_count.wrapping_mul(4));
+                                for _ in 0..reloc_count {
+                                    fixup_va!(reloc_addr, section_d);
+                                    reloc_addr = reloc_addr.wrapping_add(4);
+                                }
+                                sub_ip += 1;
+                            }
+                            OP7_BY_SECT_C => {
+                                let run = rfield(c, 7, 9) + 1;
+                                for _ in 0..run {
+                                    fixup_va!(reloc_addr, section_c);
+                                    reloc_addr = reloc_addr.wrapping_add(4);
+                                }
+                                sub_ip += 1;
+                            }
+                            OP7_BY_SECT_D => {
+                                let run = rfield(c, 7, 9) + 1;
+                                for _ in 0..run {
+                                    fixup_va!(reloc_addr, section_d);
+                                    reloc_addr = reloc_addr.wrapping_add(4);
+                                }
+                                sub_ip += 1;
+                            }
+                            OP7_TVECTOR12 => {
+                                let run = rfield(c, 7, 9) + 1;
+                                for _ in 0..run {
+                                    fixup_va!(reloc_addr, section_c);
+                                    fixup_va!(reloc_addr.wrapping_add(4), section_d);
+                                    reloc_addr = reloc_addr.wrapping_add(12);
+                                }
+                                sub_ip += 1;
+                            }
+                            OP7_TVECTOR8 => {
+                                let run = rfield(c, 7, 9) + 1;
+                                for _ in 0..run {
+                                    fixup_va!(reloc_addr, section_c);
+                                    fixup_va!(reloc_addr.wrapping_add(4), section_d);
+                                    reloc_addr = reloc_addr.wrapping_add(8);
+                                }
+                                sub_ip += 1;
+                            }
+                            OP7_VTABLE8 => {
+                                let run = rfield(c, 7, 9) + 1;
+                                for _ in 0..run {
+                                    fixup_va!(reloc_addr, section_d);
+                                    reloc_addr = reloc_addr.wrapping_add(8);
+                                }
+                                sub_ip += 1;
+                            }
+                            OP7_IMPORT_RUN => {
+                                let run = rfield(c, 7, 9) + 1;
+                                for _ in 0..run {
+                                    fixup_import!(reloc_addr, import_index);
+                                    import_index = import_index.wrapping_add(1);
+                                    reloc_addr = reloc_addr.wrapping_add(4);
+                                }
+                                sub_ip += 1;
+                            }
+                            OP7_INCR_POS_MIN..=OP7_INCR_POS_MAX => {
+                                let off = rfield(c, 4, 12) + 1;
+                                reloc_addr = reloc_addr.wrapping_add(off);
+                                sub_ip += 1;
+                            }
+                            other => bail!(
+                                "Unsupported opcode {:#x} inside SmRepeat block",
+                                other << 9
+                            ),
+                        }
+                    }
+                }
+                ip += 1;
+            }
+            // Two-chunk opcodes: consume the next chunk for the low 16 bits.
+            OP7_SET_POS_MIN..=OP7_SET_POS_MAX => {
+                if ip + 1 >= total_chunks {
+                    bail!("SetPosition truncated at end of stream");
+                }
+                let chunk2 =
+                    u16::from_be_bytes([instrs[(ip + 1) * 2], instrs[(ip + 1) * 2 + 1]]);
+                let full = (((chunk as u32) & 0x03FF) << 16) | (chunk2 as u32);
+                reloc_addr = full;
+                ip += 2;
+            }
+            OP7_LG_BY_IMPORT_MIN..=OP7_LG_BY_IMPORT_MAX => {
+                if ip + 1 >= total_chunks {
+                    bail!("LgByImport truncated at end of stream");
+                }
+                let chunk2 =
+                    u16::from_be_bytes([instrs[(ip + 1) * 2], instrs[(ip + 1) * 2 + 1]]);
+                let full = (((chunk as u32) & 0x03FF) << 16) | (chunk2 as u32);
+                fixup_import!(reloc_addr, full);
+                import_index = full.wrapping_add(1);
+                reloc_addr = reloc_addr.wrapping_add(4);
+                ip += 2;
+            }
+            OP7_LG_REPEAT_MIN..=OP7_LG_REPEAT_MAX => {
+                if ip + 1 >= total_chunks {
+                    bail!("LgRepeat truncated at end of stream");
+                }
+                let chunk2 =
+                    u16::from_be_bytes([instrs[(ip + 1) * 2], instrs[(ip + 1) * 2 + 1]]);
+                let chunk_count = rfield(chunk, 6, 4) + 1;
+                let repeat_count =
+                    (((chunk as u32) & 0x003F) << 16) | (chunk2 as u32);
+                if chunk_count as usize > ip {
+                    bail!(
+                        "LgRepeat at chunk {} wants {} preceding chunks but only {} exist",
+                        ip,
+                        chunk_count,
+                        ip
+                    );
+                }
+                let back_ip = ip - chunk_count as usize;
+                for _ in 0..repeat_count {
+                    let mut sub_ip = back_ip;
+                    while sub_ip < ip {
+                        executed += 1;
+                        if executed > budget {
+                            bail!("PEF reloc VM exceeded execution budget during Lg repeat");
+                        }
+                        let c = u16::from_be_bytes([
+                            instrs[sub_ip * 2],
+                            instrs[sub_ip * 2 + 1],
+                        ]);
+                        let sub_op7 = c >> 9;
+                        match sub_op7 {
+                            OP7_DSKP_MIN..=OP7_DSKP_MAX => {
+                                let skip_count = rfield(c, 2, 8);
+                                let reloc_count = rfield(c, 10, 6);
+                                reloc_addr =
+                                    reloc_addr.wrapping_add(skip_count.wrapping_mul(4));
+                                for _ in 0..reloc_count {
+                                    fixup_va!(reloc_addr, section_d);
+                                    reloc_addr = reloc_addr.wrapping_add(4);
+                                }
+                                sub_ip += 1;
+                            }
+                            OP7_BY_SECT_C => {
+                                let run = rfield(c, 7, 9) + 1;
+                                for _ in 0..run {
+                                    fixup_va!(reloc_addr, section_c);
+                                    reloc_addr = reloc_addr.wrapping_add(4);
+                                }
+                                sub_ip += 1;
+                            }
+                            OP7_BY_SECT_D => {
+                                let run = rfield(c, 7, 9) + 1;
+                                for _ in 0..run {
+                                    fixup_va!(reloc_addr, section_d);
+                                    reloc_addr = reloc_addr.wrapping_add(4);
+                                }
+                                sub_ip += 1;
+                            }
+                            OP7_TVECTOR12 => {
+                                let run = rfield(c, 7, 9) + 1;
+                                for _ in 0..run {
+                                    fixup_va!(reloc_addr, section_c);
+                                    fixup_va!(reloc_addr.wrapping_add(4), section_d);
+                                    reloc_addr = reloc_addr.wrapping_add(12);
+                                }
+                                sub_ip += 1;
+                            }
+                            OP7_TVECTOR8 => {
+                                let run = rfield(c, 7, 9) + 1;
+                                for _ in 0..run {
+                                    fixup_va!(reloc_addr, section_c);
+                                    fixup_va!(reloc_addr.wrapping_add(4), section_d);
+                                    reloc_addr = reloc_addr.wrapping_add(8);
+                                }
+                                sub_ip += 1;
+                            }
+                            OP7_VTABLE8 => {
+                                let run = rfield(c, 7, 9) + 1;
+                                for _ in 0..run {
+                                    fixup_va!(reloc_addr, section_d);
+                                    reloc_addr = reloc_addr.wrapping_add(8);
+                                }
+                                sub_ip += 1;
+                            }
+                            OP7_IMPORT_RUN => {
+                                let run = rfield(c, 7, 9) + 1;
+                                for _ in 0..run {
+                                    fixup_import!(reloc_addr, import_index);
+                                    import_index = import_index.wrapping_add(1);
+                                    reloc_addr = reloc_addr.wrapping_add(4);
+                                }
+                                sub_ip += 1;
+                            }
+                            OP7_INCR_POS_MIN..=OP7_INCR_POS_MAX => {
+                                let off = rfield(c, 4, 12) + 1;
+                                reloc_addr = reloc_addr.wrapping_add(off);
+                                sub_ip += 1;
+                            }
+                            other => bail!(
+                                "Unsupported opcode {:#x} inside LgRepeat block",
+                                other << 9
+                            ),
+                        }
+                    }
+                }
+                ip += 2;
+            }
+            OP7_LG_SET_OR_SECTION_MIN..=OP7_LG_SET_OR_SECTION_MAX => {
+                if ip + 1 >= total_chunks {
+                    bail!("LgSetOrBySection truncated at end of stream");
+                }
+                let chunk2 =
+                    u16::from_be_bytes([instrs[(ip + 1) * 2], instrs[(ip + 1) * 2 + 1]]);
+                let subop = rfield(chunk, 6, 4);
+                let index =
+                    ((((chunk as u32) & 0x003F) << 16) | (chunk2 as u32)) as usize;
+                let base = *pef_section_default_addr
+                    .get(index)
+                    .with_context(|| format!("LgSetOrBySection index {} out of range", index))?;
+                match subop {
+                    LG_SUBOP_BY_SECTION => {
+                        fixup_va!(reloc_addr, base);
+                        reloc_addr = reloc_addr.wrapping_add(4);
+                    }
+                    LG_SUBOP_SET_SECT_C => section_c = base,
+                    LG_SUBOP_SET_SECT_D => section_d = base,
+                    other => bail!("Unknown LgSetOrBySection subopcode {}", other),
+                }
+                ip += 2;
+            }
+            other => bail!("Unknown PEF reloc opcode {:#x}", other << 9),
+        }
+    }
+
+    Ok(())
+}
+
+/// Reconstruct absolute relocations from the Loader section's relocation
+/// opcode stream.  Walks the reloc header table, runs the VM once per
+/// target section, then converts pending VA/Import fixups into `ObjReloc`s
+/// resolved against the current symbol table.
+fn apply_pef_relocations(
+    obj: &mut ObjInfo,
+    loader: &[u8],
+    info: &PefLoaderInfoHeader,
+    library_count: usize,
+    pef_to_obj: &[Option<ObjSectionIndex>],
+    pef_section_default_addr: &[u32],
+    import_sym_indices: &[SymbolIndex],
+    default_section_c: usize,
+    default_section_d: usize,
+) -> Result<u32> {
+    let headers = parse_reloc_headers(loader, info, library_count)?;
+    let instr_base = info.reloc_instr_offset as usize;
+    if instr_base > loader.len() {
+        bail!("reloc_instr_offset past loader end");
+    }
+    let instr_stream = &loader[instr_base..];
+
+    let mut total_count: u32 = 0;
+    for header in &headers {
+        let pef_idx = header.section_index as usize;
+        let Some(obj_idx) = pef_to_obj.get(pef_idx).copied().flatten() else {
+            log::warn!(
+                "Reloc header targets non-instantiated PEF section {pef_idx}; skipping"
+            );
+            continue;
+        };
+        let target_base = pef_section_default_addr
+            .get(pef_idx)
+            .copied()
+            .unwrap_or(0);
+
+        // Run VM into a scratch buffer, borrowing the section data mutably
+        // just for the VM execution window.
+        let mut pending: Vec<PendingFixup> = Vec::new();
+        {
+            let section = &mut obj.sections[obj_idx];
+            execute_reloc_vm(
+                instr_stream,
+                header,
+                &mut section.data,
+                pef_section_default_addr,
+                import_sym_indices,
+                default_section_c,
+                default_section_d,
+                &mut pending,
+            )
+            .with_context(|| format!("Running PEF reloc VM for section {pef_idx}"))?;
+        }
+
+        // Resolve pending fixups to ObjRelocs.  For Va targets, look up
+        // (or synthesise) a symbol at the target address.
+        for fixup in pending {
+            let reloc_va = target_base.wrapping_add(fixup.offset);
+            let (target_symbol, addend) = match fixup.target {
+                PendingRelocTarget::Import(sym_idx) => {
+                    (sym_idx, fixup.original_word as i64)
+                }
+                PendingRelocTarget::Va(va) => {
+                    let (tgt_sec, _) = match obj.sections.at_address(va) {
+                        Ok(r) => r,
+                        Err(_) => {
+                            log::warn!(
+                                "Reloc at {:#x} targets unknown VA {:#x}; skipping",
+                                reloc_va,
+                                va
+                            );
+                            continue;
+                        }
+                    };
+                    let tgt = SectionAddress::new(tgt_sec, va);
+                    match obj.symbols.for_relocation(tgt, ObjRelocKind::Absolute)? {
+                        Some((sym_idx, sym)) => {
+                            (sym_idx, va as i64 - sym.address as i64)
+                        }
+                        None => {
+                            let sym_idx = obj.symbols.add_direct(ObjSymbol {
+                                name: format!("lbl_{:08X}", va),
+                                address: va as u64,
+                                section: Some(tgt_sec),
+                                ..Default::default()
+                            })?;
+                            (sym_idx, 0i64)
+                        }
+                    }
+                }
+            };
+            let section = &mut obj.sections[obj_idx];
+            if section
+                .relocations
+                .insert(reloc_va, ObjReloc {
+                    kind: ObjRelocKind::Absolute,
+                    target_symbol,
+                    addend,
+                    module: None,
+                })
+                .is_ok()
+            {
+                total_count += 1;
+            }
+        }
+    }
+    Ok(total_count)
+}
