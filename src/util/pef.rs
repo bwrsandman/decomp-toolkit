@@ -479,6 +479,15 @@ pub fn parse_loader_section(
 pub fn process_pef(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
     let container = PefContainer::parse(data)?;
 
+    // Compute a non-overlapping synthetic VA layout for the instantiated
+    // sections.  PEF files typically have every `default_address` set to 0
+    // (CFM assigns runtime bases), which would give every ObjSection the same
+    // base and break every VA→section lookup downstream.  We preserve any
+    // non-zero `default_address`es the PEF explicitly requests, then place
+    // remaining sections contiguously above 0x0100_0000 with per-section
+    // alignment honoured.
+    let section_bases = compute_pef_section_bases(&container.sections);
+
     // Map PEF physical section index → ObjSection index (or None if skipped).
     let mut pef_to_obj: Vec<Option<ObjSectionIndex>> = vec![None; container.sections.len()];
     let mut sections: Vec<ObjSection> = Vec::new();
@@ -552,7 +561,7 @@ pub fn process_pef(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
         sections.push(ObjSection {
             name: section_name,
             kind: obj_kind,
-            address: sh.default_address as u64,
+            address: section_bases[pef_idx] as u64,
             size: sh.total_size as u64,
             data: section_data,
             align,
@@ -761,9 +770,9 @@ pub fn process_pef(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
         name, tb_total, tb_skipped_dup
     );
 
-    // Precompute pef_idx → default_address map for the reloc VM.
-    let pef_section_default_addr: Vec<u32> =
-        container.sections.iter().map(|sh| sh.default_address).collect();
+    // Reloc VM must see the same synthetic bases we assigned to ObjSections
+    // so that emitted fixups reference consistent VAs.
+    let pef_section_default_addr: Vec<u32> = section_bases.clone();
     // Pick default sectionC / sectionD: first Code section index for C,
     // first UnpackedData section for D.  PEFBinaryFormat.h states the VM
     // defaults are sections 0 and 1, which matches this convention for
@@ -862,6 +871,70 @@ pub fn process_pef(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
 
     // PEF has no single ImageBase; each section carries its own default_address.
     Ok((obj, None))
+}
+
+/// Compute synthetic, non-overlapping VA bases for each PEF section.
+///
+/// If the PEF specifies non-zero `default_address`es that do not overlap, they
+/// are preserved verbatim.  Otherwise the instantiated, code/data-kind sections
+/// are laid out contiguously starting at `SYNTHETIC_BASE`, honouring each
+/// section's alignment and leaving a small gap between them.  Loader / Debug /
+/// Exception / Traceback sections and unknown-kind sections receive a base of
+/// 0 (they are skipped when building ObjSections and never participate in the
+/// synthetic layout).
+fn compute_pef_section_bases(sections: &[PefSectionHeader]) -> Vec<u32> {
+    const SYNTHETIC_BASE: u32 = 0x0100_0000;
+    const INTER_GAP: u32 = 0x0000_1000;
+
+    fn is_loadable(kind: Option<PefSectionKind>) -> bool {
+        matches!(
+            kind,
+            Some(PefSectionKind::Code)
+                | Some(PefSectionKind::UnpackedData)
+                | Some(PefSectionKind::PatternInitData)
+                | Some(PefSectionKind::ConstantData)
+                | Some(PefSectionKind::ExecutableData)
+        )
+    }
+
+    let mut bases: Vec<u32> = sections.iter().map(|sh| sh.default_address).collect();
+
+    // Detect overlap between loadable sections' explicit default_addresses.
+    let mut ranges: Vec<(u32, u32)> = Vec::new();
+    let mut any_zero = false;
+    let mut overlap = false;
+    for sh in sections.iter().filter(|sh| is_loadable(sh.kind())) {
+        if sh.default_address == 0 {
+            any_zero = true;
+        }
+        let end = sh.default_address.saturating_add(sh.total_size);
+        for &(rs, re) in &ranges {
+            if sh.default_address < re && end > rs {
+                overlap = true;
+                break;
+            }
+        }
+        ranges.push((sh.default_address, end));
+    }
+
+    if !overlap && !any_zero {
+        return bases;
+    }
+
+    let mut cur = SYNTHETIC_BASE;
+    for (idx, sh) in sections.iter().enumerate() {
+        if !is_loadable(sh.kind()) {
+            bases[idx] = 0;
+            continue;
+        }
+        let raw_align = if sh.alignment == 0 { 1u32 } else { 1u32 << sh.alignment };
+        // Enforce at least 16-byte alignment to keep addresses human-readable.
+        let align = raw_align.max(16);
+        cur = (cur + align - 1) & !(align - 1);
+        bases[idx] = cur;
+        cur = cur.saturating_add(sh.total_size).saturating_add(INTER_GAP);
+    }
+    bases
 }
 
 fn read_container(data: &[u8], sh: &PefSectionHeader) -> Result<Vec<u8>> {
@@ -1840,7 +1913,12 @@ fn apply_pef_relocations(
 
         // Resolve pending fixups to ObjRelocs.  For Va targets, look up
         // (or synthesise) a symbol at the target address.
+        let mut misaligned = 0u32;
         for fixup in pending {
+            if fixup.offset & 0x3 != 0 {
+                misaligned += 1;
+                continue;
+            }
             let reloc_va = target_base.wrapping_add(fixup.offset);
             let (target_symbol, addend) = match fixup.target {
                 PendingRelocTarget::Import(sym_idx) => {
@@ -1888,6 +1966,11 @@ fn apply_pef_relocations(
             {
                 total_count += 1;
             }
+        }
+        if misaligned > 0 {
+            log::warn!(
+                "PEF reloc section {pef_idx}: {misaligned} misaligned fixup(s) skipped"
+            );
         }
     }
     Ok(total_count)
