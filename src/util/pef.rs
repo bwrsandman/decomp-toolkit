@@ -719,6 +719,48 @@ pub fn process_pef(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
     );
     obj.entry = entry;
 
+    // Scan every Code section for CodeWarrior AIX-style traceback tables.
+    // These provide in-binary function names for stripped PEFs and must be
+    // added before relocation resolution so `for_relocation` can match
+    // Va-targeted fixups against function-entry symbols.
+    let code_section_indices: Vec<(ObjSectionIndex, u32)> = obj
+        .sections
+        .iter()
+        .filter(|(_, s)| s.kind == ObjSectionKind::Code)
+        .map(|(idx, s)| (idx, s.address as u32))
+        .collect();
+    let mut tb_total = 0u32;
+    let mut tb_skipped_dup = 0u32;
+    for (sec_idx, sec_addr) in code_section_indices {
+        let tb_entries = {
+            let section = &obj.sections[sec_idx];
+            scan_traceback_tables(&section.data)
+        };
+        for entry in tb_entries {
+            let va = sec_addr.wrapping_add(entry.func_offset);
+            let demangled = demangle(&entry.name, &Default::default());
+            let res = obj.symbols.add_direct(ObjSymbol {
+                name: entry.name.clone(),
+                demangled_name: demangled,
+                address: va as u64,
+                section: Some(sec_idx),
+                size: entry.func_size as u64,
+                size_known: entry.func_size > 0,
+                flags: ObjSymbolFlagSet(ObjSymbolFlags::Local.into()),
+                kind: ObjSymbolKind::Function,
+                ..Default::default()
+            });
+            match res {
+                Ok(_) => tb_total += 1,
+                Err(_) => tb_skipped_dup += 1,
+            }
+        }
+    }
+    log::info!(
+        "PEF {}: {} traceback-table symbols added ({} duplicates skipped)",
+        name, tb_total, tb_skipped_dup
+    );
+
     // Precompute pef_idx → default_address map for the reloc VM.
     let pef_section_default_addr: Vec<u32> =
         container.sections.iter().map(|sh| sh.default_address).collect();
@@ -1358,6 +1400,199 @@ fn execute_reloc_vm(
     }
 
     Ok(())
+}
+
+/// One parsed CodeWarrior / AIX-style PowerPC traceback table.
+#[derive(Debug, Clone)]
+pub struct PpcTracebackEntry {
+    /// Section-local byte offset of the first instruction of the function.
+    pub func_offset: u32,
+    /// Byte size of the function body (excludes the trailing zero word
+    /// and the traceback table itself).
+    pub func_size: u32,
+    /// Symbol name extracted from the traceback table's `name` field.
+    pub name: String,
+}
+
+// AIX traceback table flag masks (bit positions MSB-first per AIX spec).
+// Flags live in bytes 2..=5 of the first TB word.
+const TB_F1_HAS_TBOFF: u8 = 0x20;
+const TB_F1_HAS_CTL: u8 = 0x08;
+const TB_F2_INT_HNDL: u8 = 0x80;
+const TB_F2_NAME_PRESENT: u8 = 0x40;
+const TB_F2_USES_ALLOCA: u8 = 0x20;
+const TB_F4_HAS_VEC_INFO: u8 = 0x40;
+
+/// Known AIX `lang` byte values.  CodeWarrior typically emits 0 (C) or 9 (C++).
+const TB_MAX_LANG: u8 = 15;
+
+/// Try to parse a traceback table starting at `tb_start` (byte offset of the
+/// version byte).  Returns None if any validation check fails or optional
+/// fields overrun the buffer.  Only signals "looks like a valid TB" — the
+/// caller is responsible for deciding which entries to keep.
+fn try_parse_traceback(
+    section_data: &[u8],
+    zero_word_off: usize,
+) -> Option<PpcTracebackEntry> {
+    let tb_start = zero_word_off + 4;
+    if tb_start + 8 > section_data.len() {
+        return None;
+    }
+    let version = section_data[tb_start];
+    let lang = section_data[tb_start + 1];
+    let flags1 = section_data[tb_start + 2];
+    let flags2 = section_data[tb_start + 3];
+    let _flags3 = section_data[tb_start + 4];
+    let flags4 = section_data[tb_start + 5];
+    let fixedparms = section_data[tb_start + 6];
+    let floatparms_and_stk = section_data[tb_start + 7];
+    let floatparms = floatparms_and_stk >> 1;
+
+    if version != 0 {
+        return None;
+    }
+    if lang > TB_MAX_LANG {
+        return None;
+    }
+    // CodeWarrior PEF for classic Mac has no AltiVec.  If the vec-info bit is
+    // set, we've almost certainly matched a non-TB byte pattern.
+    if flags4 & TB_F4_HAS_VEC_INFO != 0 {
+        return None;
+    }
+
+    let has_tboff = flags1 & TB_F1_HAS_TBOFF != 0;
+    let has_ctl = flags1 & TB_F1_HAS_CTL != 0;
+    let int_hndl = flags2 & TB_F2_INT_HNDL != 0;
+    let name_present = flags2 & TB_F2_NAME_PRESENT != 0;
+    let uses_alloca = flags2 & TB_F2_USES_ALLOCA != 0;
+
+    // Both name and tb_offset are required to emit a useful symbol.  If
+    // either is missing, this TB doesn't help us and we skip it.
+    if !has_tboff || !name_present {
+        return None;
+    }
+
+    let mut p = tb_start + 8;
+
+    // parminfo: present if fixedparms > 0 OR floatparms > 0.
+    if fixedparms > 0 || floatparms > 0 {
+        if p + 4 > section_data.len() {
+            return None;
+        }
+        p += 4;
+    }
+
+    // tb_offset: distance from func start to TB start.
+    if p + 4 > section_data.len() {
+        return None;
+    }
+    let tb_offset = u32::from_be_bytes(*array_ref!(section_data, p, 4));
+    p += 4;
+
+    // Sanity: tb_offset must land inside the current section, at or below
+    // the TB.  We check against tb_start (the first byte of the TB).
+    let tb_start_u32 = tb_start as u32;
+    if tb_offset == 0 || tb_offset > tb_start_u32 {
+        return None;
+    }
+    let func_start_off = tb_start_u32 - tb_offset;
+    // The function body spans [func_start, zero_word_off).  Require
+    // at least one instruction.
+    if (func_start_off as usize) >= zero_word_off {
+        return None;
+    }
+
+    if int_hndl {
+        if p + 4 > section_data.len() {
+            return None;
+        }
+        p += 4; // hand_mask
+    }
+
+    if has_ctl {
+        if p + 4 > section_data.len() {
+            return None;
+        }
+        let ctl_info = u32::from_be_bytes(*array_ref!(section_data, p, 4));
+        p += 4;
+        // Each ctl_info_disp is a 4-byte word; cap at a sane bound so a
+        // corrupted byte pattern can't run us off the end.
+        if ctl_info > 1024 {
+            return None;
+        }
+        let ctl_bytes = (ctl_info as usize).checked_mul(4)?;
+        if p + ctl_bytes > section_data.len() {
+            return None;
+        }
+        p += ctl_bytes;
+    }
+
+    // name_len + name
+    if p + 2 > section_data.len() {
+        return None;
+    }
+    let name_len =
+        u16::from_be_bytes(*array_ref!(section_data, p, 2)) as usize;
+    p += 2;
+    if name_len == 0 || name_len > 1024 {
+        return None;
+    }
+    if p + name_len > section_data.len() {
+        return None;
+    }
+    let name_bytes = &section_data[p..p + name_len];
+    // Require printable ASCII (plus a few CW-allowed punctuation bytes).
+    if !name_bytes
+        .iter()
+        .all(|&b| (0x20..=0x7E).contains(&b))
+    {
+        return None;
+    }
+    let name = std::str::from_utf8(name_bytes).ok()?.to_string();
+    let _p_after_name = p + name_len;
+
+    // alloca_reg not used — only parse it for structural validation.
+    if uses_alloca {
+        if _p_after_name >= section_data.len() {
+            return None;
+        }
+    }
+
+    let func_size = zero_word_off as u32 - func_start_off;
+    Some(PpcTracebackEntry { func_offset: func_start_off, func_size, name })
+}
+
+/// Scan a PEF code section for CodeWarrior / AIX-style PowerPC traceback
+/// tables.  CodeWarrior embeds these after the `blr` of each function: a
+/// 4-byte zero word serves as a marker, then the traceback table contains
+/// the function name and a `tb_offset` pointing back to the function start.
+///
+/// This is the main source of function names in a stripped PEF — exports
+/// only cover symbols that other fragments link against.
+pub fn scan_traceback_tables(section_data: &[u8]) -> Vec<PpcTracebackEntry> {
+    let mut out = Vec::new();
+    let mut off: usize = 0;
+    while off + 12 <= section_data.len() {
+        // Only check 4-byte aligned offsets; CW aligns TBs to a word.
+        let word = u32::from_be_bytes(*array_ref!(section_data, off, 4));
+        if word != 0 {
+            off += 4;
+            continue;
+        }
+        match try_parse_traceback(section_data, off) {
+            Some(entry) => {
+                // Skip over the TB we just consumed to avoid accidentally
+                // re-matching its own trailing zero padding.
+                let skip_to = (entry.func_offset + entry.func_size) as usize + 4;
+                out.push(entry);
+                off = skip_to.max(off + 4);
+            }
+            None => {
+                off += 4;
+            }
+        }
+    }
+    out
 }
 
 /// Reconstruct absolute relocations from the Loader section's relocation
