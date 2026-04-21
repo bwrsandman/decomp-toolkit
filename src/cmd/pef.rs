@@ -65,6 +65,7 @@ enum SubCommand {
     Split(SplitArgs),
     Diff(DiffArgs),
     Apply(ApplyArgs),
+    Config(ConfigArgs),
 }
 
 #[derive(FromArgs, PartialEq, Eq, Debug)]
@@ -118,12 +119,25 @@ pub struct ApplyArgs {
     pef_file: Utf8NativePathBuf,
 }
 
+#[derive(FromArgs, PartialEq, Eq, Debug)]
+/// Generates a project configuration file from a PEF.
+#[argp(subcommand, name = "config")]
+pub struct ConfigArgs {
+    #[argp(positional, from_str_fn(crate::util::path::native_path))]
+    /// input PEF file
+    pef_file: Utf8NativePathBuf,
+    #[argp(option, short = 'o', from_str_fn(crate::util::path::native_path))]
+    /// output config YAML file
+    out_file: Utf8NativePathBuf,
+}
+
 pub fn run(args: Args) -> Result<()> {
     match args.command {
         SubCommand::Info(c_args) => info(c_args),
         SubCommand::Split(c_args) => split(c_args),
         SubCommand::Diff(c_args) => diff(c_args),
         SubCommand::Apply(c_args) => apply(c_args),
+        SubCommand::Config(c_args) => config(c_args),
     }
 }
 
@@ -805,6 +819,17 @@ fn apply(args: ApplyArgs) -> Result<()> {
 
     write_symbols_file(&symbols_path, &obj, Some(symbols_cache))?;
     log::info!("OK");
+    Ok(())
+}
+
+fn config(args: ConfigArgs) -> Result<()> {
+    let mut config = ProjectConfig::default();
+    let mut file = open_file(&args.pef_file, true)?;
+    config.base.object = args.pef_file.with_unix_encoding();
+    config.base.hash = Some(file_sha1_string(&mut file)?);
+    let mut out = buf_writer(&args.out_file)?;
+    serde_yaml::to_writer(&mut out, &config)?;
+    out.flush()?;
     Ok(())
 }
 
