@@ -58,7 +58,7 @@ nodtool = "1.4"
 num_enum = "0.7"
 objdiff-core = { version = "=2.2", features = ["ppc"] }
 #objdiff-core = { path = "../objdiff/objdiff-core", features = ["ppc"] }
-object = { version = "0.36", features = ["read_core", "std", "archive", "coff", "elf", "pe", "write_std"], default-features = false }
+object = { version = "0.36", features = ["read_core", "std", "archive", "coff", "elf", "pe", "xcoff", "write_std"], default-features = false }
 once_cell = "1.20"
 orthrus-ncompress = "0.2"
 owo-colors = { version = "4.1", features = ["supports-colors"] }

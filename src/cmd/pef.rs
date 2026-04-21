@@ -38,7 +38,7 @@ use crate::{
             write_symbols_file,
         },
         dep::DepFile,
-        elf::write_elf,
+        xcoff::write_xcoff,
         file::{FileReadInfo, buf_writer, touch, verify_hash},
         lcf::obj_path_for_unit,
         map::apply_map_file,
@@ -433,7 +433,7 @@ fn split_write_pef(
     // Serialize all split objects in parallel (CPU-bound), then write serially.
     let serialized: Vec<Result<Vec<u8>>> = split_objs
         .par_iter()
-        .map(|split_obj| write_elf(split_obj, config.export_all))
+        .map(|split_obj| write_xcoff(split_obj, config.export_all))
         .collect();
 
     let mut object_paths = BTreeMap::new();

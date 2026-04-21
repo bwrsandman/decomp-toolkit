@@ -32,6 +32,7 @@ pub mod take_seek;
 pub mod toposort;
 pub mod u8_arc;
 pub mod wad;
+pub mod xcoff;
 
 #[inline]
 pub const fn align_up(value: u32, align: u32) -> u32 { (value + (align - 1)) & !(align - 1) }
