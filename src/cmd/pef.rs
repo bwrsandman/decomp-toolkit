@@ -29,11 +29,13 @@ use crate::{
         shasum::file_sha1_string,
     },
     obj::{
-        ObjInfo, ObjKind, ObjRelocKind, ObjSymbolKind, best_match_for_reloc,
+        ObjInfo, ObjKind, ObjRelocKind, ObjSectionKind, ObjSymbol, ObjSymbolKind,
+        ObjSymbolScope, SymbolIndex, best_match_for_reloc,
     },
     util::{
         config::{
-            apply_splits_file, apply_symbols_file, write_splits_file, write_symbols_file,
+            apply_splits_file, apply_symbols_file, is_auto_symbol, write_splits_file,
+            write_symbols_file,
         },
         dep::DepFile,
         elf::write_elf,
@@ -551,28 +553,259 @@ fn split(args: SplitArgs) -> Result<()> {
     Ok(())
 }
 
-// -------------------- diff / apply (unimplemented stubs) --------------------
+// -------------------- diff / apply --------------------
 
 fn diff(args: DiffArgs) -> Result<()> {
-    let mut file = open_file(&args.pef_file, true)?;
-    let data = file.map()?;
-    let (_obj, _) = process_pef(data, "linked").context("Parsing linked PEF")?;
-    let _ = args.config;
-    bail!(
-        "`dtk pef diff` is not yet implemented. PEF container parse succeeded but \
-         symbol comparison still requires its own pass."
-    )
+    log::info!("Loading {}", args.config);
+    let mut config_file = open_file(&args.config, true)?;
+    let config: ProjectConfig = serde_yaml::from_reader(config_file.as_mut())?;
+    let object_base = find_object_base(&config)?;
+
+    let (mut obj, _) = load_pef_module(&config.base, &object_base)?;
+    if let Some(symbols_path) = &config.base.symbols {
+        apply_symbols_file(&symbols_path.with_encoding(), &mut obj)?;
+    }
+
+    log::info!("Loading {}", args.pef_file);
+    let mut linked_file = open_file(&args.pef_file, true)?;
+    let linked_data = linked_file.map()?;
+    let (linked_obj, _) = process_pef(linked_data, "linked").context("Parsing linked PEF")?;
+
+    let mut mismatches = 0u32;
+
+    for (_, orig_sym) in obj.symbols.iter().filter(|(_, s)| {
+        s.size > 0
+            && s.section.is_some()
+            && !matches!(s.kind, ObjSymbolKind::Unknown | ObjSymbolKind::Section)
+            && !s.flags.is_stripped()
+            && !is_auto_symbol(s)
+    }) {
+        let orig_section_index = orig_sym.section.unwrap();
+        let orig_section = &obj.sections[orig_section_index];
+
+        if orig_section.kind == ObjSectionKind::Bss {
+            continue;
+        }
+
+        let orig_start = orig_sym.address as u32;
+        let orig_end = orig_start + orig_sym.size as u32;
+        let orig_data = match orig_section.data_range(orig_start, orig_end) {
+            Ok(d) => d,
+            Err(_) => {
+                log::warn!(
+                    "Symbol {} at {:#010X} extends past section boundary, skipping",
+                    orig_sym.name,
+                    orig_sym.address
+                );
+                continue;
+            }
+        };
+
+        let Ok((_, linked_section)) = linked_obj.sections.at_address(orig_start) else {
+            log::error!(
+                "Symbol {} (size {:#X}) at {:#010X}: no section in linked PEF covers this address",
+                orig_sym.name,
+                orig_sym.size,
+                orig_sym.address
+            );
+            mismatches += 1;
+            continue;
+        };
+
+        let linked_data = match linked_section.data_range(orig_start, orig_end) {
+            Ok(d) => d,
+            Err(_) => {
+                log::error!(
+                    "Symbol {} (size {:#X}) at {:#010X}: extends past linked section boundary",
+                    orig_sym.name,
+                    orig_sym.size,
+                    orig_sym.address
+                );
+                mismatches += 1;
+                continue;
+            }
+        };
+
+        if orig_data != linked_data {
+            log::error!(
+                "Data mismatch for {} (type {:?}, size {:#X}) at {:#010X}",
+                orig_sym.name,
+                orig_sym.kind,
+                orig_sym.size,
+                orig_sym.address
+            );
+            log::error!("Original: {}", hex::encode_upper(orig_data));
+            log::error!("Linked:   {}", hex::encode_upper(linked_data));
+            mismatches += 1;
+        }
+    }
+
+    if mismatches > 0 {
+        log::error!("{} mismatch(es) found", mismatches);
+        std::process::exit(1);
+    }
+    log::info!("OK");
+    Ok(())
 }
 
 fn apply(args: ApplyArgs) -> Result<()> {
-    let mut file = open_file(&args.pef_file, true)?;
-    let data = file.map()?;
-    let (_obj, _) = process_pef(data, "linked").context("Parsing linked PEF")?;
-    let _ = args.config;
-    bail!(
-        "`dtk pef apply` is not yet implemented. PEF container parse succeeded but \
-         symbol extraction still requires its own pass."
-    )
+    log::info!("Loading {}", args.config);
+    let mut config_file = open_file(&args.config, true)?;
+    let config: ProjectConfig = serde_yaml::from_reader(config_file.as_mut())?;
+    let object_base = find_object_base(&config)?;
+
+    let (mut obj, _) = load_pef_module(&config.base, &object_base)?;
+
+    let Some(symbols_path) = &config.base.symbols else {
+        bail!("No symbols file specified in config");
+    };
+    let symbols_path = symbols_path.with_encoding();
+    let Some(symbols_cache) = apply_symbols_file(&symbols_path, &mut obj)? else {
+        bail!("Symbols file '{}' does not exist", symbols_path);
+    };
+
+    log::info!("Loading {}", args.pef_file);
+    let mut linked_file = open_file(&args.pef_file, true)?;
+    let linked_data = linked_file.map()?;
+    let (linked_obj, _) = process_pef(linked_data, "linked").context("Parsing linked PEF")?;
+
+    let mut replacements: Vec<(SymbolIndex, ObjSymbol)> = vec![];
+    for (orig_idx, orig_sym) in obj.symbols.iter() {
+        if orig_sym.section.is_none() {
+            continue;
+        }
+        if matches!(orig_sym.kind, ObjSymbolKind::Section) {
+            continue;
+        }
+
+        let Ok((linked_section_index, _)) =
+            linked_obj.sections.at_address(orig_sym.address as u32)
+        else {
+            log::warn!(
+                "Symbol {} (type {:?}, size {:#X}) at {:#010X}: no section in linked PEF",
+                orig_sym.name,
+                orig_sym.kind,
+                orig_sym.size,
+                orig_sym.address
+            );
+            continue;
+        };
+
+        // CFM exports are name-based, not ordinal — prefer name match.
+        let linked_sym = linked_obj
+            .symbols
+            .at_section_address(linked_section_index, orig_sym.address as u32)
+            .find(|(_, s)| s.name == orig_sym.name)
+            .or_else(|| {
+                linked_obj
+                    .symbols
+                    .at_section_address(linked_section_index, orig_sym.address as u32)
+                    .find(|(_, s)| s.kind == orig_sym.kind)
+            });
+
+        let Some((_, linked_sym)) = linked_sym else {
+            log::warn!(
+                "Symbol not in linked PEF: {} (type {:?}, size {:#X}) at {:#010X}",
+                orig_sym.name,
+                orig_sym.kind,
+                orig_sym.size,
+                orig_sym.address
+            );
+            continue;
+        };
+
+        let mut updated = orig_sym.clone();
+        if linked_sym.name != orig_sym.name {
+            log::info!(
+                "Renaming {} → {} (type {:?}) at {:#010X}",
+                orig_sym.name,
+                linked_sym.name,
+                orig_sym.kind,
+                orig_sym.address
+            );
+            updated.name.clone_from(&linked_sym.name);
+        }
+        if linked_sym.size != orig_sym.size {
+            log::info!(
+                "Resizing {} (type {:?}) {:#X} → {:#X} at {:#010X}",
+                orig_sym.name,
+                orig_sym.kind,
+                orig_sym.size,
+                linked_sym.size,
+                orig_sym.address
+            );
+            updated.size = linked_sym.size;
+            updated.size_known = true;
+        }
+        let linked_scope = linked_sym.flags.scope();
+        if linked_scope != ObjSymbolScope::Unknown
+            && linked_scope != orig_sym.flags.scope()
+            && !(linked_scope == ObjSymbolScope::Global
+                && orig_sym.flags.scope() == ObjSymbolScope::Local)
+        {
+            log::info!(
+                "Changing scope of {} (type {:?}) {:?} → {:?} at {:#010X}",
+                orig_sym.name,
+                orig_sym.kind,
+                orig_sym.flags.scope(),
+                linked_scope,
+                orig_sym.address
+            );
+            updated.flags.set_scope(linked_scope);
+        }
+        if updated != *orig_sym {
+            replacements.push((orig_idx, updated));
+        }
+    }
+
+    // Add symbols present in the linked PEF but missing from the original.
+    for (_, linked_sym) in linked_obj.symbols.iter() {
+        if matches!(linked_sym.kind, ObjSymbolKind::Section | ObjSymbolKind::Unknown)
+            || is_auto_symbol(linked_sym)
+            || linked_sym.section.is_none()
+        {
+            continue;
+        }
+        let Ok((orig_section_index, _)) = obj.sections.at_address(linked_sym.address as u32)
+        else {
+            continue;
+        };
+        let already_present = obj
+            .symbols
+            .at_section_address(orig_section_index, linked_sym.address as u32)
+            .any(|(_, s)| s.name == linked_sym.name || s.kind == linked_sym.kind);
+        if !already_present {
+            log::info!(
+                "Adding {} (type {:?}, size {:#X}) at {:#010X}",
+                linked_sym.name,
+                linked_sym.kind,
+                linked_sym.size,
+                linked_sym.address
+            );
+            obj.symbols.add_direct(ObjSymbol {
+                name: linked_sym.name.clone(),
+                demangled_name: linked_sym.demangled_name.clone(),
+                address: linked_sym.address,
+                section: Some(orig_section_index),
+                size: linked_sym.size,
+                size_known: linked_sym.size_known,
+                flags: linked_sym.flags,
+                kind: linked_sym.kind,
+                align: linked_sym.align,
+                data_kind: linked_sym.data_kind,
+                name_hash: linked_sym.name_hash,
+                demangled_name_hash: linked_sym.demangled_name_hash,
+            })?;
+        }
+    }
+
+    for (idx, updated) in replacements {
+        obj.symbols.replace(idx, updated)?;
+    }
+
+    write_symbols_file(&symbols_path, &obj, Some(symbols_cache))?;
+    log::info!("OK");
+    Ok(())
 }
 
 fn u32_to_tag(v: u32) -> String {
