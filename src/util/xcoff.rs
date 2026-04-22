@@ -69,16 +69,19 @@ pub fn write_xcoff(obj: &ObjInfo, _export_all: bool) -> Result<Vec<u8>> {
     let mut sec_infos: Vec<SecInfo> = Vec::new();
     let mut section_to_idx: Vec<Option<usize>> = vec![None; obj.sections.len() as usize];
     for (obj_idx, section) in obj.sections.iter() {
-        let (styp, has_data) = match section.kind {
-            ObjSectionKind::Code => (xcoff::STYP_TEXT, true),
-            ObjSectionKind::Data => (xcoff::STYP_DATA, true),
-            ObjSectionKind::ReadOnlyData => (xcoff::STYP_TEXT, true), // CW groups rodata with text
-            ObjSectionKind::Bss => (xcoff::STYP_BSS, false),
+        // XCOFF section names must follow AIX convention (.text/.data/.bss) for
+        // the linker to merge them.  dtk's original names (e.g. .code0, .data0)
+        // are PEF section names and would be silently dropped.
+        let (styp, has_data, name) = match section.kind {
+            ObjSectionKind::Code => (xcoff::STYP_TEXT, true, ".text"),
+            ObjSectionKind::Data => (xcoff::STYP_DATA, true, ".data"),
+            ObjSectionKind::ReadOnlyData => (xcoff::STYP_TEXT, true, ".text"),
+            ObjSectionKind::Bss => (xcoff::STYP_BSS, false, ".bss"),
         };
         section_to_idx[obj_idx as usize] = Some(sec_infos.len());
         sec_infos.push(SecInfo {
             obj_idx,
-            name: section.name.clone(),
+            name: name.to_string(),
             styp,
             has_data,
             size: section.size as u32,
@@ -86,24 +89,56 @@ pub fn write_xcoff(obj: &ObjInfo, _export_all: bool) -> Result<Vec<u8>> {
         });
     }
 
-    // Collect symbols → XCOFF indices + strtab names.
-    // Each primary symbol gets exactly one CsectAux entry, so the total
-    // entry count is 2 * symbols.count().  f_nsyms counts both.
+    // XCOFF csect model:
+    //   - ONE section csect per emitted section (XTY_SD, spans whole section).
+    //     Carries storage mapping class (XMC_PR/RW/BS) for the linker.
+    //   - Every user-defined symbol is an XTY_LD label *inside* that csect.
+    //     Its aux `x_scnlen` field is reused as the containing-csect symbol
+    //     index (1-based symtab index of the section csect).
+    //   - Undefined (extern) symbols stay XTY_ER with XMC_PR.
+    // Without the enclosing section csect, overlapping XTY_SD labels confuse
+    // BFD (xcofflink.c:5927 BFD_FAIL on unresolved R_BR during partial link)
+    // and cause silent content-drop during full link.
     let mut strtab = StrTab::new();
-    let mut xsyms: Vec<XSym> = Vec::with_capacity(obj.symbols.count() as usize);
+    let mut xsyms: Vec<XSym> = Vec::with_capacity(obj.symbols.count() as usize + sec_infos.len());
     // Maps dtk SymbolIndex → XCOFF primary entry index (for RLD r_symndx).
     let mut xsym_index: Vec<u32> = vec![u32::MAX; obj.symbols.count() as usize];
+    // Maps SecInfo index → symtab index of synthetic section csect (for XTY_LD aux).
+    let mut section_csect_sym_idx: Vec<u32> = vec![0; sec_infos.len()];
+
+    // Emit section csects first so user labels can reference them by index.
+    for (i, si) in sec_infos.iter().enumerate() {
+        let xcoff_idx = (xsyms.len() * 2) as u32;
+        section_csect_sym_idx[i] = xcoff_idx;
+        let smclas = match obj.sections[si.obj_idx].kind {
+            ObjSectionKind::Code => xcoff::XMC_PR,
+            ObjSectionKind::ReadOnlyData => xcoff::XMC_RO,
+            ObjSectionKind::Data => xcoff::XMC_RW,
+            ObjSectionKind::Bss => xcoff::XMC_BS,
+        };
+        let str_off = if si.name.len() <= 8 { 0 } else { strtab.add(&si.name) };
+        xsyms.push(XSym {
+            name: si.name.clone(),
+            str_off,
+            value: 0,
+            scnum: (i as i16) + 1,
+            sclass: xcoff::C_HIDEXT,
+            scnlen: si.size,
+            smtyp: xcoff::XTY_SD,
+            smclas,
+        });
+    }
 
     for (sym_idx, sym) in obj.symbols.iter() {
         let xcoff_idx = (xsyms.len() * 2) as u32;
         xsym_index[sym_idx as usize] = xcoff_idx;
 
-        let n_scnum: i16 = match sym.section {
+        let (n_scnum, csect_idx): (i16, Option<usize>) = match sym.section {
             Some(dtk_sec) => match section_to_idx.get(dtk_sec as usize).copied().flatten() {
-                Some(xidx) => (xidx as i16) + 1, // XCOFF scnum is 1-based
-                None => 0,                       // N_UNDEF
+                Some(xidx) => ((xidx as i16) + 1, Some(xidx)),
+                None => (0, None),
             },
-            None => 0,
+            None => (0, None),
         };
         let is_defined = n_scnum != 0;
         let is_exported = sym.flags.0.contains(ObjSymbolFlags::Exported)
@@ -118,7 +153,9 @@ pub fn write_xcoff(obj: &ObjInfo, _export_all: bool) -> Result<Vec<u8>> {
         } else {
             xcoff::C_EXT
         };
-        let (smtyp, smclas) = if is_defined {
+        // For XTY_LD the x_scnlen field is repurposed: it holds the
+        // containing csect's symbol-table index, not a length.
+        let (smtyp, smclas, scnlen) = if is_defined {
             let sec = &obj.sections[sym.section.unwrap()];
             let scls = match sec.kind {
                 ObjSectionKind::Code => xcoff::XMC_PR,
@@ -126,12 +163,11 @@ pub fn write_xcoff(obj: &ObjInfo, _export_all: bool) -> Result<Vec<u8>> {
                 ObjSectionKind::Data => xcoff::XMC_RW,
                 ObjSectionKind::Bss => xcoff::XMC_BS,
             };
-            (xcoff::XTY_SD, scls)
+            (xcoff::XTY_LD, scls, section_csect_sym_idx[csect_idx.unwrap()])
         } else {
-            (xcoff::XTY_ER, xcoff::XMC_PR)
+            (xcoff::XTY_ER, xcoff::XMC_PR, 0)
         };
 
-        // Inline name if ≤ 8 bytes, else strtab offset.
         let str_off = if sym.name.len() <= 8 { 0 } else { strtab.add(&sym.name) };
 
         xsyms.push(XSym {
@@ -140,7 +176,7 @@ pub fn write_xcoff(obj: &ObjInfo, _export_all: bool) -> Result<Vec<u8>> {
             value: sym.address as u32,
             scnum: n_scnum,
             sclass,
-            scnlen: sym.size as u32,
+            scnlen,
             smtyp,
             smclas,
         });
@@ -230,17 +266,78 @@ pub fn write_xcoff(obj: &ObjInfo, _export_all: bool) -> Result<Vec<u8>> {
         } else if data.len() > si.size as usize {
             data.truncate(si.size as usize);
         }
-        // Zero reloc fields for Absolute (addend written by hand here since we
-        // don't carry it in the RLD record for the simple 32-bit case).
+        // XCOFF reloc convention (partial_inplace=true): the in-place field
+        // at the reloc site holds the ADDEND, and the linker writes
+        // `final = (field & ~dst_mask) | ((field & src_mask) + relocation)`.
+        // dtk's section data mirrors the original linked binary, so those
+        // fields currently hold pre-baked resolved values (absolute addrs,
+        // shifted branch displacements, etc.) — feeding that to the linker
+        // double-adds and overflows.  Strip the reloc-field bits and reinsert
+        // the addend instead.
+        //
+        // PC-relative XCOFF quirk (see coff-rs6000.c:3192-3194): BFD's
+        // xcoff_reloc_type_br computes `*relocation = val + addend + r_vaddr
+        // - site_final`, which reduces to `target_absolute` when
+        // input_section->vma == 0 (our case).  The linker then adds this to
+        // the in-place field.  For the result to be the pc-rel displacement
+        // we need `field & src_mask = -r_vaddr`, i.e. bias pc-rel fields by
+        // -r_vaddr ("the original PC-relative relocation is biased by
+        // -r_vaddr" per that comment).
         for (addr, reloc) in section.relocations.iter() {
             if mapped_reloc_type(reloc.kind).is_none() { continue; }
             let off = (addr as u64 - section.address) as usize;
-            if matches!(reloc.kind, ObjRelocKind::Absolute) {
-                if off + 4 <= data.len() && reloc.addend != 0 {
-                    // Write addend as the in-place value the linker adds on top
-                    // of the resolved symbol address.
-                    data[off..off + 4].copy_from_slice(&(reloc.addend as u32).to_be_bytes());
+            let r_vaddr = off as u32;
+            match reloc.kind {
+                ObjRelocKind::Absolute => {
+                    if off + 4 <= data.len() {
+                        data[off..off + 4]
+                            .copy_from_slice(&(reloc.addend as u32).to_be_bytes());
+                    }
                 }
+                ObjRelocKind::PpcRel24 => {
+                    if off + 4 <= data.len() {
+                        let sym_val = obj.symbols[reloc.target_symbol].address as u32;
+                        let mut w = u32::from_be_bytes(data[off..off + 4].try_into().unwrap());
+                        w &= !0x03fffffc;
+                        let biased = sym_val
+                            .wrapping_add(reloc.addend as u32)
+                            .wrapping_sub(r_vaddr);
+                        w |= biased & 0x03fffffc;
+                        data[off..off + 4].copy_from_slice(&w.to_be_bytes());
+                    }
+                }
+                ObjRelocKind::PpcRel14 => {
+                    if off + 4 <= data.len() {
+                        let sym_val = obj.symbols[reloc.target_symbol].address as u32;
+                        let mut w = u32::from_be_bytes(data[off..off + 4].try_into().unwrap());
+                        w &= !0x0000fffc;
+                        let biased = sym_val
+                            .wrapping_add(reloc.addend as u32)
+                            .wrapping_sub(r_vaddr);
+                        w |= biased & 0x0000fffc;
+                        data[off..off + 4].copy_from_slice(&w.to_be_bytes());
+                    }
+                }
+                ObjRelocKind::PpcAddr16Hi
+                | ObjRelocKind::PpcAddr16Ha
+                | ObjRelocKind::PpcAddr16Lo => {
+                    if off + 4 <= data.len() {
+                        let mut w = u32::from_be_bytes(data[off..off + 4].try_into().unwrap());
+                        w &= !0x0000ffff;
+                        let hi = matches!(
+                            reloc.kind,
+                            ObjRelocKind::PpcAddr16Hi | ObjRelocKind::PpcAddr16Ha
+                        );
+                        let imm = if hi {
+                            ((reloc.addend as u32) >> 16) & 0xffff
+                        } else {
+                            (reloc.addend as u32) & 0xffff
+                        };
+                        w |= imm;
+                        data[off..off + 4].copy_from_slice(&w.to_be_bytes());
+                    }
+                }
+                _ => {}
             }
         }
         out.extend_from_slice(&data);
@@ -332,7 +429,9 @@ fn mapped_reloc_type(kind: ObjRelocKind) -> Option<(u8, u8)> {
     match kind {
         ObjRelocKind::Absolute => Some((xcoff::R_POS, 31)),
         ObjRelocKind::PpcRel24 => Some((xcoff::R_BR, 25)),
-        ObjRelocKind::PpcRel14 => Some((xcoff::R_BR, 15)),
+        // R_BR + r_size=15 is rejected by BFD (R_BR HOWTO bitsize=26).
+        // R_RBR + r_size=15 selects HOWTO[0x1d] (R_RBR_16, pc-relative, bitsize 16).
+        ObjRelocKind::PpcRel14 => Some((xcoff::R_RBR, 15)),
         ObjRelocKind::PpcAddr16Hi | ObjRelocKind::PpcAddr16Ha => Some((xcoff::R_TOCU, 15)),
         ObjRelocKind::PpcAddr16Lo => Some((xcoff::R_TOCL, 15)),
         // No XCOFF equivalent for EABI SDA21 or x86 relocs.
