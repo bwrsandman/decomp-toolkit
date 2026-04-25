@@ -438,6 +438,10 @@ pub fn parse_loader_section(
     //   PEFExportedSymbolHashSlot    hashTable[1 << exportHashTablePower]  (u32)
     //   PEFExportedSymbolKey         keyTable [exportedSymbolCount]        (u32)
     //   PEFExportedSymbol            symTable [exportedSymbolCount]        (10 bytes)
+    //
+    // PEF export names are stored end-to-end WITHOUT null terminators.  The
+    // boundary between name[i] and name[i+1] is at the next-higher name_off
+    // when the offsets are sorted.  read_c_string must NOT be used here.
     let export_hash_start = info.export_hash_offset as usize;
     let hash_slot_count = 1usize << info.export_hash_table_power;
     let export_table_start = export_hash_start
@@ -445,8 +449,12 @@ pub fn parse_loader_section(
         .context("export_hash_offset overflow")?
         .checked_add((info.exported_symbol_count as usize).checked_mul(4).context("key table overflow")?)
         .context("key table offset overflow")?;
-    let mut exported_symbols = Vec::with_capacity(info.exported_symbol_count as usize);
-    for i in 0..info.exported_symbol_count as usize {
+    let export_count = info.exported_symbol_count as usize;
+
+    // First pass: collect raw fields.
+    struct RawExport { name_off: u32, value: u32, section_index: i16, class: u8 }
+    let mut raw_exports: Vec<RawExport> = Vec::with_capacity(export_count);
+    for i in 0..export_count {
         let off = export_table_start + i * PEF_EXPORTED_SYMBOL_SIZE;
         if off + PEF_EXPORTED_SYMBOL_SIZE > loader.len() {
             bail!("Exported symbol {i} truncated");
@@ -457,12 +465,41 @@ pub fn parse_loader_section(
         let section_index = i16::from_be_bytes(*array_ref!(entry, 8, 2));
         let class = ((class_and_name >> 24) & 0xFF) as u8;
         let name_off = class_and_name & 0x00FF_FFFF;
-        let name = read_c_string(loader, strings_base + name_off as usize)?.to_string();
+        raw_exports.push(RawExport { name_off, value, section_index, class });
+    }
+
+    // Sort by name_off to determine name boundaries via adjacent offsets.
+    let mut sorted_by_name: Vec<(u32, usize)> =
+        raw_exports.iter().enumerate().map(|(i, r)| (r.name_off, i)).collect();
+    sorted_by_name.sort_by_key(|&(off, _)| off);
+
+    let mut names: Vec<String> = vec![String::new(); export_count];
+    for k in 0..sorted_by_name.len() {
+        let (this_off, sym_idx) = sorted_by_name[k];
+        let name = if k + 1 < sorted_by_name.len() {
+            let next_off = sorted_by_name[k + 1].0;
+            let start = strings_base + this_off as usize;
+            let end = strings_base + next_off as usize;
+            if end > loader.len() || start > end {
+                bail!("Export name {sym_idx} bounds [{start:#x}..{end:#x}) exceed loader");
+            }
+            std::str::from_utf8(&loader[start..end])
+                .with_context(|| format!("Non-UTF-8 export name {sym_idx} at {this_off:#x}"))?
+                .to_string()
+        } else {
+            // Last export: null-terminated (PEF appends a sentinel null after the names).
+            read_c_string(loader, strings_base + this_off as usize)?.to_string()
+        };
+        names[sym_idx] = name;
+    }
+
+    let mut exported_symbols = Vec::with_capacity(export_count);
+    for (i, raw) in raw_exports.into_iter().enumerate() {
         exported_symbols.push(PefExportedSymbol {
-            name,
-            symbol_class: class & 0x0F,
-            value,
-            section_index,
+            name: names[i].clone(),
+            symbol_class: raw.class & 0x0F,
+            value: raw.value,
+            section_index: raw.section_index,
         });
     }
 
